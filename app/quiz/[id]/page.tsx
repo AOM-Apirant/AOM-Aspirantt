@@ -385,42 +385,58 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
   const showExplanation = selectedAnswer !== null;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-12 px-4">
-      <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-xl p-8">
-          <div className="mb-6">
-            <div className="flex items-center mb-2">
-              <span className="text-2xl mr-3">{categoryData.icon}</span>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-8 px-4">
+      <div className="max-w-3xl mx-auto">
+        {/* Simple and Beautiful Quiz Box */}
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          {/* Header */}
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center mb-4">
+              <span className="text-3xl mr-3">{categoryData.icon}</span>
               <h1 className="text-2xl font-bold text-gray-800">{categoryData.title}</h1>
             </div>
-            <p className="text-gray-600">Quiz {currentQuizId} - Question {currentQuestion + 1} of {questions.length}</p>
-            <div className="w-full bg-gray-200 rounded-full h-2 mt-4">
+            <div className="flex items-center justify-center text-gray-600 mb-4">
+              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                Quiz {currentQuizId}
+              </span>
+              <span className="mx-2">•</span>
+              <span className="text-gray-500">
+                Question {currentQuestion + 1} of {questions.length}
+              </span>
+            </div>
+            
+            {/* Progress Bar */}
+            <div className="w-full bg-gray-200 rounded-full h-2">
               <div 
-                className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-300 ease-out"
                 style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
               ></div>
             </div>
           </div>
 
+          {/* Question */}
           <div className="mb-8">
-            <h2 className="text-xl font-semibold text-gray-800 mb-6">{currentQ.question}</h2>
+            <h2 className="text-xl font-semibold text-gray-800 mb-6 leading-relaxed">
+              {currentQ.question}
+            </h2>
             
+            {/* Options */}
             <div className="space-y-3">
               {currentQ.options.map((option, index) => {
                 const isSelected = selectedAnswer === index;
                 const isCorrectAnswer = index === currentQ.correct;
-                let buttonClasses = 'w-full text-left p-4 rounded-lg border-2 transition-all duration-200 flex items-center justify-between';
+                let optionClasses = 'w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center justify-between group';
                 
                 if (isSelected) {
                   if (isCorrectAnswer) {
-                    buttonClasses += ' border-green-500 bg-green-50 text-green-700';
+                    optionClasses += ' border-green-500 bg-green-50 text-green-700 shadow-md';
                   } else {
-                    buttonClasses += ' border-red-500 bg-red-50 text-red-700';
+                    optionClasses += ' border-red-500 bg-red-50 text-red-700 shadow-md';
                   }
                 } else if (showExplanation && isCorrectAnswer) {
-                  buttonClasses += ' border-green-500 bg-green-50 text-green-700';
+                  optionClasses += ' border-green-500 bg-green-50 text-green-700 shadow-md';
                 } else {
-                  buttonClasses += ' border-gray-200 hover:border-gray-300 hover:bg-gray-50';
+                  optionClasses += ' border-gray-200 hover:border-blue-300 hover:bg-blue-50 hover:shadow-sm';
                 }
 
                 return (
@@ -428,9 +444,31 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                     key={index}
                     onClick={() => handleAnswerSelect(index)}
                     disabled={showExplanation}
-                    className={`${buttonClasses} ${showExplanation ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                    className={`${optionClasses} ${showExplanation ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                   >
-                    <span className="font-medium">{option}</span>
+                    <div className="flex items-center">
+                      <div className={`w-6 h-6 rounded-full border-2 mr-4 flex items-center justify-center ${
+                        isSelected 
+                          ? isCorrectAnswer 
+                            ? 'border-green-500 bg-green-500' 
+                            : 'border-red-500 bg-red-500'
+                          : showExplanation && isCorrectAnswer
+                            ? 'border-green-500 bg-green-500'
+                            : 'border-gray-300 group-hover:border-blue-400'
+                      }`}>
+                        {isSelected || (showExplanation && isCorrectAnswer) ? (
+                          <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        ) : (
+                          <span className="text-xs font-medium text-gray-400 group-hover:text-blue-400">
+                            {String.fromCharCode(65 + index)}
+                          </span>
+                        )}
+                      </div>
+                      <span className="font-medium text-left">{option}</span>
+                    </div>
+                    
                     {showExplanation && (
                       <div className="flex items-center">
                         {isCorrectAnswer ? (
@@ -454,8 +492,9 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
             </div>
           </div>
 
+          {/* Explanation */}
           {showExplanation && (
-            <div className={`mb-6 p-4 rounded-lg border-l-4 ${
+            <div className={`mb-6 p-4 rounded-xl border-l-4 ${
               isCorrect 
                 ? 'bg-green-50 border-green-500 text-green-700' 
                 : 'bg-red-50 border-red-500 text-red-700'
@@ -478,13 +517,14 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                   <h4 className="font-semibold mb-1">
                     {isCorrect ? 'Correct!' : 'Incorrect!'}
                   </h4>
-                  <p className="text-sm">{currentQ.explanation}</p>
+                  <p className="text-sm leading-relaxed">{currentQ.explanation}</p>
                 </div>
               </div>
             </div>
           )}
 
-          <div className="flex justify-between">
+          {/* Navigation Buttons */}
+          <div className="flex justify-between items-center">
             <button
               onClick={() => {
                 if (currentQuestion > 0) {
@@ -492,17 +532,23 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 }
               }}
               disabled={currentQuestion === 0}
-              className="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-3 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium flex items-center"
             >
-            Previous
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Previous
             </button>
             
             <button
               onClick={handleNext}
               disabled={selectedAnswer === null}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium shadow-lg hover:shadow-xl flex items-center"
             >
               {currentQuestion === questions.length - 1 ? 'Finish Quiz' : 'Next Question'}
+              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </button>
           </div>
         </div>

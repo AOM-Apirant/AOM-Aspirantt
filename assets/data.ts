@@ -2581,6 +2581,68 @@ export const allQuizzes = {
               correct: 2,
               explanation: 'Five members (Rs.2000/-) each employee are given in a year for writing more than 10,000 words in one unit under home ministries award scheme.'
             },
+          ],
+          '8': [
+            {
+              question: 'In which order name, designation and sign boards are to be exhibited?',
+              options: ['1. Regional Language  2. Hindi and 3. English', '1. Hindi  2. English and 3. Regional Language', '1. English  2. Hindi and 3. Regional Language', 'None of the above'],
+              correct: 0,
+              explanation: '1. Regional Language  2. Hindi and 3. English is the order in which name, designation and sign boards are to be exhibited.'
+            },
+            {
+              question: 'In which order the forms used by public are to be prepared?',
+              options: ['1. English  2. Hindi and 3. Regional Language', '1. Hindi  2. English and 3. Regional Language', '1. English  2. Hindi and 3. Regional Language', 'None of the above'],
+              correct: 0,
+              explanation: '1. English  2. Hindi and 3. Regional Language is the order in which the forms used by public are to be prepared.'
+            },
+            {
+              question: 'In which order rubber stamps are to be prepared?',
+              options: ['Hindi- English bi-lingual form-one line Hindi and one line English', 'English - Hindi bi-lingual form-one line English and one line Hindi', 'Both A & B', 'None of the above'],
+              correct: 0,
+              explanation: 'Hindi- English bi-lingual form-one line Hindi and one line English is the order in which rubber stamps are to be prepared.'
+            },
+            {
+              question: 'What is the Lumpsum award for passing Hindi type writing examination by private study?',
+              options: ['1200/-', '1600/-', '2000/-', '2400/-'],
+              correct: 1,
+              explanation: '1600/- is the Lumpsum award for passing Hindi type writing examination by private study.'
+            },
+            {
+              question: 'Who is the chairman of the Divisional Official Language Implementation Committee?',
+              options: ['Sr.DPO', 'ADRM', 'DRM', 'Senior Rajbhasha Adhikari'],
+              correct: 2,
+              explanation: 'DRM is the chairman of the Divisional Official Language Implementation Committee.'
+            },
+            {
+              question: '........ Ministry/ office is conducting the exams under Hindi Teaching Scheme for the central government employees',
+              options: ['Home ministry', 'HRD  ministry', 'Law ministry', 'None of the above'],
+              correct: 0,
+              explanation: 'Home ministry is the Ministry/ office that is conducting the exams under Hindi Teaching Scheme for the central government employees.'
+            },
+            {
+              question: 'Who is eligible for Lumpsum award? ',
+              options: ['Those employees who pass the Hindi exams by more than 95%', 'Those employees who pass the hindi exams by more than 85%', 'Those employees who pass the hindi exams by private efforts', 'None of the above'],
+              correct: 2,
+              explanation: 'Those employees who pass the hindi exams by private efforts are eligible for Lumpsum award.'
+            },
+            {
+              question: 'In which order are the station announcements made?',
+              options: ['Tri lingual (Hindi, Regional and English)', 'Tri lingual (English , Regional and Hindi)', 'Tri lingual (Regional, Hindi and English)', 'None of the above'],
+              correct: 2,
+              explanation: 'Tri lingual (Regional, Hindi and English) is the order in which the station announcements are made.'
+            },
+            {
+              question: 'In which proportion the roof board has to be displayed?',
+              options: ['In equal proportion- Tri lingual', 'In equal proportion- bi lingual', '1:2:3  proportion- Tri lingual', 'None of the above'],
+              correct: 0,
+              explanation: 'In equal proportion- Tri lingual is the proportion in which the roof board has to be displayed.'
+            },
+            {
+              question: 'How the panel board of a train has to be displayed?',
+              options: ['Tri lingual (Hindi, Regional and English)', 'Tri lingual (English , Regional and Hindi)', 'Tri lingual (Regional, Hindi and English)', 'None of the above'],
+              correct: 2,
+              explanation: 'Tri lingual (Regional, Hindi and English) is the proportion in which the panel board of a train has to be displayed.'
+            }
           ]
         }
       },
