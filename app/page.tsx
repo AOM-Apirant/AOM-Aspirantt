@@ -8,25 +8,30 @@ export default function Home() {
         {/* Left div - Hero section */}
         <div className="w-1/2 flex items-center justify-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
-          <div className="relative z-10 text-center px-12">
-            <div className="mb-8">
+          <div className="relative z-10 text-center px-12 max-w-xl">
+            {/* Logo */}
+            <div className="mb-10">
               <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-2xl mb-6">
                 <span className="text-white text-3xl font-bold">AOM</span>
               </div>
             </div>
-            <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
+            
+            {/* Main heading */}
+            <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
               Welcome to
               <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 AOM Aspirant
               </span>
             </h1>
-            <p className="text-xl text-gray-300 mb-12 max-w-lg leading-relaxed">
-              Your ultimate learning companion for AOM preparation. Master concepts, ace quizzes, and track your progress with our comprehensive platform.
+            
+            {/* Description */}
+            <p className="text-lg text-gray-300 mb-12 leading-relaxed">
+              Your ultimate learning companion for AOM preparation. Master concepts, ace quizzes, and track your progress.
             </p>
             
             {/* Feature cards */}
-            <div className="grid grid-cols-1 gap-4 max-w-md mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+            <div className="space-y-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-lg flex items-center justify-center">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +45,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-500 rounded-lg flex items-center justify-center">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +59,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-500 rounded-lg flex items-center justify-center">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,43 +75,41 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Animated background elements */}
-          <div className="absolute top-20 left-20 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-40 h-40 bg-purple-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-10 w-24 h-24 bg-indigo-500/20 rounded-full blur-xl animate-pulse delay-500"></div>
+          {/* Subtle background elements */}
+          <div className="absolute top-20 left-20 w-32 h-32 bg-blue-500/10 rounded-full blur-xl"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-purple-500/10 rounded-full blur-xl"></div>
         </div>
 
         {/* Right div - Login section */}
         <div className="w-1/2 flex items-center justify-center bg-white">
-          <div className="w-full max-w-md px-8">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div className="w-full max-w-md px-12">
+            {/* Header */}
+            <div className="text-center mb-8">
+              <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <span className="text-white text-2xl font-bold">A</span>
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-2">AOM Aspirant</h2>
-              {/* <p className="text-gray-600">Sign in to your account</p> */}
+              <p className="text-gray-600">Sign in to your account</p>
             </div>
             
-            {/* Simplified login form container */}
-            <div className="bg-white rounded-lg shadow-md border border-gray-200 pt-8 pb-4 px-8">
+            {/* Login form */}
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 p-8">
               <AuthForm />
             </div>
-            
-            
           </div>
         </div>
       </div>
 
-      {/* Small devices - Single column layout (only login) */}
+      {/* Small devices - Single column layout */}
       <div className="lg:hidden flex items-center justify-center min-h-screen p-4">
         <div className="w-full max-w-md">
           <div className="bg-white rounded-lg shadow-2xl p-8 border border-gray-100">
-            <div className="text-center mb-4">
+            <div className="text-center mb-6">
               <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <span className="text-white text-3xl font-bold">A</span>
               </div>
               <h1 className="text-2xl font-bold text-gray-900 mb-2">AOM Aspirant</h1>
-              {/* <p className="text-gray-600">Your learning journey starts here</p> */}
+              <p className="text-gray-600">Your learning journey starts here</p>
             </div>
             <AuthForm />
           </div>
