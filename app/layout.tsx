@@ -1,13 +1,7 @@
-import { Poppins } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import './globals.css';
 import { SessionProvider } from 'next-auth/react';
 import Footer from '@/components/Footer';
-
-const poppins = Poppins({ 
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700']
-});
 
 export const metadata = {
   title: 'AOM Aspirant - Quiz App',
@@ -22,11 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className={`${poppins.className} antialiased`} suppressHydrationWarning={true}>
+        <body className="antialiased" suppressHydrationWarning={true}>
         <SessionProvider>
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-1 pt-16">{children}</main>
+            <Footer />
+          </div>
           </SessionProvider>
       </body>
     </html>

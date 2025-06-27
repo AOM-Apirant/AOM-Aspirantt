@@ -18,7 +18,7 @@ const Abbreviations = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(abbreviations).map(([letter, items]) => (
-            <div key={letter} className="group bg-white/80 backdrop-blur-sm rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-300 overflow-hidden">
+            <div key={letter} className="group bg-white/80 backdrop-blur-sm rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-purple-300 overflow-hidden">
               {/* Letter Header */}
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-600 opacity-90"></div>
