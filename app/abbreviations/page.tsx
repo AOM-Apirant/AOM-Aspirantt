@@ -9,10 +9,10 @@ const Abbreviations = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-4">
-            Military Abbreviations & Acronyms
+            Indian Railways Complete Abbreviations & Acronyms
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Comprehensive guide to military terminology and abbreviations used in defense operations
+            Comprehensive guide to Indian Railways terminology and abbreviations.
           </p>
         </div>
         
