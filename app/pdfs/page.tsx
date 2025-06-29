@@ -17,11 +17,11 @@ const PDFs = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-4">
-            Military PDFs
+          <h1 className="lg:text-5xl text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-4">
+            Indian Railways PDFs
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Access important military documents, manuals, and guidelines
+          <p className="text-gray-600 lg:text-lg text-sm max-w-2xl mx-auto">
+            Access important Indian Railways documents, manuals, and guidelines
           </p>
         </div>
         
@@ -36,7 +36,7 @@ const PDFs = () => {
                   <span className="text-gray-500 text-sm">{pdf.size}</span>
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="lg:text-xl text-md sm:text-lg font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
                   {pdf.title}
                 </h3>
                 
@@ -46,7 +46,7 @@ const PDFs = () => {
                 
                 <button 
                   onClick={() => handleDownload(pdf.filename, pdf.title)}
-                  className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium py-2 px-4 rounded-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 transform hover:scale-105"
                 >
                   Download PDF
                 </button>
