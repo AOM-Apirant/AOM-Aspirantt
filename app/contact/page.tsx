@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle, MessageCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, MessageCircle, AlertCircle } from 'lucide-react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,29 +12,53 @@ const Contact = () => {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState('')
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     })
+    // Clear error when user starts typing
+    if (error) setError('')
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError('')
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 3000)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        if (response.status === 429) {
+          throw new Error('Please wait 5 minutes before submitting another message from the same email address.')
+        }
+        throw new Error(data.error || 'Failed to send message')
+      }
+
+      setIsSubmitted(true)
+      
+      // Reset form after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false)
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      }, 5000)
+      
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -99,7 +123,7 @@ const Contact = () => {
                            background: `linear-gradient(135deg, ${info.gradient.includes('pink') ? '#ec4899' : info.gradient.includes('green') ? '#10b981' : info.gradient.includes('purple') ? '#8b5cf6' : '#f59e0b'}, ${info.gradient.includes('rose') ? '#f43f5e' : info.gradient.includes('emerald') ? '#059669' : info.gradient.includes('violet') ? '#7c3aed' : '#d97706'})`
                          }}>
                     </div>
-                    <div className="relative p-6 flex items-start space-x-4">
+                    <div className="relative p-6 flex items-center space-x-4">
                       <div className="flex-shrink-0">
                         <div className={`lg:w-14 lg:h-14 w-12 h-12 bg-gradient-to-r ${info.gradient} rounded-lg flex items-center justify-center shadow-lg`}>
                           <info.icon className="lg:w-7 lg:h-7 w-5 h-5 text-white" />
@@ -127,7 +151,6 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-
           </div>
 
           {/* Contact Form */}
@@ -152,6 +175,13 @@ const Contact = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-3">
+                      <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
+                      <p className="text-red-600 text-sm font-medium">{error}</p>
+                    </div>
+                  )}
+
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                       Name
@@ -240,7 +270,7 @@ const Contact = () => {
         </div>
 
         {/* Map Section */}
-        <div className="mt-20">
+        <div className="mt-16">
           <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100 relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-green-500 to-emerald-500"></div>
             <div className="relative">

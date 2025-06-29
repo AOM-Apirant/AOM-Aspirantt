@@ -3,6 +3,15 @@ import { auth } from "@/lib/auth";
 import connectDB from "@/lib/db";
 import UserProgress from "@/models/UserProgress";
 
+interface QuizHistoryItem {
+  categoryId: string;
+  quizId: string;
+  score: number;
+  totalQuestions: number;
+  correctAnswers: number;
+  completedAt: Date;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const session = await auth();
@@ -84,7 +93,7 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     const session = await auth();
     if (!session?.user?.email) {
@@ -114,7 +123,7 @@ export async function GET(request: NextRequest) {
     const recentActivity = userProgress.quizHistory
       .slice(-5)
       .reverse()
-      .map((quiz) => ({
+      .map((quiz: QuizHistoryItem) => ({
         categoryId: quiz.categoryId,
         quizId: quiz.quizId,
         score: quiz.score,
