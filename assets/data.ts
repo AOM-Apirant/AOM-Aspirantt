@@ -1537,131 +1537,255 @@ export const allQuizzes = {
         ],
         '2': [
           {
-            question: 'What is the name of the famous sculpture by Michelangelo?',
-            options: ['The Thinker', 'David', 'Venus de Milo', 'The Kiss'],
+            question: 'LAP shall be credited to a Railway servant at the rate of .......',
+            options: ['1 ½ days per month', '2 days per month', '2 ½ days per month', '3 days per month'],
+            correct: 2,
+            explanation: '2 ½ days per month is the correct answer.'
+          },
+          {
+            question: 'No.of days permissible for Paternity leave is .......',
+            options: ['10', '15', '20', '25'],
             correct: 1,
-            explanation: 'David is the famous marble sculpture by Michelangelo, depicting the biblical hero David.'
+            explanation: '15 is the correct answer.'
           },
           {
-            question: 'Which artist is known for his "Blue Period"?',
-            options: ['Pablo Picasso', 'Vincent van Gogh', 'Salvador Dalí', 'Henri Matisse'],
-            correct: 0,
-            explanation: 'Pablo Picasso is known for his "Blue Period," characterized by somber paintings in shades of blue.'
+            question: 'Maximum no. of persons allowed on a Privilege pass when dependents are included is .......',
+            options: ['3', '4', '5', '6'],
+            correct: 2,
+            explanation: '5 is the correct answer.'
           },
           {
-            question: 'What is the most famous painting by Edvard Munch?',
-            options: ['The Scream', 'Starry Night', 'The Persistence of Memory', 'Guernica'],
-            correct: 0,
-            explanation: 'The Scream is the most famous painting by Edvard Munch, depicting a figure with an agonized expression.'
-          },
-          {
-            question: 'Which art movement was founded by Salvador Dalí?',
-            options: ['Cubism', 'Surrealism', 'Impressionism', 'Expressionism'],
+            question: 'Maximum no of dependents allowed on a Privilege pass is .......',
+            options: ['1', '2', '3', '4'],
             correct: 1,
-            explanation: 'Salvador Dalí was a prominent figure in the Surrealism movement, known for his bizarre and dreamlike imagery.'
+            explanation: '2 is the correct answer.'
           },
           {
-            question: 'What is the technique of using small dots to create an image called?',
-            options: ['Pointillism', 'Impressionism', 'Cubism', 'Expressionism'],
-            correct: 0,
-            explanation: 'Pointillism is the technique of using small dots of color to create an image, developed by Georges Seurat.'
-          }
+            question: 'Rostered hours maximum limit for intensive roster is .......',
+            options: ['24 hours', '36 hours', '45 hours', '60 hours'],
+            correct: 2,
+            explanation: '45 hours is the correct answer.'
+          },
+          {
+            question: 'Maximum amount of Retirement Gratuity payable to a Railway servant is .......',
+            options: ['10 Lakh', '15 Lakh', '20 Lakh', '25 Lakh'],
+            correct: 2,
+            explanation: '20 Lakh is the correct answer.'
+          },
+          {
+            question: 'Standard form to be used for order of suspension is .......',
+            options: ['SF1', 'SF2', 'SF5', 'SF11'],
+            correct: 2,
+            explanation: 'SF5 is the correct answer.'
+          },
+          {
+            question: 'Maternity leave permissible for a period of .......',
+            options: ['120 days', '180 days', '240 days', '300 days'],
+            correct: 1,
+            explanation: '180 days is the correct answer.'
+          },
+          {
+            question: 'For miscarriage, including abortion, what period of Maternity leave may be granted',
+            options: ['30 days', '40 days', '45 days', '60 days'],
+            correct: 2,
+            explanation: '45 days is the correct answer.'
+          },
+          {
+            question: 'From the date of confinement Paternity leave to be availed within.',
+            options: ['3 months', '6 months', '9 months', '12 months'],
+            correct: 1,
+            explanation: '6 months is the correct answer.'
+          },
+          
         ],
         '3': [
           {
-            question: 'Who painted "The Starry Night"?',
-            options: ['Vincent van Gogh', 'Claude Monet', 'Pablo Picasso', 'Salvador Dalí'],
-            correct: 0,
-            explanation: 'Vincent van Gogh painted "The Starry Night" while staying at the Saint-Paul-de-Mausole asylum.'
-          },
-          {
-            question: 'What is the most famous work by Leonardo da Vinci?',
-            options: ['The Last Supper', 'Mona Lisa', 'Vitruvian Man', 'The Annunciation'],
+            question: 'As per Hours of Employment Rule employees are classified into ... number of categories.',
+            options: ['3', '4', '5', '6'],
             correct: 1,
-            explanation: 'The Mona Lisa is Leonardo da Vinci\'s most famous work, known for its enigmatic smile.'
+            explanation: '4 is the correct answer.'
           },
           {
-            question: 'Which artist is known for his "Campbell\'s Soup Cans"?',
-            options: ['Andy Warhol', 'Roy Lichtenstein', 'Jasper Johns', 'Robert Rauschenberg'],
-            correct: 0,
-            explanation: 'Andy Warhol is famous for his "Campbell\'s Soup Cans" series, which became an icon of Pop Art.'
-          },
-          {
-            question: 'What is the technique of painting with water-soluble pigments called?',
-            options: ['Oil painting', 'Watercolor', 'Acrylic', 'Tempera'],
+            question: 'The Minimum pension as per VII PC pension scheme ....',
+            options: ['8500/-', '9000/-', '10500/-', '12000/-'],
             correct: 1,
-            explanation: 'Watercolor is the technique of painting with water-soluble pigments on paper or other absorbent surfaces.'
+            explanation: '9000/- is the correct answer.'
           },
           {
-            question: 'Who sculpted "The Thinker"?',
-            options: ['Auguste Rodin', 'Michelangelo', 'Donatello', 'Bernini'],
+            question: 'Maximum Composite transfer grant as per VII PC is equivalent to ....',
+            options: ['50%', '60%', '70%', '80%'],
+            correct: 3,
+            explanation: '80% is the correct answer.'
+          },
+          {
+            question: 'What is the statutory limit of hours of employment of Intensive Category employee in a week?',
+            options: ['45 hours', '54 hours', '60 hours', '72 hours'],
             correct: 0,
-            explanation: 'Auguste Rodin sculpted "The Thinker," originally part of his larger work "The Gates of Hell."'
-          }
+            explanation: '45 hours is the correct answer.'
+          },
+          {
+            question: 'Weekly Hours of duty including P&C of continuous category of employees is ...... hours.',
+            options: ['45', '54', '60', '72'],
+            correct: 1,
+            explanation: '54 hours is the correct answer.'
+          },
+          {
+            question: 'Waiting Room Bearer comes under ....  Classification',
+            options: ['Continuous', 'EI roster', 'Excluded', 'Intensive'],
+            correct: 1,
+            explanation: 'EI roster is the correct answer.'
+          },
+          {
+            question: 'In the case of Continuous category of employees more than .... hours of duty is Long on duty',
+            options: ['6', '8', '10', '12'],
+            correct: 2,
+            explanation: '10 is the correct answer.'
+          },
+          {
+            question: 'Weekly rest for Essentially Intermittent workers is .... hrs including a full night in bed',
+            options: ['22 consecutive hrs', '24 consecutive hrs', 'Not less than 30 consecutive hrs', 'Not less than 40 consecutive hrs'],
+            correct: 1,
+            explanation: '24 consecutive hrs is the correct answer.'
+          },
+          {
+            question: 'Within how many days Compensatory Off can be sanctioned?',
+            options: ['30', '45', '60', '90'],
+            correct: 0,
+            explanation: '30 is the correct answer.'
+          },
+          {
+            question: 'Rough Assessment Job Analysis is conducted for ....... hrs?',
+            options: ['8', '12', '18', '24'],
+            correct: 3,
+            explanation: '24 is the correct answer.'
+          },
+          
         ],
         '4': [
           {
-            question: 'What is the most famous painting by Claude Monet?',
-            options: ['Water Lilies', 'Impression, Sunrise', 'Haystacks', 'Rouen Cathedral'],
-            correct: 1,
-            explanation: 'Impression, Sunrise by Claude Monet gave the Impressionist movement its name.'
+            question: '33.  Appeal against classification of employment can be made to .......',
+            options: ['Branch Officer', 'DRM', 'General Manager', 'Regional Labour Commissioner'],
+            correct: 3,
+            explanation: 'Regional Labour Commissioner is the correct answer.'
           },
           {
-            question: 'Which artist is known for his "Drip Painting" technique?',
-            options: ['Jackson Pollock', 'Mark Rothko', 'Willem de Kooning', 'Franz Kline'],
+            question: 'The document which shows employee"s daily hours of duty, weekly rest and break between spells of duty besides other necessary particulars is called _______',
+            options: ['Attendance register', 'Duty Chart', 'Overtime Allowance Register', 'Roster'],
+            correct: 3,
+            explanation: 'Roster is the correct answer.'
+          },
+          {
+            question: 'At what rate OTA will be given if any employee works beyond Statutory Limits?',
+            options: ['At 2 times the pay', 'At 2½ times the pay', 'At 3 times the pay', 'At 4 times the pay'],
             correct: 0,
-            explanation: 'Jackson Pollock is famous for his "Drip Painting" technique, where he poured paint onto canvas.'
+            explanation: 'At 2 times the pay is the correct answer.'
           },
           {
-            question: 'What is the technique of carving into a surface to create an image called?',
-            options: ['Sculpture', 'Engraving', 'Etching', 'Relief'],
+            question: 'The Railway servants (Discipline & Appeal) Rules came into force on ......',
+            options: ['1966', '1968', '1972', '1978'],
             correct: 1,
-            explanation: 'Engraving is the technique of carving or incising a design into a hard surface.'
+            explanation: '1968 is the correct answer.'
           },
           {
-            question: 'Who painted "Guernica"?',
-            options: ['Pablo Picasso', 'Salvador Dalí', 'Joan Miró', 'Fernand Léger'],
+            question: '....... form is used for placing a Railway employee under suspenson',
+            options: ['SF1', 'SF2', 'SF3', 'SF5'],
             correct: 0,
-            explanation: 'Pablo Picasso painted "Guernica" as a response to the bombing of the Basque town during the Spanish Civil War.'
+            explanation: 'SF1 is the correct answer.'
           },
           {
-            question: 'What is the technique of using light and shadow to create depth called?',
-            options: ['Perspective', 'Chiaroscuro', 'Foreshortening', 'Sfumato'],
+            question: 'Rule No. ........ of The Railway servants (Discipline & Appeal) Rules deals with Penalties',
+            options: ['3', '4', '5', '6'],
+            correct: 3,
+            explanation: '6 is the correct answer.'
+          },
+          {
+            question: 'Rule No. 9 of The Railway servants (Discipline & Appeal) Rules deals with Procedure for imposing ...... penalty',
+            options: ['Major', 'Minor', 'Suspension', 'Revoke of Suspension'],
+            correct: 0,
+            explanation: 'Major is the correct answer.'
+          },
+          {
+            question: '....... equal to leave on half salary, will be drawn in case the employee is under suspension',
+            options: ['Dearness Allowance', 'Subsistence Allowance', 'Suspension Allowance', 'Travelling allowance'],
             correct: 1,
-            explanation: 'Chiaroscuro is the technique of using strong contrasts between light and dark to create depth and volume.'
-          }
+            explanation: 'Subsistence Allowance is the correct answer.'
+          },
+          {
+            question: 'As per rule 17 of DAR rules No appeal lies against any order of an ....... nature or of the nature of step in aid of the final disposal of a disciplinary proceedings',
+            options: ['Minor Penalty', 'Major Penalty', 'Interlocutory', 'None of the above'],
+            correct: 2,
+            explanation: 'Interlocutory is the correct answer.'
+          },
+          {
+            question: 'Rule 25 of the Railway servants (D & A) Rules deal with .....',
+            options: ['Appeal', 'Revision', 'Review', 'Witness'],
+            correct: 1,
+            explanation: 'Revision is the correct answer.'
+          },
+
         ],
         '5': [
           {
-            question: 'Who is known as the "Father of Modern Art"?',
-            options: ['Pablo Picasso', 'Paul Cézanne', 'Vincent van Gogh', 'Claude Monet'],
+            question: 'Rule 25A of the Railway servants (D & A) Rules deal with _________',
+            options: ['Appeal', 'Revision', 'Review', 'Witness'],
+            correct: 2,
+            explanation: 'Review is the correct answer.'
+          },
+          {
+            question: '...... form is used for nomination of Inquiry Officer',
+            options: ['SF1', 'SF2', 'SF5', 'SF7'],
+            correct: 3,
+            explanation: 'SF7 is the correct answer.'
+          },
+          {
+            question: 'Appeal shall be entertained unless preferred within .... days',
+            options: ['30', '45', '60', '90'],
             correct: 1,
-            explanation: 'Paul Cézanne is often called the "Father of Modern Art" for his influence on 20th-century art movements.'
+            explanation: '45 is the correct answer.'
           },
           {
-            question: 'What is the technique of painting on glass called?',
-            options: ['Stained glass', 'Glass painting', 'Vitreous painting', 'Enamel painting'],
-            correct: 0,
-            explanation: 'Stained glass is the technique of creating decorative windows by coloring glass with metallic oxides.'
+            question: 'Post Retirement Complimentary Pass are admissible to Railway Servant retired after putting in .... years of service.',
+            options: ['10', '15', '20', '25'],
+            correct: 2,
+            explanation: '20 is the correct answer.'
           },
           {
-            question: 'Which artist is known for his "Cut-Outs"?',
-            options: ['Henri Matisse', 'Pablo Picasso', 'Georges Braque', 'Fernand Léger'],
-            correct: 0,
-            explanation: 'Henri Matisse is famous for his "Cut-Outs," created by cutting shapes from colored paper.'
-          },
-          {
-            question: 'What is the technique of painting with egg yolk and pigment called?',
-            options: ['Oil painting', 'Tempera', 'Fresco', 'Encaustic'],
+            question: 'How many sets of P.T.O. are issued to the Railway employees?',
+            options: ['3 sets both for Gazetted and Non-Gazetted every year from the date of appointment', '4 sets both for Gazetted and Non-Gazetted every year from the date of appointment', '6 sets both for Gazetted and Non-Gazetted every year from the date of appointment', '6 sets for Gazetted and 4 sets for Non-Gazetted'],
             correct: 1,
-            explanation: 'Tempera is the technique of painting with pigments mixed with egg yolk, used before the invention of oil paint.'
+            explanation: '4 sets both for Gazetted and Non-Gazetted every year from the date of appointment'
           },
           {
-            question: 'Who painted "The Persistence of Memory"?',
-            options: ['Salvador Dalí', 'René Magritte', 'Max Ernst', 'Yves Tanguy'],
+            question: 'How many sets of School Pass issued to Railway employee?',
+            options: ['3 sets or 6 half sets per year', '4 sets or 6 half sets per year', '5 sets per year', '6 sets or 3 half sets per year.'],
             correct: 0,
-            explanation: 'Salvador Dalí painted "The Persistence of Memory," featuring melting clocks in a dreamlike landscape.'
-          }
+            explanation: '3 sets or 6 half sets per year is the correct answer.'
+          },
+          {
+            question: 'Irregularity for use of Passes may be condoned by ....',
+            options: ['CME', 'COM', 'CPO', 'GM'],
+            correct: 3,
+            explanation: 'GM is the correct answer.'
+          },
+          {
+            question: 'The colour of the First Class A Pass is .... in colour',
+            options: ['Green', 'Pink', 'White', 'Yellow'],
+            correct: 2,
+            explanation: 'White is the correct answer.'
+          },
+          {
+            question: 'When dependents are included in a Pass/PTO number persons entitled to be include in Pass/ PTO shall be ....',
+            options: ['All Family members + 2 dependents', 'Any number of Family members + 3dependents', '5 member’s only', '6 members only'],
+            correct: 2,
+            explanation: '5 member’s only is the correct answer.'
+          },
+          {
+            question: 'How many sets of PTOs is/ are a license Holder coolie is entitled in a calendar year?',
+            options: ['One (IInd/Sleeper)', 'Two(IInd/Sleeper)', 'Three(IInd/Sleeper)', 'Nil'],
+            correct: 1,
+            explanation: 'Two(IInd/Sleeper) is the correct answer.'
+          },
+          
         ]
       }
     },
