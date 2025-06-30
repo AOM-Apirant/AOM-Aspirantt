@@ -1465,7 +1465,7 @@ export const allQuizzes = {
       }
     },
   
-    // Art & Culture Category - Multiple separate quizzes
+    // Personnel Department Category - Multiple separate quizzes
     'personnel': {
       title: 'Personnel Department',
       description: 'Learn about famous artists and cultural works',
@@ -1474,35 +1474,66 @@ export const allQuizzes = {
       quizzes: {
         '1': [
           {
-            question: 'Who painted the Mona Lisa?',
-            options: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
-            correct: 1,
-            explanation: 'Leonardo da Vinci painted the Mona Lisa, one of the most famous paintings in the world.'
-          },
-          {
-            question: 'What is the primary color that is not a primary color of light?',
-            options: ['Red', 'Blue', 'Yellow', 'Green'],
-            correct: 2,
-            explanation: 'Yellow is a primary color in painting but not in light. The primary colors of light are red, blue, and green.'
-          },
-          {
-            question: 'Which art movement was characterized by bright colors and bold brushstrokes?',
-            options: ['Impressionism', 'Cubism', 'Surrealism', 'Renaissance'],
+            question: 'Running staff are classified as .......',
+            options: ['Continuous', 'EI roster', 'Excluded', 'Intensive'],
             correct: 0,
-            explanation: 'Impressionism was characterized by bright colors, bold brushstrokes, and capturing the effects of light.'
+            explanation: 'Continuous is the correct answer.'
           },
           {
-            question: 'What is the technique of painting on wet plaster called?',
-            options: ['Oil painting', 'Watercolor', 'Fresco', 'Acrylic'],
-            correct: 2,
-            explanation: 'Fresco is the technique of painting on wet plaster, commonly used in Renaissance art.'
-          },
-          {
-            question: 'Who is known for cutting off his own ear?',
-            options: ['Pablo Picasso', 'Vincent van Gogh', 'Salvador Dalí', 'Claude Monet'],
+            question: 'Eligibility criteria of Grade pay for availing First class pass as per 7th Pay Commission.',
+            options: ['Level V & above', 'Level VI & above', 'Level VII & above', 'None of the above'],
             correct: 1,
-            explanation: 'Vincent van Gogh is famously known for cutting off his own ear during a period of mental illness.'
-          }
+            explanation: 'Level VI & above is the correct answer.'
+          },
+          {
+            question: 'Standard form to be used for issuing Major Penalty is .......',
+            options: ['SF1', 'SF5', 'SF11', 'None of the abve'],
+            correct: 1,
+            explanation: 'SF5 is the correct answer.'
+          },
+          {
+            question: 'Standard form to be used for issuing Minor Penalty is .......',
+            options: ['SF1', 'SF5', 'SF11', 'None of the abve'],
+            correct: 2,
+            explanation: 'SF11 is the correct answer.'
+          },
+          {
+            question: 'How many days of LAP in a calendar year, a permanent/ Temporary Railway servant shall be entitled to get?',
+            options: ['15', '20', '25', '30'],
+            correct: 3,
+            explanation: '30 is the correct answer.'
+          },
+          {
+            question: 'How many days of LHAP in a calendar year, can be credited to an employee?',
+            options: ['15', '20', '25', '30'],
+            correct: 1,
+            explanation: '20 is the correct answer.'
+          },
+          {
+            question: 'Maximum days of leave on average pay that can be accumulated is .......',
+            options: ['120', '180', '240', '300'],
+            correct: 3,
+            explanation: '300 is the correct answer.'
+          },
+          {
+            question: 'How many days of LHAP can be accumulated to an employee in his service life?',
+            options: ['300', '450', '600', 'Unlimited'],
+            correct: 3,
+            explanation: 'Unlimited is the correct answer.'
+          },
+          {
+            question: 'Maximum encashment of leave on average pay is .......',
+            options: ['30', '60', '90', '180'],
+            correct: 1,
+            explanation: '60 is the correct answer.'
+          },
+          {
+            question: 'Maximum period of leave on Average pay at a time that a railway servant may be granted.',
+            options: ['120', '150', '180', '300'],
+            correct: 2,
+            explanation: '180 is the correct answer.'
+          },
+          
         ],
         '2': [
           {
