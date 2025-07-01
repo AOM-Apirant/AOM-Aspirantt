@@ -27,10 +27,11 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Registration error:", error);
 
-    if (error.message === "User with this email already exists") {
+    // Type-safe error handling
+    if (error instanceof Error && error.message === "User with this email already exists") {
       return NextResponse.json(
         { error: "User with this email already exists" },
         { status: 409 }

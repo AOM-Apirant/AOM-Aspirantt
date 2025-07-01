@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
 
 // Type definitions for global mongoose caching
+// eslint-disable-next-line no-var
 declare global {
+  // eslint-disable-next-line no-var
   var mongoose:
     | {
         conn: typeof mongoose | null;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        promise: any;
+        promise: Promise<typeof mongoose> | null;
       }
     | undefined;
 }
@@ -17,30 +18,27 @@ if (!MONGODB_URI) {
   throw new Error("Please define the MONGODB_URI environment variable");
 }
 
-let cached = global.mongoose;
+let cached: {
+  conn: typeof mongoose | null;
+  promise: Promise<typeof mongoose> | null;
+} = global.mongoose || { conn: null, promise: null };
 
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null };
-}
+global.mongoose = cached;
 
 async function connectDB() {
-  if (cached!.conn) {
-    return cached!.conn;
+  if (cached.conn) {
+    return cached.conn;
   }
 
-  if (!cached!.promise) {
+  if (!cached.promise) {
     const opts = {
       bufferCommands: false,
     };
-
-    cached!.promise = mongoose.connect(MONGODB_URI, opts) as Promise<
-      typeof mongoose
-    >;
+    cached.promise = mongoose.connect(MONGODB_URI, opts);
   }
 
-  const mongooseInstance = await cached!.promise;
-  cached!.conn = mongooseInstance;
-  return cached!.conn;
+  cached.conn = await cached.promise;
+  return cached.conn;
 }
 
 export default connectDB;
