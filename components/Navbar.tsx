@@ -59,8 +59,8 @@ export default function Navbar() {
         <div className="container mx-auto mobile-container py-3">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 group" onClick={scrollToTop}>
-              <span className="text-base sm:text-lg lg:text-xl font-bold text-white bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text group-hover:border-white/60 transition-all duration-300">
+            <Link href="/" className="flex items-center space-x-1 group" onClick={scrollToTop}>
+              <span className="text-base sm:text-lg lg:text-xl font-bold text-white bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text group-hover:border-white/60 transition-all duration-300 animate-pulse">
                 AOM
               </span>
               <span className="text-base sm:text-lg lg:text-xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
@@ -138,14 +138,14 @@ export default function Navbar() {
               {session ? (
                 <button
                   onClick={handleSignOut}
-                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-2 rounded-lg font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 touch-button text-sm lg:text-base"
+                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 touch-button text-sm lg:text-base"
                 >
                   Logout
                 </button>
               ) : (
                 <Link
                   href="/"
-                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-2 rounded-lg font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 touch-button text-sm lg:text-base"
+                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 touch-button text-sm lg:text-base"
                 >
                   Login
                 </Link>
@@ -155,11 +155,11 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-2 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-200 touch-button"
+              className="md:hidden p-2 rounded-md bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-200 touch-button"
               aria-label="Toggle menu"
             >
               <svg
-                className="w-6 h-6"
+                className="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -302,9 +302,9 @@ export default function Navbar() {
                         console.log('No session found');
                       }
                     }}
-                    className="w-full flex items-center space-x-3 text-white font-medium py-3 px-4 rounded-xl bg-red-500/20 hover:bg-red-500/30 transition-all duration-300 border border-red-400/30 hover:border-red-400/50 touch-button"
+                    className="w-full flex items-center space-x-3 text-white font-medium py-3 px-4 rounded-lg bg-red-500/20 hover:bg-red-500/30 transition-all duration-300 border border-red-400/30 hover:border-red-400/50 touch-button"
                   >
-                    <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 bg-red-500 rounded-md flex items-center justify-center">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                       </svg>
