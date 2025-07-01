@@ -5,6 +5,13 @@ import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
+// const cached: {
+//   conn: typeof mongoose | null;
+//   promise: Promise<typeof mongoose> | null;
+// } = (global as any).mongoose || { conn: null, promise: null };
+
+// (global as any).mongoose = cached;
+
 export default function Home() {
   const { data: session } = useSession();
   const [isLoaded, setIsLoaded] = useState(false);
