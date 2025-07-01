@@ -1,6 +1,6 @@
 # AOM Aspirant
 
-A comprehensive learning platform for AOM (Assistant Operations Manager) aspirants. Master concepts, ace quizzes, and track your progress.
+Your ultimate learning companion for AOM preparation. Master concepts, ace quizzes, and track your progress.
 
 ## Features
 
@@ -10,6 +10,9 @@ A comprehensive learning platform for AOM (Assistant Operations Manager) aspiran
 - 👤 **User Authentication**: Secure login with Google OAuth
 - 📧 **Contact Form**: Get in touch with email notifications
 - 📱 **Mobile Responsive**: Works perfectly on all devices
+- **Smart Quizzes**: AI-powered adaptive learning with instant feedback
+- **Premium Resources**: Curated study materials and expert notes
+- **Advanced Analytics**: Detailed insights into your learning journey
 
 ## Getting Started
 
@@ -118,33 +121,21 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ## Tech Stack
 
-- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
 - **Backend**: Next.js API Routes, MongoDB, Mongoose
 - **Authentication**: NextAuth.js, Google OAuth
 - **Email**: Nodemailer, Gmail SMTP
 - **Database**: MongoDB Atlas
 - **Styling**: Tailwind CSS, Lucide Icons
+- **Deployment**: Vercel
 
 ## Deployment
 
-### Vercel (Recommended)
+This project is deployed on Vercel with automatic deployments from GitHub.
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Add environment variables in Vercel dashboard
-4. Deploy!
+---
 
-### Environment Variables for Production
-
-Make sure to update these in your deployment platform:
-
-- `EMAIL_USER` - Your Gmail address
-- `EMAIL_PASS` - Gmail App Password
-- `MONGODB_URI` - MongoDB Atlas connection string
-- `NEXTAUTH_SECRET` - Random secret string
-- `NEXTAUTH_URL` - Your production URL
-- `GOOGLE_CLIENT_ID` - Google OAuth Client ID
-- `GOOGLE_CLIENT_SECRET` - Google OAuth Client Secret
+_Last updated: December 2024_
 
 ## Contributing
 
