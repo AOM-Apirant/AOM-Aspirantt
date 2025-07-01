@@ -2,6 +2,7 @@
   "name": "aom-aspirant",
   "version": "0.1.0",
   "private": true,
+  "description": "AOM Aspirant - Your ultimate learning companion for AOM preparation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
