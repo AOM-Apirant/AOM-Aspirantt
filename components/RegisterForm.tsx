@@ -69,7 +69,23 @@ export default function RegisterForm() {
 
   return (
     <div className="w-full">
-      {/* <h2 className="font-bold mb-4 text-center text-gray-800">Create Account</h2> */}
+      {/* Beautiful Header */}
+      <div className="text-center mb-8">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-blue-600 rounded-full shadow-lg mb-4 animate-float animate-glow">
+          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+          </svg>
+        </div>
+        <h1 className="text-4xl font-extrabold bg-gradient-to-r from-green-600 via-blue-600 to-green-800 bg-clip-text text-transparent mb-3 tracking-tight">
+          AOM Aspirant
+        </h1>
+        <p className="text-gray-700 text-xl font-semibold italic">
+          Your gateway to AOM excellence
+        </p>
+        <div className="mt-6 flex justify-center">
+          <div className="w-24 h-1.5 bg-gradient-to-r from-green-500 via-blue-500 to-green-600 rounded-full shadow-sm"></div>
+        </div>
+      </div>
       
       {error && (
         <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl animate-fade-in-up">

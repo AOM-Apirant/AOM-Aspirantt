@@ -20,10 +20,6 @@ export default function Home() {
         <div className="flex items-center justify-center min-h-screen p-4">
           <div className={`w-full max-w-md transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
-              <div className="text-center mb-6">
-                <h1 className="text-2xl font-bold text-gray-900 mb-2">AOM Aspirant</h1>
-                <p className="text-gray-600">Your gateway to AOM excellence</p>
-              </div>
               <AuthForm />
             </div>
           </div>

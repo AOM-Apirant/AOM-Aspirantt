@@ -17,6 +17,15 @@ export default function LoginForm() {
     e.preventDefault();
     setError('');
     setIsLoading(true);
+    
+    // Add shake animation to form if there's an error
+    const form = e.currentTarget as HTMLFormElement;
+    if (form) {
+      form.classList.add('animate-shake');
+      setTimeout(() => {
+        form.classList.remove('animate-shake');
+      }, 600);
+    }
 
     try {
       loginSchema.parse({ email, password });
@@ -27,9 +36,16 @@ export default function LoginForm() {
       });
 
       if (result?.error) {
-        setError(result.error);
-      } else {
+        // Handle NextAuth errors
+        if (result.error === "CredentialsSignin") {
+          setError("Please sign up or enter correct email and password or Sign up with Google to continue");
+        } else {
+          setError("Please sign up or enter correct email and password or Sign up with Google to continue");
+        }
+      } else if (result?.ok) {
         router.push('/quiz');
+      } else {
+        setError("Please sign up or enter correct email and password or Sign up with Google to continue");
       }
     } catch (err) {
       if (err instanceof z.ZodError) {
@@ -46,11 +62,65 @@ export default function LoginForm() {
 
   return (
     <div className="w-full">
-      {/* <h2 className="font-bold mb-4 text-center text-gray-800">Welcome Back</h2> */}
+      {/* Beautiful Header */}
+      <div className="text-center mb-8">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full shadow-lg mb-4 animate-float animate-glow">
+          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+        </div>
+        <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-3 tracking-tight">
+          AOM Aspirant
+        </h1>
+        <p className="text-gray-700 text-xl font-semibold italic">
+          Your gateway to AOM excellence
+        </p>
+        <div className="mt-6 flex justify-center">
+          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-600 rounded-full shadow-sm"></div>
+        </div>
+      </div>
       
       {error && (
-        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl animate-fade-in-up">
-          <p className="text-red-600 mobile-text font-medium">{error}</p>
+        <div className="mb-6 p-6 bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl shadow-lg animate-bounce-in relative overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-400 to-orange-400"></div>
+          <div className="absolute top-2 right-2 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+            <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+            </svg>
+          </div>
+          
+          <div className="flex items-start space-x-4">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-red-800 mb-3 flex items-center">
+                <span className="mr-2">🔐</span>
+                Authentication Required
+              </h3>
+              <p className="text-red-700 leading-relaxed text-base mb-4">{error}</p>
+              <div className="flex flex-wrap gap-3">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-red-100 to-red-200 text-red-800 shadow-sm border border-red-200">
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd" />
+                  </svg>
+                  Sign Up Required
+                </span>
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-orange-100 to-orange-200 text-orange-800 shadow-sm border border-orange-200">
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                  Google Sign In Available
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       )}
       

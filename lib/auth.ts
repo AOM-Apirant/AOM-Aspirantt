@@ -19,29 +19,31 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
-          throw new Error("Email and password are required");
+          return null;
         }
 
-        await connectDB();
-        const user = await User.findOne({ email: credentials.email });
-        if (!user) {
-          throw new Error("No user found with this email");
-        }
-
-        if (user.password) {
-          const isValid = await bcrypt.compare(
-            credentials.password as string,
-            user.password as string
-          );
-          if (!isValid) {
-            throw new Error("Invalid password");
+        try {
+          await connectDB();
+          const user = await User.findOne({ email: credentials.email });
+          if (!user) {
+            return null;
           }
-        } else {
-          throw new Error(
-            "This account was created with Google. Please sign in with Google."
-          );
+
+          if (user.password) {
+            const isValid = await bcrypt.compare(
+              credentials.password as string,
+              user.password as string
+            );
+            if (!isValid) {
+              return null;
+            }
+          } else {
+            return null;
+          }
+          return { id: user._id.toString(), name: user.name, email: user.email };
+        } catch (error) {
+          return null;
         }
-        return { id: user._id.toString(), name: user.name, email: user.email };
       },
     }),
   ],
@@ -92,6 +94,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   },
   pages: {
     signIn: "/",
+    error: "/",
   },
 });
 
