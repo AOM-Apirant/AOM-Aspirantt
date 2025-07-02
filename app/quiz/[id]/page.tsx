@@ -214,7 +214,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
                 onClick={() => router.push('/quiz')}
-                className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-200 font-medium shadow-lg hover:shadow-xl text-sm sm:text-base"
+                className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full sm:rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-200 font-medium shadow-lg hover:shadow-xl text-sm sm:text-base"
               >
                 <div className="flex items-center justify-center">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -226,7 +226,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
               {hasMoreQuizzes ? (
                 <button
                   onClick={handleNextQuiz}
-                  className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-200 font-medium shadow-lg hover:shadow-xl text-sm sm:text-base"
+                  className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full sm:rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-200 font-medium shadow-lg hover:shadow-xl text-sm sm:text-base"
                 >
                   <div className="flex items-center justify-center">
                     Next Quiz
@@ -252,7 +252,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
           </div>
 
           {/* Question Review Section */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8">
+          <div className="bg-white rounded-xl shadow-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Question Review</h3>
             <div className="space-y-4">
               {questions.map((question, index) => {
@@ -302,17 +302,17 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
 
           {/* More Quizzes Section - Show remaining quizzes in the same category */}
           {hasMoreQuizzes && (
-            <div className="bg-white rounded-3xl shadow-2xl p-8 mt-8">
+            <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Continue Learning</h3>
               <p className="text-gray-600 text-center mb-8">Ready for your next challenge? Try these remaining quizzes!</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {quizIds.slice(currentIndex + 1).map((quizId) => (
-                  <div key={quizId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-xl flex items-center justify-center mb-4`}>
+                  <div key={quizId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border border-gray-400 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                    <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center mb-4`}>
                       <span className="text-white text-lg font-bold">{quizId}</span>
                     </div>
-                    <h4 className="text-lg font-bold text-gray-800 mb-2">{categoryData.title} Quiz {quizId}</h4>
+                    <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz {quizId}</h4>
                     <p className="text-gray-600 text-sm mb-4">{categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length} Questions</p>
                     <button 
                       onClick={() => {
@@ -323,7 +323,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                         setShowResults(false);
                         setQuizStartTime(Date.now()); // Reset quiz start time for new quiz
                       }}
-                      className={`w-full bg-gradient-to-r ${categoryData.color} text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl`}
+                      className={`w-full bg-gradient-to-r ${categoryData.color} text-white py-2 sm:py-2 px-4 sm:px-6 rounded-full font-medium transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl`}
                     >
                       <span>Start Quiz</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -337,7 +337,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
               <div className="text-center mt-8">
                 <Link 
                   href="/quiz"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-xl font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -349,7 +349,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
           )}
 
           {/* Other Categories Section */}
-          <div className="bg-white rounded-3xl shadow-2xl p-8 mt-8">
+          <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Explore Other Categories</h3>
             <p className="text-gray-600 text-center mb-8">Ready to try something different? Explore these categories!</p>
             
@@ -358,15 +358,15 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 if (categoryId === id) return null; // Skip current category
                 
                 return (
-                  <div key={categoryId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${category.color} rounded-xl flex items-center justify-center mb-4`}>
+                  <div key={categoryId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border border-gray-400 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                    <div className={`w-12 h-12 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center mb-4`}>
                       <span className="text-white text-2xl">{categoryIcons[categoryId] || '🧠'}</span>
                     </div>
                     <h4 className="text-lg font-bold text-gray-800 mb-2">{category.title}</h4>
                     <p className="text-gray-600 text-sm mb-4">{category.description}</p>
                     <Link 
                       href={`/quiz/${categoryId}`}
-                      className={`w-full bg-gradient-to-r ${category.color} text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl`}
+                      className={`w-full bg-gradient-to-r ${category.color} text-white py-2 px-4 rounded-full font-medium transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl`}
                     >
                       <span>Start Category</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -381,7 +381,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
             <div className="text-center mt-8">
               <Link 
                 href="/quiz"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-xl font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -441,7 +441,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
               {currentQ.options.map((option, index) => {
                 const isSelected = selectedAnswer === index;
                 const isCorrectAnswer = index === currentQ.correct;
-                let optionClasses = 'w-full text-left p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 transition-all duration-200 flex items-center justify-between group';
+                let optionClasses = 'w-full text-left p-2.5 sm:p-3.5 rounded-md sm:rounded-lg border-2 transition-all duration-200 flex items-center justify-between group';
                 
                 if (isSelected) {
                   if (isCorrectAnswer) {
@@ -452,7 +452,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 } else if (showExplanation && isCorrectAnswer) {
                   optionClasses += ' border-green-500 bg-green-50 text-green-700 shadow-md';
                 } else {
-                  optionClasses += ' border-gray-200 hover:border-blue-300 hover:bg-blue-50 hover:shadow-sm';
+                  optionClasses += ' border-gray-300 hover:border-blue-300 hover:bg-blue-50 hover:shadow-sm';
                 }
 
                 return (
@@ -510,14 +510,14 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
 
           {/* Explanation */}
           {showExplanation && (
-            <div className={`mb-4 sm:mb-6 p-3 sm:p-4 rounded-lg sm:rounded-xl border-l-4 ${
+            <div className={`mb-4 sm:mb-6 p-3 sm:p-4 rounded-md sm:rounded-lg border-1 ${
               isCorrect 
                 ? 'bg-green-50 border-green-500 text-green-700' 
-                : 'bg-red-50 border-red-500 text-red-700'
+                : 'bg-red-50 border-rose-500 text-rose-700'
             }`}>
               <div className="flex items-start">
                 <div className={`w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 ${
-                  isCorrect ? 'bg-green-500' : 'bg-red-500'
+                  isCorrect ? 'bg-green-500' : 'bg-rose-600'
                 }`}>
                   {isCorrect ? (
                     <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -548,7 +548,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 }
               }}
               disabled={currentQuestion === 0}
-              className="px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 text-gray-700 rounded-lg sm:rounded-xl hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium flex items-center text-sm sm:text-base"
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 text-gray-700 rounded-md sm:rounded-lg border border-gray-400 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium flex items-center text-sm sm:text-base"
             >
               <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -559,7 +559,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
             <button
               onClick={handleNext}
               disabled={selectedAnswer === null}
-              className="px-6 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg sm:rounded-xl hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium shadow-lg hover:shadow-xl flex items-center text-sm sm:text-base"
+              className="px-6 sm:px-8 py-2 sm:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-md sm:rounded-lg hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium shadow-lg hover:shadow-xl flex items-center text-sm sm:text-base"
             >
               {currentQuestion === questions.length - 1 ? 'Finish Quiz' : 'Next Question'}
               <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

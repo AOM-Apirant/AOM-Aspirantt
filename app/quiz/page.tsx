@@ -44,8 +44,8 @@ export default function Quiz() {
       title: 'Commercial Department',
       description: 'Discover commercial facts with various topics',
       icon: '💰',
-      color: 'from-red-500 to-red-600',
-      hoverColor: 'from-red-600 to-red-700',
+      color: 'from-purple-500 to-purple-600',
+      hoverColor: 'from-purple-600 to-purple-700',
       quizzes: Object.keys(allQuizzes.commercial.quizzes).length
     },
     {
@@ -62,8 +62,8 @@ export default function Quiz() {
       title: 'Operating Manual',
       description: 'Test your operating manual with various topics',
       icon: '📖',
-      color: 'from-blue-500 to-blue-600',
-      hoverColor: 'from-blue-600 to-blue-700',
+      color: 'from-teal-500 to-teal-600',
+      hoverColor: 'from-teal-600 to-teal-700',
       quizzes: Object.keys(allQuizzes['operating-manual'].quizzes).length
     },
     {
@@ -71,8 +71,8 @@ export default function Quiz() {
       title: 'Accident Manual',
       description: 'Explore accident manual with various topics',
       icon: '🚨',
-      color: 'from-green-500 to-green-600',
-      hoverColor: 'from-green-600 to-green-700',
+      color: 'from-indigo-500 to-indigo-600',
+      hoverColor: 'from-indigo-600 to-indigo-700',
       quizzes: Object.keys(allQuizzes['accident-manual'].quizzes).length
     },
     {
@@ -80,8 +80,8 @@ export default function Quiz() {
       title: 'Block Working Manual',
       description: 'Discover block working manual with various topics',
       icon: '🛤️',
-      color: 'from-red-500 to-red-600',
-      hoverColor: 'from-red-600 to-red-700',
+      color: 'from-cyan-500 to-cyan-600',
+      hoverColor: 'from-cyan-600 to-cyan-700',
       quizzes: Object.keys(allQuizzes.bwm.quizzes).length
     },
     {
@@ -229,7 +229,7 @@ export default function Quiz() {
                         <button 
                           onClick={() => handleCategoryClick(category.id)}
                           disabled={loadingCategory === category.id}
-                          className={`w-full bg-gradient-to-r ${category.hoverColor} text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg sm:rounded-xl text-sm sm:text-base lg:text-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg group-hover:shadow-xl ${
+                          className={`w-full bg-gradient-to-r ${category.hoverColor} text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full sm:rounded-full text-sm sm:text-base lg:text-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg group-hover:shadow-xl ${
                             loadingCategory === category.id ? 'opacity-75 cursor-not-allowed' : 'hover:scale-105'
                           }`}
                         >

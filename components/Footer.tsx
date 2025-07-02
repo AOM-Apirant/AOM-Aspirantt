@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-md flex items-center justify-center shadow-lg">
+              <svg className="w-5 h-5 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -24,11 +24,11 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-gray-300 text-sm">
-               AOM Aspirant © {new Date().getFullYear()}. All rights reserved.
+               AOM Aspirant Copyright © {new Date().getFullYear()}. All rights reserved.
             </p>
-            <p className="text-gray-500 text-xs mt-1 flex items-center justify-center md:justify-end space-x-1">
+            <p className="text-gray-400 text-xs mt-1 flex items-center justify-center md:justify-end space-x-1">
               <span>Made with</span>
-              <span className="text-rose-500 animate-pulse">❤️</span>
+              <span className="text-rose-600 animate-pulse">❤️</span>
               <span>for Aspirants</span>
             </p>
           </div>

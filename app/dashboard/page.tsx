@@ -265,9 +265,9 @@ export default function Dashboard() {
             </p>
             <Link
               href="/quiz"
-              className="inline-block bg-white text-blue-600 py-3 sm:py-4 px-6 sm:px-8 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base"
+              className="inline-block bg-white text-blue-600 py-2 sm:py-3 px-6 sm:px-8 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base"
             >
-              Start Learning Now
+              Start Learning Now 
             </Link>
           </div>
         </div>
