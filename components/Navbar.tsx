@@ -53,11 +53,11 @@ export default function Navbar() {
   return (
     <>
       {isLoading && <Loader />}
-      <nav className={`fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 text-white shadow-lg border-b border-blue-500/20 z-50 transition-all duration-300 ${
+      <nav className={`fixed top-0 left-0 right-0 h-16 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 text-white shadow-lg border-b border-blue-500/20 z-50 transition-all duration-300 ${
         isScrolled ? 'backdrop-blur-md bg-opacity-95' : 'bg-opacity-100'
       }`}>
-        <div className="container mx-auto mobile-container py-3">
-          <div className="flex justify-between items-center">
+        <div className="container mx-auto mobile-container h-full py-3">
+          <div className="flex justify-between items-center h-full">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-1 group" onClick={scrollToTop}>
               <span className="text-base sm:text-lg lg:text-xl font-bold text-white bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text group-hover:border-white/60 transition-all duration-300 animate-pulse">

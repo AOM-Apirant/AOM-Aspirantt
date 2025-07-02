@@ -4,8 +4,8 @@ import { SessionProvider } from 'next-auth/react';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'AOM Aspirant - Quiz App',
-  description: 'A modern quiz application for AOM aspirants with Next.js and TypeScript',
+  title: 'AOM Aspirant',
+  description: 'AOM Aspirant',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 };
 
