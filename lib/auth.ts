@@ -40,8 +40,12 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           } else {
             return null;
           }
-          return { id: user._id.toString(), name: user.name, email: user.email };
-        } catch (error) {
+          return {
+            id: user._id.toString(),
+            name: user.name,
+            email: user.email,
+          };
+        } catch {
           return null;
         }
       },
