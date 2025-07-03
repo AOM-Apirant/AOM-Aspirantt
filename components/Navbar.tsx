@@ -92,6 +92,13 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
               </button>
               <button 
+                onClick={() => handleNavigation('/definitions')}
+                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
+              >
+                Definitions
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+              </button>
+              <button 
                 onClick={() => handleNavigation('/notes')}
                 className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
               >
@@ -225,6 +232,18 @@ export default function Navbar() {
                       </svg>
                     </div>
                     <span className="text-base">Abbreviations</span>
+                  </button>
+                  
+                  <button 
+                    onClick={() => handleNavigation('/definitions')}
+                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                  >
+                    <div className="w-9 h-9 bg-gradient-to-r from-orange-400 to-orange-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <span className="text-base">Definitions</span>
                   </button>
                   
                   <button 
