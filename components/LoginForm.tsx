@@ -72,7 +72,7 @@ export default function LoginForm() {
         <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-3 tracking-tight">
           AOM Aspirant
         </h1>
-        <p className="text-gray-700 text-xl font-semibold italic">
+        <p className="text-gray-700 text-xl font-medium italic">
           Your gateway to become AOM
         </p>
         <div className="mt-6 flex justify-center">

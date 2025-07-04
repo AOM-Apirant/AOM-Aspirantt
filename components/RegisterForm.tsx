@@ -79,7 +79,7 @@ export default function RegisterForm() {
         <h1 className="text-4xl font-extrabold bg-gradient-to-r from-green-600 via-blue-600 to-green-800 bg-clip-text text-transparent mb-3 tracking-tight">
           AOM Aspirant
         </h1>
-        <p className="text-gray-700 text-xl font-semibold italic">
+        <p className="text-gray-700 text-xl font-medium italic">
           Your gateway to become AOM
         </p>
         <div className="mt-6 flex justify-center">
