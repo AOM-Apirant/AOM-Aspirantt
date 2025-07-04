@@ -60,10 +60,10 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-full">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-1 group" onClick={scrollToTop}>
-              <span className="text-base sm:text-lg lg:text-xl font-bold text-white bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text group-hover:border-white/60 transition-all duration-300 animate-pulse">
+              <span className="text-base sm:text-xl lg:text-2xl font-bold text-white bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text group-hover:border-white/60 transition-all duration-300 animate-pulse">
                 AOM
               </span>
-              <span className="text-base sm:text-lg lg:text-xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+              <span className="text-base sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
                 Aspirant
               </span>
             </Link>
