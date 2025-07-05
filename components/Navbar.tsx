@@ -12,6 +12,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isNotesDropdownOpen, setIsNotesDropdownOpen] = useState(false);
+  const [isMobileNotesOpen, setIsMobileNotesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,9 +48,22 @@ export default function Navbar() {
     setIsLoading(true);
     router.push(href);
     setIsMenuOpen(false);
+    setIsNotesDropdownOpen(false);
+    setIsMobileNotesOpen(false);
     // Reset loading after a short delay to show the spinner
     setTimeout(() => setIsLoading(false), 500);
   };
+
+  const notesPages = [
+    { name: 'Accident Manual', href: '/accident', icon: '🚨' },
+    { name: 'Accounts', href: '/accounts', icon: '💰' },
+    { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
+    { name: 'Commercial', href: '/commercial', icon: '🏢' },
+    { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
+    { name: 'Operating', href: '/operating', icon: '⚙️' },
+    { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
+    { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' }
+  ];
 
   return (
     <>
@@ -98,13 +113,62 @@ export default function Navbar() {
                 Definitions
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
               </button>
-              <button 
-                onClick={() => handleNavigation('/notes')}
-                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
-              >
-                Notes
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
-              </button>
+              
+              {/* Notes Dropdown */}
+              <div className="relative group">
+                <button 
+                  onMouseEnter={() => setIsNotesDropdownOpen(true)}
+                  onMouseLeave={() => setIsNotesDropdownOpen(false)}
+                  className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base flex items-center space-x-1"
+                >
+                  Study Notes
+                  <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+                </button>
+                
+                {/* Enhanced Dropdown Menu */}
+                {isNotesDropdownOpen && (
+                  <div 
+                    onMouseEnter={() => setIsNotesDropdownOpen(true)}
+                    onMouseLeave={() => setIsNotesDropdownOpen(false)}
+                    className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-br from-white/95 via-blue-50/95 to-purple-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                  >
+                    <div className="px-4 py-2 border-b border-gray-200/50">
+                      <h3 className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                        Study Notes
+                      </h3>
+                      <p className="text-xs text-gray-500 mt-1">Select a topic to explore</p>
+                    </div>
+                    <div className="py-2">
+                      {notesPages.map((page) => (
+                        <button
+                          key={page.href}
+                          onClick={() => handleNavigation(page.href)}
+                          className="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-200 text-sm group"
+                        >
+                          <span className="text-lg group-hover:scale-110 transition-transform duration-200">
+                            {page.icon}
+                          </span>
+                          <span className="font-medium">{page.name}</span>
+                          <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                    <div className="px-4 py-2 border-t border-gray-200/50">
+                      <div className="text-xs text-gray-500 text-center">
+                        📚 Comprehensive study materials
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              
               <button 
                 onClick={() => handleNavigation('/pdfs')}
                 className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
@@ -246,17 +310,56 @@ export default function Navbar() {
                     <span className="text-base">Definitions</span>
                   </button>
                   
-                  <button 
-                    onClick={() => handleNavigation('/notes')}
-                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
-                  >
-                    <div className="w-9 h-9 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  {/* Enhanced Mobile Notes Section */}
+                  <div className="space-y-2">
+                    <button 
+                      onClick={() => setIsMobileNotesOpen(!isMobileNotesOpen)}
+                      className="w-full flex items-center justify-between text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                    >
+                      <div className="flex items-center space-x-4">
+                        <div className="w-9 h-9 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                        </div>
+                        <span className="text-base">Notes</span>
+                      </div>
+                      <svg 
+                        className={`w-5 h-5 transition-transform duration-300 ${isMobileNotesOpen ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
+                    </button>
+                    
+                    {/* Animated Notes Submenu */}
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      isMobileNotesOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-3 border border-white/10">
+                        {notesPages.map((page, index) => (
+                          <button 
+                            key={page.href}
+                            onClick={() => handleNavigation(page.href)}
+                            className="w-full flex items-center space-x-3 text-white/90 hover:text-white font-medium transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/15 touch-button group transform hover:scale-[1.02]"
+                            style={{ animationDelay: `${index * 50}ms` }}
+                          >
+                            <div className="w-8 h-8 bg-gradient-to-r from-yellow-400/30 to-yellow-500/30 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <span className="text-sm">{page.icon}</span>
+                            </div>
+                            <span className="text-sm font-medium">{page.name}</span>
+                            <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                              <svg className="w-4 h-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                    <span className="text-base">Notes</span>
-                  </button>
+                  </div>
                   
                   <button 
                     onClick={() => handleNavigation('/pdfs')}
