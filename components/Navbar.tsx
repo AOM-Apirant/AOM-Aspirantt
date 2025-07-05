@@ -14,6 +14,8 @@ export default function Navbar() {
   const [isLoading, setIsLoading] = useState(false);
   const [isNotesDropdownOpen, setIsNotesDropdownOpen] = useState(false);
   const [isMobileNotesOpen, setIsMobileNotesOpen] = useState(false);
+  const [isPdfsDropdownOpen, setIsPdfsDropdownOpen] = useState(false);
+  const [isMobilePdfsOpen, setIsMobilePdfsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +52,8 @@ export default function Navbar() {
     setIsMenuOpen(false);
     setIsNotesDropdownOpen(false);
     setIsMobileNotesOpen(false);
+    setIsPdfsDropdownOpen(false);
+    setIsMobilePdfsOpen(false);
     // Reset loading after a short delay to show the spinner
     setTimeout(() => setIsLoading(false), 500);
   };
@@ -63,6 +67,14 @@ export default function Navbar() {
     { name: 'Operating', href: '/operating', icon: '⚙️' },
     { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
     { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' }
+  ];
+
+  const pdfsPages = [
+    { name: 'Accident Amendment', href: '/accident-amendment', icon: '🚨' },
+    { name: 'BWM Amendment', href: '/bwm-amendment', icon: '📋' },
+    { name: 'GSR Amendments', href: '/gsr-amendments', icon: '📜' },
+    { name: 'Previous', href: '/previous', icon: '📚' },
+    { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' }
   ];
 
   return (
@@ -169,13 +181,61 @@ export default function Navbar() {
                 )}
               </div>
               
-              <button 
-                onClick={() => handleNavigation('/pdfs')}
-                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
-              >
-                PDFs
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
-              </button>
+              {/* PDFs Dropdown */}
+              <div className="relative group">
+                <button 
+                  onMouseEnter={() => setIsPdfsDropdownOpen(true)}
+                  onMouseLeave={() => setIsPdfsDropdownOpen(false)}
+                  className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base flex items-center space-x-1"
+                >
+                  PDFs
+                  <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+                </button>
+                
+                {/* PDFs Dropdown Menu */}
+                {isPdfsDropdownOpen && (
+                  <div 
+                    onMouseEnter={() => setIsPdfsDropdownOpen(true)}
+                    onMouseLeave={() => setIsPdfsDropdownOpen(false)}
+                    className="absolute top-full left-0 mt-2 w-56 bg-gradient-to-br from-white/95 via-red-50/95 to-orange-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                  >
+                    <div className="px-4 py-2 border-b border-gray-200/50">
+                      <h3 className="text-sm font-semibold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
+                        PDF Documents
+                      </h3>
+                      <p className="text-xs text-gray-500 mt-1">Download study materials</p>
+                    </div>
+                    <div className="py-2">
+                      {pdfsPages.map((page) => (
+                        <button
+                          key={page.href}
+                          onClick={() => handleNavigation(page.href)}
+                          className="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 hover:text-red-600 transition-all duration-200 text-sm group"
+                        >
+                          <span className="text-lg group-hover:scale-110 transition-transform duration-200">
+                            {page.icon}
+                          </span>
+                          <span className="font-medium">{page.name}</span>
+                          <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <svg className="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                    <div className="px-4 py-2 border-t border-gray-200/50">
+                      <div className="text-xs text-gray-500 text-center">
+                        📄 Downloadable PDF files
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              
               {session && (
                 <>
                 <button 
@@ -361,17 +421,56 @@ export default function Navbar() {
                     </div>
                   </div>
                   
-                  <button 
-                    onClick={() => handleNavigation('/pdfs')}
-                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
-                  >
-                    <div className="w-9 h-9 bg-gradient-to-r from-red-400 to-red-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  {/* Enhanced Mobile PDFs Section */}
+                  <div className="space-y-2">
+                    <button 
+                      onClick={() => setIsMobilePdfsOpen(!isMobilePdfsOpen)}
+                      className="w-full flex items-center justify-between text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                    >
+                      <div className="flex items-center space-x-4">
+                        <div className="w-9 h-9 bg-gradient-to-r from-red-400 to-red-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                          </svg>
+                        </div>
+                        <span className="text-base">PDFs</span>
+                      </div>
+                      <svg 
+                        className={`w-5 h-5 transition-transform duration-300 ${isMobilePdfsOpen ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
+                    </button>
+                    
+                    {/* Animated PDFs Submenu */}
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      isMobilePdfsOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-3 border border-white/10">
+                        {pdfsPages.map((page, index) => (
+                          <button 
+                            key={page.href}
+                            onClick={() => handleNavigation(page.href)}
+                            className="w-full flex items-center space-x-3 text-white/90 hover:text-white font-medium transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/15 touch-button group transform hover:scale-[1.02]"
+                            style={{ animationDelay: `${index * 50}ms` }}
+                          >
+                            <div className="w-8 h-8 bg-gradient-to-r from-red-400/30 to-red-500/30 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <span className="text-sm">{page.icon}</span>
+                            </div>
+                            <span className="text-sm font-medium">{page.name}</span>
+                            <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                              <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                    <span className="text-base">PDFs</span>
-                  </button>
+                  </div>
 
                   {session && (
                     <>
