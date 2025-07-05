@@ -12,7 +12,7 @@ const categoryIcons: { [key: string]: string } = {
   'gsr': '📋',
   'operating': '🚂',
   'commercial': '💰',
-  'personnel': '👥',
+  'establishment': '👥',
   'operating-manual': '📖',
   'accident-manual': '🚨',
   'bwm': '🛤️',

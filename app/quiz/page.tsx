@@ -32,8 +32,8 @@ export default function Quiz() {
     },
     {
       id: 'operating',
-      title: 'Operating Department',
-      description: 'Explore world operating department with various topics',
+      title: 'Operating',
+      description: 'Explore operating department with various topics',
       icon: '🚂',
       color: 'from-green-500 to-green-600',
       hoverColor: 'from-green-600 to-green-700',
@@ -41,7 +41,7 @@ export default function Quiz() {
     },
     {
       id: 'commercial',
-      title: 'Commercial Department',
+      title: 'Commercial',
       description: 'Discover commercial facts with various topics',
       icon: '💰',
       color: 'from-purple-500 to-purple-600',
@@ -49,13 +49,13 @@ export default function Quiz() {
       quizzes: Object.keys(allQuizzes.commercial.quizzes).length
     },
     {
-      id: 'personnel',
-      title: 'Personnel Department',
+      id: 'establishment',
+      title: 'Establishment Rules',
       description: 'Learn about personnel management with various topics',
       icon: '👥',
       color: 'from-pink-500 to-pink-600',
       hoverColor: 'from-pink-600 to-pink-700',
-      quizzes: Object.keys(allQuizzes.personnel.quizzes).length
+      quizzes: Object.keys(allQuizzes.establishment.quizzes).length
     },
     {
       id: 'operating-manual',
@@ -95,7 +95,7 @@ export default function Quiz() {
     },
     {
       id: 'finance',
-      title: 'Finance',
+      title: 'Accounts & Finance',
       description: 'Test your finance with various topics',
       icon: '💳',
       color: 'from-blue-500 to-blue-600',

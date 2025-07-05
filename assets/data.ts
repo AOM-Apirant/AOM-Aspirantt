@@ -296,7 +296,7 @@ export const allQuizzes = {
           {
             question: 'When the Loco Pilot notices a signal warning of an obstruction, except detonator, he shall .........',
             options: ['Proceed cautiously', 'Proceed upto next station and report', 'Stop after noticing the obstruction', 'Stop immediately'],
-            correct: 4,
+            correct: 3,
             explanation: 'Stop immediately is the correct answer.'
           }
         ],
@@ -1466,9 +1466,9 @@ export const allQuizzes = {
     },
   
     // Personnel Department Category - Multiple separate quizzes
-    'personnel': {
-      title: 'Personnel Department',
-      description: 'Learn about famous artists and cultural works',
+    'establishment': {
+      title: 'Establishment Rules',
+      description: 'Learn about establishment rules with various topics',
       icon: '🎨',
       color: 'from-pink-500 to-pink-600',
       quizzes: {

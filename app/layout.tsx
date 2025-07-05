@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'AOM Aspirant',
-  description: 'AOM Aspirant',
+  description: 'Your gateway to become AOM',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 };
 
