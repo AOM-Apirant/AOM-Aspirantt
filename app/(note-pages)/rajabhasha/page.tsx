@@ -323,37 +323,31 @@ const Rajabhasha = () => {
             <div className="mb-4 sm:mb-6">
               <h4 className="text-base sm:text-lg md:text-xl font-semibold text-blue-700 mb-2 sm:mb-3">B. Cash Awards</h4>
               <div className="bg-blue-50 rounded-lg p-3 sm:p-4">
-                <div className="overflow-x-auto">
-                  <table className="w-full text-xs sm:text-sm md:text-base">
-                    <thead>
-                      <tr className="border-b">
-                        <th className="text-left p-1 sm:p-2">Marks</th>
-                        <th className="text-left p-1 sm:p-2">Pragya</th>
-                        <th className="text-left p-1 sm:p-2">Praveen</th>
-                        <th className="text-left p-1 sm:p-2">Prabodh</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b">
-                        <td className="p-1 sm:p-2">70% or more</td>
-                        <td className="p-1 sm:p-2">Rs. 2400/-</td>
-                        <td className="p-1 sm:p-2">Rs. 1800/-</td>
-                        <td className="p-1 sm:p-2">Rs. 1600/-</td>
-                      </tr>
-                      <tr className="border-b">
-                        <td className="p-1 sm:p-2">60% or more</td>
-                        <td className="p-1 sm:p-2">Rs. 1600/-</td>
-                        <td className="p-1 sm:p-2">Rs. 1200/-</td>
-                        <td className="p-1 sm:p-2">Rs. 800/-</td>
-                      </tr>
-                      <tr>
-                        <td className="p-1 sm:p-2">55% or more</td>
-                        <td className="p-1 sm:p-2">Rs. 800/-</td>
-                        <td className="p-1 sm:p-2">Rs. 600/-</td>
-                        <td className="p-1 sm:p-2">Rs. 400/-</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div className="space-y-3">
+                  <div className="border-b border-blue-200 pb-2">
+                    <h5 className="font-semibold text-blue-700 mb-2">Pragya Examination</h5>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                      <li>• 70% or more: Rs. 2400/-</li>
+                      <li>• 60% or more: Rs. 1600/-</li>
+                      <li>• 55% or more: Rs. 800/-</li>
+                    </ul>
+                  </div>
+                  <div className="border-b border-blue-200 pb-2">
+                    <h5 className="font-semibold text-blue-700 mb-2">Praveen Examination</h5>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                      <li>• 70% or more: Rs. 1800/-</li>
+                      <li>• 60% or more: Rs. 1200/-</li>
+                      <li>• 55% or more: Rs. 600/-</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-blue-700 mb-2">Prabodh Examination</h5>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                      <li>• 70% or more: Rs. 1600/-</li>
+                      <li>• 60% or more: Rs. 800/-</li>
+                      <li>• 55% or more: Rs. 400/-</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

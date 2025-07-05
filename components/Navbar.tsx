@@ -59,22 +59,22 @@ export default function Navbar() {
   };
 
   const notesPages = [
-    { name: 'Accident Manual', href: '/accident', icon: '🚨' },
-    { name: 'Accounts', href: '/accounts', icon: '💰' },
-    { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
-    { name: 'Commercial', href: '/commercial', icon: '🏢' },
-    { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
+    { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' },
     { name: 'Operating', href: '/operating', icon: '⚙️' },
+    { name: 'Commercial', href: '/commercial', icon: '🏢' },
+    { name: 'Accounts', href: '/accounts', icon: '💰' },
+    { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
+    { name: 'Accident Manual', href: '/accident', icon: '🚨' },
+    { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
     { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
-    { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' }
   ];
 
   const pdfsPages = [
+    { name: 'GSR Amendments', href: '/gsr-amendments', icon: '📜' },
     { name: 'Accident Amendment', href: '/accident-amendment', icon: '🚨' },
     { name: 'BWM Amendment', href: '/bwm-amendment', icon: '📋' },
-    { name: 'GSR Amendments', href: '/gsr-amendments', icon: '📜' },
-    { name: 'Previous', href: '/previous', icon: '📚' },
-    { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' }
+    { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' },
+    { name: 'Previous Papers', href: '/previous', icon: '📚' },
   ];
 
   return (
@@ -200,7 +200,7 @@ export default function Navbar() {
                   <div 
                     onMouseEnter={() => setIsPdfsDropdownOpen(true)}
                     onMouseLeave={() => setIsPdfsDropdownOpen(false)}
-                    className="absolute top-full left-0 mt-2 w-56 bg-gradient-to-br from-white/95 via-red-50/95 to-orange-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                    className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-br from-white/95 via-red-50/95 to-orange-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
                   >
                     <div className="px-4 py-2 border-b border-gray-200/50">
                       <h3 className="text-sm font-semibold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
@@ -382,7 +382,7 @@ export default function Navbar() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                           </svg>
                         </div>
-                        <span className="text-base">Notes</span>
+                        <span className="text-base">Study Notes</span>
                       </div>
                       <svg 
                         className={`w-5 h-5 transition-transform duration-300 ${isMobileNotesOpen ? 'rotate-180' : ''}`} 
