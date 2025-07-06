@@ -71,8 +71,9 @@ export default function Navbar() {
 
   const pdfsPages = [
     { name: 'GSR Amendments', href: '/gsr-amendments', icon: '📜' },
-    { name: 'Accident Amendment', href: '/accident-amendment', icon: '🚨' },
-    { name: 'BWM Amendment', href: '/bwm-amendment', icon: '📋' },
+    { name: 'Accident Amendments', href: '/accident-amendment', icon: '🚨' },
+    { name: 'BWM Amendments', href: '/bwm-amendment', icon: '📋' },
+    { name: 'JPOs', href: '/jpo', icon: '📄' },
     { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' },
     { name: 'Previous Papers', href: '/previous', icon: '📚' },
   ];
@@ -145,7 +146,7 @@ export default function Navbar() {
                   <div 
                     onMouseEnter={() => setIsNotesDropdownOpen(true)}
                     onMouseLeave={() => setIsNotesDropdownOpen(false)}
-                    className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-br from-white/95 via-blue-50/95 to-purple-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                    className="absolute top-full left-0 mt-2 w-72 bg-gradient-to-br from-white/95 via-blue-50/95 to-purple-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
                   >
                     <div className="px-4 py-2 border-b border-gray-200/50">
                       <h3 className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -200,7 +201,7 @@ export default function Navbar() {
                   <div 
                     onMouseEnter={() => setIsPdfsDropdownOpen(true)}
                     onMouseLeave={() => setIsPdfsDropdownOpen(false)}
-                    className="absolute top-full left-0 mt-2 w-64 bg-gradient-to-br from-white/95 via-red-50/95 to-orange-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                    className="absolute top-full left-0 mt-2 w-72 bg-gradient-to-br from-white/95 via-red-50/95 to-orange-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
                   >
                     <div className="px-4 py-2 border-b border-gray-200/50">
                       <h3 className="text-sm font-semibold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">

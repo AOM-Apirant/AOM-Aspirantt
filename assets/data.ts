@@ -1304,67 +1304,127 @@ export const allQuizzes = {
       quizzes: {
         '1': [
           {
-            question: 'What is the chemical symbol for oxygen?',
-            options: ['O', 'Ox', 'O2', 'Oxy'],
+            question: 'Head of Pblic Relations department at Zonal Railway is ....',
+            options: ['Chief Public Relations Officer (CPRO)', 'Principal Chief Commercial Manager (PCCM)', 'Principal Chief Operations Manager (PCOM)', 'Sr. DCM'],
             correct: 0,
-            explanation: 'O is the chemical symbol for oxygen, and O2 represents the oxygen molecule.'
+            explanation: 'Chief Public Relations Officer (CPRO) is the correct answer.'
           },
           {
-            question: 'What is the hardest natural substance on Earth?',
-            options: ['Steel', 'Diamond', 'Granite', 'Iron'],
-            correct: 1,
-            explanation: 'Diamond is the hardest natural substance on Earth, scoring 10 on the Mohs scale of mineral hardness.'
+            question: 'Seperate accommodation should be provided for ladies as per Section ...... of the Railways Act, 1989.',
+            options: ['56', '57', '58', '59'],
+            correct: 2,
+            explanation: '58 is the correct answer.'
           },
           {
-            question: 'What is the atomic number of hydrogen?',
-            options: ['0', '1', '2', '3'],
-            correct: 1,
-            explanation: 'Hydrogen has an atomic number of 1, meaning it has 1 proton in its nucleus.'
-          },
-          {
-            question: 'What is the most abundant element in the universe?',
-            options: ['Helium', 'Carbon', 'Oxygen', 'Hydrogen'],
+            question: 'Alarm chain is provided as means of communication between passengers and Railways as per Section ..... of Railways Act, 1989. ',
+            options: ['56', '57', '58', '59'],
             correct: 3,
-            explanation: 'Hydrogen is the most abundant element in the universe, making up about 75% of all matter.'
+            explanation: '59 is the correct answer.'
           },
           {
-            question: 'What is the chemical formula for water?',
-            options: ['H2O', 'CO2', 'O2', 'N2'],
-            correct: 0,
-            explanation: 'H2O is the chemical formula for water, consisting of two hydrogen atoms and one oxygen atom.'
-          }
+            question: 'Compensation pay to passenger in case of permanent disability due to Railway accident is Rs. ....... lakhs',
+            options: ['5', '6', '7', '8'],
+            correct: 3,
+            explanation: '8 lakhs is the correct answer.'
+          },
+          {
+            question: 'Ex-gratia payment in case of death per passenger in a train accident is Rs. ..... lakhs',
+            options: ['2', '3', '4', '5'],
+            correct: 3,
+            explanation: '5 lakhs is the correct answer.'
+          },
+          {
+            question: 'Ex-gratia paid for serious injury in train accident is Rs. ...... ',
+            options: ['1,50,000/-', '2,00,000/-', '2,50,000/-', '3,00,000/-'],
+            correct: 2,
+            explanation: '2,50,000/- is the correct answer.'
+          },
+          {
+            question: 'Compensation on account of untoward incident is dealt under Section ..... of Railways Act 1989.',
+            options: ['124', '124A', '125', '125A'],
+            correct: 1,
+            explanation: '124A is the correct answer.'
+          },
+          {
+            question: 'The Mximum Period for whic Ex-gratia payment is payable to grievously injured passenger in Train Accident is .... months.',
+            options: ['6', '12', '18', '24'],
+            correct: 1,
+            explanation: '12 is the correct answer.'
+          },
+          {
+            question: 'Under General Manager (GM) Powers, Season Tickets for general public can be up to a maximum distance of ........ kilometers',
+            options: ['100', '150', '160', '180'],
+            correct: 2,
+            explanation: '160 is the correct answer.'
+          },
+          {
+            question: 'Season tickets can be renewed ....... days in advance of the date of expiry.',
+            options: ['7', '10', '12', '15'],
+            correct: 1,
+            explanation: '10 is the correct answer.'
+          },
         ],
         '2': [
           {
-            question: 'What is the speed of light?',
-            options: ['299,792 km/s', '199,792 km/s', '399,792 km/s', '499,792 km/s'],
-            correct: 0,
-            explanation: 'The speed of light in a vacuum is approximately 299,792 kilometers per second.'
-          },
-          {
-            question: 'What is the largest organ in the human body?',
-            options: ['Heart', 'Brain', 'Liver', 'Skin'],
+            question: 'Season tickets can be renewed through .......',
+            options: ['JTBS', 'UTS Counter', 'UTS on Mobile app', 'All the above'],
             correct: 3,
-            explanation: 'The skin is the largest organ in the human body, covering about 20 square feet in adults.'
+            explanation: 'All the above is the correct answer.'
           },
           {
-            question: 'What is the chemical symbol for gold?',
-            options: ['Ag', 'Au', 'Fe', 'Cu'],
+            question: 'The Head of the Public Grievances Organization at Zonal Level is ....',
+            options: ['General Manager (GM)', 'Assistant General Manager (AGM)', 'Principal Chief Commercial Manager (PCCM)', 'Chief Public Relations Officer (CPRO)'],
             correct: 1,
-            explanation: 'Au is the chemical symbol for gold, derived from the Latin word "aurum."'
+            explanation: 'Assistant General Manager (AGM) is the correct answer.'
           },
           {
-            question: 'What is the atomic number of carbon?',
-            options: ['4', '6', '8', '12'],
+            question: 'Head of Public Complaints at Divisional level is ........',
+            options: ['Divisional Railway Manager (DRM)', 'Additional Divisional Railway Manager (ADRM)', 'Divisional Commercial Manager (DCM)', 'Sr. DOM'],
             correct: 1,
-            explanation: 'Carbon has an atomic number of 6, meaning it has 6 protons in its nucleus.'
+            explanation: 'Additional Divisional Railway Manager (ADRM) is the correct answer.'
           },
           {
-            question: 'What is the pH of pure water?',
-            options: ['5', '6', '7', '8'],
+            question: 'Advance Reservation period for Indian people is .... days (from 01.11.2024)',
+            options: ['60', '90', '100', '120'],
+            correct: 0,
+            explanation: '60 is the correct answer.'
+          },
+          {
+            question: 'Tatkal tickets are NOT issued for the following class.',
+            options: ['Sleeper', '1AC', '2AC', '3AC'],
+            correct: 1,
+            explanation: '1AC is the correct answer.'
+          },
+          {
+            question: 'A maximum of ... passengers can be booked on "Tatkal Ticket"',
+            options: ['3', '4', '5', '6'],
+            correct: 1,
+            explanation: '4 is the correct answer.'
+          },
+          {
+            question: 'Reservation can be made under Tatkal scheme in ..... days advance, excluding the day of journey at originating station.',
+            options: ['3', '4', '5', '6'],
+            correct: 0,
+            explanation: '1 days is the correct answer.'
+          },
+          {
+            question: 'Duplicate "Tatkal Ticket" can be issuedin exceptional cases on payment of .......',
+            options: ['Full fare including Tatkal charges', 'Full fare excluding Tatkal charges', '25% of the fare including Tatkal charges', 'Not permitted'],
+            correct: 0,
+            explanation: 'Full fare including Tatkal charges is the correct answer.'
+          },
+          {
+            question: 'E-ticket booking timings are ....... hrs to .... hrs on all days including Sundays.',
+            options: ['00:00 - 23:50', '00:15 - 23:50', '00:20 - 23:45', '00:30 - 23:45'],
             correct: 2,
-            explanation: 'Pure water has a neutral pH of 7, which is neither acidic nor basic.'
-          }
+            explanation: '00:20 - 23:45 is the correct answer.'
+          },
+          {
+            question: 'E-ticket passenger cannot travel if the status of reservation is in ....... at the time of preparation of chart.',
+            options: ['Fully Wait list', 'Partially Confirmed', 'RAC', 'None of the above'],
+            correct: 0,
+            explanation: 'Fully Wait list is the correct answer.'
+          },
         ],
         '3': [
           {
@@ -1967,67 +2027,129 @@ export const allQuizzes = {
         quizzes: {
           '1': [
             {
-              question: 'Who painted the Mona Lisa?',
-              options: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
-              correct: 1,
-              explanation: 'Leonardo da Vinci painted the Mona Lisa, one of the most famous paintings in the world.'
+              question: 'When a Accident to a train carrying passengers which is attended with ....... and in the opinion of the CCRS or CRS requires holding of an inquiry by the CRS , shall be deemed to be a',
+              options: ['Damage to railway property, the value of which exceeding 2 crore', 'Ggrievous hurt to a passenger or passengers in the train', 'Loss of life', 'All the above'],
+              correct: 3,
+              explanation: 'All the above is the correct answer.'
             },
             {
-              question: 'What is the primary color that is not a primary color of light?',
-              options: ['Red', 'Blue', 'Yellow', 'Green'],
+              question: 'A person will be considered to have incurred simple injuries, if these injuries incapacitate the injured person from pursuing his customary vocation for ........  after the occurrence of the accident',
+              options: ['12 hours', '24 hours', '36 hours', '48 hours'],
+              correct: 3,
+              explanation: '48 hours is the correct answer.'
+            },
+            {
+              question: '6.   A railway employee is considered to have been injured if he/she is prevented from returning to work as a result of injuries for a period of ....... after the occurrence of the accident.',
+              options: ['12 hours', '24 hours', '36 hours', '48 hours'],
               correct: 2,
-              explanation: 'Yellow is a primary color in painting but not in light. The primary colors of light are red, blue, and green.'
+              explanation: '36 hours is the correct answer.'
             },
             {
-              question: 'Which art movement was characterized by bright colors and bold brushstrokes?',
-              options: ['Impressionism', 'Cubism', 'Surrealism', 'Renaissance'],
+              question: 'Accidents are classified into how many categories .......',
+              options: ['3', '4', '5', '6'],
+              correct: 2,
+              explanation: '5 is the correct answer.'
+            },
+            {
+              question: 'The categories of classification of accidents are from "A" to "R" except',
+              options: ['"E" & "I"', '"F" & "G"', '"I" & "O"', '"N" & "K"'],
+              correct: 2,
+              explanation: '"I" & "O" is the correct answer.'
+            },
+            {
+              question: 'Accident Collision of trains are classified in categories.',
+              options: ['A1 to A5', 'B1 to B7', 'C1 to C9', 'D1 to D6'],
               correct: 0,
-              explanation: 'Impressionism was characterized by bright colors, bold brushstrokes, and capturing the effects of light.'
+              explanation: 'A1 to A5 is the correct answer.'
             },
             {
-              question: 'What is the technique of painting on wet plaster called?',
-              options: ['Oil painting', 'Watercolor', 'Fresco', 'Acrylic'],
-              correct: 2,
-              explanation: 'Fresco is the technique of painting on wet plaster, commonly used in Renaissance art.'
-            },
-            {
-              question: 'Who is known for cutting off his own ear?',
-              options: ['Pablo Picasso', 'Vincent van Gogh', 'Salvador Dalí', 'Claude Monet'],
+              question: 'Accident Fire in trains are classified in categories.',
+              options: ['A1 to A5', 'B1 to B7', 'C1 to C9', 'D1 to D6'],
               correct: 1,
-              explanation: 'Vincent van Gogh is famously known for cutting off his own ear during a period of mental illness.'
-            }
+              explanation: 'B1 to B7 is the correct answer.'
+            },
+            {
+              question: 'LC gate accidents are classified in categories.',
+              options: ['A1 to A5', 'B1 to B7', 'C1 to C9', 'D1 to D6'],
+              correct: 2,
+              explanation: 'C1 to C9 is the correct answer.'
+            },
+            {
+              question: 'Accident Derailment of trains are classified in categories.',
+              options: ['A1 to A5', 'B1 to B7', 'C1 to C9', 'D1 to D6'],
+              correct: 3,
+              explanation: 'D1 to D6 is the correct answer.'
+            },
+            {
+              question: 'The category of accident "Averted collision" is classified in .....',
+              options: ['F', 'G', 'H', 'J'],
+              correct: 0,
+              explanation: 'F is the correct answer.'
+            },
+            
           ],
           '2': [
             {
-              question: 'What is the name of the famous sculpture by Michelangelo?',
-              options: ['The Thinker', 'David', 'Venus de Milo', 'The Kiss'],
+              question: 'The category of accident "Breach of block rules" is classified in .....',
+              options: ['F', 'G', 'H', 'J'],
               correct: 1,
-              explanation: 'David is the famous marble sculpture by Michelangelo, depicting the biblical hero David.'
+              explanation: 'G is the correct answer.'
             },
             {
-              question: 'Which artist is known for his "Blue Period"?',
-              options: ['Pablo Picasso', 'Vincent van Gogh', 'Salvador Dalí', 'Henri Matisse'],
+              question: 'The category of accident "SPAD" is classified in .....',
+              options: ['F', 'G', 'H', 'J'],
+              correct: 2,
+              explanation: 'H is the correct answer.'
+            },
+            {
+              question: 'The category of accident "Failure of rolling stock" is classified in .....',
+              options: ['J', 'K', 'L', 'M'],
               correct: 0,
-              explanation: 'Pablo Picasso is known for his "Blue Period," characterized by somber paintings in shades of blue.'
+              explanation: 'J is the correct answer.'
             },
             {
-              question: 'What is the most famous painting by Edvard Munch?',
-              options: ['The Scream', 'Starry Night', 'The Persistence of Memory', 'Guernica'],
-              correct: 0,
-              explanation: 'The Scream is the most famous painting by Edvard Munch, depicting a figure with an agonized expression.'
-            },
-            {
-              question: 'Which art movement was founded by Salvador Dalí?',
-              options: ['Cubism', 'Surrealism', 'Impressionism', 'Expressionism'],
+              question: 'The category of accident "Failure of P-way" is classified in .....',
+              options: ['J', 'K', 'L', 'M'],
               correct: 1,
-              explanation: 'Salvador Dalí was a prominent figure in the Surrealism movement, known for his bizarre and dreamlike imagery.'
+              explanation: 'K is the correct answer.'
             },
             {
-              question: 'What is the technique of using small dots to create an image called?',
-              options: ['Pointillism', 'Impressionism', 'Cubism', 'Expressionism'],
+              question: 'The category of accident "OHE failure" is classified in .....',
+              options: ['J', 'K', 'L', 'M'],
+              correct: 2,
+              explanation: 'L is the correct answer.'
+            },
+            {
+              question: 'Buckling of track, Wield failure & Rail fracture are accidents classified In .....',
+              options: ['J', 'K', 'L', 'M'],
+              correct: 1,
+              explanation: 'K is the correct answer.'
+            },
+            {
+              question: 'Failure of engine is an accident classified in .....',
+              options: ['J', 'K', 'L', 'M'],
               correct: 0,
-              explanation: 'Pointillism is the technique of using small dots of color to create an image, developed by Georges Seurat.'
-            }
+              explanation: 'J is the correct answer.'
+            },
+            {
+              question: '21.   Poor brake power in the trains is accident classified in .....',
+              options: ['J', 'K', 'L', 'M'],
+              correct: 0,
+              explanation: 'J is the correct answer.'
+            },
+            {
+              question: 'Failure of Block instruments, points & signals are accidents classified in .....',
+              options: ['J', 'K', 'L', 'M'],
+              correct: 3,
+              explanation: 'M is the correct answer.'
+            },
+            {
+              question: 'The category of accident "S&T failure" is classified in .....',
+              options: ['J', 'K', 'L', 'M'],
+              correct: 2,
+              explanation: 'M is the correct answer.'
+            },
+            
           ],
           '3': [
             {
@@ -2979,35 +3101,66 @@ export const allQuizzes = {
         quizzes: {
           '1': [
             {
-              question: 'Who painted the Mona Lisa?',
-              options: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
-              correct: 1,
-              explanation: 'Leonardo da Vinci painted the Mona Lisa, one of the most famous paintings in the world.'
+              question: 'Indian railways that play an important role in our life was nationalized in .......',
+              options: ['1948', '1949', '1950', '1951'],
+              correct: 3,
+              explanation: 'Indian Railways, a vital lifeline for transportation in India, was nationalized in 1951. This means the government took control of various private and state-owned railway companies, merging them into a single entity under the Ministry of Railways. The process began post-independence to streamline operations, improve connectivity, and ensure uniform development across the country’s vast railway network. Before 1951, railways were operated by multiple entities, including princely states and private companies, leading to inefficiencies.'
             },
             {
-              question: 'What is the primary color that is not a primary color of light?',
-              options: ['Red', 'Blue', 'Yellow', 'Green'],
-              correct: 2,
-              explanation: 'Yellow is a primary color in painting but not in light. The primary colors of light are red, blue, and green.'
+              question: 'The first Shatabdi express was introduced between which of the following locations?',
+              options: ['New Delhi - Mumbai', 'New Delhi - Kolkata', 'New Delhi - Chennai', 'New Delhi - Jhansi'],
+              correct: 3,
+              explanation: 'The first Shatabdi Express was introduced in 1988 between New Delhi and Jhansi.'
             },
             {
-              question: 'Which art movement was characterized by bright colors and bold brushstrokes?',
-              options: ['Impressionism', 'Cubism', 'Surrealism', 'Renaissance'],
+              question: 'Indian Railway Welfare Organisation, that works for the welfare of the Indian Railways is headquartered in?',
+              options: ['New Delhi', 'Mumbai', 'Chennai', 'Kolkata'],
               correct: 0,
-              explanation: 'Impressionism was characterized by bright colors, bold brushstrokes, and capturing the effects of light.'
+              explanation: 'Indian Railway Welfare Organisation (IRWO) is headquartered in New Delhi. The IRWO operates under the Ministry of Railways and focuses on the welfare of railway employees and their families.'
             },
             {
-              question: 'What is the technique of painting on wet plaster called?',
-              options: ['Oil painting', 'Watercolor', 'Fresco', 'Acrylic'],
+              question: 'The first Rajdhani express that connects New-Delhi with other largest cities was introduced in which year?',
+              options: ['1965', '1967', '1969', '1971'],
               correct: 2,
-              explanation: 'Fresco is the technique of painting on wet plaster, commonly used in Renaissance art.'
+              explanation: 'The first Rajdhani Express, connecting New Delhi with Howrah (Kolkata), was introduced in 1969. It was India\'s first superfast train with a maximum speed of 120 km/h at the time, offering fully air-conditioned accommodation and meals included in the fare.'
             },
             {
-              question: 'Who is known for cutting off his own ear?',
-              options: ['Pablo Picasso', 'Vincent van Gogh', 'Salvador Dalí', 'Claude Monet'],
-              correct: 1,
-              explanation: 'Vincent van Gogh is famously known for cutting off his own ear during a period of mental illness.'
-            }
+              question: 'Which of the following is the longest railway zone in India?',
+              options: ['Central Railways', 'Eastern Railways', 'Northern Railways ', 'Western Railways'],
+              correct: 2,
+              explanation: 'The Northern Railways (NR) is the longest railway zone in India, covering the largest geographical area and route length. It spans multiple northern states, including Delhi, Punjab, Haryana, and parts of Uttar Pradesh, among others, with over 7,000 km of track.'
+            },
+            {
+              question: 'Which of the following railway station has the longest railway platform in India?',
+              options: ['Badlapur railway station', 'Bilaspur railway station', 'Gorakhpur railway station', 'Kharagpur railway station'],
+              correct: 2,
+              explanation: 'The railway station with the longest platform in India is Gorakhpur railway station in Uttar Pradesh, with a platform length of approximately 1,366.33 meters (as of the latest records). Surpassed Kharagpur\'s previous record (1,072 meters) in 2013. Operated by North Eastern Railways (NER).'
+            },
+            {
+              question: 'What is the tagline of Indian Railways Catering and Tourism Corporation (IRCTC)?',
+              options: ['The lifeline of the nation', 'The lifeline of India', 'The lifeline of Indian Railways', 'The lifeline to people'],
+              correct: 0,
+              explanation: 'The tagline of IRCTC is "The lifeline of the nation". While Indian Railways is often called the "Lifeline of India," IRCTC specifically uses "Lifeline of the Nation" as its official tagline.'
+            },
+            {
+              question: 'Where is the Railway Staff College located?',
+              options: ['Allahabad', 'Delhi', 'Pune', 'Vadodara'],
+              correct: 3,
+              explanation: 'The Railway Staff College, which is the premier training institution for Indian Railways officers, is located in Vadodara (Baroda), Gujarat. It is now known as the National Academy of Indian Railways (NAIR) and serves as the apex training institute for railway officers'
+            },
+            {
+              question: 'Which of the following is the largest railway junction in India?',
+              options: ['Allahabad', 'Delhi', 'Mathura', 'Vijayawada'],
+              correct: 2,
+              explanation: 'The largest railway junction in India, based on the number of trains passing through and its connectivity, is Mathura Junction in Uttar Pradesh. It connects seven major routes and handles a significant volume of train traffic, making it a critical hub.'
+            },
+            {
+              question: 'In which city is the Wheel and Axle Plant of the Indian Railways located?',
+              options: ['Bangalore', 'Kapurthala', 'Rae Bareli', 'Varanasi'],
+              correct: 0,
+              explanation: 'The Wheel and Axle Plant of Indian Railways is located in Bangalore (Bengaluru), Karnataka.Established in 1984, it manufactures wheels, axles, and wheel sets for Indian Railways'
+            },
+            
           ],
           '2': [
             {
