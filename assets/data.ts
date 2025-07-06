@@ -3164,35 +3164,41 @@ export const allQuizzes = {
           ],
           '2': [
             {
-              question: 'What is the name of the famous sculpture by Michelangelo?',
-              options: ['The Thinker', 'David', 'Venus de Milo', 'The Kiss'],
+              question: 'The Maitree Express connects India with which of the following countries?',
+              options: ['Bangladesh', 'Myanmar', 'Nepal', 'Pakistan'],
+              correct: 0,
+              explanation: 'The Maitree Express is a train service that connects India (Kolkata) with Bangladesh (Dhaka). The name "Maitree" means "friendship" in Bengali, symbolizing the strong bilateral ties between the two countries.'
+            },
+            {
+              question: 'Who among the following is known as the father of Indian Railways?',
+              options: ['Lord Ripon', 'Lord Dalhousie', 'Mahatma Gandhi', 'M.Visweswariah'],
               correct: 1,
-              explanation: 'David is the famous marble sculpture by Michelangelo, depicting the biblical hero David.'
+              explanation: 'Lord Dalhousie (Governor-General of India from 1848–1856) is regarded as the "Father of Indian Railways" because he introduced the first railway system in India. The first passenger train ran between Bori Bunder (Mumbai) and Thane on April 16, 1853, covering 34 km. He laid the foundation for railway expansion in India, recognizing its importance for economic and administrative efficiency.'
             },
             {
-              question: 'Which artist is known for his "Blue Period"?',
-              options: ['Pablo Picasso', 'Vincent van Gogh', 'Salvador Dalí', 'Henri Matisse'],
-              correct: 0,
-              explanation: 'Pablo Picasso is known for his "Blue Period," characterized by somber paintings in shades of blue.'
+              question: 'Which of the following is the eastern-most division of the Indian Railways?',
+              options: ['Lumding', 'Katihar', 'Rangiya', 'Tinsukia'],
+              correct: 3,
+              explanation: 'The Tinsukia Division is part of the Northeast Frontier Railway (NFR) zone, headquartered in Maligaon, Guwahati. Tinsukia, located in the state of Assam, is the easternmost division of Indian Railways.'
             },
             {
-              question: 'What is the most famous painting by Edvard Munch?',
-              options: ['The Scream', 'Starry Night', 'The Persistence of Memory', 'Guernica'],
-              correct: 0,
-              explanation: 'The Scream is the most famous painting by Edvard Munch, depicting a figure with an agonized expression.'
-            },
-            {
-              question: 'Which art movement was founded by Salvador Dalí?',
-              options: ['Cubism', 'Surrealism', 'Impressionism', 'Expressionism'],
+              question: 'Who was the first railway minister of Independent India?',
+              options: ['Asaf Ali', 'John Mathai', 'Lal Bahadur Shastri', 'N. GopalaswamiAyyanagar'],
               correct: 1,
-              explanation: 'Salvador Dalí was a prominent figure in the Surrealism movement, known for his bizarre and dreamlike imagery.'
+              explanation: 'John Mathai served as the first Railway Minister of independent India from 1947 to 1948, following India\'s independence on August 15, 1947. He was appointed to the position in Jawaharlal Nehru’s first cabinet and also held the portfolio of Transport. His tenure as Railway Minister lasted until 1948, after which he became the Finance Minister.'
             },
             {
-              question: 'What is the technique of using small dots to create an image called?',
-              options: ['Pointillism', 'Impressionism', 'Cubism', 'Expressionism'],
-              correct: 0,
-              explanation: 'Pointillism is the technique of using small dots of color to create an image, developed by Georges Seurat.'
-            }
+              question: 'What is the rank of India in the world in terms of length of railroad network?',
+              options: ['First', 'Second', 'Third', 'Fourth'],
+              correct: 3,
+              explanation: 'India has the 4th largest railway network in the world by total track length, spanning approximately 68,000 km (route length) and over 128,000 km (running track length). United States (~250,000 km) – Largest China (~150,000 km) Russia (~85,500 km) India (~68,000 km)'
+            },
+            {
+              question: 'Who among the following is the first female train driver of the Indian Railways in India?',
+              options: ['Bhavani Kumari', 'Rajshri Sachdeva', 'Ritu Chauhan', 'Surekha Yadav'],
+              correct: 3,
+              explanation: 'Surekha Yadav became the first female train driver (locopilot) of Indian Railways in 1988. She started her career with Central Railways and has since driven various trains, including suburban and express trains. She gained global recognition for driving the Vande Bharat Express (Mumbai-Solapur) in 2023, showcasing women\'s leadership in railways.'
+            },
           ],
           '3': [
             {
