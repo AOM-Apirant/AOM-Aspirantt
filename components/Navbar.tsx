@@ -113,6 +113,13 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
               </button>
               <button 
+                onClick={() => handleNavigation('/syllabus')}
+                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
+              >
+                Syllabus
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+              </button>
+              <button 
                 onClick={() => handleNavigation('/abbreviations')}
                 className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
               >
@@ -345,6 +352,18 @@ export default function Navbar() {
                       </svg>
                     </div>
                     <span className="text-base">About</span>
+                  </button>
+                  
+                  <button 
+                    onClick={() => handleNavigation('/syllabus')}
+                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                  >
+                    <div className="w-9 h-9 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                    </div>
+                    <span className="text-base">Syllabus</span>
                   </button>
                   
                   <button 
