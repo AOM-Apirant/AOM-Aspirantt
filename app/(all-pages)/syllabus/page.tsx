@@ -314,6 +314,216 @@ const Syllabus = () => {
           ))}
         </div>
 
+        {/* Eligibility Criteria Section */}
+        <div className="mt-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-6 text-white">
+            <div className="flex items-center space-x-3">
+              <span className="text-3xl">📋</span>
+              <h2 className="text-2xl font-bold">Eligibility Criteria</h2>
+            </div>
+          </div>
+          
+          <div className="p-6 space-y-6">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
+              <h3 className="text-lg font-semibold text-blue-800 mb-3">General Eligibility</h3>
+              <p className="text-gray-700 leading-relaxed">
+                In terms of Railway Board&apos;s letter No. E(GP)2024/2/28, dated 08.10.2024 (RBE No. 93/2024), in respect of selections to Group &apos;B&apos; posts in all departments, all employees who are eligible and who volunteer for the selection, should be considered without any limitation of number, as is being done in case of selection to the Group &apos;B&apos; post of Assistant Personnel Officer.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+                <h3 className="text-lg font-semibold text-green-800 mb-3">Group &apos;C&apos; Employees</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  All the Group &apos;C&apos; employees working in Level-6 and above of 7th CPC Pay Matrix with three (3) years of non-fortuitous service in Level-6 and above as on 01.01.2025 in Operating Department (including non-fortuitous service rendered in the corresponding pre-revised grades) in terms of Railway Board&apos;s letter No. E(GP)2019/2/25 dated 27.12.2019 (RBE No. 216/2019).
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200">
+                <h3 className="text-lg font-semibold text-purple-800 mb-3">Running Staff</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  All Group &apos;C&apos; Running staff working in Level-6 and above of 7th CPC Pay Matrix with three (3) years of non-fortuitous service in Level-6 and above as on 01.01.2025 as per Railway Board&apos;s letter No. E(GP)2005/2/87 dated 18.08.2015 (RBE No. 92/2015) (including non-fortuitous service rendered in the corresponding pre-revised grades).
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6 border border-yellow-200">
+              <h3 className="text-lg font-semibold text-yellow-800 mb-3">Important Note</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Where juniors who have completed their qualifying or eligibility service and are being considered for promotion, their seniors would also be considered provided they are not short of the requisite qualifying or eligibility service by more than half of such qualifying or eligibility service or two years, whichever is less and have successfully completed their probation period for promotion to the next higher grade along with their juniors who have already completed such qualifying or eligibility service.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border border-red-200">
+              <h3 className="text-lg font-semibold text-red-800 mb-3">Scribe and Compensatory Time for PwBD Employees</h3>
+              <p className="text-gray-700 leading-relaxed">
+                In terms of Railway Board&apos;s letter No. E(NG)I/2022/PM4/9, dated 09.12.2022 (RBE No. 162/2022), the facility of scribe and/or compensatory time shall be granted solely to those eligible PwBD employees having difficulty in writing subject to production of a certificate to the effect that person concerned has limitation to write and that scribe is essential to write examination on his/her behalf from the competent Railway medical authority as per proforma enclosed as Annexure — &apos;C&apos;.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Scheme of Selection Section */}
+        <div className="mt-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-indigo-500 to-purple-600 p-6 text-white">
+            <div className="flex items-center space-x-3">
+              <span className="text-3xl">🎯</span>
+              <h2 className="text-2xl font-bold">Scheme of Selection</h2>
+            </div>
+          </div>
+          
+          <div className="p-6 space-y-6">
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-6 border border-blue-200">
+              <h3 className="text-xl font-semibold text-blue-800 mb-4">Selection Process</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The selection will consist of:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg p-4 text-center border border-blue-200">
+                  <span className="text-2xl mb-2 block">📝</span>
+                  <h4 className="font-semibold text-blue-800">A) Written Examination</h4>
+                </div>
+                <div className="bg-white rounded-lg p-4 text-center border border-green-200">
+                  <span className="text-2xl mb-2 block">🏥</span>
+                  <h4 className="font-semibold text-green-800">B) Medical Examination</h4>
+                </div>
+                <div className="bg-white rounded-lg p-4 text-center border border-purple-200">
+                  <span className="text-2xl mb-2 block">👥</span>
+                  <h4 className="font-semibold text-purple-800">C) Viva-voce & Record of Service</h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+              <h3 className="text-lg font-semibold text-green-800 mb-3">A) Written Examination through Centralized Computer Based Test</h3>
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  In terms of Railway Board&apos;s letter No. E(GP)2018/2/31 dated 19.03.2019 (RBE No. 53/2019) and letter No. E(GP)2005/2/69 dated 04.12.2023 (RBE No. 134/2023), the written examination through the Centralized Computer Based Test shall comprise of 100 marks consisting of 100% objective type multiple choice questions only.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-lg p-4 border border-green-200">
+                    <h4 className="font-semibold text-green-800 mb-2">Question Paper Details</h4>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• 110 questions total</li>
+                      <li>• 10 questions on Raj Bhasha (optional)</li>
+                      <li>• First 100 attempted questions evaluated</li>
+                      <li>• All questions carry equal marks</li>
+                      <li>• Duration: Two hours</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-white rounded-lg p-4 border border-green-200">
+                    <h4 className="font-semibold text-green-800 mb-2">Important Notes</h4>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      <li>• No negative marking</li>
+                      <li>• Final panels made on seniority basis</li>
+                      <li>• Computer Based Test format</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200">
+              <h3 className="text-lg font-semibold text-purple-800 mb-3">B) Medical Examination</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Those who qualify in the written examination (CBT) will have to appear for prescribed medical Examination as per Medical Manual i.e. Group &apos;B&apos; (Technical) for promotion to Group &apos;B&apos; post of Assistant Operations Manager/Assistant Traffic Manager. Those who are found fit in the prescribed medical examination will only be called for Viva-voce as per extant instructions.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200">
+              <h3 className="text-lg font-semibold text-orange-800 mb-3">C) Viva-voce and Record of Service</h3>
+              <p className="text-gray-700 leading-relaxed">
+                The following marks are allotted for viva-voce and Record of service.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Marks Distribution Section */}
+        <div className="mt-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-amber-500 to-orange-600 p-6 text-white">
+            <div className="flex items-center space-x-3">
+              <span className="text-3xl">📊</span>
+              <h2 className="text-2xl font-bold">Marks Distribution</h2>
+            </div>
+          </div>
+          
+          <div className="p-6 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200 text-center">
+                <span className="text-4xl mb-4 block">📚</span>
+                <h3 className="text-lg font-semibold text-blue-800 mb-2">Professional Subject</h3>
+                <p className="text-2xl font-bold text-blue-600">70 Marks</p>
+                <p className="text-sm text-gray-600 mt-2">Including optional questions of 10 marks on Official language policy and Rules</p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200 text-center">
+                <span className="text-4xl mb-4 block">📋</span>
+                <h3 className="text-lg font-semibold text-green-800 mb-2">Establishment & Financial Rules</h3>
+                <p className="text-2xl font-bold text-green-600">30 Marks</p>
+                <p className="text-sm text-gray-600 mt-2">Rules and regulations</p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200 text-center">
+                <span className="text-4xl mb-4 block">🎯</span>
+                <h3 className="text-lg font-semibold text-purple-800 mb-2">Qualifying Marks</h3>
+                <p className="text-2xl font-bold text-purple-600">60 Marks</p>
+                <p className="text-sm text-gray-600 mt-2">Minimum required to qualify</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Viva-voce and Record of Service Section */}
+        <div className="mt-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-teal-500 to-cyan-600 p-6 text-white">
+            <div className="flex items-center space-x-3">
+              <span className="text-3xl">👥</span>
+              <h2 className="text-2xl font-bold">Viva-voce and Record of Service</h2>
+            </div>
+          </div>
+          
+          <div className="p-6 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6 border border-yellow-200">
+                <div className="flex items-center space-x-3 mb-4">
+                  <span className="text-3xl">🗣️</span>
+                  <h3 className="text-xl font-semibold text-yellow-800">Viva-voce</h3>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-yellow-200">
+                  <div className="text-center">
+                    <p className="text-3xl font-bold text-yellow-600">25</p>
+                    <p className="text-sm text-gray-600">Maximum Marks</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-lg p-6 border border-red-200">
+                <div className="flex items-center space-x-3 mb-4">
+                  <span className="text-3xl">📋</span>
+                  <h3 className="text-xl font-semibold text-red-800">Record of Service</h3>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-red-200">
+                  <div className="text-center">
+                    <p className="text-3xl font-bold text-red-600">25</p>
+                    <p className="text-sm text-gray-600">Maximum Marks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-6 border border-indigo-200">
+              <h3 className="text-lg font-semibold text-indigo-800 mb-3">Important Note</h3>
+              <div className="bg-white rounded-lg p-4 border border-indigo-200">
+                <p className="text-gray-700 leading-relaxed">
+                  <span className="font-semibold text-indigo-600">30 marks</span> (including at least <span className="font-semibold text-indigo-600">15 marks under record of service</span>) for both Viva-voce and Record of Service combined.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Additional Information */}
         <div className="mt-12 bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-6">
