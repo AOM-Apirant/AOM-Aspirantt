@@ -16,14 +16,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className="antialiased" suppressHydrationWarning={true}>
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
+      <body className="antialiased" suppressHydrationWarning={true}>
         <SessionProvider>
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-1 pt-16">{children}</main>
             <Footer />
           </div>
-          </SessionProvider>
+        </SessionProvider>
       </body>
     </html>
   );
