@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
       </head>
       <body className="antialiased" suppressHydrationWarning={true}>
         <SessionProvider>
