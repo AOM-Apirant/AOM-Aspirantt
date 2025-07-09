@@ -67,6 +67,14 @@ export default function Navbar() {
     { name: 'Accident Manual', href: '/accident', icon: '🚨' },
     { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
     { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
+    { name: 'G&SR', href: '/gsr', icon: '📜' },
+    { name: 'Appendix', href: '/appendix', icon: '📄' },
+    { name: 'RS Conduct Rules-1966', href: '/conduct-rules', icon: '⚖️' },
+    { name: 'RS DA Rules - 1968', href: '/da-rules', icon: '💰' },
+    { name: 'Compensation Act - 2010', href: '/ec-act', icon: '🏛️' },
+    { name: 'Indian Railways Act - 1989', href: '/ir-act', icon: '🚂' },
+    { name: 'RS Pass Rules - 1986', href: '/pass-rules', icon: '🎫' },
+    { name: 'RS Rest Rules - 2005', href: '/rest-rules', icon: '🛏️' },
   ];
 
   const pdfsPages = [
@@ -153,7 +161,7 @@ export default function Navbar() {
                   <div 
                     onMouseEnter={() => setIsNotesDropdownOpen(true)}
                     onMouseLeave={() => setIsNotesDropdownOpen(false)}
-                    className="absolute top-full left-0 mt-2 w-72 bg-gradient-to-br from-white/95 via-blue-50/95 to-purple-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                    className="absolute top-full left-0 mt-2 w-80 bg-gradient-to-br from-white/95 via-blue-50/95 to-purple-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
                   >
                     <div className="px-4 py-2 border-b border-gray-200/50">
                       <h3 className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -161,7 +169,7 @@ export default function Navbar() {
                       </h3>
                       <p className="text-xs text-gray-500 mt-1">Select a topic to explore</p>
                     </div>
-                    <div className="py-2">
+                    <div className="py-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                       {notesPages.map((page) => (
                         <button
                           key={page.href}
@@ -216,7 +224,7 @@ export default function Navbar() {
                       </h3>
                       <p className="text-xs text-gray-500 mt-1">Download study materials</p>
                     </div>
-                    <div className="py-2">
+                    <div className="py-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                       {pdfsPages.map((page) => (
                         <button
                           key={page.href}
@@ -416,9 +424,9 @@ export default function Navbar() {
                     
                     {/* Animated Notes Submenu */}
                     <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      isMobileNotesOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      isMobileNotesOpen ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
-                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-3 border border-white/10">
+                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-3 border border-white/10 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
                         {notesPages.map((page, index) => (
                           <button 
                             key={page.href}
@@ -467,9 +475,9 @@ export default function Navbar() {
                     
                     {/* Animated PDFs Submenu */}
                     <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      isMobilePdfsOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      isMobilePdfsOpen ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
-                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-3 border border-white/10">
+                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-3 border border-white/10 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
                         {pdfsPages.map((page, index) => (
                           <button 
                             key={page.href}
