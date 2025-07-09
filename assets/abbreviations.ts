@@ -64,7 +64,7 @@ export const abbreviations = {
       { acronym: 'BRNA', fullForm: 'Bogie Rail Truck Air' },
       { acronym: 'BRNAHS', fullForm: 'Bogie Rail Truck Air High Speed' },
       { acronym: 'BSLB', fullForm: 'Block Section Limit Board' },
-      { acronym: 'BTPK', fullForm: 'Bogie Tank Wagon for Petrol (Air Brake)' },
+      { acronym: 'BTPN', fullForm: 'Bogie Tank Wagon for Petrol (Air Brake)' },
       { acronym: 'BTPGL', fullForm: 'Bogie Tank Wagon for LPG (Vaccum Brake)' },
       { acronym: 'BTPGLN', fullForm: 'Bogie Tank Wagon for LPG (Air Brake)' },
       { acronym: 'BCGT', fullForm: 'Brake Van Goods with Transitional Coupling' },
