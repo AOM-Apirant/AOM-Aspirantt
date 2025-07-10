@@ -68,6 +68,7 @@ export default function Navbar() {
     { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
     { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
     { name: 'G&SR', href: '/gsr', icon: '📜' },
+    { name: 'Station Working Rules', href: '/swr', icon: '🚉' },
     { name: 'Appendix', href: '/appendix', icon: '📄' },
     { name: 'RS Conduct Rules-1966', href: '/conduct-rules', icon: '⚖️' },
     { name: 'RS DA Rules - 1968', href: '/da-rules', icon: '💰' },
