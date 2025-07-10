@@ -1,5 +1,5 @@
 import React from 'react'
-import { whistleCodes, bellCodes } from '@/assets/operating'
+import { whistleCodes } from '@/assets/operating'
 
 const Operating = () => {
   return (
@@ -19,7 +19,7 @@ const Operating = () => {
       </div>
 
       {/* Whistle Codes Section */}
-      <div className="max-w-full mx-auto px-16 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden">
+      <div className="max-w-full mx-auto lg:px-16 px-4 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.15),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.08)_25%,rgba(59,130,246,0.08)_50%,transparent_50%,transparent_75%,rgba(59,130,246,0.08)_75%)] bg-[length:20px_20px]"></div>
@@ -94,118 +94,11 @@ const Operating = () => {
       </div>
       </div>
 
-      {/* Bell Codes Section */}
-      <div className="max-w-full mx-auto px-16 py-12 bg-gradient-to-br from-slate-900 via-emerald-900/20 to-slate-900 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(16,185,129,0.05)_25%,rgba(16,185,129,0.05)_50%,transparent_50%,transparent_75%,rgba(16,185,129,0.05)_75%)] bg-[length:20px_20px]"></div>
-        
-        {/* Content */}
-        <div className="relative z-10">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-center mb-4 text-blue-300">
-              Bell Codes Reference
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-          </div>
-
-          {/* Bell Codes Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {bellCodes.map((code) => (
-              <div 
-                key={code.id} 
-                className="group relative bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-green-500 transition-all duration-300 hover:transform hover:scale-105"
-              >
-                {/* Top Badge */}
-                <div className="absolute -top-3 -right-3">
-                  <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                    #{code.id}
-                  </div>
-                </div>
-
-                {/* Bell Icon */}
-                <div className="mb-4 flex justify-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 2a6 6 0 00-6 6v3.5l-2 2v1h16v-1l-2-2V8a6 6 0 00-6-6zM10 16a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
-                    </svg>
-                  </div>
-                </div>
-
-                {/* Code Display */}
-                <div className="mb-6 text-center">
-                  <div className="inline-block bg-slate-700 px-4 py-2 rounded-lg">
-                    <span className="text-green-400 font-mono text-lg font-bold">
-                      &ldquo;{code.code}&rdquo;
-                    </span>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="space-y-4">
-                  <div className="text-center">
-                    <h3 className="text-green-400 font-semibold text-sm uppercase tracking-wide mb-2">
-                      Indication
-                    </h3>
-                    <p className="text-slate-300 text-sm leading-relaxed">
-                      {code.indication}
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-700">
-                    <div className="text-center">
-                      <h4 className="text-green-400 font-semibold text-xs uppercase tracking-wide mb-1">
-                        Signalled
-                      </h4>
-                      <p className="text-slate-300 text-xs">
-                        {code.signalled}
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <h4 className="text-green-400 font-semibold text-xs uppercase tracking-wide mb-1">
-                        Acknowledged
-                      </h4>
-                      <p className="text-slate-300 text-xs">
-                        {code.acknowledged}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-green-600/10 to-emerald-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom Info */}
-          <div className="mt-16 text-center">
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
-              <h3 className="text-xl font-semibold text-green-300 mb-4">
-                Bell Code Guidelines
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-sm text-slate-300">
-                <div className="flex items-center justify-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Clear Communication</span>
-                </div>
-                <div className="flex items-center justify-center gap-2">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>Safety Protocol</span>
-                </div>
-                <div className="flex items-center justify-center gap-2">
-                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                  <span>Standard Signals</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                                
 
       
 {/* Speed of Trains in Different Circumstances */}
-      <div className='max-w-6xl mx-auto px-4 py-12'>
+      <div className='max-w-full mx-auto lg:px-16 px-4 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden'>
         <h1 className='text-2xl font-bold text-center mb-4 text-blue-300'>Speed of Trains in Different Circumstances</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           <div className='bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
@@ -213,6 +106,806 @@ const Operating = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
+      {/* Operating Forms */}
+      <div className='max-w-full mx-auto lg:px-16 px-4 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden'>
+        <h1 className='text-2xl font-bold text-center mb-8 text-blue-300'>Operating Forms</h1>
+        
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          {/* Form 1 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#1</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Signal & Telecommunication Disconnection / Reconnection Notice</h3>
+            <p className='text-slate-300 text-sm'>Form: S&T (T/351)</p>
+          </div>
+
+          {/* Form 2 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#2</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Advance authority to pass defective signals</h3>
+            <p className='text-slate-300 text-sm'>Form: T/369(1)</p>
+          </div>
+
+          {/* Form 3 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#3</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to pass signals at &apos;on&apos; or defective position</h3>
+            <p className='text-slate-300 text-sm'>Form: T/369 (3b)</p>
+          </div>
+
+          {/* Form 4 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#4</span>
+              <span className='text-green-400 text-sm font-semibold'>Green</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Caution Order</h3>
+            <p className='text-slate-300 text-sm'>Form: T/409</p>
+          </div>
+
+          {/* Form 5 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#5</span>
+              <span className='text-green-400 text-sm font-semibold'>Green</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>&apos;NIL&apos; Caution Order</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 409</p>
+          </div>
+
+          {/* Form 6 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#6</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Train Examination Advice/Report</h3>
+            <p className='text-slate-300 text-sm'>Form: T/431</p>
+          </div>
+
+          {/* Form 7 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#7</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for material train (Return to originating station)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/462</p>
+          </div>
+
+          {/* Form 8 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#8</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for material train (Proceed to next station)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 462</p>
+          </div>
+
+          {/* Form 9 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#9</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for track machine (Return to originating station)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/465</p>
+          </div>
+
+          {/* Form 10 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#10</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for track machine (Proceed to next station)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 465</p>
+          </div>
+
+          {/* Form 11 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#11</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to receive a train on an obstructed line</h3>
+            <p className='text-slate-300 text-sm'>Form: T/509</p>
+          </div>
+
+          {/* Form 12 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#12</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to receive a train on to a non-signalled line</h3>
+            <p className='text-slate-300 text-sm'>Form: T/510</p>
+          </div>
+
+          {/* Form 13 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#13</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to start from a non-signaled line</h3>
+            <p className='text-slate-300 text-sm'>Form: T/511</p>
+          </div>
+
+          {/* Form 14 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#14</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to start from a line with common Starter signal</h3>
+            <p className='text-slate-300 text-sm'>Form: T/512</p>
+          </div>
+
+          {/* Form 15 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#15</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for relief engine/train into an occupied block section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 602</p>
+          </div>
+
+          {/* Form 16 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#16</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority for opening communication during total interruption of communication on single line section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/B 602</p>
+          </div>
+
+          {/* Form 17 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#17</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority for working of trains during total interruption of communication on double line section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/C 602</p>
+          </div>
+
+          {/* Form 18 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#18</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority for temporary single line working on double line section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/D 602</p>
+          </div>
+
+          {/* Form 19 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#19</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Line Clear enquiry message asking Line Clear for despatch of trains during total failure of communication on single line section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/E 602</p>
+          </div>
+
+          {/* Form 20 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#20</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Conditional Line Clear reply message</h3>
+            <p className='text-slate-300 text-sm'>Form: T/F 602</p>
+          </div>
+
+          {/* Form 21 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#21</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Conditional Line Clear ticket (Up)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/G 602</p>
+          </div>
+
+          {/* Form 22 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#22</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Conditional Line Clear ticket (Down)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/H 602</p>
+          </div>
+
+          {/* Form 23 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#23</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Message on restoration</h3>
+            <p className='text-slate-300 text-sm'>Form: T/I 602</p>
+          </div>
+
+          {/* Form 24 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#24</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Block Ticket</h3>
+            <p className='text-slate-300 text-sm'>Form: T/J 602</p>
+          </div>
+
+          {/* Form 25 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#25</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Written permission by Guard to Loco Pilot to proceed to next station from mid-section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/609</p>
+          </div>
+
+          {/* Form 26 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#26</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Shunting order</h3>
+            <p className='text-slate-300 text-sm'>Form: T/806</p>
+          </div>
+
+          {/* Form 27 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#27</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority for Working of Trains During Total Interruption of Communication/Obstruction On Line in Automatic Block System</h3>
+            <p className='text-slate-300 text-sm'>Form: T/B 912</p>
+          </div>
+
+          {/* Form 28 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#28</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for relief engine / train into an Automatic Block signalling section</h3>
+            <p className='text-slate-300 text-sm'>Form: T/C 912</p>
+          </div>
+
+          {/* Form 29 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#29</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority For Working of Trains During Prolonged Signal Failure In Automatic Block System</h3>
+            <p className='text-slate-300 text-sm'>Form: T/D 912</p>
+          </div>
+
+          {/* Form 30 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#30</span>
+              <span className='text-red-400 text-sm font-semibold'>Red</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority For Temporary Single Line Working on Double line Automatic Block System</h3>
+            <p className='text-slate-300 text-sm'>Form: T/E 912</p>
+          </div>
+
+          {/* Form 31 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#31</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Train intact arrival register</h3>
+            <p className='text-slate-300 text-sm'>Form: T/1410</p>
+          </div>
+
+          {/* Form 32 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#32</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Line Clear enquiry and reply message book in the event of failure / Suspension / Non-provision of Block Instruments message (inward)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 1425</p>
+          </div>
+
+          {/* Form 33 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#33</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Line Clear enquiry and reply message book in the event of failure / Suspension / Non-provision of Block Instruments message (inward)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/B 1425</p>
+          </div>
+
+          {/* Form 34 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#34</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>UP Paper Line Clear Ticket</h3>
+            <p className='text-slate-300 text-sm'>Form: T/C 1425</p>
+          </div>
+
+          {/* Form 35 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#35</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Down Paper Line Clear Ticket</h3>
+            <p className='text-slate-300 text-sm'>Form: T/D 1425</p>
+          </div>
+
+          {/* Form 36 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#36</span>
+              <span className='text-red-400 text-sm font-semibold'>Black</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Trolly/Lorry/OHE ladder trolly notice</h3>
+            <p className='text-slate-300 text-sm'>Form: T/1518</p>
+          </div>
+
+          {/* Form 37 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#37</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority for Trolly/Lorry/Motor Trolly to be used on token less sections in Absolute Block System and Automatic Block System territories</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 1525</p>
+          </div>
+
+          {/* Form 38 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#38</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Motor trolley permit (following)</h3>
+            <p className='text-slate-300 text-sm'>Form: T/1525</p>
+          </div>
+
+          {/* Form 39 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#39</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for tower wagon and to return to starting station</h3>
+            <p className='text-slate-300 text-sm'>Form: T/1708</p>
+          </div>
+
+          {/* Form 40 */}
+          <div className='bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
+            <div className='flex items-center justify-between mb-4'>
+              <span className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>#40</span>
+              <span className='text-blue-400 text-sm font-semibold'>Blue</span>
+            </div>
+            <h3 className='text-lg font-semibold text-blue-300 mb-2'>Authority to proceed for tower wagon to proceed to station in advance</h3>
+            <p className='text-slate-300 text-sm'>Form: T/A 1708</p>
+          </div>
+        </div>
+      </div>
+
+
+{/* Paper Authorities */}
+      <div className='max-w-full mx-auto lg:px-16 px-4 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden'>
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.15),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(59,130,246,0.08)_25%,rgba(59,130,246,0.08)_50%,transparent_50%,transparent_75%,rgba(59,130,246,0.08)_75%)] bg-[length:20px_20px]"></div>
+        
+        {/* Content */}
+        <div className="relative z-10">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-center mb-4 text-blue-300">
+              Paper Authorities Reference
+            </h2>
+            <p className="text-center text-slate-300 mb-8 max-w-4xl mx-auto">
+              Different Paper Authorities to be used in different circumstances. 
+              Relevant GR and SR should also be referred.
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Signal Failures Section */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Signal Failures</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/369(3b)</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Home/Inner Home/Routing Home/Starter/Intermediate Starter Failure</h4>
+                <p className="text-slate-300 text-sm">Absolute Block System</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-bold">Warning</span>
+                  <span className="text-blue-400 text-sm">PLCT</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">LSS/Advanced Starter Failure</h4>
+                <p className="text-slate-300 text-sm">Paper Line Clear Ticket (T/C or T/D 1425)</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/369(1)</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Advanced Authority to Pass Defective Home Signal</h4>
+                <p className="text-slate-300 text-sm">For defective signal situations</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Relief Engine Section */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Relief Engine & Train Operations</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/A 602</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Relief Engine into Occupied Block Section</h4>
+                <p className="text-slate-300 text-sm">Absolute Block System</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/C 912</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Relief Engine into Automatic Block Section</h4>
+                <p className="text-slate-300 text-sm">Automatic Block System</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/D 602</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Temporary Single Line Working</h4>
+                <p className="text-slate-300 text-sm">Double Line Section</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/E 912</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Temporary Single Line Working (ABS)</h4>
+                <p className="text-slate-300 text-sm">Automatic Block System</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Reception & Starting Authorities */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Reception & Starting Authorities</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/510</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Reception from Wrong Line</h4>
+                <p className="text-slate-300 text-sm">Single Line & Double Line</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/509</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Reception on Obstructed Line</h4>
+                <p className="text-slate-300 text-sm">Emergency situations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/511</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Start from Non-Signaled Line</h4>
+                <p className="text-slate-300 text-sm">Non-signaled operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/512</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Start from Common Starter Line</h4>
+                <p className="text-slate-300 text-sm">Common starter situations</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Material & Track Machine Operations */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Material & Track Machine Operations</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/462</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Material Train - Return to Starting Station</h4>
+                <p className="text-slate-300 text-sm">Block section operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/A 462</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Material Train - Proceed to Next Station</h4>
+                <p className="text-slate-300 text-sm">Advance operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/465</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Track Machine - Return to Starting Station</h4>
+                <p className="text-slate-300 text-sm">Track maintenance</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/A 465</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Track Machine - Proceed to Next Station</h4>
+                <p className="text-slate-300 text-sm">Advance track operations</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Shunting Operations */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Shunting Operations</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">Regular</span>
+                  <span className="text-blue-400 text-sm">T/806</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Basic Shunting Order</h4>
+                <p className="text-slate-300 text-sm">Standard shunting operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-bold">Special</span>
+                  <span className="text-blue-400 text-sm">T/806+Key</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Shunting up to LSS (Single Line)</h4>
+                <p className="text-slate-300 text-sm">With shunt key or P.N.</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/806+Signals</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Shunting Beyond FSS</h4>
+                <p className="text-slate-300 text-sm">Treated as train movement</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">T/806+Signals</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Shunting into Advance Block Section</h4>
+                <p className="text-slate-300 text-sm">Double line operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/806+PN</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Shunting into Rear Block Section</h4>
+                <p className="text-slate-300 text-sm">With P.N. authority</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Special Equipment */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Special Equipment Operations</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/1518</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Trolley/Lorry/OHE Ladder Notice</h4>
+                <p className="text-slate-300 text-sm">Special equipment movement</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/A 1525</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Motor Trolley Dispatch</h4>
+                <p className="text-slate-300 text-sm">Token-less sections</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/1525</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Motor Trolley Following Train</h4>
+                <p className="text-slate-300 text-sm">Following operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/1708</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Tower Wagon - Return to Starting Station</h4>
+                <p className="text-slate-300 text-sm">Tower wagon operations</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/A 1708</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Tower Wagon - Proceed to Next Station</h4>
+                <p className="text-slate-300 text-sm">Advance tower operations</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Communication Failures */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Communication Failures</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Emergency</span>
+                  <span className="text-blue-400 text-sm">T/B 602</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Total Communication Failure</h4>
+                <p className="text-slate-300 text-sm">Single & Double Line</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Emergency</span>
+                  <span className="text-blue-400 text-sm">T/G or T/H 602</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Conditional Line Clear</h4>
+                <p className="text-slate-300 text-sm">Up & Down tickets</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Emergency</span>
+                  <span className="text-blue-400 text-sm">T/B 912</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Automatic Block Communication Failure</h4>
+                <p className="text-slate-300 text-sm">ABS territory</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Emergency</span>
+                  <span className="text-blue-400 text-sm">T/J 602</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Proceed on Wrong Line</h4>
+                <p className="text-slate-300 text-sm">To ascertain line is free</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Special Situations */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center">Special Situations</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/609</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Guard Permission to Loco Pilot</h4>
+                <p className="text-slate-300 text-sm">Divided train working</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">Standard</span>
+                  <span className="text-blue-400 text-sm">T/609+SM</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Light Engine Return</h4>
+                <p className="text-slate-300 text-sm">To pick up 2nd portion</p>
+              </div>
+
+              <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">Critical</span>
+                  <span className="text-blue-400 text-sm">Restart Memo</span>
+                </div>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Restart Train After Signal Violation</h4>
+                <p className="text-slate-300 text-sm">Without proper authority</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Important Notes */}
+          <div className="mt-16 text-center">
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
+              <h3 className="text-xl font-semibold text-blue-300 mb-4">
+                Important Guidelines
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 text-sm text-slate-300">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span>Critical Operations</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                  <span>Special Procedures</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span>Standard Protocols</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
     </div>
   )
 }
