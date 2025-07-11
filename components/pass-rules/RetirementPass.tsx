@@ -3,10 +3,10 @@ import React from 'react'
 const RetirementPass = () => {
   return (
     <div>
-        <section className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-xl shadow-xl p-8 mb-8 border-2 border-amber-200">
+        <section className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-xl shadow-xl p-4 sm:p-6 lg:p-8 mb-8 border-2 border-amber-200">
           <div className="flex items-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
-              <svg
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 shadow-lg">
+              <svg  
                 className="w-8 h-8 text-white"
                 fill="none"
                 stroke="currentColor"
@@ -21,10 +21,10 @@ const RetirementPass = () => {
               </svg>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-2">
                 Post-Retirement Complimentary Pass
               </h2>
-              <p className="text-amber-600 font-medium">
+              <p className="text-amber-600 font-medium text-sm sm:text-base">
                 Retirement benefits for railway servants
               </p>
             </div>
@@ -406,7 +406,7 @@ const RetirementPass = () => {
 
           {/* Entitlement Section */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-6 flex items-center">
               <span className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">
                 <svg
                   className="w-4 h-4 text-white"

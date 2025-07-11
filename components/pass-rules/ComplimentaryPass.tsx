@@ -3,11 +3,11 @@ import React from 'react'
 const ComplimentaryPass = () => {
   return (
     <div>
-        <section className="bg-gradient-to-br from-red-50 to-pink-100 rounded-xl shadow-xl p-8 mb-8 border-2 border-red-200">
-          <div className="flex items-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+        <section className="bg-gradient-to-br from-red-50 to-pink-100 rounded-xl shadow-xl p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-red-200">
+          <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 shadow-lg">
               <svg
-                className="w-8 h-8 text-white"
+                className="w-6 h-6 sm:w-8 sm:h-8 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -20,19 +20,19 @@ const ComplimentaryPass = () => {
                 />
               </svg>
             </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+            <div className="text-center sm:text-left">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-2">
                 Complimentary Card Passes
               </h2>
-              <p className="text-red-600 font-medium">
+              <p className="text-red-600 font-medium text-sm sm:text-base">
                 Freedom Fighters & Widows - Special travel benefits
               </p>
             </div>
           </div>
 
           {/* Introduction */}
-          <div className="bg-white rounded-xl p-6 shadow-md border border-red-200 mb-8">
-            <p className="text-gray-700 leading-relaxed">
+          <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md border border-red-200 mb-6 sm:mb-8">
+            <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
               Freedom fighters and their widows are entitled to special
               complimentary card passes for free rail travel on All Indian
               Railways with specific conditions and restrictions.
@@ -40,13 +40,13 @@ const ComplimentaryPass = () => {
           </div>
 
           {/* Travel Entitlements Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
             {/* Regular Trains */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mr-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-red-500">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-red-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-5 h-5 text-white"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -59,20 +59,20 @@ const ComplimentaryPass = () => {
                     />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800">Regular Trains</h4>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Regular Trains</h4>
               </div>
-              <div className="space-y-3 text-gray-700">
-                <p className="text-sm">
+              <div className="space-y-2 sm:space-y-3 text-gray-700">
+                <p className="text-xs sm:text-sm">
                   <strong>Class:</strong> 1st Class/2nd AC
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Companion:</strong> Allowed in same class
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Restrictions:</strong> Any train other than
                   Rajdhani/Shatabdi trains
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Coverage:</strong> All Indian Railways [except Metro
                   Railway/Kolkata]
                 </p>
@@ -80,11 +80,11 @@ const ComplimentaryPass = () => {
             </div>
 
             {/* Rajdhani/Shatabdi Trains */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-pink-500">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-pink-500">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-5 h-5 text-white"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -97,21 +97,21 @@ const ComplimentaryPass = () => {
                     />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800">
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
                   Rajdhani/Shatabdi Trains
                 </h4>
               </div>
-              <div className="space-y-3 text-gray-700">
-                <p className="text-sm">
+              <div className="space-y-2 sm:space-y-3 text-gray-700">
+                <p className="text-xs sm:text-sm">
                   <strong>Rajdhani:</strong> 3rd AC
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Shatabdi/Jan Shatabdi:</strong> Chair Car [CC]
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Companion:</strong> Allowed in same class
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Note:</strong> Special stamping required
                 </p>
               </div>
@@ -119,11 +119,11 @@ const ComplimentaryPass = () => {
           </div>
 
           {/* Pass Stamping Requirements */}
-          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border-2 border-yellow-200 mb-8">
-            <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-              <span className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
+          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 sm:p-6 border-2 border-yellow-200 mb-6 sm:mb-8">
+            <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">
+              <span className="w-6 h-6 sm:w-8 sm:h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
                 <svg
-                  className="w-4 h-4 text-white"
+                  className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -138,8 +138,8 @@ const ComplimentaryPass = () => {
               </span>
               Pass Stamping Requirements
             </h4>
-            <div className="bg-yellow-100 rounded-lg p-4 border border-yellow-300">
-              <p className="text-sm italic text-gray-700">
+            <div className="bg-yellow-100 rounded-lg p-3 sm:p-4 border border-yellow-300">
+              <p className="text-xs sm:text-sm italic text-gray-700">
                 &quot;Valid for travel in 3rd AC in Rajdhani trains and Chair
                 Car [CC] in Shatabdi/Jan-Shatabdi trains along with a companion
                 in same class...&quot;
@@ -148,13 +148,13 @@ const ComplimentaryPass = () => {
           </div>
 
           {/* Pass Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             {/* Validity */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-green-500">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-5 h-5 text-white"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -167,27 +167,27 @@ const ComplimentaryPass = () => {
                     />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800">Validity</h4>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Validity</h4>
               </div>
-              <div className="space-y-2 text-gray-700">
-                <p className="text-sm">
+              <div className="space-y-1 sm:space-y-2 text-gray-700">
+                <p className="text-xs sm:text-sm">
                   <strong>Persons:</strong> Two persons (self and companion)
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Duration:</strong> Life-time basis
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Renewal:</strong> Every year
                 </p>
               </div>
             </div>
 
             {/* Issuance Period */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-blue-500">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-5 h-5 text-white"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -200,27 +200,27 @@ const ComplimentaryPass = () => {
                     />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800">Issuance Period</h4>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Issuance Period</h4>
               </div>
-              <div className="space-y-2 text-gray-700">
-                <p className="text-sm">
+              <div className="space-y-1 sm:space-y-2 text-gray-700">
+                <p className="text-xs sm:text-sm">
                   <strong>Grant Period:</strong> One year
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Renewal:</strong> Annual renewal required
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Validity:</strong> Continuous lifetime benefit
                 </p>
               </div>
             </div>
 
             {/* Issuing Authority */}
-            <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-purple-500">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-5 h-5 text-white"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -233,19 +233,19 @@ const ComplimentaryPass = () => {
                     />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800">
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
                   Issuing Authority
                 </h4>
               </div>
-              <div className="space-y-2 text-gray-700">
-                <p className="text-sm">
+              <div className="space-y-1 sm:space-y-2 text-gray-700">
+                <p className="text-xs sm:text-sm">
                   <strong>Location:</strong> Divisional/Zonal Headquarters only
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Restriction:</strong> Cannot be issued at other
                   offices
                 </p>
-                <p className="text-sm">
+                <p className="text-xs sm:text-sm">
                   <strong>Centralized:</strong> Controlled issuance
                 </p>
               </div>
@@ -253,12 +253,12 @@ const ComplimentaryPass = () => {
           </div>
 
           {/* Important Notes */}
-          <div className="space-y-6">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border-2 border-blue-200">
-              <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+          <div className="space-y-4 sm:space-y-6">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 sm:p-6 border-2 border-blue-200">
+              <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">
+                <span className="w-6 h-6 sm:w-8 sm:h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-4 h-4 text-white"
+                    className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -273,35 +273,35 @@ const ComplimentaryPass = () => {
                 </span>
                 Important Notes
               </h4>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-3 sm:space-y-4 text-gray-700">
                 <div className="flex items-start">
                   <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p>
+                  <p className="text-sm sm:text-base">
                     Passes are valid for lifetime but require annual renewal
                   </p>
                 </div>
                 <div className="flex items-start">
                   <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p>Companion facility is available in all cases</p>
+                  <p className="text-sm sm:text-base">Companion facility is available in all cases</p>
                 </div>
                 <div className="flex items-start">
                   <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p>Metro Railway/Kolkata is excluded from coverage</p>
+                  <p className="text-sm sm:text-base">Metro Railway/Kolkata is excluded from coverage</p>
                 </div>
                 <div className="flex items-start">
                   <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p>
+                  <p className="text-sm sm:text-base">
                     Special stamping is mandatory for Rajdhani/Shatabdi travel
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-2 border-green-200">
-              <h4 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
-                <span className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 sm:p-6 border-2 border-green-200">
+              <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">
+                <span className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
                   <svg
-                    className="w-4 h-4 text-white"
+                    className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -316,43 +316,43 @@ const ComplimentaryPass = () => {
                 </span>
                 Application Process
               </h4>
-              <div className="space-y-4 text-gray-700">
+              <div className="space-y-3 sm:space-y-4 text-gray-700">
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 text-white font-bold">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
                     1
                   </div>
-                  <span>
+                  <span className="text-sm sm:text-base">
                     Submit application with freedom fighter certificate
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 text-white font-bold">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
                     2
                   </div>
-                  <span>Visit Divisional/Zonal Headquarters only</span>
+                  <span className="text-sm sm:text-base">Visit Divisional/Zonal Headquarters only</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 text-white font-bold">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
                     3
                   </div>
-                  <span>Collect pass with proper stamping</span>
+                  <span className="text-sm sm:text-base">Collect pass with proper stamping</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-4 text-white font-bold">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
                     4
                   </div>
-                  <span>Renew annually as required</span>
+                  <span className="text-sm sm:text-base">Renew annually as required</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Bottom Info Bar */}
-          <div className="mt-8 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl p-6 text-white">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
+          <div className="mt-6 sm:mt-8 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl p-4 sm:p-6 text-white">
+            <div className="flex flex-col sm:flex-row items-center justify-between">
+              <div className="flex items-center mb-4 sm:mb-0">
                 <svg
-                  className="w-8 h-8 mr-4"
+                  className="w-6 h-6 sm:w-8 sm:h-8 mr-3 sm:mr-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -365,16 +365,16 @@ const ComplimentaryPass = () => {
                   />
                 </svg>
                 <div>
-                  <h4 className="text-lg font-semibold">
+                  <h4 className="text-base sm:text-lg font-semibold">
                     Freedom Fighter Pass Assistance
                   </h4>
-                  <p className="text-red-100">
+                  <p className="text-red-100 text-sm sm:text-base">
                     Contact Divisional/Zonal Headquarters for freedom fighter
                     pass applications
                   </p>
                 </div>
               </div>
-              <button className="bg-white text-red-600 px-6 py-2 rounded-lg font-semibold hover:bg-red-50 transition-colors">
+              <button className="bg-white text-red-600 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-red-50 transition-colors text-sm sm:text-base">
                 Apply Now
               </button>
             </div>

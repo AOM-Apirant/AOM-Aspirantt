@@ -3,29 +3,29 @@ import React from 'react'
 const Definitions = () => {
   return (
     <div>
-        <section className="bg-white rounded-lg shadow-lg p-6 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6 border-b-2 border-blue-200 pb-2">
+        <section className="bg-white rounded-lg shadow-lg p-4 sm:p-6 mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6 border-b-2 border-blue-200 pb-2">
             IMPORTANT DEFINITIONS
           </h2>
 
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {/* Definition a */}
-            <div className="border-l-4 border-blue-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-2">
+            <div className="border-l-4 border-blue-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 text-sm sm:text-base">
                 a) &apos;Attendant&apos; means
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 a person exclusively employed on salary in the personal service
                 of a railway servant.
               </p>
             </div>
 
             {/* Definition b */}
-            <div className="border-l-4 border-green-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-2">
+            <div className="border-l-4 border-green-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 text-sm sm:text-base">
                 b) &apos;adopted child&apos; means
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 a child for whom there is satisfactory proof of adoption
                 irrespective of the fact whether such adoption is permissible or
                 not under the personal law governing the railway servant
@@ -34,45 +34,45 @@ const Definitions = () => {
             </div>
 
             {/* Definition c */}
-            <div className="border-l-4 border-purple-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-3">
+            <div className="border-l-4 border-purple-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base">
                 c) &apos;Dependent relative&apos;-
               </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Mother including a divorced mother
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Unmarried or widowed sister
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Brother/step-brother under twenty one years of age
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Invalid brother of any age
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Brother who has attained the age of twenty one years and is a
                   bonafide student
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Legally divorced sister
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-purple-600 mr-2">➢</span>
                   Widow mother-in-law in case of widows appointed on
                   compassionate grounds, whether her father is alive or not.
                 </li>
               </ul>
 
-              <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-                <p className="text-sm text-gray-700 leading-relaxed">
+              <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-blue-50 rounded-lg">
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                   <strong>Provided that</strong> a person shall not be
                   considered to be a dependent relative if his/her income from
                   all sources including pension, dearness relief, etc. exceeds
@@ -86,8 +86,8 @@ const Definitions = () => {
                 </p>
               </div>
 
-              <div className="mt-4 p-4 bg-green-50 rounded-lg">
-                <p className="text-sm text-gray-700 leading-relaxed">
+              <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-green-50 rounded-lg">
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                   <strong>Provided further that</strong> dependent relatives may
                   be included in the Privilege Passes/PT0s given to the railway
                   servants in cases where father is missing for a period of at
@@ -100,43 +100,43 @@ const Definitions = () => {
             </div>
 
             {/* Definition c - Family */}
-            <div className="border-l-4 border-orange-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-3">
+            <div className="border-l-4 border-orange-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 sm:mb-3 text-sm sm:text-base">
                 c) &apos;Family&apos; includes
               </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-orange-600 mr-2">➢</span>
                   Spouse of a railway servant whether earning or not;
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-orange-600 mr-2">➢</span>
                   Son or sons who have not attained the age of 21 years and are
                   wholly dependent on the railway servant;
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-orange-600 mr-2">➢</span>
                   Son or sons of the age of 21 and above who are bonafide
                   student
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-orange-600 mr-2">➢</span>
                   Unmarried daughters of any age whether earning or not;
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-orange-600 mr-2">➢</span>
                   Widowed daughters provided they are dependent on the railway
                   servant;
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-orange-600 mr-2">➢</span>
                   Legally divorced daughter who is dependent on the railway
                   servant;
                 </li>
               </ul>
 
-              <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
-                <p className="text-sm text-gray-700 leading-relaxed">
+              <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-yellow-50 rounded-lg">
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                   <strong>Note:</strong> For the purpose of issue of Special
                   Pass on medical grounds under Schedule-VII, the term
                   &quot;family&quot; and &quot;dependant relatives&quot; shall
@@ -147,20 +147,20 @@ const Definitions = () => {
             </div>
 
             {/* Definition d */}
-            <div className="border-l-4 border-red-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-2">
+            <div className="border-l-4 border-red-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 text-sm sm:text-base">
                 d) &apos;Pay&apos; means
               </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
+              <ul className="space-y-1 sm:space-y-2 text-gray-600">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-red-600 mr-2">➢</span>
                   Basic pay; (Pay in PAY MATRIX LEVEL)
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-red-600 mr-2">➢</span>
                   In the case of Running Staff, basic pay plus 30% thereof;
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start text-sm sm:text-base">
                   <span className="text-red-600 mr-2">➢</span>
                   Any other pay which may be specially classified as pay by the
                   President.
@@ -169,27 +169,27 @@ const Definitions = () => {
             </div>
 
             {/* Definition e */}
-            <div className="border-l-4 border-teal-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-2">
+            <div className="border-l-4 border-teal-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 text-sm sm:text-base">
                 e) &quot;Set&quot; means
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-2">
+              <p className="text-gray-600 leading-relaxed mb-2 text-sm sm:text-base">
                 one Pass or P.T.0 for outward and return journeys;
               </p>
-              <h4 className="font-medium text-gray-700 mb-2">
+              <h4 className="font-medium text-gray-700 mb-2 text-sm sm:text-base">
                 &quot;Half-set&quot; means
               </h4>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 a Pass or P.T.0 issued from one station to another
               </p>
             </div>
 
             {/* Definition f */}
-            <div className="border-l-4 border-indigo-500 pl-4">
-              <h3 className="font-semibold text-gray-700 mb-2">
+            <div className="border-l-4 border-indigo-500 pl-3 sm:pl-4">
+              <h3 className="font-semibold text-gray-700 mb-2 text-sm sm:text-base">
                 f) &apos;year&apos; means
               </h3>
-              <p className="text-gray-600 leading-relaxed">a Calendar Year.</p>
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">a Calendar Year.</p>
             </div>
           </div>
         </section>

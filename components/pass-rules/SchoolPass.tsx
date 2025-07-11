@@ -33,10 +33,10 @@ const SchoolPass = () => {
               </svg>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-2">
                 School Pass
               </h2>
-              <p className="text-green-600 font-medium">
+              <p className="text-green-600 font-medium text-sm sm:text-base">
                 Educational travel benefits for railway servants&apos; children
               </p>
             </div>
