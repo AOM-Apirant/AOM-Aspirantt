@@ -4,8 +4,8 @@ const SuspensionPass = () => {
   return (
     <div>
         <section className="bg-gradient-to-br from-gray-50 to-slate-100 rounded-xl shadow-xl p-8 mb-8 border-2 border-gray-200">
-          <div className="flex items-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-gray-500 to-slate-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+          <div className="flex flex-col lg:flex-row items-center mb-8">
+            <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-br from-gray-500 to-slate-600 rounded-lg flex items-center justify-center mr-6 shadow-lg mb-4 lg:mb-0">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -20,8 +20,8 @@ const SuspensionPass = () => {
                 />
               </svg>
             </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+            <div className='text-center lg:text-left'>
+              <h2 className="lg:text-3xl text-2xl font-bold text-gray-800 mb-2">
                 Suspension Passes & Distance Restrictions
               </h2>
               <p className="text-gray-600 font-medium">

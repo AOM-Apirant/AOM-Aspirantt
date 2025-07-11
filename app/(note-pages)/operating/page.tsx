@@ -1,7 +1,9 @@
 import React from 'react'
 import { whistleCodes } from '@/assets/operating'
 import OperatingForms from '@/components/operating/OperatingForms'
-import PaperAuthorities from './PaperAuthorities'
+import PaperAuthorities from '@/components/operating/PaperAuthorities'
+import SpeedRestrictions from '@/components/operating/SpeedRestrictions'
+import BellCodes from '@/components/bwm/BellCodes'
 
 const Operating = () => {
   return (
@@ -100,14 +102,7 @@ const Operating = () => {
 
       
 {/* Speed of Trains in Different Circumstances */}
-      <div className='max-w-full mx-auto lg:px-16 px-4 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden'>
-        <h1 className='text-2xl font-bold text-center mb-4 text-blue-300'>Speed of Trains in Different Circumstances</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-          <div className='bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105'>
-            <h2 className='text-lg font-bold text-blue-300'>Speed of Trains in Different Circumstances</h2>
-          </div>
-        </div>
-      </div>
+        <SpeedRestrictions />
 
 
 
@@ -121,7 +116,8 @@ const Operating = () => {
       <PaperAuthorities />
 
 
-
+{/* Bell Codes */}
+<BellCodes />
 
 
 

@@ -12,6 +12,7 @@ const SWR = () => {
           <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
             Station Working Rules
           </h1>
+          <h2 className='text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4'>Appendix - XIV</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Comprehensive guide to station working rules and procedures for railway operations
           </p>

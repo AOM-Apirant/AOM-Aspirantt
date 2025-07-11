@@ -4,7 +4,7 @@ const SplitPass = () => {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <section className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-xl p-8 mb-8 border-2 border-purple-200">
-        <h2 className="text-3xl font-bold text-purple-800 mb-6 text-center">
+        <h2 className="lg:text-3xl text-xl font-bold mb-6 text-center">
           SPLIT PASS
         </h2>
         
