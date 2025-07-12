@@ -13,6 +13,14 @@ const GSRAmendments = () => {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
+
+    // Auto-open PDF on mobile devices after download
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    if (isMobile) {
+      setTimeout(() => {
+        window.open(`/gsrpdfs/${filename}`, '_blank')
+      }, 1000) // Wait 1 second for download to start
+    }
   }
 
   return (
@@ -21,7 +29,7 @@ const GSRAmendments = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="lg:text-4xl md:text-5xl text-3xl font-bold text-gray-800 mb-4">
-            G&SR Amendment Slips
+            G&SR Amendments
           </h1>
           <p className="lg:text-xl text-base text-gray-600 max-w-2xl mx-auto">
             Download the latest General and Subsidiary Rules (G&SR) amendments and updates
@@ -36,9 +44,9 @@ const GSRAmendments = () => {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-300 overflow-hidden"
+                className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-200 overflow-hidden"
               >
-                <div className="p-6">
+                <div className="p-4 lg:p-6">
                   {/* Icon and Title */}
                   <div className="flex  litems-center mb-4">
                     <div className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg mr-4">
@@ -79,7 +87,7 @@ const GSRAmendments = () => {
 
         {/* Additional Info Section */}
         <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-blue-300">
+          <div className="bg-white rounded-xl shadow-lg p-4 lg:p-8 border border-blue-200">
             <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-4 flex items-center">
               <FileText className="w-6 h-6 mr-3 text-blue-600" />
               About G&SR Amendments

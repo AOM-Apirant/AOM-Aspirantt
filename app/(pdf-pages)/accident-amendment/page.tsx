@@ -11,6 +11,14 @@ const AccidentAmendments = () => {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
+
+    // Auto-open PDF on mobile devices after download
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    if (isMobile) {
+      setTimeout(() => {
+        window.open(`/ampdfs/${filename}`, '_blank')
+      }, 1000) // Wait 1 second for download to start
+    }
   }
 
   return (
