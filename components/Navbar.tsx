@@ -84,6 +84,7 @@ export default function Navbar() {
     { name: 'Accident Amendments', href: '/accident-amendment', icon: '🚨' },
     { name: 'BWM Amendments', href: '/bwm-amendment', icon: '📋' },
     { name: 'JPOs', href: '/jpo', icon: '📄' },
+    { name: 'Authorities', href: '/authorities', icon: '🏛️' },
     { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' },
     { name: 'Previous Papers', href: '/previous', icon: '📚' },
   ];
