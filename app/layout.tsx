@@ -7,6 +7,9 @@ export const metadata = {
   title: 'AOM Aspirant',
   description: 'Your gateway to become AOM',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -16,9 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
-      </head>
+      
       <body className="antialiased" suppressHydrationWarning={true}>
         <SessionProvider>
           <div className="flex flex-col min-h-screen">

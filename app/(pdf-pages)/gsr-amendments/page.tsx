@@ -46,11 +46,11 @@ const GSRAmendments = () => {
                 key={index}
                 className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-200 overflow-hidden"
               >
-                <div className="p-4 lg:p-6">
+                <div className="p-3 lg:p-6">
                   {/* Icon and Title */}
                   <div className="flex  litems-center mb-4">
                     <div className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg mr-4">
-                      <IconComponent className="w-6 h-6 text-white" />
+                      <IconComponent className="lg:w-6 lg:h-6 w-5 h-5 text-white" />
                     </div>
                     <div>
                       <h3 className="lg:text-lg text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">

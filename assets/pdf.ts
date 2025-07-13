@@ -160,7 +160,7 @@ export const gsrpdfFiles = [
 
 export const accidentPdfFiles = [
   {
-    name: "Accident Manual AS - 6",
+    name: "AS 6 to Accident Manual",
     filename: "Accident Manual AS -6.pdf",
     size: "9.8MB",
     description:
@@ -168,7 +168,7 @@ export const accidentPdfFiles = [
     icon: FileArchive,
   },
   {
-    name: "Accident Manual AS - 5",
+    name: "AS 5 to Accident Manual",
     filename: "Accident Manual AS - 5.pdf",
     size: "232KB",
     description:
@@ -176,14 +176,14 @@ export const accidentPdfFiles = [
     icon: FileText,
   },
   {
-    name: "Accident Manual AS - 4",
+    name: "AS 4 to Accident Manual",
     filename: "Accident Manual AS - 4.pdf",
     size: "180KB",
     description: "Accident Manual Amendment Slip 4 - Updated safety guidelines",
     icon: FileText,
   },
   {
-    name: "Accident Manual AS - 3",
+    name: "AS 3 to Accident Manual",
     filename: "Accident Manual AS - 3.pdf",
     size: "208KB",
     description:
@@ -191,7 +191,7 @@ export const accidentPdfFiles = [
     icon: FileText,
   },
   {
-    name: "Accident Manual AS - 2",
+    name: "AS 2 to Accident Manual",
     filename: "Accident Manual AS - 2.pdf",
     size: "116KB",
     description: "Accident Manual Amendment Slip 2 - Safety protocol updates",
@@ -201,7 +201,7 @@ export const accidentPdfFiles = [
 
 export const authorityPdfFiles = [
   {
-    name: "T3693B Authority",
+    name: "T/369(3b) Authority",
     filename: "T3693B.pdf",
     size: "253KB",
     description:
@@ -209,14 +209,14 @@ export const authorityPdfFiles = [
     icon: FileText,
   },
   {
-    name: "T510 Authority",
+    name: "T/510 Authority",
     filename: "T510.pdf",
     size: "346KB",
     description: "Authority document T510 - Comprehensive authority procedures",
     icon: FileText,
   },
   {
-    name: "TB602 Authority",
+    name: "T/B 602 Authority",
     filename: "TB602.pdf",
     size: "257KB",
     description:
@@ -231,14 +231,14 @@ export const authorityPdfFiles = [
     icon: FileText,
   },
   {
-    name: "TD602 Authority",
+    name: "T/D 602 Authority",
     filename: "TD602.pdf",
     size: "355KB",
     description: "Authority document TD602 - Detailed authority procedures",
     icon: FileText,
   },
   {
-    name: "TD912 Authority",
+    name: "T/D 912 Authority",
     filename: "TD912.pdf",
     size: "83KB",
     description: "Authority document TD912 - Authority reference document",
@@ -253,37 +253,37 @@ export const authorityPdfFiles = [
   },
 ];
 
-export const pdfFiles = [
-  {
-    id: 1,
-    title: "Digital G&SR 2020 Upto AS 21",
-    description: "Digital G&SR 2020 Upto Amendment Slip 21",
-    filename: "/pdfs/Digital SCR G&SR 2020 upto AS 21.pdf",
-    size: "12.9 MB",
-    category: "G & SR",
-  },
-  {
-    id: 2,
-    title: "AS 21 to G&SR 2020",
-    description: "Amendment Slip 21 to G&SR 2020",
-    filename: "/pdfs/AS 21 to SCR G&SR 2020.pdf",
-    size: "657 KB",
-    category: "G & SR",
-  },
-  {
-    id: 3,
-    title: "AS 20 to G&SR 2020",
-    description: "Amendment Slip 20 to G&SR 2020",
-    filename: "/pdfs/AS 20 to G&SR 2020.pdf",
-    size: "546 KB",
-    category: "G & SR",
-  },
-  {
-    id: 4,
-    title: "AS 19 to G&SR 2020",
-    description: "Amendment Slip 19 to G&SR 2020",
-    filename: "/pdfs/AS 19 to G&SR 2020.pdf",
-    size: "175 KB",
-    category: "G & SR",
-  },
-];
+// export const pdfFiles = [
+//   {
+//     id: 1,
+//     title: "Digital G&SR 2020 Upto AS 21",
+//     description: "Digital G&SR 2020 Upto Amendment Slip 21",
+//     filename: "/pdfs/Digital SCR G&SR 2020 upto AS 21.pdf",
+//     size: "12.9 MB",
+//     category: "G & SR",
+//   },
+//   {
+//     id: 2,
+//     title: "AS 21 to G&SR 2020",
+//     description: "Amendment Slip 21 to G&SR 2020",
+//     filename: "/pdfs/AS 21 to SCR G&SR 2020.pdf",
+//     size: "657 KB",
+//     category: "G & SR",
+//   },
+//   {
+//     id: 3,
+//     title: "AS 20 to G&SR 2020",
+//     description: "Amendment Slip 20 to G&SR 2020",
+//     filename: "/pdfs/AS 20 to G&SR 2020.pdf",
+//     size: "546 KB",
+//     category: "G & SR",
+//   },
+//   {
+//     id: 4,
+//     title: "AS 19 to G&SR 2020",
+//     description: "Amendment Slip 19 to G&SR 2020",
+//     filename: "/pdfs/AS 19 to G&SR 2020.pdf",
+//     size: "175 KB",
+//     category: "G & SR",
+//   },
+// ];
