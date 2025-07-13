@@ -8,34 +8,34 @@ export const allQuizzes = {
       quizzes: {
         '1': [
           {
-            question: 'What is the capital of India?',
-            options: ['Mumbai', 'Delhi', 'Kolkata', 'Chennai'],
-            correct: 1,
-            explanation: 'Delhi is the capital of India. It has been the capital since 1911 when the British moved it from Kolkata.'
-          },
-          {
-            question: 'Which planet is known as the Red Planet?',
-            options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
-            correct: 1,
-            explanation: 'Mars is known as the Red Planet due to its reddish appearance, which is caused by iron oxide (rust) on its surface.'
-          },
-          {
-            question: 'What is the largest ocean on Earth?',
-            options: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
+            question: 'General Rules for Indian Railways (open lines) is first administered by Govt in the year ....... for the time being used for the public carriage of passenger, animals or Goods.',
+            options: ['1968', '1970', '1975', '1976'],
             correct: 3,
-            explanation: 'The Pacific Ocean is the largest and deepest ocean on Earth, covering about 30% of the Earth&apos;s surface.'
+            explanation: '1976 is the correct answer. Reference: Preface to General Rules'
           },
           {
-            question: 'Who wrote "Romeo and Juliet"?',
-            options: ['Charles Dickens', 'William Shakespeare', 'Jane Austen', 'Mark Twain'],
+            question: 'The general Rules framed in 1929, the revision for which was advocated by Railway accident committee in the year',
+            options: ['1960', '1962', '1965', '1968'],
             correct: 1,
-            explanation: 'William Shakespeare wrote the famous tragedy "Romeo and Juliet" in the late 16th century.'
+            explanation: '1962 is the correct answer. Reference: Preface to General Rules'
           },
           {
-            question: 'What is the chemical symbol for gold?',
-            options: ['Ag', 'Au', 'Fe', 'Cu'],
-            correct: 1,
-            explanation: 'Au is the chemical symbol for gold, derived from the Latin word "aurum."'
+            question: 'The general Rules framed in 1929, the revision for which was advocated by Railway accident inquiry committee in the year',
+            options: ['1960', '1962', '1965', '1968'],
+            correct: 3,
+            explanation: '1968 is the correct answer. Reference: Preface to General Rules'
+          },
+          {
+            question: 'Based on recommendations of Railway accident committee and Railway accident inquiry committee a Committee formed composed of officers of Traffic and S&T department was appointed by Railway board in ........ and they submitted draft rules in ........',
+            options: ['1962, 1970', '1965,1972', '1968, 1970', '1970, 1972'],
+            correct: 2,
+            explanation: '1968, 1970 is the correct answer. Reference: Preface to General Rules'
+          },
+          {
+            question: 'Revised GR submitted by committee was circulated to RDSO, Commission of Railway Safety, Rly staff college Baroda, IRISET, IRMEE Jamalpur for suggestions vide Rly Board lr no 68-RR/2 Vol V in the month of........',
+            options: ['April 1970', 'May 1972', 'June 1973', 'July 1974'],
+            correct: 3,
+            explanation: 'July 1974 is the correct answer. Reference: Preface to General Rules'
           }
         ],
         '2': [
