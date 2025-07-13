@@ -245,7 +245,7 @@ export const authorityPdfFiles = [
     icon: FileText,
   },
   {
-    name: "TE912 Authority",
+    name: "T/E912 Authority",
     filename: "TE912.pdf",
     size: "356KB",
     description: "Authority document TE912 - Extended authority guidelines",
