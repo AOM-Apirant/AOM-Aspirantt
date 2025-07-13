@@ -1,3 +1,4 @@
+
 export const allQuizzes = {
     // General Knowledge Category - Multiple separate quizzes
     'gsr': {
@@ -226,7 +227,7 @@ export const allQuizzes = {
             explanation: 'T/D 1425 is the correct answer.'
           },
           {
-            question: 'To attach a dead engine to a train, a certificate of ‘fit to run’ is re-quired, which shall be issued by.',
+            question: 'To attach a dead engine to a train, a certificate of fit to run is re-quired, which shall be issued by.',
             options: ['Loco Inspector', 'Power controller', 'Section Engineer', 'Any one of the above'],
             correct: 3,
             explanation: 'Any one of the above is the correct answer.'
@@ -264,7 +265,7 @@ export const allQuizzes = {
             explanation: '90% is the correct answer.'
           },
           {
-            question: 'In automatic section, if ‘A’ and ‘AG’ marker lights lit together or not lit, the corresponding signal to be treated as .........',
+            question: 'In automatic section, if A and AG marker lights lit together or not lit, the corresponding signal to be treated as .........',
             options: ['Automatic signal', 'Automatic gate signal', 'Manual stop signal', 'None of the above'],
             correct: 2,
             explanation: 'Manual stop signal is the correct answer.'
@@ -320,13 +321,13 @@ export const allQuizzes = {
             explanation: 'Stop dead is the correct answer.'
           },
           {
-            question: 'When ‘lurch’ is reported and subsequently a train is sent in the absence of engineering official, caution order is given to the LP to stop dead if considered safe, proceed at a speed of ........',
+            question: 'When lurch is reported and subsequently a train is sent in the absence of engineering official, caution order is given to the LP to stop dead if considered safe, proceed at a speed of ........',
             options: ['8 kmph', '10 kmph', '15 kmph', '25 kmph'],
             correct: 1,
             explanation: '10 kmph is the correct answer.'
           },
           {
-            question: 'In case of’ A’ and ‘AG’ markers are lit together, signal above shall be deemed to work as a Manual stop signal and LP shall pass only on assumption of ‘off’ position or on receipt of ........',
+            question: 'In case of A and AG markers are lit together, signal above shall be deemed to work as a Manual stop signal and LP shall pass only on assumption of off position or on receipt of ........',
             options: ['T/369(3b)', 'T/369(3b) + PHS)', 'T/369(1) + PHS', 'None of the above'],
             correct: 1,
             explanation: 'T/369(3b) + PHS is the correct answer.'
@@ -338,7 +339,7 @@ export const allQuizzes = {
             explanation: 'Caution Order,  T/A 1708 is the correct answer.'
           },
           {
-            question: 'At train starting station, ‘is line clear’ shall be asked, ........ minutes before the booked departure of the passenger carrying trains.',
+            question: 'At train starting station, is line clear shall be asked, ........ minutes before the booked departure of the passenger carrying trains.',
             options: ['5', '7', '10', 'As per WTT'],
             correct: 0,
             explanation: '5 minutes is the correct answer.'
@@ -356,7 +357,7 @@ export const allQuizzes = {
             explanation: 'COA is the correct answer.'
           },
           {
-            question: 'For all Goods trains at originating station “is line clear” should be asked',
+            question: 'For all Goods trains at originating station "is line clear" should be asked',
             options: ['After BPC Signed', 'Before 5 minutes', 'Before 10 minutes', 'When the Train is ready'],
             correct: 3,
             explanation: 'When the Train is ready is the correct answer.'
@@ -370,7 +371,7 @@ export const allQuizzes = {
             explanation: '8 is the correct answer.'
           },
           {
-            question: '44.  The indication of the Calling On signal when taken ‘OFF’ is ........',
+            question: '44.  The indication of the Calling On signal when taken OFF is ........',
             options: ['Proceed cautiously', 'Stop dead', 'Proceed and be prepared to stop at next stop signal', 'Stop and then draw ahead with caution and be prepared to stop short of any obstruction'],
             correct: 3,
             explanation: 'Stop and then draw ahead with caution and be prepared to stop short of any obstruction is the correct answer.'
@@ -383,12 +384,12 @@ export const allQuizzes = {
           },
           {
             question: 'In UFSBI/SSBPAC(D) block instrument on Double line section to prevent Rear SM to take line clear what to be done.',
-            options: ['Keeping LSS knob in Normal position', 'Take out LCB key', 'Take out SM’s key of Block Panel', 'None of the above'],
+            options: ['Keeping LSS knob in Normal position', 'Take out LCB key', 'Take out SMs key of Block Panel', 'None of the above'],
             correct: 1,
             explanation: 'Take out LCB key is the correct answer.'
           },
           {
-            question: 'The indication that appear at the SM in rear, when Loco Pilot passes IBS at `ON’ is ........',
+            question: 'The indication that appear at the SM in rear, when Loco Pilot passes IBS at ON is ........',
             options: ['K1', 'K2', 'K3', 'K4'],
             correct: 0,
             explanation: 'K1 is the correct answer.'
@@ -426,7 +427,7 @@ export const allQuizzes = {
         ],
         '5': [
           {
-            question: '“Danger Zone” means the zone lying around any live equipment with in a radius of ........',
+            question: '"Danger Zone" means the zone lying around any live equipment with in a radius of ........',
             options: ['2 m', '2.5 m', '3 m', '4 m'],
             correct: 0,
             explanation: '2 m is the correct answer.'
@@ -450,7 +451,7 @@ export const allQuizzes = {
             explanation: 'T/1525 is the correct answer.'
           },
           {
-            question: 'When IBS is at “ON” and the telephone is out of order, Loco Pilot after waiting for five minutes shall proceed when view is clear /not clear up to next stop signal at a speed not exceeding ........',
+            question: 'When IBS is at "ON" and the telephone is out of order, Loco Pilot after waiting for five minutes shall proceed when view is clear /not clear up to next stop signal at a speed not exceeding ........',
             options: ['10/8  kmph', '15/8 kmph', '20/10 kmph', '25/10 kmph'],
             correct: 1,
             explanation: '15/8 kmph is the correct answer.'
@@ -488,7 +489,7 @@ export const allQuizzes = {
         ],
         '6': [
           {
-            question: '“Gate-cum-Distant signal shall be located in rear of the gate at a distance of not less than ........',
+            question: '"Gate-cum-Distant signal shall be located in rear of the gate at a distance of not less than ........',
             options: ['90 meters', '120 meters', '150 meters', '180 meters'],
             correct: 3,
             explanation: '180 meters is the correct answer.'
@@ -550,7 +551,7 @@ export const allQuizzes = {
         ],
         '7': [
           {
-            question: '“During divided train working, the written authority issued by the Guard of the train to the LP to clear the first portion , is ........',
+            question: '"During divided train working, the written authority issued by the Guard of the train to the LP to clear the first portion , is ........',
             options: ['Caution order', 'T/A.602', 'T/609', 'Written memo'],
             correct: 2,
             explanation: 'T/609 is the correct answer.'
@@ -612,7 +613,7 @@ export const allQuizzes = {
         ],
         '8': [
           {
-            question: '“The commutator of block instruments pertaining to obstructed line, including that of intermediate block station/s if any between the nominated stations, shall be kept in ........ and locked for the entire duration of TSL working',
+            question: '"The commutator of block instruments pertaining to obstructed line, including that of intermediate block station/s if any between the nominated stations, shall be kept in ........ and locked for the entire duration of TSL working',
             options: ['Line clear position', 'Line closed position', 'TOL position', 'TOL position for wrong line trains only'],
             correct: 2,
             explanation: 'TOL position is the correct answer.'
@@ -636,7 +637,7 @@ export const allQuizzes = {
             explanation: 'Station Diary is the correct answer.'
           },
           {
-            question: 'BSLB is provided at class ‘B’ station with multiple aspect signals where ........',
+            question: 'BSLB is provided at class B station with multiple aspect signals where ........',
             options: ['Outermost points are trailing point', 'No points', 'Either A or B', 'None of the above'],
             correct: 0,
             explanation: 'Outermost points are trailing point is the correct answer.'
@@ -674,7 +675,7 @@ export const allQuizzes = {
         ],
         '9': [
           {
-            question: 'Calling ON signal cannot be taken “OFF” during .......',
+            question: 'Calling ON signal cannot be taken "OFF" during .......',
             options: ['Axle Counter failure', 'Facing end point failure', 'Home signal failure', 'Trailing point failure'],
             correct: 1,
             explanation: 'Facing end point failure is the correct answer.'
@@ -710,7 +711,7 @@ export const allQuizzes = {
             explanation: 'A is the correct answer.'
           },
           {
-            question: 'At stations provided with block proven axle counter (BPAC) and functioning, The Station Master on duty shall send the “train out of block section” signal only by ......',
+            question: 'At stations provided with block proven axle counter (BPAC) and functioning, The Station Master on duty shall send the "train out of block section" signal only by ......',
             options: ['Getting private number from guard', 'Getting private number from points man', 'Listening to LVT buzzer', 'Seeing clear indication of BPAC'],
             correct: 3,
             explanation: 'Seeing clear indication of BPAC is the correct answer.'
@@ -884,7 +885,7 @@ export const allQuizzes = {
             explanation: 'Calling on signal or T/509 is the correct answer.'
           },
           {
-            question: 'The authority required by Loco Pilot when passes starter at “ON” partly and stopped before Advanced Starter',
+            question: 'The authority required by Loco Pilot when passes starter at "ON" partly and stopped before Advanced Starter',
             options: ['Restart memo counter signed by Guard', 'T.369 (3b) + PHS', 'Advanced starter taken off / PLCT', 'All the above'],
             correct: 3,
             explanation: 'All the above is the correct answer.'
@@ -946,7 +947,7 @@ export const allQuizzes = {
             explanation: 'Writing PN in train intact arrival register is the correct answer.'
           },
           {
-            question: 'When a train passes IBS at ‘on’, K1 indication appears and IB section is already occupied by a train SM in rear shall take following action to stop the train and inform LP and Guard',
+            question: 'When a train passes IBS at ON, K1 indication appears and IB section is already occupied by a train SM in rear shall take following action to stop the train and inform LP and Guard',
             options: ['Advise gate man', 'Inform TPC to switch off OHE supply', 'Inform Advance SM to issue caution order to opp. direction trains', 'All the above'],
             correct: 3,
             explanation: 'All the above is the correct answer.'
@@ -977,7 +978,7 @@ export const allQuizzes = {
           },
           {
             question: 'In UFSBI/SSBPAC(D) block instrument on single line section to prevent adjacent SM to take line clear what to be done?',
-            options: ['Keeping LSS /FSS knob in Normal position', 'Shunt Release Key in IN position', 'Take out SM’s key of Block Panel', 'All the above'],
+            options: ['Keeping LSS /FSS knob in Normal position', 'Shunt Release Key in IN position', 'Take out SMs key of Block Panel', 'All the above'],
             correct: 1,
             explanation: 'Shunt Release Key in IN position is the correct answer.'
           },
@@ -1835,9 +1836,9 @@ export const allQuizzes = {
           },
           {
             question: 'When dependents are included in a Pass/PTO number persons entitled to be include in Pass/ PTO shall be ....',
-            options: ['All Family members + 2 dependents', 'Any number of Family members + 3dependents', '5 member’s only', '6 members only'],
+            options: ['All Family members + 2 dependents', 'Any number of Family members + 3 dependents', '5 members only', '6 members only'],
             correct: 2,
-            explanation: '5 member’s only is the correct answer.'
+            explanation: '5 members only is the correct answer.'
           },
           {
             question: 'How many sets of PTOs is/ are a license Holder coolie is entitled in a calendar year?',
@@ -2557,7 +2558,7 @@ export const allQuizzes = {
               explanation: 'Union of India is classified into A, B & C Regions under Official Language Rules.'
             },
             {
-              question: 'When is “Hindi Day” celebrated every year?',
+              question: 'When is "Hindi Day" celebrated every year?',
               options: ['14th September', '15th September', '16th September', '17th September'],
               correct: 0,
               explanation: 'Hindi Day is celebrated every year on 14th September.'
@@ -2569,10 +2570,10 @@ export const allQuizzes = {
               explanation: 'Andaman and Nicobar islands come under A Region.'
             },
             {
-              question: 'According to official language rules, which is the only Union territory classified under region ‘B’?',
+              question: 'According to official language rules, which is the only Union territory classified under region B?',
               options: ['Union territory of Chandigarh', 'Union territory of Daman & Dieu', 'Pondichery', 'None of the above'],
               correct: 0,
-              explanation: 'Union territory of Daman & Dieu is the only Union territory classified under region ‘B’.'
+              explanation: 'Union territory of Daman & Dieu is the only Union territory classified under region B.'
             },
             {
               question: 'What is the official language of Arunachal Pradesh?',
@@ -2817,16 +2818,16 @@ export const allQuizzes = {
               explanation: 'Parangat is the newly introduced course in Hindi by Hindi teaching scheme.'
             },
             {
-              question: 'Which course a category ‘C’ employee required to be trained?',
+              question: 'Which course a category C employee required to be trained?',
               options: ['Prabodh', 'Praveen', 'Pragya', 'Parangat'],
               correct: 1,
-              explanation: 'Praveen is the course a category ‘C’ employee required to be trained.'
+              explanation: 'Praveen is the course a category C employee required to be trained.'
             },
             {
-              question: 'From which course a category ‘D’ employee required to be trained',
+              question: 'From which course a category D employee required to be trained',
               options: ['Prabodh', 'Praveen', 'Pragya', 'Parangat'],
               correct: 0,
-              explanation: 'Prabodh is the course a category ‘D’ employee required to be trained.'
+              explanation: 'Prabodh is the course a category D employee required to be trained.'
             },
             {
               question: 'What is the Lumpsum award for passing Pragya?',
@@ -2835,10 +2836,10 @@ export const allQuizzes = {
               explanation: 'Rs. 2400 is the Lumpsum award for passing Pragya.'
             },
             {
-              question: 'How many officers/ employees are warded every year from southern railway under Railway Board’s Rajbhasha individual cash award scheme?',
+              question: 'How many officers/ employees are warded every year from southern railway under Railway Board\'s Rajbhasha individual cash award scheme?',
               options: ['5', '6', '7', '8'],
               correct: 3,
-              explanation: '8 officers/ employees are warded every year from southern railway under Railway Board’s Rajbhasha individual cash award scheme.'
+              explanation: '8 officers/ employees are warded every year from southern railway under Railway Board\'s Rajbhasha individual cash award scheme.'
             },
             {
               question: 'How many first prizes are given in a year for writing more than 10,000 words in one unit under home ministries award scheme?',
@@ -3104,7 +3105,7 @@ export const allQuizzes = {
               question: 'Indian railways that play an important role in our life was nationalized in .......',
               options: ['1948', '1949', '1950', '1951'],
               correct: 3,
-              explanation: 'Indian Railways, a vital lifeline for transportation in India, was nationalized in 1951. This means the government took control of various private and state-owned railway companies, merging them into a single entity under the Ministry of Railways. The process began post-independence to streamline operations, improve connectivity, and ensure uniform development across the country’s vast railway network. Before 1951, railways were operated by multiple entities, including princely states and private companies, leading to inefficiencies.'
+              explanation: 'Indian Railways, a vital lifeline for transportation in India, was nationalized in 1951. This means the government took control of various private and state-owned railway companies, merging them into a single entity under the Ministry of Railways. The process began post-independence to streamline operations, improve connectivity, and ensure uniform development across the country\'s vast railway network. Before 1951, railways were operated by multiple entities, including princely states and private companies, leading to inefficiencies.'
             },
             {
               question: 'The first Shatabdi express was introduced between which of the following locations?',
@@ -3185,7 +3186,7 @@ export const allQuizzes = {
               question: 'Who was the first railway minister of Independent India?',
               options: ['Asaf Ali', 'John Mathai', 'Lal Bahadur Shastri', 'N. GopalaswamiAyyanagar'],
               correct: 1,
-              explanation: 'John Mathai served as the first Railway Minister of independent India from 1947 to 1948, following India\'s independence on August 15, 1947. He was appointed to the position in Jawaharlal Nehru’s first cabinet and also held the portfolio of Transport. His tenure as Railway Minister lasted until 1948, after which he became the Finance Minister.'
+              explanation: 'John Mathai served as the first Railway Minister of independent India from 1947 to 1948, following India\'s independence on August 15, 1947. He was appointed to the position in Jawaharlal Nehru\'s first cabinet and also held the portfolio of Transport. His tenure as Railway Minister lasted until 1948, after which he became the Finance Minister.'
             },
             {
               question: 'What is the rank of India in the world in terms of length of railroad network?',
