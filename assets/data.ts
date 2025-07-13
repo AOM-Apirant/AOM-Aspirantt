@@ -37,134 +37,99 @@ export const allQuizzes = {
             options: ['April 1970', 'May 1972', 'June 1973', 'July 1974'],
             correct: 3,
             explanation: 'July 1974 is the correct answer. Reference: Preface to General Rules'
-          }
+          },
+          {
+            question: 'Ministry of Railways (Railway Board) constituted a Committee for the revision of General Rules, 1976, who have submitted the final report in the year.',
+            options: ['2008', '2009', '2010', '2011'],
+            correct: 1,
+            explanation: '2009 is the correct answer. Reference: Safety Directorate'
+          },
+          {
+            question: 'Section under which General Rules for Open Lines of the Railways 1976 have been framed by Government of India is.',
+            options: ['195', '196', '197', '198'],
+            correct: 3,
+            explanation: '198 is the correct answer. Reference: Preface to General Rules'
+          },
+          {
+            question: 'Every Railway Servant is bound by the General Rules, the Subsidiary Rules and special instructions under Railways Act 1989 Section',
+            options: ['175', '176', '177', '178'],
+            correct: 0,
+            explanation: '175 is the correct answer. Reference: Preface to General Rules'
+          },
+          {
+            question: 'General Rules can be framed by ........',
+            options: ['Authorised Officer', 'CRS', 'Government of India', 'Railway Board'],
+            correct: 2,
+            explanation: 'Government of India is the correct answer. Reference: Preface to General Rules'
+          },
+          {
+            question: 'Total number of Chapters in General & Subsidiary Rules are ........',
+            options: ['16', '18', '20', '22'],
+            correct: 1,
+            explanation: '18 is the correct answer. Reference: Index of G&SR'
+          },
+          
         ],
         '2': [
           {
-            question: 'Which country is home to the kangaroo?',
-            options: ['New Zealand', 'Australia', 'South Africa', 'Brazil'],
-            correct: 1,
-            explanation: 'Kangaroos are native to Australia and are one of the country\'s most iconic animals.'
-          },
-          {
-            question: 'What is the largest desert in the world?',
-            options: ['Sahara Desert', 'Arabian Desert', 'Gobi Desert', 'Antarctic Desert'],
+            question: 'The definition of "Act" as per G&SR means the section under Railways Act 1989 is.......',
+            options: ['24', '25', '26', '27'],
             correct: 0,
-            explanation: 'The Sahara Desert in Africa is the largest hot desert in the world, covering approximately 9.2 million square kilometers.'
+            explanation: '24 is the correct answer. Reference: GR 1.02(1)'
           },
           {
-            question: 'Which programming language is known as the "language of the web"?',
-            options: ['Python', 'Java', 'JavaScript', 'C++'],
-            correct: 2,
-            explanation: 'JavaScript is often called the "language of the web" because it is the primary language used for client-side web development.'
+            question: 'Approved special instructions are issued or approved by.......',
+            options: ['Authorised Officer', 'CRS', 'PCOM', 'PCO'],
+            correct: 1,
+            explanation: 'CRS is the correct answer. Reference: GR 1.02(4)'
           },
           {
-            question: 'What does HTML stand for?',
-            options: ['Hyper Text Markup Language', 'High Tech Modern Language', 'Home Tool Markup Language', 'Hyperlink and Text Markup Language'],
+            question: 'The person who is duly empowered by general or special order of the Railway Administration, either by name or by virtue of his office, to issue instructions or to do any other thing',
+            options: ['Authorised Officer', 'CRS', 'GM', 'PCOM'],
             correct: 0,
-            explanation: 'HTML stands for Hyper Text Markup Language, which is the standard markup language for creating web pages.'
+            explanation: 'Authorised Officer is the correct answer. Reference: GR 1.02(5)'
           },
           {
-            question: 'Who painted the Mona Lisa?',
-            options: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Michelangelo'],
+            question: 'An electrical device which, when provided at two given points on the track, proves by counting axles in and counting axles out, whether the section of the track between the said two points is clear or occupied.',
+            options: ['Axle counter', 'BPAC', 'Block instrument', 'Track Circuit'],
+            correct: 0,
+            explanation: 'Axle counter is the correct answer. Reference: GR 1.02(7)'
+          },
+          {
+            question: 'Message from a block station to the block station in rear on double line or to next block station on either side on a single line, that the block section is to be obstructed is.......',
+            options: ['Block back', 'Block forward', 'Push back', 'Shunting'],
+            correct: 0,
+            explanation: 'Block back is the correct answer. Reference: GR 1.02(8)'
+          },
+          {
+            question: 'Message from a block station to the block station in advance on double line, that the block section is obstructed or is to be obstructed is.......',
+            options: ['Block back', 'Block forward', 'Push back', 'Shunting'],
             correct: 1,
-            explanation: 'Leonardo da Vinci painted the Mona Lisa, one of the most famous paintings in the world.'
-          }
-        ],
-        '3': [
+            explanation: 'Block forward is the correct answer. Reference: GR 1.02(9)'
+          },
           {
-            question: 'What is the longest river in the world?',
-            options: ['Amazon River', 'Nile River', 'Yangtze River', 'Mississippi River'],
+            question: 'The portion of the running line between two block stations on to which no running train may enter until Line Clear has been received from the block station at the other end of the block station is.......',
+            options: ['Block Section', 'Block Limits', 'Station Section', 'Station Limits'],
+            correct: 0,
+            explanation: 'Block Section is the correct answer. Reference: GR 1.02(10)'
+          },
+          {
+            question: 'When Points by their operation a train approaching them can be directly diverted from the line upon which it is running is known as.......',
+            options: ['Derailing switch', 'Facing Points', 'Trailing Points', 'Trap Point'],
             correct: 1,
-            explanation: 'The Nile River in Africa is considered the longest river in the world, flowing approximately 6,650 kilometers.'
+            explanation: 'Facing Points is the correct answer. Reference: GR 1.02(20)'
           },
           {
-            question: 'Which mountain range runs through South America?',
-            options: ['Rocky Mountains', 'Himalayas', 'Andes', 'Alps'],
-            correct: 2,
-            explanation: 'The Andes mountain range runs along the western coast of South America and is the longest continental mountain range in the world.'
-          },
-          {
-            question: 'What is the capital of Japan?',
-            options: ['Seoul', 'Beijing', 'Tokyo', 'Bangkok'],
-            correct: 2,
-            explanation: 'Tokyo is the capital and largest city of Japan, serving as the country\'s political and economic center.'
-          },
-          {
-            question: 'Which ocean is the smallest?',
-            options: ['Pacific Ocean', 'Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean'],
+            question: 'Class „C” station on a single line or double line or multiple line remotely controlled from the block station in rear is known as.......',
+            options: ['Automatic signal', 'Gate signal', 'Home signal', 'Intermediate Block Post'],
             correct: 3,
-            explanation: 'The Arctic Ocean is the smallest and shallowest of the world\'s five major oceans.'
+            explanation: 'Intermediate Block Post is the correct answer. Reference: GR 1.02(30)'
           },
           {
-            question: 'What is the hardest natural substance on Earth?',
-            options: ['Steel', 'Diamond', 'Granite', 'Iron'],
+            question: 'Arrangement, secured by the setting of points or other approved means, to protect the line so isolated from the danger of obstruction from other connected line or lines is known as.......',
+            options: ['Interlocking', 'Isolation', 'Level crossings', 'Line Clear'],
             correct: 1,
-            explanation: 'Diamond is the hardest natural substance on Earth, scoring 10 on the Mohs scale of mineral hardness.'
-          }
-        ],
-        '4': [
-          {
-            question: 'What is the atomic number of carbon?',
-            options: ['4', '6', '8', '12'],
-            correct: 1,
-            explanation: 'Carbon has an atomic number of 6, meaning it has 6 protons in its nucleus.'
-          },
-          {
-            question: 'What is the most abundant gas in Earth\'s atmosphere?',
-            options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'],
-            correct: 2,
-            explanation: 'Nitrogen is the most abundant gas in Earth\'s atmosphere, making up about 78% of the air we breathe.'
-          },
-          {
-            question: 'What is the pH of pure water?',
-            options: ['5', '6', '7', '8'],
-            correct: 2,
-            explanation: 'Pure water has a neutral pH of 7, which is neither acidic nor basic.'
-          },
-          {
-            question: 'Which element is essential for life and makes up about 65% of the human body?',
-            options: ['Carbon', 'Oxygen', 'Hydrogen', 'Nitrogen'],
-            correct: 1,
-            explanation: 'Oxygen is essential for life and makes up about 65% of the human body by mass.'
-          },
-          {
-            question: 'What is the main theme of "To Kill a Mockingbird"?',
-            options: ['Love and romance', 'Racial injustice', 'War and peace', 'Coming of age'],
-            correct: 1,
-            explanation: 'The main theme of "To Kill a Mockingbird" is racial injustice and the moral growth of the protagonist.'
-          }
-        ],
-        '5': [
-          {
-            question: 'Which author wrote "Pride and Prejudice"?',
-            options: ['Emily Brontë', 'Charlotte Brontë', 'Jane Austen', 'Mary Shelley'],
-            correct: 2,
-            explanation: 'Jane Austen wrote "Pride and Prejudice," one of the most beloved novels in English literature.'
-          },
-          {
-            question: 'What is the setting of "The Great Gatsby"?',
-            options: ['1920s America', 'Victorian England', 'Ancient Rome', 'Modern Japan'],
-            correct: 0,
-            explanation: '"The Great Gatsby" is set in 1920s America, specifically in New York during the Jazz Age.'
-          },
-          {
-            question: 'Who is the author of "1984"?',
-            options: ['Aldous Huxley', 'George Orwell', 'Ray Bradbury', 'H.G. Wells'],
-            correct: 1,
-            explanation: 'George Orwell wrote "1984," a dystopian novel about totalitarian surveillance and control.'
-          },
-          {
-            question: 'What type of poem is a sonnet?',
-            options: ['A 14-line poem', 'A 10-line poem', 'A 20-line poem', 'A free verse poem'],
-            correct: 0,
-            explanation: 'A sonnet is a 14-line poem that typically follows a specific rhyme scheme and meter.'
-          },
-          {
-            question: 'Which CSS property is used to change the text color?',
-            options: ['text-color', 'color', 'font-color', 'text-style'],
-            correct: 1,
-            explanation: 'The "color" property in CSS is used to set the color of text elements.'
+            explanation: 'Isolation is the correct answer. Reference: GR 1.02(32)'
           }
         ]
       }

@@ -273,10 +273,10 @@ const Syllabus = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 bg-clip-text text-transparent mb-4">
+          <h1 className="lg:text-5xl text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 bg-clip-text text-transparent mb-4">
             Syllabus for AOM & ACM
           </h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="lg:text-xl text-sm text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Comprehensive syllabus for 70% Selection & 30% LDCE for promotion to Group &apos;B&apos; posts of AOM & ACM in the Traffic (Transportation and Commercial) Departments
           </p>
         </div>
