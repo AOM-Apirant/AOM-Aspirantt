@@ -17,40 +17,26 @@ const Operating = () => {
               Operating Department
             </h1>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              Content related to Operating Department
+              Essential operating procedures, whistle codes, and safety guidelines for railway operations
             </p>
           </div>
         </div>
       </div>
 
       {/* Whistle Codes Section */}
-      <WhistleCodes/>
+      <WhistleCodes />
 
-                                
-
-      
-{/* Speed of Trains in Different Circumstances */}
-        <SpeedRestrictions />
-
-
-
-
+      {/* Speed of Trains in Different Circumstances */}
+      <SpeedRestrictions />
 
       {/* Operating Forms */}
       <OperatingForms />
 
-
-{/* Paper Authorities */}
+      {/* Paper Authorities */}
       <PaperAuthorities />
 
-
-{/* Bell Codes */}
-<BellCodes />
-
-
-
-
-
+      {/* Bell Codes */}
+      <BellCodes />
     </div>
   )
 }
