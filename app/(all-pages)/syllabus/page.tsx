@@ -1,6 +1,24 @@
+'use client'
 import React from 'react'
+import { Download, FileText } from 'lucide-react'
 
 const Syllabus = () => {
+  const handleDownloadNotification = () => {
+    const link = document.createElement('a')
+    link.href = '/AOM Notification.pdf'
+    link.download = 'AOM Notification.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+
+    // Auto-open PDF on mobile devices after download
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    if (isMobile) {
+      setTimeout(() => {
+        window.open('/AOM Notification.pdf', '_blank')
+      }, 1000) // Wait 1 second for download to start
+    }
+  }
   const trafficTopics = [
     {
       title: "1. GENERAL",
@@ -557,6 +575,43 @@ const Syllabus = () => {
               <h3 className="text-xl font-semibold text-purple-800 mb-3">🔄 Updates</h3>
               <p className="text-purple-700">
                 Syllabus may be updated from time to time. Stay informed about the latest changes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Download Notification Section */}
+        <div className="mt-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-red-500 to-pink-600 p-6 text-white">
+            <div className="flex items-center space-x-3">
+              <span className="text-3xl">📢</span>
+              <h2 className="text-2xl font-bold">Official Notification</h2>
+            </div>
+          </div>
+          
+          <div className="p-8 text-center">
+            <div className="max-w-2xl mx-auto">
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">AOM Notification</h3>
+                <p className="text-gray-600 mb-6">
+                  Download the official AOM notification for complete details about the examination, 
+                  eligibility criteria, and selection process.
+                </p>
+              </div>
+              
+              <button
+                onClick={handleDownloadNotification}
+                className="bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-lg hover:shadow-xl"
+              >
+                <Download className="w-6 h-6 mr-3 group-hover:animate-bounce" />
+                Download Notification
+              </button>
+              
+              <p className="text-sm text-gray-500 mt-4">
+                📱 Mobile users: PDF will open automatically after download
               </p>
             </div>
           </div>

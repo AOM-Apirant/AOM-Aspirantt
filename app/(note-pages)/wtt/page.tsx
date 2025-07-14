@@ -1,67 +1,86 @@
+'use client'
 import React from 'react'
+import { Download, FileText } from 'lucide-react'
 
 const WTT = () => {
+  const handleDownloadWTT = () => {
+    const link = document.createElement('a')
+    link.href = '/wttpdfs/WTT 79 SC DIVISION.pdf'
+    link.download = 'WTT 79 SC DIVISION.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+
+    // Auto-open PDF on mobile devices after download
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    if (isMobile) {
+      setTimeout(() => {
+        window.open('/wttpdfs/WTT 79 SC DIVISION.pdf', '_blank')
+      }, 1000) // Wait 1 second for download to start
+    }
+  }
+
   const wttTopics = [
     {
-      title: "Working Time Table (WTT) - పని సమయ పట్టిక",
-      description: "రైల్వేలో రైలు సమయాలను నిర్వహించడానికి ఉపయోగించే ముఖ్యమైన పత్రం",
+      title: "Working Time Table (WTT) - Train Schedule",
+      description: "Important document used to manage train timings in Railways",
       icon: "⏰"
     },
     {
-      title: "WTT యొక్క నిర్వచనం",
-      content: "Working Time Table అనేది రైల్వేలో రైలు సమయాలను, స్టేషన్‌ల మధ్య దూరాలను, స్టాప్‌లను మరియు ఇతర ముఖ్యమైన సమాచారాన్ని కలిగి ఉండే అధికారిక పత్రం."
+      title: "Definition of WTT",
+      content: "Working Time Table is an official document that contains train timings, distances between stations, stops, and other important information in Railways."
     },
     {
-      title: "WTT యొక్క ముఖ్య లక్షణాలు",
+      title: "Key Features of WTT",
       points: [
-        "రైలు సంఖ్యలు మరియు వాటి రకాలు",
-        "ప్రారంభ మరియు గమ్య స్టేషన్‌లు",
-        "ప్రతి స్టేషన్‌లో ఆగే సమయాలు",
-        "రైలు మార్గాలు మరియు దూరాలు",
-        "స్పీడ్ లిమిట్స్ మరియు రిస్ట్రిక్షన్స్",
-        "క్రాసింగ్ మరియు ఓవర్టేకింగ్ సమయాలు"
+        "Train numbers and their types",
+        "Origin and destination stations",
+        "Stopping times at each station",
+        "Train routes and distances",
+        "Speed limits and restrictions",
+        "Crossing and overtaking timings"
       ]
     },
     {
-      title: "WTT రకాలు",
+      title: "Types of WTT",
       types: [
         {
           name: "Main Line WTT",
-          description: "ప్రధాన మార్గాల కోసం"
+          description: "For main line routes"
         },
         {
           name: "Branch Line WTT", 
-          description: "శాఖా మార్గాల కోసం"
+          description: "For branch line routes"
         },
         {
           name: "Suburban WTT",
-          description: "ప్రాంతీయ రైలు సేవల కోసం"
+          description: "For suburban train services"
         },
         {
           name: "Freight WTT",
-          description: "సరుకు రైలు సేవల కోసం"
+          description: "For freight train services"
         }
       ]
     },
     {
-      title: "WTT తయారీ ప్రక్రియ",
+      title: "WTT Preparation Process",
       steps: [
-        "రైలు మార్గాల విశ్లేషణ",
-        "స్టేషన్‌ల మధ్య దూరాల గణన",
-        "స్టాప్‌ల సమయాల నిర్ణయం",
-        "క్రాసింగ్ సమయాల ప్లానింగ్",
-        "స్పీడ్ ప్రొఫైల్స్ నిర్ణయం",
-        "అధికారిక ఆమోదం"
+        "Analysis of train routes",
+        "Calculation of distances between stations",
+        "Determination of stopping times",
+        "Planning of crossing timings",
+        "Determination of speed profiles",
+        "Official approval"
       ]
     },
     {
-      title: "WTT యొక్క ముఖ్యత",
+      title: "Importance of WTT",
       importance: [
-        "రైలు సేవల యొక్క సకాల నిర్వహణ",
-        "ప్రయాణీకుల సౌకర్యం",
-        "రైల్వే ఆపరేషన్స్ యొక్క సమర్థత",
-        "భద్రతా ప్రమాణాల నిర్వహణ",
-        "రిసోర్స్ ఆప్టిమైజేషన్"
+        "Timely management of train services",
+        "Passenger convenience",
+        "Efficiency of railway operations",
+        "Maintenance of safety standards",
+        "Resource optimization"
       ]
     }
   ];
@@ -78,7 +97,7 @@ const WTT = () => {
             Working Time Table
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            రైల్వేలో రైలు సమయాలను నిర్వహించడానికి ఉపయోగించే ముఖ్యమైన పత్రం
+            Important document used to manage train timings in Railways
           </p>
         </div>
 
@@ -107,7 +126,7 @@ const WTT = () => {
 
                 {topic.points && (
                   <div className="space-y-3">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">ముఖ్యమైన అంశాలు:</h3>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Points:</h3>
                     <ul className="space-y-2">
                       {topic.points.map((point, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-gray-700">
@@ -121,7 +140,7 @@ const WTT = () => {
 
                 {topic.types && (
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">WTT రకాలు:</h3>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Types of WTT:</h3>
                     <div className="grid md:grid-cols-2 gap-4">
                       {topic.types.map((type, idx) => (
                         <div key={idx} className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg border border-blue-200">
@@ -135,7 +154,7 @@ const WTT = () => {
 
                 {topic.steps && (
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">తయారీ ప్రక్రియ:</h3>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Preparation Process:</h3>
                     <div className="grid md:grid-cols-2 gap-4">
                       {topic.steps.map((step, idx) => (
                         <div key={idx} className="flex items-center gap-3 bg-gradient-to-r from-green-50 to-blue-50 p-3 rounded-lg">
@@ -151,7 +170,7 @@ const WTT = () => {
 
                 {topic.importance && (
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">ముఖ్యత:</h3>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Importance:</h3>
                     <div className="grid md:grid-cols-2 gap-4">
                       {topic.importance.map((item, idx) => (
                         <div key={idx} className="flex items-center gap-3 bg-gradient-to-r from-purple-50 to-pink-50 p-3 rounded-lg">
@@ -174,13 +193,45 @@ const WTT = () => {
           <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-6 border border-yellow-200">
             <h3 className="text-2xl font-bold text-yellow-800 mb-4 flex items-center gap-3">
               <span className="text-2xl">💡</span>
-              ముఖ్యమైన గమనికలు
+              Important Notes
             </h3>
             <div className="space-y-3 text-gray-700">
-              <p>• WTT అనేది రైల్వే ఆపరేషన్స్ యొక్క ముఖ్యమైన పత్రం</p>
-              <p>• ఇది ప్రతి సంవత్సరం అప్‌డేట్ చేయబడుతుంది</p>
-              <p>• WTT ప్రకారం రైలు సేవలు నిర్వహించబడతాయి</p>
-              <p>• ఇది ప్రయాణీకుల మరియు రైల్వే సిబ్బందికి మార్గదర్శకం</p>
+              <p>• WTT is an important document for railway operations</p>
+              <p>• It is updated every year</p>
+              <p>• Train services are operated according to WTT</p>
+              <p>• It serves as a guide for passengers and railway staff</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Download WTT Section */}
+        <div className="mt-12 bg-white rounded-xl shadow-xl overflow-hidden border border-purple-200">
+          <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white">
+            <div className="flex items-center space-x-3">
+              <span className="text-3xl">📋</span>
+              <h2 className="text-2xl font-bold">Official WTT Document</h2>
+            </div>
+          </div>
+          
+          <div className="p-8 text-center">
+            <div className="max-w-2xl mx-auto">
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-10 h-10 text-white" />
+                </div>
+                <h1 className="text-2xl font-bold text-gray-800 mb-2">Working Time Table</h1>
+                <h1 className="text-lg font-semibold text-gray-800 mb-2">Edition - 79</h1>
+                <h1 className="text-xl font-semibold text-gray-800 mb-2">Secunderabad Division</h1>
+                <h3 className='text-gray-600 mb-6'>Download the official Working Time Table for SC Division containing complete train schedules, timings, and operational details.</h3>
+              </div>
+              
+              <button
+                onClick={handleDownloadWTT}
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-lg hover:shadow-xl"
+              >
+                <Download className="w-6 h-6 mr-3 group-hover:animate-bounce" />
+                Download WTT
+              </button>
             </div>
           </div>
         </div>

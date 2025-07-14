@@ -160,6 +160,14 @@ export const gsrpdfFiles = [
 
 export const accidentPdfFiles = [
   {
+    name: "Accident Manual 2012 Updated",
+    filename: "Accident manual SCR 2012.pdf",
+    size: "5074KB",
+    description:
+      "Accident Manual SCR 2012 Updated Up to AS 6",
+    icon: FileArchive,
+  },
+  {
     name: "AS 6 to Accident Manual",
     filename: "Accident Manual AS -6.pdf",
     size: "9.8MB",
@@ -224,7 +232,7 @@ export const authorityPdfFiles = [
     icon: FileText,
   },
   {
-    name: "TB912 Authority",
+    name: "T/B 912 Authority",
     filename: "TB912.pdf",
     size: "84KB",
     description: "Authority document TB912 - Brief authority guidelines",
@@ -245,10 +253,21 @@ export const authorityPdfFiles = [
     icon: FileText,
   },
   {
-    name: "T/E912 Authority",
+    name: "T/E 912 Authority",
     filename: "TE912.pdf",
     size: "356KB",
     description: "Authority document TE912 - Extended authority guidelines",
     icon: FileText,
+  },
+];
+
+export const bwmPdfFiles = [
+  {
+    name: "Block Working Manual 2012 Updated",
+    filename: "Block Working Manual SCR 2012.pdf",
+    size: "5074KB",
+    description:
+      "Block Working Manual SCR 2012 Updated Up to AS 6",
+    icon: FileArchive,
   },
 ];
