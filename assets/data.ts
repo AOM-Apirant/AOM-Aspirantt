@@ -131,6 +131,130 @@ export const allQuizzes = {
             correct: 1,
             explanation: 'Isolation is the correct answer. Reference: GR 1.02(32)'
           }
+        ],
+        '3': [
+          {
+            question: 'Fixed Stop signal of a station controlling the entry of trains into the next block section is......',
+            options: ['First Stop Signal', 'Home signal', 'IB signal', 'Last Stop Signal'],
+            correct: 3,
+            explanation: 'Last Stop Signal is the correct answer. Reference: GR 1.02(33)'
+          },
+          {
+            question: 'Permission given from a block station to a block station in rear for a train to leave the latter and approach the former is.......',
+            options: ['Authority to proceed', 'Block forward', 'Block Back', 'Line Clear'],
+            correct: 3,
+            explanation: 'Line Clear is the correct answer. Reference: GR 1.02(36)'
+          },
+          {
+            question: 'Permission obtained by a block station from a block station in advance for a train to leave the former and proceed towards the latter is.......',
+            options: ['Authority to proceed', 'Block forward', 'Block Back', 'Line Clear'],
+            correct: 3,
+            explanation: 'Line Clear is the correct answer. Reference: GR 1.02(36)'
+          },
+          {
+            question: 'A signalling arrangement in which signals display at any one time any one of the three or more aspects and in which the aspect of every signal is pre-warned by the aspect of the previous signal or signals',
+            options: ['Modified Lower aspect signalling', 'Modified Upper aspect signalling', 'Multiple Aspect signalling', 'Two aspect signalling'],
+            correct: 2,
+            explanation: 'Multiple Aspect signalling is the correct answer. Reference: GR 1.02(41)'
+          },
+          {
+            question: 'This includes a train, vehicle or obstacle on or fouling a line, or any condition which is dangerous to trains.',
+            options: ['Communication', 'Connection', 'Obstruction', 'Shunting'],
+            correct: 2,
+            explanation: 'Obstruction is the correct answer. Reference: GR 1.02(43)'
+          },
+          {
+            question: 'A line governed by one or more signals, include connections, if any, used by a train when entering or leaving a station is known as.......',
+            options: ['Loop Line', 'Main Line', 'Running Line', 'Non Running Line'],
+            correct: 2,
+            explanation: 'Running Line is the correct answer. Reference: GR 1.02(47)'
+          },
+          {
+            question: 'Movement of a vehicle or vehicles with or without an engine or of any engine or any other self-propelled vehicle, for the purpose of attaching, detaching or transfer or for any other purpose.',
+            options: ['Interlocking', 'Isolation', 'Securing', 'Shunting'],
+            correct: 3,
+            explanation: 'Shunting is the correct answer. Reference: GR 1.02(49)'
+          },
+          {
+            question: 'Instructions issued from time to time by the authorised officer in respect to particular cases or special circumstances',
+            options: ['General Rules', 'Joint procedure orders', 'Special Instructions', 'Subsidiary Rules'],
+            correct: 2,
+            explanation: 'Special Instructions is the correct answer. Reference: GR 1.02(50)'
+          },
+          {
+            question: 'Special instructions are issued by.......',
+            options: ['Authorised Officer', 'CRS', 'CSO', 'Railway Board'],
+            correct: 0,
+            explanation: 'Authorised Officer is the correct answer. Reference: GR 1.02(50)'
+          },
+          {
+            question: 'The portion of a railway which is under the control of a Station Master and is situated between the outermost signals of the station or as may be specified by special instructions.',
+            options: ['Block section', 'Station', 'Station Limits', 'Station Section'],
+            correct: 2,
+            explanation: 'Station Limits is the correct answer. Reference: GR 1.02(52)'
+          }
+        ],
+        '4': [
+          {
+            question: 'On Double line class „B‟ station Multiple Aspect Signalling, station section lies between.',
+            options: ['BSLB to LSS', 'Outermost facing points to LSS', 'Either A or B', 'None of the above'],
+            correct: 1,
+            explanation: 'Outermost facing points to LSS is the correct answer. Reference: GR 1.02(53)'
+          },
+          {
+            question: 'On single line „B‟ class MAS station, Station section lies between........',
+            options: ['Two Advance Starters', 'Two SLB', 'Two outer most points', 'Any one of the above'],
+            correct: 3,
+            explanation: 'Any one of the above is the correct answer. Reference: GR 1.02(54(2b))'
+          },
+          {
+            question: 'Station Section is available at........',
+            options: ['Class A', 'Class B', 'Class C', 'Class D'],
+            correct: 1,
+            explanation: 'Class B is the correct answer. Reference: GR 1.02(54)'
+          },
+          {
+            question: 'System adopted for the time being for the working of trains on any portion of a railway is known as......',
+            options: ['Direction of traffic', 'System of controlling', 'System of working', 'None of the above'],
+            correct: 2,
+            explanation: 'System of working is the correct answer. Reference: GR 1.02(56)'
+          },
+          {
+            question: 'An electrical circuit provided to detect the presence of a vehicle on a portion of track, the rails of the track forming part of the circuit.',
+            options: ['Axle counter', 'BPAC', 'EOTT', 'Track Circuit'],
+            correct: 3,
+            explanation: 'Track Circuit is the correct answer. Reference: GR 1.02(57)'
+          },
+          {
+            question: 'At a "A" class station distance to be kept free beyond Home signal, before granting line clear is.......',
+            options: ['180 m', '200 m', '300 m', '400 m'],
+            correct: 3,
+            explanation: '400 m is the correct answer. Reference: GR 1.03(2)'
+          },
+          {
+            question: 'Stations where Line Clear may not be given for a train unless the line on which it is intended to receive the train is clear for at least 400 m beyond the home signal or upto the starter.',
+            options: ['Class A', 'Class B', 'Class C', 'Class D'],
+            correct: 0,
+            explanation: 'Class A is the correct answer. Reference: GR 1.03(2)'
+          },
+          {
+            question: 'Class "A" Stations are stations where Line Clear may not be given for a train unless the line on which it is intended to receive the train is clear for at least 400 m beyond the ......... or upto the ..........',
+            options: ['Home Signal, Advance starter', 'Home signal, shunt signal', 'Starter, Home signal', 'Home signal, Starter'],
+            correct: 3,
+            explanation: 'Home signal, Starter is the correct answer. Reference: GR 1.03(2)'
+          },
+          {
+            question: 'Stations where Line Clear may be given for a train before the line has been cleared for reception of the train within the station section is..........',
+            options: ['Class A', 'Class B', 'Class C', 'Class D'],
+            correct: 1,
+            explanation: 'Class B is the correct answer. Reference: GR 1.03(2)'
+          },
+          {
+            question: 'Stations where Line Clear may not be given for a train unless the whole of the last preceding train has passed complete at least 400 m beyond Home signal and is continuing its journey.',
+            options: ['Class A', 'Class B', 'Class C', 'Class D'],
+            correct: 2,
+            explanation: 'Class C is the correct answer. Reference: GR 1.03(2)'
+          },
         ]
       }
     },
