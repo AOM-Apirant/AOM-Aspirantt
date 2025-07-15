@@ -255,6 +255,131 @@ export const allQuizzes = {
             correct: 2,
             explanation: 'Class C is the correct answer. Reference: GR 1.03(2)'
           },
+        ],
+        '5': [
+          {
+            question: 'Stations in which stopping places are situated between two consecutive block stations, and do not forms the boundary of any block section is.......',
+            options: ['Class A', 'Class B', 'Class C', 'Class D'],
+            correct: 3,
+            explanation: 'Class D is the correct answer. Reference: GR 1.03(3)'
+          },
+          {
+            question: 'The ........ shall supply G&SR copy to any railway servant a copy of these rules or translation of the said rules or of such portions, thereof as relate to his duties, as may be prescribed by special instructions',
+            options: ['Divisional Authority', 'Railway Adminstration', 'Stores department', 'Zonal Authorities'],
+            correct: 1,
+            explanation: 'Railway Adminstration is the correct answer. Reference: GR 2.01'
+          },
+          {
+            question: 'Each railway servant, who has been supplied with a copy of these rules, as prescribed under Rule 2.01 shall ensure that the staff working under him are supplied with all ......... and that they also ......... with the provisions of this rule.',
+            options: ['Comply, Corrections', 'Corrections, Comply', 'Changes, Agree', 'Changes, Follow'],
+            correct: 1,
+            explanation: 'Corrections, Comply is the correct answer. Reference: GR 2.02(d)'
+          },
+          {
+            question: 'Every railway servant shall be ......... with the rules relating to his duties whether supplied or not with a copy or translation of the rules relating to his duties and the ........... shall ensure that he does so.',
+            options: ['Conversant, Railway administration', 'Following, Sr.DOM', 'Knowledgeable, In charge of Station', 'Remember, PCOM'],
+            correct: 0,
+            explanation: 'Conversant, Railway administration is the correct answer. Reference: GR 2.03 (c)'
+          },
+          {
+            question: 'Every railway servant is responsible for the ......... and ........ of the property of the Railway Administration under his charge.',
+            options: ['Safety, Security', 'Security, Protection', 'Safety, Punctuality', 'Security, Punctuality'],
+            correct: 1,
+            explanation: 'Security, Protection is the correct answer. Reference: GR 2.05(1)'
+          },
+          {
+            question: 'Every railway servant shall endeavour to ........... in railway premises',
+            options: ['Fight miscreants', 'Prevent Fire', 'Prevent trespassing', 'Prevent trespassing'],
+            correct: 1,
+            explanation: 'Prevent Fire is the correct answer. Reference: GR 2.05 (2.d)'
+          },
+          {
+            question: 'Every railway servant shall be in attendance for duty at such ....... and such .......... and for such .......... as may be fixed in this behalf by the Railway Administration and shall also attend at any other time and place at which his services may be required.',
+            options: ['Hours, Places, Periods', 'Times, Situations, Periods', 'Times, Places, Periods', 'Times, Places, Years'],
+            correct: 2,
+            explanation: 'Times, Places, Periods is the correct answer. Reference: GR 2.07'
+          },
+          {
+            question: 'No railway servant shall, without the permission of ....... absent himself from duty or alter his appointed hours of attendance or ......... duty with any other railway servant or ......... his charge of duty unless properly relieved.',
+            options: ['Branch officer, Exchange, Leave', 'Inspector, Interchange, Withdraw', 'Superior, Interchange, Leave', 'Branch officer, Superior, Exchange, Leave'],
+            correct: 3,
+            explanation: 'Superior, Exchange, Leave is the correct answer. Reference: GR 2.08(1)'
+          },
+          {
+            question: 'If any railway servant while on duty desires to absent himself from duty on the ground of illness, he shall immediately report the matter to ........ and shall ............. his duty until a competent railway servant has been placed in charge thereof.',
+            options: ['Brach officer, Not perform', 'Inspector, Leave', 'Superior, Stop', 'Superior, Not leave'],
+            correct: 3,
+            explanation: 'Superior, Not leave is the correct answer. Reference: GR 2.08(2)'
+          },
+          {
+            question: 'While on duty, no railway servant shall, whether he is ......... with the working of trains or not, be in a state of intoxication or in a state in which, by reason of his having taken or used any alcoholic drink, sedative, narcotic or stimulant drug or preparation, his capacity to perform his duties is impaired',
+            options: ['Connected', 'Directly connected', 'Indirectly connected', 'On duty or off duty'],
+            correct: 1,
+            explanation: 'Directly connected, Leave is the correct answer. Reference: GR 2.09(1)'
+          },
+        ],
+        '6': [
+          {
+            question: 'No Railway Servant directly connected with the working of trains shall take or use any alcoholic drink, sedative, narcotic or stimulant drug or preparation before the commencement of his duty within',
+            options: ['6 hours', '8 hours', '10 hours', '12 hours'],
+            correct: 1,
+            explanation: '8 hours is the correct answer. Reference: GR 2.09(2)'
+          },
+          {
+            question: 'The rule No. of G&SR for Supply of copies of rules is.......',
+            options: ['GR 2.01', 'GR 2.02', 'GR 2.03', 'GR 2.04'],
+            correct: 0,
+            explanation: 'GR 2.01 is the correct answer. Reference: GR 2.01'
+          },
+          {
+            question: 'The rule No. of G&SR for attendance for duty is mentioned in.......',
+            options: ['GR 2.05', 'GR 2.06', 'GR 2.07', 'GR 2.08'],
+            correct: 2,
+            explanation: 'GR 2.07 is the correct answer. Reference: GR 2.07'
+          },
+          {
+            question: 'The rule No. of G&SR for Absence from duty is mentioned in.......',
+            options: ['GR 2.05', 'GR 2.06', 'GR 2.07', 'GR 2.08'],
+            correct: 3,
+            explanation: 'GR 2.08 is the correct answer. Reference: GR 2.08'
+          },
+          {
+            question: 'The rule No. of G&SR for taking alcoholic drink, sedative, narcotic, stimulant drug or preparation is mentioned in.......',
+            options: ['GR 2.07', 'GR 2.08', 'GR 2.09', 'GR 2.10'],
+            correct: 2,
+            explanation: 'GR 2.09 is the correct answer. Reference: GR 2.09'
+          },
+          {
+            question: 'In the case of a train having parted, railway servant shall not show a ......... signal but shall endeavour to attract attention of the Loco Pilot or Guard by shouting, gesticulating or other means.',
+            options: ['Proceed hand', 'Proceed with caution', 'Stop', 'Stop hand'],
+            correct: 3,
+            explanation: 'Stop hand is the correct answer. Reference: GR2.11 (2)(d)'
+          },
+          {
+            question: 'The marker board that is provided to identify Distant Signal in colour light area is........',
+            options: ['A - marker', 'C - marker', 'G - marker', 'P - marker'],
+            correct: 3,
+            explanation: 'P - marker is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'Whenever one yellow light is exhibited in Distant signal the Aspect is.......',
+            options: ['Attention', 'Caution', 'Proceed', 'Proceed slowly'],
+            correct: 1,
+            explanation: 'Caution is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'The indication of the Distant signal in Attention Aspect is.......',
+            options: ['Proceed', 'Proceed and be prepared to stop at the next stop signal', 'Proceed and be prepared to pass the next stop signal at a restrictive speed', 'Stop dead'],
+            correct: 2,
+            explanation: 'Proceed and be prepared to pass the next stop signal at a restrictive speed is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'Whenever Inner Distant is provided, the aspects that Distant Signal is capable of displaying .......',
+            options: ['Attention, Proceed', 'Caution, Attention', 'Stop, Proceed', 'Stop, Caution'],
+            correct: 0,
+            explanation: 'Attention, Proceed is the correct answer. Reference: GR 3.07'
+          },
+          
         ]
       }
     },
