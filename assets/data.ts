@@ -380,6 +380,131 @@ export const allQuizzes = {
             explanation: 'Attention, Proceed is the correct answer. Reference: GR 3.07'
           },
           
+        ],
+        '7': [
+          {
+            question: 'The normal aspect of Distant signal on double distant signal area is.......',
+            options: ['Attention', 'Caution', 'Proceed', 'Proceed slowly'],
+            correct: 0,
+            explanation: 'Attention is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'When colour light Distant signal is combined with Gate/LSS, normal aspect of that signal is.......',
+            options: ['Attention', 'Caution', 'Proceed', 'Stop'],
+            correct: 3,
+            explanation: 'Stop is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'In rear of the stop signal Distant signal is provided at a distance of.......',
+            options: ['1000 M', '1500 M', '2000 M', '2500 M'],
+            correct: 0,
+            explanation: '1000 M is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'Wherever double distant is provided, from the stop signal, distant signal location is.......',
+            options: ['1000 M', '1500 M', '2000 M', '2500 M'],
+            correct: 2,
+            explanation: '2000 M is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'Wherever two Distant signals are provided the board that is eliminated is........',
+            options: ['BSLB', 'Caution Order', 'SLB', 'Warning board'],
+            correct: 3,
+            explanation: 'Warning board is the correct answer. Reference: GR 3.07'
+          },
+          {
+            question: 'Signal used to indicate to a Loco Pilot which of two or more diverging routes is set for him, when the Home signal is, in consequence of its position, inconvenient for this purpose.',
+            options: ['Calling on signal', 'Home signal', 'Routing signal', 'Routing indicators'],
+            correct: 2,
+            explanation: 'Routing signal is the correct answer. Reference: GR 3.09(4)'
+          },
+          {
+            question: 'Where an Advanced Starter is provided, the Starter referring to any line shall be placed so as to protect the ......... or ......... of the connections to another running line.',
+            options: ['First trailing points, Fouling mark', 'First facing points, Fouling mark', 'Facing points, Adequate distance', 'Facing points, Trailing points'],
+            correct: 1,
+            explanation: 'First facing points, Fouling mark is the correct answer. Reference: GR 3.10 (5)'
+          },
+          {
+            question: 'When a Semi-automatic stop signal works as an, ........... it assumes „on‟ and „off‟ aspects automatically according to the conditions of the automatic block signalling sections ahead',
+            options: ['Automatic Stop signal', 'Manual stop signal', 'Modified semi automatic signal', 'Semi-automatic stop signal'],
+            correct: 0,
+            explanation: 'Automatic Stop signal is the correct answer. Reference: GR 3.12 (1)b(ii)'
+          },
+          {
+            question: 'When a _____________ works as a Manual Stop signal, it assumes „on‟ aspect automatically on the occupation of the automatic block signalling section ahead, but assumes „off‟ aspect when operated manually, provided the relevant automatic block signalling sections ahead are clear',
+            options: ['Automatic Stop signal', 'Manual stop signal', 'Modified semi automatic signal', 'Semi-automatic stop signal'],
+            correct: 3,
+            explanation: 'Semi-automatic stop signal is the correct answer. Reference: GR 3.12 (1)b(ii)'
+          },
+          {
+            question: 'When a Semi-automatic stop signal works as a .......... it assumes „on‟ aspect automatically on the occupation of the automatic block signalling section ahead, but assumes „off‟ aspect when operated manually, provided the relevant automatic block signalling sections ahead are clear.',
+            options: ['Automatic Stop signal', 'Manual stop signal', 'Modified semi automatic signal', 'Semi-automatic stop signal'],
+            correct: 1,
+            explanation: 'Manual stop signal is the correct answer. Reference: GR 3.12 (1)b(ii)'
+          },
+          
+        ],
+        '8': [
+          {
+            question: 'When one of the Automatic stop signal in mid-section is converted under special instructions is known as.......',
+            options: ['Automatic stop signal', 'Manual stop signal', 'Modified semi automatic signal', 'Semi-automatic stop signal'],
+            correct: 2,
+            explanation: 'Modified semi automatic signal is the correct answer. Reference: GR 3.12 (1)b(iv)'
+          },
+          {
+            question: 'Calling On signal may be provided below any stop signal except......',
+            options: ['FSS', 'Home', 'LSS', 'Starter'],
+            correct: 2,
+            explanation: 'LSS is the correct answer. Reference: GR 3.13'
+          },
+          {
+            question: 'The indication of the Calling On signal when taken "OFF" is.......',
+            options: ['Proceed cautiously', 'Proceed and be prepared to stop at next stop signal', 'Stop and then draw ahead with caution and be prepared to stop short or any obstruction', 'Stop dead'],
+            correct: 2,
+            explanation: 'Stop and then draw ahead with caution and be prepared to stop short or any obstruction is the correct answer. Reference: GR 3.13'
+          },
+          {
+            question: 'Shunt signal may be provided below any stop signal except.......',
+            options: ['FSS', 'Home', 'LSS', 'Starter'],
+            correct: 0,
+            explanation: 'FSS is the correct answer. Reference: GR 3.14'
+          },
+          {
+            question: 'The Aspect of the shunt signal when taken "OFF" is.......',
+            options: ['Attention', 'Stop', 'Proceed', 'Proceed slowly'],
+            correct: 3,
+            explanation: 'Stop is the correct answer. Reference: GR 3.14'
+          },
+          {
+            question: 'The Aspect of the shunt signal when taken "ON" is.......',
+            options: ['Attention', 'Stop', 'Proceed', 'Proceed slowly'],
+            correct: 3,
+            explanation: 'Proceed slowly is the correct answer. Reference: GR 3.14'
+          },
+          {
+            question: 'The type of shunt signal that shall be provided in colour light area is.......',
+            options: ['Disc type', 'Miniature semaphore', 'Position type', 'None of the above'],
+            correct: 2,
+            explanation: 'Position type is the correct answer. Reference: GR 3.14'
+          },
+          {
+            question: 'Signals fixed below ordinary signals and are provided where, in consequence of the height of the signal post, or of there being an over-bridge or other obstacle, the main arm or light is not in view of the Loco Pilot during the whole time that he is approaching it.',
+            options: ['Co-acting', 'Duplicate', 'Repeating', 'Either Co-acting or Duplicate'],
+            correct: 3,
+            explanation: 'Either Co-acting or Duplicate is the correct answer. Reference: GR 3.15'
+          },
+          {
+            question: 'A Repeating signal placed in rear of a fixed signal for the purpose of repeating to the Loco Pilot of an approaching train.......',
+            options: ['Aspects of the fixed signal in rear', 'Aspects of the fixed signal in front', 'indication of signal in advance', 'Position of the fixed signal'],
+            correct: 1,
+            explanation: 'Aspects of the fixed signal in front is the correct answer. Reference: GR 3.16'
+          },
+          {
+            question: 'A Repeating signal in colour light area is identified by.......',
+            options: ['R - marker', 'Illuminated R - marker', 'Either "R" or illuminated "R"', 'None of the above'],
+            correct: 2,
+            explanation: 'Either "R" or illuminated "R" is the correct answer. Reference: GR 3.16'
+          },
         ]
       }
     },

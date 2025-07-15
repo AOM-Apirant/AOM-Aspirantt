@@ -1,6 +1,14 @@
 'use client'
 import React from 'react'
 import { Download, FileText } from 'lucide-react'
+import DetentionCost from '@/components/wtt/DetentionCost'
+import StoppageCost from '@/components/wtt/StoppageCost'
+import ReliefTrains from '@/components/wtt/ReliefTrains'
+import ODC from '@/components/wtt/ODC'
+import CCRoutes from '@/components/wtt/CCRoutes'
+import FreightTrainExamination from '@/components/wtt/FreightTrainExamination'
+import InvalidBPC from '@/components/wtt/InvalidBPC'
+import Weighbridges from '@/components/wtt/Weighbridges'
 
 const WTT = () => {
   const handleDownloadWTT = () => {
@@ -20,71 +28,6 @@ const WTT = () => {
     }
   }
 
-  const wttTopics = [
-    {
-      title: "Working Time Table (WTT) - Train Schedule",
-      description: "Important document used to manage train timings in Railways",
-      icon: "⏰"
-    },
-    {
-      title: "Definition of WTT",
-      content: "Working Time Table is an official document that contains train timings, distances between stations, stops, and other important information in Railways."
-    },
-    {
-      title: "Key Features of WTT",
-      points: [
-        "Train numbers and their types",
-        "Origin and destination stations",
-        "Stopping times at each station",
-        "Train routes and distances",
-        "Speed limits and restrictions",
-        "Crossing and overtaking timings"
-      ]
-    },
-    {
-      title: "Types of WTT",
-      types: [
-        {
-          name: "Main Line WTT",
-          description: "For main line routes"
-        },
-        {
-          name: "Branch Line WTT", 
-          description: "For branch line routes"
-        },
-        {
-          name: "Suburban WTT",
-          description: "For suburban train services"
-        },
-        {
-          name: "Freight WTT",
-          description: "For freight train services"
-        }
-      ]
-    },
-    {
-      title: "WTT Preparation Process",
-      steps: [
-        "Analysis of train routes",
-        "Calculation of distances between stations",
-        "Determination of stopping times",
-        "Planning of crossing timings",
-        "Determination of speed profiles",
-        "Official approval"
-      ]
-    },
-    {
-      title: "Importance of WTT",
-      importance: [
-        "Timely management of train services",
-        "Passenger convenience",
-        "Efficiency of railway operations",
-        "Maintenance of safety standards",
-        "Resource optimization"
-      ]
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <div className="container mx-auto px-4 py-8">
@@ -100,109 +43,15 @@ const WTT = () => {
             Important document used to manage train timings in Railways
           </p>
         </div>
+        <DetentionCost />
+        <StoppageCost />
+        <ReliefTrains />
+        <ODC />
+        <CCRoutes />
+        <FreightTrainExamination />
+        <InvalidBPC />
+        <Weighbridges />
 
-        {/* Content Sections */}
-        <div className="max-w-4xl mx-auto space-y-8">
-          {wttTopics.map((topic, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300">
-              {/* Topic Header */}
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4">
-                <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-                  {topic.icon && <span className="text-2xl">{topic.icon}</span>}
-                  {topic.title}
-                </h2>
-                {topic.description && (
-                  <p className="text-blue-100 mt-2">{topic.description}</p>
-                )}
-              </div>
-
-              {/* Topic Content */}
-              <div className="p-6">
-                {topic.content && (
-                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    {topic.content}
-                  </p>
-                )}
-
-                {topic.points && (
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Points:</h3>
-                    <ul className="space-y-2">
-                      {topic.points.map((point, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-gray-700">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {topic.types && (
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Types of WTT:</h3>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {topic.types.map((type, idx) => (
-                        <div key={idx} className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg border border-blue-200">
-                          <h4 className="font-semibold text-blue-800 mb-2">{type.name}</h4>
-                          <p className="text-gray-600">{type.description}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {topic.steps && (
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Preparation Process:</h3>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {topic.steps.map((step, idx) => (
-                        <div key={idx} className="flex items-center gap-3 bg-gradient-to-r from-green-50 to-blue-50 p-3 rounded-lg">
-                          <span className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
-                            {idx + 1}
-                          </span>
-                          <span className="text-gray-700">{step}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {topic.importance && (
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-4">Importance:</h3>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {topic.importance.map((item, idx) => (
-                        <div key={idx} className="flex items-center gap-3 bg-gradient-to-r from-purple-50 to-pink-50 p-3 rounded-lg">
-                          <span className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full flex items-center justify-center text-sm">
-                            ✓
-                          </span>
-                          <span className="text-gray-700">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Additional Information */}
-        <div className="max-w-4xl mx-auto mt-12">
-          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-6 border border-yellow-200">
-            <h3 className="text-2xl font-bold text-yellow-800 mb-4 flex items-center gap-3">
-              <span className="text-2xl">💡</span>
-              Important Notes
-            </h3>
-            <div className="space-y-3 text-gray-700">
-              <p>• WTT is an important document for railway operations</p>
-              <p>• It is updated every year</p>
-              <p>• Train services are operated according to WTT</p>
-              <p>• It serves as a guide for passengers and railway staff</p>
-            </div>
-          </div>
-        </div>
 
         {/* Download WTT Section */}
         <div className="mt-12 bg-white rounded-xl shadow-xl overflow-hidden border border-purple-200">
