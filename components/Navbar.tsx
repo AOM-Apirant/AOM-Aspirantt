@@ -71,6 +71,7 @@ export default function Navbar() {
     { name: 'Station Working Rules', href: '/swr', icon: '🚉' },
     { name: 'Working Time Table', href: '/wtt', icon: '⏰' },
     { name: 'Appendix', href: '/appendix', icon: '📄' },
+    { name: 'IT Applications', href: '/it-apps', icon: '💻' },
     { name: 'RS Conduct Rules-1966', href: '/conduct-rules', icon: '⚖️' },
     { name: 'RS DA Rules - 1968', href: '/da-rules', icon: '💰' },
     { name: 'Compensation Act - 2010', href: '/ec-act', icon: '🏛️' },
