@@ -6,16 +6,16 @@ const NTES = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="lg:text-4xl text-xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             National Train Enquiry System (NTES)
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Challenges Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-red-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-red-100 text-red-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-red-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-red-100 text-red-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
               </svg>
@@ -47,9 +47,9 @@ const NTES = () => {
         </div>
 
         {/* Goals Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-green-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-green-100 text-green-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-green-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-green-100 text-green-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -81,9 +81,9 @@ const NTES = () => {
         </div>
 
         {/* Spot Your Train */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-blue-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-blue-100 text-blue-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-blue-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -112,9 +112,9 @@ const NTES = () => {
         </div>
 
         {/* Train Schedule */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-purple-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-purple-100 text-purple-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-purple-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-purple-100 text-purple-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -138,9 +138,9 @@ const NTES = () => {
         </div>
 
         {/* Live Station */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-orange-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-orange-100 text-orange-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-orange-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-orange-100 text-orange-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
@@ -160,9 +160,9 @@ const NTES = () => {
         </div>
 
         {/* Trains between Stations */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-teal-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-teal-100 text-teal-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-teal-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-teal-100 text-teal-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
               </svg>
@@ -182,9 +182,9 @@ const NTES = () => {
         </div>
 
         {/* Exceptional Trains */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-indigo-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-indigo-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
               </svg>
@@ -212,9 +212,9 @@ const NTES = () => {
         </div>
 
         {/* Website */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-pink-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-pink-100 text-pink-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-pink-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-pink-100 text-pink-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
               </svg>
@@ -242,9 +242,9 @@ const NTES = () => {
         </div>
 
         {/* Mobile Apps */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-emerald-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-emerald-100 text-emerald-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-emerald-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-emerald-100 text-emerald-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
@@ -268,9 +268,9 @@ const NTES = () => {
         </div>
 
         {/* Display Boards at Station */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-cyan-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-cyan-100 text-cyan-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-cyan-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-cyan-100 text-cyan-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
               </svg>
@@ -294,9 +294,9 @@ const NTES = () => {
         </div>
 
         {/* Enquiry */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-yellow-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-yellow-100 text-yellow-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-yellow-500">
+          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
@@ -320,9 +320,9 @@ const NTES = () => {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-emerald-500">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-emerald-100 text-emerald-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-emerald-500">
+          <h2 className="lg:text-3xl text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <span className="bg-emerald-100 text-emerald-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -359,21 +359,21 @@ const NTES = () => {
 
         {/* Milestones Section */}
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg p-8 text-white">
-          <h2 className="text-2xl font-bold mb-8 text-center">Milestones</h2>
+          <h2 className="lg:text-3xl text-2xl font-bold mb-8 text-center">Milestones</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <div className="text-3xl font-bold mb-2">3.5Cr+</div>
+              <div className="lg:text-3xl text-xl font-bold mb-2">3.5Cr+</div>
               <div className="text-purple-100">Daily Enquiries</div>
             </div>
             
             <div className="text-center bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <div className="text-3xl font-bold mb-2">80K+</div>
+              <div className="lg:text-3xl text-xl font-bold mb-2">80K+</div>
               <div className="text-purple-100">Concurrent Users</div>
             </div>
             
             <div className="text-center bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <div className="text-3xl font-bold mb-2">8M+</div>
+              <div className="lg:text-3xl text-xl font-bold mb-2">8M+</div>
               <div className="text-purple-100">App downloads</div>
             </div>
           </div>
