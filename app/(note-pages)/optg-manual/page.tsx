@@ -2,6 +2,9 @@ import StationYard from '@/components/optg-manual/StationYard'
 import RegisterPreserve from '@/components/optg-manual/RegisterPreserve'
 import Punctuality from '@/components/optg-manual/Punctuality'
 import React from 'react'
+import ControlOrganization from '@/components/optg-manual/ControlOrganization'
+import ChiefController from '@/components/optg-manual/ChiefController'
+import SectionController from '@/components/optg-manual/SectionController'
 
 const OperatingManual = () => {
   return (
@@ -85,7 +88,12 @@ const OperatingManual = () => {
         </div>
         <RegisterPreserve />
         <Punctuality />
+        <ControlOrganization />
+        <ChiefController />
+        <SectionController />
       </div>
+
+      
     </div>
   )
 }

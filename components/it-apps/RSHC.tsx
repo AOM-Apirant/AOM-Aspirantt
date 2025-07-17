@@ -7,7 +7,7 @@ const RSHC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="lg:text-4xl text-xl font-bold mb-4 bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-            RSHC - RPF Security Helpline 182
+            RPF Security Helpline 182 (RSHC)
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>

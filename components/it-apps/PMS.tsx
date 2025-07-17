@@ -6,7 +6,7 @@ const PMS = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="lg:text-4xl text-xl font-bold text-gray-800 mb-4">
             Parcel Management System (PMS)
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -15,9 +15,9 @@ const PMS = () => {
         </div>
 
         {/* Challenges Section */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
-            <span className="bg-red-100 text-red-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8">
+          <h2 className="lg:text-2xl text-xl font-semibold text-gray-800 mb-6 flex items-center">
+            <span className="bg-red-100 text-red-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
               </svg>
@@ -53,9 +53,9 @@ const PMS = () => {
         </div>
 
         {/* Goals Section */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
-            <span className="bg-green-100 text-green-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8">
+          <h2 className="lg:text-2xl text-xl font-semibold text-gray-800 mb-6 flex items-center">
+            <span className="bg-green-100 text-green-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -93,7 +93,7 @@ const PMS = () => {
         {/* Modules Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {/* Parcel Booking */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 hover:shadow-xl transition-shadow">
             <div className="bg-blue-100 text-blue-600 p-3 rounded-lg mb-4 inline-block">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -106,7 +106,7 @@ const PMS = () => {
           </div>
 
           {/* Barcode Printing */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 hover:shadow-xl transition-shadow">
             <div className="bg-purple-100 text-purple-600 p-3 rounded-lg mb-4 inline-block">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -119,7 +119,7 @@ const PMS = () => {
           </div>
 
           {/* Loading/Unloading */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 hover:shadow-xl transition-shadow">
             <div className="bg-orange-100 text-orange-600 p-3 rounded-lg mb-4 inline-block">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
@@ -132,7 +132,7 @@ const PMS = () => {
           </div>
 
           {/* Delivery Module */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 hover:shadow-xl transition-shadow">
             <div className="bg-green-100 text-green-600 p-3 rounded-lg mb-4 inline-block">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -145,7 +145,7 @@ const PMS = () => {
           </div>
 
           {/* MIS Reporting */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 hover:shadow-xl transition-shadow">
             <div className="bg-indigo-100 text-indigo-600 p-3 rounded-lg mb-4 inline-block">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -158,7 +158,7 @@ const PMS = () => {
           </div>
 
           {/* Lease e-Registration */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 hover:shadow-xl transition-shadow">
             <div className="bg-teal-100 text-teal-600 p-3 rounded-lg mb-4 inline-block">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
@@ -172,9 +172,9 @@ const PMS = () => {
         </div>
 
         {/* Features Section */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
-            <span className="bg-yellow-100 text-yellow-600 p-2 rounded-lg mr-3">
+        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8">
+          <h2 className="text-xl font-semibold text-gray-800 mb-6 flex items-center">
+            <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full mr-3">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -266,7 +266,7 @@ const PMS = () => {
 
         {/* Milestones Section */}
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Milestones Achieved</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Milestones</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 text-blue-600 text-4xl font-bold p-6 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">

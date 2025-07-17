@@ -1,384 +1,371 @@
+"use client"
 import React from 'react'
 
 const NTES = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-100 py-8 px-4">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="lg:text-4xl text-xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            National Train Enquiry System (NTES)
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-orange-900 via-amber-900 to-yellow-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-orange-400/20 to-amber-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-yellow-400/20 to-orange-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-amber-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
 
-        {/* Challenges Section */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-red-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-red-100 text-red-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
-            </span>
-            Challenges
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>To keep the travellers informed about updated train schedules.</p>
+      <div className="relative z-10 py-8 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <div className="inline-block p-2 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full mb-4 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-orange-500 to-amber-600 p-3 rounded-full">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
             </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Dissemination of information to public about trains cancelled / diverted.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>To facilitate passengers by providing expected Trains Arrival / Departure timings at Stations.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>To track Live Current Running status of any train on Indian Railways Network.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>At times, for reasons beyond the control of Indian Railways, the trains get delayed, rescheduled, cancelled or diverted. It has been a challenging task and need of the hour to communicate the same to commuters systematically.</p>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-orange-100 to-amber-100 bg-clip-text text-transparent mb-4 animate-fade-in">
+              NATIONAL TRAIN ENQUIRY SYSTEM
+            </h1>
+            <h2 className="lg:text-3xl text-xl font-bold text-amber-300 mb-3">(NTES)</h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-600 mx-auto mb-4 rounded-full"></div>
+            <p className="text-lg text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive digital platform for real-time train information, schedules, and passenger services across Indian Railways
+            </p>
+          </div>
+
+          {/* Challenges Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-6 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-2xl text-xl font-bold text-white mb-6 flex items-center justify-center">
+              <span className="bg-gradient-to-r from-red-500 to-orange-500 p-3 rounded-full mr-3 shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </span>
+              Challenges We Address
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <ul className="space-y-3">
+                <li className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">⚡</span>
+                  <span className="text-gray-200 text-sm">To keep the travellers informed about updated train schedules</span>
+                </li>
+                <li className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🔍</span>
+                  <span className="text-gray-200 text-sm">Dissemination of information to public about trains cancelled / diverted</span>
+                </li>
+                <li className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">📊</span>
+                  <span className="text-gray-200 text-sm">To facilitate passengers by providing expected Trains Arrival / Departure timings</span>
+                </li>
+              </ul>
+              <ul className="space-y-3">
+                <li className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🛡️</span>
+                  <span className="text-gray-200 text-sm">To track Live Current Running status of any train on Indian Railways Network</span>
+                </li>
+                <li className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">💡</span>
+                  <span className="text-gray-200 text-sm">Systematic communication of delays, rescheduling, cancellations to commuters</span>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
 
-        {/* Goals Section */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-green-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-green-100 text-green-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            Goals
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>To provide passengers complete schedule of single/all trains with all stoppages enroute.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>To provide commuters the expected train arrival / departure in next 2,4,6 or 8 hours at a station.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Facilitate information dissemination through multiple channels viz. Display Boards, Mobile Apps, Enquiry Counter, etc.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>To keep travellers informed about live Train running status & partial / fully cancelled, route diverted trains along with end to end train availability.</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>The objective of NTES system is to empower passengers and citizens by consistently disseminating near real time passenger train running information on IR in an effective, reliable and user friendly manner keeping in view the changing user needs and technology advancements.</p>
+          {/* Goals Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-6 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-2xl text-xl font-bold text-white mb-6 flex items-center justify-center">
+              <span className="bg-gradient-to-r from-green-500 to-emerald-500 p-3 rounded-full mr-3 shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              Our Goals
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🚀</span>
+                  <span className="text-gray-200 text-sm">To provide passengers complete schedule of single/all trains with all stoppages</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">📈</span>
+                  <span className="text-gray-200 text-sm">To provide commuters the expected train arrival / departure in next 2,4,6 or 8 hours</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🎯</span>
+                  <span className="text-gray-200 text-sm">Facilitate information dissemination through multiple channels</span>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🛡️</span>
+                  <span className="text-gray-200 text-sm">To keep travellers informed about live Train running status & exceptions</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">⚙️</span>
+                  <span className="text-gray-200 text-sm">Empower passengers with near real time passenger train running information</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Spot Your Train */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-blue-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-            </span>
-            Spot Your Train
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Provides information about a running train</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Current running status and expected time of arrival/expected time of departure (ETA/ETD) at the queried station</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Google Map feature available to track the running of trains on run</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Partially Cancelled routes and Diverted routes are also shown in case of such exception</p>
+          {/* Core Features Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-6 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-2xl text-xl font-bold text-white mb-6 flex items-center justify-center">
+              <span className="bg-gradient-to-r from-orange-500 to-amber-500 p-3 rounded-full mr-3 shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </span>
+              Core Features
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="space-y-3">
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🚂</span>
+                  <span className="text-gray-200 text-sm">Spot Your Train - Current running status and ETA/ETD</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">📅</span>
+                  <span className="text-gray-200 text-sm">Train Schedule - Complete schedule with all stoppages</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🏢</span>
+                  <span className="text-gray-200 text-sm">Live Station - Display boards at station replication</span>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🔗</span>
+                  <span className="text-gray-200 text-sm">Trains between Stations - All trains between any two stations</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">⚠️</span>
+                  <span className="text-gray-200 text-sm">Exceptional Trains - Cancelled, rescheduled, diverted trains</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">🌐</span>
+                  <span className="text-gray-200 text-sm">Website - Mobile compatible web interface</span>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">📱</span>
+                  <span className="text-gray-200 text-sm">Mobile Apps - Android, Windows and iOS platforms</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">📺</span>
+                  <span className="text-gray-200 text-sm">Display Boards - Platform and station information</span>
+                </div>
+                <div className="flex items-start group hover:bg-white/5 p-2 rounded-lg transition-all duration-300">
+                  <span className="text-orange-400 mr-2 mt-1 text-lg group-hover:scale-110 transition-transform">📞</span>
+                  <span className="text-gray-200 text-sm">Enquiry - Face to face and IVRS based services</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Train Schedule */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-purple-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-purple-100 text-purple-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            Train Schedule
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Provides complete schedule of a given train with all its public stoppages en-route</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Scheduled arrival/departure at the stations</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Distance and day count information</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Live Station */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-orange-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-orange-100 text-orange-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-            </span>
-            Live Station
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Replicates the display boards at station</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Shows trains expected to arrive/depart at any station in next 2,4,6 or 8 hours</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Trains between Stations */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-teal-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-teal-100 text-teal-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-              </svg>
-            </span>
-            Trains between Stations
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Covers all trains defined on IR</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-teal-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Find out the list of all types of trains available between any two stations</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Exceptional Trains */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-indigo-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
-            </span>
-            Exceptional Trains
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Provides information about all the exceptions in the day to day running of trains</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Includes cancelled trains (both completely or partially cancelled)</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Rescheduled trains and their modified timings</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Diverted trains modified routes</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Website */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-pink-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-pink-100 text-pink-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
-              </svg>
-            </span>
-            Website
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>New light weight mobile compatible web interface (enquiry.indianrail.gov.in)</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Offers quick and easy access to essential information for passengers</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Largely appreciated for its speed, simplicity and richness of information</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Enhanced user experience</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Apps */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-emerald-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-emerald-100 text-emerald-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-            </span>
-            Mobile Apps
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>First official Mobile App of Indian Railways for train enquiry</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Indigenously developed by CRIS</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Available for most commonly used mobile platforms: Android, Windows and iOS</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Display Boards at Station */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-cyan-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-cyan-100 text-cyan-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-              </svg>
-            </span>
-            Display Boards at Station
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Train Arrival/Departure timings, delay and platform number information</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Disseminated to passengers through display boards installed on platforms and station premises</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Through NTES services</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Enquiry */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-yellow-500">
-          <h2 className="lg:text-2xl text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-yellow-100 text-yellow-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-            </span>
-            Enquiry
-          </h2>
-          <div className="space-y-4 text-gray-700">
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Public can do face to face enquiry at enquiry counter at stations</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>Facilitating train related information through NTES terminals</p>
-            </div>
-            <div className="flex items-start">
-              <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <p>IVRS based 139 call centres</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Benefits Section */}
-        <div className="bg-white rounded-xl shadow-lg py-8 pl-8 pr-2 mb-8 border-l-4 border-emerald-500">
-          <h2 className="lg:text-3xl text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="bg-emerald-100 text-emerald-600 p-2 rounded-full mr-3">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {/* Benefits Section */}
+          <div className="bg-gradient-to-r from-orange-500 via-amber-600 to-yellow-600 rounded-2xl shadow-2xl p-6 mb-8 text-white border border-orange-200/20 hover:shadow-3xl transition-all duration-500 hover:scale-105">
+            <h2 className="lg:text-2xl text-xl font-bold mb-4 flex items-center">
+              <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-            </span>
-            Benefits
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="space-y-4">
-              <div className="bg-emerald-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-emerald-800 mb-2">Wide Reach</h3>
-                <p className="text-gray-700 text-sm">23 million passengers travelling on Indian Railways everyday are the direct beneficiaries of this initiative. With growth in passenger traffic on Indian Railways over the years and sharp rise in internet users, the usefulness of and dependency on this system has increased tremendously.</p>
+              Key Benefits
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="flex items-start group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div className="flex-shrink-0 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <span className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm">Wide Reach - 23 million passengers benefit daily</span>
+                </div>
+                <div className="flex items-start group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div className="flex-shrink-0 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                  <span className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm">Customer Convenience - Quick and easy access to information</span>
+                </div>
+                <div className="flex items-start group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div className="flex-shrink-0 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <span className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm">Mobility - No more long queues at enquiry counters</span>
+                </div>
               </div>
-              
-              <div className="bg-emerald-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-emerald-800 mb-2">Customer Convenience</h3>
-                <p className="text-gray-700 text-sm">The new interface provides quick and easy access to essential information for passengers and has been largely appreciated for its speed, simplicity and richness of information and enhanced user experience.</p>
-              </div>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="bg-emerald-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-emerald-800 mb-2">Mobility</h3>
-                <p className="text-gray-700 text-sm">Mobile App serves passenger enquiries at all times with reliable and near real time information while he is on the move, at no additional cost. No more long queues at enquiry counters.</p>
-              </div>
-              
-              <div className="bg-emerald-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-emerald-800 mb-2">Real Time Information</h3>
-                <p className="text-gray-700 text-sm">Along with train running position, arrival/departure of trains at station and train schedule, it also provides crucial information on exceptional, occasional and special events.</p>
+              <div className="space-y-3">
+                <div className="flex items-start group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div className="flex-shrink-0 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <span className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm">Real Time Information - Live train running position</span>
+                </div>
+                <div className="flex items-start group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div className="flex-shrink-0 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <span className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm">Enhanced User Experience - Speed, simplicity and rich information</span>
+                </div>
+                <div className="flex items-start group hover:transform hover:translate-x-2 transition-all duration-300">
+                  <div className="flex-shrink-0 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    </svg>
+                  </div>
+                  <span className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300 text-sm">Multiple Channels - Website, Mobile Apps, Display Boards, IVRS</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Milestones Section */}
-        <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl shadow-lg p-8 text-white">
-          <h2 className="lg:text-3xl text-2xl font-bold mb-8 text-center">Milestones</h2>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <div className="lg:text-3xl text-xl font-bold mb-2">3.5Cr+</div>
-              <div className="text-purple-100">Daily Enquiries</div>
+          {/* Benefits Grid Section */}
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {/* Wide Reach Benefits */}
+            <div className="bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl shadow-2xl py-8 px-6 text-white hover:scale-105 transition-all duration-300 group">
+              <div className="bg-white/20 p-3 rounded-full mb-4 inline-block group-hover:bg-white/30 transition-all">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4 flex items-center">
+                <span className="mr-2">🌍</span>
+                Wide Reach
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center">
+                  <span className="text-orange-200 mr-2">✓</span>
+                  23 million daily passengers
+                </li>
+                <li className="flex items-center">
+                  <span className="text-orange-200 mr-2">✓</span>
+                  Growing internet users
+                </li>
+                <li className="flex items-center">
+                  <span className="text-orange-200 mr-2">✓</span>
+                  Increased dependency
+                </li>
+                <li className="flex items-center">
+                  <span className="text-orange-200 mr-2">✓</span>
+                  National coverage
+                </li>
+              </ul>
             </div>
-            
-            <div className="text-center bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <div className="lg:text-3xl text-xl font-bold mb-2">80K+</div>
-              <div className="text-purple-100">Concurrent Users</div>
+
+            {/* Customer Convenience Benefits */}
+            <div className="bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl shadow-2xl py-8 px-6 text-white hover:scale-105 transition-all duration-300 group">
+              <div className="bg-white/20 p-3 rounded-full mb-4 inline-block group-hover:bg-white/30 transition-all">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4 flex items-center">
+                <span className="mr-2">👥</span>
+                Customer Convenience
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center">
+                  <span className="text-amber-200 mr-2">✓</span>
+                  Quick access to information
+                </li>
+                <li className="flex items-center">
+                  <span className="text-amber-200 mr-2">✓</span>
+                  Speed and simplicity
+                </li>
+                <li className="flex items-center">
+                  <span className="text-amber-200 mr-2">✓</span>
+                  Rich information content
+                </li>
+                <li className="flex items-center">
+                  <span className="text-amber-200 mr-2">✓</span>
+                  Enhanced user experience
+                </li>
+              </ul>
             </div>
-            
-            <div className="text-center bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-              <div className="lg:text-3xl text-xl font-bold mb-2">8M+</div>
-              <div className="text-purple-100">App downloads</div>
+
+            {/* Real Time Benefits */}
+            <div className="bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-2xl shadow-2xl py-8 px-6 text-white hover:scale-105 transition-all duration-300 group">
+              <div className="bg-white/20 p-3 rounded-full mb-4 inline-block group-hover:bg-white/30 transition-all">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4 flex items-center">
+                <span className="mr-2">⚡</span>
+                Real Time Information
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center">
+                  <span className="text-yellow-200 mr-2">✓</span>
+                  Live train running position
+                </li>
+                <li className="flex items-center">
+                  <span className="text-yellow-200 mr-2">✓</span>
+                  Arrival/departure timings
+                </li>
+                <li className="flex items-center">
+                  <span className="text-yellow-200 mr-2">✓</span>
+                  Exception handling
+                </li>
+                <li className="flex items-center">
+                  <span className="text-yellow-200 mr-2">✓</span>
+                  Near real-time updates
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Milestones Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-6 border border-white/20">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 text-center">Milestones Achieved</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center group hover:scale-105 transition-all duration-300">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-4xl font-bold p-6 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center shadow-2xl group-hover:shadow-orange-500/50 transition-shadow">
+                  3.5Cr+
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Daily Enquiries</h3>
+                <p className="text-gray-200 text-sm">Millions of daily queries processed</p>
+              </div>
+              <div className="text-center group hover:scale-105 transition-all duration-300">
+                <div className="bg-gradient-to-br from-amber-500 to-amber-600 text-4xl font-bold p-6 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center shadow-2xl group-hover:shadow-amber-500/50 transition-shadow">
+                  80K+
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Concurrent Users</h3>
+                <p className="text-gray-200 text-sm">Simultaneous active users</p>
+              </div>
+              <div className="text-center group hover:scale-105 transition-all duration-300">
+                <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-4xl font-bold p-6 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center shadow-2xl group-hover:shadow-yellow-500/50 transition-shadow">
+                  8M+
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">App Downloads</h3>
+                <p className="text-gray-200 text-sm">Mobile app installations</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </div>
   )
 }
