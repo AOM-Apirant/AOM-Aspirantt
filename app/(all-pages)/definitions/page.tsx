@@ -14,8 +14,7 @@ const Definitions = () => {
 
 
   const filteredDefinitions = definitions.filter(def => {
-    return def.term.toLowerCase().includes(searchTerm.toLowerCase()) ||
-           def.definition.toLowerCase().includes(searchTerm.toLowerCase());
+    return def.term.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
   if (isLoading) {
@@ -43,11 +42,11 @@ const Definitions = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
          
-          <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-200 mb-4">
+          <h1 className="lg:text-5xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-200 mb-4">
             Railway Definitions
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive guide to railway terminology and concepts from the General Rules for Railway Servants
+          <p className="lg:text-xl text-base text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Comprehensive guide to railway terminology and concepts from the General Rules for Railway Servants with official references
           </p>
           <div className="mt-6 flex items-center justify-center space-x-4 text-gray-400">
             <div className="flex items-center space-x-2">
@@ -57,7 +56,7 @@ const Definitions = () => {
           </div>
         </div>
 
-        {/* Sticky Search Section */}
+                {/* Sticky Search Section */}
         <div className="sticky top-20 z-40 mb-8">
           <div className="max-w-2xl mx-auto">
             <div className="relative">
@@ -68,11 +67,24 @@ const Definitions = () => {
               </div>
               <input
                 type="text"
-                placeholder="Search definitions by word or letter..."
+                placeholder="Search by term (e.g., Act, Train, Signal)..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-5 pr-4 py-3 bg-white/20 backdrop-blur-xl border border-white/30 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 shadow-2xl shadow-purple-500/20"
+                className="w-full pl-5 pr-10 py-3 bg-white/20 backdrop-blur-xl border border-white/30 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 shadow-2xl shadow-purple-500/20"
               />
+              {searchTerm && (
+                <button
+                  type="button"
+                  aria-label="Clear search"
+                  onClick={() => setSearchTerm("")}
+                  className="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-400 hover:text-red-400 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-200"
+                  tabIndex={0}
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -89,24 +101,36 @@ const Definitions = () => {
           {filteredDefinitions.map((def, index) => (
             <div
               key={index}
-              className="group relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20"
+              className="group relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 min-h-[260px] flex flex-col"
               style={{
                 animationDelay: `${index * 100}ms`
               }}
             >
               {/* Number Badge */}
-              <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-sm font-bold shadow-lg">
+              <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-sm font-bold shadow-lg">
                 {def.number}
               </div>
+              
+
 
               {/* Content */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-white mb-3 leading-tight group-hover:text-purple-200 transition-colors duration-300">
                   {def.term}
                 </h3>
-                <p className="text-gray-300 leading-relaxed text-sm">
+                <p className="text-gray-300 leading-relaxed text-sm mb-4">
                   {def.definition}
                 </p>
+                
+                {/* Reference Badge */}
+                <div className="flex items-center justify-between group/reference mt-4 pt-4 border-t border-white/10">
+                  <span className="text-sm text-gray-400 font-medium group-hover/reference:text-cyan-300 transition-colors duration-300">Reference:</span>
+                  <div className="px-3 py-1">
+                    <span className="text-xs font-semibold text-cyan-300 tracking-wide">
+                      {def.reference}
+                    </span>
+                  </div>
+                </div>
               </div>
 
               {/* Hover Effect */}
@@ -132,6 +156,8 @@ const Definitions = () => {
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-white mb-6 text-center">Important Notes</h3>
+            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-blue-200 mb-2">SR 1.02.5</h4>
@@ -171,6 +197,14 @@ const Definitions = () => {
             transform: translate(0px, 0px) scale(1);
           }
         }
+        @keyframes referenceGlow {
+          0%, 100% {
+            box-shadow: 0 0 5px rgba(6, 182, 212, 0.3);
+          }
+          50% {
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+          }
+        }
         .animate-blob {
           animation: blob 7s infinite;
         }
@@ -179,6 +213,9 @@ const Definitions = () => {
         }
         .animation-delay-4000 {
           animation-delay: 4s;
+        }
+        .reference-glow {
+          animation: referenceGlow 2s ease-in-out infinite;
         }
       `}</style>
     </div>
