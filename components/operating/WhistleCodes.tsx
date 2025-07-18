@@ -52,10 +52,10 @@ const WhistleCodes = () => {
         <div className="relative z-10">
           <div className="mb-16">
             <div className="text-center mb-8">
-              <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
+              <h1 className="lg:text-5xl text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
                 Whistle Codes Reference
               </h1>
-              <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+              <p className="lg:text-xl text-base text-slate-400 max-w-2xl mx-auto">
                 Essential whistle codes for railway operations and safety communication
               </p>
             </div>
@@ -75,24 +75,68 @@ const WhistleCodes = () => {
                 
                 {/* Top Badge with Enhanced Design */}
                 <div className="absolute -top-4 -right-4 z-10">
-                  <div className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white w-12 h-12 rounded-full text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center">
+                  <div className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white w-8 h-8 md:w-12 md:h-12 rounded-full text-xs md:text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center">
                     {code.id}
                   </div>
                 </div>
 
                 {/* Enhanced Code Display */}
                 <div className="mb-8">
-                  <div className="inline-block bg-gradient-to-r from-slate-700 to-slate-800 px-6 py-4 rounded-lg border border-slate-600/50 shadow-inner">
-                    <span className="text-blue-400 font-mono text-xl font-bold tracking-wider">
-                      &ldquo;{code.code}&rdquo;
-                    </span>
+                  <div className="relative">
+                    {/* Code Label */}
+                    <div className="absolute -top-3 left-4 z-10">
+                      <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                        WHISTLE CODE
+                      </span>
+                    </div>
+                    
+                    {/* Enhanced Code Container */}
+                    <div className="relative bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 p-6 rounded-xl border-2 border-slate-600/50 shadow-2xl group-hover:border-blue-500/80 transition-all duration-500">
+                      {/* Animated Background Pattern */}
+                      <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(59,130,246,0.1)_30%,rgba(59,130,246,0.1)_70%,transparent_70%)] bg-[length:20px_20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      
+                      {/* Code Content */}
+                      <div className="relative z-10 flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-blue-400 font-mono text-2xl font-bold tracking-wider group-hover:text-blue-300 transition-colors duration-300">
+                            &ldquo;{code.code}&rdquo;
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Corner Decorations */}
+                      <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-blue-500/50 rounded-tl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-purple-500/50 rounded-tr opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-purple-500/50 rounded-bl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-blue-500/50 rounded-br opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
                   </div>
                 </div>
 
                 {/* Enhanced Description */}
                 <div className="space-y-4">
-                  <div className="text-slate-300 leading-relaxed whitespace-pre-line text-sm group-hover:text-slate-200 transition-colors duration-300">
-                    {code.description}
+                  {/* Description Label */}
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-pulse"></div>
+                    <span className="text-green-300 text-sm font-semibold tracking-wider">
+                      DESCRIPTION
+                    </span>
+                  </div>
+                  
+                  {/* Description Content */}
+                  <div className="relative">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-5 rounded-xl border border-slate-700/30 group-hover:border-green-500/50 transition-all duration-300">
+                      {/* Description Text */}
+                      <div className="text-slate-300 leading-relaxed whitespace-pre-line text-sm group-hover:text-slate-200 transition-colors duration-300 relative z-10">
+                        {code.description}
+                      </div>
+                      
+                      {/* Subtle Background Pattern */}
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(34,197,94,0.05),transparent_50%)] rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </div>
+                    
+                    {/* Bottom Accent Line */}
+                    <div className="h-1 bg-gradient-to-r from-green-500/50 via-blue-500/50 to-purple-500/50 rounded-full mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
@@ -113,34 +157,37 @@ const WhistleCodes = () => {
                 Important Whistle Code Guidelines
               </h3>
               <div className="space-y-6 text-left max-w-4xl mx-auto">
-                <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300">
-                  <h4 className="text-lg font-semibold text-blue-300 mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
-                    SR 4.50.2 - Signal Illustration
-                  </h4>
-                  <p className="text-slate-300 leading-relaxed">
-                    The signals above are illustrated by <span className="font-mono text-blue-400">&apos;0&apos;</span> for a short whistle and <span className="font-mono text-blue-400">&apos;––&apos;</span> for a long whistle.
-                  </p>
+                <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 group">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-blue-300 mb-3">
+                      SR 4.50.2 - Signal Illustration
+                    </h4>
+                    <p className="text-slate-300 leading-relaxed">
+                      The signals above are illustrated by <span className="font-mono text-blue-400 bg-blue-900/30 px-2 py-1 rounded">&apos;0&apos;</span> for a short whistle and <span className="font-mono text-blue-400 bg-blue-900/30 px-2 py-1 rounded">&apos;––&apos;</span> for a long whistle.
+                    </p>
+                  </div>
                 </div>
                 
-                <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300">
-                  <h4 className="text-lg font-semibold text-purple-300 mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full"></span>
-                    SR 4.50.3 - Whistle Boards
-                  </h4>
-                  <p className="text-slate-300 leading-relaxed">
-                    Whistle Boards are provided at a distance of <span className="font-semibold text-yellow-400">600 metres</span> on the approaches to such manned level crossing gates outside station limits where a clear view of the line from the level crossing gate is not available. Loco Pilots of trains, on noticing whistle boards shall sound their engine whistle intermittently long from the time they approach a whistle board till they pass the relevant Level Crossing.
-                  </p>
+                <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 group">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-purple-300 mb-3">
+                      SR 4.50.3 - Whistle Boards
+                    </h4>
+                    <p className="text-slate-300 leading-relaxed">
+                      Whistle Boards are provided at a distance of <span className="font-semibold text-yellow-400 bg-yellow-900/30 px-2 py-1 rounded">600 metres</span> on the approaches to such manned level crossing gates outside station limits where a clear view of the line from the level crossing gate is not available. Loco Pilots of trains, on noticing whistle boards shall sound their engine whistle intermittently long from the time they approach a whistle board till they pass the relevant Level Crossing.
+                    </p>
+                  </div>
                 </div>
                 
-                <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-green-500/50 transition-all duration-300">
-                  <h4 className="text-lg font-semibold text-green-300 mb-3 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-                    SR 4.50.4 - Emergency Procedures
-                  </h4>
-                  <p className="text-slate-300 leading-relaxed">
-                    In the event of failure of whistle/horn of engine while working a train, the Loco Pilot should work the train cautiously to clear the block section and ask for repair or relief.
-                  </p>
+                <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-green-500/50 transition-all duration-300 group">
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold text-green-300 mb-3">
+                      SR 4.50.4 - Emergency Procedures
+                    </h4>
+                    <p className="text-slate-300 leading-relaxed">
+                      In the event of failure of whistle/horn of engine while working a train, the Loco Pilot should work the train cautiously to clear the block section and ask for repair or relief.
+                    </p>
+                  </div>
                 </div>
               </div>
               

@@ -32,7 +32,7 @@ export const definitions = [
     {
       number: 6,
       term: "Attendant",
-      definition: "Attendant means a person exclusively employed on salary in the pesonal service of a railway servant.",
+      definition: "Attendant means a person exclusively employed on salary in the personal service of a railway servant.",
       reference: "Railway Servant (Pass) Rules 1986"
     },
     {
@@ -109,7 +109,7 @@ export const definitions = [
     },
     {
       number: 19,
-      term: "day",
+      term: "Day",
       definition: "Day means from sunrise to sunset;",
       reference: "GR 1.2"
     },

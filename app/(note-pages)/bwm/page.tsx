@@ -7,10 +7,10 @@ const BlockWorkingManual = () => {
       <div className='bg-gradient-to-r from-slate-800 via-blue-900 to-slate-800 py-16'>
         <div className='max-w-6xl mx-auto px-4'>
           <div className='text-center'>
-            <h1 className='text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>
+            <h1 className='lg:text-5xl text-3xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>
               Block Working Manual
             </h1>
-            <p className='text-xl text-slate-300 max-w-2xl mx-auto'>
+            <p className='lg:text-xl text-base text-slate-300 max-w-2xl mx-auto'>
               Essential whistle codes and signals for safe railway operations and effective communication
             </p>
           </div>
@@ -19,7 +19,7 @@ const BlockWorkingManual = () => {
 
 
       {/* Bell Codes Section */}
-      <div className="max-w-full mx-auto px-16 py-12 bg-gradient-to-br from-slate-900 via-emerald-900/20 to-slate-900 relative overflow-hidden">
+      <div className="max-w-full mx-auto px-6 py-12 bg-gradient-to-br from-slate-900 via-emerald-900/20 to-slate-900 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(16,185,129,0.05)_25%,rgba(16,185,129,0.05)_50%,transparent_50%,transparent_75%,rgba(16,185,129,0.05)_75%)] bg-[length:20px_20px]"></div>
@@ -38,12 +38,12 @@ const BlockWorkingManual = () => {
             {bellCodes.map((code) => (
               <div 
                 key={code.id} 
-                className="group relative bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-green-500 transition-all duration-300 hover:transform hover:scale-105"
+                className="group relative bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-green-500 transition-all duration-300 hover:transform hover:scale-105"
               >
                 {/* Top Badge */}
                 <div className="absolute -top-3 -right-3">
                   <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                    #{code.id}
+                    {code.id}
                   </div>
                 </div>
 

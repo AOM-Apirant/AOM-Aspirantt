@@ -13,10 +13,10 @@ const Operating = () => {
       <div className="bg-gradient-to-r from-slate-800 via-blue-900 to-slate-800 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 className="lg:text-5xl text-3xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Operating Department
             </h1>
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            <p className="lg:text-xl text-base text-slate-300 max-w-2xl mx-auto">
               Essential operating procedures, whistle codes, and safety guidelines for railway operations
             </p>
           </div>

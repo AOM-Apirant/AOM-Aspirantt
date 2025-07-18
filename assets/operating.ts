@@ -68,7 +68,7 @@ contact the station in rear.
   },
   {
     id: 9,
-    code: "`- - - - - - (Intermittent whistling) long`",
+    code: "- - - - - - (Intermittent whistling) long",
     description: `(a) Approaching level crossing;
 (b) Approaching tunnel or area of restricted visibility or curves or
 continuous cuttings or site of accident; or when in consequence of
@@ -81,42 +81,42 @@ fog, storm or any other reason the view of the signal is obstructed;
   },
   {
     id: 10,
-    code: "`– 0 – 0`",
+    code: "– 0 – 0",
     description: `(a) Train parting
 (b) Train arriving incomplete.`,
   },
   {
     id: 11,
-    code: "`0 0 –`",
+    code: "0 0 –",
     description: `(a) Alarm chain pulled.
 (b) Insufficient vacuum/air pressure in engine.
 (c) Inter-communication apparatus used.`,
   },
   {
     id: 12,
-    code: "`– –`",
+    code: "– –",
     description: `Raise pantograph. To be acknowledged by the other engine.`,
   },
   {
     id: 13,
-    code: "`– 0 –`",
+    code: "– 0 –",
     description: `Lower pantograph. To be acknowledged by the other engine.`,
   },
   {
     id: 14,
-    code: "`– 0 0`",
+    code: "– 0 0",
     description: `(a) Signal arm taken ‘off’ but light extinguished.
 (b) Signal arm improperly/insufficiently taken ‘off’.
 (c) Defective signal.`,
   },
   {
     id: 15,
-    code: "`– – –`",
+    code: "– – –",
     description: `Fouling marks not cleared.`,
   },
   {
     id: 16,
-    code: "`000000000000 (frequently)`",
+    code: "000000000000 (frequently)",
     description: `(a) Apprehension of danger.
 (b) Danger signal to the Loco Pilot of an approaching train whose
 path is fouled or obstructed for any reason.

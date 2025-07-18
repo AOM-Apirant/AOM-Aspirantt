@@ -48,23 +48,23 @@ const OperatingManual = () => {
                 the Indian Railways network.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Key Objectives:</h3>
               <ul className="space-y-2">
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   Ready handbook for officers and staff
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   Standardized operating procedures
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   Safety guidelines and protocols
                 </li>
                 <li className="flex items-center text-gray-700">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                  <span className="w-3 h-3 bg-blue-600 rounded-full mr-3"></span>
                   Zone-specific operational manuals
                 </li>
               </ul>

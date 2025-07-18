@@ -28,12 +28,12 @@ const ControlOrganization = () => {
             </h1>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-violet-600 mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Indian Railways లో Operation, Coordination, Planning, Execution, Monitoring కోసం ప్రధాన కేంద్రం
+              Indian Railways for Operation, Coordination, Planning, Execution, Monitoring 
             </p>
           </div>
 
           {/* Organizational Chart */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-6 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
             {/* Mobile Layout */}
             <div className="block lg:hidden">
               {/* Sr.DOM */}
@@ -47,7 +47,7 @@ const ControlOrganization = () => {
 
               {/* Chief Controller */}
               <div className="text-center mb-8">
-                <div className="bg-indigo-600 text-white px-6 py-8 rounded-xl shadow-xl inline-block">
+                <div className="bg-indigo-600 text-white px-4 py-8 rounded-xl shadow-xl inline-block">
                   <h2 className="text-lg font-bold mb-2">Chief Controller</h2>
                   <p className="text-xs opacity-90">(Head of the Control Office)</p>
                 </div>
@@ -229,58 +229,63 @@ const ControlOrganization = () => {
           {/* Content Sections */}
           <div className="space-y-8">
             {/* Introduction Section */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-blue-200 mb-6 border-b-2 border-blue-500 pb-3 flex items-center">
-                <span className="bg-gradient-to-r from-blue-400 to-indigo-400 p-2 rounded-full mr-3">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-4 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-center mb-6">
+                <div className="inline-block p-2 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
-                </span>
-                Control Organization Overview
-              </h2>
-              <div className="space-y-4 text-gray-200 leading-relaxed">
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">1.</span> The Control Organisation is one of the Principal Means by which the essential Co-ordination is obtained in Railway Operation.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">2.</span> It is from where, the planning activities of day to day working are done and the orders are issued to the stations and yards for execution.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">3.</span> It can be compared to the brain of human.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">4.</span> Normally the Divisional Control Office is located in the Divisional Head Quarters and connected to the station and yards through various communication systems.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">5.</span> Sr.DOM has the administrative control of the Divisional Control Office.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">6.</span> Chief controller is the head of the control organisation.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">7.</span> The Chief controller is assisted by Dy.Chief controller in Freight and Passenger train operations.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">8.</span> Dy. CHC looks after the Traffic Control.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">9.</span> For easy and effective controlling, the entire division is divided into various sections and each section is monitored by a Section Controller with a well knit communication between the SCOR and Stations for monitoring minute to minute activities at stations and yards.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">10.</span> A section is generally of the range of 150 to 200 km stretch and the trains are controlled in the section by the Section Controller.
-                </p>
-                <p className="text-sm sm:text-base">
-                  <span className="font-semibold text-blue-600">11.</span> The entire organization works round the clock, all days of the year without any interruption to monitor actual movement of trains on the entire rail network.
-                </p>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-blue-200 border-b-2 border-blue-500 pb-3">
+                  Control Organization Overview
+                </h2>
+              </div>
+              <p className="text-lg font-semibold text-gray-200 mb-6">The main aspects of Control Organization are:</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-3">
+                  {[1, 2, 3, 4, 5, 6].map((num) => (
+                    <div key={num} className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
+                      <span className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
+                        {num}
+                      </span>
+                      <p className="text-sm text-gray-700">
+                        {num === 1 && "The Control Organisation is one of the Principal Means by which the essential Co-ordination is obtained in Railway Operation."}
+                        {num === 2 && "It is from where, the planning activities of day to day working are done and the orders are issued to the stations and yards for execution."}
+                        {num === 3 && "It can be compared to the brain of human."}
+                        {num === 4 && "Normally the Divisional Control Office is located in the Divisional Head Quarters and connected to the station and yards through various communication systems."}
+                        {num === 5 && "Sr.DOM has the administrative control of the Divisional Control Office."}
+                        {num === 6 && "Chief controller is the head of the control organisation."}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <div className="space-y-3">
+                  {[7, 8, 9, 10, 11].map((num) => (
+                    <div key={num} className="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
+                      <span className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
+                        {num}
+                      </span>
+                      <p className="text-sm text-gray-700">
+                        {num === 7 && "The Chief controller is assisted by Dy.Chief controller in Freight and Passenger train operations."}
+                        {num === 8 && "Dy. CHC looks after the Traffic Control."}
+                        {num === 9 && "For easy and effective controlling, the entire division is divided into various sections and each section is monitored by a Section Controller with a well knit communication between the SCOR and Stations for monitoring minute to minute activities at stations and yards."}
+                        {num === 10 && "A section is generally of the range of 150 to 200 km stretch and the trains are controlled in the section by the Section Controller."}
+                        {num === 11 && "The entire organization works round the clock, all days of the year without any interruption to monitor actual movement of trains on the entire rail network."}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Functions of Control Section */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-cyan-200 mb-6 border-b-2 border-cyan-500 pb-3 flex items-center">
-                <span className="bg-gradient-to-r from-cyan-400 to-blue-400 p-2 rounded-full mr-3">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-4 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-center mb-6">
+                <div className="inline-block p-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" /></svg>
-                </span>
-                Functions of Control
-              </h2>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-cyan-200 border-b-2 border-cyan-500 pb-3">
+                  Functions of Control
+                </h2>
+              </div>
               <p className="text-lg font-semibold text-gray-200 mb-6">The main functions of Traffic Control are:</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-3">
@@ -330,20 +335,22 @@ const ControlOrganization = () => {
 
             {/* Basic Functions Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 sm:p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-violet-200 mb-6 border-b-2 border-violet-500 pb-3 flex items-center">
-                <span className="bg-gradient-to-r from-violet-400 to-indigo-400 p-2 rounded-full mr-3">
+              <div className="text-center mb-6">
+                <div className="inline-block p-2 bg-gradient-to-r from-violet-400 to-indigo-400 rounded-full mb-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3" /></svg>
-                </span>
-                Basic Functions of Various Controls
-              </h2>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-violet-200 border-b-2 border-violet-500 pb-3">
+                  Basic Functions of Various Controls
+                </h2>
+              </div>
               
               {/* Train Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center">
-                  <span className="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>
+                <h3 className="text-xl font-bold text-violet-200 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-violet-200 rounded-full mr-3"></span>
                   Train Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">
                   Supervising & regulating movement of trains from station to station on the section to avoid delay to trains and to maximize utilization of the capacity of the section by:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -372,14 +379,14 @@ const ControlOrganization = () => {
 
               {/* Traffic Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center">
-                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+                <h3 className="text-xl font-bold text-violet-200 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-violet-200 rounded-full mr-3"></span>
                   Traffic Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">
                   Traffic Control is the general and over-riding control for supervision of the movement of goods and coaching traffic on the section. It is exercised by:
                 </p>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base font-semibold">Collecting information from the various stations on the section in respect of –</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base font-semibold">Collecting information from the various stations on the section in respect of –</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => (
                     <div key={num} className="flex items-start space-x-2 p-2 bg-blue-50 rounded">
@@ -408,11 +415,11 @@ const ControlOrganization = () => {
 
               {/* Power Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center">
-                  <span className="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+                <h3 className="text-xl font-bold text-rose-600 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-rose-600 rounded-full mr-3"></span>
                   Power Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">Power Control is responsible for:</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">Power Control is responsible for:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((num) => (
                     <div key={num} className="flex items-start space-x-2 p-2 bg-red-50 rounded">
@@ -443,11 +450,11 @@ const ControlOrganization = () => {
 
               {/* Carriage and Wagon Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-yellow-700 mb-4 flex items-center">
+                <h3 className="text-xl font-bold text-yellow-600 mb-4 flex items-center">
                   <span className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span>
                   Carriage and Wagon Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">Carriage and Wagon Control is responsible to:</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">Carriage and Wagon Control is responsible to:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[1, 2, 3, 4, 5, 6, 7].map((num) => (
                     <div key={num} className="flex items-start space-x-2 p-2 bg-yellow-50 rounded">
@@ -470,11 +477,11 @@ const ControlOrganization = () => {
 
               {/* Commercial Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center">
+                <h3 className="text-xl font-bold text-green-600 mb-4 flex items-center">
                   <span className="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
                   Commercial Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">Commercial Control assists the Traffic and Train Control:</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">Commercial Control assists the Traffic and Train Control:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
                     <div key={num} className="flex items-start space-x-2 p-2 bg-green-50 rounded">
@@ -499,11 +506,11 @@ const ControlOrganization = () => {
 
               {/* Traction Power Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-indigo-700 mb-4 flex items-center">
-                  <span className="w-3 h-3 bg-indigo-500 rounded-full mr-3"></span>
+                <h3 className="text-xl font-bold text-blue-600 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
                   Traction Power Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">Traction Power Control is provided to assist in Traffic and Train Control for:</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">Traction Power Control is provided to assist in Traffic and Train Control for:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[1, 2, 3, 4, 5].map((num) => (
                     <div key={num} className="flex items-start space-x-2 p-2 bg-indigo-50 rounded">
@@ -524,7 +531,7 @@ const ControlOrganization = () => {
 
               {/* Engineering Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-teal-700 mb-4 flex items-center">
+                <h3 className="text-xl font-bold text-teal-500 mb-4 flex items-center">
                   <span className="w-3 h-3 bg-teal-500 rounded-full mr-3"></span>
                   Engineering Control
                 </h3>
@@ -545,11 +552,11 @@ const ControlOrganization = () => {
 
               {/* Signal Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-pink-700 mb-4 flex items-center">
+                <h3 className="text-xl font-bold text-pink-500 mb-4 flex items-center">
                   <span className="w-3 h-3 bg-pink-500 rounded-full mr-3"></span>
                   Signal Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">Signal Control assists Traffic and Train Control and is responsible:</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">Signal Control assists Traffic and Train Control and is responsible:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {['a', 'b', 'c'].map((letter) => (
                     <div key={letter} className="flex items-start space-x-2 p-2 bg-pink-50 rounded">
@@ -568,11 +575,11 @@ const ControlOrganization = () => {
 
               {/* Security Control */}
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-orange-700 mb-4 flex items-center">
+                <h3 className="text-xl font-bold text-orange-500 mb-4 flex items-center">
                   <span className="w-3 h-3 bg-orange-500 rounded-full mr-3"></span>
                   Security Control
                 </h3>
-                <p className="text-gray-700 mb-4 text-sm sm:text-base">Security Control is responsible for:</p>
+                <p className="text-gray-200 mb-4 text-sm sm:text-base">Security Control is responsible for:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {['a', 'b'].map((letter) => (
                     <div key={letter} className="flex items-start space-x-2 p-2 bg-orange-50 rounded">
