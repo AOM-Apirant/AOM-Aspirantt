@@ -142,7 +142,7 @@ const Punctuality = () => {
                     1
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
-                    Punctuality statistics on Division / Railway is monitored on daily basis for improvement through Punctuality Analysis Module (PAM) of Integrated Coaching Management System (ICMS).
+                    Punctuality statistics on Division / Railway is monitored on daily basis for improvement through Punctuality Analysis & Monitoring (PAM) of Integrated Coaching Management System (ICMS).
                   </p>
                 </div>
                 
@@ -166,7 +166,7 @@ const Punctuality = () => {
               </div>
               <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-green-300/50 hover:bg-white/20 transition-all duration-300">
                 <span className="text-2xl mr-3">📊</span>
-                <span className="text-lg font-semibold text-white">PAM - Punctuality Analysis Module</span>
+                <span className="text-lg font-semibold text-white">PAM - Punctuality Analysis & Monitoring</span>
               </div>
             </div>
           </div>
@@ -240,25 +240,139 @@ const Punctuality = () => {
             <h2 className="lg:text-4xl text-xl font-bold text-white mb-12 text-center">Punctuality Calculation Formula</h2>
             
             <div className="bg-gradient-to-br from-orange-500/20 to-amber-500/20 backdrop-blur-lg rounded-2xl p-4 shadow-xl border border-orange-400/30 hover:shadow-2xl transition-all duration-300">
-              <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20 text-center">
-                <div className="lg:text-4xl text-2xl font-bold text-white mb-6">
-                  % Punctuality = 
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center">
+                <div className="lg:text-4xl text-xl font-medium text-white mb-6">
+                  % Punctuality = (Total No. of trains - No. of trains lost Punctuality) / (Total No. of trains) × 100
                 </div>
-                <div className="lg:text-2xl text-base text-gray-200 mb-6">
-                  (Total No. of trains - No. of trains lost Punctuality) × 100
+                <div className="mt-8 text-center">
+                  <span className="lg:text-xl text-base text-gray-200 font-light flex items-center justify-center">
+                    This formula helps calculate the overall punctuality percentage of train services
+                  </span>
                 </div>
-                <div className="lg:text-3xl text-2xl font-bold text-white">
-                  (Total No. of trains)
-                </div>
-              </div>
-              <div className="mt-8 text-center">
-                <span className="lg:text-xl text-base text-gray-200 font-semibold flex items-center justify-center">
-                  <span className="lg:text-3xl text-2xl mr-3">📈</span>
-                  This formula helps calculate the overall punctuality percentage of train services
-                </span>
               </div>
             </div>
           </div>
+                    {/* Real Time Reporting Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 mt-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col md:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-purple-500 to-indigo-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </span>
+              Real Time Reporting
+            </h2>
+            
+            <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+              <div className="space-y-8">
+                                 {/* Introduction */}
+                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                   <h3 className="text-xl font-bold text-white mb-4 flex flex-col md:flex-row items-center text-center md:text-left">
+                     <span className="w-6 h-6 bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-bold mb-2 md:mb-0 md:mr-3 shadow-lg">
+                       📊
+                     </span>
+                     Zero Base Year Initiative
+                   </h3>
+                  <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
+                    To improve factual reporting of punctuality and asset failures in ICMS by the divisions, 
+                                         Railway Board declared <span className="font-semibold text-purple-300">2018-19 as &ldquo;Zero base year&rdquo;</span>. 
+                    Further to improve factual reporting, Control Office Application (COA) has been integrated with 
+                    RTIS/REMMLOT devices provided in locos; Data loggers; E-TSR & C-TSR at stations.
+                  </p>
+                </div>
+
+                                 {/* Integration Benefits */}
+                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                   <h3 className="text-xl font-bold text-white mb-4 flex flex-col md:flex-row items-center text-center md:text-left">
+                     <span className="w-6 h-6 bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-bold mb-2 md:mb-0 md:mr-3 shadow-lg">
+                       ⚡
+                     </span>
+                     Real-Time Integration Benefits
+                   </h3>
+                  <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
+                    Through these systems, timings of trains are automatically captured in the Control Office Application 
+                    and further transmitted in NTES, thereby ensuring that, real time information is available to the 
+                    public and division office.
+                  </p>
+                </div>
+
+                {/* Technology Components */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {/* REMMLOT/RTIS */}
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div className="text-center mb-4">
+                      <span className="text-4xl mb-3 block">🚂</span>
+                      <h4 className="text-lg font-bold text-white mb-2">REMMLOT / RTIS</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-gray-200 text-sm leading-relaxed">
+                        <span className="font-semibold text-purple-300">REMMLOT:</span> Remote Monitoring and Management of Locomotives and Trains
+                      </p>
+                      <p className="text-gray-200 text-sm leading-relaxed">
+                        <span className="font-semibold text-purple-300">RTIS:</span> Real Time Train Information System
+                      </p>
+                      <p className="text-gray-200 text-sm leading-relaxed">
+                        These devices are based on GPS system provided in Diesel/Electric locos which automatically 
+                        update location of trains in COA.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Data Logger */}
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div className="text-center mb-4">
+                      <span className="text-4xl mb-3 block">📝</span>
+                      <h4 className="text-lg font-bold text-white mb-2">Data Logger</h4>
+                    </div>
+                    <p className="text-gray-200 text-sm leading-relaxed">
+                      At originating/terminating/interchange stations, data loggers have been integrated with COA. 
+                      The SM has to input the train number against the occupation of berthing track circuits by the 
+                      train at the station.
+                    </p>
+                  </div>
+
+                  {/* E-TSR & C-TSR */}
+                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg md:col-span-2 lg:col-span-1">
+                    <div className="text-center mb-4">
+                      <span className="text-4xl mb-3 block">💻</span>
+                      <h4 className="text-lg font-bold text-white mb-2">E-TSR & C-TSR</h4>
+                    </div>
+                    <p className="text-gray-200 text-sm leading-relaxed">
+                      These are provided at stations where SM makes entries of train arrival/departure in a 
+                      computerized system which is connected online to COA.
+                    </p>
+                  </div>
+                </div>
+
+                                 {/* Sequence Section */}
+                 <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                   <h3 className="text-xl font-bold text-white mb-6 flex flex-col md:flex-row items-center text-center md:text-left">
+                     <span className="w-6 h-6 bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-bold mb-2 md:mb-0 md:mr-3 shadow-lg">
+                       🔄
+                     </span>
+                     Sequence of Picking Up Timings in COA
+                   </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {[
+                      { step: "1", system: "REMMLOT/RTIS", icon: "🚂", color: "from-blue-500 to-cyan-500" },
+                      { step: "2", system: "Data Logger", icon: "📝", color: "from-green-500 to-emerald-500" },
+                      { step: "3", system: "E-TSR & C-TSR", icon: "💻", color: "from-purple-500 to-indigo-500" },
+                      { step: "4", system: "Manually by SCOR", icon: "👤", color: "from-orange-500 to-red-500" }
+                                         ].map((item, index) => (
+                       <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 text-center relative">
+                         <div className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-full flex items-center justify-center text-sm font-bold absolute top-2 right-2 shadow-lg">
+                           {item.step}
+                         </div>
+                         <span className="text-2xl mb-2 block">{item.icon}</span>
+                         <h4 className="text-sm font-semibold text-white">{item.system}</h4>
+                       </div>
+                     ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
 

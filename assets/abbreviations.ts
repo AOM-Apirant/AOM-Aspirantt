@@ -46,6 +46,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "BAL", fullForm: "Brake Applied Loop" },
     { acronym: "BAS", fullForm: "Biometric Attendance System" },
     { acronym: "BCB", fullForm: "Bell Code Button" },
+    { acronym: "BCL", 
+      fullForm: "Braithwaite & Co. Limited",
+      explanation: "To manufacture Wagons, undertake structural fabrication jobs and manufacturing, retrofitting of EOT crane.",
+      reference: "--"
+     },
     { acronym: "BCM", fullForm: "Ballast Cleaning Machine" },
     { acronym: "BCU", fullForm: "Brake Control Unit" },
     { acronym: "BIC", fullForm: "Bogie Isolation Cock" },
@@ -95,6 +100,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "BRN", fullForm: "Bogie Flat for Rail (Air Brake)" },
     { acronym: "BRNA", fullForm: "Bogie Rail Truck Air" },
     { acronym: "BRNAHS", fullForm: "Bogie Rail Truck Air High Speed" },
+    { acronym: "BSCL", 
+      fullForm: "Burn Standard Company Limited", 
+      explanation: "To manufacture Railway Rolling Stock.", 
+      reference: "--" 
+    },
     { acronym: "BSLB", fullForm: "Block Section Limit Board" },
     { acronym: "BTPN", fullForm: "Bogie Tank Wagon for Petrol (Air Brake)" },
     { acronym: "BTPGL", fullForm: "Bogie Tank Wagon for LPG (Vaccum Brake)" },
@@ -105,6 +115,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       fullForm: "Brake Van Goods with CBC Coupling 4 Wheeler (Air Brake)",
     },
     { acronym: "BUD", fullForm: "Basic User Data" },
+    { acronym: "BWEL", 
+      fullForm: "Bharat Wagon & Engineering Limited", 
+      explanation: "To manufacture Wagons and undertake structural fabrication jobs.", 
+      reference: "--" 
+    },
     { acronym: "BWM", fullForm: "Block Working Manual" },
   ],
   C: [
@@ -152,7 +167,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "COIS", fullForm: "Coaching Operations Information System" },
     { acronym: "COM", fullForm: "Chief Operations Manager" },
     { acronym: "COMS", fullForm: "Complaint Management System" },
-    { acronym: "CONCOR", fullForm: "Container Corporation of India" },
+    { acronym: "CONCOR", 
+      fullForm: "Container Corporation of India Limited",
+      explanation: "To develop multi-modal logistics support for India’s international and domestic containerized cargo and trade.",
+      reference: "--"
+    },
     {
       acronym: "CORE",
       fullForm: "Central Organization for Railway Electrification",
@@ -167,7 +186,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "CPRO", fullForm: "Chief Public Relations Officer" },
     { acronym: "CPTM", fullForm: "Chief Passenger Transportation Manager" },
     { acronym: "CRB", fullForm: "Chairman Railway Board" },
-    { acronym: "CRIS", fullForm: "Centre for Railway Information System" },
+    { acronym: "CRIS", fullForm: "Centre for Railway Information System", explanation: "To provide consultancy and IT services to IR as partners to conceptualize and realize technology initiatives, to build new products or services and to implement prudent business and technology strategies.", reference: "--" },
     { acronym: "CRRM", fullForm: "Credit from Rail Release Material" },
     { acronym: "CRS", fullForm: "Commissioner of Railway Safety" },
     { acronym: "CRSE", fullForm: "Chief Rolling Stock Engineer" },
@@ -201,6 +220,8 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     {
       acronym: "DFCCIL",
       fullForm: "Dedicated Freight Corridor Corporation of India Limited",
+      explanation: "To plan and construct Dedicated Rail Freight Corridors (DFCs) for movement of freight trains on the corridors.",
+      reference: "--"
     },
     { acronym: "DFM", fullForm: "Divisional Finance Manager" },
     { acronym: "DGM", fullForm: "Deputy General Manager" },
@@ -293,6 +314,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "HOG", fullForm: "Head On Generation" },
     { acronym: "HOR", fullForm: "High Official Requisition" },
     { acronym: "HSN", fullForm: "Harmonised System of Nomenclature" },
+    { acronym: "HSRC", 
+      fullForm: "High Speed Rail Corporation of India", 
+      explanation: "For development and implementation of high speed rail projects.", 
+      reference: "--  " 
+    },
   ],
   I: [
     { acronym: "ICD", fullForm: "Inland Container Deports" },
@@ -308,14 +334,23 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "IPMD", fullForm: "Infrastructure Projects Monitoring Device" },
     { acronym: "IRAS", fullForm: "Indian Railway Accounts Service" },
     { acronym: "IRCA", fullForm: "Indian Railway Conference Association" },
-    { acronym: "IRCON", fullForm: "Indian Railway Construction Corporation" },
+    { acronym: "IRCON", fullForm: "Indian Railway Construction Corporation", 
+      explanation: "To undertake construction activities in India and abroad on turnkey basis or otherwise in various fields of infrastructure like Railways, Bridges, Roads, Highways, Industrial and Residential Complexes, Airports, etc.", 
+      reference: "--" 
+    },
     {
       acronym: "IRCTC",
       fullForm: "Indian Railway Categoring & Tourism Corporation Limited",
+      explanation: "To undertake catering and tourism activities of the Railways. Also facilitates internet ticketing through its website.",
+      reference: "--"
     },
     { acronym: "IREM", fullForm: "Indian Railway Establishment Manual" },
     { acronym: "IREPS", fullForm: "Indian Railway E - Procurement System" },
-    { acronym: "IRFC", fullForm: "Indian Railway Finance corporation" },
+    { acronym: "IRFC", 
+      fullForm: "Indian Railway Finance corporation",
+      explanation: "To raise funds from the market to part finance the Plan Outlay of IR.",
+      reference: "--"
+    },
     {
       acronym: "IRLDA",
       fullForm: "Indian Railways Land Development Authority",
@@ -357,7 +392,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "JPO", fullForm: "Joint Procedure Order" },
     { acronym: "JTBS", fullForm: "Jansadharan Ticket Booking Sewak" },
   ],
-  K: [{ acronym: "KRCL", fullForm: "Konkan Railway Corporation Limited" }],
+  K: [{ acronym: "KRCL", 
+    fullForm: "Konkan Railway Corporation Limited",
+    explanation: "To construct and operate railway lines, construct Road Over Bridges and rail line projects.",
+    reference: "--"
+  }],
   L: [
     { acronym: "LAP", fullForm: "Leave on Average Pay" },
     { acronym: "LAW", fullForm: "List of Approved Works" },
@@ -418,6 +457,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "MOBD", fullForm: "Member Operations & Business Development" },
     { acronym: "MRTS", fullForm: "Mass Rapid Transit Systme" },
     { acronym: "MRV", fullForm: "Medical Relief Van" },
+    { acronym: "MRVC", 
+      fullForm: "Mumbai Railway Vikas Corporation Limited", 
+      explanation: "To plan & implement rail projects in the Mumbai Metropolitan Region.", 
+      reference: "--" 
+    },
     { acronym: "MSD", fullForm: "Minimum sighting Distance" },
     { acronym: "MSDAC", fullForm: "Multi Section Digital Axle Counter" },
     { acronym: "MTRS", fullForm: "Member Traction Rolling Stock" },
@@ -511,6 +555,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "RAC", fullForm: "Reservation Against Cancellation" },
     { acronym: "RARV", fullForm: "Road Accident Restoration Vehicles" },
     { acronym: "RBS", fullForm: "Rates Branch System" },
+    { acronym: "RCIL", 
+      fullForm: "RailTel Corporation of India Limited", 
+      explanation: "To utilize the surplus telecom capacity and right of way available with the IR to build nationwide optical fibre cable based broadband telecom and multimedia network", 
+      reference: "--" 
+    },
     { acronym: "RCM", fullForm: "Reverse Charge Mechanism" },
     { acronym: "RCP", fullForm: "Residental Card Pass" },
     { acronym: "RCT", fullForm: "Railway Claims Tribunal" },
@@ -534,9 +583,13 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "RFID", fullForm: "Radio Frequency Identification" },
     { acronym: "RFMS", fullForm: "Referential File Management System" },
-    { acronym: "RITES", fullForm: "Rail India Technical and Economic Service" },
+    { acronym: "RITES", fullForm: "Rail India Technical and Economic Services Limited", explanation: "To design, establish, provide, operate, maintain and perform engineering, technical and consultancy services for development of projects/systems of all types and descriptions pertaining to Railways and other Sectors/Industries in India and outside India.", reference: "--" },
     { acronym: "RIU", fullForm: "Remote Interface Unit" },
-    { acronym: "RLDA", fullForm: "Railway Land Development Authority" },
+    { acronym: "RLDA", 
+      fullForm: "Railway Land Development Authority",
+      explanation: "To develop vacant railway land for commercial use for the purpose of generating revenue by non-tariff measures for IR.",
+      reference: "--"
+    },
     { acronym: "RLT", fullForm: "Railway Labour Tribunal" },
     { acronym: "RMP", fullForm: "Registered Medical Practitioner" },
     { acronym: "RMS", fullForm: "Rake Management System" },
@@ -558,7 +611,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "RTRC", fullForm: "Railway Testing & Research Centre" },
     { acronym: "RTT", fullForm: "Round Trip Tariff" },
     { acronym: "RUB", fullForm: "Rail Under Bridge" },
-    { acronym: "RVNL", fullForm: "Rail Vikas Nigam Limited" },
+    { acronym: "RVNL", 
+      fullForm: "Rail Vikas Nigam Limited",
+      explanation: "To create and augment the capacity of rail infrastructure. To mobilize resources mainly through multilateral/bilateral funding agencies and also through domestic market for successful implementation of projects.",
+      reference: "--"
+    },
   ],
   S: [
     {
