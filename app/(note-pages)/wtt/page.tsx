@@ -9,6 +9,7 @@ import CCRoutes from '@/components/wtt/CCRoutes'
 import FreightTrainExamination from '@/components/wtt/FreightTrainExamination'
 import InvalidBPC from '@/components/wtt/InvalidBPC'
 import Weighbridges from '@/components/wtt/Weighbridges'
+import TimeTabling from '@/components/wtt/TimeTabling'
 
 const WTT = () => {
   const handleDownloadWTT = () => {
@@ -51,6 +52,7 @@ const WTT = () => {
         <FreightTrainExamination />
         <InvalidBPC />
         <Weighbridges />
+        <TimeTabling />
 
 
         {/* Download WTT Section */}

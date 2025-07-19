@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { BookOpen, FileText, AlertTriangle, Train, Signal, Clock, Shield, Settings, Users, Wrench, Zap, MapPin, CheckCircle } from 'lucide-react'
 
@@ -494,90 +495,114 @@ const GSRChapters = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <BookOpen className="w-8 h-8 text-yellow-300" />
-            <h1 className="text-3xl sm:text-4xl font-bold text-center">
-              GSR Chapters
-            </h1>
-          </div>
-          <p className="text-center text-blue-100 text-lg max-w-2xl mx-auto">
-            General and Subsidiary Rules for Railway Servants - Complete Chapter Index
-          </p>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid gap-6 md:gap-8">
-          {chapters.map((chapter) => (
-            <div
-              key={chapter.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
-            >
-              {/* Chapter Header */}
-              <div className={`bg-gradient-to-r ${chapter.color} text-white p-6`}>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-white/20 p-3 rounded-xl">
-                    {chapter.icon}
-                  </div>
-                  <div>
-                    <h2 className="text-xl sm:text-2xl font-bold">
-                      Chapter {chapter.id}
-                    </h2>
-                    <p className="text-white/90 text-sm sm:text-base mt-1">
-                      {chapter.title}
-                    </p>
-                  </div>
-                </div>
+      <div className="relative z-10 py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="inline-block p-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-full">
+                <BookOpen className="w-8 h-8 text-white" />
               </div>
+            </div>
+            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              GSR CHAPTERS
+            </h1>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">General and Subsidiary Rules</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Complete Chapter Index for Railway Servants - Comprehensive guide covering all 18 chapters 
+              with detailed rules and regulations for safe and efficient railway operations.
+            </p>
+          </div>
 
-              {/* Rules List */}
-              <div className="p-6">
-                <div className="grid gap-3">
-                  {chapter.rules.map((rule, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200"
-                    >
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                        {rule.number.split('.')[1]}
+          {/* Content */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid gap-6 md:gap-8">
+              {chapters.map((chapter) => (
+                <div
+                  key={chapter.id}
+                  className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
+                >
+                  {/* Chapter Header */}
+                  <div className={`bg-gradient-to-r ${chapter.color} text-white p-6`}>
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
+                        {chapter.icon}
                       </div>
-                      <div className="flex-1">
-                        <p className="text-gray-900 font-medium">
-                          {rule.title}
-                        </p>
-                        <p className="text-gray-500 text-sm mt-1">
-                          Rule {rule.number}
+                      <div>
+                        <h2 className="text-xl sm:text-2xl font-bold">
+                          Chapter {chapter.id}
+                        </h2>
+                        <p className="text-white/90 text-sm sm:text-base mt-1">
+                          {chapter.title}
                         </p>
                       </div>
                     </div>
-                  ))}
+                  </div>
+
+                  {/* Rules List */}
+                  <div className="p-6">
+                    <div className="grid gap-3">
+                      {chapter.rules.map((rule, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 border border-white/10"
+                        >
+                          <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
+                            {rule.number.split('.')[1]}
+                          </div>
+                          <div className="flex-1">
+                            <p className="text-gray-200 font-medium">
+                              {rule.title}
+                            </p>
+                            <p className="text-gray-400 text-sm mt-1">
+                              Rule {rule.number}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Footer */}
+            <div className="mt-12 text-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
+                <div className="flex items-center justify-center space-x-3 mb-4">
+                  <CheckCircle className="w-8 h-8 text-green-400" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Complete GSR Reference
+                  </h3>
+                </div>
+                <p className="text-gray-300 max-w-2xl mx-auto">
+                  This comprehensive guide covers all 18 chapters of the General and Subsidiary Rules for Railway Servants, 
+                  providing essential information for railway operations, safety protocols, and regulatory compliance.
+                </p>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Footer */}
-        <div className="mt-12 text-center">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-300">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <CheckCircle className="w-8 h-8 text-green-500" />
-              <h3 className="text-2xl font-bold text-gray-800">
-                Complete GSR Reference
-              </h3>
-            </div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              This comprehensive guide covers all 18 chapters of the General and Subsidiary Rules for Railway Servants, 
-              providing essential information for railway operations, safety protocols, and regulatory compliance.
-            </p>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </div>
   )
 }

@@ -329,6 +329,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       fullForm: "Integrated Computerized Reservation & Ticketing System",
     },
     { acronym: "IDS", fullForm: "Integration of Digital System" },
+    { acronym: "IOH", fullForm: "Intermediate Over Hauling" },
     { acronym: "IOL", fullForm: "Intra Ocular Lens" },
     { acronym: "IPAS", fullForm: "Integrated Payroll and Accounting System" },
     { acronym: "IPMD", fullForm: "Infrastructure Projects Monitoring Device" },
@@ -481,6 +482,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
   O: [
     { acronym: "OCMS", fullForm: "Online Computerized Monitoring System" },
     { acronym: "OCR", fullForm: "Optical Character Recognition" },
+    { acronym: "OCV", 
+      fullForm: "Other Coaching Vehicle",
+      explanation: "These vehicles do not have a passenger carrying portion but are planned to be attached to coaching trains for providing other facilities. Saloons, inspection cars, medical cars, tourist cars, parcels & horse van, composite luggage Power Cars, Pantry Cars & brake van are some of the OCVs.",
+      reference: "--"
+    },
     { acronym: "ODC", fullForm: "Over Dimensional Consignment" },
     { acronym: "OFC", fullForm: "Optical Fibre Cable" },
     { acronym: "OHE", fullForm: "Over Head Equipment" },
@@ -508,6 +514,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     {
       acronym: "PCSTE",
       fullForm: "Principal Chief Signal and Telecommunication Engineer",
+    },
+    { acronym: "PCV", 
+      fullForm: "Passenger Coaching Vehicle",
+      explanation: "A vehicle in which whole or some portion is being utilized for carrying passengers.",
+      reference: "--"
     },
     { acronym: "PCVO", fullForm: "Principal Chief Vigilance Officer" },
     { acronym: "PDD", fullForm: "Pre Departure Detention" },

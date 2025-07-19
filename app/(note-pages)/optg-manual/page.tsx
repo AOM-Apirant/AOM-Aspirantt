@@ -5,6 +5,13 @@ import React from 'react'
 import ControlOrganization from '@/components/optg-manual/ControlOrganization'
 import ChiefController from '@/components/optg-manual/ChiefController'
 import SectionController from '@/components/optg-manual/SectionController'
+import WorkingOfTrains from '@/components/optg-manual/WorkingOfTrains'
+import SystemOfWorking from '@/components/optg-manual/SystemOfWorking'
+import CoachingTrainOperations from '@/components/optg-manual/CoachingTrainOperations'
+import NumberingOfTrains from '@/components/optg-manual/NumberingOfTrains'
+import CoachingLocomotives from '@/components/optg-manual/CoachingLocomotives'
+import CoachingStock from '@/components/optg-manual/CoachingStock'
+import FreightTrainOperations from '@/components/optg-manual/FreightTrainOperations'
 
 const OperatingManual = () => {
   return (
@@ -91,6 +98,13 @@ const OperatingManual = () => {
         <ControlOrganization />
         <ChiefController />
         <SectionController />
+        <WorkingOfTrains />
+        <SystemOfWorking />
+        <CoachingTrainOperations />
+        <NumberingOfTrains />
+        <CoachingLocomotives />
+        <CoachingStock />
+        <FreightTrainOperations />
       </div>
 
       

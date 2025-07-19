@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { FileText, AlertTriangle, Train, Shield, Settings, Users, Wrench, Zap, MapPin, CheckCircle, BookOpen, Gauge, Lock, ClipboardList, Car, Building } from 'lucide-react'
 
@@ -135,114 +136,139 @@ const GSRAppendix = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <BookOpen className="w-8 h-8 text-yellow-300" />
-            <h1 className="text-3xl sm:text-4xl font-bold text-center">
-              GSR Appendix
-            </h1>
-          </div>
-          <p className="text-center text-indigo-100 text-lg max-w-2xl mx-auto">
-            General and Subsidiary Rules - Supplementary Appendices and Special Instructions
-          </p>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-cyan-400/20 to-blue-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-teal-400/10 to-emerald-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid gap-6 md:gap-8">
-          {appendices.map((appendix) => (
-            <div
-              key={appendix.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
-            >
-              {/* Appendix Header */}
-              <div className={`bg-gradient-to-r ${appendix.color} text-white p-6`}>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-white/20 p-3 rounded-xl">
-                    {appendix.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h2 className="text-xl sm:text-2xl font-bold">
-                      Appendix {appendix.id}
-                    </h2>
-                    <p className="text-white/90 text-sm sm:text-base mt-1">
-                      {appendix.title}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Appendix Content */}
-              <div className="p-6">
-                <div className="mb-4">
-                  <p className="text-gray-700 text-base leading-relaxed">
-                    {appendix.description}
-                  </p>
-                </div>
-
-                {/* Sub Categories for Appendix IX */}
-                {appendix.subCategories && (
-                  <div className="mt-6">
-                    <h4 className="text-lg font-semibold text-gray-800 mb-4">
-                      Staff Categories:
-                    </h4>
-                    <div className="grid gap-3">
-                      {appendix.subCategories.map((category, index) => (
-                        <div
-                          key={index}
-                          className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200"
-                        >
-                          <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                            {index + 1}
-                          </div>
-                          <div className="flex-1">
-                            <p className="text-gray-900 font-medium">
-                              {category}
-                            </p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Special Note for Deleted Appendix */}
-                {appendix.id === 6 && (
-                  <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-xl">
-                    <div className="flex items-center space-x-2">
-                      <AlertTriangle className="w-5 h-5 text-red-500" />
-                      <p className="text-red-700 font-medium">
-                        This appendix has been deleted from current regulations
-                      </p>
-                    </div>
-                  </div>
-                )}
+      <div className="relative z-10 py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="inline-block p-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-full">
+                <BookOpen className="w-8 h-8 text-white" />
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Footer */}
-        <div className="mt-12 text-center">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-300">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <CheckCircle className="w-8 h-8 text-green-500" />
-              <h3 className="text-2xl font-bold text-gray-800">
-                Complete GSR Appendix Reference
-              </h3>
-            </div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              This comprehensive collection of appendices provides detailed supplementary instructions, 
-              special procedures, and category-specific rules that complement the main GSR chapters 
-              for comprehensive railway operations management.
+            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              GSR APPENDIX
+            </h1>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">Supplementary Instructions & Special Procedures</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive collection of appendices providing detailed supplementary instructions, 
+              special procedures, and category-specific rules that complement the main GSR chapters.
             </p>
           </div>
+
+          {/* Content */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid gap-6 md:gap-8">
+              {appendices.map((appendix) => (
+                <div
+                  key={appendix.id}
+                  className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
+                >
+                  {/* Appendix Header */}
+                  <div className={`bg-gradient-to-r ${appendix.color} text-white p-6`}>
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
+                        {appendix.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h2 className="text-xl sm:text-2xl font-bold">
+                          Appendix {appendix.id}
+                        </h2>
+                        <p className="text-white/90 text-sm sm:text-base mt-1">
+                          {appendix.title}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Appendix Content */}
+                  <div className="p-6">
+                    <div className="mb-4">
+                      <p className="text-gray-200 text-base leading-relaxed">
+                        {appendix.description}
+                      </p>
+                    </div>
+
+                    {/* Sub Categories for Appendix IX */}
+                    {appendix.subCategories && (
+                      <div className="mt-6">
+                        <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
+                          <span className="w-3 h-3 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full mr-3 animate-pulse"></span>
+                          Staff Categories:
+                        </h4>
+                        <div className="grid gap-3">
+                          {appendix.subCategories.map((category, index) => (
+                            <div
+                              key={index}
+                              className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            >
+                              <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-500 to-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
+                                {index + 1}
+                              </div>
+                              <div className="flex-1">
+                                <p className="text-gray-200 font-medium">
+                                  {category}
+                                </p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Special Note for Deleted Appendix */}
+                    {appendix.id === 6 && (
+                      <div className="mt-4 p-4 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-xl">
+                        <div className="flex items-center space-x-2">
+                          <AlertTriangle className="w-5 h-5 text-red-400" />
+                          <p className="text-red-200 font-medium">
+                            This appendix has been deleted from current regulations
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Footer */}
+            <div className="mt-12 text-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
+                <div className="flex items-center justify-center space-x-3 mb-4">
+                  <CheckCircle className="w-8 h-8 text-emerald-400" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Complete GSR Appendix Reference
+                  </h3>
+                </div>
+                <p className="text-gray-300 max-w-2xl mx-auto">
+                  This comprehensive collection of appendices provides detailed supplementary instructions, 
+                  special procedures, and category-specific rules that complement the main GSR chapters 
+                  for comprehensive railway operations management.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </div>
   )
 }
