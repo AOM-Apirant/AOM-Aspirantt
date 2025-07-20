@@ -23,43 +23,43 @@ const CCRoutes = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-green-100 to-blue-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              🚂 CC+8+2t Routes
+               CC+8+2t Routes
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">South Central Railway as on 31-03-2024</h2>
+            <h2 className="lg:text-4xl text-2xl font-lg text-cyan-300 mb-4">South Central Railway as on 31-03-2024</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-blue-600 mx-auto mb-6 rounded-full"></div>
           </div>
           
           {/* Container Carrying Routes Info */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center justify-center">
-              <span className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-6 flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-green-500 to-emerald-500 lg:p-4 p-3 rounded-full lg:mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </span>
               Container Carrying Routes
             </h2>
-            <p className="text-xl text-gray-200 mb-6 text-center">
+            <p className="lg:text-lg text-md text-gray-200 mb-6 text-center">
               As per CTE/SC&rsquo;s Lr No. W.506/CRS/TR/CC+6+2t/Vol.IV, dated 23.05.2024
             </p>
             
-            <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <span className="w-4 h-4 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full mr-3 animate-pulse"></span>
+            <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+              <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 flex items-center">
+                <span className="w-4 h-4 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full lg:mr-3 mr-2 lg:w-6 lg:h-6 animate-pulse"></span>
                 Route Statistics
               </h3>
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-br from-blue-600/30 to-blue-700/30 backdrop-blur-sm rounded-xl p-6 text-center hover:scale-105 transition-all duration-300 border border-blue-400/30">
-                  <p className="text-4xl font-bold text-blue-300 mb-2">5567.914</p>
-                  <p className="text-lg text-blue-200">Total CC+8+2t Route Km</p>
+                <div className="bg-gradient-to-br from-blue-600/30 to-blue-700/30 backdrop-blur-sm rounded-xl p-4 text-center hover:scale-105 transition-all duration-300 border border-blue-400/30">
+                  <p className="lg:text-4xl text-2xl font-bold text-blue-300 mb-2">5567.914</p>
+                  <p className="lg:text-lg text-md text-blue-200">Total CC+8+2t Route Km</p>
                 </div>
-                <div className="bg-gradient-to-br from-green-600/30 to-green-700/30 backdrop-blur-sm rounded-xl p-6 text-center hover:scale-105 transition-all duration-300 border border-green-400/30">
-                  <p className="text-4xl font-bold text-green-300 mb-2">6532.475</p>
-                  <p className="text-lg text-green-200">Total Route Km of S.C.Railway</p>
+                <div className="bg-gradient-to-br from-green-600/30 to-green-700/30 backdrop-blur-sm rounded-xl p-4 text-center hover:scale-105 transition-all duration-300 border border-green-400/30">
+                  <p className="lg:text-4xl text-2xl font-bold text-green-300 mb-2">6532.475</p>
+                  <p className="lg:text-lg text-md text-green-200">Total Route Km of S.C.Railway</p>
                 </div>
-                <div className="bg-gradient-to-br from-purple-600/30 to-purple-700/30 backdrop-blur-sm rounded-xl p-6 text-center hover:scale-105 transition-all duration-300 border border-purple-400/30">
-                  <p className="text-4xl font-bold text-purple-300 mb-2">85.23%</p>
-                  <p className="text-lg text-purple-200">Percentage of CC+8+2t Route</p>
+                <div className="bg-gradient-to-br from-purple-600/30 to-purple-700/30 backdrop-blur-sm rounded-xl p-4 text-center hover:scale-105 transition-all duration-300 border border-purple-400/30">
+                  <p className="lg:text-4xl text-2xl font-bold text-purple-300 mb-2">85.23%</p>
+                  <p className="lg:text-lg text-md text-purple-200">Percentage of CC+8+2t Route</p>
                 </div>
               </div>
             </div>
@@ -67,13 +67,13 @@ const CCRoutes = () => {
 
           {/* CC+8+2t Routes */}
           <div className="mb-12">
-            <h3 className="text-4xl font-bold text-white mb-8 text-center flex items-center justify-center">
-              <span className="bg-gradient-to-r from-emerald-500 to-teal-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="lg:text-4xl text-3xl font-bold text-white mb-8 text-center flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-emerald-500 to-teal-500 lg:p-4 p-3 rounded-full lg:mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </span>
-              📋 CC+8+2t Routes List
+              CC+8+2t Routes List
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -162,16 +162,16 @@ const CCRoutes = () => {
 
           {/* CC+6+2t Routes */}
           <div className="mb-12">
-            <h3 className="text-4xl font-bold text-white mb-8 text-center flex items-center justify-center">
-              <span className="bg-gradient-to-r from-blue-500 to-indigo-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="lg:text-4xl text-3xl font-bold text-white mb-8 text-center flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-4 p-3 rounded-full lg:mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </span>
-              🚛 CC+6+2t Routes
+              CC+6+2t Routes
             </h3>
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h4 className="text-3xl font-bold text-blue-300 mb-8 text-center">CC+6+2t Routes on South Central Railway as on 31.03.2024</h4>
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <h4 className="lg:text-3xl text-xl font-semibold text-blue-300 mb-8 text-center">CC+6+2t Routes on South Central Railway as on 31-03-2024</h4>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   { sl: 1, route: "Khanapur-Taj Sultanpur (SL)", divn: "SC", length: "97.7" },
@@ -189,7 +189,7 @@ const CCRoutes = () => {
                   { sl: 13, route: "Akola-Akot (SL)", divn: "NED", length: "45.54" },
                   { sl: 14, route: "Khandwa (Excl.)-Amlakhurd (SL)", divn: "NED", length: "53.447" }
                 ].map((route, index) => (
-                  <div key={index} className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-6 border border-blue-400/30 hover:shadow-lg hover:scale-105 transition-all duration-300">
+                  <div key={index} className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-4 border border-blue-400/30 hover:shadow-lg hover:scale-105 transition-all duration-300">
                     <div className="flex justify-between items-start mb-4">
                       <span className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-2 rounded-lg text-sm font-bold shadow-lg">
                         #{route.sl}
@@ -210,28 +210,28 @@ const CCRoutes = () => {
               </div>
               
               {/* Total for C+6+2t */}
-              <div className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-8 text-center shadow-2xl border border-blue-400/30">
-                <h4 className="text-3xl font-bold mb-3">CC+6+2t Routes Summary</h4>
-                <p className="text-5xl font-bold mb-2">1040.543 km</p>
-                <p className="text-blue-200 text-lg">Total Route Length</p>
+              <div className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-4 text-center shadow-2xl border border-blue-400/30">
+                <h4 className="lg:text-3xl text-2xl font-bold mb-3">CC+6+2t Routes Summary</h4>
+                <p className="lg:text-5xl text-2xl font-bold mb-2">1040.543 km</p>
+                <p className="lg:text-lg text-md text-blue-200">Total Route Length</p>
               </div>
             </div>
           </div>
 
           {/* Summary Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h3 className="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center">
-              <span className="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-8 text-center flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-amber-500 to-yellow-500 lg:p-4 p-3 rounded-full lg:mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </span>
-              📊 Route Summary
+              Route Summary
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-8 border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-2xl font-bold text-green-300 mb-6 flex items-center">
-                  <span className="w-3 h-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 border border-green-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="lg:text-2xl text-xl font-bold text-green-300 mb-6 flex items-center">
+                  <span className="w-3 h-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full lg:mr-3 mr-2 lg:w-6 lg:h-6 animate-pulse"></span>
                   CC+8+2t Routes
                 </h4>
                 <div className="space-y-4">
@@ -250,9 +250,9 @@ const CCRoutes = () => {
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-8 border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-2xl font-bold text-blue-300 mb-6 flex items-center">
-                  <span className="w-3 h-3 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full mr-3 animate-pulse"></span>
+              <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-4 border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="lg:text-2xl text-xl font-bold text-blue-300 mb-6 flex items-center">
+                  <span className="w-3 h-3 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full lg:mr-3 animate-pulse"></span>
                   CC+6+2t Routes
                 </h4>
                 <div className="space-y-4">
@@ -275,8 +275,8 @@ const CCRoutes = () => {
 
           {/* Footer Message */}
           <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-2xl shadow-2xl p-8 text-center border border-green-400/30">
-            <h3 className="text-3xl font-bold mb-4">🚂 Container Carrying Network</h3>
-            <p className="text-xl mb-4 text-green-100">
+            <h3 className="lg:text-3xl text-2xl font-bold mb-4">Container Carrying Network</h3>
+            <p className="lg:text-lg text-md mb-4 text-green-100">
               Comprehensive network of container carrying routes across South Central Railway
             </p>
             <p className="text-sm opacity-90 text-green-200">(For Official Railway Operations Reference)</p>

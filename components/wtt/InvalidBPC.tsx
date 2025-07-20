@@ -11,7 +11,7 @@ const InvalidBPC = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-red-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
+      <div className="relative z-10 py-8 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
@@ -22,28 +22,28 @@ const InvalidBPC = () => {
                 </svg>
               </div>
             </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-red-100 to-orange-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="lg:text-6xl text-xl font-bold bg-gradient-to-r from-white via-red-100 to-orange-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               BPC INVALIDATION CONDITIONS
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">When BPC becomes Invalid for Different Types of Examinations</h2>
+            <h2 className="lg:text-2xl text-lg font-medium text-orange-300 mb-4">When BPC becomes Invalid for Different Types of Examinations</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
-            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="lg:text-xl text-md text-gray-200 max-w-4xl mx-auto leading-relaxed">
               Brake Power Certificate (BPC) becomes invalid under specific conditions for different types of examinations
             </p>
           </div>
 
           {/* Important Note Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
-              <span className="bg-gradient-to-r from-yellow-500 to-amber-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-yellow-500 to-amber-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                 </svg>
               </span>
               Important Note
             </h2>
-            <div className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-yellow-400/30">
-              <p className="text-gray-200 text-lg leading-relaxed">
+            <div className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-yellow-400/30">
+              <p className="text-gray-200 text-md leading-relaxed">
                 As per Railway Board letter No. 2002/M (N)/204/10/Vol.I dated 30.07.2009 regarding
                 validity of BPC for detachment/ attachment of 5 BLC/BLL wagons permitted en-route during
                 validity of BPC.
@@ -53,9 +53,9 @@ const InvalidBPC = () => {
 
           {/* Invalidation Conditions */}
           <div className="mb-12">
-            <h3 className="lg:text-4xl text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
-              <span className="bg-gradient-to-r from-red-500 to-pink-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="lg:text-4xl text-2xl font-bold text-white mb-12 text-center flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-red-500 to-pink-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </span>
@@ -63,14 +63,14 @@ const InvalidBPC = () => {
             </h3>
             <div className="space-y-8">
               {/* Condition 1 */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="flex items-center mb-8">
-                  <span className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">1</span>
-                  <h4 className="lg:text-3xl text-2xl font-bold text-white">Rake Integrity Disturbance</h4>
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="flex flex-col lg:flex-row gap-4 items-center mb-8">
+                  <span className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">1</span>
+                  <h4 className="lg:text-2xl text-xl font-bold text-white">Rake Integrity Disturbance</h4>
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                    <h5 className="text-xl font-bold text-blue-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-blue-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-blue-400 rounded-full mr-3 animate-pulse"></span>
                       CC Examination
                     </h5>
@@ -80,7 +80,7 @@ const InvalidBPC = () => {
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                    <h5 className="text-xl font-bold text-green-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-green-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
                       Premium Examination
                     </h5>
@@ -91,7 +91,7 @@ const InvalidBPC = () => {
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300 lg:col-span-1 md:col-span-2">
-                    <h5 className="text-xl font-bold text-purple-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-purple-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-purple-400 rounded-full mr-3 animate-pulse"></span>
                       End to End Examination
                     </h5>
@@ -105,48 +105,48 @@ const InvalidBPC = () => {
               </div>
 
               {/* Condition 2 */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="flex items-center mb-8">
-                  <span className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">2</span>
-                  <h4 className="lg:text-3xl text-2xl font-bold text-white">Stabling Duration Limit</h4>
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="flex flex-col lg:flex-row gap-4 items-center mb-8">
+                  <span className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">2</span>
+                  <h4 className="lg:text-2xl text-xl font-bold text-white">Stabling Duration Limit</h4>
                 </div>
-                <div className="bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-orange-400/30">
-                  <h5 className="text-2xl font-bold text-orange-300 mb-4 flex items-center">
+                <div className="bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-orange-400/30">
+                  <h5 className="lg:text-xl text-lg font-bold text-orange-300 mb-4 flex items-center">
                     <span className="w-4 h-4 bg-orange-400 rounded-full mr-3 animate-pulse"></span>
                     All Examination Types
                   </h5>
-                  <p className="text-gray-200 text-xl leading-relaxed">
+                  <p className="text-gray-200 text-md leading-relaxed">
                     The rake shall not be stabled for more than <strong className="text-orange-300">24 hours</strong> at Train examination Yard.
                   </p>
                 </div>
               </div>
 
               {/* Condition 3 */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="flex items-center mb-8">
-                  <span className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">3</span>
-                  <h4 className="lg:text-3xl text-2xl font-bold text-white">Zone Movement Restriction</h4>
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="flex flex-col lg:flex-row gap-4 items-center mb-8">
+                  <span className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">3</span>
+                  <h4 className="lg:text-2xl text-xl font-bold text-white">Zone Movement Restriction</h4>
                 </div>
-                <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-blue-400/30">
-                  <h5 className="text-2xl font-bold text-blue-300 mb-4 flex items-center">
+                <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-blue-400/30">
+                  <h5 className="lg:text-xl text-lg font-bold text-blue-300 mb-4 flex items-center">
                     <span className="w-4 h-4 bg-blue-400 rounded-full mr-3 animate-pulse"></span>
                     CC Examination Only
                   </h5>
-                  <p className="text-gray-200 text-xl leading-relaxed">
+                  <p className="text-gray-200 text-md leading-relaxed">
                     CC rakes moved to any other Zone not mentioned in the circuit.
                   </p>
                 </div>
               </div>
 
               {/* Condition 4 */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="flex items-center mb-8">
-                  <span className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">4</span>
-                  <h4 className="lg:text-3xl text-2xl font-bold text-white">Movement & Loading Conditions</h4>
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="flex flex-col lg:flex-row gap-4 items-center mb-8">
+                  <span className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">4</span>
+                  <h4 className="lg:text-2xl text-xl font-bold text-white">Movement & Loading Conditions</h4>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                    <h5 className="text-xl font-bold text-blue-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-blue-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-blue-400 rounded-full mr-3 animate-pulse"></span>
                       CC Examination
                     </h5>
@@ -155,7 +155,7 @@ const InvalidBPC = () => {
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                    <h5 className="text-xl font-bold text-green-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-green-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
                       Premium Examination
                     </h5>
@@ -167,14 +167,14 @@ const InvalidBPC = () => {
               </div>
 
               {/* Condition 5 */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="flex items-center mb-8">
-                  <span className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">5</span>
-                  <h4 className="lg:text-3xl text-2xl font-bold text-white">Time & Distance Limits</h4>
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="flex flex-col lg:flex-row gap-4 items-center mb-8">
+                  <span className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mr-6 shadow-lg">5</span>
+                  <h4 className="lg:text-2xl text-xl font-bold text-white">Time & Distance Limits</h4>
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                    <h5 className="text-xl font-bold text-blue-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-blue-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-blue-400 rounded-full mr-3 animate-pulse"></span>
                       CC Examination
                     </h5>
@@ -184,7 +184,7 @@ const InvalidBPC = () => {
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                    <h5 className="text-xl font-bold text-green-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-green-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
                       Premium Examination
                     </h5>
@@ -194,7 +194,7 @@ const InvalidBPC = () => {
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300 lg:col-span-1 md:col-span-2">
-                    <h5 className="text-xl font-bold text-purple-300 mb-4 flex items-center">
+                    <h5 className="lg:text-xl text-lg font-bold text-purple-300 mb-4 flex items-center">
                       <span className="w-3 h-3 bg-purple-400 rounded-full mr-3 animate-pulse"></span>
                       End to End Examination
                     </h5>
@@ -210,23 +210,23 @@ const InvalidBPC = () => {
 
           {/* Summary Cards */}
           <div className="mb-12">
-            <h3 className="lg:text-4xl text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
-              <span className="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="lg:text-4xl text-2xl font-bold text-white mb-12 text-center flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-cyan-500 to-blue-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </span>
               Examination Type Summary
             </h3>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-700 py-6 px-8">
-                  <h4 className="text-2xl font-bold text-white flex items-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 py-4 px-4">
+                  <h4 className="lg:text-2xl text-xl font-bold text-white flex items-center">
                     <span className="text-3xl mr-3">🚂</span>
                     CC Examination
                   </h4>
                 </div>
-                <div className="p-8">
+                <div className="p-4">
                   <div className="space-y-4">
                     <div className="flex items-center group">
                       <span className="w-3 h-3 bg-blue-400 rounded-full mr-4 group-hover:scale-125 transition-transform"></span>
@@ -252,14 +252,14 @@ const InvalidBPC = () => {
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div className="bg-gradient-to-r from-green-600 to-green-700 py-6 px-8">
-                  <h4 className="text-2xl font-bold text-white flex items-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="bg-gradient-to-r from-green-600 to-green-700 py-4 px-4">
+                  <h4 className="lg:text-2xl text-xl font-bold text-white flex items-center">
                     <span className="text-3xl mr-3">⭐</span>
                     Premium Examination
                   </h4>
                 </div>
-                <div className="p-8">
+                <div className="p-4">
                   <div className="space-y-4">
                     <div className="flex items-center group">
                       <span className="w-3 h-3 bg-green-400 rounded-full mr-4 group-hover:scale-125 transition-transform"></span>
@@ -281,14 +281,14 @@ const InvalidBPC = () => {
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 lg:col-span-1 md:col-span-2">
-                <div className="bg-gradient-to-r from-purple-600 to-purple-700 py-6 px-8">
-                  <h4 className="text-2xl font-bold text-white flex items-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 lg:col-span-1 md:col-span-2">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 py-4 px-4">
+                  <h4 className="lg:text-2xl text-xl font-bold text-white flex items-center">
                     <span className="text-3xl mr-3">🔍</span>
                     End to End Examination
                   </h4>
                 </div>
-                <div className="p-8">
+                <div className="p-4">
                   <div className="space-y-4">
                     <div className="flex items-center group">
                       <span className="w-3 h-3 bg-purple-400 rounded-full mr-4 group-hover:scale-125 transition-transform"></span>
@@ -309,29 +309,29 @@ const InvalidBPC = () => {
           </div>
 
           {/* Key Points */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
-              <span className="bg-gradient-to-r from-amber-500 to-yellow-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-amber-500 to-yellow-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </span>
               Key Points
             </h3>
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-4">
               <div className="space-y-6">
                 <div className="flex items-start gap-4 group hover:bg-white/10 rounded-xl p-4 transition-all duration-300">
                   <span className="w-8 h-8 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1 shadow-lg group-hover:scale-110 transition-transform">!</span>
                   <div>
-                    <h4 className="font-semibold text-white text-xl mb-2">Wagon Limit</h4>
-                    <p className="text-gray-300 text-lg">Maximum 4 wagons attachment/detachment permitted</p>
+                    <h4 className="font-semibold text-white lg:text-xl text-lg mb-2">Wagon Limit</h4>
+                    <p className="text-gray-300 lg:text-lg text-md">Maximum 4 wagons attachment/detachment permitted</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 group hover:bg-white/10 rounded-xl p-4 transition-all duration-300">
                   <span className="w-8 h-8 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1 shadow-lg group-hover:scale-110 transition-transform">!</span>
                   <div>
-                    <h4 className="font-semibold text-white text-xl mb-2">Stabling Time</h4>
-                    <p className="text-gray-300 text-lg">24 hours maximum at Train examination Yard</p>
+                    <h4 className="font-semibold text-white lg:text-xl text-lg mb-2">Stabling Time</h4>
+                    <p className="text-gray-300 lg:text-lg text-md">24 hours maximum at Train examination Yard</p>
                   </div>
                 </div>
               </div>
@@ -340,15 +340,15 @@ const InvalidBPC = () => {
                 <div className="flex items-start gap-4 group hover:bg-white/10 rounded-xl p-4 transition-all duration-300">
                   <span className="w-8 h-8 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1 shadow-lg group-hover:scale-110 transition-transform">!</span>
                   <div>
-                    <h4 className="font-semibold text-white text-xl mb-2">Time Limits</h4>
-                    <p className="text-gray-300 text-lg">CC: 35 days/7500 kms, Premium: 12 days</p>
+                    <h4 className="font-semibold text-white lg:text-xl text-lg mb-2">Time Limits</h4>
+                    <p className="text-gray-300 lg:text-lg text-md">CC: 35 days/7500 kms, Premium: 12 days</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 group hover:bg-white/10 rounded-xl p-4 transition-all duration-300">
                   <span className="w-8 h-8 bg-gradient-to-r from-red-500 to-pink-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1 shadow-lg group-hover:scale-110 transition-transform">!</span>
                   <div>
-                    <h4 className="font-semibold text-white text-xl mb-2">BLC/BLL Wagons</h4>
-                    <p className="text-gray-300 text-lg">5 BLC/BLL wagons permitted en-route</p>
+                    <h4 className="font-semibold text-white lg:text-xl text-lg mb-2">BLC/BLL Wagons</h4>
+                    <p className="text-gray-300 lg:text-lg text-md">5 BLC/BLL wagons permitted en-route</p>
                   </div>
                 </div>
               </div>
@@ -357,15 +357,15 @@ const InvalidBPC = () => {
 
           {/* Footer Message */}
           <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white rounded-2xl shadow-2xl p-8 text-center border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold mb-6 flex items-center justify-center">
-              <span className="bg-white/20 p-3 rounded-full mr-4 backdrop-blur-sm">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="lg:text-3xl text-2xl font-bold mb-6 flex flex-col lg:flex-row gap-4 items-center justify-center">
+              <span className="bg-white/20 lg:p-3 p-2 rounded-full mr-4 backdrop-blur-sm">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                 </svg>
               </span>
               BPC Compliance
             </h3>
-            <p className="text-xl mb-6 text-gray-100">
+            <p className="lg:text-xl text-md mb-6 text-gray-100">
               Strict adherence to BPC validity conditions ensures safe and compliant freight operations
             </p>
             <p className="text-sm opacity-90 text-gray-200">(For Official Railway Operations Reference)</p>
