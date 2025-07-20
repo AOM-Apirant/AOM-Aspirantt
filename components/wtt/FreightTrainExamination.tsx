@@ -1,284 +1,390 @@
+"use client"
 import React from 'react'
 
 const FreightTrainExamination = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-100 py-8 px-4">
-      <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <div className="bg-orange-600 text-white py-6 px-8 rounded-lg shadow-lg mb-6">
-            <h1 className="text-4xl font-bold mb-2">🔍 Freight Train Examination</h1>
-            <p className="text-xl font-semibold">Examination Points in South Central Railway</p>
+    <div className="min-h-screen bg-gradient-to-br from-orange-900 via-red-900 to-amber-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-orange-400/20 to-red-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-red-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="relative z-10 py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="inline-block p-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-3 rounded-full">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+            </div>
+            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-orange-100 to-red-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              FREIGHT TRAIN EXAMINATION
+            </h1>
+            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">Examination Points in South Central Railway</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto mb-6 rounded-full"></div>
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive examination system ensuring safe and efficient freight operations across all divisions
+            </p>
           </div>
-          
-          <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-2xl font-bold text-orange-700 mb-4">Examination Infrastructure</h2>
-            <p className="text-lg text-gray-700 mb-4">
+
+          {/* Examination Infrastructure Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+              <span className="bg-gradient-to-r from-orange-500 to-red-500 p-4 rounded-full mr-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </span>
+              Examination Infrastructure
+            </h2>
+            <p className="text-lg text-gray-200 mb-6 text-center">
               The examination points on SCR shall be as under for ensuring safe and efficient freight operations
             </p>
             
-            <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded">
-              <h3 className="text-xl font-bold text-yellow-800 mb-2">Special Note:</h3>
-              <p className="text-lg text-yellow-700">
+            <div className="bg-gradient-to-br from-yellow-500/20 to-amber-500/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-yellow-400/30 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-4 flex items-center">
+                <span className="w-4 h-4 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-full mr-3 animate-pulse"></span>
+                Special Note
+              </h3>
+              <p className="text-gray-200 leading-relaxed text-lg">
                 62 Nos of privately owned Tank Wagons (BTCS) loaded with Caustic soda owned by M/s
                 Andhra sugar Ltd, Tanuku, being examined on end-to-end pattern at freight examination
                 facilities developed at KVR by the firm.
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Examination Points by Division */}
-        <div className="mb-12">
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">📍 Examination Points by Division</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* SC Division */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-blue-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">🚂 SC Division</h4>
+          {/* Examination Points by Division */}
+          <div className="mb-16">
+            <h3 className="lg:text-4xl text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
+              <span className="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-full mr-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </span>
+              Examination Points by Division
+            </h3>
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* SC Division */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-6 px-6">
+                  <h4 className="text-2xl font-bold flex items-center">
+                    <span className="mr-3 group-hover:scale-110 transition-transform duration-300">🚂</span>
+                    SC Division
+                  </h4>
+                </div>
+                <div className="p-6">
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm p-4 rounded-xl border border-blue-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-blue-300 mb-2">CC+ Premium Base Depot</h5>
+                      <p className="text-blue-200">RDM, BPA & SNF</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-sm p-4 rounded-xl border border-green-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-green-300 mb-2">Premium Examination Point</h5>
+                      <p className="text-green-200">RDM, BPA, SNF, DKJ</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm p-4 rounded-xl border border-purple-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-purple-300 mb-2">End to End Examination</h5>
+                      <p className="text-purple-200">RDM, BPA, SNF, DKJ & KZJ</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="p-6">
-                <div className="space-y-4">
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-blue-800 mb-2">CC+ Premium Base Depot</h5>
-                    <p className="text-blue-700">RDM, BPA & SNF</p>
+
+              {/* BZA Division */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-green-600 to-green-700 text-white py-6 px-6">
+                  <h4 className="text-2xl font-bold flex items-center">
+                    <span className="mr-3 group-hover:scale-110 transition-transform duration-300">🚂</span>
+                    BZA Division
+                  </h4>
+                </div>
+                <div className="p-6">
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-sm p-4 rounded-xl border border-green-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-green-300 mb-2">CC+ Premium Base Depot</h5>
+                      <p className="text-green-200">BZA & COA</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm p-4 rounded-xl border border-blue-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-blue-300 mb-2">Premium Examination Point</h5>
+                      <p className="text-blue-200">BZA, COA & BTTR</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm p-4 rounded-xl border border-purple-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-purple-300 mb-2">End to End Examination</h5>
+                      <p className="text-purple-200">BZA, COA, BTTR & RJY*</p>
+                    </div>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-green-800 mb-2">Premium Examination Point</h5>
-                    <p className="text-green-700">RDM, BPA, SNF, DKJ</p>
+                </div>
+              </div>
+
+              {/* GTL Division */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white py-6 px-6">
+                  <h4 className="text-2xl font-bold flex items-center">
+                    <span className="mr-3 group-hover:scale-110 transition-transform duration-300">🚂</span>
+                    GTL Division
+                  </h4>
+                </div>
+                <div className="p-6">
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm p-4 rounded-xl border border-purple-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-purple-300 mb-2">CC+ Premium Base Depot</h5>
+                      <p className="text-purple-200">GY</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-sm p-4 rounded-xl border border-green-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-green-300 mb-2">Premium Examination Point</h5>
+                      <p className="text-green-200">GY</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm p-4 rounded-xl border border-blue-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-blue-300 mb-2">End to End Examination</h5>
+                      <p className="text-blue-200">GY</p>
+                    </div>
                   </div>
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-purple-800 mb-2">End to End Examination</h5>
-                    <p className="text-purple-700">RDM, BPA, SNF, DKJ & KZJ</p>
+                </div>
+              </div>
+
+              {/* NED Division */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-6 px-6">
+                  <h4 className="text-2xl font-bold flex items-center">
+                    <span className="mr-3 group-hover:scale-110 transition-transform duration-300">🚂</span>
+                    NED Division
+                  </h4>
+                </div>
+                <div className="p-6">
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-red-500/20 to-red-600/20 backdrop-blur-sm p-4 rounded-xl border border-red-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-red-300 mb-2">CC+ Premium Base Depot</h5>
+                      <p className="text-red-200">-</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-orange-500/20 to-orange-600/20 backdrop-blur-sm p-4 rounded-xl border border-orange-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-orange-300 mb-2">Premium Examination Point</h5>
+                      <p className="text-orange-200">PAU</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 backdrop-blur-sm p-4 rounded-xl border border-yellow-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-yellow-300 mb-2">End to End Examination</h5>
+                      <p className="text-yellow-200">PAU</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* GNT Division */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 text-white py-6 px-6">
+                  <h4 className="text-2xl font-bold flex items-center">
+                    <span className="mr-3 group-hover:scale-110 transition-transform duration-300">🚂</span>
+                    GNT Division
+                  </h4>
+                </div>
+                <div className="p-6">
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-indigo-500/20 to-indigo-600/20 backdrop-blur-sm p-4 rounded-xl border border-indigo-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-indigo-300 mb-2">CC+ Premium Base Depot</h5>
+                      <p className="text-indigo-200">-</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm p-4 rounded-xl border border-blue-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-blue-300 mb-2">Premium Examination Point</h5>
+                      <p className="text-blue-200">NLPD</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-sm p-4 rounded-xl border border-green-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-green-300 mb-2">End to End Examination</h5>
+                      <p className="text-green-200">NLPD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* HYB Division */}
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-teal-600 to-teal-700 text-white py-6 px-6">
+                  <h4 className="text-2xl font-bold flex items-center">
+                    <span className="mr-3 group-hover:scale-110 transition-transform duration-300">🚂</span>
+                    HYB Division
+                  </h4>
+                </div>
+                <div className="p-6">
+                  <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-teal-500/20 to-teal-600/20 backdrop-blur-sm p-4 rounded-xl border border-teal-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-teal-300 mb-2">CC+ Premium Base Depot</h5>
+                      <p className="text-teal-200">-</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-sm p-4 rounded-xl border border-blue-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-blue-300 mb-2">Premium Examination Point</h5>
+                      <p className="text-blue-200">-</p>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-sm p-4 rounded-xl border border-green-400/30 hover:shadow-lg transition-all duration-300">
+                      <h5 className="font-bold text-green-300 mb-2">End to End Examination</h5>
+                      <p className="text-green-200">NZB</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* BZA Division */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-green-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">🚂 BZA Division</h4>
+          {/* Material Train Depots */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+              <span className="bg-gradient-to-r from-orange-500 to-amber-500 p-4 rounded-full mr-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </span>
+              Material Train Depots
+            </h3>
+            <div className="bg-gradient-to-br from-orange-500/20 to-amber-500/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-orange-400/30 hover:shadow-xl transition-all duration-300">
+              <h4 className="text-2xl font-bold text-orange-300 mb-6 flex items-center">
+                <span className="w-4 h-4 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full mr-3 animate-pulse"></span>
+                For Only Material Train (Depots)
+              </h4>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {['GY', 'KZJ', 'RJY', 'BTTR', 'NLPD', 'PAU'].map((depot, index) => (
+                  <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-orange-400/30 text-center hover:shadow-lg hover:scale-105 transition-all duration-300 group">
+                    <span className="text-3xl font-bold text-orange-300 group-hover:text-orange-200 transition-colors duration-300">{depot}</span>
+                  </div>
+                ))}
               </div>
-              <div className="p-6">
-                <div className="space-y-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-green-800 mb-2">CC+ Premium Base Depot</h5>
-                    <p className="text-green-700">BZA & COA</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-blue-800 mb-2">Premium Examination Point</h5>
-                    <p className="text-blue-700">BZA, COA & BTTR</p>
-                  </div>
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-purple-800 mb-2">End to End Examination</h5>
-                    <p className="text-purple-700">BZA, COA, BTTR & RJY*</p>
+            </div>
+          </div>
+
+          {/* Important Notes */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+              <span className="bg-gradient-to-r from-blue-500 to-cyan-500 p-4 rounded-full mr-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </span>
+              Important Notes
+            </h3>
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-xl font-bold text-blue-300 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mr-3 animate-pulse"></span>
+                  a. Infrastructure Upgradation
+                </h4>
+                <p className="text-gray-200 leading-relaxed text-lg">
+                  All CC rake and premium points should be upgraded to &lsquo;A&rsquo; category, and works sanctioned
+                  should be completed.
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-xl font-bold text-green-300 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-gradient-to-br from-green-500 to-green-600 rounded-full mr-3 animate-pulse"></span>
+                  b. ROH Depots
+                </h4>
+                <p className="text-gray-200 leading-relaxed text-lg">
+                  RDM, BPA, SNF (for BLC, BCFC & BCCW), BZA and GY are nominated as ROH depots.
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-xl font-bold text-purple-300 mb-4 flex items-center">
+                  <span className="w-3 h-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full mr-3 animate-pulse"></span>
+                  c. Infrastructure Requirements
+                </h4>
+                <p className="text-gray-200 leading-relaxed text-lg">
+                  For carrying out CC & Premium rake examination, Divisions should plan and provide the
+                  following infrastructure facilities, Machinery & Plants without fail.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Types of Examinations */}
+          <div className="mb-16">
+            <h3 className="lg:text-4xl text-3xl font-bold text-white mb-12 text-center flex items-center justify-center">
+              <span className="bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-full mr-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </span>
+              Types of Examinations
+            </h3>
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-6 px-6">
+                  <h4 className="text-xl font-bold">1. CC RAKE EXAMINATION</h4>
+                </div>
+                <div className="p-8">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-3xl">🚂</span>
+                    </div>
+                    <p className="text-gray-200 leading-relaxed text-lg">
+                      Comprehensive examination of Container Carrying rakes for safety and compliance
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* GTL Division */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-purple-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">🚂 GTL Division</h4>
-              </div>
-              <div className="p-6">
-                <div className="space-y-4">
-                  <div className="bg-purple-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-purple-800 mb-2">CC+ Premium Base Depot</h5>
-                    <p className="text-purple-700">GY</p>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-green-800 mb-2">Premium Examination Point</h5>
-                    <p className="text-green-700">GY</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-blue-800 mb-2">End to End Examination</h5>
-                    <p className="text-blue-700">GY</p>
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-green-600 to-green-700 text-white py-6 px-6">
+                  <h4 className="text-xl font-bold">2. PREMIUM RAKE EXAMINATION</h4>
+                </div>
+                <div className="p-8">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-3xl">⭐</span>
+                    </div>
+                    <p className="text-gray-200 leading-relaxed text-lg">
+                      High-priority examination for premium freight trains with enhanced safety protocols
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* NED Division */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-red-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">🚂 NED Division</h4>
-              </div>
-              <div className="p-6">
-                <div className="space-y-4">
-                  <div className="bg-red-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-red-800 mb-2">CC+ Premium Base Depot</h5>
-                    <p className="text-red-700">-</p>
-                  </div>
-                  <div className="bg-orange-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-orange-800 mb-2">Premium Examination Point</h5>
-                    <p className="text-orange-700">PAU</p>
-                  </div>
-                  <div className="bg-yellow-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-yellow-800 mb-2">End to End Examination</h5>
-                    <p className="text-yellow-700">PAU</p>
-                  </div>
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white py-6 px-6">
+                  <h4 className="text-xl font-bold">3. END TO END EXAMINATION</h4>
                 </div>
-              </div>
-            </div>
-
-            {/* GNT Division */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-indigo-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">🚂 GNT Division</h4>
-              </div>
-              <div className="p-6">
-                <div className="space-y-4">
-                  <div className="bg-indigo-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-indigo-800 mb-2">CC+ Premium Base Depot</h5>
-                    <p className="text-indigo-700">-</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-blue-800 mb-2">Premium Examination Point</h5>
-                    <p className="text-blue-700">NLPD</p>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-green-800 mb-2">End to End Examination</h5>
-                    <p className="text-green-700">NLPD</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* HYB Division */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-teal-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">🚂 HYB Division</h4>
-              </div>
-              <div className="p-6">
-                <div className="space-y-4">
-                  <div className="bg-teal-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-teal-800 mb-2">CC+ Premium Base Depot</h5>
-                    <p className="text-teal-700">-</p>
-                  </div>
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-blue-800 mb-2">Premium Examination Point</h5>
-                    <p className="text-blue-700">-</p>
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h5 className="font-bold text-green-800 mb-2">End to End Examination</h5>
-                    <p className="text-green-700">NZB</p>
+                <div className="p-8">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-3xl">🔍</span>
+                    </div>
+                    <p className="text-gray-200 leading-relaxed text-lg">
+                      Complete examination covering entire train length from start to finish
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Material Train Depots */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">🚛 Material Train Depots</h3>
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded">
-            <h4 className="text-xl font-bold text-orange-800 mb-4">For Only Material Train (Depots):</h4>
-            <div className="grid md:grid-cols-3 gap-4">
-              {['GY', 'KZJ', 'RJY', 'BTTR', 'NLPD', 'PAU'].map((depot, index) => (
-                <div key={index} className="bg-white p-4 rounded-lg border border-orange-200 text-center">
-                  <span className="text-xl font-bold text-orange-600">{depot}</span>
-                </div>
-              ))}
+          {/* Footer Message */}
+          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-2xl shadow-2xl p-12 text-center border border-white/20">
+            <div className="inline-block p-4 bg-white/20 rounded-full mb-6 backdrop-blur-sm">
+              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
             </div>
+            <h3 className="lg:text-4xl text-3xl font-bold mb-6">🔍 Freight Train Safety</h3>
+            <p className="text-2xl mb-6 text-orange-100">
+              Comprehensive examination system ensuring safe and efficient freight operations
+            </p>
+            <p className="text-lg opacity-90 text-orange-200">(For Official Railway Operations Reference)</p>
           </div>
-        </div>
-
-        {/* Important Notes */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">📋 Important Notes</h3>
-          <div className="space-y-6">
-            <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-              <h4 className="text-lg font-bold text-blue-800 mb-3">a. Infrastructure Upgradation</h4>
-              <p className="text-blue-700">
-                All CC rake and premium points should be upgraded to &lsquo;A&rsquo; category, and works sanctioned
-                should be completed.
-              </p>
-            </div>
-            
-            <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-              <h4 className="text-lg font-bold text-green-800 mb-3">b. ROH Depots</h4>
-              <p className="text-green-700">
-                RDM, BPA, SNF (for BLC, BCFC & BCCW), BZA and GY are nominated as ROH depots.
-              </p>
-            </div>
-            
-            <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-              <h4 className="text-lg font-bold text-purple-800 mb-3">c. Infrastructure Requirements</h4>
-              <p className="text-purple-700">
-                For carrying out CC & Premium rake examination, Divisions should plan and provide the
-                following infrastructure facilities, Machinery & Plants without fail.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Types of Examinations */}
-        <div className="mb-12">
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">🔍 Types of Examinations</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-blue-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">1. CC RAKE EXAMINATION</h4>
-              </div>
-              <div className="p-6">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🚂</span>
-                  </div>
-                  <p className="text-gray-700">
-                    Comprehensive examination of Container Carrying rakes for safety and compliance
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-green-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">2. PREMIUM RAKE EXAMINATION</h4>
-              </div>
-              <div className="p-6">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">⭐</span>
-                  </div>
-                  <p className="text-gray-700">
-                    High-priority examination for premium freight trains with enhanced safety protocols
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-purple-600 text-white py-4 px-6">
-                <h4 className="text-xl font-bold">3. END TO END EXAMINATION</h4>
-              </div>
-              <div className="p-6">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🔍</span>
-                  </div>
-                  <p className="text-gray-700">
-                    Complete examination covering entire train length from start to finish
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Footer Message */}
-        <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg shadow-lg p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">🔍 Freight Train Safety</h3>
-          <p className="text-xl mb-4">
-            Comprehensive examination system ensuring safe and efficient freight operations
-          </p>
-          <p className="text-sm opacity-90">(For Official Railway Operations Reference)</p>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </div>
   )
 }
