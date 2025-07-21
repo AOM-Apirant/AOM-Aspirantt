@@ -53,10 +53,10 @@ const Punctuality = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-teal-400/10 to-emerald-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
+      <div className="relative z-10 py-8 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <div className="inline-block p-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full mb-6 backdrop-blur-sm">
               <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-full">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@ const Punctuality = () => {
                 </svg>
               </div>
             </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               TRAIN PUNCTUALITY
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
@@ -74,8 +74,8 @@ const Punctuality = () => {
           </div>
 
           {/* Introduction Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-emerald-500 to-teal-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -83,10 +83,10 @@ const Punctuality = () => {
               </span>
               Introduction
             </h2>
-            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-emerald-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-lg p-4 shadow-lg border border-emerald-400/30 hover:shadow-xl transition-all duration-300">
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     1
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -96,7 +96,7 @@ const Punctuality = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     2
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -105,7 +105,7 @@ const Punctuality = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     3
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -114,7 +114,7 @@ const Punctuality = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     4
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -126,8 +126,8 @@ const Punctuality = () => {
           </div>
 
           {/* Monitoring System Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-green-500 to-emerald-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -135,10 +135,10 @@ const Punctuality = () => {
               </span>
               Monitoring System
             </h2>
-            <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-lg p-4 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
               <div className="space-y-6 mb-6">
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     1
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -147,7 +147,7 @@ const Punctuality = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     2
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -156,7 +156,7 @@ const Punctuality = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <span className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-1 shadow-lg flex-shrink-0">
+                  <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 mt-1 shadow-lg flex-shrink-0">
                     3
                   </span>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
@@ -172,8 +172,8 @@ const Punctuality = () => {
           </div>
 
           {/* Train Categories Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-cyan-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -181,7 +181,7 @@ const Punctuality = () => {
               </span>
               Train Categories
             </h2>
-            <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-lg p-4 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
               <p className="text-gray-200 lg:text-lg text-base mb-8">
                 To monitor the Passenger carrying trains effectively according to their importance,
                 relevance and stock they are grouped into following categories.
@@ -190,7 +190,7 @@ const Punctuality = () => {
                 {trainCategories.map((category, index) => (
                   <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg">
                     <div className="text-center mb-4">
-                      <span className="text-5xl mb-4 block">{category.icon}</span>
+                      <span className="text-3xl mb-4 block">{category.icon}</span>
                       <h3 className="text-xl font-bold text-white mb-3">{category.title}</h3>
                     </div>
                     <p className="text-gray-200 text-sm leading-relaxed text-center">{category.description}</p>
@@ -201,8 +201,8 @@ const Punctuality = () => {
           </div>
 
           {/* Punctuality Norms Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-red-500 to-pink-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -210,7 +210,7 @@ const Punctuality = () => {
               </span>
               Punctuality Norms
             </h2>
-            <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-red-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-lg p-4 shadow-lg border border-red-400/30 hover:shadow-xl transition-all duration-300">
               <p className="text-gray-200 lg:text-lg text-base mb-8">
                 Train arriving late is considered to be &ldquo;Lost Train&rdquo; based on the following norms.
               </p>
@@ -219,7 +219,7 @@ const Punctuality = () => {
                   <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div className="flex items-center mb-4 lg:mb-0">
-                        <span className="w-8 h-8 bg-gradient-to-br from-red-500 to-pink-500 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 shadow-lg">
+                        <span className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-br from-red-500 to-pink-500 text-white rounded-full flex items-center justify-center text-sm font-light mr-4 shadow-lg">
                           {index + 1}
                         </span>
                         <h3 className="lg:text-xl text-base font-semibold text-white">{norm.type}</h3>
@@ -236,12 +236,12 @@ const Punctuality = () => {
           </div>
 
           {/* Punctuality Formula Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 border border-white/20">
-            <h2 className="lg:text-4xl text-xl font-bold text-white mb-12 text-center">Punctuality Calculation Formula</h2>
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 border border-white/20">
+            <h2 className="lg:text-4xl text-2xl font-semibold text-white mb-8 text-center">Punctuality Calculation Formula</h2>
             
-            <div className="bg-gradient-to-br from-orange-500/20 to-amber-500/20 backdrop-blur-lg rounded-2xl p-4 shadow-xl border border-orange-400/30 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-orange-500/20 to-amber-500/20 backdrop-blur-lg rounded-lg p-4 shadow-xl border border-orange-400/30 hover:shadow-2xl transition-all duration-300">
               <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center">
-                <div className="lg:text-4xl text-xl font-medium text-white mb-6">
+                <div className="lg:text-3xl text-lg font-medium text-white mb-6">
                   % Punctuality = (Total No. of trains - No. of trains lost Punctuality) / (Total No. of trains) × 100
                 </div>
                 <div className="mt-8 text-center">
@@ -253,7 +253,7 @@ const Punctuality = () => {
             </div>
           </div>
                     {/* Real Time Reporting Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 mt-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 mt-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col md:flex-row gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-purple-500 to-indigo-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -263,7 +263,7 @@ const Punctuality = () => {
               Real Time Reporting
             </h2>
             
-            <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 backdrop-blur-lg rounded-lg p-4 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
               <div className="space-y-8">
                                  {/* Introduction */}
                  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
@@ -275,7 +275,7 @@ const Punctuality = () => {
                    </h3>
                   <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
                     To improve factual reporting of punctuality and asset failures in ICMS by the divisions, 
-                                         Railway Board declared <span className="font-semibold text-purple-300">2018-19 as &ldquo;Zero base year&rdquo;</span>. 
+                                         Railway Board declared <span className="font-semibold text-purple-300">2018-19 as &ldquo;Zero base year&rdquo;</span>. <br/> <br/>
                     Further to improve factual reporting, Control Office Application (COA) has been integrated with 
                     RTIS/REMMLOT devices provided in locos; Data loggers; E-TSR & C-TSR at stations.
                   </p>
@@ -301,7 +301,7 @@ const Punctuality = () => {
                   {/* REMMLOT/RTIS */}
                   <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg">
                     <div className="text-center mb-4">
-                      <span className="text-4xl mb-3 block">🚂</span>
+                      <span className="text-2xl mb-3 block">🚂</span>
                       <h4 className="text-lg font-bold text-white mb-2">REMMLOT / RTIS</h4>
                     </div>
                     <div className="space-y-3">
@@ -321,7 +321,7 @@ const Punctuality = () => {
                   {/* Data Logger */}
                   <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg">
                     <div className="text-center mb-4">
-                      <span className="text-4xl mb-3 block">📝</span>
+                      <span className="text-2xl mb-3 block">📝</span>
                       <h4 className="text-lg font-bold text-white mb-2">Data Logger</h4>
                     </div>
                     <p className="text-gray-200 text-sm leading-relaxed">
@@ -334,7 +334,7 @@ const Punctuality = () => {
                   {/* E-TSR & C-TSR */}
                   <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-lg md:col-span-2 lg:col-span-1">
                     <div className="text-center mb-4">
-                      <span className="text-4xl mb-3 block">💻</span>
+                      <span className="text-2xl mb-3 block">💻</span>
                       <h4 className="text-lg font-bold text-white mb-2">E-TSR & C-TSR</h4>
                     </div>
                     <p className="text-gray-200 text-sm leading-relaxed">

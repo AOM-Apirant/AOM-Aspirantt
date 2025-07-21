@@ -11,10 +11,10 @@ const StationYard = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
+      <div className="relative z-10 py-8 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <div className="inline-block p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full mb-6 backdrop-blur-sm">
               <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-3 rounded-full">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,8 +32,8 @@ const StationYard = () => {
           </div>
 
           {/* Introduction Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -41,11 +41,11 @@ const StationYard = () => {
               </span>
               Introduction
             </h2>
-            <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-lg p-4 lg:p-8 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
               <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
                 Station is a nodal point in dealing trains. As per GR 1.02 (51), &ldquo;station means
                 any place on a line of railway at which traffic is dealt with, or at which an authority to
-                proceed is given under the system of working.&rdquo; A station comprises of a station yard
+                proceed is given under the system of working.<br/> <br/> &rdquo;A station comprises of a station yard
                 on which trains are dealt by station staff through signals operated from panel room,
                 cabins etc. Station is also the place where passengers board / alight; wagons are
                 loaded / unloaded. Hence, the station is also provided with passenger and other
@@ -55,8 +55,8 @@ const StationYard = () => {
           </div>
 
           {/* Station Yard Definition */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-green-500 to-emerald-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -64,13 +64,13 @@ const StationYard = () => {
               </span>
               Station Yard Definition
             </h2>
-            <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 lg:p-8 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-lg p-4 lg:p-8 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
               <p className="text-gray-200 lg:text-lg text-base mb-6">
                 A station yard is basically a grid of lines where trains are dealt. The grid is made of
                 tracks which are connected to each other through points and crossings.
               </p>
               
-              <h3 className="lg:text-2xl text-xl font-bold text-white mb-6 flex items-center">
+              <h3 className="lg:text-2xl text-xl font-bold text-white mb-6 flex flex-col gap-4 items-center justify-center">
                 Types of Lines Found in a Station Yard:
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -95,8 +95,8 @@ const StationYard = () => {
           </div>
 
           {/* Station Yard Features */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-emerald-500 to-teal-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -125,8 +125,8 @@ const StationYard = () => {
           </div>
 
           {/* Station Equipment */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
@@ -155,8 +155,8 @@ const StationYard = () => {
           </div>
 
           {/* Station Building */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-orange-500 to-amber-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -192,8 +192,8 @@ const StationYard = () => {
           </div>
 
           {/* Key Highlights Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 border border-white/20">
-            <h2 className="lg:text-4xl text-xl font-bold text-white mb-12 text-center">Key Highlights</h2>
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 border border-white/20">
+            <h2 className="lg:text-4xl text-xl font-bold text-white mb-8 text-center">Key Highlights</h2>
             
             <div className="grid md:grid-cols-3 gap-4 mb-12">
               {/* Operational Hub */}
@@ -241,7 +241,7 @@ const StationYard = () => {
 
             {/* Features Overview */}
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl p-4 lg:p-8 shadow-xl border border-white/20">
-              <h3 className="lg:text-2xl text-xl font-bold text-white mb-8 flex items-center justify-center">
+              <h3 className="lg:text-2xl text-xl font-bold text-white mb-8 flex flex-col gap-4 text-center items-center justify-center">
                 Station Yard Features Overview
               </h3>
               <div className="grid md:grid-cols-4 gap-6">

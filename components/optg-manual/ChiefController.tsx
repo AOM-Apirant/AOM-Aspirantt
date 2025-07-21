@@ -35,7 +35,7 @@ const ChiefController = () => {
           <div className="space-y-6 sm:space-y-8">
             {/* Chief Controller (In-charge) Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-green-200 mb-4 sm:mb-6 border-b-2 border-green-500 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-green-200 mb-4 sm:mb-6 border-b-2 border-green-500 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-green-400 to-emerald-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -48,11 +48,11 @@ const ChiefController = () => {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((num) => (
-                  <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-green-50/10 rounded-lg hover:bg-green-50/20 transition-all duration-300">
+                  <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-green-50/10 rounded-lg hover:bg-green-50/20 transition-all duration-300">
                     <span className="flex-shrink-0 w-5 h-5 bg-green-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                       {num}
                     </span>
-                    <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed">
                       {num === 1 && "A review of previous day&apos;s performance to confirm that all forecasts made have been fully met. For shortfalls, reasons have to be pinpointed to prevent recurrence"}
                       {num === 2 && "Prepare current forecast indicating assistance needed from Headquarters, adjoining Divisions, railways generally related to interchange, loading and locomotive utilization."}
                       {num === 3 && "Checking control charts and bringing to the notice of the Senior DOM/DOM all avoidable detention to trains."}
@@ -75,7 +75,7 @@ const ChiefController = () => {
 
             {/* Chief Controller (Movement) Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-emerald-200 mb-4 sm:mb-6 border-b-2 border-emerald-500 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-emerald-200 mb-4 sm:mb-6 border-b-2 border-emerald-500 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-emerald-400 to-teal-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -85,11 +85,11 @@ const ChiefController = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((num) => (
-                  <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-emerald-50/10 rounded-lg hover:bg-emerald-50/20 transition-all duration-300">
+                  <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-emerald-50/10 rounded-lg hover:bg-emerald-50/20 transition-all duration-300">
                     <span className="flex-shrink-0 w-5 h-5 bg-emerald-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                       {num}
                     </span>
-                    <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed">
                       {num === 1 && "General supervision of control office in the absence of CHC and supervision of the work over SCOR and PCOR."}
                       {num === 2 && "Gather information from all the section control boards about the flow of trains."}
                       {num === 3 && "Co-ordinate the work of various Section Controllers."}
@@ -113,7 +113,7 @@ const ChiefController = () => {
 
             {/* Chief Controller (Stock) Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-teal-200 mb-4 sm:mb-6 border-b-2 border-teal-500 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-teal-200 mb-4 sm:mb-6 border-b-2 border-teal-500 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-teal-400 to-green-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -123,11 +123,11 @@ const ChiefController = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((num) => (
-                  <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-teal-50/10 rounded-lg hover:bg-teal-50/20 transition-all duration-300">
+                  <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-teal-50/10 rounded-lg hover:bg-teal-50/20 transition-all duration-300">
                     <span className="flex-shrink-0 w-5 h-5 bg-teal-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                       {num}
                     </span>
-                    <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed">
                       {num === 1 && "To receive the wagon demands from different loading points and register them in sequence in a register."}
                       {num === 2 && "Scrutinizing the indent register in detail with regard to the oldest date of registration, nature of goods and type of stock required for transport at various stations."}
                       {num === 3 && "Assisting the Sr. DOM/DOM in allotments."}
@@ -150,7 +150,7 @@ const ChiefController = () => {
 
             {/* Deputy Chief Controller (Punctuality) Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-green-300 mb-4 sm:mb-6 border-b-2 border-green-400 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-green-300 mb-4 sm:mb-6 border-b-2 border-green-400 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-green-400 to-emerald-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -160,11 +160,11 @@ const ChiefController = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((num) => (
-                  <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-green-50/10 rounded-lg hover:bg-green-50/20 transition-all duration-300">
+                  <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-green-50/10 rounded-lg hover:bg-green-50/20 transition-all duration-300">
                     <span className="flex-shrink-0 w-5 h-5 bg-green-400 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                       {num}
                     </span>
-                    <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed">
                       {num === 1 && "Responsible to monitor the punctuality position of Passenger/Express/Suburban trains."}
                       {num === 2 && "Have a special watch on movement of Special trains and other important passenger carrying trains ( daily/non daily)"}
                       {num === 3 && "Ensure rake links are properly materialized."}

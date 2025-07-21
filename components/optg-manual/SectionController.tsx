@@ -35,7 +35,7 @@ const SectionController = () => {
           <div className="space-y-6 sm:space-y-8">
             {/* Section Controller Duties Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-purple-200 mb-4 sm:mb-6 border-b-2 border-purple-500 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-purple-200 mb-4 sm:mb-6 border-b-2 border-purple-500 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
@@ -44,16 +44,16 @@ const SectionController = () => {
                 </span>
                 Section Controller Duties
               </h2>
-              <p className="text-sm sm:text-base text-gray-200 mb-4 leading-relaxed">
-                SCOR is a competent person with profound knowledge and vast experience. He should have thorough knowledge of the section which he controls (topography, system of working, signals, traffic facilities, nature of traffic. Etc.). Hence he is a friend, philosopher and guide to field staff. He controls trains in his section. Some important duties are mentioned below:
+              <p className="text-sm text-gray-200 mb-4 leading-relaxed">
+                SCOR is a competent person with profound knowledge and vast experience. <br/> <br/> He should have thorough knowledge of the section which he controls (topography, system of working, signals, traffic facilities, nature of traffic. Etc.). <br/> <br/> Hence he is a friend, philosopher and guide to field staff. He controls trains in his section. <br/> <br/> Some important duties are mentioned below:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29].map((num) => (
-                  <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-purple-50/10 rounded-lg hover:bg-purple-50/20 transition-all duration-300">
+                  <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-purple-50/10 rounded-lg hover:bg-purple-50/20 transition-all duration-300">
                     <span className="flex-shrink-0 w-5 h-5 bg-purple-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                       {num}
                     </span>
-                    <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed">
                       {num === 1 && "Appear on duty as per roster after availing rest."}
                       {num === 2 && "Collect instructions from Dy.CHC, CHC particularly about any special movements."}
                       {num === 3 && "After noting the instructions on the chart, take over charge enquiring about special task to be carried out."}
@@ -91,7 +91,7 @@ const SectionController = () => {
 
             {/* Working of Trains when Control is interrupted Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-pink-200 mb-4 sm:mb-6 border-b-2 border-pink-500 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-pink-200 mb-4 sm:mb-6 border-b-2 border-pink-500 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-pink-400 to-rose-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -100,7 +100,7 @@ const SectionController = () => {
                 Working of Trains when Control is interrupted
               </h2>
               <div className="bg-pink-50/10 p-4 rounded-lg border-l-4 border-pink-400">
-                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                <p className="text-sm text-gray-200 leading-relaxed">
                   When the control is interrupted and no communication with the Controller is possible, Station Masters will be responsible for the working and regulating of trains, keeping in view the instructions issued by the railway administration.
                 </p>
               </div>
@@ -108,7 +108,7 @@ const SectionController = () => {
 
             {/* Books/Documents Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-rose-200 mb-4 sm:mb-6 border-b-2 border-rose-500 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-rose-200 mb-4 sm:mb-6 border-b-2 border-rose-500 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-rose-400 to-purple-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -118,11 +118,11 @@ const SectionController = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21].map((num) => (
-                  <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-rose-50/10 rounded-lg hover:bg-rose-50/20 transition-all duration-300">
+                  <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-rose-50/10 rounded-lg hover:bg-rose-50/20 transition-all duration-300">
                     <span className="flex-shrink-0 w-5 h-5 bg-rose-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                       {num}
                     </span>
-                    <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed">
                       {num === 1 && "Station Working Rules of all stations."}
                       {num === 2 && "Working facilities available on the transhipment sheds."}
                       {num === 3 && "Schedule of shunting engines in the various yards."}
@@ -152,7 +152,7 @@ const SectionController = () => {
 
             {/* Registers Section */}
             <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h2 className="text-xl sm:text-2xl font-bold text-purple-300 mb-4 sm:mb-6 border-b-2 border-purple-400 pb-2 sm:pb-3 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-purple-300 mb-4 sm:mb-6 border-b-2 border-purple-400 pb-2 sm:pb-3 flex items-center justify-center gap-4 flex-col text-center">
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 p-2 rounded-full mr-2 sm:mr-3">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -163,17 +163,17 @@ const SectionController = () => {
               
               {/* By the Section controller */}
               <div className="mb-6">
-                <h3 className="text-lg sm:text-xl font-bold text-pink-200 mb-3 sm:mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-bold text-pink-200 mb-3 sm:mb-4 flex items-center justify-center gap-4 flex-col text-center">
                   <span className="w-3 h-3 bg-pink-500 rounded-full mr-2 sm:mr-3"></span>
                   By the Section controller:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((num) => (
-                    <div key={num} className="flex items-start space-x-2 p-2 sm:p-3 bg-pink-50/10 rounded-lg hover:bg-pink-50/20 transition-all duration-300">
+                    <div key={num} className="flex items-start space-x-2 lg:p-4 p-3 bg-pink-50/10 rounded-lg hover:bg-pink-50/20 transition-all duration-300">
                       <span className="flex-shrink-0 w-5 h-5 bg-pink-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                         {num}
                       </span>
-                      <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                      <p className="text-sm text-gray-200 leading-relaxed">
                         {num === 1 && "Section controller&apos;s diary and charge book. Inward message book."}
                         {num === 2 && "Sick wagon register. Yard report registers."}
                         {num === 3 && "In-coming and out-going trains RD (Running Daily) (other than passenger)."}
@@ -195,17 +195,17 @@ const SectionController = () => {
 
               {/* By the Chief Controller */}
               <div>
-                <h3 className="text-lg sm:text-xl font-bold text-rose-200 mb-3 sm:mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-bold text-rose-200 mb-3 sm:mb-4 flex items-center justify-center gap-4 flex-col text-center">
                   <span className="w-3 h-3 bg-rose-500 rounded-full mr-2 sm:mr-3"></span>
                   By the Chief Controller (Movement),(Coaching)/Dy. Chief Controller:
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                   {['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii', 'xiii', 'xiv'].map((letter) => (
-                    <div key={letter} className="flex items-start space-x-2 p-2 sm:p-3 bg-rose-50/10 rounded-lg hover:bg-rose-50/20 transition-all duration-300">
+                    <div key={letter} className="flex items-start space-x-2 lg:p-4 p-3 bg-rose-50/10 rounded-lg hover:bg-rose-50/20 transition-all duration-300">
                       <span className="flex-shrink-0 w-5 h-5 bg-rose-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
                         {letter}
                       </span>
-                      <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                      <p className="text-sm text-gray-200 leading-relaxed">
                         {letter === 'i' && "Yard Running Balance Register."}
                         {letter === 'ii' && "Dy. Chief Controller&apos;s Diary & Charge Book. Train Advise book."}
                         {letter === 'iii' && "Forecast and Acceptance Book. Train Ordering Book."}

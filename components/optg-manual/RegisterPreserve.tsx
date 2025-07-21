@@ -72,10 +72,10 @@ const RegisterPreserve = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-teal-400/10 to-emerald-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
+      <div className="relative z-10 py-8 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <div className="inline-block p-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full mb-6 backdrop-blur-sm">
               <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-full">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,7 +83,7 @@ const RegisterPreserve = () => {
                 </svg>
               </div>
             </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Register Preservation Periods
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
@@ -93,8 +93,8 @@ const RegisterPreserve = () => {
           </div>
 
           {/* Introduction Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-emerald-500 to-teal-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -102,10 +102,10 @@ const RegisterPreserve = () => {
               </span>
               Introduction
             </h2>
-            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-xl p-8 shadow-lg border border-emerald-400/30 hover:shadow-xl transition-all duration-300">
+            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-lg p-4 lg:p-8 shadow-lg border border-emerald-400/30 hover:shadow-xl transition-all duration-300">
               <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
                 The period for which Station Operating Registers and Records are required to be
-                preserved is advised by division office. An indicative period of preservation from the
+                preserved is advised by division office. <br/> <br/> An indicative period of preservation from the
                 date of completion of various registers / records is as follows:
               </p>
             </div>
@@ -114,7 +114,7 @@ const RegisterPreserve = () => {
           {/* Registers Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
             {registerData.map((register, index) => (
-              <div key={index} className={`bg-gradient-to-br ${getCategoryColor(register.category)} backdrop-blur-lg p-6 rounded-xl border hover:shadow-xl hover:scale-105 transition-all duration-300`}>
+              <div key={index} className={`bg-gradient-to-br ${getCategoryColor(register.category)} backdrop-blur-lg p-4 lg:p-6 rounded-lg border hover:shadow-xl hover:scale-105 transition-all duration-300`}>
                 <div className="flex justify-between items-start mb-4">
                   <span className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
                     {index + 1}
@@ -129,8 +129,8 @@ const RegisterPreserve = () => {
           </div>
 
           {/* Important Notes Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-red-500 to-pink-500 p-2 lg:p-4 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -158,7 +158,7 @@ const RegisterPreserve = () => {
           </div>
 
           {/* Legend */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <div className="text-center mb-8">
               <div className="flex justify-center mb-4">
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-500 p-2 lg:p-4 rounded-full shadow-lg">
@@ -185,7 +185,7 @@ const RegisterPreserve = () => {
           </div>
 
           {/* Statistics Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-4 border border-white/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 border border-white/20">
             <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 text-center">Register Statistics</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 border border-emerald-400/30">
