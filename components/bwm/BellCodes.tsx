@@ -5,7 +5,7 @@ import { bellCodes } from '@/assets/bwm'
 
 const BellCodes = () => {
   return (
-    <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/40 via-blue-900/30 to-slate-900 relative overflow-hidden'>
+    <div className='min-h-screen bg-gradient-to-br from-slate-900 via-purple-900/40 to-slate-900 relative overflow-hidden'>
       {/* Animated Background Elements */}
       <div className='absolute inset-0 overflow-hidden'>
         <div className='absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse'></div>
@@ -16,15 +16,15 @@ const BellCodes = () => {
       <div className='relative z-10 max-w-7xl mx-auto py-12 px-4'>
         {/* Header Section */}
         <div className='text-center mb-16'>
-          <div className='inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6 shadow-2xl'>
-            <svg className='w-10 h-10 text-white' fill='currentColor' viewBox='0 0 20 20'>
+          <div className='inline-flex items-center justify-center lg:w-20 lg:h-20 w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6 shadow-2xl'>
+            <svg className='lg:w-10 lg:h-10 w-6 h-6 text-white' fill='currentColor' viewBox='0 0 20 20'>
               <path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clipRule='evenodd' />
             </svg>
           </div>
-          <h1 className='text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent mb-6 animate-fade-in'>
+          <h1 className='lg:text-4xl text-3xl font-bold bg-gradient-to-r from-blue-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent mb-6 animate-fade-in'>
             Bell Codes
           </h1>
-          <p className='text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed opacity-90'>
+          <p className='lg:text-lg text-base text-gray-300 max-w-4xl mx-auto leading-relaxed opacity-90'>
             For the signalling of trains, the prescribed code of bell signals as detailed below, shall be used, and a copy thereof shall be exhibited in each block station near the place of operation of the block working equipment
           </p>
         </div>
@@ -42,7 +42,7 @@ const BellCodes = () => {
               
               {/* Bell Icon */}
               <div className='relative z-10 mb-4 flex items-center justify-between'>
-                <div className='w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg'>
+                <div className='lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg'>
                   <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 20 20'>
                     <path d='M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z' />
                   </svg>
@@ -96,14 +96,14 @@ const BellCodes = () => {
         </div>
 
         {/* Notes Section */}
-        <div className='bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl shadow-blue-500/10'>
-          <div className='flex items-center mb-8'>
-            <div className='w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg mr-4'>
+        <div className='bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md rounded-3xl p-4 lg:p-8 border border-white/20 shadow-2xl shadow-blue-500/10'>
+          <div className='flex flex-col lg:flex-row gap-4 items-center mb-8'>
+            <div className='lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center shadow-lg mr-4'>
               <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 20 20'>
                 <path fillRule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z' clipRule='evenodd' />
               </svg>
             </div>
-            <h2 className='text-3xl font-bold bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent'>
+            <h2 className='lg:text-3xl text-2xl font-bold bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent'>
               Important Notes
             </h2>
           </div>
@@ -135,7 +135,7 @@ const BellCodes = () => {
               </div>
             </div>
             
-            <div className='bg-white/5 rounded-xl p-6 border border-white/10'>
+            <div className='bg-white/5 rounded-xl p-4 lg:p-6 border border-white/10'>
               <h3 className='text-lg font-semibold text-cyan-200 mb-4 flex items-center'>
                 <svg className='w-5 h-5 mr-2' fill='currentColor' viewBox='0 0 20 20'>
                   <path fillRule='evenodd' d='M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clipRule='evenodd' />
@@ -150,7 +150,7 @@ const BellCodes = () => {
                   'If the station to which a signal is sent does not reply, the signal shall be repeated at intervals of not less than 20 seconds until reply is received.'
                 ].map((text, index) => (
                   <div key={index} className='flex items-start space-x-3'>
-                    <div className='w-6 h-6 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5'>
+                    <div className='lg:w-6 lg:h-6 w-5 h-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5'>
                       <span className='text-xs font-bold text-white'>{index + 1}</span>
                     </div>
                     <p className='text-gray-300 leading-relaxed text-sm'>

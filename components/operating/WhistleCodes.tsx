@@ -50,7 +50,7 @@ const WhistleCodes = () => {
         
         {/* Content */}
         <div className="relative z-10">
-          <div className="mb-16">
+          <div className="mb-6">
             <div className="text-center mb-8">
               <h1 className="lg:text-5xl text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
                 Whistle Codes Reference
@@ -67,15 +67,15 @@ const WhistleCodes = () => {
             {whistleCodes.map((code, index) => (
               <div 
                 key={code.id} 
-                className="group relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-blue-500/80 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 animate-fade-in"
+                className="group relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-2xl py-10 px-4 border border-slate-700/50 hover:border-blue-500/80 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Glowing Border Effect */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
                 
                 {/* Top Badge with Enhanced Design */}
-                <div className="absolute -top-4 -right-4 z-10">
-                  <div className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white w-8 h-8 md:w-12 md:h-12 rounded-full text-xs md:text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center">
+                <div className="absolute -top-2 -right-2 z-10">
+                  <div className="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 text-white lg:w-10 lg:h-10 w-6 h-6 rounded-full text-xs md:text-sm font-bold shadow-lg transform rotate-3 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center">
                     {code.id}
                   </div>
                 </div>
@@ -151,8 +151,8 @@ const WhistleCodes = () => {
           </div>
 
           {/* Enhanced Bottom Info Section */}
-          <div className="mt-20 text-center">
-            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-md rounded-3xl p-10 border border-slate-700/50 shadow-2xl">
+          <div className="mt-10 text-center">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-md rounded-3xl p-4 border border-slate-700/50 shadow-2xl">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-8">
                 Important Whistle Code Guidelines
               </h3>
@@ -194,9 +194,7 @@ const WhistleCodes = () => {
               {/* Additional Safety Note */}
               <div className="mt-8 p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-xl border border-blue-500/20">
                 <div className="flex items-center justify-center gap-3 text-blue-300">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                  </svg>
+                  
                   <span className="text-sm font-medium">Always follow safety protocols and maintain clear communication</span>
                 </div>
               </div>

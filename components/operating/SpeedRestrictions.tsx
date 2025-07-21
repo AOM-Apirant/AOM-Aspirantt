@@ -15,18 +15,18 @@ const SpeedRestrictions = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <div className="inline-block p-2 bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-full mb-6 backdrop-blur-sm">
-              <div className="bg-gradient-to-r from-blue-500 to-green-600 p-3 rounded-full">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="inline-block lg:p-2 p-1 bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-blue-500 to-green-600 lg:p-3 p-2 rounded-full">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
             </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-green-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="lg:text-6xl text-xl font-bold bg-gradient-to-r from-white via-blue-100 to-green-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               SPEED OF TRAINS IN DIFFERENT CIRCUMSTANCES
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-600 mx-auto mb-6 rounded-full"></div>
-            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               The following table indicates at a glance the speeds of the trains under various circumstances. 
               Relevant GRs and SRs should be referred for details.
             </p>

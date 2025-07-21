@@ -4,7 +4,7 @@ const OperatingForms = () => {
   return (
     <div>
         <div className='max-w-full mx-auto lg:px-16 px-4 py-12 bg-gradient-to-br from-slate-900 via-blue-900/30 to-slate-900 relative overflow-hidden'>
-        <h1 className='text-2xl font-bold text-center mb-8 text-blue-300'>Operating Forms</h1>
+        <h1 className='lg:text-4xl text-3xl font-bold text-center mb-8 text-blue-300'>Operating Forms</h1>
         
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {/* Form 1 */}
