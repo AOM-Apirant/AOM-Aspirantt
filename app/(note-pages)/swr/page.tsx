@@ -92,55 +92,58 @@ const SWR = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse" style={{animationDelay: '4s'}}></div>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 relative z-10">
-        {/* Header Section */}
-        <div className="text-center mb-8 md:mb-12 opacity-0 animate-[fadeIn_0.8s_ease-out_forwards]">
-          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-4 md:mb-6 shadow-lg hover:scale-110 hover:rotate-6 transition-all duration-300">
-            <span className="text-2xl md:text-3xl">🚉</span>
-          </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-3 md:mb-4">
-            Station Working Rules
-          </h1>
-          <h2 className='text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 md:mb-6'>
-            Appendix - XIV
-          </h2>
-          <p className="text-gray-600 text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed px-4">
-            Comprehensive guide to station working rules and procedures for railway operations
-          </p>
-        </div>
-
-        {/* Content Section */}
-        <div className="max-w-6xl mx-auto">
-          {/* Topics Section */}
-          <div className="bg-white rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl p-6 md:p-8 mb-6 md:mb-8 border border-gray-100 opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
-            <div className="flex items-center mb-4 md:mb-6">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3 md:mr-4">
-                <span className="text-white text-lg md:text-xl">📋</span>
+      <div className="relative z-10 py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="inline-block p-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-full">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
               </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">Topics Covered in Station Working Rules</h2>
             </div>
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              STATION WORKING RULES
+            </h1>
+            <h2 className="lg:text-4xl text-xl font-bold text-cyan-300 mb-4">Appendix - XIV</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+            <p className="text-lg text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Comprehensive guide to station working rules and procedures for railway operations, 
+              ensuring systematic control and monitoring of train movements.
+            </p>
+          </div>
+
+          {/* Topics Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-blue-500 to-purple-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </span>
+              Topics Covered in Station Working Rules
+            </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {topics.map((topic, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-r from-blue-50 to-purple-50 p-3 md:p-4 rounded-lg border-l-4 border-blue-500 hover:border-purple-500 hover:scale-105 hover:translate-x-2 transition-all duration-300 opacity-0"
-                  style={{
-                    animationDelay: `${(index + 1) * 100}ms`,
-                    animation: 'fadeIn 0.8s ease-out forwards'
-                  }}
+                  className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-lg rounded-lg p-4 shadow-lg border border-blue-400/30 hover:shadow-xl hover:scale-105 hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <div className="flex items-start">
-                    <span className="text-blue-600 font-bold mr-2 md:mr-3 min-w-[16px] md:min-w-[20px] text-sm md:text-base">{index + 1}.</span>
-                    <p className="text-gray-700 leading-relaxed text-sm md:text-base">{topic}</p>
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-full lg:w-8 lg:h-8 w-6 h-6 flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-white font-bold lg:text-sm text-xs">{index + 1}</span>
+                    </div>
+                    <p className="text-gray-200 leading-relaxed lg:text-lg text-base group-hover:text-white transition-colors duration-300">{topic}</p>
                   </div>
                 </div>
               ))}
@@ -148,73 +151,132 @@ const SWR = () => {
           </div>
 
           {/* Appendices Section */}
-          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl md:rounded-2xl p-6 md:p-8 shadow-xl md:shadow-2xl border border-yellow-200 opacity-0 animate-[slideUp_0.8s_ease-out_0.4s_forwards]">
-            <div className="text-center mb-6 md:mb-8">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-2">Appendices</h2>
-              <p className="text-gray-600 text-sm md:text-base">Essential documentation and procedures</p>
-            </div>
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-amber-500 to-yellow-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </span>
+              Essential Appendices
+            </h2>
+            <p className="text-gray-300 text-center mb-8 lg:text-lg text-base">Comprehensive documentation and procedures for railway operations</p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {appendices.map((appendix, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg md:rounded-xl p-4 md:p-6 shadow-lg border border-gray-200 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 opacity-0"
-                  style={{
-                    animationDelay: `${(index + 45) * 100}ms`,
-                    animation: 'fadeIn 0.8s ease-out forwards'
-                  }}
+                  className="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 backdrop-blur-lg rounded-xl p-4 lg:p-6 shadow-lg border border-amber-400/30 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
                 >
-                  <div className="text-center mb-3 md:mb-4">
-                    <div className="text-3xl md:text-4xl mb-2 md:mb-3">{appendix.icon}</div>
-                    <h3 className="text-lg md:text-xl font-bold text-blue-600 mb-1 md:mb-2">{appendix.title}</h3>
-                    <h4 className="text-sm md:text-lg font-semibold text-gray-800 mb-1 md:mb-2 leading-tight">{appendix.subtitle}</h4>
-                    <p className="text-xs md:text-sm text-gray-600 italic">{appendix.description}</p>
+                  <div className="text-center mb-4">
+                    <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{appendix.icon}</div>
+                    <h3 className="text-xl font-bold text-amber-300 mb-2 group-hover:text-yellow-300 transition-colors duration-300">{appendix.title}</h3>
+                    <h4 className="text-lg font-semibold text-white mb-2 leading-tight">{appendix.subtitle}</h4>
+                    <p className="text-sm text-gray-300 italic">{appendix.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="mt-8 md:mt-12 text-center opacity-0 animate-[slideUp_0.8s_ease-out_0.6s_forwards]">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl md:rounded-2xl p-6 md:p-8 text-white shadow-xl md:shadow-2xl">
-              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Ready to Master Station Working Rules?</h3>
-              <p className="text-base md:text-lg mb-4 md:mb-6 opacity-90">
-                Explore our comprehensive study materials and practice tests to excel in your railway examinations.
-              </p>
-              <button className="bg-white text-blue-600 px-6 md:px-8 py-2 md:py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 text-sm md:text-base">
-                Start Learning Now
-              </button>
+          {/* Key Features Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-green-500 to-emerald-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              Key Features & Benefits
+            </h2>
+            <div className="grid md:grid-cols-2 gap-3 lg:gap-6">
+              <div className="flex items-start group/feature hover:bg-white/5 rounded-xl p-1 lg:p-6 transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 text-xl group-hover/feature:scale-110 transition-transform">🚦</span>
+                <span className="text-gray-200 lg:text-lg text-base">Comprehensive signal management and interlocking systems</span>
+              </div>
+              <div className="flex items-start group/feature hover:bg-white/5 rounded-xl p-1 lg:p-6 transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 text-xl group-hover/feature:scale-110 transition-transform">⚡</span>
+                <span className="text-gray-200 lg:text-lg text-base">Real-time monitoring and control of train operations</span>
+              </div>
+              <div className="flex items-start group/feature hover:bg-white/5 rounded-xl p-1 lg:p-6 transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 text-xl group-hover/feature:scale-110 transition-transform">🛡️</span>
+                <span className="text-gray-200 lg:text-lg text-base">Enhanced safety protocols and collision prevention</span> 
+              </div>
+              <div className="flex items-start group/feature hover:bg-white/5 rounded-xl p-1 lg:p-6 transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 text-xl group-hover/feature:scale-110 transition-transform">👥</span>
+                <span className="text-gray-200 lg:text-lg text-base">Clear staff responsibilities and shift management</span>
+              </div>
+              <div className="flex items-start group/feature hover:bg-white/5 rounded-xl p-1 lg:p-6 transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 text-xl group-hover/feature:scale-110 transition-transform">🔧</span>
+                <span className="text-gray-200 lg:text-lg text-base">Essential equipment management and maintenance</span>
+              </div>
+              <div className="flex items-start group/feature hover:bg-white/5 rounded-xl p-1 lg:p-6 transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 text-xl group-hover/feature:scale-110 transition-transform">🚉</span>
+                <span className="text-gray-200 lg:text-lg text-base">Specialized rules for different station types and operations</span>
+              </div>
             </div>
+          </div>
+
+          {/* Implementation Guidelines */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-purple-500 to-pink-500 lg:p-4 p-3 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </span>
+              Implementation Guidelines
+            </h2>
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-4 lg:p-8 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="lg:text-2xl text-xl font-bold text-white mb-6 flex lg:flex-row flex-col gap-3 items-center">
+                  <span className="w-4 h-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mr-3 animate-pulse"></span>
+                  Documentation Requirements
+                </h3>
+                <div className="grid md:grid-cols-2 lg:gap-6 gap-3">
+                  <div className="flex items-start group/req hover:bg-white/10 rounded-lg p-1 lg:p-4 transition-all duration-300">
+                    <span className="text-purple-400 mr-4 mt-1 text-xl group-hover/req:scale-110 transition-transform duration-300">📋</span>
+                    <span className="text-gray-200 lg:text-lg text-base">All appendices must be properly signed by authorized personnel</span>
+                  </div>
+                  <div className="flex items-start group/req hover:bg-white/10 rounded-lg p-1 lg:p-4 transition-all duration-300">
+                    <span className="text-purple-400 mr-4 mt-1 text-xl group-hover/req:scale-110 transition-transform duration-300">🔐</span>
+                    <span className="text-gray-200 lg:text-lg text-base">Regular updates and maintenance of working rules</span>
+                  </div>
+                  <div className="flex items-start group/req hover:bg-white/10 rounded-lg p-1 lg:p-4 transition-all duration-300">
+                    <span className="text-purple-400 mr-4 mt-1 text-xl group-hover/req:scale-110 transition-transform duration-300">📊</span>
+                    <span className="text-gray-200 lg:text-lg text-base">Systematic monitoring and reporting procedures</span>
+                  </div>
+                  <div className="flex items-start group/req hover:bg-white/10 rounded-lg p-1 lg:p-4 transition-all duration-300">
+                    <span className="text-purple-400 mr-4 mt-1 text-xl group-hover/req:scale-110 transition-transform duration-300">⚡</span>
+                    <span className="text-gray-200 lg:text-lg text-base">Integration with modern railway control systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl p-5 text-white text-center">
+            <h3 className="lg:text-3xl text-2xl font-bold mb-4">Ready to Master Station Working Rules?</h3>
+            <p className="lg:text-xl text-base mb-8 opacity-90 max-w-3xl mx-auto">
+              Explore our comprehensive study materials and practice tests to excel in your railway examinations.
+            </p>
+            <button className="bg-white text-blue-600 lg:px-8 lg:py-4 px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 lg:text-lg text-base">
+              Start Learning Now
+            </button>
           </div>
         </div>
       </div>
 
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          @keyframes fadeIn {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          
-          @keyframes slideUp {
-            from {
-              opacity: 0;
-              transform: translateY(50px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-        `
-      }} />
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </div>
   )
 }
