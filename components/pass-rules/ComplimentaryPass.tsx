@@ -1,385 +1,337 @@
+"use client"
 import React from 'react'
 
 const ComplimentaryPass = () => {
   return (
-    <div>
-        <section className="bg-gradient-to-br from-red-50 to-pink-100 rounded-xl shadow-xl p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-red-200">
-          <div className="flex flex-col sm:flex-row items-center mb-6 sm:mb-8">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 shadow-lg">
-              <svg
-                className="w-6 h-6 sm:w-8 sm:h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                />
-              </svg>
+    <div className="min-h-screen bg-gradient-to-br from-red-900 via-pink-900 to-rose-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-red-400/20 to-pink-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-rose-400/20 to-red-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-pink-400/10 to-red-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="relative z-10 py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <div className="inline-block p-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-red-500 to-pink-600 p-3 rounded-full">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
             </div>
-            <div className="text-center sm:text-left">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-2">
-                Complimentary Card Passes
-              </h2>
-              <p className="text-red-600 font-medium text-sm sm:text-base">
-                Freedom Fighters & Widows - Special travel benefits
-              </p>
-            </div>
+            <h1 className="lg:text-5xl text-xl font-bold bg-gradient-to-r from-white via-red-100 to-pink-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              COMPLIMENTARY CARD PASSES
+            </h1>
+            <h2 className="lg:text-4xl text-xl font-semibold text-pink-300 mb-4">Freedom Fighters & Widows</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-600 mx-auto mb-6 rounded-full"></div>
+            <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Special travel benefits for freedom fighters and their widows on All Indian Railways with specific conditions and restrictions
+            </p>
           </div>
 
           {/* Introduction */}
-          <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md border border-red-200 mb-6 sm:mb-8">
-            <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-              Freedom fighters and their widows are entitled to special
-              complimentary card passes for free rail travel on All Indian
-              Railways with specific conditions and restrictions.
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 px-4 mb-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="text-center mb-6">
+              <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="lg:text-2xl text-xl font-bold text-white">Overview</h3>
+            </div>
+            <p className="text-gray-200 leading-relaxed lg:text-lg text-base">
+              Freedom fighters and their widows are entitled to special complimentary card passes for free rail travel on All Indian Railways with specific conditions and restrictions.
             </p>
           </div>
 
           {/* Travel Entitlements Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             {/* Regular Trains */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-red-500">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-red-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:scale-105">
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto group-hover:shadow-red-500/50 transition-shadow">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Regular Trains</h4>
+                <h4 className="font-bold text-white lg:text-xl text-lg">Regular Trains</h4>
               </div>
-              <div className="space-y-2 sm:space-y-3 text-gray-700">
-                <p className="text-xs sm:text-sm">
-                  <strong>Class:</strong> 1st Class/2nd AC
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Companion:</strong> Allowed in same class
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Restrictions:</strong> Any train other than
-                  Rajdhani/Shatabdi trains
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Coverage:</strong> All Indian Railways [except Metro
-                  Railway/Kolkata]
-                </p>
+              <div className="space-y-4 text-gray-200">
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🎫</span>
+                  <div>
+                    <strong className="text-white">Class:</strong> 1st Class/2nd AC
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">👥</span>
+                  <div>
+                    <strong className="text-white">Companion:</strong> Allowed in same class
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">⚠️</span>
+                  <div>
+                    <strong className="text-white">Restrictions:</strong> Any train other than Rajdhani/Shatabdi trains
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-red-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🚂</span>
+                  <div>
+                    <strong className="text-white">Coverage:</strong> All Indian Railways [except Metro Railway/Kolkata]
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Rajdhani/Shatabdi Trains */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-pink-500">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:scale-105">
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto group-hover:shadow-pink-500/50 transition-shadow">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
-                  Rajdhani/Shatabdi Trains
-                </h4>
+                <h4 className="font-bold text-white lg:text-xl text-lg">Rajdhani/Shatabdi Trains</h4>
               </div>
-              <div className="space-y-2 sm:space-y-3 text-gray-700">
-                <p className="text-xs sm:text-sm">
-                  <strong>Rajdhani:</strong> 3rd AC
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Shatabdi/Jan Shatabdi:</strong> Chair Car [CC]
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Companion:</strong> Allowed in same class
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Note:</strong> Special stamping required
-                </p>
+              <div className="space-y-4 text-gray-200">
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-pink-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🚄</span>
+                  <div>
+                    <strong className="text-white">Rajdhani:</strong> 3rd AC
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-pink-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">💺</span>
+                  <div>
+                    <strong className="text-white">Shatabdi/Jan Shatabdi:</strong> Chair Car [CC]
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-pink-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">👥</span>
+                  <div>
+                    <strong className="text-white">Companion:</strong> Allowed in same class
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">  
+                  <span className="text-pink-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🖊️</span>
+                  <div>
+                    <strong className="text-white">Note:</strong> Special stamping required
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Pass Stamping Requirements */}
-          <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 sm:p-6 border-2 border-yellow-200 mb-6 sm:mb-8">
-            <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">
-              <span className="w-6 h-6 sm:w-8 sm:h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
-                <svg
-                  className="w-3 h-3 sm:w-4 sm:h-4 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
+          <div className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 rounded-2xl shadow-2xl py-4 px-4 mb-8 text-white border border-yellow-200/20 hover:shadow-3xl transition-all duration-500 hover:scale-105">
+            <div className="text-center mb-4">
+              <div className="lg:w-16 lg:h-16 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-              </span>
-              Pass Stamping Requirements
-            </h4>
-            <div className="bg-yellow-100 rounded-lg p-3 sm:p-4 border border-yellow-300">
-              <p className="text-xs sm:text-sm italic text-gray-700">
-                &quot;Valid for travel in 3rd AC in Rajdhani trains and Chair
-                Car [CC] in Shatabdi/Jan-Shatabdi trains along with a companion
-                in same class...&quot;
+              </div>
+              <h4 className="lg:text-2xl text-xl font-bold">Pass Stamping Requirements</h4>
+            </div>
+            <div className="bg-white/20 backdrop-blur-lg rounded-xl py-4 px-2 border border-white/30">
+              <p className="lg:text-lg text-base italic text-white/90 leading-relaxed">
+                &quot;Valid for travel in 3rd AC in Rajdhani trains and Chair Car [CC] in Shatabdi/Jan-Shatabdi trains along with a companion in same class...&quot;
               </p>
             </div>
           </div>
 
           {/* Pass Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Validity */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-green-500">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:scale-105">  
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto group-hover:shadow-green-500/50 transition-shadow">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Validity</h4>
+                <h4 className="font-bold text-white lg:text-xl text-lg">Validity</h4>
               </div>
-              <div className="space-y-1 sm:space-y-2 text-gray-700">
-                <p className="text-xs sm:text-sm">
-                  <strong>Persons:</strong> Two persons (self and companion)
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Duration:</strong> Life-time basis
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Renewal:</strong> Every year
-                </p>
+              <div className="space-y-4 text-gray-200">
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">👥</span>
+                  <div>
+                    <strong className="text-white">Persons:</strong> Two persons (self and companion)
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">⏰</span>
+                  <div>
+                    <strong className="text-white">Duration:</strong> Life-time basis
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-green-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🔄</span>
+                  <div>
+                    <strong className="text-white">Renewal:</strong> Every year
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Issuance Period */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-blue-500">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:scale-105">
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto group-hover:shadow-blue-500/50 transition-shadow">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Issuance Period</h4>
+                <h4 className="font-bold text-white lg:text-xl text-lg">Issuance Period</h4>
               </div>
-              <div className="space-y-1 sm:space-y-2 text-gray-700">
-                <p className="text-xs sm:text-sm">
-                  <strong>Grant Period:</strong> One year
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Renewal:</strong> Annual renewal required
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Validity:</strong> Continuous lifetime benefit
-                </p>
+              <div className="space-y-4 text-gray-200">
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-blue-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">📅</span>
+                  <div>
+                    <strong className="text-white">Grant Period:</strong> One year
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-blue-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🔄</span>
+                  <div>
+                    <strong className="text-white">Renewal:</strong> Annual renewal required
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-blue-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">✅</span>
+                  <div>
+                    <strong className="text-white">Validity:</strong> Continuous lifetime benefit
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Issuing Authority */}
-            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-purple-500">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                    />
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300 group hover:scale-105">
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto group-hover:shadow-purple-500/50 transition-shadow">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
-                  Issuing Authority
-                </h4>
+                <h4 className="font-bold text-white lg:text-xl text-lg">Issuing Authority</h4>
               </div>
-              <div className="space-y-1 sm:space-y-2 text-gray-700">
-                <p className="text-xs sm:text-sm">
-                  <strong>Location:</strong> Divisional/Zonal Headquarters only
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Restriction:</strong> Cannot be issued at other
-                  offices
-                </p>
-                <p className="text-xs sm:text-sm">
-                  <strong>Centralized:</strong> Controlled issuance
-                </p>
+              <div className="space-y-4 text-gray-200">
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-purple-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🏢</span>
+                  <div>
+                    <strong className="text-white">Location:</strong> Divisional/Zonal Headquarters only
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-purple-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🚫</span>
+                  <div>
+                    <strong className="text-white">Restriction:</strong> Cannot be issued at other offices
+                  </div>
+                </div>
+                <div className="flex items-center group/item hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                  <span className="text-purple-400 mr-3 text-xl group-hover/item:scale-110 transition-transform">🎯</span>
+                  <div>
+                    <strong className="text-white">Centralized:</strong> Controlled issuance
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Important Notes */}
-          <div className="space-y-4 sm:space-y-6">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 sm:p-6 border-2 border-blue-200">
-              <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">
-                <span className="w-6 h-6 sm:w-8 sm:h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-3 h-3 sm:w-4 sm:h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+          <div className="space-y-6 mb-8">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                </span>
-                Important Notes
-              </h4>
-              <div className="space-y-3 sm:space-y-4 text-gray-700">
-                <div className="flex items-start">
-                  <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p className="text-sm sm:text-base">
-                    Passes are valid for lifetime but require annual renewal
-                  </p>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p className="text-sm sm:text-base">Companion facility is available in all cases</p>
+                <h4 className="text-2xl font-bold text-white">Important Notes</h4>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 text-gray-200">
+                <div className="space-y-4">
+                  <div className="flex items-start group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🔄</span>
+                    <p className="lg:text-lg text-base">Passes are valid for lifetime but require annual renewal</p>
+                  </div>
+                  <div className="flex items-start group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">👥</span>
+                    <p className="lg:text-lg text-base">Companion facility is available in all cases</p>
+                  </div>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p className="text-sm sm:text-base">Metro Railway/Kolkata is excluded from coverage</p>
-                </div>
-                <div className="flex items-start">
-                  <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <p className="text-sm sm:text-base">
-                    Special stamping is mandatory for Rajdhani/Shatabdi travel
-                  </p>
+                <div className="space-y-4">
+                  <div className="flex items-start group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🚫</span>
+                    <p className="lg:text-lg text-base">Metro Railway/Kolkata is excluded from coverage</p>
+                  </div>
+                  <div className="flex items-start group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🖊️</span>
+                    <p className="lg:text-lg text-base">Special stamping is mandatory for Rajdhani/Shatabdi travel</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 sm:p-6 border-2 border-green-200">
-              <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center">
-                <span className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                  <svg
-                    className="w-3 h-3 sm:w-4 sm:h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+            <div className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 rounded-2xl shadow-2xl py-4 px-4 text-white border border-green-200/20 hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="text-center mb-4">
+                <div className="lg:w-16 lg:h-16 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center shadow-lg mb-4 mx-auto">
+                  <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                </span>
-                Application Process
-              </h4>
-              <div className="space-y-3 sm:space-y-4 text-gray-700">
-                <div className="flex items-center">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
-                    1
-                  </div>
-                  <span className="text-sm sm:text-base">
-                    Submit application with freedom fighter certificate
-                  </span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
-                    2
+                <h4 className="lg:text-4xl text-2xl font-bold">Application Process</h4>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-all duration-300 text-white font-bold">
+                      1
+                    </div>
+                    <span className="lg:text-lg text-base">Submit application with freedom fighter certificate</span>
                   </div>
-                  <span className="text-sm sm:text-base">Visit Divisional/Zonal Headquarters only</span>
+                  <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-all duration-300 text-white font-bold">
+                      2
+                    </div>
+                    <span className="lg:text-lg text-base">Visit Divisional/Zonal Headquarters only</span>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
-                    3
+                <div className="space-y-4">
+                  <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-all duration-300 text-white font-bold">
+                      3
+                    </div>
+                    <span className="lg:text-lg text-base">Collect pass with proper stamping</span>
                   </div>
-                  <span className="text-sm sm:text-base">Collect pass with proper stamping</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 text-white font-bold text-xs sm:text-sm">
-                    4
+                  <div className="flex items-center group hover:transform hover:translate-x-2 transition-all duration-300">
+                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-all duration-300 text-white font-bold">
+                      4
+                    </div>
+                    <span className="lg:text-lg text-base">Renew annually as required</span>
                   </div>
-                  <span className="text-sm sm:text-base">Renew annually as required</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Bottom Info Bar */}
-          <div className="mt-6 sm:mt-8 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl p-4 sm:p-6 text-white">
-            <div className="flex flex-col sm:flex-row items-center justify-between">
-              <div className="flex items-center mb-4 sm:mb-0">
-                <svg
-                  className="w-6 h-6 sm:w-8 sm:h-8 mr-3 sm:mr-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <div>
-                  <h4 className="text-base sm:text-lg font-semibold">
-                    Freedom Fighter Pass Assistance
-                  </h4>
-                  <p className="text-red-100 text-sm sm:text-base">
-                    Contact Divisional/Zonal Headquarters for freedom fighter
-                    pass applications
-                  </p>
-                </div>
-              </div>
-              <button className="bg-white text-red-600 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-red-50 transition-colors text-sm sm:text-base">
-                Apply Now
-              </button>
-            </div>
-          </div>
-        </section>
+          
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </div>
   )
 }
