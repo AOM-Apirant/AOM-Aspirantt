@@ -62,20 +62,20 @@ const RSPassRules = () => {
         <div className="bg-gray-50 px-3 sm:px-6 py-2 sm:py-3 border-t border-gray-200">
           <button
             onClick={onToggle}
-            className={`w-full ${gradientClass.replace('from-', 'bg-').replace(' to-', ' hover:bg-')} text-white px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 flex items-center justify-center gap-1 sm:gap-2 font-medium text-sm sm:text-base`}
+            className={`w-full ${gradientClass.replace('from-', 'bg-').replace(' to-', ' hover:bg-')} text-yellow-100 font-bold px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 flex items-center justify-center gap-1 sm:gap-2 text-sm sm:text-base shadow-lg hover:shadow-xl border-2 border-yellow-200/50 backdrop-blur-sm`}
           >
             {isExpanded ? (
               <>
-                <span>Show Less</span>
-                <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                <span className="text-yellow-100 font-extrabold drop-shadow-lg">Show Less</span>
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-100 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 15l7-7 7 7" />
                 </svg>
               </>
             ) : (
               <>
-                <span>Show More</span>
-                <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <span className="text-yellow-100 font-extrabold drop-shadow-lg">Show More</span>
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-100 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
                 </svg>
               </>
             )}
