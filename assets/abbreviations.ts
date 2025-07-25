@@ -379,6 +379,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       acronym: "IRSSE",
       fullForm: "Indian Railway Service of Signal Engineers",
     },
+    { acronym: "IRTMM", 
+      fullForm: "Indian Railway Track Machine Manual",
+      explanation: "To provide track maintenance and repair services to the Indian Railways.",
+      reference: "IRTMM - 2019"
+    },
+    { acronym: "IRTRD", fullForm: "Implementation of Regulatory in Traction Distribution" },
     { acronym: "IRTS", fullForm: "Indian Railway Traffic Service" },
     {
       acronym: "IRWCMS",

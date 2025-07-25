@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import ListOfRules from '@/components/da-rules/ListOfRules'
+import Link from 'next/link'
 
 const RSDARules = () => {
   return (
@@ -169,6 +170,38 @@ const RSDARules = () => {
 
           {/* List of Rules Component */}
           <ListOfRules />
+
+          {/* Download PDF Section */}
+          <div className="mt-16 mb-8">
+            <div className="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 rounded-2xl shadow-2xl p-8 text-white border border-emerald-200/20 hover:shadow-3xl transition-all duration-500 hover:scale-105">
+              <div className="text-center">
+                <div className="inline-block p-4 bg-white/20 rounded-full mb-6 backdrop-blur-sm">
+                  <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 className="lg:text-3xl text-2xl font-bold mb-4 bg-gradient-to-r from-white to-emerald-100 bg-clip-text text-transparent">
+                RAILWAY SERVANTS (DISCIPLINE AND APPEAL) RULES 1968
+                </h3>
+                <p className="lg:text-lg text-base text-emerald-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                  Get the complete Railway Servants (Discipline and Appeal) Rules, 1968 document in PDF format for offline reference and detailed study.
+                </p>
+                <Link 
+                  href="/Railway Servants DA Rules 1968.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-8 py-4 bg-white text-emerald-600 font-bold lg:text-lg text-base rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group"
+                >
+                  <svg className="w-6 h-6 mr-3 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download PDF
+                  
+                </Link>
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

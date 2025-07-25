@@ -22,6 +22,7 @@ import SplitPass from "@/components/pass-rules/SplitPass";
 import OtherNotes from "@/components/pass-rules/OtherNotes";
 import GMPowers from "@/components/pass-rules/GMPowers";
 import PassLevels from "@/components/pass-rules/PassLevels";
+import Link from "next/link";
 
 const RSPassRules = () => {
   const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({});
@@ -320,6 +321,51 @@ const RSPassRules = () => {
         >
           <PassLevels />
         </SectionWrapper>
+
+        {/* Download PDF Section */}
+        <div className="mt-8 sm:mt-12 mb-6 sm:mb-8">
+          <div className="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8">
+              <div className="text-center">
+                <div className="mb-4 sm:mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white/20 rounded-full mb-4">
+                    <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 drop-shadow-lg">
+                    View Complete Pass Rules
+                  </h3>
+                  <p className="text-white/90 text-sm sm:text-base mb-6 max-w-md mx-auto">
+                    Open the complete Railway Servants Pass Rules, 1986 document in PDF format
+                  </p>
+                </div>
+                
+                <Link
+                  href="/Railway Servants Pass Rules 1986.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 border-2 border-white/20 backdrop-blur-sm"
+                  onClick={(e) => {
+                    // For mobile devices, try to open PDF inline
+                    if (typeof window !== 'undefined' && /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                      e.preventDefault();
+                      window.open('/Railway Servants Pass Rules 1986.pdf', '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                >
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span className="text-sm sm:text-base">Download PDF</span>
+                  
+                </Link>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
         
       </div>
     </div>

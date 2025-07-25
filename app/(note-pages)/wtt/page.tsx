@@ -12,10 +12,10 @@ import Weighbridges from '@/components/wtt/Weighbridges'
 import TimeTabling from '@/components/wtt/TimeTabling'
 
 const WTT = () => {
-  const handleDownloadWTT = () => {
+  const handleDownloadWTT = (division: string, filename: string) => {
     const link = document.createElement('a')
-    link.href = '/wttpdfs/WTT 79 SC DIVISION.pdf'
-    link.download = 'WTT 79 SC DIVISION.pdf'
+    link.href = `/wttpdfs/${filename}`
+    link.download = filename
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -24,7 +24,7 @@ const WTT = () => {
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
     if (isMobile) {
       setTimeout(() => {
-        window.open('/wttpdfs/WTT 79 SC DIVISION.pdf', '_blank')
+        window.open(`/wttpdfs/${filename}`, '_blank')
       }, 1000) // Wait 1 second for download to start
     }
   }
@@ -77,11 +77,114 @@ const WTT = () => {
               </div>
               
               <button
-                onClick={handleDownloadWTT}
-                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-lg hover:shadow-xl"
+                onClick={() => handleDownloadWTT('SC', 'WTT 79 SC DIVISION.pdf')}
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-lg hover:shadow-xl"
               >
                 <Download className="w-6 h-6 mr-3 group-hover:animate-bounce" />
-                Download WTT
+                Download WTT 79 SC DIVISION
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional WTT Divisions */}
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* NED Division */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-r from-green-500 to-blue-600 p-4 text-white">
+              <h3 className="text-lg font-bold text-center">NED Division</h3>
+            </div>
+            <div className="p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-sm text-gray-600 mb-4">Nanded Division</p>
+              <button
+                onClick={() => handleDownloadWTT('NED', 'WTT 79 NED DIVISION.pdf')}
+                className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white font-semibold py-4 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-md hover:shadow-lg text-sm"
+              >
+                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                Download WTT 79 NED DIVISION
+              </button>
+            </div>
+          </div>
+
+          {/* HYD Division */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-purple-200 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-r from-purple-500 to-pink-600 p-4 text-white">
+              <h3 className="text-lg font-bold text-center">HYD Division</h3>
+            </div>
+            <div className="p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-sm text-gray-600 mb-4">Hyderabad Division</p>
+              <button
+                onClick={() => handleDownloadWTT('HYD', 'WTT 79 HYD DIVISION.pdf')}
+                className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-semibold py-4 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-md hover:shadow-lg text-sm"
+              >
+                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                Download WTT 79 HYD DIVISION
+              </button>
+            </div>
+          </div>
+
+          {/* BZA Division */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-orange-200 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-r from-orange-500 to-red-600 p-4 text-white">
+              <h3 className="text-lg font-bold text-center">BZA Division</h3>
+            </div>
+            <div className="p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-sm text-gray-600 mb-4">Vijayawada Division</p>
+              <button
+                onClick={() => handleDownloadWTT('BZA', 'WTT 79 BZA DIVISION.pdf')}
+                className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-semibold py-4 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-md hover:shadow-lg text-sm"
+              >
+                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                Download WTT 79 BZA DIVISION
+              </button>
+            </div>
+          </div>
+
+          {/* GTL Division */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-teal-200 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-r from-teal-500 to-cyan-600 p-4 text-white">
+              <h3 className="text-lg font-bold text-center">GTL Division</h3>
+            </div>
+            <div className="p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-sm text-gray-600 mb-4">Guntakal Division</p>
+              <button
+                onClick={() => handleDownloadWTT('GTL', 'WTT 79 GTL DIVISION.pdf')}
+                className="bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white font-semibold py-4 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-md hover:shadow-lg text-sm"
+              >
+                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                Download WTT 79 GTL DIVISION
+              </button>
+            </div>
+          </div>
+
+          {/* GNT Division */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-indigo-200 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-4 text-white">
+              <h3 className="text-lg font-bold text-center">GNT Division</h3>
+            </div>
+            <div className="p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <FileText className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-sm text-gray-600 mb-4">Guntur Division</p>
+              <button
+                onClick={() => handleDownloadWTT('GNT', 'WTT 79 GNT DIVISION.pdf')}
+                className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white font-semibold py-4 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group shadow-md hover:shadow-lg text-sm"
+              >
+                <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                Download WTT 79 GNT DIVISION
               </button>
             </div>
           </div>

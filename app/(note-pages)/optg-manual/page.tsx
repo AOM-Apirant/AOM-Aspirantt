@@ -1,3 +1,4 @@
+"use client"
 import StationYard from '@/components/optg-manual/StationYard'
 import RegisterPreserve from '@/components/optg-manual/RegisterPreserve'
 import Punctuality from '@/components/optg-manual/Punctuality'
@@ -12,8 +13,27 @@ import NumberingOfTrains from '@/components/optg-manual/NumberingOfTrains'
 import CoachingLocomotives from '@/components/optg-manual/CoachingLocomotives'
 import CoachingStock from '@/components/optg-manual/CoachingStock'
 import FreightTrainOperations from '@/components/optg-manual/FreightTrainOperations'
+import { Download, FileText } from 'lucide-react'
 
 const OperatingManual = () => {
+  const handleDownloadPDF = () => {
+    // Check if it's a mobile device
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+      // For mobile devices, open PDF directly in browser
+      window.open('/Operating Manual SCR 2023.pdf', '_blank');
+    } else {
+      // For desktop devices, trigger download
+      const link = document.createElement('a');
+      link.href = '/Operating Manual SCR 2023.pdf';
+      link.download = 'Operating Manual SCR 2023.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Hero Section */}
@@ -95,6 +115,37 @@ const OperatingManual = () => {
         <FreightTrainOperations />
       </div>
 
+      {/* Download PDF Section */}
+      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12">
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <FileText className="w-12 h-12 text-yellow-300" />
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Download Complete Operating Manual SCR 2023
+              </h2>
+            </div>
+            
+            <p className="text-xl text-indigo-100 mb-8 leading-relaxed">
+              Get the complete Operating Manual SCR 2023 document. 
+              Essential resource for railway personnel involved in train operations.
+            </p>
+
+            <button
+              onClick={handleDownloadPDF}
+              className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 rounded-lg shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 active:scale-95"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative flex items-center space-x-3">
+                <Download className="w-6 h-6 animate-pulse" />
+                <span>Download PDF</span>
+              </div>
+            </button>
+
+            
+          </div>
+        </div>
+      </div>
       
     </div>
   )
