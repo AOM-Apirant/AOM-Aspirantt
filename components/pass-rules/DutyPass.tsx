@@ -190,8 +190,8 @@ const DutyPass = () => {
                           PLPM: 14
                         </div>
                       </div>
-                      <div className="mt-3 lg:mt-0 lg:ml-6">
-                        <span className="bg-gradient-to-r from-yellow-600 to-amber-700 text-white px-4 py-2 rounded-full font-semibold lg:text-base text-sm shadow-lg">
+                      <div className="w-full flex justify-center mt-3 lg:mt-0 lg:ml-6 lg:flex-none lg:w-auto">
+                        <span className="bg-gradient-to-r from-yellow-600 to-amber-700 text-white px-4 py-2 rounded-full font-semibold text-sm lg:text-base shadow-lg text-center block whitespace-normal break-words max-w-full">
                           Bronze/First Class &apos;A&apos; Pass (1-AC authority)
                         </span>
                       </div>
@@ -209,7 +209,7 @@ const DutyPass = () => {
                           PLPM: 13
                         </div>
                       </div>
-                      <div className="mt-3 lg:mt-0 lg:ml-6">
+                      <div className="w-full flex justify-center mt-3 lg:mt-0 lg:ml-6 lg:flex-none lg:w-auto">
                         <span className="bg-gradient-to-r from-yellow-600 to-amber-700 text-white px-4 py-2 rounded-full font-semibold lg:text-base text-sm shadow-lg">
                           Bronze/First Class &apos;A&apos; Pass (1-AC authority)
                         </span>
@@ -228,7 +228,7 @@ const DutyPass = () => {
                           PLPM: 12
                         </div>
                       </div>
-                      <div className="mt-3 lg:mt-0 lg:ml-6">
+                      <div className="w-full flex justify-center mt-3 lg:mt-0 lg:ml-6 lg:flex-none lg:w-auto">
                         <span className="bg-gradient-to-r from-yellow-600 to-amber-700 text-white px-4 py-2 rounded-full font-semibold lg:text-base text-sm shadow-lg">
                           Bronze/First Class &apos;A&apos; Pass (1-AC authority)
                         </span>
@@ -381,7 +381,7 @@ const DutyPass = () => {
             {/* Left Column - Special Notes */}
             <div className="space-y-6">
               {/* Special Note */}
-              <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-red-400/30 hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-red-400/30 hover:shadow-xl transition-all duration-300 group">
                 <h3 className="lg:text-xl text-lg font-bold text-white mb-4 flex flex-col lg:flex-row gap-4 items-center">
                   <span className="bg-gradient-to-r from-red-500 to-pink-600 p-2 rounded-full mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -427,7 +427,7 @@ const DutyPass = () => {
             {/* Right Column - Application Process */}
             <div className="space-y-6">
               {/* Application Process */}
-              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300 group">
                 <h3 className="lg:text-xl text-lg font-bold text-white mb-4 flex flex-col lg:flex-row gap-4 items-center">
                   <span className="bg-gradient-to-r from-green-500 to-emerald-600 p-2 rounded-full mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <svg className="lgw-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

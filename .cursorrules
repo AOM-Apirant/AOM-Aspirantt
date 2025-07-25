@@ -1,0 +1,222 @@
+# AOM Aspirant - Cursor Rules
+
+## Project Overview
+
+This is a Next.js 15 application for AOM (Assistant Operations Manager) aspirants. It's a learning platform with authentication, progress tracking, and comprehensive study materials.
+
+## Technology Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Database**: MongoDB with Mongoose
+- **Authentication**: NextAuth.js v5
+- **UI Components**: Lucide React icons, Framer Motion
+- **Validation**: Zod schemas
+- **Email**: Nodemailer
+
+## Project Structure
+
+```text
+aom-aspirant/
+├── app/ # Next.js App Router pages
+│ ├── (all-pages)/ # Public pages (about, contact, etc.)
+│ ├── (note-pages)/ # Study material pages
+│ ├── (pdf-pages)/ # PDF viewer pages
+│ ├── api/ # API routes
+│ └── quiz/ # Quiz functionality
+├── components/ # Reusable React components
+├── assets/ # Static data and images
+├── lib/ # Utility functions and configurations
+├── models/ # MongoDB/Mongoose models
+└── schemas/ # Zod validation schemas
+```
+
+## Coding Standards
+
+### TypeScript
+
+- Use strict TypeScript configuration
+- Always define proper types for props, state, and API responses
+- Use interface for object shapes, type for unions/primitives
+- Prefer `const` over `let`, avoid `var`
+
+### React/Next.js
+
+- Use functional components with hooks
+- Follow Next.js 15 App Router conventions
+- Use `use client` directive only when necessary
+- Implement proper error boundaries
+- Use Next.js Image component for images
+
+### Styling
+
+- Use Tailwind CSS classes for styling
+- Follow mobile-first responsive design
+- Use CSS custom properties for theme values
+- Maintain consistent spacing and typography
+
+### File Naming
+
+- Use kebab-case for file and folder names
+- Use PascalCase for component names
+- Use camelCase for variables and functions
+- Use UPPER_SNAKE_CASE for constants
+
+### Component Structure
+
+```typescript
+// Component template
+import React from "react";
+import { ComponentProps } from "./types";
+
+interface ComponentNameProps {
+  // Define props here
+}
+
+export default function ComponentName({ prop1, prop2 }: ComponentNameProps) {
+  // Component logic here
+
+  return <div className="tailwind-classes">{/* JSX content */}</div>;
+}
+```
+
+### API Routes
+
+- Use Next.js API routes in `app/api/`
+- Implement proper error handling
+- Use HTTP status codes correctly
+- Validate input with Zod schemas
+- Return consistent JSON responses
+
+### Database
+
+- Use Mongoose models for MongoDB operations
+- Implement proper error handling for database operations
+- Use transactions when necessary
+- Follow MongoDB best practices
+
+## Specific Guidelines
+
+### Authentication
+
+- Use NextAuth.js for authentication
+- Implement proper session management
+- Secure API routes with authentication middleware
+- Handle user registration and login properly
+
+### Progress Tracking
+
+- Implement user progress tracking for study materials
+- Store progress data in MongoDB
+- Provide progress visualization
+
+### PDF Handling
+
+- Use proper PDF viewer components
+- Implement PDF navigation and search
+- Handle large PDF files efficiently
+
+### Quiz System
+
+- Implement interactive quiz functionality
+- Track quiz scores and progress
+- Provide immediate feedback
+
+### Email Functionality
+
+- Use Nodemailer for email sending
+- Implement proper email templates
+- Handle email errors gracefully
+
+## Performance Guidelines
+
+- Implement proper loading states
+- Use Next.js Image optimization
+- Implement code splitting where appropriate
+- Optimize bundle size
+- Use proper caching strategies
+
+## Security Guidelines
+
+- Validate all user inputs
+- Sanitize data before database operations
+- Implement proper CORS policies
+- Use environment variables for sensitive data
+- Follow OWASP security guidelines
+
+## Testing
+
+- Write unit tests for utility functions
+- Test API routes thoroughly
+- Implement integration tests for critical flows
+- Use proper test data and mocks
+
+## Deployment
+
+- Use environment variables for configuration
+- Implement proper build optimization
+- Set up monitoring and logging
+- Configure proper error handling
+
+## Common Patterns
+
+### Form Handling
+
+```typescript
+import { useState } from "react";
+import { z } from "zod";
+
+const formSchema = z.object({
+  // Define schema
+});
+
+export default function FormComponent() {
+  const [formData, setFormData] = useState({});
+  const [errors, setErrors] = useState({});
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const validatedData = formSchema.parse(formData);
+      // Submit logic
+    } catch (error) {
+      // Error handling
+    }
+  };
+
+  return <form onSubmit={handleSubmit}>{/* Form fields */}</form>;
+}
+```
+
+### API Route Pattern
+
+```typescript
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
+
+const apiSchema = z.object({
+  // Define schema
+});
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const validatedData = apiSchema.parse(body);
+
+    // Process data
+
+    return NextResponse.json({ success: true, data });
+  } catch (error) {
+    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+  }
+}
+```
+
+## Notes
+
+- This is a English Language learning platform for AOM aspirants
+- Focus on user experience and accessibility
+- Ensure content is properly organized and searchable
+- Implement proper navigation between study materials
+- Consider offline functionality for study materials
