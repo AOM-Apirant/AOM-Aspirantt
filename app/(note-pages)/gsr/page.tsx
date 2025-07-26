@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
-import GSRChapters from '@/components/gsr/GSRChapters'
 import { Building2, Calendar, FileText, Shield, Award, Download } from 'lucide-react'
-import GSRAppendix from '@/components/gsr/GSRAppendix'
+import Chapters from '@/components/gsr/Chapters'
+import Appendix from '@/components/gsr/Appendix'
 
 const GSRNotes = () => {
   const handleDownloadPDF = () => {
@@ -99,28 +99,27 @@ const GSRNotes = () => {
       </div>
 
       {/* GSR Chapters Component */}
-      <GSRChapters />
-      <GSRAppendix />
-
+      <Chapters />
+      <Appendix />
       {/* Download PDF Section */}
       <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12">
-            <div className="flex items-center justify-center space-x-3 mb-6">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 md:p-12">
+            <div className="flex flex-col gap-4 items-center justify-center space-x-3 mb-6">
               <FileText className="w-12 h-12 text-yellow-300" />
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+              <h2 className="lg:text-3xl text-2xl font-bold text-white">
                 Download Complete G&SR Document
               </h2>
             </div>
             
-            <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+            <p className="lg:text-xl text-base text-blue-100 mb-8 leading-relaxed">
               Get the complete Digital SCR G&SR 2020 document with all amendments up to AS 21. 
               Perfect for offline study and reference.
             </p>
 
             <button
               onClick={handleDownloadPDF}
-              className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 rounded-lg shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 active:scale-95"
+              className="group relative inline-flex items-center justify-center px-12 py-4 text-lg font-medium text-white bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 rounded-lg shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative flex items-center space-x-3">

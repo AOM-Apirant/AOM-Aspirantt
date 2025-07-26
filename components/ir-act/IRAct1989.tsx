@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { ChevronRight, BookOpen, FileText, Users, Shield, Settings, Gavel, Train, Building, Wrench, Scale, Clock, AlertTriangle, CheckCircle, Star, Car, MapPin, Database, Circle, ArrowRight, CheckCircle2, Info, AlertCircle, Zap, Target, Award, Heart, Globe, Lock, Eye, Handshake, Briefcase, Home, Truck, Package, Route, Hammer, Search, Phone, Mail, Calendar, User, Key, Lightbulb, Rocket, ShieldCheck, TrendingUp, Users2, Settings2, Globe2 } from 'lucide-react'
+import { BookOpen, FileText, Users, Shield, Settings, Gavel, Train, Building, Wrench, Scale, Clock, AlertTriangle, CheckCircle, Star, Car, MapPin, Database, Circle, ArrowRight, CheckCircle2, Info, AlertCircle, Zap, Target, Award, Heart, Globe, Lock, Eye, Handshake, Briefcase, Home, Truck, Package, Route, Hammer, Search, Phone, Mail, Calendar, User, Key, Lightbulb, Rocket, ShieldCheck, TrendingUp, Users2, Settings2, Globe2 } from 'lucide-react'
 
 const IRAct1989 = () => {
   const chapters = [
@@ -463,28 +463,7 @@ const IRAct1989 = () => {
     <Rocket className="w-3 h-3" key="rocket-2" />
   ];
 
-  const getColorClasses = (color: string) => {
-    const colorMap: { [key: string]: string } = {
-      blue: "from-blue-500 to-blue-600",
-      green: "from-green-500 to-green-600",
-      purple: "from-purple-500 to-purple-600",
-      red: "from-red-500 to-red-600",
-      orange: "from-orange-500 to-orange-600",
-      indigo: "from-indigo-500 to-indigo-600",
-      teal: "from-teal-500 to-teal-600",
-      pink: "from-pink-500 to-pink-600",
-      cyan: "from-cyan-500 to-cyan-600",
-      emerald: "from-emerald-500 to-emerald-600",
-      amber: "from-amber-500 to-amber-600",
-      lime: "from-lime-500 to-lime-600",
-      rose: "from-rose-500 to-rose-600",
-      violet: "from-violet-500 to-violet-600",
-      sky: "from-sky-500 to-sky-600",
-      stone: "from-stone-500 to-stone-600",
-      slate: "from-slate-500 to-slate-600"
-    };
-    return colorMap[color] || "from-gray-500 to-gray-600";
-  };
+  
 
   const getBgColorClasses = (color: string) => {
     const colorMap: { [key: string]: string } = {
@@ -543,7 +522,7 @@ const IRAct1989 = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4">
+      <div className="relative z-10 py-8 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-10">
@@ -564,71 +543,63 @@ const IRAct1989 = () => {
           {/* Statistics Section */}
           <div className="grid md:grid-cols-4 gap-4 mb-10">
             <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-2xl p-6 text-white text-center hover:scale-105 transition-all duration-300 group">
-              <div className="bg-white/20 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
-                <BookOpen className="w-8 h-8" />
+              <div className="bg-white/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
+                <BookOpen className="lg:w-8 lg:h-8 w-6 h-6" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">{chapters.length}</h3>
+              <h3 className="lg:text-3xl text-xl font-bold mb-2">{chapters.length}</h3>
               <p className="text-blue-200">Chapters</p>
             </div>
 
             <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-2xl shadow-2xl p-6 text-white text-center hover:scale-105 transition-all duration-300 group">
-              <div className="bg-white/20 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
-                <FileText className="w-8 h-8" />
+              <div className="bg-white/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
+                <FileText className="lg:w-8 lg:h-8 w-6 h-6" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">{totalSections}</h3>
+              <h3 className="lg:text-3xl text-xl font-bold mb-2">{totalSections}</h3>
               <p className="text-green-200">Sections</p>
             </div>
 
             <div className="bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl shadow-2xl p-6 text-white text-center hover:scale-105 transition-all duration-300 group">
-              <div className="bg-white/20 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
-                <Shield className="w-8 h-8" />
+              <div className="bg-white/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
+                <Shield className="lg:w-8 lg:h-8 w-6 h-6" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">24/7</h3>
+              <h3 className="lg:text-3xl text-xl font-bold mb-2">24/7</h3>
               <p className="text-purple-200">Safety</p>
             </div>
 
             <div className="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl shadow-2xl p-6 text-white text-center hover:scale-105 transition-all duration-300 group">
-              <div className="bg-white/20 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
-                <Gavel className="w-8 h-8" />
+              <div className="bg-white/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all">
+                <Gavel className="lg:w-8 lg:h-8 w-6 h-6" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">100%</h3>
+              <h3 className="lg:text-3xl text-xl font-bold mb-2">100%</h3>
               <p className="text-red-200">Compliance</p>
             </div>
           </div>
 
           {/* Chapters Grid */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {chapters.map((chapter, index) => (
               <div key={index} className="group">
                 <div className={`bg-gradient-to-br ${getBgColorClasses(chapter.color)} backdrop-blur-lg rounded-2xl shadow-2xl border hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]`}>
                   {/* Chapter Header */}
-                  <div className="p-6 border-b border-white/20">
+                  <div className="p-3 border-b border-white/20">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-4">
-                        <div className={`p-4 rounded-xl ${getIconBgClasses(chapter.color)} backdrop-blur-sm`}>
+                      <div className="flex flex-col gap-3 items-center">
+                        <div className={`lg:p-4 p-3 rounded-full ${getIconBgClasses(chapter.color)} backdrop-blur-sm`}>
                           {chapter.icon}
                         </div>
-                        <div>
-                          <h3 className="text-2xl font-bold text-white mb-2">{chapter.title}</h3>
-                          <p className="text-gray-300 text-sm mb-2">{chapter.description}</p>
-                          <p className="text-sm text-gray-400">
-                            Total {chapter.total} Sections
+                        <div className='flex flex-col items-center justify-center gap-1 text-center'>
+                          <h3 className="lg:text-2xl text-xl font-bold text-white text-center mb-2">{chapter.title}</h3>
+                          <p className="text-gray-300 text-sm mb-2 text-center">{chapter.description}</p>
+                          <p className="lg:text-sm text-xs text-gray-400 text-center">
+                            Total : {chapter.total} Sections
                           </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <span className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium backdrop-blur-sm">
-                          {chapter.total} Sections
-                        </span>
-                        <div className={`p-2 rounded-full bg-gradient-to-r ${getColorClasses(chapter.color)}`}>
-                          <ChevronRight className="w-5 h-5 text-white transition-transform group-hover:translate-x-1" />
                         </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Sections List */}
-                  <div className="p-6">
+                  <div className="p-3">
                     <div className="grid md:grid-cols-2 gap-3">
                       {chapter.sections.map((section, sectionIndex) => (
                         <div key={sectionIndex} className="flex items-start space-x-3 p-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 group/section">
@@ -646,14 +617,14 @@ const IRAct1989 = () => {
           </div>
 
           {/* Additional Information */}
-          <div className="mt-12 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-white/20">
+          <div className="mt-12 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl p-4 shadow-2xl border border-white/20">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center justify-center">
               <span className="w-4 h-4 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full mr-3 animate-pulse"></span>
               Important Notes
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-emerald-400/30">
-                <h4 className="font-semibold mb-4 text-white flex items-center">
+              <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-emerald-400/30">
+                <h4 className="font-semibold mb-4 text-white flex items-center justify-center">
                   <CheckCircle className="w-5 h-5 mr-2 text-emerald-400" />
                   Benefits of the Act
                 </h4>
@@ -676,8 +647,8 @@ const IRAct1989 = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-blue-400/30">
-                <h4 className="font-semibold mb-4 text-white flex items-center">
+              <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-blue-400/30">
+                <h4 className="font-semibold mb-4 text-white flex items-center justify-center">
                   <AlertTriangle className="w-5 h-5 mr-2 text-blue-400" />
                   Application
                 </h4>
@@ -704,9 +675,9 @@ const IRAct1989 = () => {
           </div>
 
           {/* Footer Note */}
-          <div className="mt-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-gray-700/50">
+          <div className="mt-8 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-lg rounded-lg p-6 shadow-2xl border border-gray-700/50">
             <div className="text-center">
-              <p className="text-lg text-gray-300 mb-2">
+              <p className="lg:text-lg text-base text-gray-300 mb-2">
                 This Act contains all necessary provisions for comprehensive management and regulation of Indian Railways
               </p>
               <p className="text-sm text-gray-400">
