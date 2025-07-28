@@ -634,8 +634,8 @@ const Rajabhasha = () => {
                      
                   </button>
                   {openAccordion === 1 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-indigo-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-indigo-400">
                         <p className="text-gray-200 text-sm leading-relaxed">
                           <strong>Rajbhasha</strong> means &quot;Official Language&quot; and refers to the language to be used for official transactions. According to constitutional provisions, Hindi in Devanagari script is the official language of the Union, while English serves as an associate language. This dual-language system ensures effective communication while promoting Hindi as the national language.
                         </p>
@@ -652,8 +652,9 @@ const Rajabhasha = () => {
                     onClick={() => handleAccordionClick(2)}
                     className="flex items-center justify-between py-4 px-4 lg:px-6 lg:py-6 cursor-pointer hover:bg-indigo-500/10 transition-all duration-300 w-full text-left"
                   >
-                                          <h3 className="lg:text-lg text-sm font-normal text-white flex flex-col lg:flex-row gap-4 items-center">
+                      <h3 className="lg:text-lg text-sm font-normal text-white flex flex-col lg:flex-row gap-4 items-center">
                         <span className="hidden lg:flex w-6 h-6 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-full items-center justify-center text-sm font-bold mr-3">2</span>
+                        
                         What are the constitutional provisions for official language?
                       </h3>
                       <svg className={`w-5 h-5 text-white transform transition-all duration-500 ease-in-out group-hover:scale-110 ${openAccordion === 2 ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -662,8 +663,8 @@ const Rajabhasha = () => {
                      
                   </button>
                   {openAccordion === 2 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-blue-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-blue-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <p><strong>Article 343(1):</strong> Hindi in Devanagari script is the Official Language of the Union.</p>
                           <p><strong>Article 343(2):</strong> International form of Indian Numerals shall be used for official purposes.</p>
@@ -694,8 +695,8 @@ const Rajabhasha = () => {
                      
                   </button>
                   {openAccordion === 3 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-green-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-green-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <div>
                             <p className="font-semibold text-green-300 mb-1">Region A (K Kshetra):</p>
@@ -732,8 +733,8 @@ const Rajabhasha = () => {
                        </svg>
                   </button>
                   {openAccordion === 4 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-purple-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-purple-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <p><strong>Section 3(3)</strong> mandates bilingual use in important documents where both Hindi and English are compulsory. Hindi should be bold and used before or above English.</p>
                           <div className="space-y-2">
@@ -769,8 +770,8 @@ const Rajabhasha = () => {
                        </svg>
                   </button>
                   {openAccordion === 5 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-orange-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-orange-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <div>
                             <p className="font-semibold text-orange-300 mb-2">Personal Pay Benefits:</p>
@@ -813,8 +814,8 @@ const Rajabhasha = () => {
                        </svg>
                   </button>
                   {openAccordion === 6 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-teal-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-teal-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <div className="grid md:grid-cols-3 gap-4">
                             <div className="bg-teal-500/10 rounded-lg p-3">
@@ -854,8 +855,8 @@ const Rajabhasha = () => {
                        </svg>
                   </button>
                   {openAccordion === 7 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-indigo-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-indigo-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
@@ -904,8 +905,8 @@ const Rajabhasha = () => {
                        </svg>
                   </button>
                   {openAccordion === 8 && (
-                    <div className="px-6 pb-6 animate-fade-in">
-                      <div className="bg-white/5 rounded-lg p-4 border-l-4 border-pink-400">
+                    <div className="px-2 pb-6 animate-fade-in">
+                      <div className="bg-white/5 rounded-sm p-4 border-t-2 border-pink-400">
                         <div className="space-y-3 text-gray-200 text-sm">
                           <div className="grid md:grid-cols-2 gap-4">
                             <div>
