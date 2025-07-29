@@ -35,7 +35,7 @@ const Commercial = () => {
           </div>
 
           {/* Revenue Management Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 px-4 mb-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-4 px-2 mb-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col lg:flex-row gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-green-500 to-emerald-500 lg:p-4 p-2 rounded-full mr-4 shadow-lg">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,26 +45,26 @@ const Commercial = () => {
               Revenue Management
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-xl font-bold text-white mb-3 flex items-center">
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl px-2 py-4 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-white mb-3 flex flex-col gap-4  items-center">
                   <span className="w-3 h-3 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
                   Passenger Revenue
                 </h3>
                 <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                    <span className="text-green-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🎫</span>
                     <span>Ticket sales and reservations</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                    <span className="text-green-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">📅</span>
                     <span>Season ticket management</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                    <span className="text-green-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">💰</span>
                     <span>Concession and discount schemes</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-green-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                    <span className="text-green-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">↩️</span>
                     <span>Refund and cancellation policies</span>
                   </li>
                 </ul>
@@ -76,20 +76,20 @@ const Commercial = () => {
                   Freight Revenue
                 </h3>
                 <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🚛</span>
                     <span>Goods transportation charges</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">📦</span>
                     <span>Container and parcel services</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">💎</span>
                     <span>Special freight rates</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-blue-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">⏰</span>
                     <span>Demurrage and wharfage charges</span>
                   </li>
                 </ul>
@@ -101,20 +101,20 @@ const Commercial = () => {
                   Ancillary Revenue
                 </h3>
                 <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-start">
-                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-purple-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🎫</span>
                     <span>Platform ticket sales</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-purple-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🅿️</span>
                     <span>Parking and advertisement</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-purple-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🏢</span>
                     <span>Commercial space leasing</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-purple-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-purple-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">➕</span>
                     <span>Value-added services</span>
                   </li>
                 </ul>
@@ -204,20 +204,20 @@ const Commercial = () => {
                   Bulk Freight
                 </h3>
                 <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-start">
-                    <span className="text-indigo-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-indigo-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">⛏️</span>
                     <span>Coal and mineral transportation</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-indigo-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-indigo-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🏗️</span>
                     <span>Steel and cement movement</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-indigo-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-indigo-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🌾</span>
                     <span>Agricultural commodities</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-indigo-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-indigo-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">⚗️</span>
                     <span>Petroleum and chemicals</span>
                   </li>
                 </ul>
@@ -229,20 +229,20 @@ const Commercial = () => {
                   Container Services
                 </h3>
                 <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-cyan-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🚄</span>
                     <span>Dedicated freight corridors</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-cyan-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">📦</span>
                     <span>Express parcel services</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-cyan-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">❄️</span>
                     <span>Cold storage transportation</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-cyan-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🚗</span>
                     <span>Automobile logistics</span>
                   </li>
                 </ul>
@@ -254,20 +254,20 @@ const Commercial = () => {
                   Special Freight
                 </h3>
                 <ul className="space-y-2 text-gray-200">
-                  <li className="flex items-start">
-                    <span className="text-teal-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-teal-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🎖️</span>
                     <span>Military and defense cargo</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-teal-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">⚠️</span>
                     <span>Dangerous goods handling</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-teal-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">📏</span>
                     <span>Oversized load transport</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-400 mr-2 mt-1">•</span>
+                  <li className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="text-teal-400 mr-3 mt-1 text-xl group-hover:scale-110 transition-transform">🧊</span>
                     <span>Refrigerated cargo services</span>
                   </li>
                 </ul>
