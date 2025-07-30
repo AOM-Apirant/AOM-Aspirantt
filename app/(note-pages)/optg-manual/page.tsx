@@ -14,6 +14,7 @@ import CoachingLocomotives from '@/components/optg-manual/CoachingLocomotives'
 import CoachingStock from '@/components/optg-manual/CoachingStock'
 import FreightTrainOperations from '@/components/optg-manual/FreightTrainOperations'
 import { Download, FileText } from 'lucide-react'
+import WagonEngineUtilization from '@/components/optg-manual/WagonEngineUtilization'
 
 const OperatingManual = () => {
   const handleDownloadPDF = () => {
@@ -113,20 +114,21 @@ const OperatingManual = () => {
         <CoachingLocomotives />
         <CoachingStock />
         <FreightTrainOperations />
+        <WagonEngineUtilization/>
       </div>
 
       {/* Download PDF Section */}
       <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12">
-            <div className="flex items-center justify-center space-x-3 mb-6">
-              <FileText className="w-12 h-12 text-yellow-300" />
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <div className="flex flex-col gap-4 items-center justify-center space-x-3 mb-6">
+              <FileText className="lg:w-12 lg:h-12 w-8 h-8 text-yellow-300" />
+              <h2 className="lg:text-3xl text-xl font-bold text-white">
                 Download Complete Operating Manual SCR 2023
               </h2>
             </div>
             
-            <p className="text-xl text-indigo-100 mb-8 leading-relaxed">
+            <p className="lg:text-xl text-base text-indigo-100 mb-8 leading-relaxed">
               Get the complete Operating Manual SCR 2023 document. 
               Essential resource for railway personnel involved in train operations.
             </p>
