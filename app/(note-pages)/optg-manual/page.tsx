@@ -14,6 +14,7 @@ import CoachingLocomotives from '@/components/optg-manual/CoachingLocomotives'
 import CoachingStock from '@/components/optg-manual/CoachingStock'
 import FreightTrainOperations from '@/components/optg-manual/FreightTrainOperations'
 import { Download, FileText } from 'lucide-react'
+import WagonEngineUtilization from '@/components/optg-manual/WagonEngineUtilization'
 
 const OperatingManual = () => {
   const handleDownloadPDF = () => {
@@ -113,6 +114,7 @@ const OperatingManual = () => {
         <CoachingLocomotives />
         <CoachingStock />
         <FreightTrainOperations />
+        <WagonEngineUtilization />
       </div>
 
       {/* Download PDF Section */}
