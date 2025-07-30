@@ -241,6 +241,8 @@ const RedTariff = () => {
         </div>
       </div>
 
+      
+
       <style jsx>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(20px); }
@@ -248,6 +250,9 @@ const RedTariff = () => {
         }
         .animate-fade-in {
           animation: fade-in 1s ease-out;
+        }
+        .shadow-3xl {
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
       `}</style>
     </div>
