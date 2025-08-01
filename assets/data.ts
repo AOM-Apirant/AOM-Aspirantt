@@ -617,7 +617,149 @@ export const allQuizzes = {
 
             explanation: ' G‘ is the correct answer.  Reference - GR 3.34'
         },
-      ]
+      ],
+      '10':[
+        {
+          question: 'Detailed working instructions about outlying siding are incorporated in ',
+          options: ['SWR', 'G&SR', 'WTT', 'Engg.manual'],
+          correct: 0,
+          explanation: ' SWR is the correct answer.  Reference - SR 3.35'
+        },
+
+        {
+          question: 'The marker board for indicating the Outlying siding points are',
+          options: ['A', 'IB', 'S', 'G'],
+          correct: 2,
+          explanation: 'S is the correct answer.  Reference - GR 3.35 '
+        },
+
+        {
+          question: 'Every fixed signal shall be so constructed that, in case of failure of any part of its connections, it shall remain at, or return to its',
+          options: ['Off position ', 'Normal aspect', 'Normal position', 'its most restrictive aspect'],
+          correct: 3,
+          explanation: 'its most restrictive aspect is the correct answer.  Reference - GR 3.36 '
+        },
+
+        {
+          question: 'Home signal lever/switch will be normalized after the passage of ',
+          options: ['engine', 'whole of the train', 'first vehicle', 'none of these'],
+          correct: 1,
+          explanation: 'whole of the train is the correct answer.  Reference - GR 3.36'
+        },
+
+        {
+          question: 'Signals taken OFF for a departing train may be put back to ON',
+          options: ['to avert an accident ', 'for crossing of a train ', ' for precedence of a train', 'any of the above '],
+          correct: 3,
+          explanation: 'any of the above  is the correct answer.  Reference - GR 3.36'
+        },
+
+        {
+          question: 'Reception Signals taken OFF for a train may be put back to ON ',
+          options: ['to avert an accident ', ' for crossing of a train', ' for precedence of a train ', 'any of the above'],
+          correct: 0,
+          explanation: ' to avert an accident  is the correct answer.  Reference - GR 3.36'
+        },
+
+        {
+          question: 'Signals taken OFF for a departing train may be put back to ON and points on the route to be not altered unless LP is informed through',
+          options: ['secured means of communication ', 'Written Memo', ' Either A or B ', 'Both A & B'],
+          correct: 2,
+          explanation: ' Either A or B  is the correct answer.  Reference - GR 3.36'
+        },
+
+        {
+          question: 'Signals taken OFF for a departing train may be put back to ON and unless LP is informed through secured means of communication/written memo SM shall ',
+          options: ['Alter the points immediately', 'not alter the points on route ', 'Alter the points immediately', 'alter the route after train has come to a stop'],
+          correct: 1,
+          explanation: 'not alter the points on route  is the correct answer.  Reference - GR 3.36'
+        },
+
+        {
+          question: 'The aspect in the normal position of fixed signals except Automatic Signals is ',
+          options: ['stop', 'caution', 'proceed', 'most restrictive aspect'],
+          correct: 3,
+          explanation: 'most restrictive aspect is the correct answer.  Reference - GR 3.37'
+        },
+
+        {
+          question: 'The aspect in the normal position of Automatic Signals is',
+          options: [' stop ', ' caution', 'proceed', ' most restrictive aspect'],
+          correct: 2,
+          explanation: 'proceed is the correct answer.  Reference - GR 3.37'
+        },
+        ],
+'11': [
+          {
+            question: 'The points on single line, that must be set against the blocked line, immediately after the arrival of a train at the station ',
+            options: ['rear', 'front', 'either end', ' none of above'],
+            correct: 2,
+            explanation: ' either end is the correct answer.  Reference - GR 3.38'
+          },
+ 
+          {
+           
+            question: 'The points on double line, that must be set against the blocked line, immediately after the arrival of a train at the station ',
+            options: ['rear', 'front', 'yard end', 'none of above'],
+            correct: 0,
+            explanation: 'rear is the correct answer.  Reference - GR 3.38'
+          },
+
+          {
+            question: 'When a running line is blocked by a stabled load, wagon, vehicle or by a train which is to cross or give precedence to another train, the points in ______ on double line sections and at _________ on single line sections should be immediately set against the blocked line. except when shunting or any other movement is required to be done immediately in that direction on that line.',
+            options: ['rear, either end', ' front, either end', ' either end, rear', 'either end, front'],
+            correct: 0,
+            explanation: 'rear, either end is the correct answer.  Reference - GR 3.38'
+          },
+ 
+          {
+            question: 'On Single Line the Signal over lap shall be reckoned from',
+            options: ['facing points', 'trailing points', ' facing end points', 'Home signal'],
+            correct: 1,
+            explanation: 'trailing points is the correct answer.  Reference - GR 3.40'
+          },
+ 
+          {
+            question: 'On Single/Double line MAS the Signal Over Lap shall not be less than',
+            options: ['100m ', '110m', '120m', '180m'],
+            correct: 2,
+            explanation: '120m is the correct answer.  Reference - GR 3.40'
+          },
+ 
+          {
+            question: 'Whenever train is required to be directly received without stopping at Home signal the Line must be clear on Double line upto ',
+            options: ['starter', 'adequate distance beyond home signal', 'adequate distance beyond starter', 'trailing points'],
+            correct: 2,
+            explanation: 'adequate distance beyond starter is the correct answer.  Reference - GR 3.40'
+          },
+ 
+          {
+            question: 'Whenever train is required to be directly received after stopping at Home signal the Line must be clear on Double line upto ',
+            options: ['starter', ' adequate distance beyond home signal ', ' adequate distance beyond starter', 'trailing points'],
+            correct: 0,
+            explanation: 'starter is the correct answer.  Reference - GR 3.40'
+          },
+ 
+          {
+            question: 'Whenever train is required to be directly received after stopping at Home signal the Line must be clear on Single line upto ',
+            options: ['place where the train is required to stop or starter', 'adequate distance beyond home signal', ' adequate distance beyond starter', ' trailing points'],
+            correct: 0,
+            explanation: 'place where the train is required to stop or starter is the correct answer.  Reference - GR 3.40'
+          },
+
+          {
+            question: 'The efficient substitute for adequate distance is ',
+            options: ['Any Sand Hump', 'Signal exhibiting stop signal', ' Hand signal exhibited at foot of starter', ' Sand hump of approved design'],
+            correct: 3,
+            explanation: ' Sand hump of approved design is the correct answer.  Reference - GR 3.40'
+          },
+          {
+            question: 'On Double/Single Line (not provided with IB) Last Stop Signal shall not be taken off unless',
+            options: ['PN from Station in rear', ' Line clear has been obtained station in advance ', 'Line clear has been obtained station in rear', ' Permission from SM in advance'],
+            correct: 1,
+            explanation: ' Line clear has been obtained station in advance  is the correct answer.  Reference - GR 3.42'
+          },
+        ]
       }
     },
   
