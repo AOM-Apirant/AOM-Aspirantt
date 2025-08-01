@@ -179,7 +179,7 @@ const ECAct = () => {
                 <span className="text-white text-2xl font-bold">2010</span>
               </div>
               <h3 className="text-lg font-bold text-gray-800 mb-2">Enactment Year</h3>
-              <p className="text-gray-600">Modern legislation replacing the old Workmen's Compensation Act</p>
+              <p className="text-gray-600">Modern legislation replacing the old Workmen&apos;s Compensation Act</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
