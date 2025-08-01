@@ -76,6 +76,7 @@ export default function Navbar() {
     { name: 'RS DA Rules - 1968', href: '/da-rules', icon: '💰' },
     { name: 'Compensation Act - 2010', href: '/ec-act', icon: '🏛️' },
     { name: 'Industrial Disputes Act - 1947', href: '/disputes-act', icon: '⚖️' },
+    { name: 'Disaster Management Act - 2005', href: '/disaster-act', icon: '🚨' },
     { name: 'Indian Railway Act - 1989', href: '/ir-act', icon: '🚂' },
     { name: 'RS Pass Rules - 1986', href: '/pass-rules', icon: '🎫' },
     { name: 'RS Rest Rules - 2005', href: '/rest-rules', icon: '🛏️' },

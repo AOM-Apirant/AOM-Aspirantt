@@ -718,7 +718,7 @@ const DisasterManagementAct2005 = () => {
                  View the complete Disaster Management Act 2005 in PDF format. Opens directly in your browser for easy reading.
                </p>
               <Link 
-                href="/The Disaster Management Act 2005.pdf" 
+                href="/The Disaster Management Act, 2005.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-10 py-3 bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white font-bold lg:text-lg text-base rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
