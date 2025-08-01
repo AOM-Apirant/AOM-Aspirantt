@@ -30,14 +30,14 @@ const GSRNotes = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Main Header */}
           <div className="text-center mb-8">
-            <div className="flex items-center justify-center space-x-3 mb-6">
+            <div className="flex flex-col gap-4 items-center justify-center space-x-3 mb-6">
               <Building2 className="w-12 h-12 text-yellow-300" />
-              <h1 className="text-4xl sm:text-5xl font-bold">
+              <h1 className="lg:text-4xl text-3xl font-bold">
                 GOVERNMENT OF INDIA
               </h1>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-6">
               <h2 className="text-2xl sm:text-3xl font-semibold mb-2">
                 MINISTRY OF RAILWAYS
               </h2>
