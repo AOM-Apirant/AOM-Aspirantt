@@ -616,12 +616,13 @@ export const allQuizzes = {
             correct: 2,
 
             explanation: ' G‘ is the correct answer.  Reference - GR 3.34'
+
         },
       ]
       }
     },
   
-    // Operating Department Category - Multiple separate quizzes
+    // Geography Category - Multiple separate quizzes
     'operating': {
       title: 'Operating Department',
       description: 'Explore world operating department with various topics',
@@ -2301,7 +2302,7 @@ export const allQuizzes = {
         ]
       }
     },
-    // Operating Manual Category - Multiple separate quizzes
+    // Art & Culture Category - Multiple separate quizzes
     'operating-manual': {
         title: 'Operating Manual',
         description: 'Learn about operating manual with various topics',
@@ -2470,7 +2471,7 @@ export const allQuizzes = {
           ]
         }
       },
-      // Accident Manual Category - Multiple separate quizzes
+      // Art & Culture Category - Multiple separate quizzes
     'accident-manual': {
         title: 'Accident Manual',
         description: 'Learn about accident manual with various topics',
@@ -2701,7 +2702,7 @@ export const allQuizzes = {
           ]
         }
       },
-      // Block Working Manual Category - Multiple separate quizzes
+      // Art & Culture Category - Multiple separate quizzes
     'bwm': {
         title: 'Block Working Manual',
         description: 'Learn about block working manual with various topics',
@@ -2870,7 +2871,7 @@ export const allQuizzes = {
           ]
         }
       },
-      // Rajbhasha Category - Multiple separate quizzes
+      // Art & Culture Category - Multiple separate quizzes
     'rajbhasha': {
         title: 'Rajbhasha',
         description: 'Learn about rajbhasha with various topics',
@@ -3375,7 +3376,7 @@ export const allQuizzes = {
           ]
         }
       },
-      // Finance Category - Multiple separate quizzes
+      // Art & Culture Category - Multiple separate quizzes
     'finance': {
         title: 'Finance',
         description: 'Learn about finance with various topics',
@@ -3544,7 +3545,7 @@ export const allQuizzes = {
           ]
         }
       },
-      // Railway GK Category - Multiple separate quizzes
+      // Art & Culture Category - Multiple separate quizzes
     'rgk': {
         title: 'Railway GK',
         description: 'Learn about railway gk with various topics',

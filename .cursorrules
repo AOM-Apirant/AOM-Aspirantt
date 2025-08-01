@@ -17,7 +17,7 @@ This is a Next.js 15 application for AOM (Assistant Operations Manager) aspirant
 
 ## Project Structure
 
-```text
+````text
 aom-aspirant/
 ├── app/ # Next.js App Router pages
 │ ├── (all-pages)/ # Public pages (about, contact, etc.)
@@ -30,7 +30,6 @@ aom-aspirant/
 ├── lib/ # Utility functions and configurations
 ├── models/ # MongoDB/Mongoose models
 └── schemas/ # Zod validation schemas
-```
 
 ## Coding Standards
 
@@ -79,9 +78,7 @@ export default function ComponentName({ prop1, prop2 }: ComponentNameProps) {
 
   return <div className="tailwind-classes">{/* JSX content */}</div>;
 }
-```
-
-### API Routes
+`### API Routes
 
 - Use Next.js API routes in `app/api/`
 - Implement proper error handling
@@ -187,8 +184,6 @@ export default function FormComponent() {
 
   return <form onSubmit={handleSubmit}>{/* Form fields */}</form>;
 }
-```
-
 ### API Route Pattern
 
 ```typescript
@@ -211,8 +206,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 }
-```
-
 ## Notes
 
 - This is a English Language learning platform for AOM aspirants
@@ -220,3 +213,167 @@ export async function POST(request: NextRequest) {
 - Ensure content is properly organized and searchable
 - Implement proper navigation between study materials
 - Consider offline functionality for study materials
+
+## Background Agents - How They Work
+
+Background Agents are AI agents in Cursor that continuously analyze your codebase and provide improvements and suggestions.
+
+## Main Features
+
+### 1. **Automatic Code Analysis**
+
+- Continuously scans your codebase
+- Identifies potential bugs, performance issues, and security vulnerabilities
+- Suggests code quality and best practices improvements
+
+### 2. **Smart Suggestions**
+
+- Real-time code improvements
+- Refactoring opportunities
+- Documentation suggestions
+- Test case recommendations
+
+### 3. **Context-Aware Recommendations**
+
+- Understands your project structure and patterns
+- Provides project-specific suggestions
+
+## How to Enable
+
+### Step 1: Enable in Settings
+
+```bash
+Cursor → Settings → AI → Background Agents → Enable
+### Step 2: Configure Agent Types
+
+- **Code Quality Agent**: Code style and best practices
+- **Security Agent**: Security vulnerabilities
+- **Performance Agent**: Performance optimizations
+- **Documentation Agent**: Documentation improvements
+
+## Effective Usage Tips
+
+### 1. **Project-Specific Configuration**
+
+```json
+{
+  "backgroundAgents": {
+    "codeQuality": true,
+    "security": true,
+    "performance": true,
+    "documentation": true
+  }
+}
+### 2. **Set Focus Areas**
+
+- Target specific directories or file types
+- Define priority areas
+
+### 3. **Feedback Loop**
+
+- Accept or reject suggestions
+- Improve agent learning
+
+## Specific Tips for Your AOM Aspirant Project
+
+### 1. **TypeScript Strict Mode**
+
+- Type safety improvements
+- Interface optimizations
+- Error handling suggestions
+
+### 2. **Next.js Best Practices**
+
+- App Router optimizations
+- Performance improvements
+- SEO enhancements
+
+### 3. **MongoDB/Mongoose**
+
+- Database query optimizations
+- Schema improvements
+- Connection handling
+
+### 4. **Authentication Security**
+
+- NextAuth.js security improvements
+- Session management
+- API route protection
+
+## Advanced Features
+
+### 1. **Custom Rules**
+
+```typescript
+// Custom background agent rules
+{
+  "rules": [
+    "Always use TypeScript strict mode",
+    "Follow Next.js 15 conventions",
+    "Use Tailwind CSS for styling",
+    "Implement proper error boundaries"
+  ]
+}
+### 2. **Priority Configuration**
+
+- Set critical files as high priority
+- Focus on API routes and authentication logic
+
+### 3. **Integration with Existing Workflow**
+
+- Integrate with Git commits
+- Include in CI/CD pipeline
+
+## Performance Optimization
+
+### 1. **Resource Management**
+
+- Selective enabling for large projects
+- Exclude specific directories
+
+### 2. **Timing Configuration**
+
+- Heavy analysis during non-peak hours
+- Lightweight mode for real-time suggestions
+
+## Troubleshooting
+
+### Common Issues
+
+1. **High CPU Usage**: Use selective enabling
+2. **False Positives**: Configure custom rules
+3. **Slow Performance**: Exclude large files/directories
+
+### Solutions
+
+- Temporarily disable background agents
+- Turn off specific agents
+- Refine project-specific rules
+
+## Recommended Setup for Your Project
+
+```json
+{
+  "backgroundAgents": {
+    "codeQuality": {
+      "enabled": true,
+      "focus": ["app/", "components/", "lib/"]
+    },
+    "security": {
+      "enabled": true,
+      "focus": ["app/api/", "lib/auth.ts"]
+    },
+    "performance": {
+      "enabled": true,
+      "focus": ["app/", "components/"]
+    },
+    "documentation": {
+      "enabled": true,
+      "focus": ["README.md", "components/"]
+    }
+  }
+}
+```
+
+This setup will help continuously improve your AOM Aspirant project. Gradually enable background agents and adapt them to your workflow.
+````
