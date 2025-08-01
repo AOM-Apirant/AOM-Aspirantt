@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { Scale, Gavel, AlertTriangle, FileText, Award, BookOpen, Target, CheckCircle } from 'lucide-react'
+import Link from 'next/link'
 
 const IndustrialDisputesAct1947 = () => {
   return (
@@ -325,6 +326,126 @@ const IndustrialDisputesAct1947 = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Chapter VB */}
+              <div className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 backdrop-blur-lg rounded-xl px-2 py-6 shadow-lg border border-pink-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 flex flex-col gap-4 text-center items-center">
+                  <span className="w-4 h-4 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full mr-3 animate-pulse"></span>
+                  CHAPTER VB: SPECIAL PROVISIONS RELATING TO LAY-OFF, RETRENCHMENT AND CLOSURE IN CERTAIN ESTABLISHMENTS
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25K: Application of Chapter VB</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25L: Definitions</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25M: Prohibition of lay-off</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25N: Conditions precedent to retrenchment of workmen</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25-O: Procedure for closing down an undertaking</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25P: Special provision as to restarting of undertakings closed down before commencement of the Industrial Disputes (Amendment) Act, 1976</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25Q: Penalty for lay-off and retrenchment without previous permission</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25R: Penalty for closure</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-pink-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">📋</span>
+                      <span className="text-gray-200">Section 25S: Certain provisions of Chapter VA to apply to an industrial establishment to which this Chapter applies</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Chapter VII */}
+              <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 backdrop-blur-lg rounded-xl px-2 py-6 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 flex flex-col gap-4 text-center items-center">
+                  <span className="w-4 h-4 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full mr-3 animate-pulse"></span>
+                  CHAPTER VII: MISCELLANEOUS
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 32: Offence by companies, etc.</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 33: Conditions of service, etc., to remain unchanged under certain circumstances during pendency of proceedings</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 33A: Special provision for adjudication as to whether conditions of service, etc., changed during pendency of proceedings</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 33B: Power to transfer certain proceedings</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 33C: Recovery of money due from an employer</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 34: Cognizance of offences</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 35: Protection of persons</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 36: Representation of parties</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 36A: Power to remove difficulties</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 36B: Power to exempt</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 37: Protection of action taken under the Act</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 38: Power to make rules</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 39: Delegation of powers</span>
+                    </div>
+                    <div className="flex items-start group hover:bg-white/10 rounded-lg p-1 transition-all duration-300">
+                      <span className="text-purple-400 mr-3 mt-1 text-lg group-hover:scale-110 transition-transform">⚖️</span>
+                      <span className="text-gray-200">Section 40: Power to amend Schedules</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -450,21 +571,63 @@ const IndustrialDisputesAct1947 = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+                     </div>
+         </div>
+       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s ease-out;
-        }
-      `}</style>
-    </div>
-  )
-}
+       {/* Download PDF Section */}
+       <div className="relative z-10 py-12 px-2">
+         <div className="max-w-4xl mx-auto">
+           <div className="bg-gradient-to-br from-orange-500/20 via-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-3xl shadow-2xl border border-orange-400/30 hover:shadow-3xl transition-all duration-500 group">
+             <div className="p-8 text-center">
+               <div className="mb-6">
+                 <div className="inline-block p-4 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                   <svg className="lg:w-12 lg:h-12 w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                   </svg>
+                 </div>
+                 <h3 className="text-2xl font-semibold text-white mb-4 bg-gradient-to-r from-orange-200 to-red-200 bg-clip-text">
+                   Download Complete The Industrial Disputes Act 1947 PDF File
+                 </h3>
+                 <p className="text-gray-200 text-base mb-8 max-w-2xl mx-auto leading-relaxed">
+                   Get the complete Industrial Disputes Act 1947 in PDF format for offline reference and detailed study.
+                 </p>
+               </div>
+               
+               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                 <Link 
+                   href="/Industrial Disputes Act 1947.pdf" 
+                   download="Industrial_Disputes_Act_1947.pdf"
+                   className="inline-flex items-center px-10 py-3 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group-hover:animate-pulse"
+                 >
+                   <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                   </svg>
+                   Download PDF
+                 </Link>
+                 
+                 
+                 
+                 
+                 
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
 
-export default IndustrialDisputesAct1947
+       <style jsx>{`
+         @keyframes fade-in {
+           from { opacity: 0; transform: translateY(20px); }
+           to { opacity: 1; transform: translateY(0); }
+         }
+         .animate-fade-in {
+           animation: fade-in 1s ease-out;
+         }
+       `}</style>
+     </div>
+   )
+ }
+
+ export default IndustrialDisputesAct1947
