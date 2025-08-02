@@ -78,6 +78,7 @@ export default function Navbar() {
     { name: 'Industrial Disputes Act - 1947', href: '/disputes-act', icon: '⚖️' },
     { name: 'Disaster Management Act - 2005', href: '/disaster-act', icon: '🚨' },
     { name: 'The Trade Union Act - 1926', href: '/trade-union', icon: '🏛️' },
+    { name: 'The Workmen Compensation Act - 1923', href: '/workmen-act', icon: '💰' },
     { name: 'The Factories Act - 1948', href: '/factories-act', icon: '🏭' },
     { name: 'Industrial Relations Code - 2020', href: '/industrial-code', icon: '🏭' },
     { name: 'Indian Railway Act - 1989', href: '/ir-act', icon: '🚂' },

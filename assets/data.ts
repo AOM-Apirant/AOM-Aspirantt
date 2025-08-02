@@ -759,7 +759,71 @@ export const allQuizzes = {
             correct: 1,
             explanation: ' Line clear has been obtained station in advance  is the correct answer.  Reference - GR 3.42'
           },
-        ]
+        ],
+'12': [
+
+{
+
+question: 'On Single Line between LSS to 400m beyond IB signal is called',
+options: ['IB section', 'Axle counter section', 'Station controlled IB section', 'Block controlled IB section'],
+correct: 2,
+explanation: ' Station controlled IB section is the correct answer. Reference -GR 3.42 '
+},
+{
+question: 'On Single Line between IB signal upto the FSS of station is advance is called',
+options: ['IB section', 'Axle counter section', 'Station controlled IB section', 'Block controlled IB section'],
+correct: 0,
+explanation: 'Block controlled IB section is the correct answer. Reference -GR 3.42 '
+},
+{
+question: 'On Single Line IB signal shall not be taken off unless',
+options: ['Line clear is obtained', 'Direction of traffic is established', 'Either ‗A‘ or ‗B‘', 'Both ‗A‘ & ‗B‘'],
+correct: 3,
+explanation: 'Both ‗A‘ & ‗B‘ is the correct answer. Reference -GR 3.42 '
+},
+{
+question: 'Outer, Home & LSS shall not be taken ‗off‘ for',
+options: ['Reception of trains', 'Despatch of trains', 'Shunting purpose', 'None of the above'],
+correct: 2,
+explanation: 'Shunting purpose is the correct answer. Reference - GR 3.46'
+},
+{
+question: 'Starter can be taken off for shunting purpose',
+options: ['Always', 'only when it is not interlocked with Advance starter', 'Points are flashing on the route', 'When shunt signals are not available'],
+correct: 1,
+explanation: 'only when it is not interlocked with Advance starter is the correct answer. Reference - GR 3.46'
+},
+{
+question: 'Normally all the points shall be set for',
+options: ['Straight line', 'Main line', 'Loop line', 'Any line'],
+correct: 0,
+explanation: 'Straight line is the correct answer. Reference -GR 3.51 '
+},
+{
+question: 'By waving green flag by day and a white light by night up and down vertically as high and as low as possible indicate',
+options: ['move slowly', 'move towards person signalling', 'train parting', 'coupling'],
+correct: 2,
+explanation: 'train parting is the correct answer. Reference - GR 6.08'
+},
+{
+question: 'Violently waving a white light horizontally across the body of a person indicates',
+options: ['train parting', 'move away from the person showing', 'proceed', 'stop dead'],
+correct: 3,
+explanation: 'stop dead is the correct answer. Reference - GR 3.53'
+},
+{
+question: 'A green flag/green light moved slowly up and down indicates',
+options: ['stop dead', 'move towards person signalling', 'move away from person signalling', 'proceed'],
+correct: 2,
+explanation: 'move away from person signalling is the correct answer. Reference - GR 3.56'
+},
+{
+question: 'A temporary fixed danger signal, consisting of a red cloth supported at each end on a post and stretched across the line to which it refers is known as',
+options: ['Hand signal', 'Engineering indicator', 'Stop hand signal', 'Banner flag'],
+correct: 3,
+explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
+},
+]
       }
     },
   
