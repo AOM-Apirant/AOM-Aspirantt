@@ -823,7 +823,78 @@ options: ['Hand signal', 'Engineering indicator', 'Stop hand signal', 'Banner fl
 correct: 3,
 explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
 },
-]
+],
+'13': [
+          {
+            question: 'Every railway servant connected with the movement of trains, shunting operations, maintenance of installations and works of any nature affecting safety of trains shall have—',
+            options: ['a correct knowledge of hand signals', 'Requisite hand signals with him while on duty and keep them in good working order and ready for immediate use', 'Either ‗A‘ or ‗B‘', 'Both ‗A‘ & ‗B‘'],
+            correct: 3,
+            explanation: ' Both ‗A‘ & ‗B‘ is the correct answer.  Reference -GR 3.58 '
+          },
+ 
+          {
+            question: 'Detonating signals, otherwise known as detonators or fog signals, are appliances which are fixed on the rails and when an engine or a vehicle passes over them, they_____________ so as to attract the attention of the Loco Pilot.',
+            options: ['exhibit danger signal', 'explode with a loud report', 'burn with flame', 'exhibit warning signal'],
+            correct: 1,
+            explanation: 'explode with a loud report is the correct answer.  Reference - GR 3.59'
+          },
+
+          {
+            question: 'Detonators are also known as',
+            options: ['fog signals', 'flare signals', 'illuminating signal', 'none of these'],
+            correct: 0,
+            explanation: 'fog signals is the correct answer.  Reference -GR 3.59 '
+          },
+ 
+          {
+            question: 'A detonator when required to be used shall be placed on the rail with a label or brand facing upwards and shall be fixed to the rail by __________________around the head of the rail.',
+            options: ['clamp', 'adhesive gum', 'bending the clasps', 'magnet'],
+            correct: 2,
+            explanation: 'bending the clasps is the correct answer.  Reference -GR 3.60 (1) '
+          },
+ 
+          {
+            question: 'In the case of a mixed gauge, detonators shall be placed on the __________ or on.',
+            options: ['common rail', 'one rail of each gauge', 'Either ‗A‘ or ‗B‘', 'Both ‗A‘ & ‗B‘'],
+            correct: 2,
+            explanation: 'Either ‗A‘ or ‗B‘ is the correct answer.  Reference -GR 3.60 (2) '
+          },
+ 
+          {
+            question: 'In thick, foggy or tempestuous weather impairing visibility, whenever it is necessary to indicate to the Loco Pilot of an approaching train, the locality of a signal, _________detonators shall be placed on the line, by a railway servant appointed by the Station Master in this behalf, about 10 metres apart, and atleast __________ metres outside the signal or signals concerned.',
+            options: ['One,270', 'two, 270', 'three,180', 'four, 180'],
+            correct: 1,
+            explanation: 'two, 270 is the correct answer.  Reference -GR 3.61 (1) '
+          },
+ 
+          {
+            question: 'From either side of SM office, the VTP is located at a distance of',
+            options: ['150m', '160m', '180m', '400m'],
+            correct: 2,
+            explanation: '180m is the correct answer.  Reference -GR 3.61 (2) '
+          },
+ 
+          {
+            question: 'Visibility Test Object may be',
+            options: ['Post erected for the purpose', 'Light of a fixed colour light signal', 'Either ‗A or ‗B', 'Neither ‗A nor ‗B'],
+            correct: 2,
+            explanation: 'Either ‗A‘ or ‗B‘ is the correct answer.  Reference -GR 3.61 (2) '
+          },
+
+          {
+            question: 'From First stop signal the FSP is located at a distance of',
+            options: ['180m', '120m', '400m', '270m'],
+            correct: 3,
+            explanation: '270m is the correct answer.  Reference -GR 3.61/ SEM '
+          },
+
+          {
+            question: 'Whenever in consequence of an obstruction of a line on BG , it is necessary for a railway servant to stop approaching trains, he shall proceed, plainly showing his_, to a point ______________from the obstruction and place on the line one detonator and then proceed to a point ___________from the obstruction and place on the line three detonators, about 10 metres apart.',
+            options: ['Proceed hand signal, 600 M , 1200 M', 'Stop hand signal, 600 M , 1200 M', 'Stop hand signal, 400 M , 800 M', 'Hand signal, 400 M , 1200 M'],
+            correct: 0,
+            explanation: 'Stop hand signal, 600 M , 1200 M is the correct answer.  Reference -GR 3.62 '
+          },
+        ]
       }
     },
   
