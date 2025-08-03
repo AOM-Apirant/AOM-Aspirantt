@@ -87,9 +87,10 @@ export default function Navbar() {
   ];
 
   const pdfsPages = [
-    { name: 'GSR Amendments', href: '/gsr-amendments', icon: '📜' },
+    { name: 'G&SR Amendments', href: '/gsr-amendments', icon: '📜' },
     { name: 'Accident Amendments', href: '/accident-amendment', icon: '🚨' },
     { name: 'BWM Amendments', href: '/bwm-amendment', icon: '📋' },
+    { name: 'Circulars', href: '/circulars', icon: '📢' },
     { name: 'JPOs', href: '/jpo', icon: '📄' },
     { name: 'Authorities', href: '/authorities', icon: '🏛️' },
     { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' },
