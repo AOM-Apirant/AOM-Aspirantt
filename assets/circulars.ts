@@ -254,3 +254,14 @@ export const safetyDrivePdfFiles = [
     filename: "Safety Drive August 2 2025.pdf",
   },
 ];
+
+export const ruleOfTheMonthPdfFiles = [
+  {
+    name: "Rule of the Month PDF File for July August & September 2025",
+    filename: "Rule of the Month Jul Aug Sep 2025.pdf",
+  },
+  {
+    name: "Rule of the Month - August 2025",
+    filename: "Alert Advice 10 of 2025.pdf",
+  },
+];

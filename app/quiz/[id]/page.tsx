@@ -27,6 +27,8 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const { id } = React.use(params);
   const [quizStartTime, setQuizStartTime] = useState<number>(Date.now());
+  const [completedQuizzes, setCompletedQuizzes] = useState<string[]>([]);
+  const [loadingProgress, setLoadingProgress] = useState(true);
   
   // Get the category data
   const categoryData = allQuizzes[id as keyof typeof allQuizzes];
@@ -42,6 +44,32 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
 
   // Get category icon
   const categoryIcon = categoryIcons[id] || '🧠';
+
+  // Fetch user progress for this category
+  React.useEffect(() => {
+    const fetchUserProgress = async () => {
+      if (!session?.user?.email) return;
+      
+      try {
+        setLoadingProgress(true);
+        const response = await fetch('/api/progress');
+        if (response.ok) {
+          const data = await response.json();
+          // Filter completed quizzes for this category
+          const categoryCompletedQuizzes = data.recentActivity
+            ?.filter((quiz: { categoryId: string; quizId: string }) => quiz.categoryId === id)
+            ?.map((quiz: { quizId: string }) => quiz.quizId) || [];
+          setCompletedQuizzes(categoryCompletedQuizzes);
+        }
+      } catch (error) {
+        console.error('Error fetching progress:', error);
+      } finally {
+        setLoadingProgress(false);
+      }
+    };
+
+    fetchUserProgress();
+  }, [id, session]);
 
   // Update userAnswers when questions change
   React.useEffect(() => {
@@ -74,6 +102,9 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
 
       if (!response.ok) {
         console.error('Failed to update progress');
+      } else {
+        // Update completed quizzes list after successful completion
+        setCompletedQuizzes(prev => [...new Set([...prev, currentQuizId])]);
       }
     } catch (error) {
       console.error('Error updating progress:', error);
@@ -137,6 +168,15 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
       setShowResults(false);
       setQuizStartTime(Date.now()); // Reset quiz start time for new quiz
     }
+  };
+
+  const handleQuizSelect = (quizId: string) => {
+    setCurrentQuizId(quizId);
+    setCurrentQuestion(0);
+    setUserAnswers(new Array(categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length).fill(null));
+    setScore(0);
+    setShowResults(false);
+    setQuizStartTime(Date.now());
   };
 
   if (showResults) {
@@ -300,53 +340,73 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
             </div>
           </div>
 
-          {/* More Quizzes Section - Show remaining quizzes in the same category */}
-          {hasMoreQuizzes && (
-            <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Continue Learning</h3>
-              <p className="text-gray-600 text-center mb-8">Ready for your next challenge? Try these remaining quizzes!</p>
-              
+          {/* All Quizzes in this Category Section */}
+          <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">All Quizzes in this Category</h3>
+            <p className="text-gray-600 text-center mb-8">Continue your learning journey with all available quizzes in this category</p>
+            
+            {loadingProgress ? (
+              <div className="flex justify-center items-center py-8">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                <span className="ml-3 text-gray-600">Loading progress...</span>
+              </div>
+            ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {quizIds.slice(currentIndex + 1).map((quizId) => (
-                  <div key={quizId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border border-gray-400 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center mb-4`}>
-                      <span className="text-white text-lg font-bold">{quizId}</span>
+                {Object.keys(categoryData.quizzes).map((quizId) => {
+                  const isCompleted = completedQuizzes.includes(quizId);
+                  const isCurrentQuiz = quizId === currentQuizId;
+                  
+                  return (
+                    <div key={quizId} className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border-2 transition-all duration-300 transform hover:scale-105 ${
+                        isCurrentQuiz ? 'border-blue-400 shadow-lg' : 'border-gray-400 hover:shadow-lg'
+                      }`}>
+                      <div className="flex items-center justify-between mb-4">
+                        <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center`}>
+                          <span className="text-white text-lg font-bold">{quizId}</span>
+                        </div>
+                        {isCompleted && (
+                          <div className="flex items-center bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                            <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                            Completed
+                          </div>
+                        )}
+                      </div>
+                      <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz {quizId}</h4>
+                      <p className="text-gray-600 text-sm mb-4">{categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length} Questions</p>
+                      <button 
+                        onClick={() => handleQuizSelect(quizId)}
+                        className={`w-full bg-gradient-to-r ${categoryData.color} text-white py-2 sm:py-2 px-4 sm:px-6 rounded-full font-medium transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl ${
+                          isCurrentQuiz ? 'opacity-75 cursor-not-allowed' : ''
+                        }`}
+                        disabled={isCurrentQuiz}
+                      >
+                        <span>{isCurrentQuiz ? 'Current Quiz' : 'Start Quiz'}</span>
+                        {!isCurrentQuiz && (
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        )}
+                      </button>
                     </div>
-                    <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz {quizId}</h4>
-                    <p className="text-gray-600 text-sm mb-4">{categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length} Questions</p>
-                    <button 
-                      onClick={() => {
-                        setCurrentQuizId(quizId);
-                        setCurrentQuestion(0);
-                        setUserAnswers(new Array(categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length).fill(null));
-                        setScore(0);
-                        setShowResults(false);
-                        setQuizStartTime(Date.now()); // Reset quiz start time for new quiz
-                      }}
-                      className={`w-full bg-gradient-to-r ${categoryData.color} text-white py-2 sm:py-2 px-4 sm:px-6 rounded-full font-medium transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl`}
-                    >
-                      <span>Start Quiz</span>
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
-              
-              <div className="text-center mt-8">
-                <Link 
-                  href="/quiz"
-                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                  </svg>
-                  Back to All Categories
-                </Link>
-              </div>
+            )}
+            
+            <div className="text-center mt-8">
+              <Link 
+                href="/quiz"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+                Back to All Categories
+              </Link>
             </div>
-          )}
+          </div>
 
           {/* Other Categories Section */}
           <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
@@ -566,6 +626,74 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
+          </div>
+        </div>
+
+        {/* All Quizzes in this Category Section - Show during quiz */}
+        <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
+          <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">All Quizzes in this Category</h3>
+          <p className="text-gray-600 text-center mb-8">Switch between quizzes or continue your progress</p>
+          
+          {loadingProgress ? (
+            <div className="flex justify-center items-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+              <span className="ml-3 text-gray-600">Loading progress...</span>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {Object.keys(categoryData.quizzes).map((quizId) => {
+                const isCompleted = completedQuizzes.includes(quizId);
+                const isCurrentQuiz = quizId === currentQuizId;
+                
+                return (
+                  <div key={quizId} className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border-2 transition-all duration-300 transform hover:scale-105 ${
+                      isCurrentQuiz ? 'border-blue-400 shadow-lg' : 'border-gray-400 hover:shadow-lg'
+                    }`}>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center`}>
+                        <span className="text-white text-lg font-bold">{quizId}</span>
+                      </div>
+                      {isCompleted && (
+                        <div className="flex items-center bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                          <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          Completed
+                        </div>
+                      )}
+                    </div>
+                    <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz {quizId}</h4>
+                    <p className="text-gray-600 text-sm mb-4">{categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length} Questions</p>
+                    <button 
+                      onClick={() => handleQuizSelect(quizId)}
+                      className={`w-full bg-gradient-to-r ${categoryData.color} text-white py-2 sm:py-2 px-4 sm:px-6 rounded-full font-medium transition-all duration-200 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl ${
+                        isCurrentQuiz ? 'opacity-75 cursor-not-allowed' : ''
+                      }`}
+                      disabled={isCurrentQuiz}
+                    >
+                      <span>{isCurrentQuiz ? 'Current Quiz' : 'Start Quiz'}</span>
+                      {!isCurrentQuiz && (
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          
+          <div className="text-center mt-8">
+            <Link 
+              href="/quiz"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+              Back to All Categories
+            </Link>
           </div>
         </div>
       </div>

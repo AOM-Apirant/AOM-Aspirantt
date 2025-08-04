@@ -7,7 +7,8 @@ import {
   operatingGeneralCircularPdfFiles,
   fortnightlySafetyBulletinPdfFiles,
   monthlySafetyBulletinPdfFiles,
-  safetyDrivePdfFiles
+  safetyDrivePdfFiles,
+  ruleOfTheMonthPdfFiles
 } from '@/assets/circulars'
 import { FileText, Download, Calendar, AlertTriangle, Clock, CheckCircle, Loader2, Shield, BookOpen, BarChart3, Zap } from 'lucide-react'
 
@@ -172,6 +173,14 @@ const Circulars = () => {
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">{safetyDrivePdfFiles.length}</h3>
               <p className="text-zinc-200">Safety Drive</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-amber-500/20 to-yellow-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-amber-400/30 hover:scale-105 transition-all duration-300">
+              <div className="bg-amber-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <BookOpen className="lg:w-8 lg:h-8 w-6 h-6 text-amber-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">{ruleOfTheMonthPdfFiles.length}</h3>
+              <p className="text-amber-200">Rule of the Month</p>
             </div>
           </div>
 
@@ -575,6 +584,64 @@ const Circulars = () => {
                         <Loader2 className="w-5 h-5 text-zinc-400 animate-spin" />
                       ) : (
                         <Download className="w-5 h-5 text-zinc-400 hover:text-zinc-300 transition-colors" />
+                      )
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Rule of the Month Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="flex flex-col lg:flex-row gap-3 text-center items-center mb-6">
+              <div className="bg-gradient-to-r from-amber-500 to-yellow-500 p-3 rounded-full mr-4 shadow-lg">
+                <BookOpen className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Rule of the Month</h2>
+                <p className="text-gray-300">Monthly rule highlights for 2025</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-3">
+              {ruleOfTheMonthPdfFiles.map((file, index) => (
+                <div
+                  key={index}
+                  className={`py-4 lg:px-4 px-2 rounded-lg border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                    file.filename 
+                      ? 'border-amber-400/30 hover:border-amber-400 bg-gradient-to-r from-amber-500/10 to-yellow-500/10 hover:from-amber-500/20 hover:to-yellow-500/20' 
+                      : 'border-gray-400/30 bg-gray-500/10 opacity-60 cursor-not-allowed'
+                  }`}
+                  onClick={() => file.filename && handlePdfClick(file.filename)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className={`p-2 rounded-full mr-3 ${
+                        file.filename ? 'bg-amber-500/20' : 'bg-gray-500/20'
+                      }`}>
+                        <BookOpen className={`w-4 h-4 ${
+                          file.filename ? 'text-amber-400' : 'text-gray-400'
+                        }`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-medium ${
+                          file.filename ? 'text-white' : 'text-gray-400'
+                        }`}>
+                          {file.name}
+                        </h3>
+                        <p className={`text-sm ${
+                          file.filename ? 'text-amber-200' : 'text-gray-500'
+                        }`}>
+                          {file.filename ? 'Available for download' : 'Coming soon'}
+                        </p>
+                      </div>
+                    </div>
+                    {file.filename && (
+                      loadingFile === file.filename ? (
+                        <Loader2 className="w-5 h-5 text-amber-400 animate-spin" />
+                      ) : (
+                        <Download className="w-5 h-5 text-amber-400 hover:text-amber-300 transition-colors" />
                       )
                     )}
                   </div>
