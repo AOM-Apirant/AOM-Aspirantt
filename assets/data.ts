@@ -894,6 +894,77 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 0,
             explanation: 'Stop hand signal, 600 M , 1200 M is the correct answer.  Reference -GR 3.62 '
           },
+        ],
+'14': [
+          {
+            question: 'If the said railway servant is recalled before the obstruction is removed, he shall leave down ________detonators and on his way back, pick up the _______________',
+            options: ['One , two detonators', 'Two, intermediate detonator', 'three, intermediate detonator', 'two , two detonators'],
+            correct: 2,
+            explanation: ' three, intermediate detonator is the correct answer.  Reference -GR 3.62 '
+          },
+         
+          {
+            question: 'The _______________shall be responsible for the supply, renewal, periodical testing and safe custody of such detonators, and for ensuring that their use is properly understood.',
+            options: ['DRM', 'Supervisor', 'Branch officer', 'Railway Administration'],
+            correct: 3,
+            explanation: 'Railway Administration is the correct answer.  Reference - GR 3.64'
+          },
+
+          {
+            question: 'Every railway servant concerned with the use of detonators shall have a ________________of their use and keep them ready for _______________',
+            options: ['correct knowledge, immediate use', 'knowledge, use', 'training, utilization in case of need', 'correct knowledge, need based use'],
+            correct: 0,
+            explanation: 'correct knowledge, immediate use is the correct answer.  Reference - GR 3.64'
+          },
+ 
+          {
+            question: 'The signals to be used to warn the incoming train of an obstruction at night shall be a',
+            options: ['flashing amber light', 'red flag', 'red flashing H/S lamp', 'none of these'],
+            correct: 2,
+            explanation: 'red flashing H/S lamp is the correct answer.  Reference -GR 3.65 '
+          },
+ 
+          {
+            question: 'The signals to be used to warn the incoming train of an obstruction during day shall be a',
+            options: ['flashing amber light', 'red flag', 'red light of H/S lamp', 'red flashing H/S lamp'],
+            correct: 1,
+            explanation: 'red flag is the correct answer.  Reference -GR 3.65 '
+          },
+ 
+          {
+            question: 'As soon as a Station Master becomes aware that any signal has become defective or has ceased to work properly, he shall---',
+            options: ['immediately arrange to place the signal at ‗on‘ if it is not already in that position', 'report the occurrence to the railway servant responsible for the upkeep of the signals', 'if the section is controlled, the Controller', 'All the above'],
+            correct: 3,
+            explanation: 'All the above is the correct answer.  Reference -GR 3.68 '
+          },
+   
+          {
+            question: 'Pre-warning about defective reception signal is not required when there is',
+            options: ['calling on signal', 'adv. starter', 'Isolation', 'none of above'],
+            correct: 0,
+            explanation: 'calling on signalL is the correct answer.  Reference -GR 3.69 '
+          },
+ 
+          {
+            question: 'When home is defective and pre warning is given, the LP may pass such signal on receipt of',
+            options: ['PHS at the foot of the defective signal', 'PHS at the first facing points', 'T.369(3b)+PHS', 'PN through SPT'],
+            correct: 2,
+            explanation: 'T.369(3b)+PHS is the correct answer.  Reference - GR 3.69'
+          },
+
+          {
+            question: 'The condition that the SM shall fulfill before Loco Pilot is pre warned about the defective signal at the next station',
+            options: ['taking off signal', 'granting line clearL', 'Both A & B', 'Either A or B'],
+            correct: 2,
+            explanation: 'Both A & B is the correct answer.  Reference -GR 3.69 '
+          },
+
+          {
+            question: 'In case of Starter being defective the written authority shall be handed over to the LP only after',
+            options: ['train stopped at Home signal', 'trains has stopped at the defective signal', 'Train stopped within fouling mark', 'Train stopped after passing the starter signal'],
+            correct: 1,
+            explanation: 'trains has stopped at the defective signal is the correct answer.  Reference -GR 3.70 '
+          },
         ]
       }
     },

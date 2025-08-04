@@ -84,7 +84,6 @@ export const flyLeafPdfFiles = [
   },
 ];
 
-
 export const operatingSafetyCircularPdfFiles = [
   {
     name: "Operating Safety Circular 03 of 2025",
@@ -108,7 +107,6 @@ export const operatingSafetyCircularPdfFiles = [
   },
 ];
 
-
 export const operatingGeneralCircularPdfFiles = [
   {
     name: "Operating General Circular 01 of 2025",
@@ -118,9 +116,7 @@ export const operatingGeneralCircularPdfFiles = [
     name: "Operating General Circular 02 of 2025",
     filename: "Operating General Circular 02 of 2025.pdf",
   },
-  
 ];
-
 
 export const fortnightlySafetyBulletinPdfFiles = [
   {
@@ -177,8 +173,6 @@ export const fortnightlySafetyBulletinPdfFiles = [
   },
 ];
 
-
-
 export const monthlySafetyBulletinPdfFiles = [
   {
     name: "Monthly Safety Bulletin April 2025",
@@ -198,3 +192,65 @@ export const monthlySafetyBulletinPdfFiles = [
   },
 ];
 
+export const safetyDrivePdfFiles = [
+  {
+    name: "Safety Drive May 1 2025",
+    filename: "Safety Drive May 1 2025.pdf",
+  },
+  {
+    name: "Safety Drive May 2 2025",
+    filename: "Safety Drive May 2 2025.pdf",
+  },
+  {
+    name: "Safety Drive May 3 2025",
+    filename: "Safety Drive May 3 2025.pdf",
+  },
+  {
+    name: "Safety Drive May 4 2025",
+    filename: "Safety Drive May 4 2025.pdf",
+  },
+  {
+    name: "Safety Drive May 5 2025",
+    filename: "Safety Drive May 5 2025.pdf",
+  },
+  {
+    name: "Safety Drive June 1 2025",
+    filename: "Safety Drive June 1 2025.pdf",
+  },
+  {
+    name: "Safety Drive June 2 2025",
+    filename: "Safety Drive June 2 2025.pdf",
+  },
+  {
+    name: "Safety Drive June 3 2025",
+    filename: "Safety Drive June 3 2025.pdf",
+  },
+  {
+    name: "Safety Drive July 1 2025",
+    filename: "Safety Drive July 1 2025.pdf",
+  },
+  {
+    name: "Safety Drive July 2 2025",
+    filename: "Safety Drive July 2 2025.pdf",
+  },
+  {
+    name: "Safety Drive July 3 2025",
+    filename: "Safety Drive July 3 2025.pdf",
+  },
+  {
+    name: "Safety Drive July 4 2025",
+    filename: "Safety Drive July 4 2025.pdf",
+  },
+  {
+    name: "Safety Drive July 5 2025",
+    filename: "Safety Drive July 5 2025.pdf",
+  },
+  {
+    name: "Safety Drive August 1 2025",
+    filename: "Safety Drive August 1 2025.pdf",
+  },
+  {
+    name: "Safety Drive August 2 2025",
+    filename: "Safety Drive August 2 2025.pdf",
+  },
+];

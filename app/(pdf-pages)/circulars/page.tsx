@@ -6,9 +6,10 @@ import {
   operatingSafetyCircularPdfFiles,
   operatingGeneralCircularPdfFiles,
   fortnightlySafetyBulletinPdfFiles,
-  monthlySafetyBulletinPdfFiles
+  monthlySafetyBulletinPdfFiles,
+  safetyDrivePdfFiles
 } from '@/assets/circulars'
-import { FileText, Download, Calendar, AlertTriangle, Clock, CheckCircle, Loader2, Shield, BookOpen, BarChart3 } from 'lucide-react'
+import { FileText, Download, Calendar, AlertTriangle, Clock, CheckCircle, Loader2, Shield, BookOpen, BarChart3, Zap } from 'lucide-react'
 
 const Circulars = () => {
   const [loadingFile, setLoadingFile] = useState<string | null>(null)
@@ -106,7 +107,7 @@ const Circulars = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              RAILWAY CIRCULARS
+              South Central Railway Circulars
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -116,7 +117,7 @@ const Circulars = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+          <div className="grid md:grid-cols-3 lg:grid-cols-7 gap-4 mb-8">
             <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-red-400/30 hover:scale-105 transition-all duration-300">
               <div className="bg-red-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
                 <AlertTriangle className="lg:w-8 lg:h-8 w-6 h-6 text-red-400" />
@@ -138,7 +139,7 @@ const Circulars = () => {
                 <Shield className="lg:w-8 lg:h-8 w-6 h-6 text-orange-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">{operatingSafetyCircularPdfFiles.length}</h3>
-              <p className="text-orange-200">Safety Circular</p>
+              <p className="text-orange-200">Operating Safety Circular</p>
             </div>
             
             <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-blue-400/30 hover:scale-105 transition-all duration-300">
@@ -146,7 +147,7 @@ const Circulars = () => {
                 <BookOpen className="lg:w-8 lg:h-8 w-6 h-6 text-blue-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">{operatingGeneralCircularPdfFiles.length}</h3>
-              <p className="text-blue-200">General Circular</p>
+              <p className="text-blue-200">Operating General Circular</p>
             </div>
             
             <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-purple-400/30 hover:scale-105 transition-all duration-300">
@@ -154,7 +155,7 @@ const Circulars = () => {
                 <BarChart3 className="lg:w-8 lg:h-8 w-6 h-6 text-purple-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">{fortnightlySafetyBulletinPdfFiles.length}</h3>
-              <p className="text-purple-200">Fortnightly</p>
+              <p className="text-purple-200">Fortnightly Safety Bulletin</p>
             </div>
             
             <div className="bg-gradient-to-br from-teal-500/20 to-cyan-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-teal-400/30 hover:scale-105 transition-all duration-300">
@@ -162,7 +163,15 @@ const Circulars = () => {
                 <BarChart3 className="lg:w-8 lg:h-8 w-6 h-6 text-teal-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">{monthlySafetyBulletinPdfFiles.length}</h3>
-              <p className="text-teal-200">Monthly</p>
+              <p className="text-teal-200">Monthly Safety Bulletin</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-zinc-500/20 to-gray-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-zinc-400/30 hover:scale-105 transition-all duration-300">
+              <div className="bg-zinc-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <Zap className="lg:w-8 lg:h-8 w-6 h-6 text-zinc-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">{safetyDrivePdfFiles.length}</h3>
+              <p className="text-zinc-200">Safety Drive</p>
             </div>
           </div>
 
@@ -508,6 +517,64 @@ const Circulars = () => {
                         <Loader2 className="w-5 h-5 text-teal-400 animate-spin" />
                       ) : (
                         <Download className="w-5 h-5 text-teal-400 hover:text-teal-300 transition-colors" />
+                      )
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Safety Drive Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="flex flex-col lg:flex-row gap-3 text-center items-center mb-6">
+              <div className="bg-gradient-to-r from-zinc-500 to-gray-500 p-3 rounded-full mr-4 shadow-lg">
+                <Zap className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Safety Drive</h2>
+                <p className="text-gray-300">Safety drive circulars for 2025</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {safetyDrivePdfFiles.map((file, index) => (
+                <div
+                  key={index}
+                  className={`py-4 lg:px-4 px-2 rounded-lg border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                    file.filename 
+                      ? 'border-zinc-400/30 hover:border-zinc-400 bg-gradient-to-r from-zinc-500/10 to-gray-500/10 hover:from-zinc-500/20 hover:to-gray-500/20' 
+                      : 'border-gray-400/30 bg-gray-500/10 opacity-60 cursor-not-allowed'
+                  }`}
+                  onClick={() => file.filename && handlePdfClick(file.filename)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className={`p-2 rounded-full mr-3 ${
+                        file.filename ? 'bg-zinc-500/20' : 'bg-gray-500/20'
+                      }`}>
+                        <Shield className={`w-4 h-4 ${
+                          file.filename ? 'text-zinc-400' : 'text-gray-400'
+                        }`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-medium ${
+                          file.filename ? 'text-white' : 'text-gray-400'
+                        }`}>
+                          {file.name}
+                        </h3>
+                        <p className={`text-sm ${
+                          file.filename ? 'text-zinc-200' : 'text-gray-500'
+                        }`}>
+                          {file.filename ? 'Available for download' : 'Coming soon'}
+                        </p>
+                      </div>
+                    </div>
+                    {file.filename && (
+                      loadingFile === file.filename ? (
+                        <Loader2 className="w-5 h-5 text-zinc-400 animate-spin" />
+                      ) : (
+                        <Download className="w-5 h-5 text-zinc-400 hover:text-zinc-300 transition-colors" />
                       )
                     )}
                   </div>
