@@ -1,7 +1,14 @@
 'use client'
 import React, { useState } from 'react'
-import { alertAdvicePdfFiles, flyLeafPdfFiles } from '@/assets/circulars'
-import { FileText, Download, Calendar, AlertTriangle, Clock, CheckCircle, Loader2 } from 'lucide-react'
+import { 
+  alertAdvicePdfFiles, 
+  flyLeafPdfFiles,
+  operatingSafetyCircularPdfFiles,
+  operatingGeneralCircularPdfFiles,
+  fortnightlySafetyBulletinPdfFiles,
+  monthlySafetyBulletinPdfFiles
+} from '@/assets/circulars'
+import { FileText, Download, Calendar, AlertTriangle, Clock, CheckCircle, Loader2, Shield, BookOpen, BarChart3 } from 'lucide-react'
 
 const Circulars = () => {
   const [loadingFile, setLoadingFile] = useState<string | null>(null)
@@ -109,7 +116,7 @@ const Circulars = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
             <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-red-400/30 hover:scale-105 transition-all duration-300">
               <div className="bg-red-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
                 <AlertTriangle className="lg:w-8 lg:h-8 w-6 h-6 text-red-400" />
@@ -126,12 +133,36 @@ const Circulars = () => {
               <p className="text-green-200">Fly Leaf</p>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-blue-400/30 hover:scale-105 transition-all duration-300">
-              <div className="bg-blue-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
-                <CheckCircle className="lg:w-8 lg:h-8 w-6 h-6 text-blue-400" />
+            <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-orange-400/30 hover:scale-105 transition-all duration-300">
+              <div className="bg-orange-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <Shield className="lg:w-8 lg:h-8 w-6 h-6 text-orange-400" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">2025</h3>
-              <p className="text-blue-200">Current Year</p>
+              <h3 className="text-2xl font-bold text-white mb-2">{operatingSafetyCircularPdfFiles.length}</h3>
+              <p className="text-orange-200">Safety Circular</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-blue-400/30 hover:scale-105 transition-all duration-300">
+              <div className="bg-blue-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <BookOpen className="lg:w-8 lg:h-8 w-6 h-6 text-blue-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">{operatingGeneralCircularPdfFiles.length}</h3>
+              <p className="text-blue-200">General Circular</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-purple-400/30 hover:scale-105 transition-all duration-300">
+              <div className="bg-purple-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <BarChart3 className="lg:w-8 lg:h-8 w-6 h-6 text-purple-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">{fortnightlySafetyBulletinPdfFiles.length}</h3>
+              <p className="text-purple-200">Fortnightly</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-teal-500/20 to-cyan-500/20 backdrop-blur-lg rounded-2xl p-6 text-center border border-teal-400/30 hover:scale-105 transition-all duration-300">
+              <div className="bg-teal-500/20 rounded-full lg:w-16 lg:h-16 w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                <BarChart3 className="lg:w-8 lg:h-8 w-6 h-6 text-teal-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">{monthlySafetyBulletinPdfFiles.length}</h3>
+              <p className="text-teal-200">Monthly</p>
             </div>
           </div>
 
@@ -250,6 +281,238 @@ const Circulars = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* Operating Safety Circular Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="flex flex-col lg:flex-row gap-3 text-center items-center mb-6">
+              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-3 rounded-full mr-4 shadow-lg">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Operating Safety Circular</h2>
+                <p className="text-gray-300">Safety circulars for 2025</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {operatingSafetyCircularPdfFiles.map((file, index) => (
+                <div
+                  key={index}
+                  className={`py-4 lg:px-4 px-2 rounded-lg border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                    file.filename 
+                      ? 'border-orange-400/30 hover:border-orange-400 bg-gradient-to-r from-orange-500/10 to-red-500/10 hover:from-orange-500/20 hover:to-red-500/20' 
+                      : 'border-gray-400/30 bg-gray-500/10 opacity-60 cursor-not-allowed'
+                  }`}
+                  onClick={() => file.filename && handlePdfClick(file.filename)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className={`p-2 rounded-full mr-3 ${
+                        file.filename ? 'bg-orange-500/20' : 'bg-gray-500/20'
+                      }`}>
+                        <Shield className={`w-4 h-4 ${
+                          file.filename ? 'text-orange-400' : 'text-gray-400'
+                        }`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-medium ${
+                          file.filename ? 'text-white' : 'text-gray-400'
+                        }`}>
+                          {file.name}
+                        </h3>
+                        <p className={`text-sm ${
+                          file.filename ? 'text-orange-200' : 'text-gray-500'
+                        }`}>
+                          {file.filename ? 'Available for download' : 'Coming soon'}
+                        </p>
+                      </div>
+                    </div>
+                    {file.filename && (
+                      loadingFile === file.filename ? (
+                        <Loader2 className="w-5 h-5 text-orange-400 animate-spin" />
+                      ) : (
+                        <Download className="w-5 h-5 text-orange-400 hover:text-orange-300 transition-colors" />
+                      )
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Operating General Circular Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="flex flex-col lg:flex-row gap-3 text-center items-center mb-6">
+              <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-3 rounded-full mr-4 shadow-lg">
+                <BookOpen className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Operating General Circular</h2>
+                <p className="text-gray-300">General operating circulars for 2025</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-3">
+              {operatingGeneralCircularPdfFiles.map((file, index) => (
+                <div
+                  key={index}
+                  className={`py-4 lg:px-4 px-2 rounded-lg border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                    file.filename 
+                      ? 'border-blue-400/30 hover:border-blue-400 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 hover:from-blue-500/20 hover:to-indigo-500/20' 
+                      : 'border-gray-400/30 bg-gray-500/10 opacity-60 cursor-not-allowed'
+                  }`}
+                  onClick={() => file.filename && handlePdfClick(file.filename)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className={`p-2 rounded-full mr-3 ${
+                        file.filename ? 'bg-blue-500/20' : 'bg-gray-500/20'
+                      }`}>
+                        <BookOpen className={`w-4 h-4 ${
+                          file.filename ? 'text-blue-400' : 'text-gray-400'
+                        }`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-medium ${
+                          file.filename ? 'text-white' : 'text-gray-400'
+                        }`}>
+                          {file.name}
+                        </h3>
+                        <p className={`text-sm ${
+                          file.filename ? 'text-blue-200' : 'text-gray-500'
+                        }`}>
+                          {file.filename ? 'Available for download' : 'Coming soon'}
+                        </p>
+                      </div>
+                    </div>
+                    {file.filename && (
+                      loadingFile === file.filename ? (
+                        <Loader2 className="w-5 h-5 text-blue-400 animate-spin" />
+                      ) : (
+                        <Download className="w-5 h-5 text-blue-400 hover:text-blue-300 transition-colors" />
+                      )
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Fortnightly Safety Bulletin Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="flex flex-col lg:flex-row gap-3 text-center items-center mb-6">
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-full mr-4 shadow-lg">
+                <BarChart3 className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Fortnightly Safety Bulletin</h2>
+                <p className="text-gray-300">Bi-weekly safety bulletins for 2025</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {fortnightlySafetyBulletinPdfFiles.map((file, index) => (
+                <div
+                  key={index}
+                  className={`py-4 lg:px-4 px-2 rounded-lg border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                    file.filename 
+                      ? 'border-purple-400/30 hover:border-purple-400 bg-gradient-to-r from-purple-500/10 to-pink-500/10 hover:from-purple-500/20 hover:to-pink-500/20' 
+                      : 'border-gray-400/30 bg-gray-500/10 opacity-60 cursor-not-allowed'
+                  }`}
+                  onClick={() => file.filename && handlePdfClick(file.filename)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className={`p-2 rounded-full mr-3 ${
+                        file.filename ? 'bg-purple-500/20' : 'bg-gray-500/20'
+                      }`}>
+                        <BarChart3 className={`w-4 h-4 ${
+                          file.filename ? 'text-purple-400' : 'text-gray-400'
+                        }`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-medium ${
+                          file.filename ? 'text-white' : 'text-gray-400'
+                        }`}>
+                          {file.name}
+                        </h3>
+                        <p className={`text-sm ${
+                          file.filename ? 'text-purple-200' : 'text-gray-500'
+                        }`}>
+                          {file.filename ? 'Available for download' : 'Coming soon'}
+                        </p>
+                      </div>
+                    </div>
+                    {file.filename && (
+                      loadingFile === file.filename ? (
+                        <Loader2 className="w-5 h-5 text-purple-400 animate-spin" />
+                      ) : (
+                        <Download className="w-5 h-5 text-purple-400 hover:text-purple-300 transition-colors" />
+                      )
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Monthly Safety Bulletin Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="flex flex-col lg:flex-row gap-3 text-center items-center mb-6">
+              <div className="bg-gradient-to-r from-teal-500 to-cyan-500 p-3 rounded-full mr-4 shadow-lg">
+                <BarChart3 className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-white">Monthly Safety Bulletin</h2>
+                <p className="text-gray-300">Monthly safety bulletins for 2025</p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+              {monthlySafetyBulletinPdfFiles.map((file, index) => (
+                <div
+                  key={index}
+                  className={`py-4 lg:px-4 px-2 rounded-lg border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                    file.filename 
+                      ? 'border-teal-400/30 hover:border-teal-400 bg-gradient-to-r from-teal-500/10 to-cyan-500/10 hover:from-teal-500/20 hover:to-cyan-500/20' 
+                      : 'border-gray-400/30 bg-gray-500/10 opacity-60 cursor-not-allowed'
+                  }`}
+                  onClick={() => file.filename && handlePdfClick(file.filename)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className={`p-2 rounded-full mr-3 ${
+                        file.filename ? 'bg-teal-500/20' : 'bg-gray-500/20'
+                      }`}>
+                        <BarChart3 className={`w-4 h-4 ${
+                          file.filename ? 'text-teal-400' : 'text-gray-400'
+                        }`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-medium ${
+                          file.filename ? 'text-white' : 'text-gray-400'
+                        }`}>
+                          {file.name}
+                        </h3>
+                        <p className={`text-sm ${
+                          file.filename ? 'text-teal-200' : 'text-gray-500'
+                        }`}>
+                          {file.filename ? 'Available for download' : 'Coming soon'}
+                        </p>
+                      </div>
+                    </div>
+                    {file.filename && (
+                      loadingFile === file.filename ? (
+                        <Loader2 className="w-5 h-5 text-teal-400 animate-spin" />
+                      ) : (
+                        <Download className="w-5 h-5 text-teal-400 hover:text-teal-300 transition-colors" />
+                      )
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

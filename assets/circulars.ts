@@ -83,3 +83,118 @@ export const flyLeafPdfFiles = [
     filename: "Fly Leaf 9 of 2025.pdf",
   },
 ];
+
+
+export const operatingSafetyCircularPdfFiles = [
+  {
+    name: "Operating Safety Circular 03 of 2025",
+    filename: "Operating Safety Circular 03 of 2025.pdf",
+  },
+  {
+    name: "Operating Safety Circular 04 of 2025",
+    filename: "Operating Safety Circular 04 of 2025.pdf",
+  },
+  {
+    name: "Operating Safety Circular 05 of 2025",
+    filename: "Operating Safety Circular 05 of 2025.pdf",
+  },
+  {
+    name: "Operating Safety Circular 06 of 2025",
+    filename: "Operating Safety Circular 06 of 2025.pdf",
+  },
+  {
+    name: "Operating Safety Circular 07 of 2025",
+    filename: "Operating Safety Circular 07 of 2025.pdf",
+  },
+];
+
+
+export const operatingGeneralCircularPdfFiles = [
+  {
+    name: "Operating General Circular 01 of 2025",
+    filename: "Operating General Circular 01 of 2025.pdf",
+  },
+  {
+    name: "Operating General Circular 02 of 2025",
+    filename: "Operating General Circular 02 of 2025.pdf",
+  },
+  
+];
+
+
+export const fortnightlySafetyBulletinPdfFiles = [
+  {
+    name: "Fortnightly Safety Bulletin January 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin January 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin January 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin January 2nd FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin February 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin February 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin February 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin February 2nd FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin March 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin March 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin March 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin March 2nd FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin April 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin April 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin April 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin April 2nd FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin May 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin May 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin May 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin May 2nd FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin June 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin June 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin June 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin June 2nd FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin July 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin July 1st FN 2025.pdf",
+  },
+];
+
+
+
+export const monthlySafetyBulletinPdfFiles = [
+  {
+    name: "Monthly Safety Bulletin April 2025",
+    filename: "Monthly Safety Bulletin April 2025.pdf",
+  },
+  {
+    name: "Monthly Safety Bulletin May 2025",
+    filename: "Monthly Safety Bulletin May 2025.pdf",
+  },
+  {
+    name: "Monthly Safety Bulletin June 2025",
+    filename: "Monthly Safety Bulletin June 2025.pdf",
+  },
+  {
+    name: "Monthly Safety Bulletin July 2025",
+    filename: "Monthly Safety Bulletin July 2025.pdf",
+  },
+];
+
