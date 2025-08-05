@@ -38,7 +38,7 @@ const Definitions = () => {
         <div className="absolute top-40 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-8">
+      <div className="relative z-10 container mx-auto px-4 py-6">
         {/* Header Section */}
         <div className="text-center mb-12">
          
@@ -67,10 +67,10 @@ const Definitions = () => {
               </div>
               <input
                 type="text"
-                placeholder="Search by term (e.g., Act, Train, Signal)..."
+                placeholder="Search Definitions (Example: Interlocking)"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-5 pr-10 py-3 bg-white/20 backdrop-blur-xl border border-white/30 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 shadow-2xl shadow-purple-500/20"
+                className="w-full pl-5 pr-10 py-3 bg-white/20 backdrop-blur-xl border border-white/30 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 shadow-2xl shadow-purple-500/20 lg:text-base text-sm"
               />
               {searchTerm && (
                 <button
@@ -124,7 +124,7 @@ const Definitions = () => {
                 
                 {/* Reference Badge */}
                 <div className="flex items-center justify-between group/reference mt-4 pt-4 border-t border-white/10">
-                  <span className="text-sm text-gray-400 font-medium group-hover/reference:text-cyan-300 transition-colors duration-300">Reference:</span>
+                  <span className="text-sm text-green-400 font-medium group-hover/reference:text-cyan-300 transition-colors duration-300">Reference</span>
                   <div className="px-3 py-1">
                     <span className="text-xs font-semibold text-cyan-300 tracking-wide">
                       {def.reference}

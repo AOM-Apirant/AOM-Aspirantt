@@ -45,11 +45,11 @@ const Abbreviations = () => {
         <div className="absolute top-40 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-8">
+      <div className="relative z-10 container mx-auto px-4 py-6">
         {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="lg:text-5xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-200 mb-4">
-            Indian Railways Complete Abbreviations & Acronyms
+            Indian Railways Complete Abbreviations
           </h1>
           <p className="lg:text-xl text-base text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Comprehensive guide to Indian Railways terminology and abbreviations with detailed explanations and references.
@@ -73,10 +73,10 @@ const Abbreviations = () => {
               </div>
               <input
                 type="text"
-                placeholder="Search abbreviations..."
+                placeholder="Search Abbreviations (Example: APAR)"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-5 pr-10 py-3 bg-white/20 backdrop-blur-xl border border-white/30 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 shadow-2xl shadow-purple-500/20"
+                className="w-full pl-5 pr-10 py-3 bg-white/20 backdrop-blur-xl border border-white/30 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 shadow-2xl shadow-purple-500/20 lg:text-base text-sm"
               />
               {searchTerm && (
                 <button
@@ -141,12 +141,12 @@ const Abbreviations = () => {
               </div>
               
               {/* Content */}
-              <div className="p-6">
+              <div className="py-6 lg:px-6 px-2">
                 <div className="space-y-4">
                   {items.map((item, itemIndex) => (
                     <div 
                       key={itemIndex} 
-                      className="group/item bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 border border-white/10 hover:border-purple-400/30"
+                      className="group/item bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 border border-white/10 hover:border-purple-400/30"
                     >
                       {/* Acronym and Full Form Header */}
                       <div className="mb-3">
@@ -173,7 +173,7 @@ const Abbreviations = () => {
                       {/* Reference Section */}
                       {item.reference && (
                         <div className="flex items-center justify-between">
-                          <span className="text-green-400 text-sm font-medium">Reference:</span>
+                          <span className="text-green-400 text-sm font-medium">Reference</span>
                           <span className="text-green-300 text-xs font-medium">
                             {item.reference}
                           </span>

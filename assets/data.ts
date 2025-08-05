@@ -965,6 +965,77 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 1,
             explanation: 'trains has stopped at the defective signal is the correct answer.  Reference -GR 3.70 '
           },
+        ],
+'15': [
+          {
+            question: 'Authority to pass defective starter signal (if it is not LSS) is',
+            options: ['Written authority+ PHS', 'calling on signal taken off', 'Either A or B', 'none of these'],
+            correct: 2,
+            explanation: ' Either A or B is the correct answer.  Reference - GR 3.70'
+          },
+         
+          {
+            question: 'In case of written authority issued for passing advance starter, PHS at the foot of defective Advance starter is required when',
+            options: ['Signal interlocked with Block instrument', 'Signal interlocked with Axle counter', 'Signal is not detecting any points', 'Signal detects points'],
+            correct: 3,
+            explanation: 'Signal detects points is the correct answer.  Reference - GR 3.70'
+          },
+
+          {
+            question: 'When Distant signal of ________is defective and cannot be kept at On position, that signal is kept at ON and treated as defective',
+            options: ['IB signal', 'Home signal', 'Gate signal', 'Automatic signal'],
+            correct: 0,
+            explanation: 'IB signal is the correct answer.  Reference - GR 3.71'
+          },
+ 
+          {
+            question: 'During day when Gate signal is at ON, the LP shall wait for',
+            options: ['one minute', 'two minute', 'three minute', 'four minute'],
+            correct: 0,
+            explanation: 'one minute is the correct answer.  Reference - GR 3.73'
+          },
+ 
+          {
+            question: 'When Gate signal is at ON, the LP shall wait one/two minutes by day/night and gateman not available, LP may pass the gate after ensuring it is closed on the hand signals of',
+            options: ['Gangman', 'Engine crew ','patrolman', 'PWI'],
+            correct: 1,
+            explanation: 'Engine crew is the correct answer.  Reference -GR 3.73 '
+          },
+ 
+          {
+            question: 'During night when Gate signal is at ON, the LP shall wait for',
+            options: ['one minute', 'two minute', 'three minute', 'four minute'],
+            correct: 1,
+            explanation: 'two minute is the correct answer.  Reference -GR 3.73 '
+          },
+   
+          {
+            question: 'When Gate signal is at ON, the LP shall wait one/two minutes by day/night and gateman exhibiting hand signals. LP may',
+            options: ['stop at the gate', 'proceed at MPS', 'proceed cautiously', 'none of above'],
+            correct: 2,
+            explanation: 'proceed cautiously is the correct answer.  Reference - GR 3.73'
+          },
+ 
+          {
+            question: 'If the Loco Pilot finds, after stopping at the signal, that there is no G‘ marker, he shall proceed further only in accordance with the procedure laid down.',
+            options: ['under approved instructions', 'on advice from gateman', 'on advice from SM', 'under special instructions'],
+            correct: 3,
+            explanation: 'under special instructions is the correct answer.  Reference -GR 3.73 '
+          },
+
+          {
+            question: 'Loco Pilot shall act as if the signal was showing its most restrictive aspect when',
+            options: ['if the light of a signal is not burning when it should', 'if a white light is shown in place of a colour light', 'if the aspect of a signal is misleading or imperfectly shown', 'Any of the above'],
+            correct: 3,
+            explanation: 'Any of the above is the correct answer.  Reference -GR 3.74 '
+          },
+
+          {
+            question: 'If a signal is showing white light in place of a colour light, it is treated as signal is showing',
+            options: ['most restrictive aspect', 'caution aspect', 'attention aspect', 'stop aspect'],
+            correct: 0,
+            explanation: 'most restrictive aspect is the correct answer.  Reference -GR 3.74 '
+          },
         ]
       }
     },

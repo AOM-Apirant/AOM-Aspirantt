@@ -341,7 +341,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
           </div>
 
           {/* All Quizzes in this Category Section */}
-          <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
+          <div className="bg-white rounded-xl shadow-2xl py-8 lg:px-8 px-2 mt-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">All Quizzes in this Category</h3>
             <p className="text-gray-600 text-center mb-8">Continue your learning journey with all available quizzes in this category</p>
             
@@ -357,12 +357,12 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                   const isCurrentQuiz = quizId === currentQuizId;
                   
                   return (
-                    <div key={quizId} className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border-2 transition-all duration-300 transform hover:scale-105 ${
+                    <div key={quizId} className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg py-6 lg:px-6 px-2 border-2 transition-all duration-300 transform hover:scale-105 ${
                         isCurrentQuiz ? 'border-blue-400 shadow-lg' : 'border-gray-400 hover:shadow-lg'
                       }`}>
                       <div className="flex items-center justify-between mb-4">
-                        <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center`}>
-                          <span className="text-white text-lg font-bold">{quizId}</span>
+                        <div className={`lg:w-12 lg:h-12 w-8 h-8 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center`}>
+                          <span className="text-white lg:text-lg text-sm font-bold">{quizId}</span>
                         </div>
                         {isCompleted && (
                           <div className="flex items-center bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
@@ -373,7 +373,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                           </div>
                         )}
                       </div>
-                      <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz {quizId}</h4>
+                      <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz - {quizId}</h4>
                       <p className="text-gray-600 text-sm mb-4">{categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length} Questions</p>
                       <button 
                         onClick={() => handleQuizSelect(quizId)}
@@ -409,7 +409,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
           </div>
 
           {/* Other Categories Section */}
-          <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
+          <div className="bg-white rounded-xl shadow-2xl py-8 lg:px-8 px-2 mt-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Explore Other Categories</h3>
             <p className="text-gray-600 text-center mb-8">Ready to try something different? Explore these categories!</p>
             
@@ -418,7 +418,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 if (categoryId === id) return null; // Skip current category
                 
                 return (
-                  <div key={categoryId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border border-gray-400 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                  <div key={categoryId} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg py-6 lg:px-6 px-2 border border-gray-400 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                     <div className={`w-12 h-12 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center mb-4`}>
                       <span className="text-white text-2xl">{categoryIcons[categoryId] || '🧠'}</span>
                     </div>
@@ -630,7 +630,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
         </div>
 
         {/* All Quizzes in this Category Section - Show during quiz */}
-        <div className="bg-white rounded-xl shadow-2xl p-8 mt-8">
+        <div className="bg-white rounded-xl shadow-2xl py-8 lg:px-8 px-2 mt-8">
           <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">All Quizzes in this Category</h3>
           <p className="text-gray-600 text-center mb-8">Switch between quizzes or continue your progress</p>
           
@@ -646,12 +646,12 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                 const isCurrentQuiz = quizId === currentQuizId;
                 
                 return (
-                  <div key={quizId} className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border-2 transition-all duration-300 transform hover:scale-105 ${
+                  <div key={quizId} className={`bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg py-6 lg:px-6 px-3 border-2 transition-all duration-300 transform hover:scale-105 ${
                       isCurrentQuiz ? 'border-blue-400 shadow-lg' : 'border-gray-400 hover:shadow-lg'
                     }`}>
                     <div className="flex items-center justify-between mb-4">
-                      <div className={`w-12 h-12 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center`}>
-                        <span className="text-white text-lg font-bold">{quizId}</span>
+                      <div className={`lg:w-12 lg:h-12 w-8 h-8 bg-gradient-to-br ${categoryData.color} rounded-full flex items-center justify-center`}>
+                        <span className="text-white lg:text-lg text-sm font-bold">{quizId}</span>
                       </div>
                       {isCompleted && (
                         <div className="flex items-center bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
@@ -662,7 +662,7 @@ export default function QuizPage({ params }: { params: Promise<{ id: string }> }
                         </div>
                       )}
                     </div>
-                    <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title} Quiz {quizId}</h4>
+                    <h4 className="text-lg font-bold text-gray-700 mb-2">{categoryData.title}: Quiz - {quizId}</h4>
                     <p className="text-gray-600 text-sm mb-4">{categoryData.quizzes[quizId as keyof typeof categoryData.quizzes].length} Questions</p>
                     <button 
                       onClick={() => handleQuizSelect(quizId)}
