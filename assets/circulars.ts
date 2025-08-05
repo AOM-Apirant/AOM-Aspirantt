@@ -43,6 +43,10 @@ export const alertAdvicePdfFiles = [
     name: "Alert Advice 11 of 2025",
     filename: "Alert Advice 11 of 2025.pdf",
   },
+  {
+    name: "Alert Advice 12 of 2025",
+    filename: "Alert Advice 12 of 2025.pdf",
+  },
 ];
 
 export const flyLeafPdfFiles = [
@@ -170,6 +174,10 @@ export const fortnightlySafetyBulletinPdfFiles = [
   {
     name: "Fortnightly Safety Bulletin July 1st FN 2025",
     filename: "Fortnightly Safety Bulletin July 1st FN 2025.pdf",
+  },
+  {
+    name: "Fortnightly Safety Bulletin July 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin July 2nd FN 2025.pdf",
   },
 ];
 
