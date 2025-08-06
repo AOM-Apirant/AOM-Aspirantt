@@ -1,11 +1,11 @@
 import React from 'react'
 
-import RailwayInstitutes from '@/components/syllabus/RailwayInstitutes'
+import PNM from '@/components/syllabus/PNM'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <RailwayInstitutes />
+        <PNM />
     </div>
   )
 }
