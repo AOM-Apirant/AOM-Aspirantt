@@ -2,6 +2,33 @@
 import React from 'react'
 
 const Mission3000MT = () => {
+  const handleDownload = async () => {
+    try {
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = '/syllabus/Mission 3000 MT.pdf';
+      link.download = 'Mission 3000 MT.pdf';
+      link.target = '_blank';
+      
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // For mobile devices, also try to open the PDF directly
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Small delay to ensure download starts
+        setTimeout(() => {
+          window.open('/syllabus/Mission 3000 MT.pdf', '_blank');
+        }, 1000);
+      }
+    } catch (error) {
+      console.error('Download failed:', error);
+      // Fallback: open in new tab
+      window.open('/syllabus/Mission 3000 MT.pdf', '_blank');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -285,6 +312,31 @@ const Mission3000MT = () => {
             <h2 className="text-2xl font-bold text-white mb-4 text-center">Conclusion</h2>
             <p className="text-gray-200 leading-relaxed text-center">
               Mission 3000 MT is a bold but challenging plan to revitalize Indian Railways&apos; freight sector. While infrastructure projects and policy reforms are in progress, achieving the target requires overcoming significant operational, financial, and competitive hurdles. Strategic interventions, innovative solutions, and sustained investment will be critical to regaining market share and meeting economic and environmental goals.
+            </p>
+          </div>
+
+          {/* Download PDF Section */}
+          <div className="text-center mt-12 mb-8">
+            <div className="inline-block group">
+              <button 
+                onClick={handleDownload}
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-700 hover:via-indigo-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border border-white/20 backdrop-blur-sm cursor-pointer"
+              >
+                <div className="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-all duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <span className="text-lg">Download Mission 3000 MT PDF</span>
+                <div className="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-all duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <p className="text-gray-300 text-sm mt-4 opacity-80">
+              Get the complete Mission 3000 MT document for offline reading
             </p>
           </div>
         </div>

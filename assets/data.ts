@@ -1036,6 +1036,219 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 0,
             explanation: 'most restrictive aspect is the correct answer.  Reference -GR 3.74 '
           },
+        ],
+'16': [
+          {
+            question: 'Whenever Distant signal is showing no light or imperfect aspect, LP shall _____________ and after observing the "P" marker shall pass assuming the distant signal to be at ON.',
+            options: ['bring his train to a stand', 'pass the signal without stopping', 'stop until authority is given', 'ignore and pass the signal'],
+            correct: 0,
+            explanation: ' bring his train to a stand is the correct answer.  Reference -GR 3.74 '
+          },
+ 
+          {
+            question: 'When a Loco Pilot finds an Intermediate Block Stop signal at ‗on‘, he shall stop his train in rear of the signal and contact the _______________on the telephone',
+            options: ['Station Master of the block station in advance', 'Station Master of the block station in rear', 'Traction Power controller', 'Nearest Gateman'],
+            correct: 1,
+            explanation: 'Station Master of the block station in rear is the correct answer.  Reference -GR 3.75 '
+          },
+
+          {
+            question: 'The Station Master shall authorise the Loco Pilot to pass the Intermediate Block Stop signal, if defective, as prescribed by __________',
+            options: ['General Rules', 'approved special instructions', 'special instructions', 'Sr.DOM of the division'],
+            correct: 2,
+            explanation: 'special instructions is the correct answer.  Reference - '
+          },
+ 
+          {
+            question: 'The facility that is provided for I. B signal is',
+            options: ['Phone connecting the rear SM', 'Phone connecting the advance SM', 'Phone connecting the SCOR', 'Phone connecting the TPC'],
+            correct: 0,
+            explanation: 'Phone connecting the rear SM is the correct answer.  Reference -GR 3.75 '
+          },
+ 
+          {
+            question: 'When I B S is at "ON" immediately the Loco Pilot shall stop and contact',
+            options: ['SM of advance station', 'SCOR', 'SM in rear station', 'TPC'],
+            correct: 2,
+            explanation: 'SM in rear station is the correct answer.  Reference -GR 3.75 '
+          },
+ 
+          {
+            question: 'When IBS is at ―ON‖ and the telephone is out of order, Loco Pilot shall wait for',
+            options: ['two minutes', 'three minutes', 'four minutes', 'five minutes'],
+            correct: 3,
+            explanation: 'five minutesis the correct answer.  Reference -GR 3.75 '
+          },
+ 
+          {
+            question: 'When IBS is at ―ON‖ and the telephone is out of order, Loco Pilot after waiting for five minutes shall proceed when view is clear/not clear upto next stop signal at a speed of',
+            options: ['10/8kmph', '25/10kmph', '15/8kmph', '15/10kmph'],
+            correct: 2,
+            explanation: '15/8kmph is the correct answer.  Reference -GR 3.75 '
+          },
+ 
+          {
+            question: 'In case SM is aware of IB signal becoming defective he shall ___________________ and follow in accordance with the procedure prescribed by special instructions.',
+            options: ['issue written authority to pass IB signal at ON', 'treat both sections IB & Axle counter as one', 'Contact advance SM and issue authority', 'permit the LP on IB telephone'],
+            correct: 1,
+            explanation: 'treat both sections IB & Axle counter as one is the correct answer.  Reference -GR 3.75 '
+          },
+
+          {
+            question: 'As soon as a defective signal has been put into good working order, the Station Master shall intimate the fact to the officials ___________________________.',
+            options: ['who were advised of its being defective', 'who were informed', 'of various departments', 'of the concerned department'],
+            correct: 0,
+            explanation: 'who were advised of its being defective is the correct answer.  Reference -GR 3.76 '
+          },
+
+          {
+            question: 'Whenever points, crossings or guard rails are defective or damaged, the railway servant in charge of operation of points shall protect them and immediately arrange to report the circumstances to the',
+            options: ['Concerned department', 'Branch Officers', 'Safety department', 'Station Master.'],
+            correct: 3,
+            explanation: 'Station Master. is the correct answer.  Reference -GR 3.77 '
+          },
+],
+'17': [
+          {
+            question: 'The Station Master, on becoming aware of such defective or damaged points etc., shall',
+            options: ['immediately arrange to rectify the defect by the railway servant responsible for their maintenance', 'arrange to ensure the safe passage of trains, and', 'keep the signal or signals concerned at ‗on‘ until the defect is rectified', 'All the above'],
+            correct: 3,
+            explanation: 'All the above is the correct answer.  Reference -GR 3.77 '
+          },
+         
+          {
+            question: 'The Loco Pilot shall pay immediate attention to and obey ____________whether the cause of the signal being shown is known to him or not.',
+            options: ['instructions of SM', 'orders of shed in charge', 'every signal', 'officials of S&T department'],
+            correct: 2,
+            explanation: 'every signal is the correct answer.  Reference -GR 3.78 '
+          },
+
+          {
+            question: 'The Loco Pilot shall not, however, trust entirely to signals, but always be.',
+            options: ['Casual', 'vigilant and cautious', 'vigilant', 'cautious'],
+            correct: 1,
+            explanation: 'vigilant and cautious is the correct answer.  Reference GR 3.78- '
+          },
+ 
+          {
+            question: 'The Loco Pilot shall whistle intermittently when his engine explodes detonator and take every possible caution as necessary including',
+            options: ['increase of speed', 'stop the train', 'proceed with MPS', 'reduction of speed'],
+            correct: 3,
+            explanation: 'reduction of speed is the correct answer.  Reference -GR 3.78 '
+          },
+ 
+          {
+            question: 'The loco pilot shall _____________when his engine explodes detonator(s) and take every possible caution including reduction of speed as necessary so as to have the train well under control and be able to stop short of any obstruction on the line;',
+            options: ['whistle intermittently', 'whistle continuously', 'keep sharp look out', 'take no action'],
+            correct: 0,
+            explanation: 'whistle intermittently is the correct answer.  Reference -GR 3.78 '
+          },
+ 
+          {
+            question: 'In thick, foggy or tempestuous weather impairing visibility and his engine explodes ____ detonators within a distance of 10 meters apart, the Loco Pilot will control his train immediately and will follow the aspect of the fixed signal ahead within a distance of _______ meters',
+            options: ['1, 270', '2, 270', '3,180', '2,180'],
+            correct: 1,
+            explanation: '2, 270 is the correct answer.  Reference -GR 3.78 '
+          },
+   
+          {
+            question: 'When Loco Pilot explodes _____ detonators within a distance of _________meters, he should control his train and move cautiously to stop short of any obstruction and be guided by the signal that he may receive',
+            options: ['2, 20', '3 , 30', '3, 40', '1, 20'],
+            correct: 2,
+            explanation: '3, 40 is the correct answer.  Reference - GR 3.78'
+          },
+ 
+          {
+            question: 'After exploding the detonator, if no obstruction found further, the Loco Pilot, can pick up normal speed after proceeding cautiously up to a distance of',
+            options: ['500 meters', 'one KM', '1.5 KM', '2 KM'],
+            correct: 2,
+            explanation: '1.5 KM is the correct answer.  Reference -GR 3.78 '
+          },
+
+          {
+            question: 'When LP notices a signal warning of an obstruction, except detonator, he shall',
+            options: ['proceed cautiously', 'proceed upto next station and report', 'stop after noticing the obstruction', 'stop immediately'],
+            correct: 3,
+            explanation: 'stop immediately is the correct answer.  Reference -GR 3.78 '
+          },
+
+          {
+            question: 'When the Loco Pilot notices a signal warning of an obstruction and no further details are noticed, shall stop during day/night for',
+            options: ['one/two minute', 'two/three minutes', '3/4 minutes',' none of these'],
+            correct: 0,
+            explanation: 'one/two minute is the correct answer.  Reference -GR 3.78 '
+          },
+        ],
+'18': [
+          {
+            question: 'When LP notices a signal warning of an obstruction and no further details are noticed, after stopping one/ two by day/night, he shall proceed upto the next block station',
+            options: ['cautiously', 'with MPS', 'at 20kmph', 'at 30 kmph'],
+            correct: 0,
+            explanation: 'cautiously is the correct answer.  Reference -GR 3.78 '
+          },
+         
+          {
+            question: 'A Loco Pilot shall acquaint himself with the __________ _____________and other local conditions affecting the running of trains on a section or sections of the railway over which he is to work',
+            options: ['Interlocking, gradients', 'system of working, location of signals', 'Classification of stations, shunting', 'Time table, SM office'],
+            correct: 1,
+            explanation: 'system of working, location of signals is the correct answer.  Reference -GR 3.78 '
+          },
+
+          {
+            question: 'A Loco Pilot if ____________with any portion of the railway over which he is to work, obtain the services of a qualified railway servant who is conversant with it to assist him.',
+            options: ['acquainted', 'he is having road knowledge', 'not so acquainted', 'None of the above'],
+            correct: 2,
+            explanation: 'not so acquainted is the correct answer.  Reference -GR 3.78 '
+          },
+ 
+          {
+            question: 'The Loco Pilot of a train while passing an Outer, a Home or a Routing signal, when it is ‗on‘ or defective, shall ensure that the speed of his train does not exceed _________.',
+            options: ['8 kmph', '10kmph', '15 kmph', '30 kmph'],
+            correct: 2,
+            explanation: '15 kmph is the correct answer.  Reference - GR 3.80'
+          },
+ 
+          {
+            question: 'In the case of a last Stop signal, LP shall not pass such signal, when ‗on‘ or defective, unless he is also in possession of a proper __________________under the system of working',
+            options: ['written authority', 'PLCT', 'LSS taken off', 'authority to proceed'],
+            correct: 3,
+            explanation: 'authority to proceed is the correct answer.  Reference -GR 3.81 '
+          },
+ 
+          {
+            question: 'No Loco Pilot shall take his engine on or across any running line until he has obtained the permission of the _____________and has satisfied himself that all the correct signals have been shown.',
+            options: ['Station Master', 'Pointsman', 'Loco Inspector', 'Traffic Inspector'],
+            correct: 0,
+            explanation: 'Station Master is the correct answer.  Reference - GR 3.82'
+          },
+   
+          {
+            question: 'The Loco Pilot and Assistant Loco Pilot, as the case may be, shall _______ each signal affecting the movement of the train as soon as it becomes visible. They shall __________ of the signals to each other',
+            options: ['Obey, follow Aspects', 'Identify, follow indications', 'identify, call out Aspects', 'Follow , call out indications'],
+            correct: 2,
+            explanation: 'identify, call out Aspects is the correct answer.  Reference - GR 3.83'
+          },
+ 
+          {
+            question: 'The Assistant Loco Pilot shall, when__, assist the Loco Pilot in exchanging signals as required',
+            options: ['Engaged', 'attending mechanical failures', 'working trains', 'not otherwise engaged'],
+            correct: 3,
+            explanation: 'not otherwise engaged is the correct answer.  Reference -GR 3.83 '
+          },
+
+          {
+            question: 'When two or more engines are attached to a train, the Loco Pilot of the __________ shall be responsible for the observance of and compliance with the signals',
+            options: ['Rearmost engine', 'Leading engine,', 'Senior most LP', 'Any LP'],
+            correct: 2,
+            explanation: 'Leading engine, is the correct answer.  Reference -GR 3.84 '
+          },
+
+          {
+            question: 'Should a Loco Pilot or a Guard observe that a signal is rendered imperfectly visible by branches of trees or by any other cause, or that a signal light is partially obscured or not burning brightly enough to give a clear aspect, he shall report the matter to the Station Master at the__.',
+            options: ['next station at which the train stops', 'next station', 'Notice station', 'Crew changing station'],
+            correct: 0,
+            explanation: 'next station at which the train stops is the correct answer.  Reference -GR 3.85 '
+          },
         ]
       }
     },
