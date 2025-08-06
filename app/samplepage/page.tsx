@@ -1,11 +1,10 @@
 import React from 'react'
-import IndustrialRelations from '@/components/syllabus/IndustrialRelations'
-
+import APAR from '@/components/syllabus/APAR'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <IndustrialRelations />
+        <APAR />
     </div>
   )
 }

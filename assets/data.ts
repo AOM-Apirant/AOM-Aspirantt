@@ -1249,6 +1249,77 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 0,
             explanation: 'next station at which the train stops is the correct answer.  Reference -GR 3.85 '
           },
+        ],
+'19': [
+          {
+            question: 'When LP or Guard reports of obstruction of signals by branches of trees is made, the Station Master shall take immediate steps to advise the ______________ concerned who shall get it rectified',
+            options: ['S&T official', 'Engineering', 'Station Master', 'concerned department'],
+            correct: 2,
+            explanation: ' Station Master is the correct answer.  Reference -GR 3.85 '
+          },
+         
+          {
+            question: 'The rule No. of G&SR for Commissioning of fixed signals is mentioned in',
+            options: ['GR 3.22', 'GR 3.24', 'GR 3.26', 'GR 3.28'],
+            correct: 2,
+            explanation: 'GR 3.26 is the correct answer.  Reference -Index G&SR '
+          },
+
+          {
+            question: 'The rule No. of G&SR for points affecting movement of trains is mentioned in',
+            options: ['GR 3.36', 'GR 3.38', 'GR 3.40', 'GR 3.42'],
+            correct: 1,
+            explanation: 'GR 3.38 is the correct answer.  Reference -Index G&SR '
+          },
+ 
+          {
+            question: 'The rule No. of G&SR for rules for Points and disconnection & reconnection is mentioned in',
+            options: ['GR 3.51', 'GR 3.52', 'GR 3.53', 'GR 3.54'],
+            correct: 0,
+            explanation: 'GR 3.51 is the correct answer.  Reference - Index G&SR'
+          },
+ 
+          {
+            question: 'The rule No. of G&SR for placing of detonators in thick, foggy or tempestuous weather impairing visibility is mentioned in',
+            options: ['GR 3.59', 'GR 3.60', 'GR 3.61', 'GR 3.62'],
+            correct: 2,
+            explanation: 'GR 3.61 is the correct answer.  Reference -Index G&SR '
+          },
+ 
+          {
+            question: 'The rule No. of G&SR for description of warning signals is mentioned in',
+            options: ['GR 3.65', 'GR 3.66', 'GR 3.67', 'GR 3.68'],
+            correct: 0,
+            explanation: 'GR 3.65 is the correct answer.  Reference - Index G&SR'
+          },
+   
+          {
+            question: 'The rule No. of G&SR for passing IB stop signal at ‗On‘ is mentioned in',
+            options: ['GR 3.72', 'GR 3.73', 'GR 3.74', 'GR 3.75'],
+            correct: 3,
+            explanation: 'GR 3.75 is the correct answer.  Reference -Index G&SR '
+          },
+ 
+          {
+            question: 'The rule No. of G&SR for duties of SM in case of approach stop signal is defective is mentioned in',
+            options: ['GR 3.68', 'GR 3.69', 'GR 3.70', 'GR 3.72'],
+            correct: 1,
+            explanation: 'GR 3.69 is the correct answer.  Reference -Index G&SR '
+          },
+
+          {
+            question: 'The rule No. of G&SR for duties of SM in case of departure stop signal is defective is mentioned in',
+            options: ['GR 3.68', 'GR 3.69', 'GR 3.70', 'GR 3.71'],
+            correct: 2,
+            explanation: 'GR 3.70 is the correct answer.  Reference -Index G&SR '
+          },
+
+          {
+            question: 'The rule No. of G&SR for duties of SM generally when signal is defective is mentioned in',
+            options: ['GR 3.68', 'GR 3.69', 'GR 3.70', 'GR 3.71'],
+            correct: 0,
+            explanation: 'GR 3.68 is the correct answer.  Reference -Index G&SR '
+          },
         ]
       }
     },
