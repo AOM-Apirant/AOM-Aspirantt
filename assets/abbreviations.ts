@@ -198,7 +198,9 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "CRT", fullForm: "Container Rail Terminal" },
     { acronym: "CSO", fullForm: "Chief Safety Officer" },
     { acronym: "CSO", fullForm: "Central Standards Office" },
+    { acronym: "CTARA", fullForm: "Centralized Training Academy for Railway Accounts" },
     { acronym: "CTC", fullForm: "Centralized Traffic Control" },
+    { acronym: "CTI", fullForm: "Centralised Training Institutes" },
     { acronym: "CTLC", fullForm: "Chief Train Loco Controller" },
     { acronym: "CTNC", fullForm: "Chief Train Clerk" },
     { acronym: "CTO", fullForm: "Container Train Operators" },
@@ -342,6 +344,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "INTUC", fullForm: "Indian National Trade Union Congress" },
     { acronym: "IPAS", fullForm: "Integrated Payroll and Accounting System" },
     { acronym: "IPMD", fullForm: "Infrastructure Projects Monitoring Device" },
+    { acronym: "IPWE", fullForm: "Institution of Permanent Way Engineers" },
     { acronym: "IRAS", fullForm: "Indian Railway Accounts Service" },
     { acronym: "IRCA", fullForm: "Indian Railway Conference Association" },
     { acronym: "IRCON", fullForm: "Indian Railway Construction Corporation", 
@@ -361,6 +364,13 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "To raise funds from the market to part finance the Plan Outlay of IR.",
       reference: "--"
     },
+    { acronym: "IRCEN", fullForm: "Indian Railways Institute of Civil Engineering" },
+    { acronym: "IRIEEN", fullForm: "Indian Railways Institute of Electrical Engineering" },
+    { acronym: "IRIFM", fullForm: "Indian Railways Institute of Financial Management" },
+    { acronym: "IRILMM", fullForm: "Indian Railways Institute of Logistics & Materials Management" },
+    { acronym: "IRIMEE", fullForm: "Indian Railways Institute of Mechanical and Electrical Engineering" },
+    { acronym: "IRISET", fullForm: "Indian Railways Institute of Signal Engineering and Telecommunications" },
+    { acronym: "IRITM", fullForm: "Indian Railways Institute of Transport Management" },
     {
       acronym: "IRLDA",
       fullForm: "Indian Railways Land Development Authority",
@@ -373,7 +383,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       fullForm: "Indian Railway Projects & Sanctioning Management",
     },
     { acronym: "IRPWM", fullForm: "Indian Railways Permanent Way Manual" },
-    { acronym: "IRSE", fullForm: "Indian Railway Service of Engineers" },
+    { acronym: "IRSE", fullForm: "Indian Railway Service of Civil Engineers" },
     {
       acronym: "IRSEE",
       fullForm: "Indian Railway Service of Electrical Engineers",
@@ -407,6 +417,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
   J: [
     { acronym: "JCM", fullForm: "Joint Consultative Machinery" },
     { acronym: "JPO", fullForm: "Joint Procedure Order" },
+    { acronym: "JRRPF", fullForm: "Jagjivan Ram Railway Protection Force Academy" },
     { acronym: "JTBS", fullForm: "Jansadharan Ticket Booking Sewak" },
   ],
   K: [{ acronym: "KRCL", 
@@ -659,6 +670,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       fullForm: "Software Aided Train Scheduling And Network Governance",
     },
     { acronym: "SBU", fullForm: "Signal & Brake Unit" },
+    { acronym: "SCRA", fullForm: "Special Class Railway Apprentices" },
     { acronym: "SDGM", fullForm: "Senior Deputy General Manager" },
     {
       acronym: "SFOORTI",
@@ -799,5 +811,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { acronym: "WTT", fullForm: "Working Time Table" },
   ],
   Y: [{ acronym: "YTSK", fullForm: "Yatri Ticket Suvidha Kendra" }],
-  Z: [{ acronym: "ZULU", fullForm: "Zulu Time (UTC)" }],
+  Z: [{ acronym: "ZULU", fullForm: "Zulu Time (UTC)" },
+    { acronym: "ZRTI", fullForm: "Zonal Railway Training Institute" },
+  ],
 };
