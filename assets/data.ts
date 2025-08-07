@@ -1320,6 +1320,148 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 0,
             explanation: 'GR 3.68 is the correct answer.  Reference -Index G&SR '
           },
+        ],
+'20': [
+          {
+            question: 'The rule No. of G&SR for duties of engine crew in respect of signals is mentioned in',
+            options: ['GR 3.75', 'GR 3.76', 'GR 3.77', 'GR 3.78'],
+            correct: 3,
+            explanation: ' GR 3.78 is the correct answer.  Reference -Index G&SR '
+          },
+         
+          {
+            question: 'The rule No. of G&SR for reporting of defects in signals by LPs is mentioned in',
+            options: ['GR 3.85', 'GR 3.84', 'GR 3.83', 'GR 3.82'],
+            correct: 0,
+            explanation: 'GR 3.85 is the correct answer.  Reference -Index G&SR '
+          },
+
+          {
+            question: 'The working of trains between stations shall be regulated by the standard time prescribed by the__, which shall be transmitted daily to all the principal stations of the Railway at 16.00 hours in the manner prescribed.',
+            options: ['Meteorological department', 'Control office', 'Government of India', 'Central control'],
+            correct: 2,
+            explanation: 'Government of India is the correct answer.  Reference -GR 4.01 '
+          },
+ 
+          {
+            question: 'The working of trains between stations shall be regulated by the standard time prescribed by the Government of India, which shall be transmitted daily to all the principal stations of the Railway at _______________in the manner prescribed.',
+            options: ['12.00 hrs', '16.00 hours', '18.00 hrs', '00.00 hrs'],
+            correct: 1,
+            explanation: '16.00 hours is the correct answer.  Reference -GR 4.01 '
+          },
+ 
+          {
+            question: 'No passenger train or mixed train shall be despatched from a station before the__.',
+            options: ['Standard time', 'Working time table timing', 'Time mentioned in Apps', 'advertised time'],
+            correct: 3,
+            explanation: 'advertised time is the correct answer.  Reference -GR 4.02 '
+          },
+ 
+          {
+            question: 'Before a train starts from a terminal or crew-changing station, the _______shall set his watch by the station clock or the clock at the authorised place of reporting for duty and communicate the time to the Loco Pilot who shall set his watch accordingly',
+            options: ['Guard', 'Loco Pilot', 'Assistant Loco Pilot', 'TTEs'],
+            correct: 0,
+            explanation: 'Guard is the correct answer.  Reference -GR 4.03 '
+          },
+   
+          {
+            question: 'Before a train starts from a terminal or crew-changing station, the Guard shall set his watch by the station clock or the clock at the authorised place of reporting for duty and communicate the time to the _______ who shall set his watch accordingly',
+            options: ['Asst.Guard', 'Loco Pilot', 'Assistant Loco Pilot', 'TTEs'],
+            correct: 1,
+            explanation: 'Loco Pilot is the correct answer.  Reference -GR 4.03 '
+          },
+ 
+          {
+            question: 'Every train shall be run on each section of the railway within the limits of speed sanctioned for that section by _____________',
+            options: ['Special instructions', 'Chief engineer of the zone', 'approved special instructions', 'GM'],
+            correct: 0,
+            explanation: 'Special instructions is the correct answer.  Reference -GR 4.08 '
+          },
+
+          {
+            question: 'The sectional speed sanctioned and permanent speed restrictions shall be shown in the _______________',
+            options: ['Sheet time table', 'Working Time Table', 'Public time table', 'Lobbies'],
+            correct: 1,
+            explanation: 'Working Time Tableis the correct answer.  Reference -GR 4.08 '
+          },
+
+          {
+            question: 'In case speedometer is defective between crew changing stations it should be further worked',
+            options: ['15kmph', '10 KMPH', '10% reduction of speed', 'with relief or repair'],
+            correct: 2,
+            explanation: '10% reduction of speed is the correct answer.  Reference -GR 4.08 '
+          },
+        ],
+'21': [
+          {
+            question: 'The Loco Pilot shall.— regulate and control the running of the train according to the Working Time Table,',
+            options: ['so as to avoid either excessive speed or loss of time, and', 'not make up time between stations more time than is allowed', 'Shall also observe all speed restrictions', 'All the above'],
+            correct: 1,
+            explanation: ' All the above is the correct answer.  Reference -GR 4.08 '
+          },
+         
+          {
+            question: 'Whenever, in consequence of the line being under repair or for any other reason, special precautions are necessary, a ____________detailing the kilometers between which such precautions are necessary, the reasons for taking such precautions, and the speed at which a train shall travel, shall be handed to the Loco Pilot at the stopping station',
+            options: ['Caution Order', 'Shunting order', 'speed restriction advice', 'Permanent speed restriction '],
+            correct: 0,
+            explanation: 'Caution Order is the correct answer.  Reference -GR 4.09 '
+          },
+
+          {
+            question: 'The Caution Order shall be on ________ paper in _____________ font or typed or made out on computers with the words ―caution order‘ written on top of the form in bold letters of appropriate font size to draw attention distinctly and signed in full.',
+            options: ['Red, blue or black', 'White, blue or black', 'White, green', 'Green, Black'],
+            correct: 1,
+            explanation: 'White, blue or black is the correct answer.  Reference -GR 4.09 '
+          },
+ 
+          {
+            question: 'The speed of trains over turn-outs and cross-overs shall not exceed its permissible speed or __________ whichever is less, unless otherwise prescribed by approved special instructions, which may permit a higher speed.',
+            options: ['10 kmph', '15 kmph', '', '30 kmph'],
+            correct: 3,
+            explanation: '30 kmph is the correct answer.  Reference -GR 4.10 '
+          },
+ 
+          {
+            question: 'No train shall run through an interlocked station at a speed exceeding_, or such less speed as may be prescribed by approved special instructions unless the line on which the train is to run has been isolated from all other lines by the setting of points or other approved means',
+            options: ['10 Kilometres an hour', '30 Kilometres an hour', '50 Kilometres an hour', '60 Kilometres an hour'],
+            correct: 2,
+            explanation: '50 Kilometres an hour is the correct answer.  Reference - GR 4.11'
+          },
+ 
+          {
+            question: 'No engine or self-propelled vehicle shall push any train outside station limits except in accordance with special instructions and at a speed not exceeding _____________________',
+            options: ['10 kmph', '15 kmph', '20 kmph', '25 kmph'],
+            correct: 3,
+            explanation: '25 kmph is the correct answer.  Reference - GR 4.12'
+          },
+   
+          {
+            question: 'Engine pushing rules shall not apply to a train the leading vehicle of which is __________________and which may be operated under approved special instructions',
+            options: ['equipped with driving apparatus', 'equipped with braking apparatus', 'equipped with tail board/lamp', 'equipped with LP equipments'],
+            correct: 0,
+            explanation: 'equipped with driving apparatus is the correct answer.  Reference -GR 4.12 '
+          },
+ 
+          {
+            question: 'Engine pushing rules shall not apply to an engine, _____________, which may be permitted under approved special instructions to run without being coupled to the train',
+            options: ['leading in front of train', 'assisting in rear of a train', 'provided tower wagon in rear', 'assisting in next to train engine'],
+            correct: 1,
+            explanation: 'assisting in rear of a train is the correct answer.  Reference -GR 4.12 '
+          },
+
+          {
+            question: 'Provided further that a "Patrol" or "Search-light" special with one or more vehicles in front of the engine may be permitted to run at a maximum speed of _________',
+            options: ['10 kmph', '20 kmph', '30 kmph', '40 kmph'],
+            correct: 3,
+            explanation: '40 kmph is the correct answer.  Reference -GR 4.12 '
+          },
+
+          {
+            question: 'When trains are worked as engine pushing the load when it is the rearmost or the rearmost vehicle if any, shall carry a ________________',
+            options: ['braking apparatus', 'provision of sounding whistle', 'tail board or a tail lamp', 'Flashing Red light of HS lamp'],
+            correct: 2,
+            explanation: 'tail board or a tail lamp is the correct answer.  Reference -GR 4.12 '
+          },
         ]
       }
     },

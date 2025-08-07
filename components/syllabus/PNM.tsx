@@ -372,6 +372,46 @@ const PNM = () => {
               </div>
             </div>
           </div>
+
+          {/* Fort-Nightly Meetings Section */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-6 mt-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col lg:flex-row gap-4 text-center items-center justify-center">
+              <span className="bg-gradient-to-r from-orange-500 to-red-500 lg:p-4 p-2 rounded-full mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              Fort-Nightly Meetings (FNM)
+            </h2>
+            <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-xl py-6 lg:px-4 px-2 shadow-lg border border-orange-400/30 hover:shadow-xl transition-all duration-300">
+              <div className="space-y-4">
+                <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                  <span className="text-orange-400 mr-4 mt-1 text-xl group-hover:scale-110 transition-transform">🏢</span>
+                  <div className="text-gray-200 lg:text-lg text-base">
+                    <strong>Conducted by:</strong> SPO/Labour at Headquarters and by DPO and APO at Division and Extra Division
+                  </div>
+                </div>
+                <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                  <span className="text-orange-400 mr-4 mt-1 text-xl group-hover:scale-110 transition-transform">💼</span>
+                  <div className="text-gray-200 lg:text-lg text-base">
+                    <strong>Discussion Topics:</strong> Issues affecting employees seniority, fixation of pay etc. are discussed and settled in these meetings
+                  </div>
+                </div>
+                <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                  <span className="text-orange-400 mr-4 mt-1 text-xl group-hover:scale-110 transition-transform">👥</span>
+                  <div className="text-gray-200 lg:text-lg text-base">
+                    <strong>Union Representatives:</strong> Not exceeding 6 can attend the meeting
+                  </div>
+                </div>
+                <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                  <span className="text-orange-400 mr-4 mt-1 text-xl group-hover:scale-110 transition-transform">📋</span>
+                  <div className="text-gray-200 lg:text-lg text-base">
+                    <strong>SCL Grant:</strong> Special Casual Leave is granted to the Union representatives to attend FNM
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PNM from '@/components/syllabus/PNM'
+import PREM from '@/components/syllabus/PREM'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <PNM />
+        <PREM />
     </div>
   )
 }
