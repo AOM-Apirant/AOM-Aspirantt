@@ -1462,6 +1462,77 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 2,
             explanation: 'tail board or a tail lamp is the correct answer.  Reference -GR 4.12 '
           },
+        ],
+'22': [
+          {
+            question: 'A train shall not be worked at night or in thick, foggy or tempestuous weather impairing visibility or in long tunnels, unless the engine carries an _________of an approved design and in addition, two oil or electric white marker lights.',
+            options: ['electric headlight,', 'electric light,', 'electric bulb,', 'Headlight'],
+            correct: 0,
+            explanation: 'electric headlight, is the correct answer.  Reference - GR 4.14'
+          },
+         
+          {
+            question: 'An engine employed exclusively on shunting at stations and yards shall, at night or during thick, foggy or tempestuous weather impairing visibility, exhibit _______________lights in front and in rear',
+            options: ['two white marker', 'two red marker', 'red marker', 'two red & two white marker'],
+            correct: 1,
+            explanation: 'two red marker is the correct answer.  Reference -GR 4.14 '
+          },
+
+          {
+            question: 'The colour of marker lights on both sides of engine exclusively deployed for shunting purpose shall be',
+            options: ['white', 'red', 'amber', 'red and yellow'],
+            correct: 1,
+            explanation: 'red is the correct answer.  Reference -GR 4.14 '
+          },
+ 
+          {
+            question: 'The electric head light on the engine shall be fitted with a switch to dim the light and shall be dimmed',
+            options: ['when the train remains stationary at a station', 'when train is approaching another train in opposite direction on double or multiple track', 'on such other occasions as may be prescribed by special instructions', 'all the above'],
+            correct: 3,
+            explanation: 'all the above is the correct answer.  Reference -GR 4.14 '
+          },
+ 
+          {
+            question: 'In case of defective electric head light of locomotive running in a section provided with reflective type of engineering fixed signal during night or thick, foggy weather impairing visibility, on BG, the Loco Pilot shall work the train cautiously at a speed not exceeding .',
+            options: ['40 kmph', 'severest temporary speed restriction imposed in the block section', '"A" or "B" whichever is less', '"A" or "B" whichever is more'],
+            correct: 2,
+            explanation: '"A" or "B" whichever is less is the correct answer.  Reference -GR 4.14 '
+          },
+ 
+          {
+            question: 'In case of speedometer/recorder becoming defective during the run, the train should run at a speed_.',
+            options: ['prescribed by special instructions', '10 kmph', '40kmph', 'prescribed by approved special instructions'],
+            correct: 0,
+            explanation: 'prescribed by special instructions is the correct answer.  Reference -GR 4.14 '
+          },
+   
+          {
+            question: 'Side lights shall show towards engine in normal position',
+            options: ['red', 'white', 'green', 'yellow'],
+            correct: 1,
+            explanation: 'white is the correct answer.  Reference -GR 4.15 '
+          },
+ 
+          {
+            question: 'Side lights shall show towards rear in normal position',
+            options: ['red', 'white', 'green', 'yellow'],
+            correct: 0,
+            explanation: 'red is the correct answer.  Reference -GR 4.15 '
+          },
+
+          {
+            question: 'The trains for which Side lights may be dispensed with is',
+            options: ['EMU trains', 'Goods trains', 'Express trains', 'Both A & B'],
+            correct: 3,
+            explanation: 'Both A & B is the correct answer.  Reference -GR 4.15 '
+          },
+
+          {
+            question: 'In order to indicate to the staff that a train is complete, the last vehicle shall, be distinguished by affixing to the rear of it- by day',
+            options: ['a tail board of approved design', 'red painted tail lamp of approved design which may be unlit', 'Either "A" or "B"', 'Both "A" & "B"'],
+            correct: 2,
+            explanation: 'Either "A" or "B" is the correct answer.  Reference -GR 4.16 '
+          },
         ]
       }
     },

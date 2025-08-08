@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PREM from '@/components/syllabus/PREM'
+import GatiShaktiTerminals from '@/components/syllabus/GatiShaktiTerminals'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <PREM />
+        <GatiShaktiTerminals />
     </div>
   )
 }
