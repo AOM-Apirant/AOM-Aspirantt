@@ -86,6 +86,14 @@ export const flyLeafPdfFiles = [
     name: "Fly Leaf 9 of 2025",
     filename: "Fly Leaf 9 of 2025.pdf",
   },
+  {
+    name: "Fly Leaf 10 of 2025",
+    filename: "Fly Leaf 10 of 2025.pdf",
+  },
+  {
+    name: "Fly Leaf 11 of 2025",
+    filename: "Fly Leaf 11 of 2025.pdf",
+  },
 ];
 
 export const operatingSafetyCircularPdfFiles = [
