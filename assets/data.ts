@@ -1533,6 +1533,77 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 2,
             explanation: 'Either "A" or "B" is the correct answer.  Reference -GR 4.16 '
           },
+        ],
+'23': [
+          {
+            question: 'In order to indicate to the staff that a train is complete, the last vehicle shall, be distinguished by affixing to the rear of it- by night, as well as in thick, foggy or tempestuous weather impairing visibility during day,',
+            options: ['Flashing amber light', 'flashing red light', 'steady Red light', 'Flashing white light'],
+            correct: 1,
+            explanation: ' flashing red light is the correct answer.  Reference -GR 4.16 '
+          },
+         
+          {
+            question: 'In emergencies only, and under special instructions in each case, a _________may be used in lieu of a tail board or an unlit tail lamp.',
+            options: ['Green flag', 'white light', 'amber light', 'red flag'],
+            correct: 3,
+            explanation: 'red flag is the correct answer.  Reference -GR 4.16 '
+          },
+
+          {
+            question: 'If a train passes the station without such indication to show that it is complete, the Station Master shall- unless the station in advance has advised that the train is complete, neither consider',
+            options: ['block section in rear as clear', 'nor close it.', 'Either "A" or "B"', 'Both "A" & "B"'],
+            correct: 2,
+            explanation: 'Either "A" or "B" is the correct answer.  Reference -GR 4.17 '
+          },
+ 
+          {
+            question: 'Closing of block section in rear by the SM need not be withheld where _________is provided between block stations and complete _______________________is installed and functioning and there is clear indication of clearance of block section as well as complete arrival of the train',
+            options: ['BPAC, track circuiting of station section', 'LVCD, track circuiting', 'track circuiting, BPAC', 'Axle counters, circuiting of station section'],
+            correct: 0,
+            explanation: 'BPAC, track circuiting of station section is the correct answer.  Reference -GR 4.17 '
+          },
+ 
+          {
+            question: 'No passenger train or mixed train shall be despatched from any station, unless every passenger carriage is provided with_____________ with the Guard or the Loco Pilot',
+            options: ['Telephone', 'Means of communication', 'contac', 'Phone No'],
+            correct: 1,
+            explanation: 'Means of communication is the correct answer.  Reference -GR 4.18 '
+          },
+ 
+          {
+            question: 'FILL',
+            options: ['FILL', 'FILL', 'FILL', 'FILL'],
+            correct: 0,
+            explanation: 'FILL is the correct answer.  Reference -GR 4.18 '
+          },
+   
+          {
+            question: 'Each Guard and Loco Pilot shall have with him while on duty with his train, two pairs of ________as he is required to wear under medical advice.',
+            options: ['watches', 'trolley bags', 'first aid boxes', 'spectacles'],
+            correct: 3,
+            explanation: 'spectacles is the correct answer.  Reference -GR 4.19 '
+          },
+ 
+          {
+            question: 'Guards shall posses as personal equipment while working a Passenger train',
+            options: ['6 Washers', 'Hammer cum screw driver', 'First aid box', 'Either "A" or "B"'],
+            correct: 2,
+            explanation: 'First aid box is the correct answer.  Reference -GR 4.19 '
+          },
+
+          {
+            question: 'If a Loco Pilot becomes _________while the engine is in motion, the Assistant Loco Pilot, if duly qualified, may work the train to the next station cautiously',
+            options: ['Sleepy', 'lethargic', 'incapacitated', 'tired'],
+            correct: 2,
+            explanation: 'incapacitated is the correct answer.  Reference -GR 4.20 '
+          },
+
+          {
+            question: 'If a Loco Pilot becomes _____________ while the engine is in motion, where the Assistant Loco Pilot is not duly qualified, he shall bring the train to a stop and send a message to the Station Master of the nearest station for relief LP.',
+            options: ['incapacitated', 'lethargic', 'Sleepy', 'tired'],
+            correct: 0,
+            explanation: 'incapacitated is the correct answer.  Reference -GR 4.20 '
+          },
         ]
       }
     },
