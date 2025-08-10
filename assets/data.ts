@@ -1604,6 +1604,148 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 0,
             explanation: 'incapacitated is the correct answer.  Reference -GR 4.20 '
           },
+        ],
+'24': [
+          {
+            question: 'If a Loco Pilot becomes _________while the engine is in motion, the Assistant Loco Pilot, if duly qualified, may work the train to the next station cautiously',
+            options: ['Sleepy', 'lethargic', 'incapacitated', 'tired'],
+            correct: 2,
+            explanation: ' incapacitated is the correct answer.  Reference -GR 4.20 '
+          },
+         
+          {
+            question: 'If a Loco Pilot becomes _____________ while the engine is in motion, where the Assistant Loco Pilot is not duly qualified, he shall bring the train to a stop and send a message to the Station Master of the nearest station for relief LP.',
+            options: ['incapacitated', 'lethargic', 'Sleepy', 'tired'],
+            correct: 0,
+            explanation: 'incapacitated is the correct answer.  Reference -GR 4.20 '
+          },
+
+          {
+            question: 'In case of__, if the leading driving compartment becomes defective, the trains shall be driven cautiously from the nearest driving compartment which is serviceable; in this event, the Guard shall travel in the leading driving compartment',
+            options: ['Goods trains', 'EMU/DEMU trains', 'Material trains', 'track machines'],
+            correct: 1,
+            explanation: 'EMU/DEMU trains is the correct answer.  Reference -GR 4.21 '
+          },
+ 
+          {
+            question: 'Whenever LP of EMU/DEMU trains is not driving from leading compartment, Guard shall travel in leading compartment and is responsible for',
+            options: ['convey the necessary signals to the Loco Pilot', 'sound the horn or whistle as necessary', 'apply the brake in case of emergency', 'All the above'],
+            correct: 3,
+            explanation: 'All the above is the correct answer.  Reference -GR 4.21 '
+          },
+ 
+          {
+            question: 'Whenever LP of EMU/DEMU trains is not driving from leading compartment, Guard shall travel in leading compartment and is responsible for ________________ correctly at signals, stations and obstructions',
+            options: ['following', 'conveying', 'stopping the train', 'All the above'],
+            correct: 2,
+            explanation: 'stopping the train is the correct answer.  Reference -GR 4.21 '
+          },
+ 
+          {
+            question: 'No train shall be allowed to enter a block section, unless one or more __________or hand braked vehicles are attached to it, except in emergency or as provided for under special instructions',
+            options: ['brake-vans,', 'wagons', 'coaches', 'track machines'],
+            correct: 0,
+            explanation: 'brake-vans, is the correct answer.  Reference -GR 4.23 '
+          },
+   
+          {
+            question: 'Provision of attaching ______ is not compulsory for rail cars, light engine or light engines coupled together',
+            options: ['hand brake vehicles', 'wagons', 'coaches', 'brake-vans'],
+            correct: 3,
+            explanation: 'brake-vans is the correct answer.  Reference -GR 4.23 '
+          },
+ 
+          {
+            question: 'Unless otherwise directed by special instructions, one _________ shall be attached to the rear of the train, provided that ____________ or other vehicles may, under special instructions, be placed in rear of such brake-van.',
+            options: ['bogie, carriage', 'Brake van, reserved carriages', 'Brake van, wagons', 'Loco, wagons'],
+            correct: 1,
+            explanation: 'Brake van, reserved carriages is the correct answer.  Reference -GR 4.24 '
+          },
+
+          {
+            question: 'Except under special instructions or in an emergency, every running train shall be provided with one or more _____________',
+            options: ['ALP', 'Incharge', 'Guards', 'TTEs'],
+            correct: 2,
+            explanation: 'Guards is the correct answer.  Reference -GR 4.25 '
+          },
+
+          {
+            question: 'The Guard of a running train shall travel in his brake-van, except-',
+            options: ['in an emergency', 'under special instructions', 'Either "A" or "B"', 'Both "A" & "B"'],
+            correct: 2,
+            explanation: 'Either "A" or "B" is the correct answer.  Reference -GR 4.25 '
+          },
+],
+'25': [
+          {
+            question: 'When a train is worked without a Guard, such of his duties as can be performed by the__, shall devolve on him as may be specified by special instructions',
+            options: ['Loco Pilot', 'Asst. Guard', 'Pointsman', 'Gateman'],
+            correct: 0,
+            explanation: ' Loco Pilot is the correct answer.  Reference -GR 4.25 '
+          },
+         
+          {
+            question: 'Guard shall, carefully examine the load of any open truck attached to the train and if any such load has _________or, shall have the load made secure or the truck removed from the train.',
+            options: ['fallen, adjustment', 'shifted, requires adjustment', 'been stolen, requires adjustment', 'shifted, fallen'],
+            correct: 1,
+            explanation: 'shifted, requires adjustment is the correct answer.  Reference - GR 4.28'
+          },
+
+          {
+            question: 'No vehicle which has been derailed shall run between stations, until it has been examined and certified by _______',
+            options: ['train examiner', 'Traffic Inspector', 'DRM', 'competent train examiner '],
+            correct: 3,
+            explanation: 'competent train examiner is the correct answer.  Reference -GR 4.29 '
+          },
+ 
+          {
+            question: 'In case of a derailment between stations, the ___________ may, if the vehicle has been re-railed and if he considers it safe to do so, take such vehicle to the next station at a slow speed',
+            options: ['Traffic Inspector', 'Guard', 'Loco Pilot', 'Officer in charge'],
+            correct: 2,
+            explanation: 'Loco Pilot is the correct answer.  Reference -GR 4.29 '
+          },
+ 
+          {
+            question: 'If a Guard or Station Master has reason to apprehend danger from the condition of any vehicle on a train before in case C&W staff not available the _________ shall be consulted and if he so requires, the vehicle shall be detached from the train.',
+            options: ['Loco Pilot', 'Assistant Loco Pilot', 'C&W staff on phone', 'SCOR'],
+            correct: 0,
+            explanation: 'Loco Pilot is the correct answer.  Reference -GR 4.29 '
+          },
+ 
+          {
+            question: 'When a train is examined by a TXR at a station, the SM shall not give permission to start the train until he has received a report from such examiner to the effect that the train is ___________and has the prescribed.',
+            options: ['intact, brake', 'fit to proceed, brake power', 'fit , pressure', 'complete, pressure guages'],
+            correct: 1,
+            explanation: 'fit to proceed, brake power is the correct answer.  Reference -GR 4.31 '
+          },
+   
+          {
+            question: 'In case a freight train is not examined by the train examiner and is without a valid brake power certificate, SM shall not give permission to start the train until he has received a _____________________that the train is fit to proceed and has the prescribed brake power.',
+            options: ['Guard report', 'Loco Pilot report', 'Guard-Loco Pilot Joint Check Report', 'Guard & Pointsman report'],
+            correct: 2,
+            explanation: 'Guard-Loco Pilot Joint Check Report is the correct answer.  Reference -GR 4.31 '
+          },
+ 
+          {
+            question: 'In case a train is without a valid brake power certificate, SM shall not give permission to start the train until he has received a Guard-Loco Pilot Joint Check Report that the train is _______________ and has the prescribed _________________.',
+            options: ['intact, brake', 'fit to proceed, brake power', 'fit , pressure', 'complete, pressure gauges'],
+            correct: 1,
+            explanation: 'fit to proceed, brake power is the correct answer.  Reference -GR 4.31 '
+          },
+
+          {
+            question: 'Loco Pilot shall, before commencement of journey and after performing any shunting en route, ensure',
+            options: ['Train engine is in proper working order including head lights', 'Coupling between the engine and the train is properly Secured', 'Either "A" or "B"', 'Both "A" & "B"'],
+            correct: 3,
+            explanation: 'Both "A" & "B" is the correct answer.  Reference - '
+          },
+
+          {
+            question: 'In case of train working with multi locos or EMU/DEMU rakes, Loco Pilot shall be responsible for observing that all ____________are properly made.',
+            options: ['electrical couplings', 'mechanical connections', 'detachments', 'S&T gears'],
+            correct: 0,
+            explanation: 'electrical couplings is the correct answer.  Reference -GR 4.33 '
+          },
         ]
       }
     },
