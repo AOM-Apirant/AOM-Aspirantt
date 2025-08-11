@@ -209,7 +209,7 @@ const Circulars = () => {
                     onClick={() => file.filename && handlePdfClick(file.filename)}
                   >
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center">
+                      <div className="flex items-center flex-1">
                         <div className={`p-2 rounded-full mr-3 ${
                           file.filename ? 'bg-red-500/20' : 'bg-gray-500/20'
                         }`}>
@@ -217,26 +217,32 @@ const Circulars = () => {
                             file.filename ? 'text-red-400' : 'text-gray-400'
                           }`} />
                         </div>
-                        <div>
+                        <div className="flex-1">
                           <h3 className={`font-medium ${
                             file.filename ? 'text-white' : 'text-gray-400'
                           }`}>
                             {file.name}
                           </h3>
-                          <p className={`text-sm ${
-                            file.filename ? 'text-red-200' : 'text-gray-500'
-                          }`}>
-                            {file.filename ? 'Available for download' : 'Coming soon'}
-                          </p>
+                          {file.filename && (
+                            <div className="mt-1 space-y-1">
+                              <p className="text-sm text-red-200 leading-relaxed">
+                                {file.subject}
+                              </p>
+                              <div className="flex items-center text-xs text-red-300">
+                                <Calendar className="w-3 h-3 mr-1" />
+                                {file.date}
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
-                                             {file.filename && (
-                         loadingFile === file.filename ? (
-                           <Loader2 className="w-5 h-5 text-red-400 animate-spin" />
-                         ) : (
-                           <Download className="w-5 h-5 text-red-400 hover:text-red-300 transition-colors" />
-                         )
-                       )}
+                      {file.filename && (
+                        loadingFile === file.filename ? (
+                          <Loader2 className="w-5 h-5 text-red-400 animate-spin ml-3" />
+                        ) : (
+                          <Download className="w-5 h-5 text-red-400 hover:text-red-300 transition-colors ml-3" />
+                        )
+                      )}
                     </div>
                   </div>
                 ))}
@@ -267,7 +273,7 @@ const Circulars = () => {
                     onClick={() => file.filename && handlePdfClick(file.filename)}
                   >
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center">
+                      <div className="flex items-center flex-1">
                         <div className={`p-2 rounded-full mr-3 ${
                           file.filename ? 'bg-green-500/20' : 'bg-gray-500/20'
                         }`}>
@@ -275,26 +281,32 @@ const Circulars = () => {
                             file.filename ? 'text-green-400' : 'text-gray-400'
                           }`} />
                         </div>
-                        <div>
+                        <div className="flex-1">
                           <h3 className={`font-medium ${
                             file.filename ? 'text-white' : 'text-gray-400'
                           }`}>
                             {file.name}
                           </h3>
-                          <p className={`text-sm ${
-                            file.filename ? 'text-green-200' : 'text-gray-500'
-                          }`}>
-                            {file.filename ? 'Available for download' : 'Coming soon'}
-                          </p>
+                          {file.filename && (
+                            <div className="mt-1">
+                              <p className="text-sm text-green-200 leading-relaxed">
+                                {file.subject}
+                              </p>
+                              <div className="flex items-center text-xs text-green-300 mt-1">
+                                <Calendar className="w-3 h-3 mr-1" />
+                                {file.date}
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
-                                             {file.filename && (
-                         loadingFile === file.filename ? (
-                           <Loader2 className="w-5 h-5 text-green-400 animate-spin" />
-                         ) : (
-                           <Download className="w-5 h-5 text-green-400 hover:text-green-300 transition-colors" />
-                         )
-                       )}
+                      {file.filename && (
+                        loadingFile === file.filename ? (
+                          <Loader2 className="w-5 h-5 text-green-400 animate-spin ml-3" />
+                        ) : (
+                          <Download className="w-5 h-5 text-green-400 hover:text-green-300 transition-colors ml-3" />
+                        )
+                      )}
                     </div>
                   </div>
                 ))}
@@ -325,33 +337,39 @@ const Circulars = () => {
                   }`}
                   onClick={() => file.filename && handlePdfClick(file.filename)}
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <div className={`p-2 rounded-full mr-3 ${
+                  <div className="flex items-start justify-between">
+                    <div className="flex items-start flex-1">
+                      <div className={`p-2 rounded-full mr-3 mt-1 ${
                         file.filename ? 'bg-orange-500/20' : 'bg-gray-500/20'
                       }`}>
                         <Shield className={`w-4 h-4 ${
                           file.filename ? 'text-orange-400' : 'text-gray-400'
                         }`} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className={`font-medium ${
                           file.filename ? 'text-white' : 'text-gray-400'
                         }`}>
                           {file.name}
                         </h3>
-                        <p className={`text-sm ${
-                          file.filename ? 'text-orange-200' : 'text-gray-500'
-                        }`}>
-                          {file.filename ? 'Available for download' : 'Coming soon'}
-                        </p>
+                        {file.filename && (
+                          <div className="mt-1 space-y-1">
+                            <p className="text-sm text-orange-200 leading-relaxed">
+                              {file.subject}
+                            </p>
+                            <div className="flex items-center text-xs text-orange-300">
+                              <Calendar className="w-3 h-3 mr-1" />
+                              {file.date}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {file.filename && (
                       loadingFile === file.filename ? (
-                        <Loader2 className="w-5 h-5 text-orange-400 animate-spin" />
+                        <Loader2 className="w-5 h-5 text-orange-400 animate-spin ml-3" />
                       ) : (
-                        <Download className="w-5 h-5 text-orange-400 hover:text-orange-300 transition-colors" />
+                        <Download className="w-5 h-5 text-orange-400 hover:text-orange-300 transition-colors ml-3" />
                       )
                     )}
                   </div>
@@ -383,33 +401,39 @@ const Circulars = () => {
                   }`}
                   onClick={() => file.filename && handlePdfClick(file.filename)}
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <div className={`p-2 rounded-full mr-3 ${
+                  <div className="flex items-start justify-between">
+                    <div className="flex items-start flex-1">
+                      <div className={`p-2 rounded-full mr-3 mt-1 ${
                         file.filename ? 'bg-blue-500/20' : 'bg-gray-500/20'
                       }`}>
                         <BookOpen className={`w-4 h-4 ${
                           file.filename ? 'text-blue-400' : 'text-gray-400'
                         }`} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className={`font-medium ${
                           file.filename ? 'text-white' : 'text-gray-400'
                         }`}>
                           {file.name}
                         </h3>
-                        <p className={`text-sm ${
-                          file.filename ? 'text-blue-200' : 'text-gray-500'
-                        }`}>
-                          {file.filename ? 'Available for download' : 'Coming soon'}
-                        </p>
+                        {file.filename && (
+                          <div className="mt-1 space-y-1">
+                            <p className="text-sm text-blue-200 leading-relaxed">
+                              {file.subject}
+                            </p>
+                            <div className="flex items-center text-xs text-blue-300">
+                              <Calendar className="w-3 h-3 mr-1" />
+                              {file.date}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {file.filename && (
                       loadingFile === file.filename ? (
-                        <Loader2 className="w-5 h-5 text-blue-400 animate-spin" />
+                        <Loader2 className="w-5 h-5 text-blue-400 animate-spin ml-3" />
                       ) : (
-                        <Download className="w-5 h-5 text-blue-400 hover:text-blue-300 transition-colors" />
+                        <Download className="w-5 h-5 text-blue-400 hover:text-blue-300 transition-colors ml-3" />
                       )
                     )}
                   </div>
@@ -442,7 +466,7 @@ const Circulars = () => {
                   onClick={() => file.filename && handlePdfClick(file.filename)}
                 >
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center">
+                    <div className="flex items-center flex-1">
                       <div className={`p-2 rounded-full mr-3 ${
                         file.filename ? 'bg-purple-500/20' : 'bg-gray-500/20'
                       }`}>
@@ -450,24 +474,30 @@ const Circulars = () => {
                           file.filename ? 'text-purple-400' : 'text-gray-400'
                         }`} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className={`font-medium ${
                           file.filename ? 'text-white' : 'text-gray-400'
                         }`}>
                           {file.name}
                         </h3>
-                        <p className={`text-sm ${
-                          file.filename ? 'text-purple-200' : 'text-gray-500'
-                        }`}>
-                          {file.filename ? 'Available for download' : 'Coming soon'}
-                        </p>
+                        {file.filename && (
+                          <div className="mt-1">
+                            <p className="text-sm text-purple-200">
+                              Available for download
+                            </p>
+                            <div className="flex items-center text-xs text-purple-300 mt-1">
+                              <Calendar className="w-3 h-3 mr-1" />
+                              {file.date}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {file.filename && (
                       loadingFile === file.filename ? (
-                        <Loader2 className="w-5 h-5 text-purple-400 animate-spin" />
+                        <Loader2 className="w-5 h-5 text-purple-400 animate-spin ml-3" />
                       ) : (
-                        <Download className="w-5 h-5 text-purple-400 hover:text-purple-300 transition-colors" />
+                        <Download className="w-5 h-5 text-purple-400 hover:text-purple-300 transition-colors ml-3" />
                       )
                     )}
                   </div>
@@ -500,7 +530,7 @@ const Circulars = () => {
                   onClick={() => file.filename && handlePdfClick(file.filename)}
                 >
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center">
+                    <div className="flex items-center flex-1">
                       <div className={`p-2 rounded-full mr-3 ${
                         file.filename ? 'bg-teal-500/20' : 'bg-gray-500/20'
                       }`}>
@@ -508,24 +538,30 @@ const Circulars = () => {
                           file.filename ? 'text-teal-400' : 'text-gray-400'
                         }`} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className={`font-medium ${
                           file.filename ? 'text-white' : 'text-gray-400'
                         }`}>
                           {file.name}
                         </h3>
-                        <p className={`text-sm ${
-                          file.filename ? 'text-teal-200' : 'text-gray-500'
-                        }`}>
-                          {file.filename ? 'Available for download' : 'Coming soon'}
-                        </p>
+                        {file.filename && (
+                          <div className="mt-1">
+                            <p className="text-sm text-teal-200">
+                              Available for download
+                            </p>
+                            <div className="flex items-center text-xs text-teal-300 mt-1">
+                              <Calendar className="w-3 h-3 mr-1" />
+                              {file.date}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {file.filename && (
                       loadingFile === file.filename ? (
-                        <Loader2 className="w-5 h-5 text-teal-400 animate-spin" />
+                        <Loader2 className="w-5 h-5 text-teal-400 animate-spin ml-3" />
                       ) : (
-                        <Download className="w-5 h-5 text-teal-400 hover:text-teal-300 transition-colors" />
+                        <Download className="w-5 h-5 text-teal-400 hover:text-teal-300 transition-colors ml-3" />
                       )
                     )}
                   </div>
@@ -557,33 +593,39 @@ const Circulars = () => {
                   }`}
                   onClick={() => file.filename && handlePdfClick(file.filename)}
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <div className={`p-2 rounded-full mr-3 ${
+                  <div className="flex items-start justify-between">
+                    <div className="flex items-start flex-1">
+                      <div className={`p-2 rounded-full mr-3 mt-1 ${
                         file.filename ? 'bg-zinc-500/20' : 'bg-gray-500/20'
                       }`}>
                         <Shield className={`w-4 h-4 ${
                           file.filename ? 'text-zinc-400' : 'text-gray-400'
                         }`} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className={`font-medium ${
                           file.filename ? 'text-white' : 'text-gray-400'
                         }`}>
                           {file.name}
                         </h3>
-                        <p className={`text-sm ${
-                          file.filename ? 'text-zinc-200' : 'text-gray-500'
-                        }`}>
-                          {file.filename ? 'Available for download' : 'Coming soon'}
-                        </p>
+                        {file.filename && (
+                          <div className="mt-1 space-y-1">
+                            <p className="text-sm text-zinc-200 leading-relaxed">
+                              {file.subject}
+                            </p>
+                            <div className="flex items-center text-xs text-zinc-300">
+                              <Calendar className="w-3 h-3 mr-1" />
+                              {file.date}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {file.filename && (
                       loadingFile === file.filename ? (
-                        <Loader2 className="w-5 h-5 text-zinc-400 animate-spin" />
+                        <Loader2 className="w-5 h-5 text-zinc-400 animate-spin ml-3" />
                       ) : (
-                        <Download className="w-5 h-5 text-zinc-400 hover:text-zinc-300 transition-colors" />
+                        <Download className="w-5 h-5 text-zinc-400 hover:text-zinc-300 transition-colors ml-3" />
                       )
                     )}
                   </div>
@@ -615,33 +657,39 @@ const Circulars = () => {
                   }`}
                   onClick={() => file.filename && handlePdfClick(file.filename)}
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <div className={`p-2 rounded-full mr-3 ${
+                  <div className="flex items-start justify-between">
+                    <div className="flex items-start flex-1">
+                      <div className={`p-2 rounded-full mr-3 mt-1 ${
                         file.filename ? 'bg-amber-500/20' : 'bg-gray-500/20'
                       }`}>
                         <BookOpen className={`w-4 h-4 ${
                           file.filename ? 'text-amber-400' : 'text-gray-400'
                         }`} />
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h3 className={`font-medium ${
                           file.filename ? 'text-white' : 'text-gray-400'
                         }`}>
                           {file.name}
                         </h3>
-                        <p className={`text-sm ${
-                          file.filename ? 'text-amber-200' : 'text-gray-500'
-                        }`}>
-                          {file.filename ? 'Available for download' : 'Coming soon'}
-                        </p>
+                        {file.filename && (
+                          <div className="mt-1 space-y-1">
+                            <p className="text-sm text-amber-200 leading-relaxed">
+                              {file.subject}
+                            </p>
+                            <div className="flex items-center text-xs text-amber-300">
+                              <Calendar className="w-3 h-3 mr-1" />
+                              {file.date}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {file.filename && (
                       loadingFile === file.filename ? (
-                        <Loader2 className="w-5 h-5 text-amber-400 animate-spin" />
+                        <Loader2 className="w-5 h-5 text-amber-400 animate-spin ml-3" />
                       ) : (
-                        <Download className="w-5 h-5 text-amber-400 hover:text-amber-300 transition-colors" />
+                        <Download className="w-5 h-5 text-amber-400 hover:text-amber-300 transition-colors ml-3" />
                       )
                     )}
                   </div>

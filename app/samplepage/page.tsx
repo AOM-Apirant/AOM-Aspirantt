@@ -1,11 +1,11 @@
 import React from 'react'
 
-import GatiShaktiTerminals from '@/components/syllabus/GatiShaktiTerminals'
+import WILD from '@/components/syllabus/WILD'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <GatiShaktiTerminals />
+        <WILD />
     </div>
   )
 }
