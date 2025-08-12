@@ -1,11 +1,12 @@
 import React from 'react'
 
-import WILD from '@/components/syllabus/WILD'
+import HRMS from '@/components/syllabus/HRMS'
+
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <WILD />
+        <HRMS />
     </div>
   )
 }
