@@ -1,12 +1,12 @@
 import React from 'react'
 
-import HRMS from '@/components/syllabus/HRMS'
+import SBF from '@/components/syllabus/SBF'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <HRMS />
+        <SBF />
     </div>
   )
 }
