@@ -89,6 +89,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "AMC",
+      fullForm: "Annual Maintenance Contract",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "AME", fullForm: "Assistant Mechanical Engineer",
       explanation: "Will be added later",
       reference: "--"
@@ -173,6 +179,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "BIC", fullForm: "Bogie Isolation Cock",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "BLW", fullForm: "Banaras Locomotive Works",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -831,6 +841,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "DPWCS", fullForm: "Distributed Power Wireless control System",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "DRF", fullForm: "Depreciation Reserve Fund",
       explanation: "Will be added later",
       reference: "--"
@@ -878,6 +892,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DTTC", fullForm: "Divisional Transportation Training Center",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "DTWL", fullForm: "Disabled Train Warning Light ",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -959,12 +977,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "EOT", fullForm: "Engine On Train",
+    { acronym: "EOT", fullForm: "End Of Train",
       explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "EOTT", fullForm: "End of Train Telemetry",
-      explanation: "Will be added later",
+      explanation: "It comprises of Head of train (HoT) device mounted in the locomotive and End of train (EoT) device mounted on the rear end of rearmost vehicle of the train along with other fittings and accessories complete as per this specifications. ",
       reference: "--"
     },
     { acronym: "EPB", fullForm: "Emergency Power Block",
@@ -1104,7 +1122,19 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "GNSS", fullForm: "Global Navigation Satellite System",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "GOB", fullForm: "General Order Book",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "GPRS", fullForm: "General Packet Radio Service",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "GPS", fullForm: "Global Positioning System",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -1129,6 +1159,14 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "GSD", fullForm: "General Stores Department",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "GSM", fullForm: "Global System for Mobile Communication",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "GST", fullForm: "Goods and Services Tax",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -1189,6 +1227,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "HSRI", fullForm: "High Speed Rail Coroporation of India Limited",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "HVML", fullForm: "High Visibility Marker Light",
+      explanation: "The marker light portion of the EoT device, flashing light to mark the End of Train (EoT).",
       reference: "--"
     },
   ],
@@ -1623,6 +1665,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "MM", fullForm: "Member Mechanical",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "MMD", fullForm: "Maximum Moving Dimensions",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -2365,12 +2411,20 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "SBAS", fullForm: "Satellite-Based Augmentation System",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "SBCM", fullForm: "Shoulder Blast Clearing Machine",
       explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "SBU", fullForm: "Signal & Brake Unit",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "SBU", fullForm: "Sense & Brake Unit",
+      explanation: "It is part of EoT.It is capable of determine status of Brake pipe pressure",
       reference: "--"
     },
     { acronym: "SCO", fullForm: "Sectional Caution Order",
@@ -2656,6 +2710,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "TEFD", fullForm: "Traditional Empty Flow Direction",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "TFR", fullForm: "Transnet Fright Rail",
       explanation: "Will be added later",
       reference: "--"
     },

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import SBF from '@/components/syllabus/SBF'
+import EOTT from '@/components/syllabus/EOTT'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <SBF />
+        <EOTT />
     </div>
   )
 }

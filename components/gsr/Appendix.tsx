@@ -259,7 +259,7 @@ const Appendix = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-indigo-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-6 px-2">
+      <div className="relative z-10 py-6 lg:px-6 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
@@ -269,7 +269,7 @@ const Appendix = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              GSR APPENDIX
+              G&SR APPENDIX
             </h1>
             <h2 className="lg:text-4xl text-xl font-bold text-purple-300 mb-4">Supplementary Instructions & Special Procedures</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
@@ -288,7 +288,7 @@ const Appendix = () => {
                   className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
                 >
                   {/* Appendix Header */}
-                  <div className={`bg-gradient-to-r ${appendix.color} text-white p-6`}>
+                  <div className={`bg-gradient-to-r ${appendix.color} text-white py-6 lg:px-4 px-2`}>
                     <div className="flex flex-col gap-4 justify-center text-center items-center space-x-4">
                       <div className="bg-white/20 p-3 rounded-full backdrop-blur-sm">
                         {appendix.icon}
@@ -315,7 +315,7 @@ const Appendix = () => {
                   </div>
 
                   {/* Appendix Content */}
-                  <div className="px-3 py-6">
+                  <div className="py-6 lg:px-4 px-2">
                     <div className="mb-4">
                       <p className="text-gray-200 text-base leading-relaxed">
                         {appendix.description}
@@ -333,7 +333,7 @@ const Appendix = () => {
                           {appendix.rules.map((rule, index) => (
                             <div
                               key={index}
-                              className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                              className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                             >
                               <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                                 {index + 1}
@@ -360,7 +360,7 @@ const Appendix = () => {
                           {appendix.subCategories.map((category, index) => (
                             <div
                               key={index}
-                              className="flex items-start justify-between p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                              className="flex items-start justify-between py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                             >
                               <div className="flex items-start space-x-4">
                                 <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">

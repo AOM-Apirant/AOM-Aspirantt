@@ -772,7 +772,7 @@ const Chapters = () => {
           </div>
 
           {/* Content */}
-          <div className="max-w-7xl mx-auto px-2 lg:px-8 py-4">
+          <div className="max-w-7xl mx-auto px-1 lg:px-8 py-4">
             <div className="grid gap-4 md:gap-8">
               {chapters.map((chapter) => (
                 <div
@@ -780,7 +780,7 @@ const Chapters = () => {
                   className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
                 >
                   {/* Chapter Header */}
-                  <div className={`bg-gradient-to-r ${chapter.color} text-white p-6`}>
+                  <div className={`bg-gradient-to-r ${chapter.color} text-white py-6 lg:px-4 px-2`}>
                     <div className="flex flex-col gap-4 items-center justify-between text-center">
                       <div className="flex flex-col gap-4 items-center justify-between">
                         <div className="bg-white/20 p-3 rounded-md backdrop-blur-sm">
@@ -802,14 +802,14 @@ const Chapters = () => {
                   </div>
 
                   {/* Sections and Rules */}
-                  <div className="px-3 py-6">
+                  <div className="py-6 lg:px-4 px-2">
                     <div className="space-y-4">
                       {chapter.sections.map((section, sectionIndex) => (
                         <div key={sectionIndex} className="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                           {/* Section Header */}
                           <button
                             onClick={() => toggleSection(chapter.id, section.name)}
-                            className="w-full p-4 flex items-center justify-between hover:bg-white/10 transition-all duration-300 rounded-t-xl"
+                            className="w-full py-4 lg:px-4 px-2 flex items-center justify-between hover:bg-white/10 transition-all duration-300 rounded-t-xl"
                           >
                             <div className="flex items-center space-x-3">
                               <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
@@ -828,12 +828,12 @@ const Chapters = () => {
 
                           {/* Rules List */}
                           {expandedSections[`${chapter.id}-${section.name}`] && (
-                            <div className="p-4 pt-0">
+                            <div className="py-4 lg:px-4 px-2">
                               <div className="grid gap-3">
                                 {section.rules.map((rule, ruleIndex) => (
                                   <div
                                     key={ruleIndex}
-                                    className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 border border-white/10"
+                                    className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                                   >
                                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                                       {rule.number}
@@ -870,7 +870,7 @@ const Chapters = () => {
                 <div className="flex flex-col gap-4 items-center justify-center space-x-3 mb-4">
                   <CheckCircle className="w-8 h-8 text-green-400" />
                   <h3 className="text-2xl font-bold text-white">
-                    Complete GSR Reference
+                    Complete G&SR Reference
                   </h3>
                 </div>
                 <p className="text-gray-300 max-w-2xl mx-auto">
