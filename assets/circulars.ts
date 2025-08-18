@@ -183,6 +183,12 @@ export const operatingSafetyCircularPdfFiles = [
     subject: "Guidelines for Operation of Long Haul Trains",
     date: "24/06/2025",
   },
+  {
+    name: "Operating Safety Circular 09 of 2025",
+    filename: "Operating Safety Circular 09 of 2025.pdf",
+    subject: "Pushing back of a Train outside of Station limits (Engine Pushing) as GR&SR 4.12",
+    date: "14/08/2025",
+  },
 ];
 
 export const operatingGeneralCircularPdfFiles = [

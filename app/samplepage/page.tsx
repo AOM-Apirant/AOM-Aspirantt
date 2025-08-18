@@ -1,12 +1,12 @@
 import React from 'react'
 
-import EOTT from '@/components/syllabus/EOTT'
+import PlanningWing from '@/components/syllabus/PlanningWing'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <EOTT />
+        <PlanningWing />
     </div>
   )
 }

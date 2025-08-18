@@ -591,6 +591,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "CPDE", fullForm: "Chief Planning & Design Engineer",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "CPGO", fullForm: "Chief Public Grievance Officer",
       explanation: "Will be added later",
       reference: "--"
