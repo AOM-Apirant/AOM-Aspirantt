@@ -478,6 +478,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "CGA", fullForm: "Compassionate Grounds Appointment",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     {
       acronym: "CGEGIS",
       fullForm: "Central Government Employee Group Insurance Scheme",
@@ -537,6 +541,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "CMRL", fullForm: "Cennai Rail Metro Limited",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "CNM", fullForm: "Chief Network Manager",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -669,6 +677,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "CTM", fullForm: "Chief Transportation Manager",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "CTNC", fullForm: "Chief Train Clerk",
       explanation: "Will be added later",
       reference: "--"
@@ -678,6 +690,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "CTPC", fullForm: "Chief Traction Power Controller",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "CTPM", fullForm: "Chief Transport Planning Manager",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -1271,6 +1287,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "IDRT", fullForm: "Inter Divisional Request Transfer",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "IDS", fullForm: "Integration of Digital System",
       explanation: "Will be added later",
       reference: "--"
@@ -1413,6 +1433,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "IRPWM", fullForm: "Indian Railways Permanent Way Manual",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "IRRT", fullForm: "Inter Railway Request Transfer",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -2761,6 +2785,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "TMM", fullForm: "Transfer Management Module",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "TMS", fullForm: "Track Management System",
       explanation: "Will be added later",
       reference: "--"
@@ -2848,6 +2876,14 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
   ],
   U: [
     { acronym: "UDAY", fullForm: "Utkrist Double Decker Air Condition Yatri Express",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "UDIP", fullForm: "Unified Digital Interface for Promotion",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "UDIT", fullForm: "Unified Digital Interface for Transfer Module",
       explanation: "Will be added later",
       reference: "--"
     },

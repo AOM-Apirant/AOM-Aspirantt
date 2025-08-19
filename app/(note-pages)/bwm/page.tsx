@@ -15,10 +15,11 @@ const BlockWorkingManual = () => {
         <div className='max-w-6xl mx-auto px-4'>
           <div className='text-center mb-12'>
             <h1 className='text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>
-              SOUTH CENTRAL RAILWAY
+            BLOCK WORKING MANUALS
+              
             </h1>
             <h2 className='text-3xl font-semibold text-white mb-8'>
-              BLOCK WORKING MANUALS
+            SOUTH CENTRAL RAILWAY
             </h2>
           </div>
 
