@@ -1746,7 +1746,78 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 0,
             explanation: 'electrical couplings is the correct answer.  Reference -GR 4.33 '
           },
-        ]
+        ],
+'26': [
+          {
+            question: 'A Loco Pilot shall not start his train from a Block station without the_',
+            options: ['Caution order', 'Authority to proceed', 'Permission of ALP', 'Guard'],
+            correct: 1,
+            explanation: ' Authority to proceed is the correct answer.  Reference -GR 4.35 '
+          },
+         
+          {
+            question: 'Before starting the train from station, LP shall satisfy himself that all _____________ are given and the line before him is clear of visible obstructions and the Guard has given the signal to start.',
+            options: ['Correct fixed signals', 'Where necessary, hand signals', 'Either "A" or "B"', 'Both "A" & "B"'],
+            correct: 3,
+            explanation: 'Both "A" & "B" is the correct answer.  Reference -GR 4.35 '
+          },
+
+          {
+            question: 'Before starting the train from station, LP shall satisfy himself that all correct fixed signals and where necessary, hand signals are given and the line before him is _____________and the.',
+            options: ['Clear of visible obstructions', 'Guard has given signal to start', 'Either "A" or "B"', 'Both "A" & "B"'],
+            correct: 3,
+            explanation: 'Both "A" & "B" is the correct answer.  Reference -GR 4.35 '
+          },
+ 
+          {
+            question: 'Guard shall see, before giving the starting signal, that __________________for the train to proceed.',
+            options: ['all is right', 'All is not right', 'Correct Signals are taken off', 'there is no visible obstructions'],
+            correct: 0,
+            explanation: 'all is right is the correct answer.  Reference -GR 4.35 '
+          },
+ 
+          {
+            question: 'Guard shall not give the signal for starting unless, no person is travelling in any compartment or vehicle or ________________not intended for the use of passengers',
+            options: ['Guards BV', 'Loco', 'roof of the vehicle', 'couplings'],
+            correct: 2,
+            explanation: 'roof of the vehicle is the correct answer.  Reference -GR 4.35 '
+          },
+ 
+          {
+            question: 'Guard, Loco Pilot or Assistant Loco Pilot shall take help,_______ if necessary from, and to remove the unauthorised persons from the compartment or vehicle or roof of the vehicle before starting a train from a station',
+            options: ['Government Railway Police', 'Railway Protection Force', 'Station Staff', 'All the above'],
+            correct: 3,
+            explanation: 'All the above is the correct answer.  Reference -GR 4.35 '
+          },
+   
+          {
+            question: 'When a train is within station limits, the Guard shall be under the orders of the _____________.',
+            options: ['Traffic inspector of section', 'Station Master', 'Loco Pilot', 'Section controller'],
+            correct: 1,
+            explanation: 'Station Master is the correct answer.  Reference -GR 4.37 '
+          },
+ 
+          {
+            question: 'Assistant Loco Pilots shall obey the lawful orders of their _____________ in all particulars',
+            options: ['Loco Inspector', 'Station Master', 'Loco Pilot', 'Section controller'],
+            correct: 2,
+            explanation: 'Loco Pilot is the correct answer.  Reference -GR 4.38 '
+          },
+
+          {
+            question: 'After an engine has been attached to a train and during the journey, the Loco Pilot shall obey-orders of the ____________, in all matters affecting the starting, stopping or movement of the train for traffic',
+            options: ['Guard inspector', 'Station Master', 'Traffic inspector', 'Loco'],
+            correct: 0,
+            explanation: 'Guard inspector is the correct answer.  Reference -GR 4.39 '
+          },
+
+          {
+            question: 'After an engine has been attached to a train and during the journey, the Loco Pilot shall obey-orders of the ____________, in all matters so far as the safe and proper working of his engine will admit',
+            options: ['ALP inspector', 'Station Master', 'Traffic inspector', 'Loco'],
+            correct: 1,
+            explanation: 'Station Master is the correct answer.  Reference -GR 4.39 '
+          },
+]
       }
     },
   
