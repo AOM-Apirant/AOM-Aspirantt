@@ -303,7 +303,7 @@ const OPTGIndex = () => {
                                 <button
                                   onClick={() => openPDF(topic.page)}
                                   disabled={openingPDF === topic.page}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-lg transition-all duration-300 ${
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
                                     openingPDF === topic.page
                                       ? 'bg-gray-500 cursor-not-allowed'
                                       : 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:scale-105'
@@ -318,7 +318,7 @@ const OPTGIndex = () => {
                                   {!isMobile && openingPDF !== topic.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
                                 <span className="text-gray-400 text-xs">
-                                  {isMobile ? 'Tap to open PDF' : 'Click to open in new tab'}
+                                  {isMobile ? 'Tap to open Document' : 'Click to open Document in new tab'}
                                 </span>
                               </div>
                             </div>

@@ -74,6 +74,12 @@ export const alertAdvicePdfFiles = [
     subject: "Standardized telephone sentences for LC Gates",
     date: "01/08/2025",
   },
+  {
+    name: "Alert Advice 13 of 2025",
+    filename: "Alert Advice 13 of 2025.pdf",
+    subject: "Pushing back of trains (Engine Pushing) from Block Section",
+    date: "19/08/2025",
+  },
 ];
 
 export const flyLeafPdfFiles = [
@@ -204,6 +210,12 @@ export const operatingGeneralCircularPdfFiles = [
     subject: "Operation of EWN, EUYN and OYN for Cancellation",
     date: "05/05/2025",
   },
+  {
+    name: "Operating General Circular 05 of 2025",
+    filename: "Operating General Circular 05 of 2025.pdf",
+    subject: "Unauthorised Parking of Personal Vehicles on Station Platforms",
+    date: "21/08/2025",
+  },
 ];
 
 export const fortnightlySafetyBulletinPdfFiles = [
@@ -277,6 +289,12 @@ export const fortnightlySafetyBulletinPdfFiles = [
     filename: "Fortnightly Safety Bulletin July 2nd FN 2025.pdf",
     date: "31/07/2025",
   },
+  {
+    name: "Fortnightly Safety Bulletin August 1st FN 2025",
+    filename: "Fortnightly Safety Bulletin August 1st FN 2025.pdf",
+    date: "15/08/2025",
+  },
+  
 ];
 
 export const monthlySafetyBulletinPdfFiles = [
