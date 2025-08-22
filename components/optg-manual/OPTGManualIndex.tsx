@@ -215,21 +215,7 @@ const OPTGIndex = () => {
               <p className="text-blue-200 font-medium">Operating Manual SCR 2023 - For Official Use Only</p>
             </div>
             
-            {/* PDF Opening Guide */}
-            <div className="mt-4 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg p-4 backdrop-blur-sm border border-green-400/30">
-              <div className="flex items-center justify-center space-x-2 mb-2">
-                <FileText className="w-5 h-5 text-green-300" />
-                <span className="text-green-200 font-medium">PDF Access Guide</span>
-              </div>
-              <div className="text-center">
-                <p className="text-green-200 text-sm">
-                  <span className="font-semibold">Mobile Devices:</span> PDFs open directly in the same tab
-                </p>
-                <p className="text-green-200 text-sm">
-                  <span className="font-semibold">Desktop/Laptop:</span> PDFs open in a new tab
-                </p>
-              </div>
-            </div>
+            
           </div>
 
           {/* Content */}
@@ -290,7 +276,7 @@ const OPTGIndex = () => {
                         {section.topics.map((topic, index) => (
                           <div
                             key={index}
-                            className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                           >
                             <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                               {index + 1}
@@ -318,7 +304,7 @@ const OPTGIndex = () => {
                                   {!isMobile && openingPDF !== topic.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
                                 <span className="text-gray-400 text-xs">
-                                  {isMobile ? 'Tap to open Document' : 'Click to open Document in new tab'}
+                                  {isMobile ? 'Open Document' : 'Open Document in new tab'}
                                 </span>
                               </div>
                             </div>

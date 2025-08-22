@@ -15,7 +15,7 @@ import CoachingStock from '@/components/optg-manual/CoachingStock'
 import FreightTrainOperations from '@/components/optg-manual/FreightTrainOperations'
 import { Download, FileText, BookOpen, Users, Shield, Train, Award } from 'lucide-react'
 import WagonEngineUtilization from '@/components/optg-manual/WagonEngineUtilization'
-import OPTGIndex from '@/components/optg-manual/OPTGIndex'
+import OPTGManualIndex from '@/components/optg-manual/OPTGManualIndex'
 
 const OperatingManual = () => {
   const handleDownloadPDF = () => {
@@ -76,10 +76,10 @@ const OperatingManual = () => {
           {/* Introduction Card */}
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl py-6 lg:px-4 px-2 mb-16 border border-white/20 hover:bg-white/15 transition-all duration-500">
             <div className="flex items-center text-center flex-col gap-4 mb-10">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-6 shadow-xl">
-                <BookOpen className="w-8 h-8 text-white" />
+              <div className="lg:w-16 lg:h-16 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-6 shadow-xl">
+                <BookOpen className="lg:w-8 lg:h-8 w-6 h-6 text-white" />
               </div>
-              <h2 className="text-4xl font-bold text-white">Preface</h2>
+              <h2 className="lg:text-4xl text-2xl font-bold text-white">Preface</h2>
             </div>
             
             <div className="prose prose-lg max-w-none text-gray-200 leading-relaxed space-y-4">
@@ -178,7 +178,7 @@ const OperatingManual = () => {
 
           {/* Manual Sections */}
           <div className="space-y-12">
-            <OPTGIndex/>
+            <OPTGManualIndex/>
             <StationYard />
             <RegisterPreserve />
             <Punctuality />
