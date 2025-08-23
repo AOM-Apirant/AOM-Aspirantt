@@ -15,7 +15,10 @@ import {
   Monitor,
   Cpu,
   Network,
-  Target
+  Target,
+  Users,
+  MoveHorizontal,
+  Wrench
 } from 'lucide-react'
 
 const OMPage3 = () => {
@@ -365,71 +368,167 @@ const OMPage3 = () => {
 
                 <div className="space-y-6">
                   {/* Mechanical Interlocking */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 border border-white/20">
-                    <h4 className="font-semibold text-indigo-300 mb-3 flex items-center">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg py-6 lg:px-4 px-3 hover:shadow-lg transition-all duration-300 border border-white/20">
+                    <h4 className="font-semibold text-indigo-300 mb-3 flex flex-col gap-4 items-center text-center justify-center">
                       <Settings className="w-5 h-5 mr-2" />
                       Mechanical Interlocking
                     </h4>
-                    <p className="text-sm text-gray-200">
-                      In yards where points and signals are operated by levers,
-                      sequence of pulling levers is ensured by mechanical arrangements in lever frames.
-                      Lock bars are provided for locking points. Mechanical slots are provided for ensuring
-                      coordination between staff to enable a single operation. However, such interlocking
-                      is restricted by the size of the lever frames and hence not feasible for bigger yards.
-                      It is also maintenance intensive as alignments need to be consistently checked and
-                      maintained so that levers operate smoothly and interlocking is not compromised.
-                    </p>
+                    <ul className="space-y-4 text-sm text-gray-200 pl-1">
+                      <li className="flex items-start">
+                        <Settings className="w-4 h-4 text-indigo-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          In yards where points and signals are operated by levers, the sequence of pulling levers is ensured by mechanical arrangements in lever frames.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Lock className="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Lock bars are provided for locking points.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Users className="w-4 h-4 text-indigo-300 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Mechanical slots are provided for ensuring coordination between staff to enable a single operation.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <MoveHorizontal className="w-4 h-4 text-blue-300 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Such interlocking is restricted by the size of the lever frames and hence not feasible for bigger yards.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Wrench className="w-4 h-4 text-indigo-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          It is also maintenance intensive as alignments need to be consistently checked and maintained so that levers operate smoothly and interlocking is not compromised.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
 
                   {/* Relay Interlocking */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 border border-white/20">
-                    <h4 className="font-semibold text-blue-300 mb-3 flex items-center">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg py-6 lg:px-4 px-3 hover:shadow-lg transition-all duration-300 border border-white/20">
+                    <h4 className="font-semibold text-blue-300 mb-3 flex flex-col gap-4 items-center text-center justify-center">
                       <Zap className="w-5 h-5 mr-2" />
                       Relay Interlocking
                     </h4>
-                    <p className="text-sm text-gray-200">
-                      Electromagnetic relays connected to track circuits, point
-                      machines and signals are used in relay interlocking. When operations of points and
-                      signals in the station are enabled through panels, such interlocking is named as
-                      Panel Interlocking (PI). In bigger yards, where interlocking is done between one
-                      route and another route such that simultaneous operation for various routes does not
-                      lead to conflicting movements, it is named as Route Relay Interlocking (RRI).
-                      Another feature in RRI is that the Station Master need not operate individual points in
-                      a route and can take off signals by pressing the concerned signal button and route
-                      button.
-                    </p>
+                    <ul className="space-y-4 text-sm text-gray-200 pl-1">
+                      <li className="flex items-start">
+                        <Zap className="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Electromagnetic relays connected to track circuits, point machines and signals are used in relay interlocking.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Monitor className="w-4 h-4 text-indigo-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          When operations of points and signals in the station are enabled through panels, such interlocking is named as <span className="font-semibold text-blue-200">Panel Interlocking (PI)</span>.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Route className="w-4 h-4 text-blue-300 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          In bigger yards, where interlocking is done between one route and another so that simultaneous operation for various routes does not lead to conflicting movements, it is named as <span className="font-semibold text-blue-200">Route Relay Interlocking (RRI)</span>.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Signal className="w-4 h-4 text-indigo-300 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          In RRI, the Station Master need not operate individual points in a route and can take off signals by pressing the concerned signal button and route button.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
 
                   {/* Electronic/Solid State Interlocking */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 border border-white/20">
-                    <h4 className="font-semibold text-indigo-300 mb-3 flex items-center">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg py-6 lg:px-4 px-3 hover:shadow-lg transition-all duration-300 border border-white/20">
+                    <h4 className="font-semibold text-indigo-300 mb-3 flex flex-col gap-4 items-center text-center justify-center">
                       <Cpu className="w-5 h-5 mr-2" />
                       Electronic/Solid State Interlocking (EI/SSI)
                     </h4>
-                    <p className="text-sm text-gray-200">
-                      In this system, the interlocking is
-                      achieved through computerized microprocessor based software, which gets its input
-                      through relays connected to track circuits, point machines and signals. The complex
-                      sets of relays required for achieving route wise interlocking in RRI is replaced by a
-                      small computer hardware hosting the designed software. Thus, this system is most
-                      advanced, easy to maintain, safest as it is subjected to rigorous testing in factory as
-                      well as site and less prone to interference.
+                    <ul className="space-y-4 text-sm text-gray-200 pl-1">
+                      <li className="flex items-start">
+                        <Cpu className="w-4 h-4 text-indigo-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Interlocking is achieved through computerized microprocessor-based software.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Network className="w-4 h-4 text-blue-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Inputs are received via relays connected to track circuits, point machines, and signals.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Wrench className="w-4 h-4 text-indigo-300 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          The complex sets of relays required for route-wise interlocking in RRI are replaced by compact computer hardware running dedicated software.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Gauge className="w-4 h-4 text-blue-300 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          This system is highly advanced, easy to maintain, and considered the safest.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <Shield className="w-4 h-4 text-indigo-400 mt-1 mr-3 flex-shrink-0" />
+                        <span>
+                          Subjected to rigorous testing both in the factory and on site, making it less prone to interference.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Standards of Interlocking */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg py-6 lg:px-4 px-3 hover:shadow-lg transition-all duration-300 border border-white/20">
+                    <h4 className="font-semibold text-blue-300 mb-3 flex flex-col gap-4 items-center text-center justify-center">
+                      <BarChart3 className="w-5 h-5 mr-2" />
+                      Standards of Interlocking
+                    </h4>
+                    <p className="text-sm text-gray-200 mb-4">
+                      Depending upon the provisions of isolation, type of signals, mode of operation of
+                      points, type of locking, mechanism of point detection, type of interlocking, level of
+                      track circuiting, type of block instrument etc., four standards of interlocking have
+                      been made, namely Std I (R), Std II (R), Std III (R) and Std IV (R).
                     </p>
+                    
+                    <div className="bg-white/10 backdrop-blur-sm rounded-lg py-6 lg:px-4 px-3 border border-white/20">
+                      <h5 className="font-semibold text-blue-200 mb-3 flex flex-col gap-4 items-center text-center justify-center">
+                        <Target className="w-4 h-4 mr-2" />
+                        Speed Permissions by Standard
+                      </h5>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-between bg-white/10 rounded-lg p-3 border border-white/20">
+                            <span className="text-sm font-medium text-blue-100">Std I (R)</span>
+                            <span className="text-xs text-gray-200 bg-blue-500/30 px-2 py-1 rounded">Up to 50 kmph</span>
+                          </div>
+                          <div className="flex items-center justify-between bg-white/10 rounded-lg p-3 border border-white/20">
+                            <span className="text-sm font-medium text-blue-100">Std II (R)</span>
+                            <span className="text-xs text-gray-200 bg-blue-500/30 px-2 py-1 rounded">Up to 110 kmph</span>
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-between bg-white/10 rounded-lg p-3 border border-white/20">
+                            <span className="text-sm font-medium text-blue-100">Std III (R)</span>
+                            <span className="text-xs text-gray-200 bg-blue-500/30 px-2 py-1 rounded">Up to 140 kmph</span>
+                          </div>
+                          <div className="flex items-center justify-between bg-white/10 rounded-lg p-3 border border-white/20">
+                            <span className="text-sm font-medium text-blue-100">Std IV (R)</span>
+                            <span className="text-xs text-gray-200 bg-blue-500/30 px-2 py-1 rounded">Up to 160 kmph</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="text-center mt-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-4 backdrop-blur-sm border border-white/20">
-              <Building2 className="w-8 h-8 text-gray-300" />
-            </div>
-            <p className="text-gray-300">
-              Operating Manual - Chapter II: Working of Stations
-            </p>
-          </div>
+          
         </div>
       </div>
 

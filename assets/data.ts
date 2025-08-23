@@ -1817,7 +1817,78 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 1,
             explanation: 'Station Master is the correct answer.  Reference -GR 4.39 '
           },
-]
+],
+'27': [
+          {
+            question: 'Every Loco Pilot shall keep a good lookout while the train is in motion and every Assistant Loco Pilot shall also do so when he is not_.',
+            options: ['interested', 'feeling healthy', 'following LP orders', 'necessarily otherwise engaged'],
+            correct: 3,
+            explanation: ' necessarily otherwise engaged is the correct answer.  Reference -GR 4.40 '
+          },
+         
+          {
+            question: 'The Loco Pilot or the Assistant Loco Pilot shall look back frequently during the journey to see whether the train is following in a _______________________',
+            options: ['safe and proper manner', 'unsafe manner', 'proper order', 'safe manner'],
+            correct: 0,
+            explanation: 'safe and proper manner is the correct answer.  Reference -GR 4.41'
+          },
+
+          {
+            question: 'The Loco Pilot and the Guard of a train shall__, at such times and in such manner as may be prescribed by special instructions',
+            options: ['talk on walkie-talkie', 'communicate on whistle codes', 'exchange signals with each other', 'None of the above'],
+            correct: 2,
+            explanation: 'exchange signals with each other is the correct answer.  Reference -GR 4.42 '
+          },
+ 
+          {
+            question: 'Loco Pilot and the Guard of a train shall, while running through a station, look out, acknowledge __________ which the Station Master shall give if the train is proceeding in a safe and proper manner',
+            options: ['Unsafe condition of trains', 'All right signals', 'with green flags', 'with green light'],
+            correct: 1,
+            explanation: 'All right signals is the correct answer.  Reference -GR 4.42 '
+          },
+ 
+          {
+            question: 'When train is not proceeding in a safe and proper manner at station, SM or the other staff shall exhibit a -_, on receipt of which the Guard and the Loco Pilot shall take immediate steps to stop the train.',
+            options: ['Proceed hand signal', 'Hand signal', 'Red flag', 'Stop hand signal'],
+            correct: 3,
+            explanation: 'Stop hand signal is the correct answer.  Reference -GR 4.42 '
+          },
+ 
+          {
+            question: 'During the journey including halts at stations, every Guard shall keep a good lookout and satisfy himself from time to time that the _____________ are available, that the train is complete in every respect and is proceeding in a_',
+            options: ['Tail/board/lamp, safe and proper manner', 'personal equipments, safe manner', 'Pressure guage, proper manner', 'Tailboard/lamp, unsafe manner'],
+            correct: 0,
+            explanation: 'Tail/board/lamp, safe and proper manner is the correct answer.  Reference -GR 4.43 '
+          },
+   
+          {
+            question: 'When a train is held up at F S S without an apparent cause, the Loco Pilot shall depute Assistant Loco Pilot to go to Station. after',
+            options: ['10 minutes', '15 minutes', '5 minutes', 'none of these'],
+            correct: 2,
+            explanation: '5 minutes is the correct answer.  Reference -GR 4.44 '
+          },
+ 
+          {
+            question: 'When a train is held up at F S S without an apparent cause, the Loco Pilot shall depute Assistant Loco Pilot to go to Station after 5 minutes to the cabin of station to _________________',
+            options: ['Intimate SM', 'Warn the SM', 'Consult the Cabinman', 'inform the SS'],
+            correct: 1,
+            explanation: 'Warn the SM is the correct answer.  Reference -GR 4.44 '
+          },
+
+          {
+            question: 'The Assistant Loco Pilot proceeding to station in case of held up at FSS for more than 5 mins without any apparent cause shall exhibit ________________signal towards station',
+            options: ['Proceed hand signal towards train', 'Proceed hand signal towards train', 'Stop hand signal towards train', 'Stop hand signal towards station'],
+            correct: 3,
+            explanation: 'Stop hand signal towards station is the correct answer.  Reference -GR 4.44 '
+          },
+
+          {
+            question: 'The Guard shall protect the train in rear when a train is held up at F S S for more than',
+            options: ['5minutes or such time specified by Special instructions', '15minutes', '15minutes or such time specified by Special instructions', 'Less than 15minutes or such time specified by Special instructions'],
+            correct: 2,
+            explanation: '15minutes or such time specified by Special instructions is the correct answer.  Reference -GR 4.44 '
+          },
+        ]
       }
     },
   
