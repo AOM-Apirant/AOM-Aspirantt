@@ -1888,7 +1888,156 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 2,
             explanation: '15minutes or such time specified by Special instructions is the correct answer.  Reference -GR 4.44 '
           },
-        ]
+        ],
+'28': [
+          {
+            question: 'If Guard notices any danger condition in the train, he shall try to attract the attention of',
+            options: ['Gateman', 'Station master', 'Loco pilot', 'SCOR'],
+            correct: 2,
+            explanation: ' Loco pilot is the correct answer.  Reference -GR 4.45 '
+          },
+         
+          {
+            question: 'If Guard failed to attract the attention, when notices any danger condition in the train, he may stop the train gradually by applying',
+            options: ['Hand brake', 'Hand brake continuously', 'Hand brake sharply and release', 'Wagon hand brake'],
+            correct: 2,
+            explanation: 'Hand brake sharply and release is the correct answer.  Reference -GR 4.45 '
+          },
+
+          {
+            question: 'In the absence of other means of communications with the engine, a Guard desiring to attract the Loco Pilot‘s attention shall wherever possible, he shall reverse the side lamps to show__.',
+            options: ['Red towards Rear', 'red towards the engine', 'White towards engine', 'Green towards engine'],
+            correct: 1,
+            explanation: 'red towards the engine is the correct answer.  Reference -GR 4.45 '
+          },
+ 
+          {
+            question: 'If the train is fitted with continuous brake, the Guard may, in case of emergency, apply ___________________to stop the train.',
+            options: ['Hand brake continuously', 'Reverse side lamp', 'Loco Brake', 'such brake gradually'],
+            correct: 3,
+            explanation: 'such brake gradually is the correct answer.  Reference -GR 4.45 '
+          },
+ 
+          {
+            question: 'When the Loco Pilot requires the assistance of_, he shall sound the prescribed code of whistle, if necessary repeatedly, and shall also use other means of communication, if provided.',
+            options: ['Guard‘s hand brake', 'Guards brake', 'SM', 'Loco nspector'],
+            correct: 0,
+            explanation: 'Guard‘s hand brake is the correct answer.  Reference -GR 4.46 '
+          },
+ 
+          {
+            question: 'When the Loco Pilot sounds the prescribed code of whistle, the Guards shall immediately apply their ___',
+            options: ['Loco brakes', 'Guards brake', 'Hand brakes', 'Mind to stop train'],
+            correct: 2,
+            explanation: 'Hand brakes is the correct answer.  Reference -GR 4.47 '
+          },
+   
+          {
+            question: 'When a train is travelling down a steep incline, the Guards shall, if necessary to steady the train, assist the Loco Pilot with their _________________',
+            options: ['Loco brakes', 'Guards brake', 'Hand brakes', 'Mind to stop train'],
+            correct: 2,
+            explanation: 'Hand brakes is the correct answer.  Reference -GR 4.47 '
+          },
+ 
+          {
+            question: 'Whenever Train engine is to be detached outside station limits on a gradient, Guard shall not give such permission unless _____________________________',
+            options: ['BV+6vehicles hand brakes applied', 'Hand brakes have been securely applied as per special inst', 'BV+12 vehicles hand brakes applied', 'Only Brake van hand brakes applied'],
+            correct: 1,
+            explanation: 'Hand brakes have been securely applied as per special inst is the correct answer.  Reference -GR 4.48 '
+          },
+
+          {
+            question: 'When a train has been brought to a stand outside station limits or anywhere on a grade, the Loco Pilot shall not detach his engine from the train without the permission of the ____________________',
+            options: ['Station Master', 'Traffic Inspector', 'Section controller', 'Guard'],
+            correct: 3,
+            explanation: 'Guard is the correct answer.  Reference -GR 4.48 '
+          },
+
+          {
+            question: 'In stopping a train, the Loco Pilot shall determine where to shut off power by paying particular attention to the_, the state of the__, the condition of the rails, the _________and the length and weight of the train.',
+            options: ['gradient, weather, brake power', 'gradient, weather, application of wedges', 'gradient, Loco, brake power', 'composition of train, weather, brake power'],
+            correct: 0,
+            explanation: 'gradient, weather, brake power is the correct answer.  Reference -GR 4.55 '
+          },
+        ],
+'29':  [
+  {
+    question: 'Whenever train stopped without clearing fouling mark, to prevent any movement on the fouled line the Guard shall inform the SM at once by',
+    options: ['showing green flag', 'waving white light', 'exchange of PN', 'exhibiting stop hand signal'],
+    correct: 3,
+    explanation: ' exhibiting stop hand signal is the correct answer.  Reference -GR 4.56 '
+  },
+  {
+    question: 'When a train carrying passengers has been brought to a stand at a station, short of the platform, the Loco Pilot shall not move it, except under orders of the ___________ or ______________________.',
+    options: ['Guard, to avert an accident', 'SM, detaining of passengers', 'SCOR, to avert an accident', 'Guard, entraining of passengers'],
+    correct: 0,
+    explanation: 'Guard, to avert an accident is the correct answer.  Reference - GR 4.59'
+  },
+  {
+    question: 'The Guard of a material train shall, before giving the signal to start, see that all __________________.',
+    options: ['the workers are on the train', 'warn them to sit down', 'Either A or B', 'Both A & B'],
+    correct: 3,
+    explanation: 'Both A & B is the correct answer.  Reference -GR 4.63 '
+  },
+
+  {
+    question: 'G&SR Rule pertaining caution order is mentioned in',
+    options: ['GR 4.07', 'GR 4.08', 'GR 4.09', 'GR 4.10'],
+    correct: 2,
+    explanation: 'GR 4.09 is the correct answer.  Reference -Index to G&SR '
+  },
+
+  {
+    question: 'G&SR Rule pertaining Limits of speed over facing points is mentioned in',
+    options: ['GR 4.07', 'GR 4.08', 'GR 4.09', 'GR 4.10'],
+    correct: 3,
+    explanation: 'GR 4.10 is the correct answer.  Reference -Index to G&SR '
+  },
+  {
+    question: 'G&SR Rule pertaining Engine Pushing is mentioned in',
+    options: ['GR 4.08', 'GR 4.09', 'GR 4.12', 'GR 4.10'],
+    correct: 2,
+    explanation: 'GR 4.12 is the correct answer.  Reference -Index to G&SR '
+  },
+
+  {
+    question: 'G&SR Rule pertaining Tail board or tail lamps is mentioned in',
+    options: ['GR 4.12', 'GR 4.16', 'GR 4.17', 'GR 4.18'],
+    correct: 1,
+    explanation: 'GR 4.16 is the correct answer.  Reference -Index to G&SR '
+  },
+
+  {
+    question: 'Rule pertaining to LP, ALP and Guards equipment is mentioned in',
+    options: ['GR&SR 4.17', 'GR&SR 4.18', 'GR&SR 4.19', 'GR&SR 4.20'],
+    correct: 2,
+    explanation: 'GR&SR 4.19 is the correct answer.  Reference -Index to G&SR '
+  },
+
+  {
+    question: 'G&SR Rule pertaining Damaged or defective vehicles(Hot Axle) is mentioned in',
+    options: ['SR 4.26', 'SR 4.27', 'SR 4.28', 'SR 4.29'],
+    correct: 3,
+    explanation: 'SR 4.29 is the correct answer.  Reference -Index to G&SR '
+    },
+{
+  question: 'Whenever a train has been brought to a stand and it is necessary for the engine, with or without vehicles, to be detached from the rest of the train, the Guard shall, before the train is uncoupled, satisfy himself that the ____________________',
+  options: ['Van brakes have been put on securely', 'take such other measures prescribed by special instructions', 'Either A or B', 'Both A & B'],
+  correct: 3,
+  explanation: 'Both A & B is the correct answer.  Reference - GR 4.57'
+},
+
+
+
+
+
+
+  
+
+]
+  
+
+
       }
     },
   
