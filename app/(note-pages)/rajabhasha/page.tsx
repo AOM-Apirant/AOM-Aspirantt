@@ -16,7 +16,7 @@ const Rajabhasha = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
+      <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-16">
@@ -38,8 +38,8 @@ const Rajabhasha = () => {
           </div>
 
           {/* Constitutional Chapters Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 sm:py-10 px-4 sm:px-8 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-cyan-500 p-2 sm:p-4 rounded-full mr-2 sm:mr-4 shadow-lg">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -50,17 +50,17 @@ const Rajabhasha = () => {
             
             <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               {/* Chapter I */}
-              <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+              <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Chapter I - Language of the Union
                 </h3>
                 <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
                     <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">📜</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 343:</strong> Official language of the Union.</span>
                   </div>
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
                     <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🏛️</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 344:</strong> Commission and Committee of Parliament on official language.</span>
                   </div>
@@ -68,67 +68,67 @@ const Rajabhasha = () => {
               </div>
 
               {/* Chapter II */}
-              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Chapter II - Regional Languages
                 </h3>
                 <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-green-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🌐</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 345:</strong> Official language or languages of a State</span>
                   </div>
                   <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-green-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🔗</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 346:</strong> Official language for communication between States and Union.</span>
                   </div>
                   <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-green-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🗣️</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 347:</strong> Special provision for language spoken by section of population.</span>
                   </div>
                 </div>
               </div>
 
               {/* Chapter III */}
-              <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+              <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Chapter III - Language of Courts
                 </h3>
                 <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-purple-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">💬</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 348:</strong> Language in Supreme Court, High Courts, Acts, Bills, etc.</span>
                   </div>
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-purple-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🔍</span>
                     <span className="text-gray-200 text-sm sm:text-base"><strong>Article 349:</strong> Special procedure for language-related laws.</span>
                   </div>
                 </div>
               </div>
 
               {/* Chapter IV */}
-              <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-orange-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+              <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-orange-400/30 hover:shadow-xl transition-all duration-300">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Chapter IV - Special Directives
                 </h3>
                 <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-orange-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
-                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 350:</strong> Language for grievance redressal.</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">📩</span>
+                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 350:</strong> Language for grievance redressal (citizens can submit grievances in any language used in the Union or State).</span>
                   </div>
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-orange-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
-                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 350A:</strong> Mother-tongue instruction facilities.</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🏫</span>
+                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 350A:</strong> Facilities for instruction in mother tongue at primary stage for children belonging to linguistic minorities.</span>
                   </div>
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-orange-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
-                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 350B:</strong> Special Officer for linguistic minorities.</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">🕵️‍♂️</span>
+                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 350B:</strong> Appointment of Special Officer for linguistic minorities to investigate and report on matters relating to safeguards for linguistic minorities.</span>
                   </div>
-                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 sm:p-3 transition-all duration-300">
-                    <span className="text-orange-400 mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">•</span>
-                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 351:</strong> Directive for Hindi language development.</span>
+                  <div className="flex items-start group hover:bg-white/10 rounded-lg p-2 transition-all duration-300">
+                    <span className="mr-2 sm:mr-3 mt-1 text-base sm:text-lg group-hover:scale-110 transition-transform">📝</span>
+                    <span className="text-gray-200 text-sm sm:text-base"><strong>Article 351:</strong> Directive for the development of the Hindi language to promote its spread and enrichment.</span>
                   </div>
                 </div>
               </div>
@@ -136,8 +136,8 @@ const Rajabhasha = () => {
           </div>
 
           {/* Official Languages Rules Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 sm:py-10 px-4 sm:px-8 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-emerald-500 to-teal-500 p-2 sm:p-4 rounded-full mr-2 sm:mr-4 shadow-lg">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -146,7 +146,7 @@ const Rajabhasha = () => {
               Official Languages Rules - 1976
             </h2>
             
-            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-emerald-400/30 mb-6 sm:mb-8">
+            <div className="bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-emerald-400/30 mb-6 sm:mb-8">
               <p className="text-gray-200 italic text-sm sm:text-lg">
                 G.S.R 1052 - In exercise of the powers conferred by section 8, read with sub-section(4) of section 3 of the Official Languages Act, 1963 (19 of 1963), the Central Government hereby makes the following rules, namely;
               </p>
@@ -154,8 +154,8 @@ const Rajabhasha = () => {
 
             <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               {/* Rule 1 */}
-              <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4 flex items-center">
+              <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Rule 1 - Short title, extent and commencement
                 </h4>
@@ -176,8 +176,8 @@ const Rajabhasha = () => {
               </div>
 
               {/* Rule 2 */}
-              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4 flex items-center">
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl py-4 lg:px-4 px-2 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Rule 2 - Definitions
                 </h4>
@@ -207,38 +207,73 @@ const Rajabhasha = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6 text-center">Regional Classification</h3>
               <div className="grid md:grid-cols-3 gap-3 sm:gap-4">
                 {/* Region A */}
-                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                  <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 flex items-center">
-                    <span className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold mr-2 sm:mr-3">🟢A</span>
+                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl py-4 px-4  shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
+                  <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 flex lg:flex-row flex-col gap-4 items-center">
+                    <span className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold mr-2 sm:mr-3">A</span>
                     Region A (K Kshetra)
                   </h4>
-                  <p className="text-gray-200 text-xs sm:text-sm">Bihar, Haryana, Himachal Pradesh, Rajasthan, Madhya Pradesh, Uttar Pradesh, Delhi, Chhattisgarh, Jharkhand, Uttarakhand and Andaman and Nicobar Islands</p>
+                  <ol className="text-gray-200 lg:text-base text-sm list-decimal ml-5 space-y-1">
+                    <li><span className="font-bold mr-1"></span>Andaman and Nicobar Islands</li>
+                    <li><span className="font-bold mr-1"></span>Bihar</li>
+                    <li><span className="font-bold mr-1"></span>Chhattisgarh</li>
+                    <li><span className="font-bold mr-1"></span>Delhi</li>
+                    <li><span className="font-bold mr-1"></span>Haryana</li>
+                    <li><span className="font-bold mr-1"></span>Himachal Pradesh</li>
+                    <li><span className="font-bold mr-1"></span>Jharkhand</li>
+                    <li><span className="font-bold mr-1"></span>Madhya Pradesh</li>
+                    <li><span className="font-bold mr-1"></span>Rajasthan</li>
+                    <li><span className="font-bold mr-1"></span>Uttar Pradesh</li>
+                    <li><span className="font-bold mr-1"></span>Uttarakhand</li>
+                  </ol>
                 </div>
 
                 {/* Region B */}
-                <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-orange-400/30 hover:shadow-xl transition-all duration-300">
-                  <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 flex items-center">
+                <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-xl py-4 px-4  shadow-lg border border-orange-400/30 hover:shadow-xl transition-all duration-300">
+                  <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 flex lg:flex-row flex-col gap-4 items-center">
                     <span className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold mr-2 sm:mr-3">B</span>
                     Region B (Kha Kshetra)
                   </h4>
-                  <p className="text-gray-200 text-xs sm:text-sm">Gujarat, Maharashtra, Punjab and Union Territory of Chandigarh</p>
+                  <ol className="text-gray-200 lg:text-base text-sm list-decimal ml-5 space-y-1">
+                    <li><span className="font-bold mr-1"></span>Gujarat</li>
+                    <li><span className="font-bold mr-1"></span>Maharashtra</li>
+                    <li><span className="font-bold mr-1"></span>Punjab</li>
+                    <li><span className="font-bold mr-1"></span>Union Territory of Chandigarh</li>
+                  </ol>
                 </div>
 
                 {/* Region C */}
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
-                  <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 flex items-center">
+                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl py-4 px-4  shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
+                  <h4 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 flex lg:flex-row flex-col gap-4 items-center">
                     <span className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-bold mr-2 sm:mr-3">C</span>
                     Region C (Ga Kshetra)
                   </h4>
-                  <p className="text-gray-200 text-xs sm:text-sm">All other states and UTs: J&K, Assam, Nagaland, Manipur, Mizoram, Tripura, Arunachal Pradesh, Meghalaya, Sikkim, Andhra Pradesh, Tamil Nadu, Karnataka, Kerala, Goa, Daman and Diu, Lakshadweep, Pondicherry</p>
+                  <ol className="text-gray-200 lg:text-base text-sm list-decimal ml-5 space-y-1">
+                    <li><span className="font-bold mr-1"></span>Andhra Pradesh</li>
+                    <li><span className="font-bold mr-1"></span>Arunachal Pradesh</li>
+                    <li><span className="font-bold mr-1"></span>Assam</li>
+                    <li><span className="font-bold mr-1"></span>Daman & Diu</li>
+                    <li><span className="font-bold mr-1"></span>Goa</li>
+                    <li><span className="font-bold mr-1"></span>Jammu & Kashmir</li>
+                    <li><span className="font-bold mr-1"></span>Karnataka</li>
+                    <li><span className="font-bold mr-1"></span>Kerala</li>
+                    <li><span className="font-bold mr-1"></span>Lakshadweep</li>
+                    <li><span className="font-bold mr-1"></span>Manipur</li>
+                    <li><span className="font-bold mr-1"></span>Meghalaya</li>
+                    <li><span className="font-bold mr-1"></span>Mizoram</li>
+                    <li><span className="font-bold mr-1"></span>Nagaland</li>
+                    <li><span className="font-bold mr-1"></span>Pondicherry</li>
+                    <li><span className="font-bold mr-1"></span>Sikkim</li>
+                    <li><span className="font-bold mr-1"></span>Tamil Nadu</li>
+                    <li><span className="font-bold mr-1"></span>Tripura</li>
+                  </ol>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Comprehensive Guide Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 sm:py-10 px-4 sm:px-8 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 sm:p-4 rounded-full mr-2 sm:mr-4 shadow-lg">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -250,7 +285,7 @@ const Rajabhasha = () => {
             <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
               {/* Definition & Constitutional Basis */}
               <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-purple-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Definition & Constitutional Basis
                 </h3>
@@ -285,7 +320,7 @@ const Rajabhasha = () => {
 
               {/* Official Language Act 1963 */}
               <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Official Language Act 1963
                 </h3>
@@ -321,7 +356,7 @@ const Rajabhasha = () => {
 
                           {/* Section 3(3) Requirements */}
               <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-lg rounded-xl p-4 sm:p-6 shadow-lg border border-yellow-400/30 hover:shadow-xl transition-all duration-300 mb-6 sm:mb-8">
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex lg:flex-row flex-col gap-4 items-center text-center">
                   <span className="w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
                   Section 3(3) - Bilingual Use Requirements
                 </h3>
@@ -348,8 +383,8 @@ const Rajabhasha = () => {
           </div>
 
           {/* Monetary Benefits & Incentives Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 sm:py-10 px-4 sm:px-8 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6 sm:mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
               <span className="bg-gradient-to-r from-amber-500 to-yellow-500 p-2 sm:p-4 rounded-full mr-2 sm:mr-4 shadow-lg">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
@@ -361,7 +396,7 @@ const Rajabhasha = () => {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Personal Pay Benefits */}
               <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-green-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+                <h4 className="text-lg font-bold text-white mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-4 h-4 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mr-3 animate-pulse"></span>
                   Personal Pay Benefits
                 </h4>
@@ -377,7 +412,7 @@ const Rajabhasha = () => {
 
               {/* Cash Awards */}
               <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-blue-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+                <h4 className="text-lg font-bold text-white mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-4 h-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mr-3 animate-pulse"></span>
                   Cash Awards
                 </h4>
@@ -485,10 +520,10 @@ const Rajabhasha = () => {
           </div>
 
           {/* Implementation Guidelines Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
-              <span className="bg-gradient-to-r from-teal-500 to-cyan-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-8 sm:mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-teal-500 to-cyan-500 p-2 sm:p-4 rounded-full mr-2 sm:mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </span>
@@ -497,7 +532,7 @@ const Rajabhasha = () => {
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-teal-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-teal-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+                <h4 className="text-lg font-bold text-white mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-4 h-4 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full mr-3 animate-pulse"></span>
                   Administrative Responsibilities
                 </h4>
@@ -529,7 +564,7 @@ const Rajabhasha = () => {
                 </div>
               </div>
               <div className="bg-gradient-to-br from-teal-500/20 to-cyan-500/20 backdrop-blur-lg rounded-xl p-6 shadow-lg border border-teal-400/30 hover:shadow-xl transition-all duration-300">
-                <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+                <h4 className="text-lg font-bold text-white mb-4 flex lg:flex-row flex-col gap-4 items-center">
                   <span className="w-4 h-4 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full mr-3 animate-pulse"></span>
                   Operational Activities
                 </h4>
@@ -564,10 +599,10 @@ const Rajabhasha = () => {
           </div>
 
           {/* Important Notes Section */}
-          <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-lg rounded-2xl shadow-2xl py-10 px-8 mb-8 border border-yellow-400/30">
-            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex items-center justify-center">
-              <span className="bg-gradient-to-r from-yellow-500 to-orange-500 p-4 rounded-full mr-4 shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mb-8 sm:mb-12 border border-yellow-400/30">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white mb-8 flex lg:flex-row flex-col gap-4 items-center justify-center">
+              <span className="bg-gradient-to-r from-yellow-500 to-orange-500 p-2 sm:p-4 rounded-full mr-2 sm:mr-4 shadow-lg">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                 </svg>
               </span>
