@@ -56,7 +56,7 @@ approved by the Railway Board.
 Feasibility studies of projects are to be carried out by Gati Shakti units of
 Divisions in the Division and CAO/C for inter Division and inter Zonal Railway
 projects (for New Lines, Doubling, Gauge Conversions etc.) as per coverage of
-length and jurisdiction using resources & capability available on the "PM Gati Shakti"
+length and jurisdiction using resources & capability available on the &quot;PM Gati Shakti&quot;
 portal, designed/hosted by BISAG-N, and engagement of expert agency.
 Gati Shakti units
 Railways are one of the key drivers of the PM Gati Shakti National Master Plan.
