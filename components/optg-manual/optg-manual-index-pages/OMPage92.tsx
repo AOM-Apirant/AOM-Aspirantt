@@ -27,7 +27,7 @@ monitored to keep them under minimum and ensure that wagons are on run as
 quickly as possible.
 Average speed is measured in Kmph. Coaching trains are timetabled and hence
 their average speed is determined during timetabling. Mail Express trains are faster
-than passenger trains. Superfast trains have a higher average speed of >= 55
+than passenger trains. Superfast trains have a higher average speed of &gt;= 55
 kmph. Freight trains receive the last priority in train running normally and hence their
 average speeds are lesser. Any regulation, under powering, speed restrictions affect
 the speed of trains. This statistics is a good indicator of the efficiency at which
