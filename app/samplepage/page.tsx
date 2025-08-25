@@ -1,12 +1,11 @@
 import React from 'react'
-import OMPage56 from '@/components/optg-manual/optg-manual-index-pages/OMPage56'
-
+import OMPage82 from '@/components/optg-manual/optg-manual-index-pages/OMPage82'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <OMPage56/>
+        <OMPage82/>
     </div>
   )
 }

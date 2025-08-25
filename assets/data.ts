@@ -2034,10 +2034,149 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
 
   
 
-]
-  
+],
+'30': [
+          {
+            question: 'G&SR Rule pertaining working of train without guard is mentioned in',
+            options: ['GR 4.23', 'GR 4.24', 'GR 4.25', 'GR 4.26'],
+            correct: 2,
+            explanation: ' GR 4.25 is the correct answer.  Reference -Index to G&SR '
+          },
+         
+          {
+            question: 'G&SR Rule pertaining Exchange of All right signals is mentioned in',
+            options: ['GR 4.40', 'GR 4.41', 'GR 4.42', 'GR 4.43'],
+            correct: 2,
+            explanation: 'GR 4.42 is the correct answer.  Reference -Index to G&SR '
+          },
 
+          {
+            question: 'G&SR Rule pertaining Material trains is mentioned in',
+            options: ['GR 4.65', 'GR 4.62', 'GR 4.42', 'GR 4.38'],
+            correct: 1,
+            explanation: 'GR 4.62 is the correct answer.  Reference -Index to G&SR '
+          },
+ 
+          {
+            question: 'G&SR Rule pertaining working of Track tamping machines is mentioned in',
+            options: ['GR 4.65', 'GR 4.62', 'GR 4.42', 'GR 4.38'],
+            correct: 0,
+            explanation: 'GR 4.65 is the correct answer.  Reference -Index to G&SR '
+          },
+ 
+          {
+            question: 'The Station Master shall see that all signals, points, gates of level crossings and the whole machinery of his station are in ____________and shall immediately ______________therein to the proper authority',
+            options: ['Working order, Report defects', 'Proper order, report unsafe practice', 'Order, report all defects', 'proper working order, report all defects'],
+            correct: 3,
+            explanation: 'proper working order, report all defects is the correct answer.  Reference -GR 5.01 '
+          },
+ 
+          {
+            question: 'No person other than the ___________shall ask for or give Line Clear, or give authority to proceed',
+            options: ['Pointsman', 'Guard', 'Station Master', 'Signal maintainer'],
+            correct: 2,
+            explanation: 'Station Master is the correct answer.  Reference -GR 5.01'
+          },
+   
+          {
+            question: 'The Station Master shall see— that copies of the Act, and the __________________are available for inspection by the public',
+            options: ['General & Subsidiary rules', 'Goods and Coaching Tariffs', 'Working time table', 'Station working rules'],
+            correct: 1,
+            explanation: 'Goods and Coaching Tariffs is the correct answer.  Reference -GR 5.02 '
+          },
+ 
+          {
+            question: 'The Station Master shall report, _____________, all neglect of duty on the part of any railway servant who is under his orders.',
+            options: ['without delay, to his superior', 'with delay, to his incharge', 'later to his Traffic Inspector', 'Section controller'],
+            correct: 0,
+            explanation: 'without delay, to his superior is the correct answer.  Reference -GR 5.05 '
+          },
 
+          {
+            question: 'In addition to the G&SR of a Railway, each station shall be provided with _______________applicable to the station, issued under special instructions',
+            options: ['Working time table', 'Block working manual', 'Accident manual', 'Station Working Rules'],
+            correct: 3,
+            explanation: 'Station Working Rules is the correct answer.  Reference -GR 5.06 '
+          },
+
+          {
+            question: 'If the authorised _________is not available for any reason or in exceptional circumstances, a ____________ containing all the particulars as contained in the prescribed form is issued as an emergency measure, reasons there for shall be recorded in the station diary',
+            options: ['forms, manuscript form', 'printed forms, form', 'printed forms, manuscript form', 'manuscript forms, printed form'],
+            correct: 2,
+            explanation: 'printed forms, manuscript form is the correct answer.  Reference -GR 5.07 '
+          },
+        ],
+'31': [
+          {
+            question: 'In case of reception of train on obstructed line, whenever possible, SM has to intimate ___________________ that the train is to be received on an obstructed line',
+            options: ['Advance SM though LP', 'Loco Pilot through rear SM', 'Loco Pilot through advance SM', 'Guard through rear SM'],
+            correct: 1,
+            explanation: ' Loco Pilot through rear SM is the correct answer.  Reference - GR 5.09'
+          },
+         
+          {
+            question: 'In case of reception of train on obstructed line, train shall ___________at the facing points leading to the reception line until hand-signalled forward by a competent railway servant',
+            options: ['be brought to a stand', 'keep sharp look out', 'Proceed with 15 kmph', 'Proceed with 30 kmph'],
+            correct: 0,
+            explanation: 'be brought to a stand is the correct answer.  Reference -GR 5.09 '
+          },
+
+          {
+            question: 'In case of reception of train on obstructed line, train shall be brought to a stand at the facing points leading to the reception line until ________________by a competent railway servant',
+            options: ['Permitted by SM on walkie talkie', 'Permitted by Guard', 'hand signalled', 'hand-signalled forward'],
+            correct: 3,
+            explanation: 'hand-signalled forward is the correct answer.  Reference -GR 5.09 '
+          },
+ 
+          {
+            question: 'In case of reception of train on obstructed line, a ___________shall be exhibited at a distance of not less than _______________from the point of obstruction to indicate to the Loco Pilot as to where the train shall',
+            options: ['Proceed hand signal, 45 M', 'Stop hand signal, 20 M', 'Stop hand signal, 45 M', 'Hand signal, 30M'],
+            correct: 2,
+            explanation: 'Stop hand signal, 45 M is the correct answer.  Reference -GR 5.09 '
+          },
+ 
+          {
+            question: 'In case of reception of train on non signalled line, the line on which it is intended to receive the train is clear up to _______________________________________',
+            options: ['trailing points', 'Place at which the train is required to come to a stand', 'Either A or B', 'Both A & B'],
+            correct: 2,
+            explanation: 'Either A or B is the correct answer.  Reference -GR 5.10 '
+          },
+ 
+          {
+            question: 'In case of despatch of a train from a non signalled line, ______________may be dispensed with where a tangible authority to proceed is given to the Loco Pilot.',
+            options: ['Printed authroity', 'written authority', 'T.509', 'Oral instructions'],
+            correct: 1,
+            explanation: 'written authority is the correct answer.  Reference - GR 5.11'
+          },
+   
+          {
+            question: 'In the event of a train required to be started from a line out of a group of lines provided with a_, the Loco Pilot shall be given a written permission to start in addition to the authority to proceed under the system of working',
+            options: ['common departure signal', 'starter signal', 'shunt signal', 'Advance starter'],
+            correct: 0,
+            explanation: 'common departure signal is the correct answer.  Reference -GR 5.12 '
+          },
+ 
+          {
+            question: 'Shunting operations shall be controlled by _________________.',
+            options: ['fixed signals', 'hand signals', 'verbal directions', 'All the above'],
+            correct: 3,
+            explanation: 'All the above is the correct answer.  Reference -GR 5.13 '
+          },
+
+          {
+            question: 'The speed during shunting operations shall not exceed ______________ unless otherwise authorised by special instructions',
+            options: ['8 kmph', '10 kmph', '15 kmph', '25kmph'],
+            correct: 2,
+            explanation: '15 kmph is the correct answer.  Reference -GR 5.13 '
+          },
+
+          {
+            question: 'When signals have been taken ‗off‘ for an incoming train on to a line which is__, no shunting movement shall be carried out towards points over which the incoming train is to pass.',
+            options: ['isolated', 'not isolated', 'infringing', 'obstructed'],
+            correct: 1,
+            explanation: 'not isolated is the correct answer.  Reference -GR 5.16 '
+          },
+        ]
       }
     },
   
