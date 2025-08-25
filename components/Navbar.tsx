@@ -313,7 +313,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-2 rounded-lg bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-sm border border-white/25 hover:from-white/25 hover:to-white/15 transition-all duration-300 touch-button shadow-lg hover:shadow-xl hover:scale-105"
+              className="md:hidden"
               aria-label="Toggle menu"
             >
               <svg
