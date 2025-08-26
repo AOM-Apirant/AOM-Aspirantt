@@ -337,9 +337,9 @@ const OPTGIndex = () => {
                                   <span>{openingContent === topic.page ? 'Opening...' : 'View Content'}</span>
                                 </button>
                                 
-                                <span className="text-gray-400 text-xs lg:ml-2">
+                                {/* <span className="text-gray-400 text-xs lg:ml-2">
                                   {isMobile ? '📄 View Document & 📖 View Content' : '📄 PDF in new tab & 📖 Content in same tab'}
-                                </span>
+                                </span> */}
                               </div>
                             </div>
                           </div>

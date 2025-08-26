@@ -162,14 +162,14 @@ const ContentPage = () => {
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => router.push('/optg-manual')}
-                className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
+                className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
               >
                 <span>Back to Index</span>
               </button>
               
               <button
                 onClick={() => router.push('/')}
-                className="flex items-center space-x-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white text-sm lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-green-600 hover:to-emerald-700 transition-all duration-300 mr-2"
+                className="flex items-center space-x-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-xs hover:from-green-600 hover:to-emerald-700 transition-all duration-300 mr-2"
               >
                 <span>Home Page</span>
               </button>
@@ -177,12 +177,12 @@ const ContentPage = () => {
             
             <div className="flex items-center space-x-4">
               <div className="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 lg:px-4 px-2 py-2 rounded-sm backdrop-blur-sm border border-blue-400/30">
-                <p className="text-blue-200 font-medium text-sm lg:text-base">Page - {pageNumber}</p>
+                <p className="text-blue-200 font-medium text-xs lg:text-base">Page - {pageNumber}</p>
               </div>
               
               <button
                 onClick={openPDF}
-                className="flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-600 text-white text-sm lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-red-600 hover:to-pink-700 transition-all duration-300"
+                className="flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-red-600 hover:to-pink-700 transition-all duration-300"
               >
                 <span>View PDF</span>
               </button>
@@ -305,6 +305,82 @@ const ContentPage = () => {
           <div className="lg:p-6 p-1">
             <ContentComponent />
           </div>
+        </div>
+      </div>
+
+      {/* Navigation Buttons - At bottom of content */}
+      <div className="mt-1 mb-1 p-3">
+        <div className="flex items-center justify-between  space-x-8">
+                     {/* Previous Page Button */}
+           <button
+             onClick={() => {
+               // Find the previous available page
+               const currentPageNum = parseInt(pageNumber)
+               const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
+               const currentIndex = availablePages.indexOf(currentPageNum)
+               
+               if (currentIndex > 0) {
+                 const prevPage = availablePages[currentIndex - 1]
+                 router.push(`/optg-manual/content/${prevPage}`)
+               }
+             }}
+             disabled={(() => {
+               const currentPageNum = parseInt(pageNumber)
+               const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
+               const currentIndex = availablePages.indexOf(currentPageNum)
+               return currentIndex <= 0
+             })()}
+             className={`flex items-center space-x-2 px-3 py-2 rounded-sm text-white font-medium transition-all duration-300 ${
+               (() => {
+                 const currentPageNum = parseInt(pageNumber)
+                 const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
+                 const currentIndex = availablePages.indexOf(currentPageNum)
+                 return currentIndex > 0
+               })()
+                 ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:scale-105'
+                 : 'bg-gray-500 cursor-not-allowed opacity-50'
+             }`}
+           >
+             <span className='text-xs lg:text-base'>Previous Page</span>
+           </button>
+
+          {/* Current Page Indicator */}
+          <div className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-3 py-2 rounded-sm font-bold text-xs lg:text-base">
+            Page {pageNumber}
+          </div>
+
+                     {/* Next Page Button */}
+           <button
+             onClick={() => {
+               // Find the next available page
+               const currentPageNum = parseInt(pageNumber)
+               const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
+               const currentIndex = availablePages.indexOf(currentPageNum)
+               
+               if (currentIndex < availablePages.length - 1) {
+                 const nextPage = availablePages[currentIndex + 1]
+                 router.push(`/optg-manual/content/${nextPage}`)
+               }
+             }}
+             disabled={(() => {
+               const currentPageNum = parseInt(pageNumber)
+               const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
+               const currentIndex = availablePages.indexOf(currentPageNum)
+               return currentIndex >= availablePages.length - 1
+             })()}
+             className={`flex items-center space-x-2 px-3 py-2 rounded-sm text-white font-medium transition-all duration-300 ${
+               (() => {
+                 const currentPageNum = parseInt(pageNumber)
+                 const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
+                 const currentIndex = availablePages.indexOf(currentPageNum)
+                 return currentIndex < availablePages.length - 1
+               })()
+                 ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:scale-105'
+                 : 'bg-gray-500 cursor-not-allowed opacity-50'
+             }`}
+           >
+             <span className='text-xs lg:text-base'>Next Page</span>
+           </button>
         </div>
       </div>
     </div>
