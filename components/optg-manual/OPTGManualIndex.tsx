@@ -1,11 +1,14 @@
 "use client"
 import React, { useState, useEffect } from 'react'
-import { BookOpen, Train, Building, Settings, AlertTriangle, BarChart3, ChevronDown, ChevronUp, CheckCircle, Signal, Eye, Target, ExternalLink, FileText } from 'lucide-react'
+import { BookOpen, Train, Building, Settings, AlertTriangle, BarChart3, ChevronDown, ChevronUp, CheckCircle, Signal, Eye, Target, ExternalLink, FileText, BookOpenCheck } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const OPTGIndex = () => {
   const [expandedSections, setExpandedSections] = useState<number[]>([])
   const [isMobile, setIsMobile] = useState(false)
   const [openingPDF, setOpeningPDF] = useState<string | null>(null)
+  const [openingContent, setOpeningContent] = useState<string | null>(null)
+  const router = useRouter()
 
   useEffect(() => {
     const checkDevice = () => {
@@ -51,6 +54,17 @@ const OPTGIndex = () => {
         window.open(pdfPath, '_blank')
         setOpeningPDF(null)
       }
+    }, 100)
+  }
+
+  const openContent = (pageNumber: string) => {
+    setOpeningContent(pageNumber)
+    
+    // Small delay to show loading state
+    setTimeout(() => {
+      // Navigate to the content page (note-pages route)
+      router.push(`/optg-manual/content/${pageNumber}`)
+      setOpeningContent(null)
     }, 100)
   }
 
@@ -285,7 +299,8 @@ const OPTGIndex = () => {
                               <p className="text-gray-200 font-medium">
                                 {topic.title}
                               </p>
-                              <div className="flex items-center space-x-3 mt-2">
+                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                {/* View Document Button */}
                                 <button
                                   onClick={() => openPDF(topic.page)}
                                   disabled={openingPDF === topic.page}
@@ -303,8 +318,27 @@ const OPTGIndex = () => {
                                   <span>{openingPDF === topic.page ? 'Opening...' : `Page ${topic.page}`}</span>
                                   {!isMobile && openingPDF !== topic.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
-                                <span className="text-gray-400 text-xs">
-                                  {isMobile ? 'Open Document' : 'Open Document in new tab'}
+                                
+                                {/* View Content Button */}
+                                <button
+                                  onClick={() => openContent(topic.page)}
+                                  disabled={openingContent === topic.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingContent === topic.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingContent === topic.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <BookOpenCheck className="w-4 h-4" />
+                                  )}
+                                  <span>{openingContent === topic.page ? 'Opening...' : 'View Content'}</span>
+                                </button>
+                                
+                                <span className="text-gray-400 text-xs lg:ml-2">
+                                  {isMobile ? '📄 View Document & 📖 View Content' : '📄 PDF in new tab & 📖 Content in same tab'}
                                 </span>
                               </div>
                             </div>
