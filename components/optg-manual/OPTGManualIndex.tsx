@@ -207,13 +207,13 @@ const OPTGIndex = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 py-6 lg:px-4 px-2">
+      <div className="relative z-10 py-4 lg:px-4 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-8">
             <div className="inline-block p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full mb-6 backdrop-blur-sm">
-              <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-3 rounded-full">
-                <BookOpen className="w-8 h-8 text-white" />
+              <div className="bg-gradient-to-r from-blue-500 to-indigo-600 lg:p-3 p-2 rounded-full">
+                <BookOpen className="lg:w-8 lg:h-8 w-6 h-6 text-white" />
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
@@ -352,9 +352,9 @@ const OPTGIndex = () => {
             </div>
 
             {/* Footer */}
-            <div className="mt-12 text-center">
+            <div className="mt-6 text-center">
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
-                <div className="flex items-center justify-center space-x-3 mb-4">
+                <div className="flex flex-col lg:flex-row gap-4 items-center justify-center space-x-3 mb-4">
                   <CheckCircle className="w-8 h-8 text-green-400" />
                   <h3 className="text-2xl font-bold text-white">
                     Complete Operating Manual Reference

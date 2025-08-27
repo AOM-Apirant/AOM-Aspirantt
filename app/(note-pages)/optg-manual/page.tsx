@@ -1,20 +1,6 @@
 "use client"
-import StationYard from '@/components/optg-manual/StationYard'
-import RegisterPreserve from '@/components/optg-manual/RegisterPreserve'
-import Punctuality from '@/components/optg-manual/Punctuality'
 import React from 'react'
-import ControlOrganization from '@/components/optg-manual/ControlOrganization'
-import ChiefController from '@/components/optg-manual/ChiefController'
-import SectionController from '@/components/optg-manual/SectionController'
-import WorkingOfTrains from '@/components/optg-manual/WorkingOfTrains'
-import SystemOfWorking from '@/components/optg-manual/SystemOfWorking'
-import CoachingTrainOperations from '@/components/optg-manual/CoachingTrainOperations'
-import NumberingOfTrains from '@/components/optg-manual/NumberingOfTrains'
-import CoachingLocomotives from '@/components/optg-manual/CoachingLocomotives'
-import CoachingStock from '@/components/optg-manual/CoachingStock'
-import FreightTrainOperations from '@/components/optg-manual/FreightTrainOperations'
 import { Download, FileText, BookOpen, Users, Shield, Train, Award } from 'lucide-react'
-import WagonEngineUtilization from '@/components/optg-manual/WagonEngineUtilization'
 import OPTGManualIndex from '@/components/optg-manual/OPTGManualIndex'
 
 const OperatingManual = () => {
@@ -47,12 +33,12 @@ const OperatingManual = () => {
 
       <div className="relative z-10">
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white py-8 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white py-4 relative overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="relative max-w-7xl mx-auto lg:px-6 px-2 text-center">
-            <div className="inline-block p-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full mb-8 backdrop-blur-sm">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-full">
-                <Train className="w-10 h-10 text-white" />
+            <div className="inline-block lg:p-3 p-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full mb-8 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-600 lg:p-4 p-2 rounded-full">
+                <Train className="lg:w-10 lg:h-10 w-6 h-6 text-white" />
               </div>
             </div>
             <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6 animate-fade-in">
@@ -72,7 +58,7 @@ const OperatingManual = () => {
         </div>
 
         {/* Content Section */}
-        <div className="max-w-7xl mx-auto lg:px-6 px-2 py-8">
+        <div className="max-w-7xl mx-auto lg:px-6 px-2 py-4">
           {/* Introduction Card */}
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl py-6 lg:px-4 px-2 mb-16 border border-white/20 hover:bg-white/15 transition-all duration-500">
             <div className="flex items-center text-center flex-col gap-4 mb-10">
@@ -152,7 +138,7 @@ const OperatingManual = () => {
                 </p>
               </div>
               
-              <div className="mt-12 pt-8 border-t border-white/20">
+              <div className="mt-6 pt-8 border-t border-white/20">
                 <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-2xl py-6 lg:px-6 px-4 border border-white/20">
                   <div className="flex flex-col lg:flex-row items-center justify-between">
                     <div className="flex items-center mb-6 lg:mb-0 flex-col lg:flex-row gap-4">
@@ -177,36 +163,22 @@ const OperatingManual = () => {
           
 
           {/* Manual Sections */}
-          <div className="space-y-12">
+          <div className="space-y-3">
             <OPTGManualIndex/>
-            <StationYard />
-            <RegisterPreserve />
-            <Punctuality />
-            <ControlOrganization />
-            <ChiefController />
-            <SectionController />
-            <WorkingOfTrains />
-            <SystemOfWorking />
-            <CoachingTrainOperations />
-            <NumberingOfTrains />
-            <CoachingLocomotives />
-            <CoachingStock />
-            <FreightTrainOperations />
-            <WagonEngineUtilization/>
           </div>
         </div>
 
         {/* Download PDF Section */}
-        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 py-20 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 py-4 relative overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
-          <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 md:p-16 border border-white/20 shadow-2xl">
+          <div className="relative max-w-5xl mx-auto px-4 text-center">
+            <div className="bg-white/10 backdrop-blur-lg rounded-3xl py-6 px-4 border border-white/20 shadow-2xl">
               <div className="flex flex-col gap-6 items-center justify-center mb-10">
-                <div className="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl">
-                  <FileText className="w-10 h-10 text-white" />
+                <div className="lg:w-20 lg:h-20 w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl">
+                  <FileText className="lg:w-10 lg:h-10 w-6 h-6 text-white" />
                 </div>
                 <h2 className="lg:text-4xl text-2xl font-bold text-white">
-                  Download Complete Operating Manual SCR 2023
+                  Download Operating Manual SCR 2023 PDF File
                 </h2>
               </div>
               
@@ -218,20 +190,16 @@ const OperatingManual = () => {
 
               <button
                 onClick={handleDownloadPDF}
-                className="group relative inline-flex items-center justify-center px-10 py-5 text-xl font-semibold text-white bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 rounded-2xl shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 active:scale-95 border border-yellow-400/30"
+                className="group relative inline-flex items-center justify-center lg:px-10 lg:py-5 px-6 py-3 lg:text-xl text-base font-semibold text-white bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-700 rounded-lg shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 hover:scale-105 active:scale-95 border border-yellow-400/30"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative flex items-center space-x-4">
-                  <Download className="w-7 h-7 animate-pulse" />
+                  <Download className="lg:w-7 lg:h-7 w-5 h-5 animate-pulse" />
                   <span>Download PDF</span>
                 </div>
               </button>
 
-              <div className="mt-10 pt-8 border-t border-white/20">
-                <p className="text-indigo-200 text-sm">
-                  📱 Mobile users: PDF opens in browser | 💻 Desktop users: PDF downloads automatically
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
