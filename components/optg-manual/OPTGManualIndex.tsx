@@ -315,7 +315,7 @@ const OPTGIndex = () => {
                                   ) : (
                                     <FileText className="w-4 h-4" />
                                   )}
-                                  <span>{openingPDF === topic.page ? 'Opening...' : `Page ${topic.page}`}</span>
+                                  <span>{openingPDF === topic.page ? 'Opening...' : `Page - ${topic.page}`} (Document)</span>
                                   {!isMobile && openingPDF !== topic.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
                                 

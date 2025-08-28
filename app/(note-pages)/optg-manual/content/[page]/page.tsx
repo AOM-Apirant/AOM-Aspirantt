@@ -283,7 +283,7 @@ const ContentPage = () => {
                     const topic = allTopics.find(t => t.page === pageNumber);
                     return topic ? (
                       <li className="flex items-center space-x-2">
-                        <span className="text-white text-xs lg:text-base">{topic.title}</span>
+                        <span className="text-white text-xs lg:text-base">Topic : {topic.title}</span>
                       </li>
                     ) : (
                       <li className="text-red-300">Topic title not found for this page.</li>
@@ -455,7 +455,7 @@ const ContentPage = () => {
               Previous
             </span>
             <hr className="border-white/30 w-full my-1" />
-            <span className='text-sm lg:text-base'>
+            <span className='text-xs lg:text-sm'>
               {(() => {
                 const currentPageNum = parseInt(pageNumber)
                 const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
@@ -570,7 +570,7 @@ const ContentPage = () => {
               Next
             </span>
             <hr className="border-white/30 w-full my-1" />
-            <span className='text-sm lg:text-base'>
+            <span className='text-xs lg:text-sm'>
               {(() => {
                 const currentPageNum = parseInt(pageNumber)
                 const availablePages = Object.keys(pageComponents).map(Number).sort((a, b) => a - b)
