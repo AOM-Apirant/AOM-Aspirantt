@@ -4,6 +4,10 @@
 
 This is a Next.js 15 application for AOM (Assistant Operations Manager) aspirants. It's a learning platform with authentication, progress tracking, and comprehensive study materials.
 
+**Website**: https://aomaspirant.in
+**Domain**: aomaspirant.in
+**Purpose**: Comprehensive learning platform for AOM aspirants in Indian Railways
+
 ## Technology Stack
 
 - **Framework**: Next.js 15 with App Router
@@ -14,6 +18,7 @@ This is a Next.js 15 application for AOM (Assistant Operations Manager) aspirant
 - **UI Components**: Lucide React icons, Framer Motion
 - **Validation**: Zod schemas
 - **Email**: Nodemailer
+- **Deployment**: Vercel/Netlify (recommended for aomaspirant.in)
 
 ## Project Structure
 
@@ -30,6 +35,30 @@ aom-aspirant/
 ├── lib/ # Utility functions and configurations
 ├── models/ # MongoDB/Mongoose models
 └── schemas/ # Zod validation schemas
+
+## Website-Specific Guidelines
+
+### Domain Configuration
+
+- **Primary Domain**: aomaspirant.in
+- **Subdomain Support**: www.aomaspirant.in
+- **SSL Certificate**: Must be enabled for production
+- **SEO Optimization**: Focus on AOM aspirant keywords and Indian Railways terminology
+
+### Content Localization
+
+- **Primary Language**: English (for technical content)
+- **Secondary Language**: Hindi (for user interface elements)
+- **Railway Terminology**: Use official Indian Railways terminology
+- **Regional Context**: Focus on Indian Railways operations and regulations
+
+### User Experience for AOM Aspirants
+
+- **Study Material Organization**: Logical progression from basic to advanced concepts
+- **Progress Tracking**: Visual indicators for completed topics
+- **Mobile-First Design**: Most users access on mobile devices
+- **Offline Access**: PDF downloads for offline study
+- **Search Functionality**: Quick access to specific topics and regulations
 
 ## Coding Standards
 
@@ -78,7 +107,9 @@ export default function ComponentName({ prop1, prop2 }: ComponentNameProps) {
 
   return <div className="tailwind-classes">{/* JSX content */}</div>;
 }
-`### API Routes
+```
+
+### API Routes
 
 - Use Next.js API routes in `app/api/`
 - Implement proper error handling
@@ -184,6 +215,8 @@ export default function FormComponent() {
 
   return <form onSubmit={handleSubmit}>{/* Form fields */}</form>;
 }
+```
+
 ### API Route Pattern
 
 ```typescript
@@ -206,6 +239,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 }
+```
+
 ## Notes
 
 - This is a English Language learning platform for AOM aspirants
@@ -244,6 +279,8 @@ Background Agents are AI agents in Cursor that continuously analyze your codebas
 
 ```bash
 Cursor → Settings → AI → Background Agents → Enable
+```
+
 ### Step 2: Configure Agent Types
 
 - **Code Quality Agent**: Code style and best practices
@@ -264,6 +301,8 @@ Cursor → Settings → AI → Background Agents → Enable
     "documentation": true
   }
 }
+```
+
 ### 2. **Set Focus Areas**
 
 - Target specific directories or file types
@@ -314,6 +353,8 @@ Cursor → Settings → AI → Background Agents → Enable
     "Implement proper error boundaries"
   ]
 }
+```
+
 ### 2. **Priority Configuration**
 
 - Set critical files as high priority
@@ -374,6 +415,36 @@ Cursor → Settings → AI → Background Agents → Enable
   }
 }
 ```
+
+## Website-Specific Development Guidelines
+
+### SEO and Meta Tags
+
+- Implement proper meta tags for each page
+- Use structured data for study materials
+- Optimize for AOM-related search terms
+- Implement Open Graph tags for social sharing
+
+### Analytics and Monitoring
+
+- Integrate Google Analytics for aomaspirant.in
+- Monitor user engagement with study materials
+- Track quiz completion rates
+- Monitor PDF download patterns
+
+### Content Management
+
+- Organize study materials by topic hierarchy
+- Implement search functionality across all content
+- Provide breadcrumb navigation
+- Ensure mobile-friendly content display
+
+### User Engagement
+
+- Implement progress tracking visualization
+- Add bookmark functionality for study materials
+- Provide study session timers
+- Implement social sharing features
 
 This setup will help continuously improve your AOM Aspirant project. Gradually enable background agents and adapt them to your workflow.
 ````
