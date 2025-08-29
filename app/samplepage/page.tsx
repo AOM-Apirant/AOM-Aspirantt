@@ -1,11 +1,11 @@
 import React from 'react'
-import OMPage115 from '@/components/optg-manual/optg-manual-index-pages/OMPage115'
+import AMChapterPage2G from '@/components/acc-manual/am-chapter-pages/AMChapterPage2G'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <OMPage115/>
+        <AMChapterPage2G/>
         
     </div>
   )
