@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const AMChapterPage4I = () => {
+const AMChapterPage8C = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -25,22 +25,22 @@ const AMChapterPage4I = () => {
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               CHAPTER-IV
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">THRESHOLD VALUE</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">DUTY FOR SECURING SAFETY</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Understanding the threshold values for accident reporting and classification
+              Understanding the safety responsibilities of railway servants
             </p>
           </div>
 
           {/* Content Section */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-3 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <div className="space-y-8">
-              {/* Rule 108 - Threshold Value */}
+              {/* Rule 123 - Duty for Securing Safety */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
                     <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">108</span>
+                      <span className="text-white font-bold lg:text-lg text-base">123</span>
                     </div>
                   </div>
                   <div className="flex-1">
@@ -50,63 +50,59 @@ const AMChapterPage4I = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                       </span>
-                      Threshold Value
+                      Duty for Securing Safety
                     </h3>
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
-                      <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
-                        <p className="flex items-start gap-3">
-                          <span className="mt-1 text-blue-400 text-xl">📋</span>
-                          <span>
-                            For the purpose of reporting of accident, threshold value is a minimum value beyond which the accident will be treated as having serious repercussion on the basis of loss to railway property or interruption to through traffic. It shall constitute two portions.
-                          </span>
-                        </p>
+                      <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
                         
-                        <div className="space-y-4 mt-6">
+                        {/* Section (a) */}
+                        <div className="space-y-4">
                           <div className="flex items-start gap-3">
-                            <span className="mt-1 text-indigo-400 text-xl">a)</span>
-                            <span>
-                              Threshold value of loss of railway property is fixed at one lakh rupees or;
-                            </span>
-                          </div>
-                          
-                          <div className="flex items-start gap-3">
-                            <span className="mt-1 text-purple-400 text-xl">b)</span>
-                            <span>
-                              Threshold value of interruption to through traffic either partial or total is where duration of interruption is equal to or more than the number of hours specified against each column below.
-                            </span>
+                            <span className="mt-1 text-blue-400 text-xl font-bold">(a)</span>
+                            <div className="space-y-3">
+                              <div className="text-white">Every railway servant shall ––</div>
+                              <div className="ml-6 space-y-3">
+                                <div className="flex items-start gap-3">
+                                  <span className="mt-1 text-green-400 text-lg">(i)</span>
+                                  <span className="text-white">see that every exertion is made for ensuring the safety of the public.</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                  <span className="mt-1 text-green-400 text-lg">(ii)</span>
+                                  <span className="text-white">promptly report to his superior any occurrence affecting the safe or proper working of the railway which may come to his notice; and</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                  <span className="mt-1 text-green-400 text-lg">(iii)</span>
+                                  <span className="text-white">render on demand all possible assistance in case of an accident or obstruction.</span>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
-                        {/* Table Section */}
-                        <div className="mt-6">
-                          <div className="bg-white/5 rounded-lg p-4 border border-white/20 flex flex-col gap-4">
-                            <div className="text-blue-300 font-semibold mb-2">Threshold values for interruption to through traffic:</div>
-                            <div className="flex items-start gap-3">
-                              <span className="text-indigo-400 text-2xl mt-1">🔹</span>
-                              <span className="text-white">
-                                For BG (Broad Gauge) A, B, C or D Special routes: 
-                                <span className="font-semibold text-blue-200"> 3 hours </span> for total interruption, or 
-                                <span className="font-semibold text-blue-200"> 6 hours </span> for total + partial interruption.
-                              </span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <span className="text-purple-400 text-2xl mt-1">🔸</span>
-                              <span className="text-white">
-                                For BG D, E Special or MG (Meter Gauge) Q, R routes: 
-                                <span className="font-semibold text-purple-200"> 4 hours </span> for total interruption, or 
-                                <span className="font-semibold text-purple-200"> 8 hours </span> for total + partial interruption.
-                              </span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <span className="text-pink-400 text-2xl mt-1">🔺</span>
-                              <span className="text-white">
-                                For BG E or MG S routes: 
-                                <span className="font-semibold text-pink-200"> 6 hours </span> for total interruption, or 
-                                <span className="font-semibold text-pink-200"> 12 hours </span> for total + partial interruption.
-                              </span>
+                        {/* Section (b) */}
+                        <div className="space-y-4">
+                          <div className="flex items-start gap-3">
+                            <span className="mt-1 text-indigo-400 text-xl font-bold">(b)</span>
+                            <div className="space-y-3">
+                              <div className="text-white">Whenever any unusual condition arises due to an obstruction or a defect in train, signals, tracks, bridges, electric traction and overhead equipment or through any other cause, which may affect the movement of trains or the safety of public or property, every railway servant shall –</div>
+                              <div className="ml-6 space-y-3">
+                                <div className="flex items-start gap-3">
+                                  <span className="mt-1 text-green-400 text-lg">(i)</span>
+                                  <span className="text-white">take immediate steps to stop any train, the movement of which is likely to endangere or which may endanger the safety of its passengers or the public;</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                  <span className="mt-1 text-green-400 text-lg">(ii)</span>
+                                  <span className="text-white">take immediate steps to remove the obstruction or remedy the defect if he is able and competent to do so; and</span>
+                                </div>
+                                <div className="flex items-start gap-3">
+                                  <span className="mt-1 text-green-400 text-lg">(iii)</span>
+                                  <span className="text-white">make a report to the nearest Station Master by the quickest possible means and to his own superior.</span>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -123,20 +119,24 @@ const AMChapterPage4I = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </span>
-              Threshold Value Details
+              Safety Responsibilities
             </h3>
             <div className="flex flex-col gap-3">
               <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
-                <span className="text-blue-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">💰</span>
-                <span className="text-gray-200 lg:text-lg text-base">Property Loss: ₹1 Lakh threshold</span>
+                <span className="text-blue-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">🛡️</span>
+                <span className="text-gray-200 lg:text-lg text-base">Primary Duty: Ensure public safety</span>
               </div>
               <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
-                <span className="text-indigo-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">⏱️</span>
-                <span className="text-gray-200 lg:text-lg text-base">Traffic Interruption: Time-based thresholds</span>
+                <span className="text-indigo-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">📢</span>
+                <span className="text-gray-200 lg:text-lg text-base">Reporting: Promptly report safety issues</span>
               </div>
               <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
-                <span className="text-purple-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">🛤️</span>
-                <span className="text-gray-200 lg:text-lg text-base">Route Classification: BG and MG routes</span>
+                <span className="text-purple-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">🚨</span>
+                <span className="text-gray-200 lg:text-lg text-base">Emergency Response: Immediate action for safety</span>
+              </div>
+              <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
+                <span className="text-green-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">📋</span>
+                <span className="text-gray-200 lg:text-lg text-base">Communication: Report to SM and superior</span>
               </div>
             </div>
           </div>
@@ -156,4 +156,4 @@ const AMChapterPage4I = () => {
   )
 }
 
-export default AMChapterPage4I
+export default AMChapterPage8C
