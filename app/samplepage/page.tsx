@@ -1,11 +1,10 @@
 import React from 'react'
-import AMChapterPage27B from '@/components/acc-manual/am-chapter-pages/AMChapterPage27B'
-
+import AMChapterPage34D from '@/components/acc-manual/am-chapter-pages/AMChapterPage34D'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <AMChapterPage27B/>
+        <AMChapterPage34D/>
         
     </div>
   )
