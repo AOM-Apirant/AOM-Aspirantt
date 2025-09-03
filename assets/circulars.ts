@@ -153,6 +153,18 @@ export const flyLeafPdfFiles = [
     subject: "Push Trolley/Lorry working",
     date: "17/07/2025",
   },
+  {
+    name: "Fly Leaf 12 of 2025",
+    filename: "Fly Leaf 12 of 2025.pdf",
+    subject: "Brake Van Equipment in Coaching Trains Originating in South Central Railway (SR 4.19.4",
+    date: "01/09/2025",
+  },
+  {
+    name: "Fly Leaf 13 of 2025",
+    filename: "Fly Leaf 13 of 2025.pdf",
+    subject: "(As per reference (i) LHB Maintenance Manual Volume II – System Documentation IRCAMTECH /GWL /MECH/ 2022-23/LHB/Manual/1.1 JULY, 2022 (Annexure -10.5, Sl.No. 27 to 27.29, Air Spring /FIBA & Chapter-4. Bogie, Annexure-C & D. (Ii) RDSOLr.No.SV.AS.FIBA, dated: 22.06.2020).",
+    date: "01/09/2025",
+  },
 ];
 
 export const operatingSafetyCircularPdfFiles = [
