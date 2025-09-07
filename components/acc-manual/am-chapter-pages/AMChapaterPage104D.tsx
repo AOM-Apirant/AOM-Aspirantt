@@ -143,7 +143,7 @@ const AMChapaterPage104D = () => {
                             </div>
                             
                             <p className="text-gray-200 leading-relaxed">
-                              The Inquiry Officer or the committee shall also note "matters brought to light" in the course of the Inquiry, which though not having a direct bearing on the accident may lead to accidents in future.
+                              The Inquiry Officer or the committee shall also note &quot;matters brought to light&quot; in the course of the Inquiry, which though not having a direct bearing on the accident may lead to accidents in future.
                             </p>
                           </div>
                         </div>
