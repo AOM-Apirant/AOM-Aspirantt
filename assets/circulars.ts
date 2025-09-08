@@ -80,6 +80,12 @@ export const alertAdvicePdfFiles = [
     subject: "Pushing back of trains (Engine Pushing) from Block Section",
     date: "19/08/2025",
   },
+  {
+    name: "Alert Advice 14 of 2025",
+    filename: "Alert Advice 14 of 2025.pdf",
+    subject: "Running trains without Guard (SR 4.25.4) & Duties LP/ALP in absence of Guard",
+    date: "02/09/2025",
+  },
 ];
 
 export const flyLeafPdfFiles = [
@@ -306,6 +312,11 @@ export const fortnightlySafetyBulletinPdfFiles = [
     filename: "Fortnightly Safety Bulletin August 1st FN 2025.pdf",
     date: "15/08/2025",
   },
+  {
+    name: "Fortnightly Safety Bulletin August 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin August 2nd FN 2025.pdf",
+    date: "31/08/2025",
+  },
   
 ];
 
@@ -431,6 +442,13 @@ export const safetyDrivePdfFiles = [
     subject:
       "Divisional Safety drive No:04 - Inspection of Emergency Crossovers & Rusty rails",
     date: "04/08/2025",
+  },
+  {
+    name: "Safety Drive September 2 2025",
+    filename: "Safety Drive September 2 2025.pdf",
+    subject:
+      "Railway Board Safety Calendar Drive for the month of September 2025",
+    date: "05/09/2025",
   },
 ];
 
