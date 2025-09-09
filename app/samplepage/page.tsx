@@ -1,13 +1,12 @@
 import React from 'react'
-import AMChapaterPage130A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage130A'
+import AMAppendixPage143 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage143'
 
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>
-        <AMChapaterPage130A/>
-
+        <AMAppendixPage143/>
 
     </div>
   )
