@@ -2176,7 +2176,79 @@ explanation: 'Banner flag is the correct answer. Reference - GR 3.57'
             correct: 1,
             explanation: 'not isolated is the correct answer.  Reference -GR 5.16 '
           },
+        ],
+'32': [
+          {
+            question: 'A train waiting for an authority to proceed shall not be allowed to draw out upto an Advanced Starter for despatch, except where ________________has been provided between the Starter and Advanced Starter to indicate the presence of a train in advanced position',
+            options: ['track circuit or Axle Counter', 'only track circuit', 'only axle counter', 'None of these'],
+            correct: 0,
+            explanation: ' track circuit or Axle Counter is the correct answer.  Reference -GR 5.18 '
+          },
+         
+          {
+            question: 'In case of shunting over a portion of line on steep gradients, neither isolated nor protected by slip sidings, an engine is ______________________.',
+            options: ['detached towards falling gradient', 'detached from steep gradient', 'attached towards falling gradient', 'attached from steep gradient'],
+            correct: 2,
+            explanation: 'attached towards falling gradient is the correct answer.  Reference -GR 5.20 '
+          },
+
+          {
+            question: 'For purposes of shunting, steep gradient shall be _________or steeper for non roller bearing and it shall be ____________or steeper for vehicles fitted with roller bearings',
+            options: ['1 in 400, 1 in 260', '1 in 260, 1 in 600', '1 in 150, 1 in 400', '1 in 260, 1 in 400'],
+            correct: 3,
+            explanation: '1 in 260, 1 in 400 is the correct answer.  Reference -GR 5.20 '
+          },
+ 
+          {
+            question: 'Cranes, vehicles containing passengers, workers, explosives, dangerous goods or live-stock or any other vehicle that may be specified under special instructions, shall not be ____________and no loose shunting shall be made against them',
+            options: ['hump shunted', 'loose shunted', 'hand shunted', 'None of the above'],
+            correct: 1,
+            explanation: 'loose shunted is the correct answer.  Reference -GR 5.21 '
+          },
+ 
+          {
+            question: 'No railway servant shall leave any vehicle in a siding outside station limits, unless the vehicle is clear of all running lines and, except under special instructions, unless the wheels thereof are_',
+            options: ['protected', 'examined', 'properly secured', 'inspected'],
+            correct: 2,
+            explanation: 'properly secured is the correct answer.  Reference -GR 5.22 '
+          },
+ 
+          {
+            question: 'The Station Master shall see that vehicles standing at the station are in accordance with special instructions',
+            options: ['properly secured', 'protected', 'examined', 'inspected'],
+            correct: 0,
+            explanation: 'properly secured is the correct answer.  Reference -GR 5.23 '
+          },
+   
+          {
+            question: 'G&SR Rule pertaining Responsibility of the Station Master for working is mentioned in',
+            options: ['GR 5.01', 'GR 5.02', 'GR 5.03', 'GR 5.04'],
+            correct: 0,
+            explanation: 'GR 5.01 is the correct answer.  Reference -Index G&SR '
+          },
+ 
+          {
+            question: 'G&SR Rule pertaining Station working rules is mentioned in',
+            options: ['GR 5.05', 'GR 5.06', 'GR 5.07', 'GR 5.08'],
+            correct: 1,
+            explanation: 'GR 5.06 is the correct answer.  Reference - Index G&SR'
+          },
+
+          {
+            question: 'G&SR Rule pertaining reception of train on obstructed line is mentioned in',
+            options: ['GR 5.07', 'GR 5.08', 'GR 5.09', 'GR 5.10'],
+            correct: 2,
+            explanation: 'GR 5.09 is the correct answer.  Reference -Index G&SR '
+          },
+
+          {
+            question: 'G&SR Rule pertaining reception of train on Non signalled line is mentioned in',
+            options: ['GR 5.07', 'GR 5.08', 'GR 5.09', 'GR 5.10'],
+            correct: 3,
+            explanation: 'GR 5.10 is the correct answer.  Reference -Index G&SR '
+          },
         ]
+
       }
     },
   
