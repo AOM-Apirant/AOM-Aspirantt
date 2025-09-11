@@ -1,9 +1,25 @@
 "use client"
-import React, { useState } from 'react'
-import { BookOpen, FileText, AlertTriangle, Shield, Users, CheckCircle, AlertCircle, Search, Gavel, Clipboard, Heart, ChevronDown, ChevronUp } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { BookOpen, FileText, AlertTriangle, Shield, Users, CheckCircle, AlertCircle, Search, Gavel, Clipboard, Heart, ChevronDown, ChevronUp, ExternalLink, BookOpenCheck } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const AMChapters = () => {
   const [expandedChapters, setExpandedChapters] = useState<number[]>([])
+  const [isMobile, setIsMobile] = useState(false)
+  const [openingPDF, setOpeningPDF] = useState<string | null>(null)
+  const [openingContent, setOpeningContent] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    checkDevice()
+    window.addEventListener('resize', checkDevice)
+
+    return () => window.removeEventListener('resize', checkDevice)
+  }, [])
 
   const toggleChapter = (chapterId: number) => {
     setExpandedChapters(prev => {
@@ -15,6 +31,35 @@ const AMChapters = () => {
       return [chapterId]
     })
   }
+
+  const openPDF = (pageNumber: string) => {
+    const pdfPath = `/ampdfs/am-chapter-pages/AMPAGE${pageNumber.toUpperCase()}.pdf`
+
+    setOpeningPDF(pageNumber)
+
+    // Small delay to show loading state
+    setTimeout(() => {
+      if (isMobile) {
+        // For mobile devices, open PDF directly in the same tab
+        window.location.href = pdfPath
+      } else {
+        // For large devices, open PDF in new tab
+        window.open(pdfPath, '_blank')
+        setOpeningPDF(null)
+      }
+    }, 100)
+  }
+
+  const openContent = (pageNumber: string) => {
+    setOpeningContent(pageNumber)
+
+    // Small delay to show loading state
+    setTimeout(() => {
+      // Navigate to the content page
+      router.push(`/accident/content/${pageNumber}`)
+      setOpeningContent(null)
+    }, 100)
+  }
   const chapters = [
     {
       id: 1,
@@ -23,51 +68,51 @@ const AMChapters = () => {
       color: "from-blue-500 to-blue-600",
       description: "Core definitions and fundamental instructions for accident management",
       rules: [
-        { number: "101", title: "Train", page: "1" },
-        { number: "101.1", title: "Passenger Train", page: "1" },
-        { number: "101.2", title: "Other Trains", page: "1" },
-        { number: "102", title: "Accident", page: "1" },
-        { number: "103", title: "Serious Accident", page: "1" },
-        { number: "104", title: "Injuries", page: "2" },
-        { number: "104.1", title: "Grievous Injuries", page: "2" },
-        { number: "104.2", title: "Simple Injuries", page: "2" },
-        { number: "105", title: "Classification of Accidents", page: "2" },
-        { number: "105.1", title: "Train Accident", page: "2" },
-        { number: "105.2", title: "Consequential train accidents", page: "2" },
-        { number: "105.3", title: "Collisions", page: "2" },
-        { number: "105.4", title: "Fire in Trains", page: "3" },
-        { number: "105.5", title: "Accidents at Level Crossings", page: "3" },
-        { number: "105.6", title: "Derailments", page: "3" },
-        { number: "105.7", title: "Other train Accidents", page: "3" },
-        { number: "105.8", title: "Yard Accidents", page: "3" },
-        { number: "105.9", title: "Indicative Accidents", page: "3" },
-        { number: "105.10", title: "Averted Collision", page: "3" },
-        { number: "105.11", title: "Breach of Block Rules", page: "3" },
-        { number: "105.12", title: "Train Passing Signal at Danger", page: "4" },
-        { number: "105.13", title: "Equipment Failures", page: "4" },
-        { number: "105.14", title: "Unusual Incidents", page: "4" },
-        { number: "105.15", title: "Sabotage", page: "4" },
-        { number: "105.16", title: "Train Wrecking", page: "4" },
-        { number: "105.17", title: "Attempted Train wrecking", page: "4" },
-        { number: "106", title: "Commissioner of Railway Safety", page: "4" },
-        { number: "107", title: "ACT", page: "4" },
-        { number: "108", title: "Threshold Value", page: "4" },
+        { number: "101", title: "Train", page: "1A" },
+        { number: "101.1", title: "Passenger Train", page: "1B" },
+        { number: "101.2", title: "Other Trains", page: "1C" },
+        { number: "102", title: "Accident", page: "1D" },
+        { number: "103", title: "Serious Accident", page: "1E" },
+        { number: "104", title: "Injuries", page: "2A" },
+        { number: "104.1", title: "Grievous Injuries", page: "2B" },
+        { number: "104.2", title: "Simple Injuries", page: "2C" },
+        { number: "105", title: "Classification of Accidents", page: "2D" },
+        { number: "105.1", title: "Train Accident", page: "2E" },
+        { number: "105.2", title: "Consequential train accidents", page: "2F" },
+        { number: "105.3", title: "Collisions", page: "2G" },
+        { number: "105.4", title: "Fire in Trains", page: "3A" },
+        { number: "105.5", title: "Accidents at Level Crossings", page: "3B" },
+        { number: "105.6", title: "Derailments", page: "3C" },
+        { number: "105.7", title: "Other train Accidents", page: "3D" },
+        { number: "105.8", title: "Yard Accidents", page: "3E" },
+        { number: "105.9", title: "Indicative Accidents", page: "3F" },
+        { number: "105.10", title: "Averted Collision", page: "3G" },
+        { number: "105.11", title: "Breach of Block Rules", page: "3H" },
+        { number: "105.12", title: "Train Passing Signal at Danger", page: "4A" },
+        { number: "105.13", title: "Equipment Failures", page: "4B" },
+        { number: "105.14", title: "Unusual Incidents", page: "4C" },
+        { number: "105.15", title: "Sabotage", page: "4D" },
+        { number: "105.16", title: "Train Wrecking", page: "4E" },
+        { number: "105.17", title: "Attempted Train wrecking", page: "4F" },
+        { number: "106", title: "Commissioner of Railway Safety", page: "4G" },
+        { number: "107", title: "ACT", page: "4H" },
+        { number: "108", title: "Threshold Value", page: "4I" },
         { number: "108.1", title: "Classification of Routes", page: "5" },
-        { number: "109", title: "Interruption", page: "6" },
-        { number: "110", title: "Railway Property", page: "6" },
-        { number: "111", title: "Public Property", page: "6" },
-        { number: "112", title: "Slight Damage to Property", page: "6" },
-        { number: "113", title: "Damage to Property", page: "6" },
-        { number: "114", title: "Serious Damage to Property", page: "6" },
-        { number: "115", title: "Department", page: "7" },
-        { number: "116", title: "Engine Failure and Time Failure", page: "7" },
-        { number: "117", title: "Scope of the Rules", page: "7" },
-        { number: "118", title: "Distribution of the Accident Manual", page: "7" },
-        { number: "119", title: "Acquaintance with the Rules", page: "7" },
-        { number: "120", title: "Objectives", page: "7" },
-        { number: "121", title: "Resources of all Departments to be made available", page: "8" },
-        { number: "122", title: "Every Railway Official to render all possible assistance", page: "8" },
-        { number: "123", title: "Duty for Securing Safety", page: "8" }
+        { number: "109", title: "Interruption", page: "6A" },
+        { number: "110", title: "Railway Property", page: "6B" },
+        { number: "111", title: "Public Property", page: "6C" },
+        { number: "112", title: "Slight Damage to Property", page: "6D" },
+        { number: "113", title: "Damage to Property", page: "6E" },
+        { number: "114", title: "Serious Damage to Property", page: "6F" },
+        { number: "115", title: "Department", page: "7A" },
+        { number: "116", title: "Engine Failure and Time Failure", page: "7B" },
+        { number: "117", title: "Scope of the Rules", page: "7C" },
+        { number: "118", title: "Distribution of the Accident Manual", page: "7D" },
+        { number: "119", title: "Acquaintance with the Rules", page: "7E" },
+        { number: "120", title: "Objectives", page: "7F" },
+        { number: "121", title: "Resources of all Departments to be made available", page: "8A" },
+        { number: "122", title: "Every Railway Official to render all possible assistance", page: "8B" },
+        { number: "123", title: "Duty for Securing Safety", page: "8C" }
       ]
     },
     {
@@ -78,8 +123,8 @@ const AMChapters = () => {
       description: "Systematic classification and categorization of railway accidents",
       rules: [
         { number: "201", title: "Consequential Train Accidents", page: "9" },
-        { number: "202", title: "Indicative Accidents", page: "11" },
-        { number: "203", title: "Equipment failure", page: "11" },
+        { number: "202", title: "Indicative Accidents", page: "11A" },
+        { number: "203", title: "Equipment failure", page: "11B" },
         { number: "204", title: "Unusual Incidents", page: "12" }
       ]
     },
@@ -90,33 +135,33 @@ const AMChapters = () => {
       color: "from-green-500 to-green-600",
       description: "Comprehensive duties and responsibilities during accident situations",
       rules: [
-        { number: "301", title: "Guard of the Train Involved in Accident", page: "14" },
-        { number: "302", title: "Engine Crew of the Train", page: "14" },
-        { number: "303", title: "Station Master / Station Manager", page: "14" },
-        { number: "304", title: "Controlling Station Master", page: "16" },
-        { number: "305", title: "Train Superintendent / Traveling Ticket Examiner", page: "16" },
-        { number: "306", title: "Officer or Senior Supervisor first reaching the site", page: "16" },
-        { number: "307", title: "Commercial Inspectors / Commercial Officers", page: "18" },
-        { number: "308", title: "Engineering Staff", page: "18" },
-        { number: "309", title: "Mechanical / B.D.Staff", page: "19" },
-        { number: "310", title: "Signal and Telecommunication Staff", page: "19" },
-        { number: "311", title: "Electrical Staff", page: "20" },
-        { number: "312", title: "Security Staff", page: "20" },
+        { number: "301", title: "Guard of the Train Involved in Accident", page: "14A" },
+        { number: "302", title: "Engine Crew of the Train", page: "14B" },
+        { number: "303", title: "Station Master / Station Manager", page: "14C" },
+        { number: "304", title: "Controlling Station Master", page: "16A" },
+        { number: "305", title: "Train Superintendent / Traveling Ticket Examiner", page: "16B" },
+        { number: "306", title: "Officer or Senior Supervisor first reaching the site", page: "16C" },
+        { number: "307", title: "Commercial Inspectors / Commercial Officers", page: "18A" },
+        { number: "308", title: "Engineering Staff", page: "18B" },
+        { number: "309", title: "Mechanical / B.D.Staff", page: "19A" },
+        { number: "310", title: "Signal and Telecommunication Staff", page: "19B" },
+        { number: "311", title: "Electrical Staff", page: "20A" },
+        { number: "312", title: "Security Staff", page: "20B" },
         { number: "313", title: "Medical Staff", page: "21" },
         { number: "314", title: "Chief Controller / Deputy Chief Controller", page: "22" },
         { number: "315", title: "Commercial Control", page: "23" },
-        { number: "316", title: "Power Controller / Traction Loco Controller", page: "24" },
-        { number: "317", title: "Traction Power controller", page: "24" },
-        { number: "318", title: "Senior Divisional Operations Manager", page: "25" },
-        { number: "319", title: "Senior Divisional Safety Officer", page: "25" },
-        { number: "320", title: "Senior Divisional Mechanical Engineer", page: "25" },
-        { number: "321", title: "Senior Divisional Electrical Engineer", page: "26" },
-        { number: "322", title: "Senior Divisional Electrical Engineer (Traction Distribution)", page: "26" },
-        { number: "323", title: "Senior Divisional Electrical Engineer (Traction Operation / Traction Rolling Stock)", page: "26" },
-        { number: "324", title: "Senior Divisional Engineer (Civil)", page: "26" },
-        { number: "325", title: "Senior Divisional Commercial Manager", page: "26" },
-        { number: "326", title: "Senior Divisional Signal and Telecommunication Engineer", page: "27" },
-        { number: "327", title: "Senior Divisional Security Commissioner (R.P.F)", page: "27" }
+        { number: "316", title: "Power Controller / Traction Loco Controller", page: "24A" },
+        { number: "317", title: "Traction Power controller", page: "24B" },
+        { number: "318", title: "Senior Divisional Operations Manager", page: "25A" },
+        { number: "319", title: "Senior Divisional Safety Officer", page: "25B" },
+        { number: "320", title: "Senior Divisional Mechanical Engineer", page: "25C" },
+        { number: "321", title: "Senior Divisional Electrical Engineer", page: "26A" },
+        { number: "322", title: "Senior Divisional Electrical Engineer (Traction Distribution)", page: "26B" },
+        { number: "323", title: "Senior Divisional Electrical Engineer (Traction Operation / Traction Rolling Stock)", page: "26C" },
+        { number: "324", title: "Senior Divisional Engineer (Civil)", page: "26D" },
+        { number: "325", title: "Senior Divisional Commercial Manager", page: "26E" },
+        { number: "326", title: "Senior Divisional Signal and Telecommunication Engineer", page: "27A" },
+        { number: "327", title: "Senior Divisional Security Commissioner (R.P.F)", page: "27B" }
       ]
     },
     {
@@ -126,28 +171,28 @@ const AMChapters = () => {
       color: "from-purple-500 to-purple-600",
       description: "Procedures and protocols for accident reporting and documentation",
       rules: [
-        { number: "401", title: "Reportable Train Accidents", page: "28" },
-        { number: "402", title: "Reporting of Accidents", page: "28" },
+        { number: "401", title: "Reportable Train Accidents", page: "28A" },
+        { number: "402", title: "Reporting of Accidents", page: "28B" },
         { number: "403", title: "Particulars to be given in the Accident Report", page: "30" },
-        { number: "404", title: "Fax Report to Railway Board", page: "34" },
-        { number: "405", title: "Reporting of Indicative Accidents", page: "34" },
-        { number: "406", title: "Reporting of Accidents at Un-manned Level Crossings", page: "34" },
-        { number: "407", title: "Serious Accidents to be advised promptly", page: "34" },
+        { number: "404", title: "Fax Report to Railway Board", page: "34A" },
+        { number: "405", title: "Reporting of Indicative Accidents", page: "34B" },
+        { number: "406", title: "Reporting of Accidents at Un-manned Level Crossings", page: "34C" },
+        { number: "407", title: "Serious Accidents to be advised promptly", page: "34D" },
         { number: "408", title: "Procedure for Sending Accident Messages", page: "35" },
         { number: "409", title: "Railway Employees to report Accidents", page: "37" },
-        { number: "410", title: "Method of reporting Accidents by Railway Employees", page: "38" },
-        { number: "411", title: "Station Master or Railway Employee in-charge of the section to report Accidents", page: "38" },
-        { number: "412", title: "Station Master to Advise Control", page: "39" },
-        { number: "413", title: "Noting down Time of Accident", page: "39" },
-        { number: "414", title: "Preliminary Telephonic Report on Serious Accidents by an Officer", page: "39" },
-        { number: "415", title: "Reporting of Accidents attended with Injury of Loss of Life", page: "39" },
-        { number: "416", title: "Reporting of Accidents on Assisted and Private Sidings", page: "39" },
-        { number: "417", title: "Reporting of Accidents at Joint Stations", page: "39" },
-        { number: "418", title: "Reporting of Accidents in Workshops coming under the Factories Act", page: "39" },
-        { number: "419", title: "Reporting of Accidents on Construction lines", page: "39" },
+        { number: "410", title: "Method of reporting Accidents by Railway Employees", page: "38A" },
+        { number: "411", title: "Station Master or Railway Employee in-charge of the section to report Accidents", page: "38B" },
+        { number: "412", title: "Station Master to Advise Control", page: "39A" },
+        { number: "413", title: "Noting down Time of Accident", page: "39B" },
+        { number: "414", title: "Preliminary Telephonic Report on Serious Accidents by an Officer", page: "39C" },
+        { number: "415", title: "Reporting of Accidents attended with Injury of Loss of Life", page: "39D" },
+        { number: "416", title: "Reporting of Accidents on Assisted and Private Sidings", page: "39E" },
+        { number: "417", title: "Reporting of Accidents at Joint Stations", page: "39F" },
+        { number: "418", title: "Reporting of Accidents in Workshops coming under the Factories Act", page: "39G" },
+        { number: "419", title: "Reporting of Accidents on Construction lines", page: "39H" },
         { number: "420", title: "Reporting of Serious Accidents to the Press", page: "40" },
-        { number: "421", title: "Train Accident returns to be sent to the Railway Board", page: "41" },
-        { number: "422", title: "Preparation of Accident returns", page: "41" },
+        { number: "421", title: "Train Accident returns to be sent to the Railway Board", page: "41A" },
+        { number: "422", title: "Preparation of Accident returns", page: "41B" },
         { number: "423", title: "Accident Returns - Tables 1 to 7", page: "42" }
       ]
     },
@@ -159,8 +204,8 @@ const AMChapters = () => {
       description: "Evidence preservation and site investigation procedures",
       rules: [
         { number: "501", title: "Steps to be taken to preserve the Clues and Evidence at Accident site", page: "45" },
-        { number: "502", title: "Examination to certify fitness for movement of Locomotive and Rolling Stock", page: "49" },
-        { number: "503", title: "The Sketch of the site of Accident", page: "49" },
+        { number: "502", title: "Examination to certify fitness for movement of Locomotive and Rolling Stock", page: "49A" },
+        { number: "503", title: "The Sketch of the site of Accident", page: "49B" },
         { number: "504", title: "Pro-forma to be filled up in case of Derailment", page: "50" },
         { number: "505", title: "Locomotive (Diesel & Electric) Proforma", page: "54" },
         { number: "506", title: "Measurement Table for Coach involved in Accident", page: "58" },
@@ -175,30 +220,30 @@ const AMChapters = () => {
       color: "from-emerald-500 to-emerald-600",
       description: "Emergency response systems and medical relief procedures",
       rules: [
-        { number: "601", title: "Long Range Electric Sirens", page: "63" },
-        { number: "602", title: "Accident Siren Code", page: "63" },
+        { number: "601", title: "Long Range Electric Sirens", page: "63A" },
+        { number: "602", title: "Accident Siren Code", page: "63B" },
         { number: "603", title: "Stations Where Accident Relief Trains are Located", page: "64" },
         { number: "604", title: "Medical Relief Train & Medical Relief Equipment", page: "68" },
         { number: "605", title: "Stations where Medical Relief Equipment are located", page: "71" },
-        { number: "606", title: "Joint Inspection of entire Accident Relief Machinery", page: "75" },
-        { number: "607", title: "Action by Divisional Medical Superintendent", page: "75" },
-        { number: "608", title: "Action by Divisional Medical Officer", page: "75" },
-        { number: "609", title: "Equipment considered necessary in all accidents", page: "76" },
-        { number: "610", title: "Action by Divisional Medical Officer where MRT is provided", page: "76" },
-        { number: "611", title: "Responsibility of Divisional Medical Officer at Accident spot", page: "76" },
-        { number: "612", title: "Standing Instructions by Divisional Chief Medical Superintendent", page: "77" },
-        { number: "613", title: "Responsibility of Divisional Chief Medical Superintendent", page: "77" },
-        { number: "614", title: "Opening of Dressing Station and Temporary Hospitals", page: "77" },
-        { number: "615", title: "Medical Personnel to attend to the Injured", page: "78" },
-        { number: "616", title: "Divisional Medical Officer to replace articles", page: "78" },
-        { number: "617", title: "Duty of Station Master, Control etc.", page: "78" },
+        { number: "606", title: "Joint Inspection of entire Accident Relief Machinery", page: "75A" },
+        { number: "607", title: "Action by Divisional Medical Superintendent", page: "75B" },
+        { number: "608", title: "Action by Divisional Medical Officer", page: "75C" },
+        { number: "609", title: "Equipment considered necessary in all accidents", page: "76A" },
+        { number: "610", title: "Action by Divisional Medical Officer where MRT is provided", page: "76B" },
+        { number: "611", title: "Responsibility of Divisional Medical Officer at Accident spot", page: "76C" },
+        { number: "612", title: "Standing Instructions by Divisional Chief Medical Superintendent", page: "77A" },
+        { number: "613", title: "Responsibility of Divisional Chief Medical Superintendent", page: "77B" },
+        { number: "614", title: "Opening of Dressing Station and Temporary Hospitals", page: "77C" },
+        { number: "615", title: "Medical Personnel to attend to the Injured", page: "78A" },
+        { number: "616", title: "Divisional Medical Officer to replace articles", page: "78B" },
+        { number: "617", title: "Duty of Station Master, Control etc.", page: "78C" },
         { number: "618", title: "Regular drills by staff", page: "79" },
         { number: "619", title: "Maintenance and replenishment of First Aid Boxes", page: "80" },
-        { number: "620", title: "Stretchers", page: "84" },
-        { number: "621", title: "Maintenance of Accident Relief Machinery", page: "84" },
-        { number: "622", title: "Maintenance of Equipment kept in Accident Relief Machinery", page: "85" },
-        { number: "623", title: "Training of Man power", page: "85" },
-        { number: "624", title: "Portable Emergency Control Phone", page: "85" }
+        { number: "620", title: "Stretchers", page: "84A" },
+        { number: "621", title: "Maintenance of Accident Relief Machinery", page: "84B" },
+        { number: "622", title: "Maintenance of Equipment kept in Accident Relief Machinery", page: "85A" },
+        { number: "623", title: "Training of Man power", page: "85B" },
+        { number: "624", title: "Portable Emergency Control Phone", page: "85C" }
       ]
     },
     {
@@ -208,9 +253,9 @@ const AMChapters = () => {
       color: "from-orange-500 to-orange-600",
       description: "Authority delegation and media communication protocols",
       rules: [
-        { number: "701", title: "Facility to Non-Railway Officials", page: "87" },
-        { number: "702", title: "Schedule of Powers of Officers for Helicopter/Aero planes", page: "87" },
-        { number: "703", title: "Medical Aid to Persons Grievously Hurt", page: "87" },
+        { number: "701", title: "Facility to Non-Railway Officials", page: "87A" },
+        { number: "702", title: "Schedule of Powers of Officers for Helicopter/Aero planes", page: "87B" },
+        { number: "703", title: "Medical Aid to Persons Grievously Hurt", page: "87C" },
         { number: "704", title: "Media Management at Site", page: "90" },
         { number: "705", title: "Complimentary Passes", page: "92" }
       ]
@@ -223,8 +268,8 @@ const AMChapters = () => {
       description: "Compensation procedures and relief measures for accident victims",
       rules: [
         { number: "801", title: "Relief to Passengers involved in Train Accidents", page: "93" },
-        { number: "802", title: "Compensation for Death/Injury in train Accident", page: "94" },
-        { number: "803", title: "Compensation", page: "94" }
+        { number: "802", title: "Compensation for Death/Injury in train Accident", page: "94A" },
+        { number: "803", title: "Compensation", page: "94B" }
       ]
     },
     {
@@ -234,8 +279,8 @@ const AMChapters = () => {
       color: "from-cyan-500 to-cyan-600",
       description: "Comprehensive investigation procedures and inquiry protocols",
       rules: [
-        { number: "901", title: "Investigation on the spot", page: "99" },
-        { number: "902", title: "Information collection for Inquiry Committee", page: "99" },
+        { number: "901", title: "Investigation on the spot", page: "99A" },
+        { number: "902", title: "Information collection for Inquiry Committee", page: "99B" },
         { number: "903", title: "Object of Accident Inquiry", page: "101" },
         { number: "904", title: "Classification of Accident Enquiries", page: "101" },
         { number: "905", title: "Ordering of Inquiries", page: "102" },
@@ -252,31 +297,31 @@ const AMChapters = () => {
         { number: "916", title: "Postponing of an Inquiry", page: "106" },
         { number: "917", title: "Guidelines for Inquiry Committee members", page: "106" },
         { number: "918", title: "Proceedings of Joint or Inter-departmental Inquiries", page: "107" },
-        { number: "919", title: "Description of the Accident", page: "108" },
-        { number: "920", title: "Recording of Evidence", page: "108" },
-        { number: "921", title: "Findings", page: "108" },
-        { number: "922", title: "Remarks and Reasons for Findings", page: "109" },
-        { number: "923", title: "Suggestions", page: "109" },
-        { number: "924", title: "Matters Brought to Light during Inquiry", page: "109" },
-        { number: "925", title: "Signing of Joint Inquiry Proceedings", page: "109" },
-        { number: "926", title: "Inquiries into accidents at Joint Stations", page: "109" },
+        { number: "919", title: "Description of the Accident", page: "108A" },
+        { number: "920", title: "Recording of Evidence", page: "108B" },
+        { number: "921", title: "Findings", page: "108C" },
+        { number: "922", title: "Remarks and Reasons for Findings", page: "109A" },
+        { number: "923", title: "Suggestions", page: "109B" },
+        { number: "924", title: "Matters Brought to Light during Inquiry", page: "109C" },
+        { number: "925", title: "Signing of Joint Inquiry Proceedings", page: "109D" },
+        { number: "926", title: "Inquiries into accidents at Joint Stations", page: "109E" },
         { number: "927", title: "Particulars in Special Report or Inquiry Report", page: "110" },
-        { number: "928", title: "Report of inquiry to Railway Administration", page: "113" },
-        { number: "929", title: "Acceptance of Findings", page: "113" },
-        { number: "930", title: "Reports of Inquiries to Commissioner of Railway Safety", page: "114" },
-        { number: "931", title: "Submission of Inquiry Report", page: "114" },
-        { number: "932", title: "Metallurgical and Chemical investigation", page: "115" },
-        { number: "933", title: "Norms of Punishments", page: "115" },
-        { number: "934", title: "Magisterial Inquiry", page: "115" },
-        { number: "935", title: "Judicial Inquiry", page: "116" },
-        { number: "936", title: "Result of Magisterial Inquiry communication", page: "116" },
-        { number: "937", title: "Procedure for Summoning CRS and Railway servants", page: "116" },
-        { number: "938", title: "Communication of Judicial Inquiry decision", page: "117" },
-        { number: "939", title: "Police Investigation", page: "117" },
-        { number: "940", title: "Notice of Police Investigation", page: "118" },
-        { number: "941", title: "Assistance of the District Police", page: "118" },
-        { number: "942", title: "Communication of Police Investigation result", page: "118" },
-        { number: "943", title: "District Police duties", page: "118" }
+        { number: "928", title: "Report of inquiry to Railway Administration", page: "113A" },
+        { number: "929", title: "Acceptance of Findings", page: "113B" },
+        { number: "930", title: "Reports of Inquiries to Commissioner of Railway Safety", page: "114A" },
+        { number: "931", title: "Submission of Inquiry Report", page: "114B" },
+        { number: "932", title: "Metallurgical and Chemical investigation", page: "115A" },
+        { number: "933", title: "Norms of Punishments", page: "115B" },
+        { number: "934", title: "Magisterial Inquiry", page: "115C" },
+        { number: "935", title: "Judicial Inquiry", page: "116A" },
+        { number: "936", title: "Result of Magisterial Inquiry communication", page: "116B" },
+        { number: "937", title: "Procedure for Summoning CRS and Railway servants", page: "116C" },
+        { number: "938", title: "Communication of Judicial Inquiry decision", page: "117A" },
+        { number: "939", title: "Police Investigation", page: "117B" },
+        { number: "940", title: "Notice of Police Investigation", page: "118A" },
+        { number: "941", title: "Assistance of the District Police", page: "118B" },
+        { number: "942", title: "Communication of Police Investigation result", page: "118C" },
+        { number: "943", title: "District Police duties", page: "118D" }
       ]
     },
     {
@@ -286,24 +331,24 @@ const AMChapters = () => {
       color: "from-violet-500 to-violet-600",
       description: "CRS reporting and investigation procedures",
       rules: [
-        { number: "1001", title: "All concerned Telephonic Message to CRS", page: "119" },
-        { number: "1002", title: "Telephonic advice to CRS", page: "119" },
-        { number: "1003", title: "Accidents to be reported to CRS by post", page: "119" },
-        { number: "1004", title: "Non-Reporting of Accidents to CRS", page: "119" },
-        { number: "1005", title: "Statement of Accidents to CRS", page: "119" },
+        { number: "1001", title: "All concerned Telephonic Message to CRS", page: "119A" },
+        { number: "1002", title: "Telephonic advice to CRS", page: "119B" },
+        { number: "1003", title: "Accidents to be reported to CRS by post", page: "119C" },
+        { number: "1004", title: "Non-Reporting of Accidents to CRS", page: "119D" },
+        { number: "1005", title: "Statement of Accidents to CRS", page: "119E" },
         { number: "1006", title: "Statutory Investigation into Railway Accidents", page: "120" },
-        { number: "1007", title: "Attendance of Railway employees to attend Inquiries", page: "121" },
-        { number: "1008", title: "Officers to assist CRS", page: "121" },
-        { number: "1009", title: "Brief Preliminary Narrative report", page: "121" },
-        { number: "1010", title: "Final Report", page: "122" },
-        { number: "1011", title: "Action on the Report by Railway Administration", page: "122" },
-        { number: "1012", title: "Railway&apos;s remarks on suggestions", page: "122" },
-        { number: "1013", title: "Publication of Reports", page: "123" },
-        { number: "1014", title: "District Magistrate to Attend CRS Inquiry", page: "123" },
-        { number: "1015", title: "District Superintendent of Police to attend CRS Inquiry", page: "123" },
-        { number: "1016", title: "Technical Matters", page: "123" },
-        { number: "1017", title: "Powers of CRS", page: "123" },
-        { number: "1018", title: "Target dates for submission of returns", page: "123" },
+        { number: "1007", title: "Attendance of Railway employees to attend Inquiries", page: "121A" },
+        { number: "1008", title: "Officers to assist CRS", page: "121B" },
+        { number: "1009", title: "Brief Preliminary Narrative report", page: "121C" },
+        { number: "1010", title: "Final Report", page: "122A" },
+        { number: "1011", title: "Action on the Report by Railway Administration", page: "122B" },
+        { number: "1012", title: "Railway&apos;s remarks on suggestions", page: "122C" },
+        { number: "1013", title: "Publication of Reports", page: "123A" },
+        { number: "1014", title: "District Magistrate to Attend CRS Inquiry", page: "123B" },
+        { number: "1015", title: "District Superintendent of Police to attend CRS Inquiry", page: "123C" },
+        { number: "1016", title: "Technical Matters", page: "123D" },
+        { number: "1017", title: "Powers of CRS", page: "123E" },
+        { number: "1018", title: "Target dates for submission of returns", page: "123F" },
         { number: "1019", title: "Target for Completion of CRS Inquiries", page: "124" }
       ]
     },
@@ -314,18 +359,18 @@ const AMChapters = () => {
       color: "from-amber-500 to-amber-600",
       description: "Handling of unusual incidents and special circumstances",
       rules: [
-        { number: "1101", title: "Unsafe Bunds of Tanks of Rivers", page: "125" },
-        { number: "1102", title: "Injured or Dead persons found on or near Railway Track", page: "125" },
+        { number: "1101", title: "Unsafe Bunds of Tanks of Rivers", page: "125A" },
+        { number: "1102", title: "Injured or Dead persons found on or near Railway Track", page: "125B" },
         { number: "1103", title: "Person Fallen out of a Train", page: "126" },
-        { number: "1104", title: "Carriage Windows or Doors Involved", page: "127" },
-        { number: "1105", title: "Defective Running of Locomotives", page: "127" },
-        { number: "1106", title: "Persons found Dead in Trains or at Stations", page: "127" },
-        { number: "1107", title: "Murder on Running Train", page: "128" },
-        { number: "1108", title: "Care of Dead bodies", page: "128" },
-        { number: "1109", title: "Material fouling the Track", page: "128" },
-        { number: "1110", title: "Precautions against Derailment", page: "128" },
-        { number: "1111", title: "Dangerous practices", page: "129" },
-        { number: "1112", title: "Reporting Fire", page: "129" }
+        { number: "1104", title: "Carriage Windows or Doors Involved", page: "127A" },
+        { number: "1105", title: "Defective Running of Locomotives", page: "127B" },
+        { number: "1106", title: "Persons found Dead in Trains or at Stations", page: "127C" },
+        { number: "1107", title: "Murder on Running Train", page: "128A" },
+        { number: "1108", title: "Care of Dead bodies", page: "128B" },
+        { number: "1109", title: "Material fouling the Track", page: "128C" },
+        { number: "1110", title: "Precautions against Derailment", page: "128D" },
+        { number: "1111", title: "Dangerous practices", page: "129A" },
+        { number: "1112", title: "Reporting Fire", page: "129B" }
       ]
     },
     {
@@ -337,19 +382,19 @@ const AMChapters = () => {
       rules: [
         { number: "1201", title: "General", page: "130" },
         { number: "1202", title: "Explosion on Track or Train", page: "130" },
-        { number: "1203", title: "Duties of Guard, Engine crew and Railway staff", page: "131" },
-        { number: "1204", title: "Information to Civil and Police Authorities", page: "131" },
-        { number: "1205", title: "Precautions by Engineering Supervisors", page: "131" },
-        { number: "1206", title: "Duties of Officers and Supervisory Officials", page: "131" },
-        { number: "1207", title: "Duties of Railway Protection Force Officials", page: "131" },
-        { number: "1208", title: "Police Clearance", page: "132" },
-        { number: "1209", title: "Joint Examination by Civil, Police and Railway Officials", page: "132" },
-        { number: "1210", title: "Removal and Examination of Rolling stock", page: "132" },
-        { number: "1211", title: "Preparation of Notes and Drawings", page: "133" },
-        { number: "1212", title: "Restoration of Communications", page: "133" },
-        { number: "1213", title: "Preparation of Plan for Inquiry", page: "133" },
-        { number: "1214", title: "Preservation of Notes and Sketches", page: "134" },
-        { number: "1215", title: "Association of Security Officer", page: "134" }
+        { number: "1203", title: "Duties of Guard, Engine crew and Railway staff", page: "131A" },
+        { number: "1204", title: "Information to Civil and Police Authorities", page: "131B" },
+        { number: "1205", title: "Precautions by Engineering Supervisors", page: "131C" },
+        { number: "1206", title: "Duties of Officers and Supervisory Officials", page: "131D" },
+        { number: "1207", title: "Duties of Railway Protection Force Officials", page: "131E" },
+        { number: "1208", title: "Police Clearance", page: "132A" },
+        { number: "1209", title: "Joint Examination by Civil, Police and Railway Officials", page: "132B" },
+        { number: "1210", title: "Removal and Examination of Rolling stock", page: "132C" },
+        { number: "1211", title: "Preparation of Notes and Drawings", page: "133A" },
+        { number: "1212", title: "Restoration of Communications", page: "133B" },
+        { number: "1213", title: "Preparation of Plan for Inquiry", page: "133C" },
+        { number: "1214", title: "Preservation of Notes and Sketches", page: "134A" },
+        { number: "1215", title: "Association of Security Officer", page: "134B" }
       ]
     }
   ]
@@ -441,7 +486,7 @@ const AMChapters = () => {
                         {chapter.rules.map((rule, index) => (
                           <div
                             key={index}
-                            className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                           >
                             <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-red-500 to-orange-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                               {rule.number.split('.')[1] || rule.number}
@@ -450,9 +495,48 @@ const AMChapters = () => {
                               <p className="text-gray-200 font-medium">
                                 {rule.title}
                               </p>
-                              <p className="text-gray-400 text-sm mt-1">
-                                Rule {rule.number} • Page - {rule.page}
-                              </p>
+                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                {/* View Document Button */}
+                                <button
+                                  onClick={() => openPDF(rule.page)}
+                                  disabled={openingPDF === rule.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingPDF === rule.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingPDF === rule.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <FileText className="w-4 h-4" />
+                                  )}
+                                  <span>{openingPDF === rule.page ? 'Opening...' : `Page - ${rule.page}`} (Document)</span>
+                                  {!isMobile && openingPDF !== rule.page && <ExternalLink className="w-3 h-3" />}
+                                </button>
+
+                                {/* View Content Button */}
+                                <button
+                                  onClick={() => openContent(rule.page)}
+                                  disabled={openingContent === rule.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingContent === rule.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingContent === rule.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <BookOpenCheck className="w-4 h-4" />
+                                  )}
+                                  <span>{openingContent === rule.page ? 'Opening...' : 'View Content'}</span>
+                                </button>
+
+                                <span className="text-gray-400 text-xs lg:ml-2">
+                                  Rule {rule.number}
+                                </span>
+                              </div>
                             </div>
                           </div>
                         ))}

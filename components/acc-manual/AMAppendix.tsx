@@ -1,9 +1,25 @@
 "use client"
-import React, { useState } from 'react'
-import { BookOpen, FileText, AlertTriangle, CheckCircle, AlertCircle, Gavel, Heart, ChevronDown, ChevronUp, FileSpreadsheet } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { BookOpen, FileText, AlertTriangle, CheckCircle, AlertCircle, Gavel, Heart, ChevronDown, ChevronUp, FileSpreadsheet, ExternalLink, BookOpenCheck } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const AMAppendix = () => {
   const [expandedAppendix, setExpandedAppendix] = useState<number[]>([])
+  const [isMobile, setIsMobile] = useState(false)
+  const [openingPDF, setOpeningPDF] = useState<string | null>(null)
+  const [openingContent, setOpeningContent] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    checkDevice()
+    window.addEventListener('resize', checkDevice)
+
+    return () => window.removeEventListener('resize', checkDevice)
+  }, [])
 
   const toggleAppendix = (appendixId: number) => {
     setExpandedAppendix(prev => {
@@ -16,6 +32,35 @@ const AMAppendix = () => {
     })
   }
 
+  const openPDF = (pageNumber: string) => {
+    const pdfPath = `/ampdfs/am-appendix-pages/AMAppendixPage${pageNumber}.pdf`
+
+    setOpeningPDF(pageNumber)
+
+    // Small delay to show loading state
+    setTimeout(() => {
+      if (isMobile) {
+        // For mobile devices, open PDF directly in the same tab
+        window.location.href = pdfPath
+      } else {
+        // For large devices, open PDF in new tab
+        window.open(pdfPath, '_blank')
+        setOpeningPDF(null)
+      }
+    }, 100)
+  }
+
+  const openContent = (pageNumber: string) => {
+    setOpeningContent(pageNumber)
+
+    // Small delay to show loading state
+    setTimeout(() => {
+      // Navigate to the content page
+      router.push(`/accident/content/${pageNumber}`)
+      setOpeningContent(null)
+    }, 100)
+  }
+
   const appendices = [
     {
       id: 1,
@@ -25,11 +70,11 @@ const AMAppendix = () => {
       description: "Comprehensive disaster management procedures and protocols",
       pageRange: "135 to 138",
       content: [
-        { number: "1", title: "DISASTER MANAGEMENT ACT (2005)", page: "135" },
-        { number: "2", title: "NDMA (National Disaster Management Authority)", page: "135" },
+        { number: "1", title: "DISASTER MANAGEMENT ACT (2005)", page: "135A" },
+        { number: "2", title: "NDMA (National Disaster Management Authority)", page: "135B" },
         { number: "3", title: "NDRF (National Disaster Relief Force)", page: "136" },
-        { number: "4", title: "Definition of Disaster", page: "137" },
-        { number: "5", title: "IMPORTANT CONTACT NUMBERS – RAILWAYS", page: "137" },
+        { number: "4", title: "Definition of Disaster", page: "137A" },
+        { number: "5", title: "IMPORTANT CONTACT NUMBERS – RAILWAYS", page: "137B" },
         { number: "6", title: "IMPORTANT CONTACT NUMBERS GOVERNMENT OF ANDHRA PRADESH", page: "138" }
       ]
     },
@@ -241,7 +286,7 @@ const AMAppendix = () => {
                         {appendix.content.map((item, index) => (
                           <div
                             key={index}
-                            className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                           >
                             <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-red-500 to-orange-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                               {index + 1}
@@ -250,9 +295,48 @@ const AMAppendix = () => {
                               <p className="text-gray-200 font-medium">
                                 {item.title}
                               </p>
-                              <p className="text-gray-400 text-sm mt-1">
-                                Page - {item.page}
-                              </p>
+                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                {/* View Document Button */}
+                                <button
+                                  onClick={() => openPDF(item.page)}
+                                  disabled={openingPDF === item.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingPDF === item.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingPDF === item.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <FileText className="w-4 h-4" />
+                                  )}
+                                  <span>{openingPDF === item.page ? 'Opening...' : `Page - ${item.page}`} (Document)</span>
+                                  {!isMobile && openingPDF !== item.page && <ExternalLink className="w-3 h-3" />}
+                                </button>
+
+                                {/* View Content Button */}
+                                <button
+                                  onClick={() => openContent(item.page)}
+                                  disabled={openingContent === item.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingContent === item.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingContent === item.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <BookOpenCheck className="w-4 h-4" />
+                                  )}
+                                  <span>{openingContent === item.page ? 'Opening...' : 'View Content'}</span>
+                                </button>
+
+                                <span className="text-gray-400 text-xs lg:ml-2">
+                                  Appendix {appendix.id}.{item.number}
+                                </span>
+                              </div>
                             </div>
                           </div>
                         ))}
