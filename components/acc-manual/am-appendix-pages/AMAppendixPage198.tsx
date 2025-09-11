@@ -69,7 +69,7 @@ const AMAppendixPage198 = () => {
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
-                              <strong>(i)</strong> discussion of all conflicting evidences and the Committee's deductions from there
+                              <strong>(i)</strong> discussion of all conflicting evidences and the Committee&apos;s deductions from there
                             </div>
                             <div>
                               <strong>(ii)</strong> the contributory factors, if any; and

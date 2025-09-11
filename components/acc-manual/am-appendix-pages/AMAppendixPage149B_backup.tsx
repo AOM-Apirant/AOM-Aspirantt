@@ -85,7 +85,7 @@ a) made in reply to a question which is required by the Commissioner to answer, 
 b) relevant to the subject – matter of the inquiry.
 Section 118: Procedure, etc – Any railway administration or the Commissioner conducting an inquiry under this Chapter may send notice of the inquiry to such persons, follow such procedure, and prepare the report in such manner as may be prescribed.
 Section 119: No inquiry investigation etc. to be made if the Commission of Inquiry is appointed – Notwithstanding anything contained in the foregoing provisions of this Chapter, where a Commission of Inquiry is appointed under the Commission of Inquiry Act, 1952 (3 of 1952) to inquire into an accident, any inquiry, investigation or other proceeding pending in relation to that accident shall not be proceeded with, and all records or other documents relating to such inquiry shall be forwarded to such authority as may be specified by the Central Government in this behalf.
-Section 120: Inquiry into Accident not covered by Section 113 – Where any accident of the nature not specified in section 113 occurs in the course of working a railway, the railway administration within whose jurisdiction the accident occurs, may cause such inquiry to be made into the causes of the accident, as may be prescribed. Section 121: Returns – Every railway administration shall send to the Central Government, a return of accidents occurring on its railway, whether attended with injury to any person or not, in such form and manner and at such intervals as may be prescribed.
+Section 120: Inquiry into Accident not covered by Section 113 – Where any accident of the nature not specified in section 113 occurs in the course of working a railway, the railway administration within whose jurisdiction the accident occurs, may cause such inquiry to be made into the causes of the accident, as may be prescribed.<br />Section 121: Returns – Every railway administration shall send to the Central Government, a return of accidents occurring on its railway, whether attended with injury to any person or not, in such form and manner and at such intervals as may be prescribed.
 Section 122: Power to make rules in respect of matters in this chapter –
 (1) The Central Government may, by notification, make rules to carry out the purposes of this Chapter
 (2) In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:
@@ -96,6 +96,11 @@ Section 122: Power to make rules in respect of matters in this chapter –
 (e) the persons to whom notices in respect of any inquiry under this Chapter are to sent, be the procedure to be followed in such inquiry and the manner in which a report of such inquiry shall be prepared;
 (f) the nature of inquiry to be made by a Railway Administration into the causes of an accident under Section 120;
 (g) the form and manner sending a return of accidents by a Railway Administration under Section 121.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
