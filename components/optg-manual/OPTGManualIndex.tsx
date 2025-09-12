@@ -43,7 +43,6 @@ const OPTGIndex = () => {
     const pdfPath = `/optgmanualpdfs/${pdfFileName}`
     
     setOpeningPDF(pageNumber)
-    
     // Small delay to show loading state
     setTimeout(() => {
       if (isMobile) {

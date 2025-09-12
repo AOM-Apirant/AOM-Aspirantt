@@ -24,7 +24,7 @@ const AMChapterPage3A = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-orange-100 to-red-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-III
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-red-300 mb-4">FIRE IN TRAINS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto mb-6 rounded-full"></div>

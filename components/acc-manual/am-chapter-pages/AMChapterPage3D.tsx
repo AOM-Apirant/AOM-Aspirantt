@@ -23,7 +23,7 @@ const AMChapterPage3D = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-amber-100 to-orange-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-III
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">OTHER TRAIN ACCIDENTS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-600 mx-auto mb-6 rounded-full"></div>

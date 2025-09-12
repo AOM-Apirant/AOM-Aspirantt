@@ -23,9 +23,9 @@ const AMChapterPage2E = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-II
+              CHAPTER-I
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">TRAIN ACCIDENT DEFINITION</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">TRAIN ACCIDENT</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               Detailed classification of train accidents in railway operations

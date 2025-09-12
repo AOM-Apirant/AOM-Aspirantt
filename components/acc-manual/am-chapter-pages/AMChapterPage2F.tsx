@@ -23,7 +23,7 @@ const AMChapterPage2F = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-II
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CONSEQUENTIAL TRAIN ACCIDENTS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
@@ -74,7 +74,7 @@ const AMChapterPage2F = () => {
                           <span>interruption to rail traffic.</span>
                         </li>
                       </ul>
-                      <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-center mb-6">
+                      <div className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                         Train accidents under following classifications will be termed as consequential train accidents.
                       </div>
                       <div className="space-y-4 text-left mx-auto max-w-4xl text-gray-200 lg:text-lg text-base leading-relaxed">

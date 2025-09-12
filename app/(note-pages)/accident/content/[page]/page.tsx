@@ -1,8 +1,109 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 
-// Import all chapter page components
+// Import all content components for Accident Manual (Accident Manual Chapter Pages)
+import AMChapterPage85A from '@/components/acc-manual/am-chapter-pages/AMChapterPage85A'
+import AMChapterPage85B from '@/components/acc-manual/am-chapter-pages/AMChapterPage85B'
+import AMChapterPage85C from '@/components/acc-manual/am-chapter-pages/AMChapterPage85C'
+import AMChapterPage87A from '@/components/acc-manual/am-chapter-pages/AMChapterPage87A'
+import AMChapterPage87B from '@/components/acc-manual/am-chapter-pages/AMChapterPage87B'
+import AMChapterPage87C from '@/components/acc-manual/am-chapter-pages/AMChapterPage87C'
+import AMChapterPage90 from '@/components/acc-manual/am-chapter-pages/AMChapterPage90'
+import AMChapterPage92 from '@/components/acc-manual/am-chapter-pages/AMChapterPage92'
+import AMChapterPage93 from '@/components/acc-manual/am-chapter-pages/AMChapterPage93'
+import AMChapterPage94A from '@/components/acc-manual/am-chapter-pages/AMChapterPage94A'
+import AMChapterPage94B from '@/components/acc-manual/am-chapter-pages/AMChapterPage94B'
+import AMChapterPage99A from '@/components/acc-manual/am-chapter-pages/AMChapterPage99A'
+import AMChpaterPage99B from '@/components/acc-manual/am-chapter-pages/AMChpaterPage99B'
+import AMChpaterPage101A from '@/components/acc-manual/am-chapter-pages/AMChpaterPage101A'
+import AMChapaterPage102 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage102'
+import AMChapaterPage103A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage103A'
+import AMChapaterPage103B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage103B'
+import AMChapaterPage104A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104A'
+import AMChapaterPage104B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104B'
+import AMChapaterPage104C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104C'
+import AMChapaterPage104D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104D'
+import AMChapaterPage105 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage105'
+import AMChapaterPage106A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106A'
+import AMChapaterPage106B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106B'
+import AMChapaterPage106C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106C'
+import AMChapaterPage106D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106D'
+import AMChapaterPage106E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106E'
+import AMChapaterPage107 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage107'
+import AMChapaterPage108A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage108A'
+import AMChapaterPage108B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage108B'
+import AMChapaterPage108C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage108C'
+import AMChapaterPage109A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109A'
+import AMChapaterPage109B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109B'
+import AMChapaterPage109C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109C'
+import AMChapaterPage109D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109D'
+import AMChapaterPage109E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109E'
+import AMChapaterPage110 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage110'
+import AMChapaterPage113A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage113A'
+import AMChapaterPage113B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage113B'
+import AMChapaterPage114A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage114A'
+import AMChapaterPage114B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage114B'
+import AMChapaterPage115A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage115A'
+import AMChapaterPage115B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage115B'
+import AMChapaterPage115C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage115C'
+import AMChapaterPage116A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage116A'
+import AMChapaterPage116B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage116B'
+import AMChapaterPage116C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage116C'
+import AMChapaterPage117A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage117A'
+import AMChapaterPage117B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage117B'
+import AMChapaterPage118A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118A'
+import AMChapaterPage118B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118B'
+import AMChapaterPage118C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118C'
+import AMChapaterPage118D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118D'
+import AMChapaterPage119A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119A'
+import AMChapaterPage119B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119B'
+import AMChapaterPage119C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119C'
+import AMChapaterPage119D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119D'
+import AMChapaterPage119E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119E'
+import AMChapaterPage120 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage120'
+import AMChapaterPage121A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage121A'
+import AMChapaterPage121B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage121B'
+import AMChapaterPage121C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage121C'
+import AMChapaterPage122A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage122A'
+import AMChapaterPage122B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage122B'
+import AMChapaterPage122C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage122C'
+import AMChapaterPage123A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123A'
+import AMChapaterPage123B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123B'
+import AMChapaterPage123C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123C'
+import AMChapaterPage123D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123D'
+import AMChapaterPage123E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123E'
+import AMChapaterPage123F from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123F'
+import AMChapaterPage124 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage124'
+import AMChapaterPage125A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage125A'
+import AMChapaterPage125B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage125B'
+import AMChapaterPage126 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage126'
+import AMChapaterPage127A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage127A'
+import AMChapaterPage127B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage127B'
+import AMChapaterPage127C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage127C'
+import AMChapaterPage128A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128A'
+import AMChapaterPage128B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128B'
+import AMChapaterPage128C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128C'
+import AMChapaterPage128D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128D'
+import AMChapaterPage129A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage129A'
+import AMChapaterPage129B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage129B'
+import AMChapaterPage130A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage130A'
+import AMChapaterPage130B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage130B'
+import AMChapaterPage131A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131A'
+import AMChapaterPage131B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131B'
+import AMChapaterPage131C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131C'
+import AMChapaterPage131D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131D'
+import AMChapaterPage131E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131E'
+import AMChapaterPage132A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage132A'
+import AMChapaterPage132B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage132B'
+import AMChapaterPage132C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage132C'
+import AMChapaterPage133A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage133A'
+import AMChapaterPage133B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage133B'
+import AMChapaterPage133C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage133C'
+import AMChapaterPage134A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage134A'
+import AMChapaterPage134B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage134B'
+
+// Early chapter pages (Chapter spelled correctly)
 import AMChapterPage1A from '@/components/acc-manual/am-chapter-pages/AMChapterPage1A'
 import AMChapterPage1B from '@/components/acc-manual/am-chapter-pages/AMChapterPage1B'
 import AMChapterPage1C from '@/components/acc-manual/am-chapter-pages/AMChapterPage1C'
@@ -131,108 +232,8 @@ import AMChapterPage79 from '@/components/acc-manual/am-chapter-pages/AMChapterP
 import AMChapterPage80 from '@/components/acc-manual/am-chapter-pages/AMChapterPage80'
 import AMChapterPage84A from '@/components/acc-manual/am-chapter-pages/AMChapterPage84A'
 import AMChapterPage84B from '@/components/acc-manual/am-chapter-pages/AMChapterPage84B'
-import AMChapterPage85A from '@/components/acc-manual/am-chapter-pages/AMChapterPage85A'
-import AMChapterPage85B from '@/components/acc-manual/am-chapter-pages/AMChapterPage85B'
-import AMChapterPage85C from '@/components/acc-manual/am-chapter-pages/AMChapterPage85C'
-import AMChapterPage87A from '@/components/acc-manual/am-chapter-pages/AMChapterPage87A'
-import AMChapterPage87B from '@/components/acc-manual/am-chapter-pages/AMChapterPage87B'
-import AMChapterPage87C from '@/components/acc-manual/am-chapter-pages/AMChapterPage87C'
-import AMChapterPage90 from '@/components/acc-manual/am-chapter-pages/AMChapterPage90'
-import AMChapterPage92 from '@/components/acc-manual/am-chapter-pages/AMChapterPage92'
-import AMChapterPage93 from '@/components/acc-manual/am-chapter-pages/AMChapterPage93'
-import AMChapterPage94A from '@/components/acc-manual/am-chapter-pages/AMChapterPage94A'
-import AMChapterPage94B from '@/components/acc-manual/am-chapter-pages/AMChapterPage94B'
-import AMChpaterPage99A from '@/components/acc-manual/am-chapter-pages/AMChapterPage99A'
-import AMChpaterPage99B from '@/components/acc-manual/am-chapter-pages/AMChpaterPage99B'
-import AMChpaterPage101A from '@/components/acc-manual/am-chapter-pages/AMChpaterPage101A'
-import AMChapaterPage101B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage101B'
-import AMChapaterPage102 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage102'
-import AMChapaterPage103A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage103A'
-import AMChapaterPage103B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage103B'
-import AMChapaterPage104A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104A'
-import AMChapaterPage104B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104B'
-import AMChapaterPage104C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104C'
-import AMChapaterPage104D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage104D'
-import AMChapaterPage105 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage105'
-import AMChapaterPage106A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106A'
-import AMChapaterPage106B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106B'
-import AMChapaterPage106C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106C'
-import AMChapaterPage106D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106D'
-import AMChapaterPage106E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage106E'
-import AMChapaterPage107 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage107'
-import AMChapaterPage108A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage108A'
-import AMChapaterPage108B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage108B'
-import AMChapaterPage108C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage108C'
-import AMChapaterPage109A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109A'
-import AMChapaterPage109B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109B'
-import AMChapaterPage109C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109C'
-import AMChapaterPage109D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109D'
-import AMChapaterPage109E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage109E'
-import AMChapaterPage110 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage110'
-import AMChapaterPage113A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage113A'
-import AMChapaterPage113B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage113B'
-import AMChapaterPage114A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage114A'
-import AMChapaterPage114B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage114B'
-import AMChapaterPage115A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage115A'
-import AMChapaterPage115B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage115B'
-import AMChapaterPage115C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage115C'
-import AMChapaterPage116A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage116A'
-import AMChapaterPage116B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage116B'
-import AMChapaterPage116C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage116C'
-import AMChapaterPage117A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage117A'
-import AMChapaterPage117B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage117B'
-import AMChapaterPage118A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118A'
-import AMChapaterPage118B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118B'
-import AMChapaterPage118C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118C'
-import AMChapaterPage118D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage118D'
-import AMChapaterPage119A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119A'
-import AMChapaterPage119B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119B'
-import AMChapaterPage119C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119C'
-import AMChapaterPage119D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119D'
-import AMChapaterPage119E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage119E'
-import AMChapaterPage120 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage120'
-import AMChapaterPage121A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage121A'
-import AMChapaterPage121B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage121B'
-import AMChapaterPage121C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage121C'
-import AMChapaterPage122A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage122A'
-import AMChapaterPage122B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage122B'
-import AMChapaterPage122C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage122C'
-import AMChapaterPage123A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123A'
-import AMChapaterPage123B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123B'
-import AMChapaterPage123C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123C'
-import AMChapaterPage123D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123D'
-import AMChapaterPage123E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123E'
-import AMChapaterPage123F from '@/components/acc-manual/am-chapter-pages/AMChapaterPage123F'
-import AMChapaterPage124 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage124'
-import AMChapaterPage125A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage125A'
-import AMChapaterPage125B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage125B'
-import AMChapaterPage126 from '@/components/acc-manual/am-chapter-pages/AMChapaterPage126'
-import AMChapaterPage127A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage127A'
-import AMChapaterPage127B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage127B'
-import AMChapaterPage127C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage127C'
-import AMChapaterPage128A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128A'
-import AMChapaterPage128B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128B'
-import AMChapaterPage128C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128C'
-import AMChapaterPage128D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage128D'
-import AMChapaterPage129A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage129A'
-import AMChapaterPage129B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage129B'
-import AMChapaterPage130A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage130A'
-import AMChapaterPage130B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage130B'
-import AMChapaterPage131A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131A'
-import AMChapaterPage131B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131B'
-import AMChapaterPage131C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131C'
-import AMChapaterPage131D from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131D'
-import AMChapaterPage131E from '@/components/acc-manual/am-chapter-pages/AMChapaterPage131E'
-import AMChapaterPage132A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage132A'
-import AMChapaterPage132B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage132B'
-import AMChapaterPage132C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage132C'
-import AMChapaterPage133A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage133A'
-import AMChapaterPage133B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage133B'
-import AMChapaterPage133C from '@/components/acc-manual/am-chapter-pages/AMChapaterPage133C'
-import AMChapaterPage134A from '@/components/acc-manual/am-chapter-pages/AMChapaterPage134A'
-import AMChapaterPage134B from '@/components/acc-manual/am-chapter-pages/AMChapaterPage134B'
 
-// Import all appendix page components
+// Appendix pages
 import AMAppendixPage135A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage135A'
 import AMAppendixPage135B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage135B'
 import AMAppendixPage136 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage136'
@@ -246,6 +247,7 @@ import AMAppendixPage140 from '@/components/acc-manual/am-appendix-pages/AMAppen
 import AMAppendixPage141 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage141'
 import AMAppendixPage142 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage142'
 import AMAppendixPage143 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage143'
+import AMAppendixPage144 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage144'
 import AMAppendixPage145A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage145A'
 import AMAppendixPage145B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage145B'
 import AMAppendixPage146A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage146A'
@@ -256,8 +258,12 @@ import AMAppendixPage148A from '@/components/acc-manual/am-appendix-pages/AMAppe
 import AMAppendixPage148B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage148B'
 import AMAppendixPage149A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage149A'
 import AMAppendixPage149B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage149B'
+import AMAppendixPage150 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage150'
 import AMAppendixPage151 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage151'
+import AMAppendixPage152 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage152'
 import AMAppendixPage153 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage153'
+import AMAppendixPage154 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage154'
+import AMAppendixPage155 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage155'
 import AMAppendixPage156 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156'
 import AMAppendixPage156B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156B'
 import AMAppendixPage156C from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156C'
@@ -309,10 +315,584 @@ import AMAppendixPage207 from '@/components/acc-manual/am-appendix-pages/AMAppen
 import AMAppendixPage208A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage208A'
 import AMAppendixPage208B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage208B'
 
+// Build mapping of page -> component
+const pageComponents: { [key: string]: React.ComponentType } = {
+  // Early pages
+  '1A': AMChapterPage1A,
+  '1B': AMChapterPage1B,
+  '1C': AMChapterPage1C,
+  '1D': AMChapterPage1D,
+  '1E': AMChapterPage1E,
+  '2A': AMChapterPage2A,
+  '2B': AMChapterPage2B,
+  '2C': AMChapterPage2C,
+  '2D': AMChapterPage2D,
+  '2E': AMChapterPage2E,
+  '2F': AMChapterPage2F,
+  '2G': AMChapterPage2G,
+  '3A': AMChapterPage3A,
+  '3B': AMChapterPage3B,
+  '3C': AMChapterPage3C,
+  '3D': AMChapterPage3D,
+  '3E': AMChapterPage3E,
+  '3F': AMChapterPage3F,
+  '3G': AMChapterPage3G,
+  '3H': AMChapterPage3H,
+  '4A': AMChapterPage4A,
+  '4B': AMChapterPage4B,
+  '4C': AMChapterPage4C,
+  '4D': AMChapterPage4D,
+  '4E': AMChapterPage4E,
+  '4F': AMChapterPage4F,
+  '4G': AMChapterPage4G,
+  '4H': AMChapterPage4H,
+  '4I': AMChapterPage4I,
+  '5': AMChapterPage5,
+  '6A': AMChapterPage6A,
+  '6B': AMChapterPage6B,
+  '6C': AMChapterPage6C,
+  '6D': AMChapterPage6D,
+  '6E': AMChapterPage6E,
+  '6F': AMChapterPage6F,
+  '7A': AMChapterPage7A,
+  '7B': AMChapterPage7B,
+  '7C': AMChapterPage7C,
+  '7D': AMChapterPage7D,
+  '7E': AMChapterPage7E,
+  '7F': AMChapterPage7F,
+  '8A': AMChapterPage8A,
+  '8B': AMChapterPage8B,
+  '8C': AMChapterPage8C,
+  '9': AMChapterPage9,
+  '11A': AMChapterPage11A,
+  '11B': AMChapterPage11B,
+  '12': AMChapterPage12,
+  '14A': AMChapterPage14A,
+  '14B': AMChapterPage14B,
+  '14C': AMChapterPage14C,
+  '16A': AMChapterPage16A,
+  '16B': AMChapterPage16B,
+  '16C': AMChapterPage16C,
+  '18A': AMChapterPage18A,
+  '18B': AMChapterPage18B,
+  '19A': AMChapterPage19A,
+  '19B': AMChapterPage19B,
+  '20A': AMChapterPage20A,
+  '20B': AMChapterPage20B,
+  '21': AMChapterPage21,
+  '22': AMChapterPage22,
+  '23': AMChapterPage23,
+  '24A': AMChapterPage24A,
+  '24B': AMChapterPage24B,
+  '25A': AMChapterPage25A,
+  '25B': AMChapterPage25B,
+  '25C': AMChapterPage25C,
+  '26A': AMChapterPage26A,
+  '26B': AMChapterPage26B,
+  '26C': AMChapterPage26C,
+  '26D': AMChapterPage26D,
+  '26E': AMChapterPage26E,
+  '27A': AMChapterPage27A,
+  '27B': AMChapterPage27B,
+  '28A': AMChapterPage28A,
+  '28B': AMChapterPage28B,
+  '30': AMChapterPage30,
+  '34A': AMChapterPage34A,
+  '34B': AMChapterPage34B,
+  '34C': AMChapterPage34C,
+  '34D': AMChapterPage34D,
+  '35': AMChapterPage35,
+  '37': AMChapterPage37,
+  '38A': AMChapterPage38A,
+  '38B': AMChapterPage38B,
+  '39A': AMChapterPage39A,
+  '39B': AMChapterPage39B,
+  '39C': AMChapterPage39C,
+  '39D': AMChapterPage39D,
+  '39E': AMChapterPage39E,
+  '39F': AMChapterPage39F,
+  '39G': AMChapterPage39G,
+  '39H': AMChapterPage39H,
+  '40': AMChapterPage40,
+  '41A': AMChapterPage41A,
+  '41B': AMChapterPage41B,
+  '42': AMChapterPage42,
+  '45': AMChapterPage45,
+  '49A': AMChapterPage49A,
+  '49B': AMChapterPage49B,
+  '50': AMChapterPage50,
+  '54': AMChapterPage54,
+  '58': AMChapterPage58,
+  '61': AMChapterPage61,
+  '62A': AMChapterPage62A,
+  '63A': AMChapterPage63A,
+  '63B': AMChapterPage63B,
+  '64': AMChapterPage64,
+  '68': AMChapterPage68,
+  '71': AMChapterPage71,
+  '75A': AMChapterPage75A,
+  '75B': AMChapterPage75B,
+  '75C': AMChapterPage75C,
+  '76A': AMChapterPage76A,
+  '76B': AMChapterPage76B,
+  '76C': AMChapterPage76C,
+  '77A': AMChapterPage77A,
+  '77B': AMChapterPage77B,
+  '77C': AMChapterPage77C,
+  '78A': AMChapterPage78A,
+  '78B': AMChapterPage78B,
+  '78C': AMChapterPage78C,
+  '79': AMChapterPage79,
+  '80': AMChapterPage80,
+  '84A': AMChapterPage84A,
+  '84B': AMChapterPage84B,
+  '85A': AMChapterPage85A,
+  '85B': AMChapterPage85B,
+  '85C': AMChapterPage85C,
+  '87A': AMChapterPage87A,
+  '87B': AMChapterPage87B,
+  '87C': AMChapterPage87C,
+  '90': AMChapterPage90,
+  '92': AMChapterPage92,
+  '93': AMChapterPage93,
+  '94A': AMChapterPage94A,
+  '94B': AMChapterPage94B,
+  '99A': AMChapterPage99A,
+  '99B': AMChpaterPage99B,
+  '101': AMChpaterPage101A,
+  '102': AMChapaterPage102,
+  '103A': AMChapaterPage103A,
+  '103B': AMChapaterPage103B,
+  '104A': AMChapaterPage104A,
+  '104B': AMChapaterPage104B,
+  '104C': AMChapaterPage104C,
+  '104D': AMChapaterPage104D,
+  '105': AMChapaterPage105,
+  '106A': AMChapaterPage106A,
+  '106B': AMChapaterPage106B,
+  '106C': AMChapaterPage106C,
+  '106D': AMChapaterPage106D,
+  '106E': AMChapaterPage106E,
+  '107': AMChapaterPage107,
+  '108A': AMChapaterPage108A,
+  '108B': AMChapaterPage108B,
+  '108C': AMChapaterPage108C,
+  '109A': AMChapaterPage109A,
+  '109B': AMChapaterPage109B,
+  '109C': AMChapaterPage109C,
+  '109D': AMChapaterPage109D,
+  '109E': AMChapaterPage109E,
+  '110': AMChapaterPage110,
+  '113A': AMChapaterPage113A,
+  '113B': AMChapaterPage113B,
+  '114A': AMChapaterPage114A,
+  '114B': AMChapaterPage114B,
+  '115A': AMChapaterPage115A,
+  '115B': AMChapaterPage115B,
+  '115C': AMChapaterPage115C,
+  '116A': AMChapaterPage116A,
+  '116B': AMChapaterPage116B,
+  '116C': AMChapaterPage116C,
+  '117A': AMChapaterPage117A,
+  '117B': AMChapaterPage117B,
+  '118A': AMChapaterPage118A,
+  '118B': AMChapaterPage118B,
+  '118C': AMChapaterPage118C,
+  '118D': AMChapaterPage118D,
+  '119A': AMChapaterPage119A,
+  '119B': AMChapaterPage119B,
+  '119C': AMChapaterPage119C,
+  '119D': AMChapaterPage119D,
+  '119E': AMChapaterPage119E,
+  '120': AMChapaterPage120,
+  '121A': AMChapaterPage121A,
+  '121B': AMChapaterPage121B,
+  '121C': AMChapaterPage121C,
+  '122A': AMChapaterPage122A,
+  '122B': AMChapaterPage122B,
+  '122C': AMChapaterPage122C,
+  '123A': AMChapaterPage123A,
+  '123B': AMChapaterPage123B,
+  '123C': AMChapaterPage123C,
+  '123D': AMChapaterPage123D,
+  '123E': AMChapaterPage123E,
+  '123F': AMChapaterPage123F,
+  '124': AMChapaterPage124,
+  '125A': AMChapaterPage125A,
+  '125B': AMChapaterPage125B,
+  '126': AMChapaterPage126,
+  '127A': AMChapaterPage127A,
+  '127B': AMChapaterPage127B,
+  '127C': AMChapaterPage127C,
+  '128A': AMChapaterPage128A,
+  '128B': AMChapaterPage128B,
+  '128C': AMChapaterPage128C,
+  '128D': AMChapaterPage128D,
+  '129A': AMChapaterPage129A,
+  '129B': AMChapaterPage129B,
+  '130A': AMChapaterPage130A,
+  '130B': AMChapaterPage130B,
+  '131A': AMChapaterPage131A,
+  '131B': AMChapaterPage131B,
+  '131C': AMChapaterPage131C,
+  '131D': AMChapaterPage131D,
+  '131E': AMChapaterPage131E,
+  '132A': AMChapaterPage132A,
+  '132B': AMChapaterPage132B,
+  '132C': AMChapaterPage132C,
+  '133A': AMChapaterPage133A,
+  '133B': AMChapaterPage133B,
+  '133C': AMChapaterPage133C,
+  '134A': AMChapaterPage134A,
+  '134B': AMChapaterPage134B
+}
+
+const appendixComponents: { [key: string]: React.ComponentType } = {
+  '135A': AMAppendixPage135A,
+  '135B': AMAppendixPage135B,
+  '136': AMAppendixPage136,
+  '137A': AMAppendixPage137A,
+  '137B': AMAppendixPage137B,
+  '138': AMAppendixPage138,
+  '139A': AMAppendixPage139A,
+  '139B': AMAppendixPage139B,
+  '139C': AMAppendixPage139C,
+  '140': AMAppendixPage140,
+  '141': AMAppendixPage141,
+  '142': AMAppendixPage142,
+  '143': AMAppendixPage143,
+  '144': AMAppendixPage144,
+  '145A': AMAppendixPage145A,
+  '145B': AMAppendixPage145B,
+  '146A': AMAppendixPage146A,
+  '146B': AMAppendixPage146B,
+  '147A': AMAppendixPage147A,
+  '147B': AMAppendixPage147B,
+  '148A': AMAppendixPage148A,
+  '148B': AMAppendixPage148B,
+  '149A': AMAppendixPage149A,
+  '149B': AMAppendixPage149B,
+  '150': AMAppendixPage150,
+  '151': AMAppendixPage151,
+  '152': AMAppendixPage152,
+  '153': AMAppendixPage153,
+  '154': AMAppendixPage154,
+  '155': AMAppendixPage155,
+  '156': AMAppendixPage156,
+  '156B': AMAppendixPage156B,
+  '156C': AMAppendixPage156C,
+  '157': AMAppendixPage157,
+  '160': AMAppendixPage160,
+  '161A': AMAppendixPage161A,
+  '161B': AMAppendixPage161B,
+  '162': AMAppendixPage162,
+  '163': AMAppendixPage163,
+  '168': AMAppendixPage168,
+  '169': AMAppendixPage169,
+  '171': AMAppendixPage171,
+  '174': AMAppendixPage174,
+  '175': AMAppendixPage175,
+  '176': AMAppendixPage176,
+  '177': AMAppendixPage177,
+  '178': AMAppendixPage178,
+  '179': AMAppendixPage179,
+  '180': AMAppendixPage180,
+  '181': AMAppendixPage181,
+  '183': AMAppendixPage183,
+  '185': AMAppendixPage185,
+  '186': AMAppendixPage186,
+  '188': AMAppendixPage188,
+  '188B': AMAppendixPage188B,
+  '189': AMAppendixPage189,
+  '190': AMAppendixPage190,
+  '190A': AMAppendixPage190A,
+  '190B': AMAppendixPage190B,
+  '191': AMAppendixPage191,
+  '192': AMAppendixPage192,
+  '193': AMAppendixPage193,
+  '194': AMAppendixPage194,
+  '195': AMAppendixPage195,
+  '196': AMAppendixPage196,
+  '197': AMAppendixPage197,
+  '198': AMAppendixPage198,
+  '199': AMAppendixPage199,
+  '200': AMAppendixPage200,
+  '201': AMAppendixPage201,
+  '202': AMAppendixPage202,
+  '203': AMAppendixPage203,
+  '204': AMAppendixPage204,
+  '205A': AMAppendixPage205A,
+  '205B': AMAppendixPage205B,
+  '205C': AMAppendixPage205C,
+  '206': AMAppendixPage206,
+  '207': AMAppendixPage207,
+  '208A': AMAppendixPage208A,
+  '208B': AMAppendixPage208B
+}
+
+// Copy of AM chapters data (titles and pages) for topic lookup
+const amChapters = [
+  {
+    id: 1,
+    rules: [
+      { number: '101', title: 'Train', page: '1A' },
+      { number: '101.1', title: 'Passenger Train', page: '1B' },
+      { number: '101.2', title: 'Other Trains', page: '1C' },
+      { number: '102', title: 'Accident', page: '1D' },
+      { number: '103', title: 'Serious Accident', page: '1E' },
+      { number: '104', title: 'Injuries', page: '2A' },
+      { number: '104.1', title: 'Grievous Injuries', page: '2B' },
+      { number: '104.2', title: 'Simple Injuries', page: '2C' },
+      { number: '105', title: 'Classification of Accidents', page: '2D' },
+      { number: '105.1', title: 'Train Accident', page: '2E' },
+      { number: '105.2', title: 'Consequential train accidents', page: '2F' },
+      { number: '105.3', title: 'Collisions', page: '2G' },
+      { number: '105.4', title: 'Fire in Trains', page: '3A' },
+      { number: '105.5', title: 'Accidents at Level Crossings', page: '3B' },
+      { number: '105.6', title: 'Derailments', page: '3C' },
+      { number: '105.7', title: 'Other train Accidents', page: '3D' },
+      { number: '105.8', title: 'Yard Accidents', page: '3E' },
+      { number: '105.9', title: 'Indicative Accidents', page: '3F' },
+      { number: '105.10', title: 'Averted Collision', page: '3G' },
+      { number: '105.11', title: 'Breach of Block Rules', page: '3H' },
+      { number: '105.12', title: 'Train Passing Signal at Danger', page: '4A' },
+      { number: '105.13', title: 'Equipment Failures', page: '4B' },
+      { number: '105.14', title: 'Unusual Incidents', page: '4C' },
+      { number: '105.15', title: 'Sabotage', page: '4D' },
+      { number: '105.16', title: 'Train Wrecking', page: '4E' },
+      { number: '105.17', title: 'Attempted Train wrecking', page: '4F' },
+      { number: '106', title: 'Commissioner of Railway Safety', page: '4G' },
+      { number: '107', title: 'ACT', page: '4H' },
+      { number: '108', title: 'Threshold Value', page: '4I' },
+      { number: '108.1', title: 'Classification of Routes', page: '5' },
+      { number: '109', title: 'Interruption', page: '6A' },
+      { number: '110', title: 'Railway Property', page: '6B' },
+      { number: '111', title: 'Public Property', page: '6C' },
+      { number: '112', title: 'Slight Damage to Property', page: '6D' },
+      { number: '113', title: 'Damage to Property', page: '6E' },
+      { number: '114', title: 'Serious Damage to Property', page: '6F' },
+      { number: '115', title: 'Department', page: '7A' },
+      { number: '116', title: 'Engine Failure and Time Failure', page: '7B' },
+      { number: '117', title: 'Scope of the Rules', page: '7C' },
+      { number: '118', title: 'Distribution of the Accident Manual', page: '7D' },
+      { number: '119', title: 'Acquaintance with the Rules', page: '7E' },
+      { number: '120', title: 'Objectives', page: '7F' },
+      { number: '121', title: 'Resources of all Departments to be made available', page: '8A' },
+      { number: '122', title: 'Every Railway Official to render all possible assistance', page: '8B' },
+      { number: '123', title: 'Duty for Securing Safety', page: '8C' }
+    ]
+  },
+  { id: 2, rules: [
+    { number: '201', title: 'Consequential Train Accidents', page: '9' },
+    { number: '202', title: 'Indicative Accidents', page: '11A' },
+    { number: '203', title: 'Equipment failure', page: '11B' },
+    { number: '204', title: 'Unusual Incidents', page: '12' }
+  ]},
+  { id: 3, rules: [
+    { number: '301', title: 'Guard of the Train Involved in Accident', page: '14A' },
+    { number: '302', title: 'Engine Crew of the Train', page: '14B' },
+    { number: '303', title: 'Station Master / Station Manager', page: '14C' },
+    { number: '304', title: 'Controlling Station Master', page: '16A' },
+    { number: '305', title: 'Train Superintendent / Traveling Ticket Examiner', page: '16B' },
+    { number: '306', title: 'Officer or Senior Supervisor first reaching the site', page: '16C' },
+    { number: '307', title: 'Commercial Inspectors / Commercial Officers', page: '18A' },
+    { number: '308', title: 'Engineering Staff', page: '18B' },
+    { number: '309', title: 'Mechanical / B.D.Staff', page: '19A' },
+    { number: '310', title: 'Signal and Telecommunication Staff', page: '19B' },
+    { number: '311', title: 'Electrical Staff', page: '20A' },
+    { number: '312', title: 'Security Staff', page: '20B' },
+    { number: '313', title: 'Medical Staff', page: '21' },
+    { number: '314', title: 'Chief Controller / Deputy Chief Controller', page: '22' },
+    { number: '315', title: 'Commercial Control', page: '23' },
+    { number: '316', title: 'Power Controller / Traction Loco Controller', page: '24A' },
+    { number: '317', title: 'Traction Power controller', page: '24B' },
+    { number: '318', title: 'Senior Divisional Operations Manager', page: '25A' },
+    { number: '319', title: 'Senior Divisional Safety Officer', page: '25B' },
+    { number: '320', title: 'Senior Divisional Mechanical Engineer', page: '25C' },
+    { number: '321', title: 'Senior Divisional Electrical Engineer', page: '26A' },
+    { number: '322', title: 'Sr DEE (Traction Distribution)', page: '26B' },
+    { number: '323', title: 'Sr DEE (Traction Operation / TRS)', page: '26C' },
+    { number: '324', title: 'Senior Divisional Engineer (Civil)', page: '26D' },
+    { number: '325', title: 'Senior Divisional Commercial Manager', page: '26E' },
+    { number: '326', title: 'Sr DSTE', page: '27A' },
+    { number: '327', title: 'Sr DSC (RPF)', page: '27B' }
+  ]},
+  { id: 4, rules: [
+    { number: '401', title: 'Reportable Train Accidents', page: '28A' },
+    { number: '402', title: 'Reporting of Accidents', page: '28B' },
+    { number: '403', title: 'Particulars to be given in the Accident Report', page: '30' },
+    { number: '404', title: 'Fax Report to Railway Board', page: '34A' },
+    { number: '405', title: 'Reporting of Indicative Accidents', page: '34B' },
+    { number: '406', title: 'Reporting of Accidents at Un-manned Level Crossings', page: '34C' },
+    { number: '407', title: 'Serious Accidents to be advised promptly', page: '34D' },
+    { number: '408', title: 'Procedure for Sending Accident Messages', page: '35' },
+    { number: '409', title: 'Railway Employees to report Accidents', page: '37' },
+    { number: '410', title: 'Method of reporting Accidents by Railway Employees', page: '38A' },
+    { number: '411', title: 'SM/ in-charge to report Accidents', page: '38B' },
+    { number: '412', title: 'Station Master to Advise Control', page: '39A' },
+    { number: '413', title: 'Noting down Time of Accident', page: '39B' },
+    { number: '414', title: 'Preliminary Telephonic Report by an Officer', page: '39C' },
+    { number: '415', title: 'Accidents with Injury/Loss of Life', page: '39D' },
+    { number: '416', title: 'Accidents on Assisted and Private Sidings', page: '39E' },
+    { number: '417', title: 'Accidents at Joint Stations', page: '39F' },
+    { number: '418', title: 'Accidents in Workshops (Factories Act)', page: '39G' },
+    { number: '419', title: 'Accidents on Construction lines', page: '39H' },
+    { number: '420', title: 'Serious Accidents to the Press', page: '40' },
+    { number: '421', title: 'Accident returns to Railway Board', page: '41A' },
+    { number: '422', title: 'Preparation of Accident returns', page: '41B' },
+    { number: '423', title: 'Accident Returns - Tables 1 to 7', page: '42' }
+  ]},
+  { id: 5, rules: [
+    { number: '501', title: 'Preserve Clues and Evidence at site', page: '45' },
+    { number: '502', title: 'Examination to certify fitness', page: '49A' },
+    { number: '503', title: 'Sketch of the site of Accident', page: '49B' },
+    { number: '504', title: 'Pro-forma in case of Derailment', page: '50' },
+    { number: '505', title: 'Locomotive Proforma', page: '54' },
+    { number: '506', title: 'Measurement Table for Coach', page: '58' },
+    { number: '507', title: 'S&T (Points & Signals)', page: '61' },
+    { number: '508', title: 'Typical Sketch of Accident site', page: '62A' }
+  ]},
+  { id: 6, rules: [
+    { number: '601', title: 'Long Range Electric Sirens', page: '63A' },
+    { number: '602', title: 'Accident Siren Code', page: '63B' },
+    { number: '603', title: 'Stations of Accident Relief Trains', page: '64' },
+    { number: '604', title: 'Medical Relief Train & Equipment', page: '68' },
+    { number: '605', title: 'Stations with Medical Relief Equipment', page: '71' },
+    { number: '606', title: 'Joint Inspection of Relief Machinery', page: '75A' },
+    { number: '607', title: 'Action by DMS', page: '75B' },
+    { number: '608', title: 'Action by DMO', page: '75B' },
+    { number: '609', title: 'Equipment necessary in all accidents', page: '76A' },
+    { number: '610', title: 'DMO where MRT is provided', page: '76B' },
+    { number: '611', title: 'DMO at Accident spot', page: '76C' },
+    { number: '612', title: 'Standing Instructions by CMS', page: '77A' },
+    { number: '613', title: 'Responsibility of CMS', page: '77B' },
+    { number: '614', title: 'Opening Dressing Station/Hospitals', page: '77C' },
+    { number: '615', title: 'Medical Personnel to attend', page: '78A' },
+    { number: '616', title: 'DMO to replace articles', page: '78B' },
+    { number: '617', title: 'Duty of SM, Control etc.', page: '78C' },
+    { number: '618', title: 'Regular drills by staff', page: '79' },
+    { number: '619', title: 'First Aid Boxes', page: '80' },
+    { number: '620', title: 'Stretchers', page: '84A' },
+    { number: '621', title: 'Maintenance of Relief Machinery', page: '84B' },
+    { number: '622', title: 'Maintenance of Equipment', page: '85A' },
+    { number: '623', title: 'Training of Man power', page: '85B' },
+    { number: '624', title: 'Portable Emergency Control Phone', page: '85C' }
+  ]},
+  { id: 7, rules: [
+    { number: '701', title: 'Facility to Non-Railway Officials', page: '87A' },
+    { number: '702', title: 'Powers for Helicopter/Aeroplanes', page: '87B' },
+    { number: '703', title: 'Medical Aid to Persons Grievously Hurt', page: '87C' },
+    { number: '704', title: 'Media Management at Site', page: '90' },
+    { number: '705', title: 'Complimentary Passes', page: '92' }
+  ]},
+  { id: 8, rules: [
+    { number: '801', title: 'Relief to Passengers in Train Accidents', page: '93' },
+    { number: '802', title: 'Compensation for Death/Injury', page: '94A' },
+    { number: '803', title: 'Compensation', page: '94B' }
+  ]},
+  { id: 9, rules: [
+    { number: '901', title: 'Investigation on the spot', page: '99A' },
+    { number: '902', title: 'Information for Inquiry Committee', page: '99B' },
+    { number: '903', title: 'Object of Accident Inquiry', page: '101' },
+    { number: '904', title: 'Classification of Accident Enquiries', page: '101' },
+    { number: '905', title: 'Ordering of Inquiries', page: '102' },
+    { number: '906', title: 'Minimum level of Inquiry', page: '103' },
+    { number: '907', title: 'Schedule for completion', page: '103' },
+    { number: '908', title: 'Acceptance of responsibility', page: '104' },
+    { number: '909', title: 'Special Report', page: '104' },
+    { number: '910', title: 'Commencing Joint/Inter-dept Inquiries', page: '104' },
+    { number: '911', title: 'Conducting Joint/Inter Dept Inquiries', page: '104' },
+    { number: '912', title: 'Composition of Inquiry Committee', page: '105' },
+    { number: '913', title: 'President of Inquiry Committee', page: '106' },
+    { number: '914', title: "Officer's duties in inquiry", page: '106' },
+    { number: '915', title: 'Failure to attend Inquiry', page: '106' },
+    { number: '916', title: 'Postponing of an Inquiry', page: '106' },
+    { number: '917', title: 'Guidelines for Committee members', page: '106' },
+    { number: '918', title: 'Proceedings of Inquiries', page: '107' },
+    { number: '919', title: 'Description of the Accident', page: '108A' },
+    { number: '920', title: 'Recording of Evidence', page: '108B' },
+    { number: '921', title: 'Findings', page: '108C' },
+    { number: '922', title: 'Remarks and Reasons', page: '109A' },
+    { number: '923', title: 'Suggestions', page: '109B' },
+    { number: '924', title: 'Matters Brought to Light', page: '109C' },
+    { number: '925', title: 'Signing of Inquiry Proceedings', page: '109D' },
+    { number: '926', title: 'Inquiries at Joint Stations', page: '109E' },
+    { number: '927', title: 'Particulars in Special/Inquiry Report', page: '110' },
+    { number: '928', title: 'Report of inquiry to Administration', page: '113A' },
+    { number: '929', title: 'Acceptance of Findings', page: '113B' },
+    { number: '930', title: 'Reports to CRS', page: '114A' },
+    { number: '931', title: 'Submission of Inquiry Report', page: '114B' },
+    { number: '932', title: 'Metallurgical & Chemical investigation', page: '115A' },
+    { number: '933', title: 'Norms of Punishments', page: '115B' },
+    { number: '934', title: 'Magisterial Inquiry', page: '115C' },
+    { number: '935', title: 'Judicial Inquiry', page: '116A' },
+    { number: '936', title: 'Result of Magisterial Inquiry', page: '116B' },
+    { number: '937', title: 'Summoning CRS and Railway servants', page: '116C' },
+    { number: '938', title: 'Judicial Inquiry decision', page: '117A' },
+    { number: '939', title: 'Police Investigation', page: '117B' },
+    { number: '940', title: 'Notice of Police Investigation', page: '118A' },
+    { number: '941', title: 'Assistance of the District Police', page: '118B' },
+    { number: '942', title: 'Result of Police Investigation', page: '118C' },
+    { number: '943', title: 'District Police duties', page: '118D' }
+  ]},
+  { id: 10, rules: [
+    { number: '1001', title: 'Telephonic Message to CRS', page: '119A' },
+    { number: '1002', title: 'Telephonic advice to CRS', page: '119B' },
+    { number: '1003', title: 'Accidents to be reported to CRS by post', page: '119C' },
+    { number: '1004', title: 'Non-Reporting of Accidents to CRS', page: '119D' },
+    { number: '1005', title: 'Statement of Accidents to CRS', page: '119E' },
+    { number: '1006', title: 'Statutory Investigation into Accidents', page: '120' },
+    { number: '1007', title: 'Attendance of employees to Inquiries', page: '121A' },
+    { number: '1008', title: 'Officers to assist CRS', page: '121B' },
+    { number: '1009', title: 'Brief Preliminary Narrative report', page: '121C' },
+    { number: '1010', title: 'Final Report', page: '122A' },
+    { number: '1011', title: 'Action on the Report', page: '122B' },
+    { number: '1012', title: "Railway's remarks on suggestions", page: '122C' },
+    { number: '1013', title: 'Publication of Reports', page: '123A' },
+    { number: '1014', title: 'District Magistrate to Attend', page: '123B' },
+    { number: '1015', title: 'DSP to attend CRS Inquiry', page: '123C' },
+    { number: '1016', title: 'Technical Matters', page: '123D' },
+    { number: '1017', title: 'Powers of CRS', page: '123E' },
+    { number: '1018', title: 'Target dates for returns', page: '123F' },
+    { number: '1019', title: 'Target for completion of CRS Inquiries', page: '124' }
+  ]},
+  { id: 11, rules: [
+    { number: '1101', title: 'Unsafe Bunds of Tanks/Rivers', page: '125A' },
+    { number: '1102', title: 'Injured/Dead near Track', page: '125B' },
+    { number: '1103', title: 'Person Fallen out of a Train', page: '126' },
+    { number: '1104', title: 'Carriage Windows or Doors', page: '127A' },
+    { number: '1105', title: 'Defective Running of Locomotives', page: '127B' },
+    { number: '1106', title: 'Persons found Dead in Trains/Stations', page: '127C' },
+    { number: '1107', title: 'Murder on Running Train', page: '128A' },
+    { number: '1108', title: 'Care of Dead bodies', page: '128B' },
+    { number: '1109', title: 'Material fouling the Track', page: '128C' },
+    { number: '1110', title: 'Precautions against Derailment', page: '128D' },
+    { number: '1111', title: 'Dangerous practices', page: '129A' },
+    { number: '1112', title: 'Reporting Fire', page: '129B' }
+  ]},
+  { id: 12, rules: [
+    { number: '1201', title: 'General', page: '130' },
+    { number: '1202', title: 'Explosion on Track or Train', page: '130' },
+    { number: '1203', title: 'Duties of Guard/Engine crew', page: '131A' },
+    { number: '1204', title: 'Information to Civil and Police', page: '131B' },
+    { number: '1205', title: 'Precautions by Engineering Supervisors', page: '131C' },
+    { number: '1206', title: 'Duties of Officers and Supervisors', page: '131D' },
+    { number: '1207', title: 'Duties of RPF Officials', page: '131E' },
+    { number: '1208', title: 'Police Clearance', page: '132A' },
+    { number: '1209', title: 'Joint Examination by Civil/Police/Rly', page: '132B' },
+    { number: '1210', title: 'Removal and Examination of Rolling stock', page: '132C' },
+    { number: '1211', title: 'Preparation of Notes and Drawings', page: '133A' },
+    { number: '1212', title: 'Restoration of Communications', page: '133B' },
+    { number: '1213', title: 'Preparation of Plan for Inquiry', page: '133C' },
+    { number: '1214', title: 'Preservation of Notes and Sketches', page: '134A' },
+    { number: '1215', title: 'Association of Security Officer', page: '134B' }
+  ]}
+]
+
 const ContentPage = () => {
   const params = useParams()
   const router = useRouter()
-  const pageNumber = params.page as string
+  const pageNumber = (params.page as string).toUpperCase()
   const [isLoading, setIsLoading] = useState(true)
   const [showScrollTop, setShowScrollTop] = useState(false)
 
@@ -321,627 +901,141 @@ const ContentPage = () => {
   }, [pageNumber])
 
   useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300)
-    }
-
+    const handleScroll = () => setShowScrollTop(window.scrollY > 300)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
-  // Map page numbers to topics
-  // Get all available pages in order for navigation
-  const getAllAvailablePages = (): string[] => {
-    return Object.keys(chapterComponents).concat(Object.keys(appendixComponents))
-  }
-
-  // Get previous page in the sequence
-  const getPreviousPage = (currentPage: string): string | null => {
-    const allPages = getAllAvailablePages()
-    const currentIndex = allPages.indexOf(currentPage)
-    if (currentIndex > 0) {
-      return allPages[currentIndex - 1]
-    }
-    return null
-  }
-
-  // Get next page in the sequence
-  const getNextPage = (currentPage: string): string | null => {
-    const allPages = getAllAvailablePages()
-    const currentIndex = allPages.indexOf(currentPage)
-    if (currentIndex < allPages.length - 1 && currentIndex !== -1) {
-      return allPages[currentIndex + 1]
-    }
-    return null
-  }
-
-  const getTopicForPage = (page: string): string => {
-    const pageToTopicMap: { [key: string]: string } = {
-      // Chapter 1
-      '1A': 'Train',
-      '1B': 'Passenger Train',
-      '1C': 'Other Trains',
-      '1D': 'Accident',
-      '1E': 'Serious Accident',
-      // Chapter 2
-      '2A': 'Injuries',
-      '2B': 'Grievous Injuries',
-      '2C': 'Simple Injuries',
-      '2D': 'Classification of Accidents',
-      '2E': 'Train Accident',
-      '2F': 'Consequential train accidents',
-      '2G': 'Collisions',
-      // Chapter 3
-      '3A': 'Fire in Trains',
-      '3B': 'Accidents at Level Crossings',
-      '3C': 'Derailments',
-      '3D': 'Other train Accidents',
-      '3E': 'Yard Accidents',
-      '3F': 'Indicative Accidents',
-      '3G': 'Averted Collision',
-      '3H': 'Breach of Block Rules',
-      // Chapter 4
-      '4A': 'Train Passing Signal at Danger',
-      '4B': 'Equipment Failures',
-      '4C': 'Unusual Incidents',
-      '4D': 'Sabotage',
-      '4E': 'Train Wrecking',
-      '4F': 'Attempted Train wrecking',
-      '4G': 'Commissioner of Railway Safety',
-      '4H': 'ACT',
-      '4I': 'Threshold Value',
-      // Chapter 5
-      '5': 'Classification of Routes',
-      // Chapter 6
-      '6A': 'Interruption',
-      '6B': 'Railway Property',
-      '6C': 'Public Property',
-      '6D': 'Slight Damage to Property',
-      '6E': 'Damage to Property',
-      '6F': 'Serious Damage to Property',
-      // Chapter 7
-      '7A': 'Department',
-      '7B': 'Engine Failure and Time Failure',
-      '7C': 'Scope of the Rules',
-      '7D': 'Distribution of the Accident Manual',
-      '7E': 'Acquaintance with the Rules',
-      '7F': 'Objectives',
-      // Chapter 8
-      '8A': 'Resources of all Departments to be made available',
-      '8B': 'Every Railway Official to render all possible assistance',
-      '8C': 'Duty for Securing Safety',
-      // Chapter 9
-      '9': 'Consequential Train Accidents',
-      '11A': 'Indicative Accidents',
-      '11B': 'Equipment failure',
-      '12': 'Unusual Incidents',
-      // Chapter 10
-      '14A': 'Guard of the Train Involved in Accident',
-      '14B': 'Engine Crew of the Train',
-      '14C': 'Station Master / Station Manager',
-      '16A': 'Controlling Station Master',
-      '16B': 'Train Superintendent / Traveling Ticket Examiner',
-      '16C': 'Officer or Senior Supervisor first reaching the site',
-      '18A': 'Commercial Inspectors / Commercial Officers',
-      '18B': 'Engineering Staff',
-      '19A': 'Mechanical / B.D.Staff',
-      '19B': 'Signal and Telecommunication Staff',
-      '20A': 'Electrical Staff',
-      '20B': 'Security Staff',
-      '21': 'Medical Staff',
-      '22': 'Chief Controller / Deputy Chief Controller',
-      '23': 'Commercial Control',
-      '24A': 'Power Controller / Traction Loco Controller',
-      '24B': 'Traction Power controller',
-      '25A': 'Senior Divisional Operations Manager',
-      '25B': 'Senior Divisional Safety Officer',
-      '25C': 'Senior Divisional Mechanical Engineer',
-      '26A': 'Senior Divisional Electrical Engineer',
-      '26B': 'Senior Divisional Electrical Engineer (Traction Distribution)',
-      '26C': 'Senior Divisional Electrical Engineer (Traction Operation / Traction Rolling Stock)',
-      '26D': 'Senior Divisional Engineer (Civil)',
-      '26E': 'Senior Divisional Commercial Manager',
-      '27A': 'Senior Divisional Signal and Telecommunication Engineer',
-      '27B': 'Senior Divisional Security Commissioner (R.P.F)',
-      // Chapter 11
-      '28A': 'Reportable Train Accidents',
-      '28B': 'Reporting of Accidents',
-      '30': 'Particulars to be given in the Accident Report',
-      '34A': 'Fax Report to Railway Board',
-      '34B': 'Reporting of Indicative Accidents',
-      '34C': 'Reporting of Accidents at Un-manned Level Crossings',
-      '34D': 'Serious Accidents to be advised promptly',
-      '35': 'Procedure for Sending Accident Messages',
-      '37': 'Railway Employees to report Accidents',
-      '38A': 'Method of reporting Accidents by Railway Employees',
-      '38B': 'Station Master or Railway Employee in-charge of the section to report Accidents',
-      '39A': 'Station Master to Advise Control',
-      '39B': 'Noting down Time of Accident',
-      '39C': 'Preliminary Telephonic Report on Serious Accidents by an Officer',
-      '39D': 'Reporting of Accidents attended with Injury of Loss of Life',
-      '39E': 'Reporting of Accidents on Assisted and Private Sidings',
-      '39F': 'Reporting of Accidents at Joint Stations',
-      '39G': 'Reporting of Accidents in Workshops coming under the Factories Act',
-      '39H': 'Reporting of Accidents on Construction lines',
-      '40': 'Reporting of Serious Accidents to the Press',
-      '41A': 'Train Accident returns to be sent to the Railway Board',
-      '41B': 'Preparation of Accident returns',
-      '42': 'Accident Returns - Tables 1 to 7',
-      // Chapter 12
-      '45': 'Steps to be taken to preserve the Clues and Evidence at Accident site',
-      '49A': 'Examination to certify fitness for movement of Locomotive and Rolling Stock',
-      '49B': 'The Sketch of the site of Accident',
-      '50': 'Pro-forma to be filled up in case of Derailment',
-      '54': 'Locomotive (Diesel & Electric) Proforma',
-      '58': 'Measurement Table for Coach involved in Accident',
-      '61': 'Signal & Telecommunication (Points & Signals)',
-      '62A': 'Typical Sketch of Accident site',
-      // Chapter 13
-      '63A': 'Long Range Electric Sirens',
-      '63B': 'Accident Siren Code',
-      '64': 'Stations Where Accident Relief Trains are Located',
-      '68': 'Medical Relief Train & Medical Relief Equipment',
-      '71': 'Stations where Medical Relief Equipment are located',
-      '75A': 'Joint Inspection of entire Accident Relief Machinery',
-      '75B': 'Action by Divisional Medical Superintendent',
-      '75C': 'Action by Divisional Medical Officer',
-      '76A': 'Equipment considered necessary in all accidents',
-      '76B': 'Action by Divisional Medical Officer where MRT is provided',
-      '76C': 'Responsibility of Divisional Medical Officer at Accident spot',
-      '77A': 'Standing Instructions by Divisional Chief Medical Superintendent',
-      '77B': 'Responsibility of Divisional Chief Medical Superintendent',
-      '77C': 'Opening of Dressing Station and Temporary Hospitals',
-      '78A': 'Medical Personnel to attend to the Injured',
-      '78B': 'Divisional Medical Officer to replace articles',
-      '78C': 'Duty of Station Master, Control etc.',
-      '79': 'Regular drills by staff',
-      '80': 'Maintenance and replenishment of First Aid Boxes',
-      '84A': 'Stretchers',
-      '84B': 'Maintenance of Accident Relief Machinery',
-      '85A': 'Maintenance of Equipment kept in Accident Relief Machinery',
-      '85B': 'Training of Man power',
-      '85C': 'Portable Emergency Control Phone',
-      // Chapter 14
-      '87A': 'Facility to Non-Railway Officials',
-      '87B': 'Schedule of Powers of Officers for Helicopter/Aero planes',
-      '87C': 'Medical Aid to Persons Grievously Hurt',
-      '90': 'Media Management at Site',
-      '92': 'Complimentary Passes',
-      // Chapter 15
-      '93': 'Relief to Passengers involved in Train Accidents',
-      '94A': 'Compensation for Death/Injury in train Accident',
-      '94B': 'Compensation',
-      // Chapter 16
-      '99A': 'Investigation on the spot',
-      '99B': 'Information collection for Inquiry Committee',
-      '101': 'Object of Accident Inquiry',
-      '102': 'Classification of Accident Enquiries',
-      '103': 'Ordering of Inquiries',
-      '104': 'Minimum level of Inquiry',
-      '105': 'Schedule for completion of Accident Inquiry',
-      '106': 'Acceptance of responsibility by Departments',
-      '107': 'Special Report',
-      '108A': 'Commencing of Joint and Inter-departmental Inquiries',
-      '108B': 'Method of conducting Joint/Inter Departmental Inquiries',
-      '108C': 'Composition of Inquiry Committee',
-      '109A': 'President of Inquiry Committee',
-      '109B': 'Officer\'s duties in connection with inquiry',
-      '109C': 'Failure to attend Inquiry',
-      '109D': 'Postponing of an Inquiry',
-      '109E': 'Guidelines for Inquiry Committee members',
-      '110': 'Proceedings of Joint or Inter-departmental Inquiries',
-      '113A': 'Description of the Accident',
-      '113B': 'Recording of Evidence',
-      '114A': 'Findings',
-      '114B': 'Remarks and Reasons for Findings',
-      '115A': 'Suggestions',
-      '115B': 'Matters Brought to Light during Inquiry',
-      '115C': 'Signing of Joint Inquiry Proceedings',
-      '116A': 'Inquiries into accidents at Joint Stations',
-      '116B': 'Particulars in Special Report or Inquiry Report',
-      '116C': 'Report of inquiry to Railway Administration',
-      '117A': 'Acceptance of Findings',
-      '117B': 'Reports of Inquiries to Commissioner of Railway Safety',
-      '118A': 'Submission of Inquiry Report',
-      '118B': 'Metallurgical and Chemical investigation',
-      '118C': 'Norms of Punishments',
-      '118D': 'Magisterial Inquiry',
-      // Chapter 17
-      '119A': 'All concerned Telephonic Message to CRS',
-      '119B': 'Telephonic advice to CRS',
-      '119C': 'Accidents to be reported to CRS by post',
-      '119D': 'Non-Reporting of Accidents to CRS',
-      '119E': 'Statement of Accidents to CRS',
-      '120': 'Statutory Investigation into Railway Accidents',
-      '121A': 'Attendance of Railway employees to attend Inquiries',
-      '121B': 'Officers to assist CRS',
-      '121C': 'Brief Preliminary Narrative report',
-      '122A': 'Final Report',
-      '122B': 'Action on the Report by Railway Administration',
-      '122C': 'Railway\'s remarks on suggestions',
-      '123A': 'Publication of Reports',
-      '123B': 'District Magistrate to Attend CRS Inquiry',
-      '123C': 'District Superintendent of Police to attend CRS Inquiry',
-      '123D': 'Technical Matters',
-      '123E': 'Powers of CRS',
-      '123F': 'Target dates for submission of returns',
-      '124': 'Target for Completion of CRS Inquiries',
-      // Chapter 18
-      '125A': 'Unsafe Bunds of Tanks of Rivers',
-      '125B': 'Injured or Dead persons found on or near Railway Track',
-      '126': 'Person Fallen out of a Train',
-      '127A': 'Carriage Windows or Doors Involved',
-      '127B': 'Defective Running of Locomotives',
-      '127C': 'Persons found Dead in Trains or at Stations',
-      '128A': 'Murder on Running Train',
-      '128B': 'Care of Dead bodies',
-      '128C': 'Material fouling the Track',
-      '128D': 'Precautions against Derailment',
-      '129A': 'Dangerous practices',
-      '129B': 'Reporting Fire',
-      // Chapter 19
-      '130A': 'General',
-      '130B': 'Explosion on Track or Train',
-      '131A': 'Duties of Guard, Engine crew and Railway staff',
-      '131B': 'Information to Civil and Police Authorities',
-      '131C': 'Precautions by Engineering Supervisors',
-      '131D': 'Duties of Officers and Supervisory Officials',
-      '131E': 'Duties of Railway Protection Force Officials',
-      '132A': 'Police Clearance',
-      '132B': 'Joint Examination by Civil, Police and Railway Officials',
-      '132C': 'Removal and Examination of Rolling stock',
-      '133A': 'Preparation of Notes and Drawings',
-      '133B': 'Restoration of Communications',
-      '133C': 'Preparation of Plan for Inquiry',
-      '134A': 'Preservation of Notes and Sketches',
-      '134B': 'Association of Security Officer',
-      // Appendix topics
-      '135A': 'DISASTER MANAGEMENT ACT (2005)',
-      '135B': 'NDMA (National Disaster Management Authority)',
-      '136': 'NDRF (National Disaster Relief Force)',
-      '137A': 'Definition of Disaster',
-      '137B': 'IMPORTANT CONTACT NUMBERS – RAILWAYS',
-      '138': 'IMPORTANT CONTACT NUMBERS GOVERNMENT OF ANDHRA PRADESH'
-    }
-
-    return pageToTopicMap[page] || 'Unknown Topic'
-  }
-
-  // Map page numbers to chapter components
-  const chapterComponents: { [key: string]: React.ComponentType } = {
-    '1A': AMChapterPage1A,
-    '1B': AMChapterPage1B,
-    '1C': AMChapterPage1C,
-    '1D': AMChapterPage1D,
-    '1E': AMChapterPage1E,
-    '2A': AMChapterPage2A,
-    '2B': AMChapterPage2B,
-    '2C': AMChapterPage2C,
-    '2D': AMChapterPage2D,
-    '2E': AMChapterPage2E,
-    '2F': AMChapterPage2F,
-    '2G': AMChapterPage2G,
-    '3A': AMChapterPage3A,
-    '3B': AMChapterPage3B,
-    '3C': AMChapterPage3C,
-    '3D': AMChapterPage3D,
-    '3E': AMChapterPage3E,
-    '3F': AMChapterPage3F,
-    '3G': AMChapterPage3G,
-    '3H': AMChapterPage3H,
-    '4A': AMChapterPage4A,
-    '4B': AMChapterPage4B,
-    '4C': AMChapterPage4C,
-    '4D': AMChapterPage4D,
-    '4E': AMChapterPage4E,
-    '4F': AMChapterPage4F,
-    '4G': AMChapterPage4G,
-    '4H': AMChapterPage4H,
-    '4I': AMChapterPage4I,
-    '5': AMChapterPage5,
-    '6A': AMChapterPage6A,
-    '6B': AMChapterPage6B,
-    '6C': AMChapterPage6C,
-    '6D': AMChapterPage6D,
-    '6E': AMChapterPage6E,
-    '6F': AMChapterPage6F,
-    '7A': AMChapterPage7A,
-    '7B': AMChapterPage7B,
-    '7C': AMChapterPage7C,
-    '7D': AMChapterPage7D,
-    '7E': AMChapterPage7E,
-    '7F': AMChapterPage7F,
-    '8A': AMChapterPage8A,
-    '8B': AMChapterPage8B,
-    '8C': AMChapterPage8C,
-    '9': AMChapterPage9,
-    '11A': AMChapterPage11A,
-    '11B': AMChapterPage11B,
-    '12': AMChapterPage12,
-    '14A': AMChapterPage14A,
-    '14B': AMChapterPage14B,
-    '14C': AMChapterPage14C,
-    '16A': AMChapterPage16A,
-    '16B': AMChapterPage16B,
-    '16C': AMChapterPage16C,
-    '18A': AMChapterPage18A,
-    '18B': AMChapterPage18B,
-    '19A': AMChapterPage19A,
-    '19B': AMChapterPage19B,
-    '20A': AMChapterPage20A,
-    '20B': AMChapterPage20B,
-    '21': AMChapterPage21,
-    '22': AMChapterPage22,
-    '23': AMChapterPage23,
-    '24A': AMChapterPage24A,
-    '24B': AMChapterPage24B,
-    '25A': AMChapterPage25A,
-    '25B': AMChapterPage25B,
-    '25C': AMChapterPage25C,
-    '26A': AMChapterPage26A,
-    '26B': AMChapterPage26B,
-    '26C': AMChapterPage26C,
-    '26D': AMChapterPage26D,
-    '26E': AMChapterPage26E,
-    '27A': AMChapterPage27A,
-    '27B': AMChapterPage27B,
-    '28A': AMChapterPage28A,
-    '28B': AMChapterPage28B,
-    '30': AMChapterPage30,
-    '34A': AMChapterPage34A,
-    '34B': AMChapterPage34B,
-    '34C': AMChapterPage34C,
-    '34D': AMChapterPage34D,
-    '35': AMChapterPage35,
-    '37': AMChapterPage37,
-    '38A': AMChapterPage38A,
-    '38B': AMChapterPage38B,
-    '39A': AMChapterPage39A,
-    '39B': AMChapterPage39B,
-    '39C': AMChapterPage39C,
-    '39D': AMChapterPage39D,
-    '39E': AMChapterPage39E,
-    '39F': AMChapterPage39F,
-    '39G': AMChapterPage39G,
-    '39H': AMChapterPage39H,
-    '40': AMChapterPage40,
-    '41A': AMChapterPage41A,
-    '41B': AMChapterPage41B,
-    '42': AMChapterPage42,
-    '45': AMChapterPage45,
-    '49A': AMChapterPage49A,
-    '49B': AMChapterPage49B,
-    '50': AMChapterPage50,
-    '54': AMChapterPage54,
-    '58': AMChapterPage58,
-    '61': AMChapterPage61,
-    '62A': AMChapterPage62A,
-    '63A': AMChapterPage63A,
-    '63B': AMChapterPage63B,
-    '64': AMChapterPage64,
-    '68': AMChapterPage68,
-    '71': AMChapterPage71,
-    '75A': AMChapterPage75A,
-    '75B': AMChapterPage75B,
-    '75C': AMChapterPage75C,
-    '76A': AMChapterPage76A,
-    '76B': AMChapterPage76B,
-    '76C': AMChapterPage76C,
-    '77A': AMChapterPage77A,
-    '77B': AMChapterPage77B,
-    '77C': AMChapterPage77C,
-    '78A': AMChapterPage78A,
-    '78B': AMChapterPage78B,
-    '78C': AMChapterPage78C,
-    '79': AMChapterPage79,
-    '80': AMChapterPage80,
-    '84A': AMChapterPage84A,
-    '84B': AMChapterPage84B,
-    '85A': AMChapterPage85A,
-    '85B': AMChapterPage85B,
-    '85C': AMChapterPage85C,
-    '87A': AMChapterPage87A,
-    '87B': AMChapterPage87B,
-    '87C': AMChapterPage87C,
-    '90': AMChapterPage90,
-    '92': AMChapterPage92,
-    '93': AMChapterPage93,
-    '94A': AMChapterPage94A,
-    '94B': AMChapterPage94B,
-    '99A': AMChpaterPage99A,
-    '99B': AMChpaterPage99B,
-    '101A': AMChpaterPage101A,
-    '101B': AMChapaterPage101B,
-    '102': AMChapaterPage102,
-    '103A': AMChapaterPage103A,
-    '103B': AMChapaterPage103B,
-    '104A': AMChapaterPage104A,
-    '104B': AMChapaterPage104B,
-    '104C': AMChapaterPage104C,
-    '104D': AMChapaterPage104D,
-    '105': AMChapaterPage105,
-    '106A': AMChapaterPage106A,
-    '106B': AMChapaterPage106B,
-    '106C': AMChapaterPage106C,
-    '106D': AMChapaterPage106D,
-    '106E': AMChapaterPage106E,
-    '107': AMChapaterPage107,
-    '108A': AMChapaterPage108A,
-    '108B': AMChapaterPage108B,
-    '108C': AMChapaterPage108C,
-    '109A': AMChapaterPage109A,
-    '109B': AMChapaterPage109B,
-    '109C': AMChapaterPage109C,
-    '109D': AMChapaterPage109D,
-    '109E': AMChapaterPage109E,
-    '110': AMChapaterPage110,
-    '113A': AMChapaterPage113A,
-    '113B': AMChapaterPage113B,
-    '114A': AMChapaterPage114A,
-    '114B': AMChapaterPage114B,
-    '115A': AMChapaterPage115A,
-    '115B': AMChapaterPage115B,
-    '115C': AMChapaterPage115C,
-    '116A': AMChapaterPage116A,
-    '116B': AMChapaterPage116B,
-    '116C': AMChapaterPage116C,
-    '117A': AMChapaterPage117A,
-    '117B': AMChapaterPage117B,
-    '118A': AMChapaterPage118A,
-    '118B': AMChapaterPage118B,
-    '118C': AMChapaterPage118C,
-    '118D': AMChapaterPage118D,
-    '119A': AMChapaterPage119A,
-    '119B': AMChapaterPage119B,
-    '119C': AMChapaterPage119C,
-    '119D': AMChapaterPage119D,
-    '119E': AMChapaterPage119E,
-    '120': AMChapaterPage120,
-    '121A': AMChapaterPage121A,
-    '121B': AMChapaterPage121B,
-    '121C': AMChapaterPage121C,
-    '122A': AMChapaterPage122A,
-    '122B': AMChapaterPage122B,
-    '122C': AMChapaterPage122C,
-    '123A': AMChapaterPage123A,
-    '123B': AMChapaterPage123B,
-    '123C': AMChapaterPage123C,
-    '123D': AMChapaterPage123D,
-    '123E': AMChapaterPage123E,
-    '123F': AMChapaterPage123F,
-    '124': AMChapaterPage124,
-    '125A': AMChapaterPage125A,
-    '125B': AMChapaterPage125B,
-    '126': AMChapaterPage126,
-    '127A': AMChapaterPage127A,
-    '127B': AMChapaterPage127B,
-    '127C': AMChapaterPage127C,
-    '128A': AMChapaterPage128A,
-    '128B': AMChapaterPage128B,
-    '128C': AMChapaterPage128C,
-    '128D': AMChapaterPage128D,
-    '129A': AMChapaterPage129A,
-    '129B': AMChapaterPage129B,
-    '130A': AMChapaterPage130A,
-    '130B': AMChapaterPage130B,
-    '131A': AMChapaterPage131A,
-    '131B': AMChapaterPage131B,
-    '131C': AMChapaterPage131C,
-    '131D': AMChapaterPage131D,
-    '131E': AMChapaterPage131E,
-    '132A': AMChapaterPage132A,
-    '132B': AMChapaterPage132B,
-    '132C': AMChapaterPage132C,
-    '133A': AMChapaterPage133A,
-    '133B': AMChapaterPage133B,
-    '133C': AMChapaterPage133C,
-    '134A': AMChapaterPage134A,
-    '134B': AMChapaterPage134B
-  }
-
-  // Map page numbers to appendix components
-  const appendixComponents: { [key: string]: React.ComponentType } = {
-    '135A': AMAppendixPage135A,
-    '135B': AMAppendixPage135B,
-    '136': AMAppendixPage136,
-    '137A': AMAppendixPage137A,
-    '137B': AMAppendixPage137B,
-    '138': AMAppendixPage138,
-    '139A': AMAppendixPage139A,
-    '139B': AMAppendixPage139B,
-    '139C': AMAppendixPage139C,
-    '140': AMAppendixPage140,
-    '141': AMAppendixPage141,
-    '142': AMAppendixPage142,
-    '143': AMAppendixPage143,
-    '145A': AMAppendixPage145A,
-    '145B': AMAppendixPage145B,
-    '146A': AMAppendixPage146A,
-    '146B': AMAppendixPage146B,
-    '147A': AMAppendixPage147A,
-    '147B': AMAppendixPage147B,
-    '148A': AMAppendixPage148A,
-    '148B': AMAppendixPage148B,
-    '149A': AMAppendixPage149A,
-    '149B': AMAppendixPage149B,
-    '151': AMAppendixPage151,
-    '153': AMAppendixPage153,
-    '156': AMAppendixPage156,
-    '156B': AMAppendixPage156B,
-    '156C': AMAppendixPage156C,
-    '157': AMAppendixPage157,
-    '160': AMAppendixPage160,
-    '161A': AMAppendixPage161A,
-    '161B': AMAppendixPage161B,
-    '162': AMAppendixPage162,
-    '163': AMAppendixPage163,
-    '168': AMAppendixPage168,
-    '169': AMAppendixPage169,
-    '171': AMAppendixPage171,
-    '174': AMAppendixPage174,
-    '175': AMAppendixPage175,
-    '176': AMAppendixPage176,
-    '177': AMAppendixPage177,
-    '178': AMAppendixPage178,
-    '179': AMAppendixPage179,
-    '180': AMAppendixPage180,
-    '181': AMAppendixPage181,
-    '183': AMAppendixPage183,
-    '185': AMAppendixPage185,
-    '186': AMAppendixPage186,
-    '188': AMAppendixPage188,
-    '188B': AMAppendixPage188B,
-    '189': AMAppendixPage189,
-    '190': AMAppendixPage190,
-    '190A': AMAppendixPage190A,
-    '190B': AMAppendixPage190B,
-    '191': AMAppendixPage191,
-    '192': AMAppendixPage192,
-    '193': AMAppendixPage193,
-    '194': AMAppendixPage194,
-    '195': AMAppendixPage195,
-    '196': AMAppendixPage196,
-    '197': AMAppendixPage197,
-    '198': AMAppendixPage198,
-    '199': AMAppendixPage199,
-    '200': AMAppendixPage200,
-    '201': AMAppendixPage201,
-    '202': AMAppendixPage202,
-    '203': AMAppendixPage203,
-    '204': AMAppendixPage204,
-    '205A': AMAppendixPage205A,
-    '205B': AMAppendixPage205B,
-    '205C': AMAppendixPage205C,
-    '206': AMAppendixPage206,
-    '207': AMAppendixPage207,
-    '208A': AMAppendixPage208A,
-    '208B': AMAppendixPage208B
-  }
-
-  const ContentComponent = chapterComponents[pageNumber] || appendixComponents[pageNumber]
+  const ContentComponent = pageComponents[pageNumber] || appendixComponents[pageNumber]
 
   const openPDF = () => {
-    let pdfPath = ''
-
-    // Check if it's an appendix page (starts with 135 or higher)
-    const pageNum = parseInt(pageNumber.replace(/[^\d]/g, ''))
-    if (pageNum >= 135) {
-      // Appendix pages
-      pdfPath = `/ampdfs/am-appendix-pages/AMAppendixPage${pageNumber.toUpperCase()}.pdf`
-    } else {
-      // Chapter pages
-      pdfPath = `/ampdfs/am-chapter-pages/AMPAGE${pageNumber.toUpperCase()}.pdf`
-    }
-
+    const isAppendix = Boolean(appendixComponents[pageNumber])
+    const pdfPath = isAppendix
+      ? `/ampdfs/am-appendix-pages/AMAppendixPage${pageNumber}.pdf`
+      : `/ampdfs/am-chapter-pages/AMPAGE${pageNumber}.pdf`
     window.open(pdfPath, '_blank')
   }
+
+  // Flatten rules for topic lookup and for prev/next labels
+  const amAppendixRules = useMemo(() => {
+    return [
+      // Appendix 1
+      { number: 'A1.1', title: 'DISASTER MANAGEMENT ACT (2005)', page: '135A' },
+      { number: 'A1.2', title: 'NDMA (National Disaster Management Authority)', page: '135B' },
+      { number: 'A1.3', title: 'NDRF (National Disaster Relief Force)', page: '136' },
+      { number: 'A1.4', title: 'Definition of Disaster', page: '137A' },
+      { number: 'A1.5', title: 'IMPORTANT CONTACT NUMBERS – RAILWAYS', page: '137B' },
+      { number: 'A1.6', title: 'IMPORTANT CONTACT NUMBERS GOVERNMENT OF ANDHRA PRADESH', page: '138' },
+      // Appendix 2
+      { number: 'A2.1', title: 'Aim / Objectives', page: '139A' },
+      { number: 'A2.2', title: 'Contents of the First Aid box', page: '139B' },
+      { number: 'A2.3', title: 'Types of Accident Relief Medical Equipment', page: '139C' },
+      { number: 'A2.4', title: 'Steps to be followed while rendering effective help to a person', page: '140' },
+      { number: 'A2.5', title: 'ASPHYXIA (SUFFOCATION)', page: '141' },
+      { number: 'A2.6', title: 'SHOCK', page: '142' },
+      { number: 'A2.7', title: 'WOUNDS AND HEMORRHAGES (BLEEDINGS)', page: '143' },
+      { number: 'A2.8', title: 'BURNS AND SCALDS', page: '145' },
+      { number: 'A2.9', title: 'FRACTURE, DISLOCATION, SPRAIN AND CRAMP', page: '145' },
+      { number: 'A2.10', title: 'POISONS', page: '146' },
+      { number: 'A2.11', title: 'SNAKE / DOG / SCORPION BITE TREATMENT', page: '146' },
+      { number: 'A2.12', title: 'UNCONSCIOUSNESS (INSENSIBILITY)', page: '147' },
+      { number: 'A2.13', title: 'EPILEPSY (FITS)', page: '147' },
+      // Appendix 3 (sample)
+      { number: 'A3.1', title: 'CRS related Sections', page: '148' },
+      { number: 'A3.2', title: 'Construction and Maintenance of Works', page: '148' },
+      { number: 'A3.3', title: 'Opening of Railways', page: '149' },
+      { number: 'A3.4', title: 'Accidents', page: '149' },
+      { number: 'A3.5', title: 'Liability for Death/Injury to passengers', page: '151' },
+      { number: 'A3.6', title: 'Penalties and Offences', page: '153' },
+      // Appendix 4 (key pages)
+      { number: 'A4.1', title: 'Weather Warning Message', page: '156' },
+      { number: 'A4.2', title: 'Terminology in Meteorological Bulletins', page: '156' },
+      { number: 'A4.3', title: 'Normal Weather Warnings', page: '156' },
+      { number: 'A4.4', title: 'Dissemination within Railway', page: '157' },
+      { number: 'A4.5', title: 'Flood Warning', page: '160' },
+      { number: 'A4.6', title: 'Danger to track and bridges due to Tanks', page: '161' },
+      { number: 'A4.7', title: 'Actions during Cyclone (General)', page: '162' },
+      { number: 'A4.8', title: 'ANNEXURE-\'A\'', page: '163' },
+      { number: 'A4.9', title: 'ANNEXURE-\'B\'', page: '168' },
+      { number: 'A4.10', title: 'ANNEXURE-\'C\'', page: '169' },
+      // Appendix 5
+      { number: 'A5.1', title: 'PUNISHMENT NORMS IN ACCIDENT CASES', page: '171' },
+      { number: 'A5.2', title: 'PUNISHMENT NORMS - CIVIL ENGINEERING', page: '174' },
+      { number: 'A5.3', title: 'STAFF OF ELECTRICAL DEPARTMENT', page: '175' },
+      { number: 'A5.4', title: 'Penalties for Serving Railway Employees', page: '176' },
+      // Appendix 6 (selected)
+      { number: 'A6.1', title: 'Specimen Form Acc 1 (i)', page: '177' },
+      { number: 'A6.2', title: 'Specimen Form Acc 1 (ii)', page: '178' },
+      { number: 'A6.3', title: 'Specimen Form Acc 1(iii)', page: '179' },
+      { number: 'A6.4', title: 'Specimen Form Acc.2', page: '180' },
+      { number: 'A6.5', title: 'Specimen form ACC.3', page: '181' },
+      { number: 'A6.6', title: 'Specimen Form ACC.4', page: '183' },
+      { number: 'A6.7', title: 'Specimen Form ACC.5', page: '185' },
+      { number: 'A6.8', title: 'Specimen Form ACC.6', page: '186' },
+      { number: 'A6.9', title: 'Specimen form Acc. 6-A', page: '188' },
+      { number: 'A6.10', title: 'Specimen Form ACC, 6-B', page: '188' },
+      { number: 'A6.11', title: 'Specimen Form Acc. 6-C', page: '189' },
+      { number: 'A6.12', title: 'Specimen Form ACC 6-D', page: '190' },
+      { number: 'A6.13', title: 'Specimen Form Acc. 7', page: '190' },
+      { number: 'A6.14', title: 'Specimen Form Acc. 8', page: '191' },
+      { number: 'A6.15', title: 'Form Acc.9', page: '192' },
+      { number: 'A6.16', title: 'Form Acc. 9-A', page: '193' },
+      { number: 'A6.17', title: 'Form Acc 9-B', page: '194' },
+      { number: 'A6.18', title: 'Form Acc. 9-C', page: '195' },
+      { number: 'A6.19', title: 'Form Acc. 9-D', page: '196' },
+      { number: 'A6.20', title: 'Form Acc. 9-E', page: '197' },
+      { number: 'A6.21', title: 'Form Acc. 9-F', page: '198' },
+      { number: 'A6.22', title: 'Form Acc. 9-G', page: '199' },
+      { number: 'A6.23', title: 'Form Acc. 9-H', page: '200' },
+      { number: 'A6.24', title: 'Form Acc. 9-I', page: '201' },
+      { number: 'A6.25', title: 'Form Acc. 9-J', page: '202' },
+      { number: 'A6.26', title: 'Form Acc. 9-K', page: '203' },
+      { number: 'A6.27', title: 'Form Acc. 9-L', page: '204' },
+      { number: 'A6.28', title: 'Form Acc. 9-M', page: '205' },
+      { number: 'A6.29', title: 'Form Acc. 9-N', page: '205' },
+      { number: 'A6.30', title: 'Form Acc. 9-O', page: '205' },
+      { number: 'A6.31', title: 'Form Acc.10', page: '206' },
+      { number: 'A6.32', title: 'Form Acc.11', page: '207' },
+      { number: 'A6.33', title: 'Form Acc.12', page: '208' },
+      { number: 'A6.34', title: 'Form Acc.13', page: '208' }
+    ]
+  }, [])
+
+  const allRules = useMemo(() => {
+    const chapterRules = amChapters.flatMap((c) => c.rules)
+    return [...chapterRules, ...amAppendixRules]
+  }, [amAppendixRules])
+  const currentRule = allRules.find((r) => r.page.toUpperCase() === pageNumber)
+
+  // Sorting helper for pages with numeric + optional letter suffix
+  const sortPages = (a: string, b: string) => {
+    const match = (s: string) => {
+      const m = s.match(/^(\d+)([A-Z]*)$/)
+      return m ? { n: parseInt(m[1], 10), l: m[2] || '' } : { n: Number.MAX_SAFE_INTEGER, l: s }
+    }
+    const A = match(a)
+    const B = match(b)
+    if (A.n !== B.n) return A.n - B.n
+    // Empty letter first, then A, B, C ...
+    if (A.l === B.l) return 0
+    if (A.l === '') return -1
+    if (B.l === '') return 1
+    return A.l.localeCompare(B.l)
+  }
+
+  const availablePages = useMemo(() => {
+    const keys = [...Object.keys(pageComponents), ...Object.keys(appendixComponents)]
+    const uniq = Array.from(new Set(keys))
+    return uniq.sort(sortPages)
+  }, [])
+  const currentIndex = availablePages.indexOf(pageNumber)
+  const prevPage = currentIndex > 0 ? availablePages[currentIndex - 1] : null
+  const nextPage = currentIndex >= 0 && currentIndex < availablePages.length - 1 ? availablePages[currentIndex + 1] : null
+
+  const prevLabel = prevPage ? (allRules.find((r) => r.page.toUpperCase() === prevPage)?.title || `Page ${prevPage}`) : 'Previous'
+  const nextLabel = nextPage ? (allRules.find((r) => r.page.toUpperCase() === nextPage)?.title || `Page ${nextPage}`) : 'Next'
 
   if (isLoading) {
     return (
@@ -986,18 +1080,20 @@ const ContentPage = () => {
               >
                 <span>Back to Index</span>
               </button>
-
-
             </div>
 
             <div className="flex items-center space-x-4">
               <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 rounded-sm backdrop-blur-sm border border-red-400/30">
-                <span className="text-white text-xs lg:text-base">Topic : {getTopicForPage(pageNumber)}</span>
+                <ul className="space-y-1 text-center">
+                  <li className="flex items-center space-x-2">
+                    <span className="text-white text-xs lg:text-base">{currentRule ? `Rule : ${currentRule.title}` : 'Rule title not found for this page.'}</span>
+                  </li>
+                </ul>
               </div>
 
               <button
                 onClick={openPDF}
-                className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-blue-600 hover:to-indigo-700 transition-all duration-300"
+                className="flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-red-600 hover:to-pink-700 transition-all duration-300"
               >
                 <span>Document</span>
               </button>
@@ -1016,8 +1112,8 @@ const ContentPage = () => {
                 <hr className="border-white/20"/>
                 <ul className="mt-2 space-y-1 text-center">
                   <li className="flex items-center space-x-2">
-                    <span className="text-blue-300">Topic : </span>
-                    <span className="text-white font-normal">{getTopicForPage(pageNumber)}</span>
+                    <span className="text-orange-200">Rule : </span>
+                    <span className="text-white font-normal">{currentRule ? currentRule.title : 'Rule title not found for this page.'}</span>
                   </li>
                 </ul>
               </div>
@@ -1027,65 +1123,37 @@ const ContentPage = () => {
           <div className="lg:p-6 p-1">
             <ContentComponent />
           </div>
-        </div>
-      </div>
 
-      {/* Navigation Buttons - At bottom of content */}
-      <div className="mt-1 mb-1 p-3">
-        <div className="flex items-center justify-between space-x-8">
-          {/* Previous Topic Button */}
-          <button
-            onClick={() => {
-              const prevPage = getPreviousPage(pageNumber)
-              if (prevPage) {
-                router.push(`/accident/content/${prevPage}`)
-              }
-            }}
-            disabled={!getPreviousPage(pageNumber)}
-            className={`flex flex-col items-center space-y-1 px-3 py-2 rounded-sm text-white transition-all duration-300 ${
-              getPreviousPage(pageNumber)
-                ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:scale-105'
-                : 'bg-gray-500 cursor-not-allowed opacity-50'
-            }`}
-          >
-            <span className='text-xs lg:text-sm flex items-center justify-center gap-1'>
-              Previous
-            </span>
-            <hr className="border-white/30 w-full my-1" />
-            <span className='text-xs lg:text-sm'>
-              {(() => {
-                const prevPage = getPreviousPage(pageNumber)
-                return prevPage ? getTopicForPage(prevPage) : "Previous"
-              })()}
-            </span>
-          </button>
+          {/* Navigation Buttons */}
+          <div className="mt-1 mb-1 p-3">
+            <div className="flex items-center justify-between space-x-8">
+              {/* Previous */}
+              <button
+                onClick={() => prevPage && router.push(`/accident/content/${prevPage}`)}
+                disabled={!prevPage}
+                className={`flex flex-col items-center space-y-1 px-3 py-2 rounded-sm text-white transition-all duration-300 ${
+                  prevPage ? 'bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 hover:scale-105' : 'bg-gray-500 cursor-not-allowed opacity-50'
+                }`}
+              >
+                <span className='text-xs lg:text-sm flex items-center justify-center gap-1'>Previous</span>
+                <hr className="border-white/30 w-full my-1" />
+                <span className='text-xs lg:text-sm'>{prevLabel}</span>
+              </button>
 
-          {/* Next Topic Button */}
-          <button
-            onClick={() => {
-              const nextPage = getNextPage(pageNumber)
-              if (nextPage) {
-                router.push(`/accident/content/${nextPage}`)
-              }
-            }}
-            disabled={!getNextPage(pageNumber)}
-            className={`flex flex-col items-center space-y-1 px-3 py-2 rounded-sm text-white transition-all duration-300 ${
-              getNextPage(pageNumber)
-                ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:scale-105'
-                : 'bg-gray-500 cursor-not-allowed opacity-50'
-            }`}
-          >
-            <span className='text-xs lg:text-sm flex items-center justify-center gap-1'>
-              Next
-            </span>
-            <hr className="border-white/30 w-full my-1" />
-            <span className='text-xs lg:text-sm'>
-              {(() => {
-                const nextPage = getNextPage(pageNumber)
-                return nextPage ? getTopicForPage(nextPage) : "Next"
-              })()}
-            </span>
-          </button>
+              {/* Next */}
+              <button
+                onClick={() => nextPage && router.push(`/accident/content/${nextPage}`)}
+                disabled={!nextPage}
+                className={`flex flex-col items-center space-y-1 px-3 py-2 rounded-sm text-white transition-all duration-300 ${
+                  nextPage ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:scale-105' : 'bg-gray-500 cursor-not-allowed opacity-50'
+                }`}
+              >
+                <span className='text-xs lg:text-sm flex items-center justify-center gap-1'>Next</span>
+                <hr className="border-white/30 w-full my-1" />
+                <span className='text-xs lg:text-sm'>{nextLabel}</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1093,17 +1161,10 @@ const ContentPage = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-4 bg-gradient-to-tr from-red-600 via-red-400 to-red-700 text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:from-red-700 hover:to-red-500 transition-all duration-300 z-50 flex items-center justify-center animate-pulse"
+          className="fixed bottom-6 right-4 bg-gradient-to-tr from-red-600 via-orange-500 to-amber-600 text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:from-red-700 hover:to-orange-600 transition-all duration-300 z-50 flex items-center justify-center animate-pulse"
           aria-label="Scroll to top"
         >
-          {/* Up Arrow Icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-5 h-5"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
           </svg>
         </button>
@@ -1113,3 +1174,5 @@ const ContentPage = () => {
 }
 
 export default ContentPage
+
+

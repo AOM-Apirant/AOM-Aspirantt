@@ -86,9 +86,9 @@ const AMAppendix = () => {
       description: "Essential first aid procedures and medical response guidelines",
       pageRange: "139 to 147",
       content: [
-        { number: "1", title: "Aim / Objectives", page: "139" },
-        { number: "2", title: "Contents of the First Aid box", page: "139" },
-        { number: "3", title: "Types of Accident Relief Medical Equipment", page: "139" },
+        { number: "1", title: "Aim / Objectives", page: "139A" },
+        { number: "2", title: "Contents of the First Aid box", page: "139B" },
+        { number: "3", title: "Types of Accident Relief Medical Equipment", page: "139C" },
         { number: "4", title: "Steps to be followed while rendering effective help to a person", page: "140" },
         { number: "5", title: "ASPHYXIA (SUFFOCATION)", page: "141" },
         { number: "6", title: "SHOCK", page: "142" },
