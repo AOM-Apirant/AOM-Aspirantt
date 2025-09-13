@@ -24,7 +24,7 @@ const AMChapterPage4B = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-amber-100 to-orange-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-IV
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">EQUIPMENT FAILURES</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
@@ -57,7 +57,6 @@ const AMChapterPage4B = () => {
                     <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-amber-400/20">
                       <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                         <p className="flex items-start gap-3">
-                          <span className="mt-1 text-amber-400 text-xl">🔧</span>
                           <span>
                             Equipment will be considered as failed if it is not able to perform the prescribed function within the prescribed time limit. These include all failures of railway equipment i.e.:
                           </span>

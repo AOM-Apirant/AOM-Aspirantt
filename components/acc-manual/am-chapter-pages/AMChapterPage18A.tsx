@@ -22,7 +22,9 @@ const AMChapterPage18A = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">COMMERCIAL INSPECTORS / COMMERCIAL OFFICIALS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +44,7 @@ const AMChapterPage18A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -79,7 +81,7 @@ const AMChapterPage18A = () => {
                               <span className="mt-1 text-green-400 text-xl">3.</span>
                               <div>
                                 <span className="text-white">Assistance to passengers shall be extended by providing</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-blue-400 text-lg">a)</span>
                                     <span className="text-white">Drinking water and refreshments free of cost.</span>
@@ -125,7 +127,7 @@ const AMChapterPage18A = () => {
                               <span className="mt-1 text-green-400 text-xl">5.</span>
                               <div>
                                 <span className="text-white">Ex-Gratia Payment as applicable.</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-orange-400 text-lg">a)</span>
                                     <span className="text-white">Arrange ex-gratia payment on the spot to the injured and next of kin of dead as per extant rules.</span>
@@ -145,7 +147,7 @@ const AMChapterPage18A = () => {
                               <span className="mt-1 text-green-400 text-xl">6.</span>
                               <div>
                                 <span className="text-white">Information to General Public.</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-purple-400 text-lg">a)</span>
                                     <span className="text-white">Open information counters and booths for giving information to the Public regarding the names of the injured, dead etc.,</span>
@@ -181,7 +183,7 @@ const AMChapterPage18A = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mt-6 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-3 p-2 rounded-full mr-4">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

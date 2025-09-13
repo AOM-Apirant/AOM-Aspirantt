@@ -23,7 +23,7 @@ const AMChapterPage3F = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-rose-100 to-pink-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-III
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-pink-300 mb-4">INDICATIVE ACCIDENTS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-pink-600 mx-auto mb-6 rounded-full"></div>
@@ -61,19 +61,19 @@ const AMChapterPage3F = () => {
                           </span>
                         </p>
                         <div className="space-y-4">
-                          <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-4 rounded-lg border border-purple-400/20">
+                          <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 lg:p-4 p-2 rounded-lg border border-purple-400/20">
                             <p className="text-purple-200 font-semibold mb-2 flex items-center gap-2">
                               <span className="text-purple-400">🚫</span>
                               a) Averted collision (Classification – F)
                             </p>
                           </div>
-                          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-4 rounded-lg border border-blue-400/20">
+                          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 lg:p-4 p-2 rounded-lg border border-blue-400/20">
                             <p className="text-blue-200 font-semibold mb-2 flex items-center gap-2">
                               <span className="text-blue-400">🚧</span>
                               b) Breach of block rules (Classification – G)
                             </p>
                           </div>
-                          <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 p-4 rounded-lg border border-red-400/20">
+                          <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-4 p-2 rounded-lg border border-red-400/20">
                             <p className="text-red-200 font-semibold mb-2 flex items-center gap-2">
                               <span className="text-red-400">🚨</span>
                               c) Train passing signal at danger (Classification – H)

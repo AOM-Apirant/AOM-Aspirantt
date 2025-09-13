@@ -23,7 +23,7 @@ const AMChapterPage7D = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-IV
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">DISTRIBUTION OF THE ACCIDENT MANUAL</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
@@ -44,7 +44,7 @@ const AMChapterPage7D = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -53,13 +53,57 @@ const AMChapterPage7D = () => {
                       Distribution of the Accident Manual
                     </h3>
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
-                      <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
-                        <p className="flex items-start gap-3">
-                          <span className="mt-1 text-blue-400 text-xl">📋</span>
-                          <span>
-                            Copy of the Accident Manual shall be available with each branch of Zonal Head quarters / Divisional Head quarters, all Officers, all departments of Control Office, Stations, SM&apos;s office, CCC/CC, C&W depots, Offices of SSEs / SEs of Permanent way / Works, S&T, Electrical, Mechanical, Inspectors of Loco / Traffic / Commercial / Train Examiners / P.Way / OHE / RPF / GRP, ARTs / MRTs / Crane Specials / Track Machines / Trolleys / Health Units / RPF posts / GRP posts, each Station Master, Loco Pilot, Tower Cars, Guard, Training Centres, Members of Civil Defence Organisation and other Railway servants as prescribed by Special Instructions.
-                          </span>
-                        </p>
+                      <div className="text-gray-100 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6 bg-gradient-to-br from-blue-800/60 via-indigo-800/60 to-purple-800/60 rounded-2xl shadow-xl p-6 border border-blue-400/20 backdrop-blur-md">
+                        <h4 className="lg:text-2xl text-xl font-bold text-indigo-200 mb-4 flex items-center text-center gap-2">
+                          Distribution of the Accident Manual
+                        </h4>
+                        <ul className="space-y-3 pl-0">
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 text-2xl mt-1">🏢</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Administrative Offices:</span> All branches of Zonal and Divisional Headquarters, all Officers.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-indigo-400 text-2xl mt-1">🖥️</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Control & Operations:</span> All departments of Control Office, Stations, Station Masters&apos; offices, CCC/CC, C&W Depots.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-purple-400 text-2xl mt-1">🔧</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Technical Sections:</span> Offices of SSEs/SEs (Permanent Way, Works, S&T, Electrical, Mechanical), Inspectors (Loco, Traffic, Commercial, Train Examiners, P.Way, OHE, RPF, GRP).
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-green-400 text-2xl mt-1">🚂</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Rolling Stock & Emergency:</span> ARTs, MRTs, Crane Specials, Track Machines, Trolleys, Tower Cars.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-yellow-400 text-2xl mt-1">👨‍✈️</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Key Personnel:</span> Each Station Master, Loco Pilot, Guard.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-pink-400 text-2xl mt-1">🏥</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Support & Safety:</span> Health Units, Training Centres, RPF Posts, GRP Posts, Members of Civil Defence Organisation.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-cyan-400 text-2xl mt-1">📑</span>
+                            <span>
+                              <span className="font-semibold text-indigo-100">Others:</span> All other Railway servants as prescribed by Special Instructions.
+                            </span>
+                          </li>
+                        </ul>
+                        <div className="mt-4 text-indigo-200 italic text-sm">
+                          <span>Every location and personnel listed above must have access to the Accident Manual to ensure preparedness and compliance with railway safety protocols.</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -70,7 +114,7 @@ const AMChapterPage7D = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mt-6 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-3 p-2 rounded-full mr-4">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

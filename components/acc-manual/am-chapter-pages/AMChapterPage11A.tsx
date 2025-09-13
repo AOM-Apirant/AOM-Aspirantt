@@ -23,8 +23,9 @@ const AMChapterPage11A = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              202
+              CHAPTER-II
             </h1>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Rule 202</h2>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">INDICATIVE ACCIDENTS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -44,7 +45,7 @@ const AMChapterPage11A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6 text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6 text-center">
                       <span className="bg-gradient-to-r from-emerald-400 to-emerald-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -86,7 +87,7 @@ const AMChapterPage11A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6 text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6 text-center">
                       <span className="bg-gradient-to-r from-amber-400 to-amber-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -128,7 +129,7 @@ const AMChapterPage11A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6 text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6 text-center">
                       <span className="bg-gradient-to-r from-rose-400 to-rose-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -155,7 +156,7 @@ const AMChapterPage11A = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 mt-8 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col items-center justify-center gap-3">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col items-center justify-center gap-3">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 p-3 rounded-full">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

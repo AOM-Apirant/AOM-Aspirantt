@@ -23,7 +23,7 @@ const AMChapterPage3E = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-III
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-teal-300 mb-4">YARD ACCIDENTS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>

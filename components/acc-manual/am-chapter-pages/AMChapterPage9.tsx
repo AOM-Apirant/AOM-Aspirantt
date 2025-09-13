@@ -55,7 +55,7 @@ const AMChapterPage9 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
                       <span className="bg-gradient-to-r from-red-400 to-red-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -67,7 +67,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-red-500/10 to-red-600/10 lg:p-4 p-2 rounded-lg border border-red-400/20">
                         <h4 className="text-lg font-semibold text-red-300 mb-2">A.1</h4>
                         <p className="text-white">Collision involving a train carrying passengers, resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to Railway property with value exceeding 2 crore, and/or</p>
                           <p className="text-gray-200">(iii) interruption of running on any important through line for at least 24 hours.</p>
@@ -77,7 +77,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-red-500/10 to-red-600/10 p-4 rounded-lg border border-red-400/20">
                         <h4 className="text-lg font-semibold text-red-300 mb-2">A.2</h4>
                         <p className="text-white">Collision involving a train not carrying passengers, resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to Railway property with value exceeding 2 crore, and/or</p>
                           <p className="text-gray-200">(iii) interruption of running on any important through line for at least 24 hours.</p>
@@ -112,7 +112,7 @@ const AMChapterPage9 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
                       <span className="bg-gradient-to-r from-orange-400 to-orange-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
@@ -124,7 +124,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-orange-500/10 to-orange-600/10 lg:p-4 p-2 rounded-lg border border-orange-400/20">
                         <h4 className="text-lg font-semibold text-orange-300 mb-2">B.1</h4>
                         <p className="text-white">Fire in a train carrying passengers, resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) loss to Railway property with value exceeding 2 crore, and/or</p>
                           <p className="text-gray-200">(iii) interruption of running on any important through line for at least 24 hours.</p>
@@ -134,7 +134,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-orange-500/10 to-orange-600/10 lg:p-4 p-2 rounded-lg border border-orange-400/20">
                         <h4 className="text-lg font-semibold text-orange-300 mb-2">B.2</h4>
                         <p className="text-white">Fire in a train not carrying passengers, resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to Railway property with value exceeding 2 crore, and/or</p>
                           <p className="text-gray-200">(iii) interruption of running on any important through line for at least 24 hours.</p>
@@ -144,7 +144,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-orange-500/10 to-orange-600/10 lg:p-4 p-2 rounded-lg border border-orange-400/20">
                         <h4 className="text-lg font-semibold text-orange-300 mb-2">B.3</h4>
                         <p className="text-white">Fire in a train carrying passengers not falling under B1 above but resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3"> 
                           <p className="text-gray-200">(i) damage to Railway property is 50,000 or above and upto 2 crore, and/or</p>
                           <p className="text-gray-200">(ii) interruption to traffic is more than the &quot;threshold Value,&quot; and/or</p>
                           <p className="text-gray-200">(iii) detaching of coaching stock from the train.</p>
@@ -154,7 +154,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-orange-500/10 to-orange-600/10 lg:p-4 p-2 rounded-lg border border-orange-400/20">
                         <h4 className="text-lg font-semibold text-orange-300 mb-2">B.4</h4>
                         <p className="text-white">Fire in a train not carrying passengers and not falling under B.2 above, but resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) damaged to Railway property is 50,000 or above and upto 2 crore, and/or</p>
                           <p className="text-gray-200">(ii) interruption to traffic is more than the threshold value, and/or</p>
                           <p className="text-gray-200">(iii) detaching of goods stock from the train.</p>
@@ -194,7 +194,7 @@ const AMChapterPage9 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
                       <span className="bg-gradient-to-r from-green-400 to-green-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -206,7 +206,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-green-500/10 to-green-600/10 lg:p-4 p-2 rounded-lg border border-green-400/20">
                         <h4 className="text-lg font-semibold text-green-300 mb-2">C.1</h4>
                         <p className="text-white">Trains carrying passengers running into road traffic and/or road traffic running into such trains at manned level crossings resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property, which is more than the threshold value, and/or</p>
                           <p className="text-gray-200">(iii) interruption to traffic which is more than the threshold value.</p>
@@ -216,7 +216,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-green-500/10 to-green-600/10 lg:p-4 p-2 rounded-lg border border-green-400/20">
                         <h4 className="text-lg font-semibold text-green-300 mb-2">C.2</h4>
                         <p className="text-white">Trains not carrying passengers running into road traffic and/or road traffic running into such trains at manned level crossings resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property which is more than the threshold value and/or</p>
                           <p className="text-gray-200">(iii) interruption to traffic which is more than the threshold value.</p>
@@ -226,7 +226,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-green-500/10 to-green-600/10 lg:p-4 p-2 rounded-lg border border-green-400/20">
                         <h4 className="text-lg font-semibold text-green-300 mb-2">C.3</h4>
                         <p className="text-white">Trains carrying passengers running into road traffic and/or road traffic running into such trains at unmanned level crossings resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property which is more than the threshold value and/or</p>
                           <p className="text-gray-200">(iii) interruption to traffic is more than the threshold value.</p>
@@ -236,7 +236,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-green-500/10 to-green-600/10 lg:p-4 p-2 rounded-lg border border-green-400/20">    
                         <h4 className="text-lg font-semibold text-green-300 mb-2">C.4</h4>
                         <p className="text-white">Trains not carrying passengers running into road traffic and/or road traffic running into such trains at unmanned level crossings resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property and/or</p>
                           <p className="text-gray-200">(iii) interruption to traffic is more than the threshold value.</p>
@@ -286,7 +286,7 @@ const AMChapterPage9 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
                       <span className="bg-gradient-to-r from-purple-400 to-purple-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -298,7 +298,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/10 lg:p-4 p-2 rounded-lg border border-purple-400/20">
                         <h4 className="text-lg font-semibold text-purple-300 mb-2">D.1</h4>
                         <p className="text-white">Derailment of a train carrying passengers and resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property with value exceeding 2 crore, and/or</p>
                           <p className="text-gray-200">(iii) interruption of running on any important through line for at least 24 hours.</p>
@@ -308,7 +308,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/10 lg:p-4 p-2 rounded-lg border border-purple-400/20">
                         <h4 className="text-lg font-semibold text-purple-300 mb-2">D.2</h4>
                         <p className="text-white">Derailment of a train not carrying passengers and resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property with value exceeding 2 crore, and/or</p>
                           <p className="text-gray-200">(iii) interruption of running on any important through line for at least 24 hours.</p>
@@ -348,7 +348,7 @@ const AMChapterPage9 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col items-center gap-3 mt-6">
                       <span className="bg-gradient-to-r from-indigo-400 to-indigo-500 p-2 rounded-lg">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -360,7 +360,7 @@ const AMChapterPage9 = () => {
                       <div className="bg-gradient-to-r from-indigo-500/10 to-indigo-600/10 lg:p-4 p-2 rounded-lg border border-indigo-400/20">
                         <h4 className="text-lg font-semibold text-indigo-300 mb-2">E.1</h4>
                         <p className="text-white">Train running over or against any obstruction including fixed structure, but other than those included under class &apos;C&apos;, resulting in</p>
-                        <div className="ml-6 mt-2 space-y-1">
+                        <div className="ml-1 mt-5 space-y-3">
                           <p className="text-gray-200">(i) loss of human life and/or grievous hurt, and/or</p>
                           <p className="text-gray-200">(ii) damage to railway property which is more than threshold value and/or</p>
                           <p className="text-gray-200">(iii) interruption to traffic which is more than the threshold value.</p>
@@ -380,7 +380,7 @@ const AMChapterPage9 = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 mt-8 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col items-center justify-center gap-3">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col items-center justify-center gap-3">    
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-4 p-2 rounded-full">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

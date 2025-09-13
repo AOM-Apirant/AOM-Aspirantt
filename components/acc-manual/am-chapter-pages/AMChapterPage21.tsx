@@ -22,7 +22,9 @@ const AMChapterPage21 = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">MEDICAL STAFF</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +44,7 @@ const AMChapterPage21 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -105,7 +107,7 @@ const AMChapterPage21 = () => {
                                 <span className="mt-1 text-green-400 text-xl">xii)</span>
                                 <span className="text-white">Make out a list of injured with the following details.</span>
                               </div>
-                              <div className="ml-6 space-y-2">
+                              <div className="ml-1 space-y-2">
                                 <div className="flex items-start gap-3">
                                   <span className="mt-1 text-yellow-400 text-lg">a)</span>
                                   <span className="text-white">Simple</span>
@@ -131,13 +133,13 @@ const AMChapterPage21 = () => {
                                 <span className="mt-1 text-green-400 text-xl">xvi)</span>
                                 <span className="text-white">Details of the injured to be recorded.</span>
                               </div>
-                              <div className="ml-6 space-y-4">
+                              <div className="ml-1 space-y-4">
                                 <div className="space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-yellow-400 text-lg">a)</span>
                                     <span className="text-white">Conscious</span>
                                   </div>
-                                  <div className="ml-6 space-y-1 text-sm">
+                                  <div className="ml-1 space-y-1 text-sm">
                                     <div>Name :</div>
                                     <div>Sex :</div>
                                     <div>Age</div>
@@ -153,7 +155,7 @@ const AMChapterPage21 = () => {
                                     <span className="mt-1 text-yellow-400 text-lg">b)</span>
                                     <span className="text-white">Unconscious</span>
                                   </div>
-                                  <div className="ml-6 space-y-1 text-sm">
+                                  <div className="ml-1 space-y-1 text-sm">
                                     <div>Approximate age :</div>
                                     <div>Sex :</div>
                                     <div>Identification Marks:</div>
@@ -210,7 +212,7 @@ const AMChapterPage21 = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mt-6 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-3 p-2 rounded-full mr-4">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

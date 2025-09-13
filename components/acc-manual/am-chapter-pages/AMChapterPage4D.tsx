@@ -23,7 +23,7 @@ const AMChapterPage4D = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-red-100 to-rose-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-IV
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-rose-300 mb-4">SABOTAGE</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-rose-600 mx-auto mb-6 rounded-full"></div>

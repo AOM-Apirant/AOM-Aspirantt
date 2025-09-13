@@ -22,7 +22,9 @@ const AMChapterPage16C = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">OFFICER OR SENIOR SUPERVISOR FIRST REACHING THE SITE</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +44,7 @@ const AMChapterPage16C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -52,14 +54,14 @@ const AMChapterPage16C = () => {
                     </h3>
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                       <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
-                        <div className="mt-6 space-y-6">
+                        <div className="mt-6 space-y-6">  
                           {/* Duty 1 */}
                           <div className="space-y-3">
                             <div className="flex items-start gap-3">
                               <span className="mt-1 text-green-400 text-xl">1.</span>
                               <div>
                                 <span className="text-white">The Officer or the Senior Supervisor first reaching the site of the accident shall check up:-</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-blue-400 text-lg">a)</span>
                                     <span className="text-white">Whether protection has been done.</span>
@@ -113,7 +115,7 @@ const AMChapterPage16C = () => {
                               <span className="mt-1 text-green-400 text-xl">5.</span>
                               <div>
                                 <span className="text-white">The following points require special attention:</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-blue-400 text-lg">a)</span>
                                     <span className="text-white">The condition of the track, with special reference to the alignment, gauge, cross- levels, curvature, super elevation and rail headwear:</span>
@@ -181,7 +183,7 @@ const AMChapterPage16C = () => {
                               <span className="mt-1 text-green-400 text-xl">8.</span>
                               <div>
                                 <span className="text-white">If, however, sabotage is suspected, in addition to noting and preservation of all such clues, no object should be disturbed unless the police have had an opportunity of making thorough inspection of the site. However, if there is delay in the arrival of Civil and Police officials at the site of the accident, the senior most Railway Official at site may, at his discretion, jack up any portion of a coach or shift any property to the minimum extent necessary, after noting its original position by sketch to extricate human beings trapped under it, in the shortest possible time to save life and minimize sufferings. Normal traffic, however, should not be permitted without consulting the police.</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-orange-400 text-lg">a)</span>
                                     <span className="text-white">Further specific enquiry should also be made from the Commissioner of Railway Safety in case of suspected sabotage to ascertain if he would like to inspect the site before the clearance operations commence.</span>
@@ -275,7 +277,7 @@ const AMChapterPage16C = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mt-6 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-3 p-2 rounded-full mr-4">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

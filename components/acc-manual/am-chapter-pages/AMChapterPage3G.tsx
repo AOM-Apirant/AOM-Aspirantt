@@ -23,7 +23,7 @@ const AMChapterPage3G = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-slate-100 to-gray-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-III
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-gray-300 mb-4">AVERTED COLLISION</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-gray-600 mx-auto mb-6 rounded-full"></div>
@@ -62,7 +62,6 @@ const AMChapterPage3G = () => {
                         </p>
                         <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 p-4 rounded-lg border border-red-400/20">
                           <p className="text-red-200 font-semibold mb-2 flex items-center gap-2">
-                            <span className="text-red-400">⚠️</span>
                             Such an occurrence may not be treated as an &apos;Averted Collision&apos;:
                           </p>
                           <div className="space-y-3">

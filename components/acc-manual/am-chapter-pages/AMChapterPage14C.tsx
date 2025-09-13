@@ -22,7 +22,9 @@ const AMChapterPage14C = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">STATION MASTER / STATION MANAGER</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +44,7 @@ const AMChapterPage14C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -53,7 +55,6 @@ const AMChapterPage14C = () => {
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                       <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                         <p className="flex items-start gap-3">
-                          <span className="mt-1 text-blue-400 text-xl">📋</span>
                           <span>
                             [The Station Masters on either side of the block section if the accident occurred in the mid-section or the station master of the station where the accident has occurred.]
                           </span>
@@ -86,7 +87,7 @@ const AMChapterPage14C = () => {
                               <span className="mt-1 text-green-400 text-xl">3.</span>
                               <div>
                                 <span className="text-white">Control to be advised regarding –</span>
-                                <div className="ml-6 mt-2 space-y-2">
+                                <div className="ml-1 mt-2 space-y-2">
                                   <div className="flex items-start gap-3">
                                     <span className="mt-1 text-blue-400 text-lg">a.</span>
                                     <span className="text-white">Time, and nature of accident.</span>
@@ -176,14 +177,14 @@ const AMChapterPage14C = () => {
                               <span className="mt-1 text-green-400 text-xl">9.</span>
                               <div>
                                 <span className="text-white">He will arrange for the following assistance:</span>
-                                <div className="ml-6 mt-2 space-y-4">
+                                <div className="ml-1 mt-2 space-y-4">
                                   {/* Medical Assistance */}
                                   <div className="space-y-2">
                                     <div className="flex items-start gap-3">
                                       <span className="mt-1 text-red-400 text-lg">a)</span>
                                       <span className="text-red-200 font-semibold">Medical Assistance:</span>
                                     </div>
-                                    <div className="ml-6 space-y-2">
+                                    <div className="ml-1 space-y-2">
                                       <div className="flex items-start gap-3">
                                         <span className="mt-1 text-red-400 text-lg">(i)</span>
                                         <span className="text-white">Assistance must be called for Ambulance service from the local Hospitals, Railway Hospitals and Health Units, Civil and Army Hospitals, St. John&apos;s Ambulance brigade, qualified first-aiders, fire fighting personnel, and other qualified medical personnel available on trains and at stations.</span>
@@ -209,7 +210,7 @@ const AMChapterPage14C = () => {
                                       <span className="mt-1 text-orange-400 text-lg">b)</span>
                                       <span className="text-orange-200 font-semibold">Refreshments to Passengers:</span>
                                     </div>
-                                    <div className="ml-6 space-y-2">
+                                    <div className="ml-1 space-y-2">
                                       <div className="flex items-start gap-3">
                                         <span className="mt-1 text-orange-400 text-lg">(i)</span>
                                         <span className="text-white">Advise DCM / ACM for making available food and refreshments to stranded passengers.</span>
@@ -227,7 +228,7 @@ const AMChapterPage14C = () => {
                                       <span className="mt-1 text-yellow-400 text-lg">c)</span>
                                       <span className="text-yellow-200 font-semibold">Transport Assistance:</span>
                                     </div>
-                                    <div className="ml-6 space-y-2">
+                                    <div className="ml-1 space-y-2">
                                       <div className="flex items-start gap-3">
                                         <span className="mt-1 text-yellow-400 text-lg">(i)</span>
                                         <span className="text-white">Arrangements shall be made to transport the injured on top priority by road or by a special train to the hospitals.</span>
@@ -249,7 +250,7 @@ const AMChapterPage14C = () => {
                                       <span className="mt-1 text-blue-400 text-lg">d)</span>
                                       <span className="text-blue-200 font-semibold">Security Assistance:</span>
                                     </div>
-                                    <div className="ml-6">
+                                    <div className="ml-1">
                                       <span className="text-white">Station Master shall advise officials of Government Railway Police, State Police and the Railway Protection force to provide security to the private and railway property at the site of the accident. The Station master will also lodge an FIR with the jurisdiction GRP Inspector in case sabotage is suspected for the accident.</span>
                                     </div>
                                   </div>
@@ -260,7 +261,7 @@ const AMChapterPage14C = () => {
                                       <span className="mt-1 text-purple-400 text-lg">e)</span>
                                       <span className="text-purple-200 font-semibold">Communication Assistance:</span>
                                     </div>
-                                    <div className="ml-6 space-y-2">
+                                    <div className="ml-1 space-y-2">
                                       <div className="flex items-start gap-3">
                                         <span className="mt-1 text-purple-400 text-lg">(i)</span>
                                         <span className="text-white">Information counters to be opened at important stations and at the accident site.</span>
@@ -320,7 +321,7 @@ const AMChapterPage14C = () => {
 
           {/* Key Points Summary */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mt-6 border border-white/20">
-            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
+            <h3 className="lg:text-3xl text-xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
               <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-3 p-2 rounded-full mr-4">
                 <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

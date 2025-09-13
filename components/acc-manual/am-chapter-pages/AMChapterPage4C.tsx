@@ -23,7 +23,7 @@ const AMChapterPage4C = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-slate-100 to-gray-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER-IV
+              CHAPTER-I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-gray-300 mb-4">UNUSUAL INCIDENTS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-slate-500 to-gray-600 mx-auto mb-6 rounded-full"></div>
@@ -55,7 +55,6 @@ const AMChapterPage4C = () => {
                     <div className="bg-gradient-to-r from-slate-500/10 to-gray-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-slate-400/20">
                       <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                         <p className="flex items-start gap-3">
-                          <span className="mt-1 text-slate-400 text-xl">🚨</span>
                           <span>
                             These include cases related to law and order resulting in train accidents or not resulting in train accidents and other incidents as follows:
                           </span>
