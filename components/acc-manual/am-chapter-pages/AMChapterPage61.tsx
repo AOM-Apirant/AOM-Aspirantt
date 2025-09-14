@@ -23,7 +23,7 @@ const AMChapterPage61 = () => {
               </div>
             </div>
             
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CHAPTER V</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CHAPTER V</h2>    
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               SIGNAL & TELECOMMUNICATION (POINTS & SIGNALS)
@@ -42,7 +42,7 @@ const AMChapterPage61 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -58,8 +58,8 @@ const AMChapterPage61 = () => {
               <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">📍</span>
                       </div>
                       <div className="flex-1">
@@ -67,7 +67,7 @@ const AMChapterPage61 = () => {
                         <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4">
                           <div className="flex items-center gap-3">
                             <span className="font-semibold text-gray-200">Name of the Station / Cabin:</span>
-                            <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                            <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_____________</span>
                           </div>
                         </div>
                       </div>
@@ -103,56 +103,56 @@ const AMChapterPage61 = () => {
                             <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-l-lg font-semibold">1</td>
                             <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10">Particulars of damage</td>
                             <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
                             <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-l-lg font-semibold">2</td>
                             <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10">Whether rod worked, D.W. worked, or power operated</td>
                             <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
                             <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-l-lg font-semibold">3</td>
                             <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10">Whether fitted with key lock or E.F.P.L</td>
                             <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
                             <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-l-lg font-semibold">4</td>
                             <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10">Whether fitted with lock bar or provided with track circuit</td>
                             <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
                             <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-l-lg font-semibold">5</td>
                             <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10">Whether fitted with linear detector, rotary detector (direct/indirect), or electrical detector</td>
                             <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
                             <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10 rounded-l-lg font-semibold">6</td>
                             <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10">Position of levers of points and/or detector</td>
                             <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
                             <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-l-lg font-semibold">7</td>
                             <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10">Noted dimensions of point switch and lock slides</td>
                             <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                           <tr>
                             <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-l-lg font-semibold">8</td>
                             <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10">Last movement done over the points just before the accident and whether signaled or un-signaled</td>
                             <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-r-lg">
-                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                              <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                             </td>
                           </tr>
                         </tbody>
@@ -200,56 +200,56 @@ const AMChapterPage61 = () => {
                               <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-l-lg font-semibold">9</td>
                               <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10">Position of Signal arm and aspect displayed by signals concerned</td>
                               <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr className="border-b border-white/10">
                               <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-l-lg font-semibold">10</td>
                               <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10">Position of lock plunger whether fully plunged or otherwise with dimensions</td>
                               <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr className="border-b border-white/10">
                               <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-l-lg font-semibold">11</td>
                               <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10">Position of lock bar with reference to rail table, with dimensions of clearances etc.</td>
                               <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr className="border-b border-white/10">
                               <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-l-lg font-semibold">12</td>
                               <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10">Damage of lock bar with reference to rail table, with dimensions of clearance etc.</td>
                               <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr className="border-b border-white/10">
                               <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-l-lg font-semibold">13</td>
                               <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10">Damage to stretcher bar/lockbar/detector rods etc., with sketches of components affected</td>
                               <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr className="border-b border-white/10">
                               <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10 rounded-l-lg font-semibold">14</td>
                               <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10">Any other abnormal features of the components or assembly of points noticed with details of abnormal clearances (If any)</td>
                               <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr className="border-b border-white/10">
                               <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-l-lg font-semibold">15</td>
                               <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10">Any other abnormal features of the signal fittings and components noticed with details</td>
                               <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span>
                               </td>
                             </tr>
                             <tr>
                               <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-l-lg font-semibold">16</td>
                               <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10">Remarks</td>
                               <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-r-lg">
-                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                                <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">_________</span> 
                               </td>
                             </tr>
                           </tbody>
@@ -311,63 +311,63 @@ const AMChapterPage61 = () => {
                         <td className="p-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-l-lg font-semibold">1</td>
                         <td className="p-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10">Name of the Station / Cabin</td>
                         <td className="p-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-l-lg font-semibold">2</td>
                         <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10">Block Section</td>
                         <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-l-lg font-semibold">3</td>
                         <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10">System of Train Working</td>
                         <td className="p-2 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-l-lg font-semibold">4</td>
                         <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10">Position of block instrument / commutator / slide at both stations</td>
                         <td className="p-2 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-l-lg font-semibold">5</td>
                         <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10">Whether TSR taken into custody or not</td>
                         <td className="p-2 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span> 
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10 rounded-l-lg font-semibold">6</td>
                         <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10">Recorded entries in TSR of previous three movements in either direction</td>
                         <td className="p-2 bg-gradient-to-r from-lime-500/10 to-green-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-l-lg font-semibold">7</td>
                         <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10">Any discrepancies or overwriting noticed in TSR</td>
                         <td className="p-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-l-lg font-semibold">8</td>
                         <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10">Whether last stop signal interlocked with block. If so, any defect noticed.</td>
                         <td className="p-2 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr>
                         <td className="p-2 bg-gradient-to-r from-fuchsia-500/10 to-pink-500/10 rounded-l-lg font-semibold">9</td>
                         <td className="p-2 bg-gradient-to-r from-fuchsia-500/10 to-pink-500/10">Whether ESR or MSR provided & whether it was working satisfactorily</td>
                         <td className="p-2 bg-gradient-to-r from-fuchsia-500/10 to-pink-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                     </tbody>
@@ -387,7 +387,7 @@ const AMChapterPage61 = () => {
                           On single line, token number and train number involved, number of tokens in use on the section
                         </td>
                         <td className="p-2 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
@@ -395,7 +395,7 @@ const AMChapterPage61 = () => {
                           Any other irregularity of block working noticed
                         </td>
                         <td className="p-2 bg-gradient-to-r from-green-500/10 to-lime-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
@@ -403,7 +403,7 @@ const AMChapterPage61 = () => {
                           62B
                         </td>
                         <td className="p-2 bg-gradient-to-r from-yellow-500/10 to-amber-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                       <tr>
@@ -411,7 +411,7 @@ const AMChapterPage61 = () => {
                           Remarks
                         </td>
                         <td className="p-2 bg-gradient-to-r from-fuchsia-500/10 to-pink-500/10 rounded-r-lg">
-                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">__________________________</span>
+                          <span className="text-gray-400 bg-white/10 px-3 py-1 rounded-lg border border-white/20">____________</span>
                         </td>
                       </tr>
                     </tbody>

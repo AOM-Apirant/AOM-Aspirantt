@@ -409,7 +409,6 @@ const AMChapterPage64 = () => {
                 <h3 className="text-lg font-bold text-blue-300 mb-3">603.1 Keys of Accident Relief Train</h3>
                 <ol className="list-none space-y-3 text-gray-200">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-400 font-bold mt-0.5">①</span>
                     <span>
                       <span className="font-semibold text-blue-200">Storage of Keys:</span> 
                       <ul className="ml-5 mt-1 space-y-1 list-none">
@@ -483,7 +482,7 @@ const AMChapterPage64 = () => {
                     <span className="text-blue-400 font-bold mt-0.5">④</span>
                     <span>
                       <span className="font-semibold text-blue-200">Target Time for Starting ART:</span>
-                      <ul className="ml-5 mt-1 space-y-1 list-none">
+                      <ul className="ml-0 mt-1 space-y-3 list-none">
                         <li className="flex items-start gap-2">
                           <span className="text-blue-400">⏰</span>
                           <span>
@@ -552,7 +551,7 @@ const AMChapterPage64 = () => {
                 </ol>
               </div>
               <div className="mt-8 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
-                <div className="flex items-start gap-3">
+                <div className="flex flex-col items-center gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mt-1">
                     <span className="text-white font-bold text-lg">🔍</span>
                   </div>

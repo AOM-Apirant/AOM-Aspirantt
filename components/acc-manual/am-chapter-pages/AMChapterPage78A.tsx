@@ -42,7 +42,7 @@ const AMChapterPage78A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -61,7 +61,7 @@ const AMChapterPage78A = () => {
                   {/* Section 615a */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">⚕️</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -127,16 +127,39 @@ const AMChapterPage78A = () => {
                   {/* Section 615b */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📝</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
                             <h4 className="text-lg font-bold text-purple-300 mb-3 text-center">615(b) - Medical Records and Documentation</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            The Senior Medical Officer, shall, however, be responsible for recording details of injured and the treatment undertaken on the spot together with the particulars as to how they were disposed off etc., in the note / book which is provided along with the medical relief equipment. If it is found that the injured passengers have already been treated by either fellow passengers who may be Medical Practitioners or by Guards having First Aid Equipment in their van or by the Civil Medical authorities near the scene of accident or by any other non-railway individuals, everything shall be done to obtain complete notes of such persons on the lines detailed above. If necessary, a visit may be paid later to the local, civil or other hospitals where the injured have been admitted, and request the Medical Authorities to permit the Railway Doctor to take these notes. A complete list of the injured persons with full particulars of the injuries, etc., must then be sent to the Chief Medical Superintendent by first means by the Divisional Medical Officer or the Senior Medical Subordinate in-charge of the medical arrangements at the scene of the accident.
-                          </p>
+                          <ul className="list-none space-y-3 pl-0">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400">🗒️</span>
+                              <span className="text-gray-200">
+                                Senior Medical Officer must record details of the injured and treatment given on the spot in the provided medical relief note/book.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">👨‍⚕️</span>
+                              <span className="text-gray-200">
+                                If injured passengers were already treated by fellow passengers (Medical Practitioners), Guards with First Aid, Civil Medical authorities, or other non-railway individuals, obtain complete notes from them.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400">🏥</span>
+                              <span className="text-gray-200">
+                                If needed, visit local, civil, or other hospitals where injured are admitted and request Medical Authorities to allow the Railway Doctor to take these notes.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">📋</span>
+                              <span className="text-gray-200">
+                                A complete list of injured persons with full particulars of injuries must be sent to the Chief Medical Superintendent by the Divisional Medical Officer or Senior Medical Subordinate in charge at the accident scene.
+                              </span>
+                            </li>
+                          </ul>
 
                           <div className="space-y-4">
                             <div className="flex items-start gap-3">
@@ -247,7 +270,7 @@ const AMChapterPage78A = () => {
                   {/* Section 615c */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🤝</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -309,7 +332,7 @@ const AMChapterPage78A = () => {
                   {/* Section 615d */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📢</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">

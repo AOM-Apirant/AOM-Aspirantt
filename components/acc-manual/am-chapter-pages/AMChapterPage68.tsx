@@ -42,7 +42,7 @@ const AMChapterPage68 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -68,8 +68,8 @@ const AMChapterPage68 = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">604.1</span>
+                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">604.1</span>
                   Policy on Provision of Accident Relief Medical Equipment (IRPWM Rule 703)
                 </h4>
                 <ul className="list-none space-y-4 pl-0 text-gray-100">
@@ -109,8 +109,8 @@ const AMChapterPage68 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">604.2</span>
+                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">604.2</span>
                   Scale II – Equipment
                 </h4>
                 <ul className="list-none space-y-4 pl-0 text-gray-100">
@@ -135,11 +135,11 @@ const AMChapterPage68 = () => {
                 </ul>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">604.3</span>
+                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">604.3</span>
                   Portable Medical Kit for Accident (POMKA)
                 </h4>
-                <div className="bg-indigo-900/30 border-l-4 border-blue-400 rounded-lg p-4 text-indigo-100">
+                <div className="bg-indigo-900/30 border-blue-400 rounded-lg p-4 text-indigo-100">
                   <ul className="list-none space-y-3 pl-0">
                     <li className="flex items-start gap-3">
                       <span className="text-blue-400 mt-1">🧳</span>
@@ -163,11 +163,11 @@ const AMChapterPage68 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">604.4</span>
+                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">604.4</span>
                   Special First Aid Boxes
                 </h4>
-                <div className="bg-indigo-900/30 border-l-4 border-blue-400 rounded-lg p-4 text-indigo-100">
+                <div className="bg-indigo-900/30 border-blue-400 rounded-lg p-4 text-indigo-100">
                   <ul className="list-none space-y-3 pl-0">
                     <li className="flex items-start gap-3">
                       <span className="text-blue-400 mt-1">🚄</span>
@@ -203,11 +203,11 @@ const AMChapterPage68 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">604.5</span>
+                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">604.5</span>
                   First Aid Boxes
                 </h4>
-                <div className="bg-indigo-900/30 border-l-4 border-blue-400 rounded-lg p-4 text-indigo-100">
+                <div className="bg-indigo-900/30 border-blue-400 rounded-lg p-4 text-indigo-100">
                   <ul className="list-none space-y-3 pl-0">
                     <li className="flex items-start gap-3">
                       <span className="text-blue-400 mt-1">🧰</span>
@@ -249,11 +249,11 @@ const AMChapterPage68 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">604.6</span>
+                <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                  <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">604.6</span>
                   Maintenance of Keys for MRT & Medical Equipment <span className="text-xs text-indigo-300">(as per Rule 704 RMM)</span>
                 </h4>
-                <div className="bg-indigo-900/30 border-l-4 border-blue-400 rounded-lg p-4 text-indigo-100 space-y-6">
+                <div className="bg-indigo-900/30 border-blue-400 rounded-lg p-4 text-indigo-100 space-y-6">
                   <div>
                     <h5 className="font-semibold text-indigo-100 flex items-center gap-2 mb-2">
                       <span className="text-blue-400">🔑</span>

@@ -42,7 +42,7 @@ const AMChapterPage71 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -60,8 +60,8 @@ const AMChapterPage71 = () => {
                   
                   {/* Section 605.1 */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
-                    <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex items-center gap-2">
-                      <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold mr-2">605.1</span>
+                    <h4 className="text-xl lg:text-2xl font-semibold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
+                      <span className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white font-bold mr-2">605.1</span>
                       Location and composition of Medical Relief Trains (Scale-I)
                     </h4>
                     
@@ -78,7 +78,7 @@ const AMChapterPage71 = () => {
                       {/* Station 1 - Secunderabad */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1</span>
                           <h6 className="text-lg font-bold text-blue-300">Secunderabad</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -100,7 +100,7 @@ const AMChapterPage71 = () => {
                       {/* Station 2 - Kazipet */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">2.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">2</span>
                           <h6 className="text-lg font-bold text-blue-300">Kazipet</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -127,7 +127,7 @@ const AMChapterPage71 = () => {
                       {/* Vijayawada */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1</span>
                           <h6 className="text-lg font-bold text-blue-300">Vijayawada</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -144,7 +144,7 @@ const AMChapterPage71 = () => {
                       {/* Rajahmundry */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">2.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">2</span>
                           <h6 className="text-lg font-bold text-blue-300">Rajahmundry</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -161,7 +161,7 @@ const AMChapterPage71 = () => {
                       {/* Bitragunta */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">3.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">3</span>
                           <h6 className="text-lg font-bold text-blue-300">Bitragunta</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -185,7 +185,7 @@ const AMChapterPage71 = () => {
                       {/* Dharmavaram */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1</span>
                           <h6 className="text-lg font-bold text-blue-300">Dharmavaram</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -202,7 +202,7 @@ const AMChapterPage71 = () => {
                       {/* Renigunta */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">2.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">2</span>
                           <h6 className="text-lg font-bold text-blue-300">Renigunta</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -219,7 +219,7 @@ const AMChapterPage71 = () => {
                       {/* Guntakal */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">3.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">3</span>
                           <h6 className="text-lg font-bold text-blue-300">Guntakal</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -243,7 +243,7 @@ const AMChapterPage71 = () => {
                       {/* Nizamabad */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1</span>
                           <h6 className="text-lg font-bold text-blue-300">Nizamabad</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -267,7 +267,7 @@ const AMChapterPage71 = () => {
                       {/* Purna */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1</span>
                           <h6 className="text-lg font-bold text-blue-300">Purna</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -291,7 +291,7 @@ const AMChapterPage71 = () => {
                       {/* Akola */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-center gap-3 mb-3">
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1.</span>
+                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">1</span>
                           <h6 className="text-lg font-bold text-blue-300">Akola</h6>
                         </div>
                         <div className="ml-6 space-y-2">
@@ -308,7 +308,7 @@ const AMChapterPage71 = () => {
                     </div>
                   </div>
                   <div className="mb-8">
-                    <h4 className="text-xl font-bold text-pink-300 mb-4 flex items-center gap-2">
+                    <h4 className="text-xl font-bold text-pink-300 mb-4 flex flex-col text-center items-center gap-2">
                       <span className="text-pink-400">📍</span>
                       605.2 Location of Accident Relief Medical Equipment (Scale-II)
                     </h4>
@@ -404,7 +404,7 @@ const AMChapterPage71 = () => {
                     </div>
                   </div>
                   <div className="mt-8">
-                    <h4 className="text-pink-300 font-bold text-lg flex items-center gap-2 mb-3">
+                    <h4 className="text-pink-300 font-bold text-lg flex flex-col text-center items-center gap-2 mb-3">
                       <span className="text-pink-400 text-xl">🚄</span>
                       605.3 Stabling and Maintenance of Medical Relief Trains
                     </h4>
@@ -443,13 +443,13 @@ const AMChapterPage71 = () => {
                   </div>
                 </div>
                 <div className="mt-8">
-                  <h5 className="text-pink-300 font-bold text-base flex items-center gap-2 mb-3">
+                  <h5 className="text-pink-300 font-bold text-base flex flex-col text-center items-center gap-2 mb-3">
                     <span className="text-pink-400 text-lg">🗂️</span>
                     605.3.1 Entry in Tools and Plants Register
                   </h5>
                   <div className="flex items-start gap-2 mb-4">
                     <span className="text-pink-400 mt-1">📒</span>
-                    <span>
+                    <span className='text-white/80'>
                       All articles in the Accident Relief Medical Van and the Scale II equipment room must be entered in the Tools and Plants Register maintained by the respective DMO. Similarly, articles in the Auxiliary Van should be recorded in the Tools and Plants Register of the TXR, as applicable.
                     </span>
                   </div>
@@ -459,43 +459,43 @@ const AMChapterPage71 = () => {
                   </h5>
                   <div className="flex items-start gap-2">
                     <span className="text-pink-400 mt-1">📝</span>
-                    <span>
+                    <span className='text-white/80'>
                       An Inspection Book is provided in both the Medical Van and the Scale II Equipment room. All inspecting officials must record their inspection notes and sign in the book. Copies of the inspection reports by officers should be sent to the concerned medical officers and Sr.DSO/DSO. It is the responsibility of these officers to ensure that any irregularities noted in the inspection reports are promptly addressed and complied with.
                     </span>
                   </div>
                 </div>
               </div>
               <div className="mt-8">
-                <h5 className="text-pink-300 font-bold text-base flex items-center gap-2 mb-3">
+                <h5 className="text-pink-300 font-bold text-base flex flex-col text-center items-center gap-2 mb-3">
                   <span className="text-pink-400 text-lg">⏱️</span>
                   605.4 Target Time for Dispatching Medical Relief Train
                 </h5>
                 <div className="bg-pink-50/10 rounded-lg p-4 space-y-4 border border-pink-200">
                   <ul className="list-none space-y-3 pl-0">
                     <li>
-                      <span className="font-semibold text-pink-500">🌐 Stations other than Secunderabad & Vijayawada:</span>
+                      <span className="font-semibold text-pink-500">Stations other than Secunderabad & Vijayawada:</span>
                       <ul className="list-none pl-4 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="text-pink-400">🚄</span>
                           <span>
-                            <span className="font-medium">Direct dispatch:</span> <span className="text-pink-700">15 minutes</span> <span className="text-gray-400">(Day & Night)</span>
+                            <span className="font-medium text-white/80">Direct dispatch:</span> <span className="text-pink-700">15 minutes</span> <span className="text-gray-400">(Day & Night)</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-pink-400">🚦</span>
                           <span>
-                            <span className="font-medium">Indirect dispatch (shunting to running line):</span> <span className="text-pink-700">20 minutes</span>
+                            <span className="font-medium text-white/80">Indirect dispatch (shunting to running line):</span> <span className="text-pink-700">20 minutes</span>
                           </span>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <span className="font-semibold text-pink-500">🏢 Secunderabad Junction:</span>
+                      <span className="font-semibold text-pink-500">Secunderabad Junction:</span>
                       <ul className="list-none pl-4 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="text-pink-400">🚄</span>
                           <span>
-                            <span className="font-medium">Direct dispatch:</span>
+                            <span className="font-medium text-white/80">Direct dispatch:</span>
                             <span className="ml-1 text-pink-700">15 minutes</span> <span className="text-gray-400">(06:00–18:00 hrs)</span>,
                             <span className="ml-1 text-pink-700">20 minutes</span> <span className="text-gray-400">(18:00–06:00 hrs)</span>
                           </span>
@@ -503,25 +503,25 @@ const AMChapterPage71 = () => {
                         <li className="flex items-start gap-2">
                           <span className="text-pink-400">🚦</span>
                           <span>
-                            <span className="font-medium">Indirect dispatch (shunting to running line):</span>
+                            <span className="font-medium text-white/80">Indirect dispatch (shunting to running line):</span>
                             <span className="ml-1 text-pink-700">20 minutes</span> <span className="text-gray-400">(06:00–18:00 hrs & 18:00–06:00 hrs)</span>
                           </span>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <span className="font-semibold text-pink-500">🏢 Vijayawada Junction:</span>
+                      <span className="font-semibold text-pink-500">Vijayawada Junction:</span>
                       <ul className="list-none pl-4 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="text-pink-400">🚄</span>
                           <span>
-                            <span className="font-medium">Direct dispatch:</span> <span className="text-pink-700">20 minutes</span> <span className="text-gray-400">(Day & Night)</span>
+                            <span className="font-medium text-white/80">Direct dispatch:</span> <span className="text-pink-700">20 minutes</span> <span className="text-gray-400">(Day & Night)</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-pink-400">🚦</span>
                           <span>
-                            <span className="font-medium">Indirect dispatch (shunting to running line):</span> <span className="text-pink-700">25 minutes</span>
+                            <span className="font-medium text-white/80">Indirect dispatch (shunting to running line):</span> <span className="text-pink-700">25 minutes</span>
                           </span>
                         </li>
                       </ul>
@@ -529,127 +529,127 @@ const AMChapterPage71 = () => {
                   </ul>
                   <div className="mt-4 flex items-start gap-2">
                     <span className="text-pink-400">🕰️</span>
-                    <span>
-                      <span className="font-medium">Note:</span> The time is calculated from the moment the Dy. Chief Controller gives the train ordering message to the actual dispatch of the Medical Relief Train (MRT). All concerned must ensure there is <span className="text-pink-700 font-semibold">no delay</span> in dispatching ART/MRT.
+                    <span className="text-white/80">
+                      <span className="font-medium text-white/80">Note:</span> The time is calculated from the moment the Dy. Chief Controller gives the train ordering message to the actual dispatch of the Medical Relief Train (MRT). All concerned must ensure there is <span className="text-pink-700 font-semibold">no delay</span> in dispatching ART/MRT.
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="mt-8 bg-pink-50/10 rounded-xl p-6 shadow-lg animate-fade-in">
-                <h4 className="text-xl font-bold text-pink-600 flex items-center gap-2 mb-4">
-                  <span className="text-pink-400">🩺</span>
+              <div className="mt-8 rounded-2xl lg:p-8 p-3 shadow-2xl animate-fade-in bg-gradient-to-br from-pink-100/80 via-fuchsia-100/80 to-indigo-100/80 border-2 border-pink-200/60">
+                <h4 className="text-2xl font-extrabold text-pink-700 flex flex-col text-center items-center gap-2 mb-6 drop-shadow-lg">
+                  <span className="text-pink-400 text-3xl">🩺</span>
                   605.5 Joint Inspection of Medical Relief Vans & Scale II Equipment
                 </h4>
-                <ul className="list-none space-y-4 pl-0">
-                  <li>
-                    <span className="font-semibold text-pink-500">🔎 Monthly Joint Inspection:</span>
+                <ul className="list-none space-y-6 pl-0">
+                  <li className="bg-white/60 rounded-lg lg:p-4 p-2 shadow flex flex-col gap-2 border-l-4 border-pink-300">
+                    <span className="font-semibold text-pink-600">Monthly Joint Inspection:</span>
                     <span className="block mt-1 text-pink-900">
                       The Medical Relief Van and Auxiliary Van must be jointly inspected every month by the following officials:
                     </span>
-                    <ul className="list-none pl-6 mt-2 space-y-1">
-                      <li className="flex items-center gap-2"><span className="text-pink-400">👨‍⚕️</span>Divisional Medical Officer</li>
-                      <li className="flex items-center gap-2"><span className="text-pink-400">👨‍💼</span>Station Manager</li>
-                      <li className="flex items-center gap-2"><span className="text-pink-400">🔧</span>SSE (S&T)</li>
-                      <li className="flex items-center gap-2"><span className="text-pink-400">🚆</span>SSE (C&W)</li>
-                      <li className="flex items-center gap-2"><span className="text-pink-400">💡</span>SSE (Electrical)</li>
+                    <ul className="list-none pl-1 mt-2 space-y-1">
+                      <li className="flex items-center gap-2"><span className="text-pink-400 text-lg">👨‍⚕️</span><span className="text-gray-800">Divisional Medical Officer</span></li>
+                      <li className="flex items-center gap-2"><span className="text-pink-400 text-lg">👨‍💼</span><span className="text-gray-800">Station Manager</span></li>
+                      <li className="flex items-center gap-2"><span className="text-pink-400 text-lg">🔧</span><span className="text-gray-800">SSE (S&T)</span></li>
+                      <li className="flex items-center gap-2"><span className="text-pink-400 text-lg">🚆</span><span className="text-gray-800">SSE (C&W)</span></li>
+                      <li className="flex items-center gap-2"><span className="text-pink-400 text-lg">💡</span><span className="text-gray-800">SSE (Electrical)</span></li>
                     </ul>
-                    <span className="block mt-2 text-gray-700">
+                    <span className="block mt-2 text-fuchsia-700">
                       The seal of the key box may be broken for inspection. After inspection, the keys must be placed back and the box resealed by the concerned official.
                     </span>
                   </li>
-                  <li>
-                    <span className="font-semibold text-pink-500">⚙️ Mechanical & Electrical Fitness:</span>
-                    <ul className="list-none pl-6 mt-1 space-y-1">
+                  <li className="bg-pink-50/80 rounded-lg lg:p-4 p-2 shadow flex flex-col gap-2 border-l-4 border-fuchsia-300">
+                    <span className="font-semibold text-pink-600">Mechanical & Electrical Fitness:</span>
+                    <ul className="list-none pl-1 mt-1 space-y-1">
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">🚆</span>
+                        <span className="text-pink-400 text-lg">🚆</span>
                         <span>
-                          <span className="font-medium">SSE (C&W):</span> Must personally examine and certify the mechanical fitness of the Medical and Auxiliary Vans.
+                          <span className="font-medium text-gray-800">SSE (C&W):</span> Must personally examine and certify the mechanical fitness of the Medical and Auxiliary Vans.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">💡</span>
+                        <span className="text-pink-400 text-lg">💡</span>
                         <span>
-                          <span className="font-medium">SSE (Electrical):</span> Must ensure the electrical systems of both vans are in good working order.
+                          <span className="font-medium text-gray-800">SSE (Electrical):</span> Must ensure the electrical systems of both vans are in good working order.
                         </span>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <span className="font-semibold text-pink-500">🧯 Fire Extinguisher Maintenance:</span>
-                    <span className="block mt-1 text-gray-700">
+                  <li className="bg-fuchsia-50/80 rounded-lg lg:p-4 p-2 shadow flex flex-col gap-2 border-l-4 border-indigo-300">
+                    <span className="font-semibold text-pink-600">Fire Extinguisher Maintenance:</span>
+                    <span className="block mt-1 text-fuchsia-900">
                       SSE (C&W), with Fire Extinguisher Fitters, must:
                     </span>
-                    <ul className="list-none pl-6 mt-1 space-y-1">
+                    <ul className="list-none pl-1 mt-1 space-y-1">
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">📅</span>
+                        <span className="text-pink-400 text-lg">📅</span>
                         <span>Open DCP Type Fire Extinguishers for inspection every quarter.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">🧪</span>
+                        <span className="text-pink-400 text-lg">🧪</span>
                         <span>Test extinguishers annually by discharge.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">💪</span>
+                        <span className="text-pink-400 text-lg">💪</span>
                         <span>Conduct pressure testing (350 lbs/sq inch) every two years.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">🔄</span>
+                        <span className="text-pink-400 text-lg">🔄</span>
                         <span>Ensure extinguishers are always operational and spare refills are available.</span>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <span className="font-semibold text-pink-500">🩺 Medical Equipment & Consumables:</span>
-                    <ul className="list-none pl-6 mt-1 space-y-1">
+                  <li className="bg-indigo-50/80 rounded-lg lg:p-4 p-2 shadow flex flex-col gap-2 border-l-4 border-pink-400">
+                    <span className="font-semibold text-pink-600">Medical Equipment & Consumables:</span>
+                    <ul className="list-none pl-1 mt-1 space-y-1">
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">👨‍⚕️</span>
+                        <span className="text-pink-400 text-lg">👨‍⚕️</span>
                         <span>
-                          <span className="font-medium">Divisional Medical Officer:</span> Must check all medical equipment and immediately replace any unserviceable or damaged items.
+                          <span className="font-medium text-gray-800">Divisional Medical Officer:</span> Must check all medical equipment and immediately replace any unserviceable or damaged items.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">⏳</span>
+                        <span className="text-pink-400 text-lg">⏳</span>
                         <span>
                           Ensure all items with expiry dates (including milk tins, tea, coffee) are replaced before expiry. Old items should be sent to the Divisional Headquarters Hospital or condemned as appropriate.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">📦</span>
+                        <span className="text-pink-400 text-lg">📦</span>
                         <span>
                           Scale II equipment must be checked monthly.
                         </span>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <span className="font-semibold text-pink-500">📞 Portable Telephone Equipment:</span>
-                    <ul className="list-none pl-6 mt-1 space-y-1">
+                  <li className="bg-gradient-to-r from-pink-50/80 via-fuchsia-50/80 to-indigo-50/80 rounded-lg lg:p-4 p-2 shadow flex flex-col gap-2 border-l-4 border-fuchsia-400">
+                    <span className="font-semibold text-pink-600">Portable Telephone Equipment:</span>
+                    <ul className="list-none pl-1 mt-1 space-y-1">
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">🔬</span>
+                        <span className="text-pink-400 text-lg">🔬</span>
                         <span>
-                          <span className="font-medium">SSE (S&T):</span> Must thoroughly test the portable telephone equipment monthly, ensure it is ready for emergencies, and record the test in the van&apos;s register.
+                          <span className="font-medium text-gray-800">SSE (S&T):</span> Must thoroughly test the portable telephone equipment monthly, ensure it is ready for emergencies, and record the test in the van&apos;s register.
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">👥</span>
+                        <span className="text-pink-400 text-lg">👥</span>
                         <span>
                           Ensure all relevant staff are competent to use the equipment.
                         </span>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <span className="font-semibold text-pink-500">📝 Inspection Reporting:</span>
-                    <span className="block mt-1 text-gray-700">
+                  <li className="bg-white/70 rounded-lg lg:p-4 p-2 shadow flex flex-col gap-2 border-l-4 border-pink-500">
+                    <span className="font-semibold text-pink-600">Inspection Reporting:</span>
+                    <span className="block mt-1 text-fuchsia-900">
                       After each monthly inspection, officials must submit a report to their respective Divisional Officers / Sr.DSO / DSO, detailing:
                     </span>
-                    <ul className="list-none pl-6 mt-1 space-y-1">
+                    <ul className="list-none pl-1 mt-1 space-y-1">
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">✅</span>
+                        <span className="text-pink-400 text-lg">✅</span>
                         <span>Confirmation of inspection of Medical and Auxiliary Vans</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-pink-400">⚠️</span>
+                        <span className="text-pink-400 text-lg">⚠️</span>
                         <span>Defects and deficiencies found, and remedial actions taken</span>
                       </li>
                     </ul>
@@ -660,68 +660,90 @@ const AMChapterPage71 = () => {
                 </ul>
               </div>
               <div className="mt-6 space-y-6">
-                <div>
-                  <h5 className="font-semibold text-indigo-100 flex items-center gap-2 mb-2">
-                    <span className="text-pink-400">🩺</span>
-                    605.6 Inspection of Scale I & II Medical Equipment
+                <div className="bg-gradient-to-r from-pink-100/90 via-fuchsia-100/90 to-indigo-100/90 rounded-xl p-4 shadow-lg border-l-4 border-fuchsia-400 mb-2">
+                  <h5 className="font-bold lg:text-2xl text-xl flex flex-col text-center items-center gap-3 mb-3 bg-gradient-to-r from-pink-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent">
+                    <span className="text-pink-500 text-3xl">🩺</span>
+                    <span className="drop-shadow text-pink-600">605.6 Inspection of Scale I & II Medical Equipment</span>
                   </h5>
-                  <p className="text-gray-200 mb-2">
-                    <span className="font-medium text-pink-300">Divisional Chief Medical Superintendent:</span> The Divisional Medical Officer must inspect the Scale I equipment in the Medical Van at least <span className="font-semibold text-pink-400">once every 3 months</span> and the Scale II equipment at stations at least <span className="font-semibold text-pink-400">once every 6 months</span>. Necessary actions should be taken to ensure all equipment is up to standard and in good working order.
-                  </p>
+                  <ul className="list-none space-y-3 pl-0">
+                    <li className="flex items-start gap-3">
+                      <span className="text-fuchsia-500 text-xl">👨‍⚕️</span>
+                      <span>
+                        <span className="font-semibold text-fuchsia-700">Divisional Chief Medical Superintendent:</span>
+                        <span className="block mt-1 text-indigo-700">
+                          The Divisional Medical Officer must inspect the <span className="font-semibold text-pink-600">Scale I equipment</span> in the Medical Van at least <span className="font-semibold text-indigo-600">once every 3 months</span>.
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-indigo-500 text-xl">🏥</span>
+                      <span className="text-fuchsia-800">
+                        The <span className="font-semibold text-indigo-600">Scale II equipment</span> at stations must be inspected at least <span className="font-semibold text-pink-600">once every 6 months</span>.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-pink-500 text-xl">🔧</span>
+                      <span className="text-indigo-800">
+                        All necessary actions should be taken to ensure equipment is up to standard and in good working order.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
-                <div>
-                  <h5 className="font-semibold text-indigo-100 flex items-center gap-2 mb-2">
-                    <span className="text-pink-400">🚂</span>
+                <div className="bg-white/80 rounded-lg p-4 shadow border border-indigo-100">
+                  <h5 className="font-semibold text-indigo-700 flex flex-col text-center items-center gap-2 mb-2 lg:text-2xl text-xl">
+                    <span className="text-indigo-400 lg:text-2xl text-xl">🚂</span>
                     605.7 Trial Run of Medical Relief Train
                   </h5>
                   <ul className="list-none space-y-2 pl-0">
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">🛠️</span>
+                      <span className="text-indigo-400 mt-1">🛠️</span>
                       <span>
-                        <span className="font-medium">Mechanical & Electrical Departments:</span> Responsible for proper maintenance of all mechanical and electrical fittings in the Medical and Auxiliary Vans.
+                        <span className="font-medium text-indigo-700">Mechanical & Electrical Departments:</span>
+                        <span className="text-gray-700"> Responsible for proper maintenance of all mechanical and electrical fittings in the Medical and Auxiliary Vans.</span>
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">🧰</span>
+                      <span className="text-indigo-400 mt-1">🧰</span>
                       <span>
-                        <span className="font-medium">SSE (C&W):</span> Must arrange a trial run of the Medical and Auxiliary Vans at least <span className="font-semibold text-pink-400">once every quarter</span> on a passenger train to the nearest junction station, in consultation with the DMO. The van should be detached and brought back after the run.
+                        <span className="font-medium text-indigo-700">SSE (C&W):</span>
+                        <span className="text-gray-700"> Must arrange a trial run of the Medical and Auxiliary Vans at least <span className="font-semibold text-indigo-600">once every quarter</span> on a passenger train to the nearest junction station, in consultation with the DMO. The van should be detached and brought back after the run.</span>
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">🤝</span>
-                      <span>
+                      <span className="text-indigo-400 mt-1">🤝</span>
+                      <span className="text-gray-700">
                         This arrangement should be coordinated by the SSE (C&W) and Station Manager, in consultation with the control and the Divisional Chief Medical Superintendent.
                       </span>
                     </li>
                   </ul>
-                  <div className="mt-2 text-sm text-pink-300 flex items-start gap-2">
-                    <span className="text-pink-400">📝</span>
+                  <div className="mt-2 text-sm text-indigo-500 flex items-start gap-2">
+                    <span className="text-indigo-400">📝</span>
                     <span>
-                      <span className="font-medium">Note:</span> The Station Manager must immediately inform the concerned DMO about any movement of the Medical Van.
+                      <span className="font-medium">Note:</span> <span className="text-gray-700">The Station Manager must immediately inform the concerned DMO about any movement of the Medical Van.</span>
                     </span>
                   </div>
                 </div>
-                <div>
-                  <h5 className="font-semibold text-indigo-100 flex items-center gap-2 mb-2">
+                <div className="bg-gradient-to-r from-pink-50 via-indigo-50 to-blue-50 rounded-lg p-4 shadow border border-pink-100">
+                  <h5 className="font-semibold text-indigo-600 flex flex-col text-center items-center gap-2 mb-2 lg:text-2xl text-xl">
                     <span className="text-pink-400">💧</span>
                     605.8 Water Drums in Medical Relief Vans
                   </h5>
                   <ul className="list-none space-y-2 pl-0">
                     <li className="flex items-start gap-2">
                       <span className="text-pink-400 mt-1">🫗</span>
-                      <span>
-                        Water drums in the Medical Van must always be filled to the brim by the SSE (C&W).
+                      <span className="text-indigo-700">
+                        Water drums in the Medical Van must always be filled to the brim by the <span className="font-semibold text-pink-600">SSE (C&W)</span>.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-pink-400 mt-1">🧪</span>
-                      <span>
-                        If the water is not already chlorinated, the Divisional Medical Officer should carry out chlorination.
+                      <span className="text-indigo-700">
+                        If the water is not already chlorinated, the <span className="font-semibold text-pink-600">Divisional Medical Officer</span> should carry out chlorination.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-pink-400 mt-1">🛡️</span>
-                      <span>
+                      <span className="text-indigo-700">
                         To prevent rusting, drums should always be kept filled to the brim.
                       </span>
                     </li>

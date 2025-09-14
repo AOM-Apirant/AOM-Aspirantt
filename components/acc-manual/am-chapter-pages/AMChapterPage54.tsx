@@ -23,7 +23,7 @@ const AMChapterPage54 = () => {
               </div>
             </div>
             
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CHAPTER V</h2>
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - V </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               PRO-FORMA FOR MEASUREMENT OF LOCOMOTIVE (DIESEL & ELECTRIC)
@@ -42,7 +42,7 @@ const AMChapterPage54 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -67,8 +67,8 @@ const AMChapterPage54 = () => {
 
                   {/* Section 505.1 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">505.1</span>
                       </div>
                       <div className="flex-1">
@@ -175,8 +175,8 @@ const AMChapterPage54 = () => {
 
                   {/* Section 505.2 */}
                   <div className="space-y-4 mt-8">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">505.2</span>
                       </div>
                       <div className="flex-1">
@@ -276,8 +276,8 @@ const AMChapterPage54 = () => {
 
                   {/* Section 505.3 */}
                   <div className="space-y-4 mt-8">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">505.3</span>
                       </div>
                       <div className="flex-1">
@@ -444,8 +444,8 @@ const AMChapterPage54 = () => {
 
                 {/* Section 505.4 */}
                 <div className="space-y-4 mt-8">
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
                       <span className="text-white font-bold text-sm">505.4</span>
                     </div>
                     <div className="flex-1">
@@ -649,7 +649,7 @@ const AMChapterPage54 = () => {
                 {/* Important Information Section */}
                 <div className="mt-8 bg-gradient-to-r from-violet-500/10 to-purple-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-violet-400/20">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">ℹ</span>
                       </div>
@@ -715,7 +715,7 @@ const AMChapterPage54 = () => {
                 {/* Detailed Notes Section */}
                 <div className="mt-8 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-emerald-400/20">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">📝</span>
                       </div>
@@ -794,8 +794,8 @@ const AMChapterPage54 = () => {
 
               {/* Section 505.5 */}
               <div className="space-y-4 mt-8">
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                     <span className="text-white font-bold text-sm">505.5</span>
                   </div>
                   <div className="flex-1">
@@ -898,7 +898,7 @@ const AMChapterPage54 = () => {
               {/* Important Notes Section */}
               <div className="mt-8 bg-gradient-to-r from-rose-500/10 to-pink-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-rose-400/20">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3">
+                  <div className="flex flex-col items-center gap-3">
                     <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                       <span className="text-white font-bold text-sm">ℹ</span>
                     </div>

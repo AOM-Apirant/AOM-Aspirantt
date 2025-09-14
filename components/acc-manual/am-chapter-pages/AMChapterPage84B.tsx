@@ -42,7 +42,7 @@ const AMChapterPage84B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -61,7 +61,7 @@ const AMChapterPage84B = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🔧</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -79,7 +79,7 @@ const AMChapterPage84B = () => {
                   {/* Section 621a */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🚂</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -97,7 +97,7 @@ const AMChapterPage84B = () => {
                   {/* Section 621b */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🏭</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -115,16 +115,45 @@ const AMChapterPage84B = () => {
                   {/* Section 621c */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">👨‍💼</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">
                             <h4 className="text-lg font-bold text-cyan-300 mb-3 text-center">621(c) - Controlling Officer Responsibilities</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            Controlling Officer for maintenance of ART / ARMV equipment and BD Crane will be Officer of the Depot at which ART / ARMV / BD Crane are stationed. He will be responsible for day-to-day maintenance and to carry out the maintenance schedules in accordance with the manufacturer&apos;s instructions / RDSO instructions or any guidelines issued by the competent authority. He will be responsible to keep all the spares / tools / consumables required for maintenance of the equipment under his control. All the nominated maintenance Staff irrespective of the Department will be under his control. With the specific instructions from the competent authority, additional Officers / Depots can be entrusted with the maintenance job for technical reasons.
-                          </p>
+                          <ul className="list-none space-y-3 pl-0">
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-400 text-xl mt-1">🏢</span>
+                              <span className="text-gray-200">
+                                The Controlling Officer for maintenance of ART / ARMV equipment and BD Crane is the Officer of the Depot where these are stationed.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-400 text-xl mt-1">🛠️</span>
+                              <span className="text-gray-200">
+                                Responsible for day-to-day maintenance and ensuring all maintenance schedules are followed as per manufacturer’s, RDSO, or competent authority guidelines.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-400 text-xl mt-1">🔧</span>
+                              <span className="text-gray-200">
+                                Must keep all necessary spares, tools, and consumables ready for equipment maintenance.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-400 text-xl mt-1">👥</span>
+                              <span className="text-gray-200">
+                                All nominated maintenance staff, regardless of department, will be under his control.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-400 text-xl mt-1">📑</span>
+                              <span className="text-gray-200">
+                                Additional Officers or Depots may be assigned maintenance duties for technical reasons, as per competent authority’s instructions.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -133,7 +162,7 @@ const AMChapterPage84B = () => {
                   {/* Section 621d */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">

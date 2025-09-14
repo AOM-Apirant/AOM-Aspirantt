@@ -42,7 +42,7 @@ const AMChapterPage79 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -61,16 +61,69 @@ const AMChapterPage79 = () => {
                   {/* Section 618 Main Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🏃</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Regular Drills and Training</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            With a view to test the readiness and quick turn out of Relief Trains, it is required to have periodical drills once in every quarter .However if ART/MRT is turned out on account of accident in that quarter, the periodicity may be reckoned from that date. The real intention of these mock drills is to test the practical knowledge of all the staff that has to play a part in any accident in addition to turning out the relief trains. Drill regarding accidents shall be practical since practice leads to perfection. It is necessary always to watch and measure the results of training and drills so that the circumstances, at a given occurrence can be grasped and the prescribed plan of drills followed, to find out the alertness of staff in case of emergency. These accident drills should be conducted under the supervision of the Safety Officers and Safety Counsellors. In order to ensure that maximum benefit is derived from drills, this should be properly planned before hand so that delays and mistakes, if any committed by staff, can be noted and instructions given at the spot. While conducting the drills, it should be ensured that only the concerned Divisional Railway Staff participate in such drills and that the Police, Civil Authorities, the Public and the Press are not scared unnecessarily by such mock drills. The real purpose of these drills is to make all the staff who have specific duties to perform in case of an accident, to practice their parts regularly and test check the equipments, so that in a real emergency they perform their duties without confusion. The staff of Mechanical, Electrical, Traffic, S&T, Security, Medical, Commercial, Civil defense are required to participate in these drills and the specific duties of each should be clarified to all and they should practice the same during the course of such drills.
-                          </p>
+                          <ul className="list-none space-y-4 pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="text-blue-400 text-xl mt-1">⏱️</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Quarterly Drills:</span> Periodical drills must be conducted every quarter to test readiness and quick turn out of Relief Trains. If ART/MRT is turned out due to an accident in that quarter, the next drill is counted from that date.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-green-400 text-xl mt-1">🧑‍🔧</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Practical Knowledge:</span> The main aim is to test the practical knowledge of all staff involved in accident response, not just the turning out of relief trains.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-yellow-400 text-xl mt-1">🎯</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Practice for Perfection:</span> Drills should be practical, as regular practice leads to perfection and better preparedness.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-indigo-400 text-xl mt-1">📊</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Monitor & Measure:</span> Always observe and measure the results of training and drills to assess staff alertness and ensure the prescribed plan is followed.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-pink-400 text-xl mt-1">🛡️</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Supervision:</span> Drills must be conducted under the supervision of Safety Officers and Safety Counsellors.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-orange-400 text-xl mt-1">📝</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Proper Planning:</span> Drills should be well planned in advance to identify and correct any delays or mistakes on the spot.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-red-400 text-xl mt-1">🚫</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Participation:</span> Only concerned Divisional Railway Staff should participate. Police, Civil Authorities, Public, and Press should not be alarmed by mock drills.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-teal-400 text-xl mt-1">🔄</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Role Practice:</span> All staff with specific accident duties must regularly practice their roles and check equipment to ensure smooth performance during real emergencies.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-purple-400 text-xl mt-1">👷‍♂️</span>
+                              <span className="text-gray-200">
+                                <span className="font-semibold text-green-300">Departments Involved:</span> Mechanical, Electrical, Traffic, S&T, Security, Medical, Commercial, and Civil Defense staff must participate, with clear duties explained and practiced.
+                              </span>
+                            </li>
+                          </ul>
 
                           <div className="space-y-4">
                             <div className="flex items-start gap-3">
@@ -169,7 +222,7 @@ const AMChapterPage79 = () => {
                   {/* Section 618a */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -240,7 +293,7 @@ const AMChapterPage79 = () => {
                   {/* Section 618.1 */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🎭</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">

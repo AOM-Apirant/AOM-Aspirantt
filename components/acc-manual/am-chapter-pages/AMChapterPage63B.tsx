@@ -25,7 +25,7 @@ const AMChapterPage63B = () => {
             
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CHAPTER VI</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
-            <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="lg:text-2xl text-xl text-gray-200 max-w-4xl mx-auto font-bold">
               Rescue and Relief Machinery
             </p>
           </div>
@@ -103,7 +103,7 @@ const AMChapterPage63B = () => {
                   {/* Important Information Section */}
                   <div className="mt-8 bg-gradient-to-r from-violet-500/10 to-purple-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-violet-400/20">
                     <div className="space-y-4">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
                           <span className="text-white font-bold text-sm">ℹ</span>
                         </div>

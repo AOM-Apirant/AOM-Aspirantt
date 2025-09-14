@@ -42,7 +42,7 @@ const AMChapterPage94B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
@@ -158,7 +158,7 @@ const AMChapterPage94B = () => {
                   {/* Section 803.1 */}
                   <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-purple-400 text-xl">💰</span>
                         <h4 className="text-lg font-bold text-purple-300">803.1 Scale of compensation</h4>
                       </div>
@@ -183,7 +183,7 @@ const AMChapterPage94B = () => {
                   </div>
                   <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/30 space-y-6">
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-pink-400 text-xl">🧑‍⚖️</span>
                         <h4 className="text-lg font-bold text-pink-300">803.2 Who Can Claim Compensation?</h4>
                       </div>
@@ -216,7 +216,7 @@ const AMChapterPage94B = () => {
                       </div>
                     </div>
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-purple-400 text-xl">📝</span>
                         <h4 className="text-lg font-bold text-purple-300">803.3 Procedure for Filing Application</h4>
                       </div>
@@ -250,8 +250,8 @@ const AMChapterPage94B = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/10 rounded-xl p-6 mt-8 shadow-lg border border-white/20 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-blue-200 mb-2 flex items-center gap-2">
+                <div className="bg-white/10 rounded-xl lg:p-6 p-3 mt-8 shadow-lg border border-white/20 animate-fade-in">
+                  <h3 className="lg:text-2xl text-xl font-bold text-blue-200 mb-2 flex flex-col text-center items-center gap-2">
                     <span className="text-blue-400">📑</span>
                     Specimen Application Form
                   </h3>
@@ -265,31 +265,27 @@ const AMChapterPage94B = () => {
                     </span>
                   </div>
                   <div className="mb-4">
-                    <h4 className="text-lg font-bold text-purple-300 mb-2">PART – I</h4>
+                    <h4 className="text-lg font-bold text-purple-300 mb-2 text-center">PART – I</h4>
                     <ul className="list-none pl-0 space-y-2">
                       <li className="flex items-center gap-2">
-                        <span className="text-green-300">🆔</span>
                         <span>
                           <span className="font-semibold text-gray-100">Original Accident Application No.:</span>
-                          <span className="text-gray-300 ml-2">-------------------------</span>
+                          <span className="text-gray-300 ml-2">----------</span>
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
-                        <span className="text-green-300">📅</span>
                         <span>
                           <span className="font-semibold text-gray-100">Date:</span>
-                          <span className="text-gray-300 ml-2">-----------</span>
+                          <span className="text-gray-300 ml-2">----------</span>
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
-                        <span className="text-blue-300">👤</span>
                         <span>
                           <span className="font-semibold text-gray-100">Between:</span>
-                          <span className="text-gray-300 ml-2">------------------- Applicant/Applicants</span>
+                          <span className="text-gray-300 ml-2">---------- Applicant/Applicants</span>
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
-                        <span className="text-blue-300">🏢</span>
                         <span>
                           <span className="font-semibold text-gray-100">And:</span>
                           <span className="text-gray-300 ml-2">General Manager, South Central Railway, Secunderabad (Respondent)</span>
@@ -298,7 +294,7 @@ const AMChapterPage94B = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-purple-300 mb-2">PART – II</h4>
+                    <h4 className="text-lg font-bold text-purple-300 mb-2 text-center">PART – II</h4>
                     <div className="overflow-x-auto">
                       <table className="min-w-full text-sm text-gray-200 border border-white/10 rounded-lg">
                         <thead>
@@ -326,28 +322,24 @@ const AMChapterPage94B = () => {
                   <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-white/5 rounded-lg p-4 border border-white/10">
                       <h5 className="font-semibold text-blue-200 mb-2">For the use in Tribunal&apos;s office</h5>
-                      <ul className="list-none pl-0 space-y-1">
+                      <ul className="list-none pl-0 space-y-1 text-white/80">
                         <li className="flex items-center gap-2">
-                          <span className="text-yellow-300">🗓️</span>
-                          <span>Date of filing or receipt by post: ____________________</span>
+                          <span>Date of filing or receipt by post: ----------</span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <span className="text-green-300">✍️</span>
-                          <span>Signature of the applicant: ____________________</span>
+                          <span>Signature of the applicant: ----------</span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <span className="text-purple-300">🔖</span>
-                          <span>Registration No.: ____________________</span>
+                          <span>Registration No.: ----------</span>
                         </li>
                         <li className="flex items-center gap-2">
-                          <span className="text-pink-300">🧑‍⚖️</span>
                           <span>For Registrar</span>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-6 mt-8 border border-white/20 animate-fade-in">
+                <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl lg:p-6 p-3 mt-8 border border-white/20 animate-fade-in">
                   <h3 className="text-2xl font-bold text-purple-200 mb-4 text-center">PART – III</h3>
                   <div className="text-gray-200 space-y-4">
                     <div className="mb-4">
@@ -359,10 +351,10 @@ const AMChapterPage94B = () => {
                     </div>
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl p-4 border border-blue-400/20 mb-4">
                       <p className="mb-2">
-                        I, <span className="text-blue-300">_____________________</span> Son/Daughter/Wife/Widow of <span className="text-blue-300">_____________________</span> residing at <span className="text-blue-300">_____________________</span>, having been injured in a Railway Accident, hereby apply for the grant of compensation for the injury sustained.
+                        I, <span className="text-blue-300">----------</span> Son/Daughter/Wife/Widow of <span className="text-blue-300">----------</span> residing at <span className="text-blue-300">----------</span>, having been injured in a Railway Accident, hereby apply for the grant of compensation for the injury sustained.
                       </p>
                       <p>
-                        I, <span className="text-blue-300">_____________________</span> Son/Daughter/Wife/Widow of <span className="text-blue-300">_____________________</span> residing at <span className="text-blue-300">_____________________</span> hereby apply as a dependent for the grant of compensation on account of the Death/Injury sustained by Shri/Kumari/Shrimati <span className="text-blue-300">_____________________</span> who died/was injured in the Railway Accident referred to hereunder:
+                        I, <span className="text-blue-300">----------</span> Son/Daughter/Wife/Widow of <span className="text-blue-300">----------</span> residing at <span className="text-blue-300">----------</span> hereby apply as a dependent for the grant of compensation on account of the Death/Injury sustained by Shri/Kumari/Shrimati <span className="text-blue-300">----------</span> who died/was injured in the Railway Accident referred to hereunder:
                       </p>
                     </div>
                     <div className="mb-4">
@@ -393,17 +385,17 @@ const AMChapterPage94B = () => {
                       <p className="mb-2">
                         <span className="font-semibold text-blue-200">Declaration:</span>
                         <br />
-                        I, <span className="text-blue-300">__________________________</span> solemnly declare that (a) the particulars given above are true and correct to the best of my knowledge and (b) I have not claimed or obtained any compensation in relation to the injured/dead which is the subject matter of this application.
+                        I, <span className="text-blue-300">_____________</span> solemnly declare that (a) the particulars given above are true and correct to the best of my knowledge and (b) I have not claimed or obtained any compensation in relation to the injured/dead which is the subject matter of this application.
                       </p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                         <div>
-                          <p className="mb-1"><span className="text-purple-300">✍️</span> Signature / Left Thumb Impression of the applicant</p>
-                          <p className="mb-1"><span className="text-green-300">📍</span> Place: <span className="text-blue-300">__________________</span></p>
-                          <p className="mb-1"><span className="text-yellow-300">📅</span> Date: <span className="text-blue-300">__________________</span></p>
+                          <p className="mb-3"><span className="text-purple-300"></span> Signature / Left Thumb Impression of the applicant</p>
+                          <p className="mb-1"><span className="text-green-300"></span> Place: <span className="text-blue-300">----------</span></p>
+                          <p className="mb-1"><span className="text-yellow-300"></span> Date: <span className="text-blue-300">----------</span></p>
                         </div>
                         <div>
-                          <p className="mb-1"><span className="text-pink-300">👤</span> Name and address of witness (if applicant uses left thumb impression):</p>
-                          <p className="text-blue-300">__________________________</p>
+                          <p className="mb-1"><span className="text-pink-300"></span> Name and address of witness (if applicant uses left thumb impression):</p>
+                          <p className="text-blue-300">----------</p>
                         </div>
                       </div>
                     </div>
@@ -421,9 +413,9 @@ const AMChapterPage94B = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
                       <p className="mb-1"><span className="text-purple-300">✍️</span> <span className="font-semibold">Signature of the applicant:</span></p>
-                      <p className="mb-1"><span className="text-green-300">📍</span> Place: <span className="text-blue-300">__________________</span></p>
-                      <p className="mb-1"><span className="text-yellow-300">📅</span> Date: <span className="text-blue-300">__________________</span></p>
-                      <p className="mb-1"><span className="text-pink-300">🏠</span> Full Address: <span className="text-blue-300">__________________</span></p>
+                      <p className="mb-1"><span className="text-green-300">📍</span> Place: <span className="text-blue-300">____________</span></p>
+                      <p className="mb-1"><span className="text-yellow-300">📅</span> Date: <span className="text-blue-300">____________</span></p>
+                      <p className="mb-1"><span className="text-pink-300">🏠</span> Full Address: <span className="text-blue-300">___________</span></p>
                     </div>
                   </div>
                   <div className="mt-6">
@@ -443,8 +435,8 @@ const AMChapterPage94B = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 bg-gradient-to-br from-indigo-900/60 to-blue-900/60 rounded-xl p-6 border border-indigo-400/20 shadow-lg">
-                  <h3 className="text-2xl font-bold text-indigo-200 mb-2 flex items-center gap-2">
+                <div className="mt-8 bg-gradient-to-br from-indigo-900/60 to-blue-900/60 rounded-xl lg:p-6 p-3 border border-indigo-400/20 shadow-lg">
+                  <h3 className="lg:text-2xl text-xl font-bold text-indigo-200 mb-2 flex flex-col items-center text-center gap-2">
                     <span className="text-yellow-300 text-3xl">📜</span>
                     The Gazette of India: Schedule (See Rule-3)
                   </h3>
@@ -455,7 +447,6 @@ const AMChapterPage94B = () => {
                   <div className="space-y-6">
                     <div>
                       <h4 className="text-xl font-bold text-pink-200 mb-2 flex items-center gap-2">
-                        <span className="text-red-300">💀</span>
                         Part I: Death
                       </h4>
                       <ul className="list-none pl-2">
@@ -470,10 +461,9 @@ const AMChapterPage94B = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-purple-200 mb-2 flex items-center gap-2">
-                        <span className="text-blue-300">🦾</span>
                         Part II: Major Injuries (₹8,00,000/- each)
                       </h4>
-                      <ul className="list-none pl-2 space-y-1">
+                      <ul className="list-none pl-2 space-y-1 text-white/80">
                         <li className="flex items-center gap-2"><span className="text-green-300">✨</span> Loss of both hands or amputation at higher sites</li>
                         <li className="flex items-center gap-2"><span className="text-green-300">✨</span> Loss of hand and a foot</li>
                         <li className="flex items-center gap-2"><span className="text-green-300">✨</span> Double amputation through leg or thigh, or amputation through leg/thigh on one side and loss of other foot</li>
@@ -484,10 +474,9 @@ const AMChapterPage94B = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-indigo-200 mb-2 flex items-center gap-2">
-                        <span className="text-yellow-300">🩺</span>
                         Part III: Other Specified Injuries
                       </h4>
-                      <ul className="list-none pl-2 space-y-1">
+                      <ul className="list-none pl-2 space-y-1 text-white/80">
                         <li className="flex items-center gap-2"><span className="text-blue-200">🔹</span> Amputation through shoulder joint – <span className="text-orange-200">₹7,20,000/-</span></li>
                         <li className="flex items-center gap-2"><span className="text-blue-200">🔹</span> Amputation below shoulder with stump less than 8” from tip of acromion – <span className="text-orange-200">₹6,40,000/-</span></li>
                         <li className="flex items-center gap-2"><span className="text-blue-200">🔹</span> Amputation from 8” from tip of acromion to less than 4½” below tip of olecranon – <span className="text-orange-200">₹5,60,000/-</span></li>

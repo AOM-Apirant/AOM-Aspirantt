@@ -25,7 +25,7 @@ const AMChapterPage63A = () => {
             
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CHAPTER VI</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
-            <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
+            <p className="lg:text-2xl text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
               Rescue and Relief Machinery
             </p>
           </div>
@@ -68,81 +68,82 @@ const AMChapterPage63A = () => {
                   {/* Divisions List */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4">
                     <div className="space-y-4">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
-                            <span className="text-white font-bold text-sm">SC</span>
+                      <ul className="space-y-4">
+                        <li className="flex items-start gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span className="font-semibold text-indigo-300">SC Division:</span>
+                            <span className="ml-2">Secunderabad, Kazipet, Bellampalli</span>
                           </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">
-                              <span className="font-semibold text-indigo-300">SC Division:</span>
-                              <span className="ml-2">Secunderabad, Kazipet, Bellampalli</span>
-                            </p>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-6a2 2 0 012-2h2a2 2 0 012 2v6m-6 0h6" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span className="font-semibold text-indigo-300">BZA Division:</span>
+                            <span className="ml-2">Vijayawada, Bitragunta, Rajahmundry</span>
                           </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
-                            <span className="text-white font-bold text-sm">BZA</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 1.343-3 3 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.657-1.343-3-3-3zm0 0V4m0 7v7" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span className="font-semibold text-indigo-300">GTL Division:</span>
+                            <span className="ml-2">Renigunta, Gooty, Guntakal, Dharmavaram</span>
                           </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">
-                              <span className="font-semibold text-indigo-300">BZA Division:</span>
-                              <span className="ml-2">Vijayawada, Bitragunta, Rajahmundry</span>
-                            </p>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span className="font-semibold text-indigo-300">GNT Division:</span>
+                            <span className="ml-2">Guntur</span>
                           </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
-                            <span className="text-white font-bold text-sm">GTL</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span className="font-semibold text-indigo-300">NED Division:</span>
+                            <span className="ml-2">Purna, Akola (M.G.)</span>
                           </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">
-                              <span className="font-semibold text-indigo-300">GTL Division:</span>
-                              <span className="ml-2">Renigunta, Gooty, Guntakal, Dharmavaram</span>
-                            </p>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-lime-500 to-green-600 rounded-full flex items-center justify-center mt-1">
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth={2} fill="none" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12l2 2 4-4" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span className="font-semibold text-indigo-300">HYB Division:</span>
+                            <span className="ml-2">Nizamabad</span>
                           </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
-                            <span className="text-white font-bold text-sm">GNT</span>
-                          </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">
-                              <span className="font-semibold text-indigo-300">GNT Division:</span>
-                              <span className="ml-2">Guntur</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mt-1">
-                            <span className="text-white font-bold text-sm">NED</span>
-                          </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">
-                              <span className="font-semibold text-indigo-300">NED Division:</span>
-                              <span className="ml-2">Purna, Akola (M.G.)</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-lime-500 to-green-600 rounded-full flex items-center justify-center mt-1">
-                            <span className="text-white font-bold text-sm">HYB</span>
-                          </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">
-                              <span className="font-semibold text-indigo-300">HYB Division:</span>
-                              <span className="ml-2">Nizamabad</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
 
                   {/* Important Information Section */}
                   <div className="mt-8 bg-gradient-to-r from-violet-500/10 to-purple-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-violet-400/20">
                     <div className="space-y-4">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
                           <span className="text-white font-bold text-sm">ℹ</span>
                         </div>

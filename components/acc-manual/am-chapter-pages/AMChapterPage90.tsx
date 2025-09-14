@@ -42,7 +42,7 @@ const AMChapterPage90 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -61,16 +61,33 @@ const AMChapterPage90 = () => {
                   {/* Media Management Overview */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📺</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Electronic Media Reporting</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            The electronic media is in the forefront of reporting train accidents even before the details reach Divisional Control / Central Control due to leap in information dissemination. As per extant instructions, only DRM or the senior most Official present at the site of disaster / accident shall be the Chief spokes person. First hand information should be as accurate as possible to face the media effectively.
-                          </p>
+                          <ul className="list-none space-y-3 pl-2 text-gray-200">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400">📺</span>
+                              <span>
+                                Electronic media often reports train accidents before details reach Divisional or Central Control, due to rapid information dissemination.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">👤</span>
+                              <span>
+                                Only the DRM or the senior-most official at the disaster/accident site should act as the Chief Spokesperson.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400">📝</span>
+                              <span>
+                                First-hand information provided to the media must be as accurate as possible for effective communication.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -79,7 +96,7 @@ const AMChapterPage90 = () => {
                   {/* Section 704.1 */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">👨‍💼</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -113,7 +130,7 @@ const AMChapterPage90 = () => {
                     </div>
                   </div>
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2 mt-6 animate-fade-in">
-                    <h3 className="text-2xl font-bold text-indigo-200 mb-4 flex items-center gap-2">
+                    <h3 className="lg:text-2xl text-xl font-bold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
                       <span className="text-pink-400 text-2xl">📰</span>
                       704.2 Objectives of Media Management Plan
                     </h3>
@@ -133,7 +150,6 @@ const AMChapterPage90 = () => {
                     </ul>
                     <div className="space-y-4">
                       <h4 className="text-lg font-bold text-pink-300 mb-2 flex items-center gap-2">
-                        <span className="text-pink-400">🎯</span>
                         Key Actions & Protocols
                       </h4>
                       <ul className="list-none space-y-3 pl-2">
@@ -173,7 +189,7 @@ const AMChapterPage90 = () => {
                             The Railway&apos;s goal is to ensure that only factually correct and confirmed information is shared with the media. For this, the following measures are enforced:
                           </span>
                         </li>
-                        <ul className="list-none space-y-2 pl-8">
+                        <ul className="list-none space-y-2 pl-1">
                           <li className="flex items-start gap-2">
                             <span className="text-pink-400">🚫</span>
                             <span>
@@ -203,7 +219,7 @@ const AMChapterPage90 = () => {
                     </div>
                   </div>
                   <div className="mt-8">
-                    <h4 className="text-xl font-bold text-indigo-200 mb-4 flex items-center gap-2">
+                    <h4 className="text-xl font-bold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
                       <span className="text-blue-400 text-2xl">📰</span>
                       Information to be Provided to the Media
                     </h4>
@@ -260,11 +276,11 @@ const AMChapterPage90 = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-pink-500/10 to-indigo-500/10 rounded-xl border border-pink-400/20 p-4 mt-6 animate-fade-in">
-                  <h4 className="text-2xl font-bold text-pink-300 mb-4 flex items-center gap-2">
+                  <h4 className="lg:text-2xl text-xl font-bold text-pink-300 mb-4 flex flex-col text-center items-center gap-2">
                     <span className="text-pink-400 text-2xl">📰</span>
                     704.3 Media Needs at Accident Site
                   </h4>
-                  <ul className="list-none space-y-4 pl-2">
+                  <ul className="list-none space-y-4 pl-2 text-white/80">
                     <li className="flex items-start gap-3">
                       <span className="text-indigo-400">🎤</span>
                       <span>
@@ -287,22 +303,63 @@ const AMChapterPage90 = () => {
                 </div>
               </div>
               <div className="bg-gradient-to-r from-pink-500/10 to-indigo-500/10 rounded-xl border border-pink-400/20 p-4 mt-6 animate-fade-in">
-                <h4 className="text-2xl font-bold text-pink-300 mb-4 flex items-center gap-2">
+                <h4 className="lg:text-2xl text-xl font-bold text-pink-300 mb-4 flex flex-col text-center items-center gap-2">
                   <span className="text-pink-400 text-2xl">🗞️</span>
                   704.4 Advice to the Press
                 </h4>
                 <ul className="list-none space-y-6 pl-2 text-gray-200">
                   <li className="flex items-start gap-3">
-                    <span className="text-indigo-400 text-xl mt-1">📝</span>
-                    <span>
-                      <strong>Press Notification Responsibility:</strong> The Divisional Railway Managers of Vijayawada, Guntakal, Guntur, and Nanded Divisions, in consultation with the Chief Public Relations Officer (CPRO), must send brief details of serious accidents to the nearest news agencies and local newspapers. For Secunderabad and Hyderabad divisions, the CPRO alone will issue press notifications about serious accidents.
-                    </span>
+                    <div className="flex flex-col gap-2">
+                      <div className="flex items-start gap-2">
+                        <span className="text-indigo-400 text-xl mt-1">🗂️</span>
+                        <span>
+                          <strong>Divisional Press Notification:</strong> Divisional Railway Managers of Vijayawada, Guntakal, Guntur, and Nanded Divisions, in consultation with the Chief Public Relations Officer (CPRO), must send brief details of serious accidents to the nearest news agencies and local newspapers.
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-pink-400 text-xl mt-1">📢</span>
+                        <span>
+                          <strong>CPRO Notification:</strong> For Secunderabad and Hyderabad divisions, the CPRO alone will issue press notifications about serious accidents.
+                        </span>
+                      </div>
+                    </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-emerald-400 text-xl mt-1">📅</span>
-                    <span>
-                      <strong>Essential Information to the Press:</strong> The press should be immediately provided with key details such as the time, date, and location of the accident; the nature of the incident (e.g., train collision, derailment, passenger or goods train); names and addresses of the injured and deceased (with seriousness of injuries); whether traffic is interrupted or maintained by transshipment; the nature of transshipment (if arranged); and the expected time for restoration of normal services. Trivial injuries should not be reported to the press, but must be communicated to the Railway Board.
-                    </span>
+                    <div className="flex flex-col gap-2 w-full">
+                      <span className="font-bold text-indigo-300 flex items-center gap-2">
+                        Essential Information to the Press:
+                      </span>
+                      <ul className="list-none space-y-2 pl-2 mt-2">
+                        <li className="flex items-start gap-2">
+                          <span className="text-blue-400">⏰</span>
+                          <span>Time, date, and location of the accident</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-pink-400">🚄</span>
+                          <span>Nature of the incident (e.g., train collision, derailment, passenger or goods train)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">🧑‍🤝‍🧑</span>
+                          <span>Names and addresses of the injured and deceased, with seriousness of injuries</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-yellow-400">🚦</span>
+                          <span>Whether traffic is interrupted or maintained by transshipment</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-purple-400">🔄</span>
+                          <span>Nature of transshipment (if arranged)</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-400">⏳</span>
+                          <span>Expected time for restoration of normal services</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-gray-400">⚠️</span>
+                          <span>Trivial injuries should not be reported to the press, but must be communicated to the Railway Board</span>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-400 text-xl mt-1">📑</span>
@@ -311,10 +368,49 @@ const AMChapterPage90 = () => {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-pink-400 text-xl mt-1">📨</span>
-                    <span>
-                      <strong>Message Communication:</strong> All messages prefixed with <span className="font-mono bg-white/10 px-1 rounded">XXR</span> must be sent immediately to the Railway Board, C.C.R.S, C.R.S., and General Manager (T). The first message should be dispatched quickly so that the press receives the news first from the Railway. A second message with injury details should follow as soon as possible. The Railway Board must be kept informed of restoration progress through frequent messages or telephone updates. While daily updates to news agencies are not required, significant progress towards restoration should be communicated as needed. The Divisional Safety Officer must collect daily updates from the Engineer-in-charge.
-                    </span>
+                    <div className="flex flex-col gap-2 w-full">
+                      <span className="font-bold text-indigo-300 flex items-center gap-2">
+                        Message Communication:
+                      </span>
+                      <ul className="list-none space-y-2 pl-2 mt-2">
+                        <li className="flex items-start gap-2">
+                          <span className="text-blue-400">🆔</span>
+                          <span>
+                            All messages prefixed with <span className="font-mono bg-white/10 px-1 rounded">XXR</span> must be sent immediately to the Railway Board, C.C.R.S, C.R.S., and General Manager (T).
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-400">⚡</span>
+                          <span>
+                            The first message should be dispatched quickly so that the press receives the news first from the Railway.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-pink-400">➕</span>
+                          <span>
+                            A second message with injury details should follow as soon as possible.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-yellow-400">📞</span>
+                          <span>
+                            The Railway Board must be kept informed of restoration progress through frequent messages or telephone updates.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-purple-400">📰</span>
+                          <span>
+                            While daily updates to news agencies are not required, significant progress towards restoration should be communicated as needed.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">📋</span>
+                          <span>
+                            The Divisional Safety Officer must collect daily updates from the Engineer-in-charge.
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>

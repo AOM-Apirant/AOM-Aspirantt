@@ -42,7 +42,7 @@ const AMChapterPage92 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 6v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-6V7a2 2 0 00-2-2H5z" />
@@ -61,16 +61,33 @@ const AMChapterPage92 = () => {
                   {/* Board's Letter Reference */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Board&apos;s Letter No. E (G)/58/PS. 5–6/1 Dated 25-8-58</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            Complimentary passes may be issued to the next of kin of the victims as well as to the surviving victims discharged from the hospitals. The class of passes should of course, be the same in which the surviving victims were traveling or higher if recommended by the Doctor. While issuing such passes the following aspects should be borne in mind:-
-                          </p>
+                          <ul className="list-none space-y-3 pl-2 text-gray-200">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400">👨‍👩‍👧‍👦</span>
+                              <span>
+                                Complimentary passes may be issued to the next of kin of the victims as well as to the surviving victims discharged from the hospitals.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">🎫</span>
+                              <span>
+                                The class of passes should be the same in which the surviving victims were traveling, or higher if recommended by the Doctor.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400">⚠️</span>
+                              <span>
+                                While issuing such passes, the following aspects should be borne in mind:
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -81,7 +98,7 @@ const AMChapterPage92 = () => {
                     {/* Point a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🏢</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -99,7 +116,7 @@ const AMChapterPage92 = () => {
                     {/* Point b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">👥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -117,7 +134,7 @@ const AMChapterPage92 = () => {
                     {/* Point c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🛡️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">
@@ -135,7 +152,7 @@ const AMChapterPage92 = () => {
                     {/* Point d */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">📊</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">

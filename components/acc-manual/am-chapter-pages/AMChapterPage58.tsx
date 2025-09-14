@@ -23,7 +23,7 @@ const AMChapterPage58 = () => {
               </div>
             </div>
             
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">CHAPTER V</h2>
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - V </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               PROFORMA FOR MEASUREMENT OF COACH INVOLVED IN ACCIDENT
@@ -42,7 +42,7 @@ const AMChapterPage58 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -456,10 +456,7 @@ const AMChapterPage58 = () => {
                       </div>
                       <div className="mt-10">
                         <h4 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
-                          <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2" />
-                            <circle cx="12" cy="7" r="4" />
-                          </svg>
+                          
                           506. Proforma for Measurement of Coach Involved in Accident (Continued)
                         </h4>
                         <div className="overflow-x-auto rounded-lg shadow border border-amber-400/20 bg-gradient-to-r from-amber-50/10 to-orange-50/10">
@@ -475,47 +472,47 @@ const AMChapterPage58 = () => {
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">1</td>
                                 <td className="px-4 py-2">Wheel Diameter</td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">2</td>
                                 <td className="px-4 py-2">Any indication of bent axle or wheel shifted on axle</td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">3</td>
                                 <td className="px-4 py-2">Wheel and Axle Face Particulars <span className="text-xs text-gray-400">(in case of breakage of any wheel/axle)</span></td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">4</td>
                                 <td className="px-4 py-2">Stamping particulars on wheel disc regarding manufacturer / RA / RD <span className="text-xs text-gray-400">(in case of breakage of any wheel/axle)</span></td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td> 
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">5</td>
                                 <td className="px-4 py-2">Observations after measuring the profile with wheel defect gauge <span className="text-xs text-gray-400">(Good/Rejectable)</span></td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">6</td>
                                 <td className="px-4 py-2">Measurement</td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">7</td>
                                 <td className="px-4 py-2">Record whether below condemning size <span className="text-xs text-gray-400">(Yes/No)</span></td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">8</td>
                                 <td className="px-4 py-2">Axle Face Particulars</td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                               <tr className="border-b border-amber-400/10">
                                 <td className="px-4 py-2">9</td>
                                 <td className="px-4 py-2">Ultrasonic particulars of the hub of the disc</td>
-                                <td className="px-4 py-2">__________________________</td>
+                                <td className="px-4 py-2">_____________</td>
                               </tr>
                             </tbody>
                           </table>
@@ -567,24 +564,44 @@ const AMChapterPage58 = () => {
                       <h5 className="text-lg font-semibold text-amber-200 mb-2">
                         Roller Bearing Inspection (To be recorded if any abnormalities are observed in Roller Bearing/Axle Box)
                       </h5>
-                      <ul className="list-disc list-inside text-gray-100 space-y-1 pl-2">
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Axle Box, Rear and Front Covers/End Cap (FIAT):</span>
-                          <span className="ml-1 text-gray-300">Check for any damage, deformation, or leakage.</span>
-                        </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Face Cover Plate:</span>
-                          <span className="ml-1 text-gray-300">Inspect for cracks, looseness, or missing fasteners.</span>
-                        </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Bearing Seal & Studs/Locking Plate and Bolts (FIAT):</span>
-                          <span className="ml-1 text-gray-300">Ensure seals are intact and all studs, locking plates, and bolts are secure.</span>
-                        </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Roller Bearing and its Components:</span>
-                          <span className="ml-1 text-gray-300">Examine for wear, overheating, or any unusual noise or movement.</span>
-                        </li>
-                      </ul>
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                            <span className="text-white text-lg">🛢️</span>
+                          </div>
+                          <div className="flex-1">
+                            <span className="font-medium text-amber-100">Condition of Axle Box, Rear and Front Covers/End Cap (FIAT):</span>
+                            <span className="ml-1 text-gray-300">Check for any damage, deformation, or leakage.</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                            <span className="text-white text-lg">🪛</span>
+                          </div>
+                          <div className="flex-1">
+                            <span className="font-medium text-amber-100">Condition of Face Cover Plate:</span>
+                            <span className="ml-1 text-gray-300">Inspect for cracks, looseness, or missing fasteners.</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                            <span className="text-white text-lg">🔩</span>
+                          </div>
+                          <div className="flex-1">
+                            <span className="font-medium text-amber-100">Condition of Bearing Seal & Studs/Locking Plate and Bolts (FIAT):</span>
+                            <span className="ml-1 text-gray-300">Ensure seals are intact and all studs, locking plates, and bolts are secure.</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                            <span className="text-white text-lg">⚙️</span>
+                          </div>
+                          <div className="flex-1">
+                            <span className="font-medium text-amber-100">Condition of Roller Bearing and its Components:</span>
+                            <span className="ml-1 text-gray-300">Examine for wear, overheating, or any unusual noise or movement.</span>
+                          </div>
+                        </div>
+                      </div>
                       <div className="grid grid-cols-4 gap-4 mt-4 text-center">
                         <div className="bg-amber-900/20 rounded p-2 font-semibold text-amber-100">23</div>
                         <div className="bg-amber-900/20 rounded p-2 font-semibold text-amber-100">24</div>
@@ -597,38 +614,62 @@ const AMChapterPage58 = () => {
                       <h5 className="text-lg font-semibold text-amber-200 mb-2">
                         Spring and Spring Gear Inspection
                       </h5>
-                      <ul className="list-disc list-inside text-gray-100 space-y-1 pl-2">
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Coil Suspension Spring:</span>
-                          <span className="ml-1 text-gray-300">Check if the spring is normal or fractured (specify if the fracture is old or fresh).</span>
+                      <ul className="space-y-2 pl-2">
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">🌀</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Coil Suspension Spring:</span>
+                            <span className="ml-1 text-gray-300">Check if the spring is normal or fractured (specify if the fracture is old or fresh).</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Rubber Spring (LHB only):</span>
-                          <span className="ml-1 text-gray-300">Inspect for normalcy or cracks, including the length of any crack present.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">🧽</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Rubber Spring (LHB only):</span>
+                            <span className="ml-1 text-gray-300">Inspect for normalcy or cracks, including the length of any crack present.</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Condition of Air Spring:</span>
-                          <span className="ml-1 text-gray-300">Check for any leakage in the piping and overall condition.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">💨</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Air Spring:</span>
+                            <span className="ml-1 text-gray-300">Check for any leakage in the piping and overall condition.</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Deflected Height of Primary and Secondary Coil Spring:</span>
-                          <span className="ml-1 text-gray-300">Measure after re-railing on a level, uncanted track.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">📏</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Deflected Height of Primary and Secondary Coil Spring:</span>
+                            <span className="ml-1 text-gray-300">Measure after re-railing on a level, uncanted track.</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Vertical Clearance (for ICF):</span>
-                          <span className="ml-1 text-gray-300">Record the vertical clearance as per standard.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">↕️</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Vertical Clearance (for ICF):</span>
+                            <span className="ml-1 text-gray-300">Record the vertical clearance as per standard.</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Crown Clearance (in mm):</span>
-                          <span className="ml-1 text-gray-300">Measure and note the crown clearance in millimeters.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">🎯</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Crown Clearance (in mm):</span>
+                            <span className="ml-1 text-gray-300">Measure and note the crown clearance in millimeters.</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Bogie Frame – Bolster Clearance (in mm):</span>
-                          <span className="ml-1 text-gray-300">Record the clearance between bogie frame and bolster in millimeters.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">🛠️</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Bogie Frame – Bolster Clearance (in mm):</span>
+                            <span className="ml-1 text-gray-300">Record the clearance between bogie frame and bolster in millimeters.</span>
+                          </div>
                         </li>
-                        <li>
-                          <span className="font-medium text-amber-100">Body – Bogie Frame Clearance:</span>
-                          <span className="ml-1 text-gray-300">Note the clearance between the body and bogie frame.</span>
+                        <li className="flex items-start gap-2">
+                          <span className="text-amber-300 text-lg mt-0.5">🚋</span>
+                          <div>
+                            <span className="font-medium text-amber-100">Body – Bogie Frame Clearance:</span>
+                            <span className="ml-1 text-gray-300">Note the clearance between the body and bogie frame.</span>
+                          </div>
                         </li>
                       </ul>
                       <div className="grid grid-cols-7 gap-4 mt-4 text-center">
@@ -651,10 +692,7 @@ const AMChapterPage58 = () => {
                     </div>
 
                     <h4 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
-                      <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                      </svg>
+                      
                       506. Proforma for Measurement of Coach Involved in Accident (Continued)
                     </h4>
                     <div className="overflow-x-auto rounded-lg shadow border border-amber-400/20 bg-gradient-to-r from-amber-50/10 to-orange-50/10 mb-6">
@@ -670,12 +708,12 @@ const AMChapterPage58 = () => {
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">34</td>
                             <td className="px-4 py-2">Condition of Rubber Disc and Bump Stop of Primary Suspension (for LHB)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">_____________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">35</td>
                             <td className="px-4 py-2">Height of Bogie Bolster Base Plate from Rail Level (for LHB)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">_____________</td> 
                           </tr>
                           <tr className="bg-amber-900/10">
                             <td className="px-4 py-2 font-semibold text-amber-100" colSpan={3}>Condition of Bogie Components</td>
@@ -683,22 +721,22 @@ const AMChapterPage58 = () => {
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">36</td>
                             <td className="px-4 py-2">Condition of Hanger (for ICF)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">_____________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">37</td>
                             <td className="px-4 py-2">Condition of Equalizing Stay (for ICF)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">_____________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">38</td>
                             <td className="px-4 py-2">Condition of Anchor Link (for ICF)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">_____________</td>
                           </tr>
                           <tr>
                             <td className="px-4 py-2">39</td>
                             <td className="px-4 py-2">Condition of Control Arm, Rubber Element and Bore (for LHB)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">_____________</td>
                           </tr>
                         </tbody>
                       </table>
@@ -715,17 +753,17 @@ const AMChapterPage58 = () => {
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">40</td>
                           <td className="px-4 py-2">Condition of Axle Guide Cum Dash Pot including Oil level (for ICF)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">41</td>
                           <td className="px-4 py-2">Condition of Hydraulic Dampers</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">42</td>
                           <td className="px-4 py-2">Condition of Anti Roll Bar (for LHB)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="bg-amber-900/10">
                           <td className="px-4 py-2 font-semibold text-amber-100" colSpan={3}>System of Bogie Rotation and Clearances</td>
@@ -733,37 +771,37 @@ const AMChapterPage58 = () => {
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">43</td>
                           <td className="px-4 py-2">Condition of Grounding cables, Wheel Slip Protection (WSP), and Speed sensor (for LHB)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">44</td>
                           <td className="px-4 py-2">Condition of Brake Gear Assembly</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">45</td>
                           <td className="px-4 py-2">Condition of Centre Pivot including verticality of Pivot Pin (for ICF)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">46</td>
                           <td className="px-4 py-2">Condition of Side Bearer including Oil level and Wear (for ICF)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">47</td>
                           <td className="px-4 py-2">Condition of Longitudinal/ Lateral flexibility of Secondary Spring (for LHB)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">48</td>
                           <td className="px-4 py-2">Clearance between Traction Centre and Longitudinal/ Lateral Bump Stop (for LHB)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-2">49</td>
                           <td className="px-4 py-2">Remarks regarding free movement of bolster and pivot and their condition</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                       </tbody>
                     </table>
@@ -780,37 +818,37 @@ const AMChapterPage58 = () => {
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">50</td>
                           <td className="px-4 py-2">Buffer/Coupler height (to be taken on a level uncanted track after uncoupling and re-railing) (in mm)</td>
-                          <td className="px-4 py-2">Front: ____________________<br/>Rear: ____________________</td>
+                          <td className="px-4 py-2">Front: ____________<br/>Rear: ____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">51</td>
                           <td className="px-4 py-2">Condition of Side Buffers (Working, dead, drooping, entanglement)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">52</td>
                           <td className="px-4 py-2">Details of broken parts (location with respect to point of mount and derailment, and whether breakage is considered due to accident)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">53</td>
                           <td className="px-4 py-2">Any other defect in the vehicles which may have contributed to or caused the derailment (e.g., condition of coupler, draft gear pocket, shearing plates, etc.)</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">54</td>
                           <td className="px-4 py-2">List of Damages to the Coach due to accident</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr className="border-b border-amber-400/10">
                           <td className="px-4 py-2">55</td>
                           <td className="px-4 py-2">Other Observations considered relevant to derailment</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-2">56</td>
                           <td className="px-4 py-2">Additional Remarks</td>
-                          <td className="px-4 py-2">__________________________</td>
+                          <td className="px-4 py-2">_____________</td>
                         </tr>
                       </tbody>
                     </table>
@@ -855,60 +893,123 @@ const AMChapterPage58 = () => {
 
                     <div className="mt-8 p-4 rounded-lg bg-gradient-to-br from-amber-900/30 to-orange-900/10 border border-amber-400/20 shadow animate-fade-in">
                       <h4 className="text-xl font-bold text-amber-300 mb-2 flex items-center gap-2">
-                        <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2" />
-                          <circle cx="12" cy="7" r="4" />
-                        </svg>
+                        
                         506. Proforma for Measurement of Coach Involved in Accident (Continued)
                       </h4>
                       <div className="text-sm text-amber-100 mb-4 space-y-2">
                         <p className="font-semibold">Notes:</p>
-                        <ul className="list-decimal list-inside space-y-1 pl-4">
-                          <li>
-                            The wheel gauge must be measured at the horizontal plane passing through the centre of the axle.
+                        <ul className="space-y-3 pl-2">
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-blue-300">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-3-3" />
+                              </svg>
+                            </span>
+                            <span>
+                              The wheel gauge must be measured at the horizontal plane passing through the centre of the axle.
+                            </span>
                           </li>
-                          <li>
-                            The wheel profile should be checked only with a tyre defect gauge 
-                            <span className="text-xs text-gray-400">(Reference: IRC A Part IV Rule no. 2.95, 3.2.2, 54.22.1, Plate No. 45 to 53)</span>.
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-yellow-300">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                              </svg>
+                            </span>
+                            <span>
+                              The wheel profile should be checked only with a tyre defect gauge 
+                              <span className="text-xs text-gray-400">(Reference: IRC A Part IV Rule no. 2.95, 3.2.2, 54.22.1, Plate No. 45 to 53)</span>.
+                            </span>
                           </li>
-                          <li>
-                            Measurement of item no. 5 of the opening note, item no. 24, item nos. 28–49, item no. 54, and item no. 56 should be carried out as per site conditions.
+                          <li className="flex items-start gap-2">
+                            <span className="mt-0.5 text-green-300">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12l2 2 4-4" />
+                              </svg>
+                            </span>
+                            <span>
+                              Measurement of item no. 5 of the opening note, item no. 24, item nos. 28–49, item no. 54, and item no. 56 should be carried out as per site conditions.
+                            </span>
                           </li>
                         </ul>
                       </div>
                       <h5 className="text-lg font-semibold text-amber-200 mb-2 mt-6 flex items-center gap-2">
-                        <svg className="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                        
                         506.1 Measurement Table for Wagon Involved in Accident
                       </h5>
                       <div className="text-sm text-amber-100 mb-2">
                         <p className="font-semibold">Notes:</p>
-                        <ul className="list-decimal list-inside space-y-1 pl-4">
-                          <li>
-                            Details regarding all derailed vehicles should be provided except in the following cases:
-                            <ul className="list-[lower-roman] list-inside pl-4">
-                              <li>
-                                Where vehicles have derailed due to locomotive derailment.
-                              </li>
-                              <li>
-                                When the obvious and indisputable cause is sabotage or an obstruction on the track.
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            &ldquo;Front&rdquo; and &ldquo;rear&rdquo; as well as &ldquo;left (L)&rdquo; and &ldquo;right (R)&rdquo; are with respect to the direction of movement. (Reference: IRC A Part IV Rule no. 2.95, 3.2.2, 54.22.1, Plate No. 45 to 53)  
-                          </li>
-                          <li>
-                            For an obvious cause of derailment such as a broken axle, spring dropping off the run, or any part of the undergear hanging loose and causing obstruction, only the relevant particulars need to be filled.
-                          </li>
-                          <li>
-                            Particulars for each derailed vehicle should be given on a separate sheet. Information for columns (5), (6), (8), (16), (17), (21), and (22) should also be provided for adjacent wagons on the same sheet.
-                          </li>
-                          <li>
-                            Relevant details of adjacent vehicles should also be given if the cause of derailment is not apparent.
-                          </li>
-                        </ul>
+                        <div className="space-y-4 mt-2">
+                          <div className="flex items-start gap-3">
+                            <span className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mt-0.5">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-3-3" />
+                              </svg>
+                            </span>
+                            <span>
+                              Details regarding all derailed vehicles should be provided except in the following cases:
+                              <ul className="mt-2 space-y-1 pl-1">
+                                <li className="flex items-start gap-2">
+                                  <span className="flex-shrink-0 w-5 h-5 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-full flex items-center justify-center mt-0.5">
+                                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 12h16" />
+                                    </svg>
+                                  </span>
+                                  <span>Where vehicles have derailed due to locomotive derailment.</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                  <span className="flex-shrink-0 w-5 h-5 bg-gradient-to-br from-rose-500 to-pink-500 rounded-full flex items-center justify-center mt-0.5">
+                                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                                    </svg>
+                                  </span>
+                                  <span>When the obvious and indisputable cause is sabotage or an obstruction on the track.</span>
+                                </li>
+                              </ul>
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <span className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-0.5">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
+                              </svg>
+                            </span>
+                            <span>
+                              “Front” and “rear” as well as “left (L)” and “right (R)” are with respect to the direction of movement. <span className="text-xs text-gray-400">(Reference: IRC A Part IV Rule no. 2.95, 3.2.2, 54.22.1, Plate No. 45 to 53)</span>
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <span className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mt-0.5">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                              </svg>
+                            </span>
+                            <span>
+                              For an obvious cause of derailment such as a broken axle, spring dropping off the run, or any part of the undergear hanging loose and causing obstruction, only the relevant particulars need to be filled.
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <span className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mt-0.5">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12l2 2 4-4" />
+                              </svg>
+                            </span>
+                            <span>
+                              Particulars for each derailed vehicle should be given on a separate sheet. Information for columns (5), (6), (8), (16), (17), (21), and (22) should also be provided for adjacent wagons on the same sheet.
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <span className="flex-shrink-0 w-7 h-7 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center mt-0.5">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                              </svg>
+                            </span>
+                            <span>
+                              Relevant details of adjacent vehicles should also be given if the cause of derailment is not apparent.
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -995,10 +1096,7 @@ const AMChapterPage58 = () => {
                     </div>
 
                     <h4 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2 mt-10">
-                      <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                      </svg>
+                      
                       506.1 Measurement Table for Wagon Involved in Accident (Continued)
                     </h4>
                     <div className="overflow-x-auto rounded-lg shadow border border-amber-400/20 bg-gradient-to-r from-amber-50/10 to-orange-50/10 mb-6">
@@ -1198,10 +1296,7 @@ const AMChapterPage58 = () => {
                     </div>
 
                     <h4 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
-                      <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                      </svg>
+                      
                       506.1 Measurement Table for Wagon Involved in Accident (Continued)
                     </h4>
                     <div className="overflow-x-auto rounded-lg shadow border border-amber-400/20 bg-gradient-to-r from-amber-50/10 to-orange-50/10 mb-6">
@@ -1225,17 +1320,17 @@ const AMChapterPage58 = () => {
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">29</td>
                             <td className="px-4 py-2">Condition of face cover plate</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">30</td>
                             <td className="px-4 py-2">Condition of locking plates &amp; studs</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">31</td>
                             <td className="px-4 py-2">Condition of roller bearing and its components</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2 font-bold" colSpan={3}>
@@ -1248,27 +1343,27 @@ const AMChapterPage58 = () => {
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">32</td>
                             <td className="px-4 py-2">Brass thickness (mm)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">33</td>
                             <td className="px-4 py-2">Condition of box and brass</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">34</td>
                             <td className="px-4 py-2">Condition of sole plate</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">35</td>
                             <td className="px-4 py-2">Condition of journal</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr>
                             <td className="px-4 py-2">36</td>
                             <td className="px-4 py-2">Clearance between brass and collar of journal (mm)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td> 
                           </tr>
                         </tbody>
                       </table>
@@ -1288,22 +1383,22 @@ const AMChapterPage58 = () => {
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">37</td>
                               <td className="px-4 py-2">Lateral clearance between axle box and axle guard (mm)</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">38</td>
                               <td className="px-4 py-2">Whether axle guard can work clear of axle box</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">39</td>
                               <td className="px-4 py-2">Are the axle guards bent or otherwise damaged to prevent free movement of axle box</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">40</td>
                               <td className="px-4 py-2">Remark regarding bridle bar</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                           </tbody>
                         </table>
@@ -1322,22 +1417,22 @@ const AMChapterPage58 = () => {
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">41</td>
                               <td className="px-4 py-2">Type of Bogie</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">42</td>
                               <td className="px-4 py-2">Lateral clearance between side frame &amp; bolster (mm)</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                             <tr className="border-b border-amber-400/10">
                               <td className="px-4 py-2">43</td>
                               <td className="px-4 py-2">Lateral clearance between side frame &amp; axle box adapter (mm)</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                             <tr>
                               <td className="px-4 py-2">44</td>
                               <td className="px-4 py-2">Longitudinal clearance between side frame &amp; axle box adapter (mm)</td>
-                              <td className="px-4 py-2">__________________________</td>
+                              <td className="px-4 py-2">______________</td>
                             </tr>
                           </tbody>
                         </table>
@@ -1357,37 +1452,37 @@ const AMChapterPage58 = () => {
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">45</td>
                             <td className="px-4 py-2">Condition of suspension plate and spring under normal, broken/fresh and old springs, in general condition (for UIC/IRS laminated spring only and for coil springs)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">46</td>
                             <td className="px-4 py-2">Camber of all springs after re-railing on a level uncanted track (for laminated spring only and for coil springs)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">47</td>
                             <td className="px-4 py-2">Deflected height of springs i.e. camber of coil spring in mm after re-railing (for Casnub)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">48</td>
                             <td className="px-4 py-2">Condition of elastomeric pad above adaptor (for Casnub)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">49</td>
                             <td className="px-4 py-2">Broken/cracked/missing/clearance of shackle and shackle pin and spring seat touches sole bar (for laminated spring only)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">50</td>
                             <td className="px-4 py-2">Thickness of packing plate under eye after derailment due to sudden impact and deformities occurred</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr>
                             <td className="px-4 py-2">51</td>
                             <td className="px-4 py-2">Remarks</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1428,10 +1523,7 @@ const AMChapterPage58 = () => {
                       </div>
                     </div>
                     <h4 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
-                      <svg className="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h2a4 4 0 014 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                      </svg>
+                      
                       506.1 Measurement Table for Wagon Involved in Accident (Continued)
                     </h4>
                     <div className="overflow-x-auto rounded-lg shadow border border-amber-400/20 bg-gradient-to-r from-amber-50/10 to-orange-50/10 mb-6">
@@ -1447,42 +1539,42 @@ const AMChapterPage58 = () => {
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">52</td>
                             <td className="px-4 py-2">Condition of Centre Pivot including lubrication and wear (for Casnub)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">53</td>
                             <td className="px-4 py-2">Condition of Side Bearer including vertical clearance at side bearers (for stock having clearance type side bearers only)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">54</td>
                             <td className="px-4 py-2">Condition of Friction Snubber Wedge Assembly (for Casnub)</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">55</td>
                             <td className="px-4 py-2">Whether a load is placed on more than one wagon</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">56</td>
                             <td className="px-4 py-2">Any other defects in vehicle which may have contributed to or caused the derailment</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">57</td>
                             <td className="px-4 py-2">Details of broken parts giving location with respect to point of mount and drop</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr className="border-b border-amber-400/10">
                             <td className="px-4 py-2">58</td>
                             <td className="px-4 py-2">List of damages to the wagon due to accident</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                           <tr>
                             <td className="px-4 py-2">59</td>
                             <td className="px-4 py-2">Other observations*</td>
-                            <td className="px-4 py-2">__________________________</td>
+                            <td className="px-4 py-2">______________</td>
                           </tr>
                         </tbody>
                       </table>

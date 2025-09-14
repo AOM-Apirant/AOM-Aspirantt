@@ -42,7 +42,7 @@ const AMChapterPage94A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
@@ -61,12 +61,28 @@ const AMChapterPage94A = () => {
                   {/* Main Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
-                        <span className="text-blue-400 text-xl mt-1">⚖️</span>
+                      <div className="flex flex-col items-center gap-3">
                         <div className="space-y-4">
-                          <p className="text-gray-200 leading-relaxed">
-                            The Railway, are liable to pay compensation for death / injury of a passenger on train accident as defined under Section 124 of the Railway Act 1989. Similarly, the Railways are also liable to pay compensation for death / injury to a passenger and platform ticket holder in untoward incidents as defined under Section 124-A of the Act, such as terrorist acts violent attack, robbery, dacoity, rioting, shoot out or arson by any person in train or within the premises of a Railway Station or accidental falling of a passenger from train.
-                          </p>
+                          <ul className="list-none space-y-4 pl-2">
+                            <li className="flex items-start gap-3">
+                              <span className="text-blue-400 text-xl">⚖️</span>
+                              <span>
+                                <span className="font-semibold text-blue-100">Compensation for Train Accidents:</span> Railways are liable to pay compensation for death or injury of a passenger in a train accident as per <span className="font-bold text-blue-200">Section 124 of the Railway Act, 1989</span>.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-orange-400 text-xl">🚨</span>
+                              <span>
+                                <span className="font-semibold text-orange-100">Compensation for Untoward Incidents:</span> Railways are also liable to pay compensation for death or injury to a passenger or platform ticket holder in untoward incidents as per <span className="font-bold text-orange-200">Section 124-A of the Act</span>.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-red-400 text-xl">💥</span>
+                              <span>
+                                <span className="font-semibold text-red-100">Untoward Incidents include:</span> Terrorist acts, violent attacks, robbery, dacoity, rioting, shoot out, arson by any person in train or within railway station premises, or accidental falling of a passenger from train.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

@@ -42,7 +42,7 @@ const AMChpaterPage99B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -62,7 +62,6 @@ const AMChpaterPage99B = () => {
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
                       <div className="flex items-start gap-3">
-                        <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <p className="text-gray-200 leading-relaxed">
                             After every accident certain vital information bearing on the cause of the accident is to be collected on the spot which may not be available later, on account of clearance operations undertaken and the resumption of normal traffic. If such information is not collected, it often becomes difficult for the Inquiry Committee to ascertain the cause of that accident. The information to be collected in different cases is given below:
@@ -76,7 +75,7 @@ const AMChpaterPage99B = () => {
                   <div className="space-y-4">
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">🚦</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -164,7 +163,7 @@ const AMChpaterPage99B = () => {
                   </div>
                   <div className="mt-10">
                     <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 p-4 rounded-xl border border-yellow-400/30 mb-6">
-                      <h3 className="text-2xl font-bold text-yellow-300 mb-2 flex items-center gap-2">
+                      <h3 className="lg:text-2xl text-xl font-bold text-yellow-300 mb-2 flex flex-col text-center items-center gap-2">
                         <span className="text-yellow-400 text-3xl">🚦</span>
                         902.2 Collision and Averted Collision
                       </h3>
@@ -216,7 +215,7 @@ const AMChpaterPage99B = () => {
                   </div>
 
                   <div className="mt-8">
-                    <h3 className="text-2xl font-bold text-pink-300 flex items-center gap-3 mb-4">
+                    <h3 className="lg:text-2xl text-xl font-bold text-pink-300 flex flex-col text-center items-center gap-3 mb-4">
                       <span className="text-pink-400 text-3xl">🚂</span>
                       902.3 Derailments
                     </h3>
@@ -240,61 +239,61 @@ const AMChpaterPage99B = () => {
                       </ul>
                       <ul className="list-none pl-2 space-y-3 mt-4">
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➊</span>
+                          <span className="text-green-300 text-2xl">➊</span>
                           <span>
                             <span className="font-semibold text-pink-200">Derailment proneness</span> increases with higher lateral wheel force, reduced vertical wheel load (offloading), and increased positive angularity of the wheel. Persistent positive angularity of the axle further increases risk. Analyze track, rolling stock, and operational features for their contribution. For curves, examine bogie rotation systems. Investigate track twist, spring defects, and bogie/vehicle frame twists, especially in high-speed derailments.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➋</span>
+                          <span className="text-green-300 text-2xl">➋</span>
                           <span>
                             <span className="font-semibold text-pink-200">Comprehensive analysis</span> of track and rolling stock parameters is required to understand rail-wheel interaction forces. Refer to safety and maintenance limits in IRPWM/IRCA/Maintenance Manuals.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➌</span>
+                          <span className="text-green-300 text-2xl">➌</span>
                           <span>
                             <span className="font-semibold text-pink-200">Examine wheel mounting marks</span> at the initial point of derailment to identify the category. Take precise measurements and detailed observations (length, strength, continuity, number, etc.). Photograph marks on rails, fastenings, sleepers, and ballast.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➍</span>
+                          <span className="text-green-300 text-2xl">➍</span>
                           <span>
                             <span className="font-semibold text-pink-200">Mark the Point of Mount and Drop</span> if available.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➎</span>
+                          <span className="text-green-300 text-2xl">➎</span>
                           <span>
                             <span className="font-semibold text-pink-200">Take track measurements</span> and draw a sketch.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➏</span>
+                          <span className="text-green-300 text-2xl">➏</span>
                           <span>
                             <span className="font-semibold text-pink-200">Measure rolling stock</span> involved in the derailment.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➐</span>
+                          <span className="text-green-300 text-2xl">➐</span>
                           <span>
                             <span className="font-semibold text-pink-200">Examine locomotives</span> in case of locomotive derailments.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➑</span>
+                          <span className="text-green-300 text-2xl">➑</span>
                           <span>
                             <span className="font-semibold text-pink-200">Inspect rail fittings and point readings</span>, including locking arrangements. Check for obstructions or gaps in points. Observe marks on rails and sleepers.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➒</span>
+                          <span className="text-green-300 text-2xl">➒</span>
                           <span>
                             <span className="font-semibold text-pink-200">During shunting derailments</span>, note who supervised the shunting.
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-300 text-xl">➓</span>
+                          <span className="text-green-300 text-2xl">➓</span>
                           <span>
                             <span className="font-semibold text-pink-200">Record the position</span> of shunt signals, point/trap indicators, and any relevant point levers. Seize the shunting order, if any.
                           </span>
@@ -393,7 +392,7 @@ const AMChpaterPage99B = () => {
                 <div className="space-y-4 mt-8">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-yellow-400 text-2xl mt-1">🚧</span>
                         <div className="space-y-4 w-full">
                           <h4 className="text-lg font-bold text-yellow-300 mb-3 text-center">
@@ -449,9 +448,9 @@ const AMChpaterPage99B = () => {
                   </div>
                   {/* Notes Section */}
                   <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-xl border border-yellow-400/20 p-4 mt-4">
-                    <h5 className="text-yellow-300 font-bold mb-2 flex items-center gap-2">
+                    <h5 className="text-yellow-300 font-bold mb-2 flex flex-col text-center items-center gap-2">
                       <span className="text-yellow-400 text-xl">📝</span>
-                      Notes:
+                      Notes
                     </h5>
                     <ul className="list-none space-y-2 pl-2">
                       <li className="flex items-start gap-2">

@@ -42,7 +42,7 @@ const AMChapterPage99A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,12 +61,34 @@ const AMChapterPage99A = () => {
                   {/* Main Investigation Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
-                        <span className="text-blue-400 text-xl mt-1">🔍</span>
+                      <div className="flex flex-col items-center gap-3">
                         <div className="space-y-4">
-                          <p className="text-gray-200 leading-relaxed">
-                            The Officers and Senior Subordinates present at the site of accident must jointly investigate the cause and advise DRM and other Officers concerned, their opinion, mentioning the department or departments responsible and person or persons responsible for the occurrence. The investigation on the spot includes recording of statements of staff concerned and, if necessary, other independent witnesses. These depositions shall be produced at any subsequent enquiry and included in the general evidence.
-                          </p>
+                          <ul className="text-gray-200 leading-relaxed space-y-3">
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">👥</span>
+                              <span>
+                                Officers and Senior Subordinates present at the accident site must jointly investigate the cause.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">📝</span>
+                              <span>
+                                They should advise the DRM and other concerned Officers with their opinion, clearly mentioning the responsible department(s) and person(s).
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">📄</span>
+                              <span>
+                                The investigation includes recording statements of the staff involved and, if necessary, other independent witnesses.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">📚</span>
+                              <span>
+                                All depositions must be produced at any subsequent enquiry and included in the general evidence.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -77,7 +99,7 @@ const AMChapterPage99A = () => {
                     {/* 901.1 */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">⚠️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -95,7 +117,7 @@ const AMChapterPage99A = () => {
                     {/* 901.2 */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">🚂</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -113,7 +135,7 @@ const AMChapterPage99A = () => {
                     {/* 901.3 */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">📋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">

@@ -42,7 +42,7 @@ const AMChapterPage93 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
@@ -61,7 +61,7 @@ const AMChapterPage93 = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <p className="text-gray-200 leading-relaxed">
@@ -76,7 +76,7 @@ const AMChapterPage93 = () => {
                   <div className="space-y-4">
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">💀</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -105,7 +105,7 @@ const AMChapterPage93 = () => {
                     {/* Grievous Injury Cases */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🏥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -160,7 +160,7 @@ const AMChapterPage93 = () => {
 
                             {/* Maximum Period Note */}
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30 mt-4">
-                              <div className="flex items-center gap-3">
+                              <div className="flex flex-col items-center gap-3">
                                 <span className="text-yellow-400 text-xl">⏰</span>
                                 <p className="text-gray-200">
                                   The maximum period for which ex-gratia is payable to the grievously injured passenger will be <span className="text-yellow-300 font-bold">12 months</span>
@@ -169,11 +169,11 @@ const AMChapterPage93 = () => {
                             </div>
                           </div>
                           <div className="bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-xl border border-yellow-300/30 mt-6 p-4">
-                            <div className="flex items-center gap-2 mb-2">
+                            <div className="flex flex-col items-center gap-2 mb-2">
                               <span className="text-yellow-300 text-2xl">📝</span>
                               <span className="text-lg font-semibold text-yellow-200">Important Notes</span>
                             </div>
-                            <ul className="list-none space-y-3 pl-2">
+                            <ul className="list-none space-y-3 pl-0">
                               <li className="flex items-start gap-2">
                                 <span className="text-blue-300 mt-1">🔹</span>
                                 <span>
@@ -195,7 +195,7 @@ const AMChapterPage93 = () => {
                             </ul>
                           </div>
                           <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 rounded-xl border border-orange-300/30 mt-8 p-5">
-                            <div className="flex items-center gap-3 mb-3">
+                            <div className="flex flex-col items-center gap-3 mb-3">
                               <span className="text-orange-300 text-2xl">✨</span>
                               <span className="text-lg font-bold text-orange-200">Enhanced Ex-Gratia by Ministry of Railways</span>
                             </div>
@@ -205,7 +205,6 @@ const AMChapterPage93 = () => {
                             <div className="space-y-5">
                               <div>
                                 <div className="flex items-center gap-2 mb-2">
-                                  <span className="text-blue-300">🚆</span>
                                   <span className="font-semibold text-blue-100">For Train Accidents (Section 124 of the Act):</span>
                                 </div>
                                 <ul className="list-none space-y-2 pl-4">
@@ -231,7 +230,6 @@ const AMChapterPage93 = () => {
                               </div>
                               <div>
                                 <div className="flex items-center gap-2 mb-2">
-                                  <span className="text-blue-300">⚡</span>
                                   <span className="font-semibold text-blue-100">For Untoward Incidents (Section 124A of the Act):</span>
                                 </div>
                                 <ul className="list-none space-y-2 pl-4">
@@ -257,7 +255,6 @@ const AMChapterPage93 = () => {
                               </div>
                               <div>
                                 <div className="flex items-center gap-2 mb-2">
-                                  <span className="text-blue-300">🚧</span>
                                   <span className="font-semibold text-blue-100">For Accidents at Manned Level Crossings (Railway’s Prima Facie Liability):</span>
                                 </div>
                                 <ul className="list-none space-y-2 pl-4">
@@ -287,7 +284,6 @@ const AMChapterPage93 = () => {
                         <div className="mt-6 space-y-6">
                           <div className="bg-gradient-to-r from-indigo-500/10 to-blue-500/10 rounded-xl border border-indigo-400/20 p-4">
                             <h4 className="text-lg font-bold text-indigo-200 mb-3 flex items-center gap-2">
-                              <span className="text-blue-300">📝</span>
                               Additional Ex-Gratia Payment Provisions
                             </h4>
                             <ul className="list-none space-y-3 pl-2">
@@ -312,7 +308,6 @@ const AMChapterPage93 = () => {
                                 </span>
                               </li>
                               <li className="flex items-start gap-2">
-                                <span className="text-blue-300">🚧</span>
                                 <span>
                                   <span className="font-semibold text-blue-100">Ex-Gratia for Road Users (Manned Level Crossing, Railway’s Prima Facie Liability):</span>
                                   <ul className="list-none space-y-1 pl-4 mt-1">
@@ -420,7 +415,7 @@ const AMChapterPage93 = () => {
                           <span>
                             <span className="font-semibold text-purple-100">Reporting:</span> After payments, the concerned DRM must submit a detailed report to the Divisional Accounts Officer, including original payee receipts. Copies should be sent to FA &amp; CAO (Headquarters Expenditure Section) Secunderabad and Chief Commercial Manager (Claims Branch) Secunderabad.<br/>
                             <span className="text-gray-200">The report must include:</span>
-                            <ul className="list-none pl-6 mt-2 space-y-1">
+                            <ul className="list-none pl-0 mt-2 space-y-1">
                               <li className="flex items-start gap-2"><span className="text-blue-200">🔹</span> <span>Full accident details</span></li>
                               <li className="flex items-start gap-2"><span className="text-blue-200">🔹</span> <span>Names &amp; addresses of injured/deceased</span></li>
                               <li className="flex items-start gap-2"><span className="text-blue-200">🔹</span> <span>Amounts paid as ex-gratia</span></li>

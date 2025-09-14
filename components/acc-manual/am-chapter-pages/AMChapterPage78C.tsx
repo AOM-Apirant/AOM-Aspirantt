@@ -42,7 +42,7 @@ const AMChapterPage78C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -61,16 +61,39 @@ const AMChapterPage78C = () => {
                   {/* Section Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🚂</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Emergency Relief Train Coordination</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            In the case of accident likely to require the use of the Accident Relief Train, Medical Relief Train, Crane Special etc. Station Master on duty on controlled sections shall immediately advise control giving all available information. Control shall at once arrange for such assistance as may be required. As the delivery of accident messages is liable to delay, Control shall take immediate steps to communicate necessary information to the Divisional Operations Manager and also to the Officers and Subordinates of other Departments, so as to expedite turning out the Medical Relief Train, Accident Relief Train etc.
-                          </p>
+                          <ul className="list-none space-y-3 pl-0">
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">🚨</span>
+                              <span className="text-gray-200">
+                                If an accident may require Accident Relief Train, Medical Relief Train, or Crane Special, the Station Master on duty in controlled sections must immediately inform Control with all available details.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">📞</span>
+                              <span className="text-gray-200">
+                                Control should promptly arrange for all necessary assistance as required by the situation.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">⚡</span>
+                              <span className="text-gray-200">
+                                Since accident message delivery may be delayed, Control must quickly communicate essential information to the Divisional Operations Manager and relevant Officers and Subordinates of other Departments.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">🚆</span>
+                              <span className="text-gray-200">
+                                This ensures the rapid dispatch of Medical Relief Train, Accident Relief Train, and other emergency resources.
+                              </span>
+                            </li>
+                          </ul>
 
                           <div className="space-y-4">
                             <div className="flex items-start gap-3">

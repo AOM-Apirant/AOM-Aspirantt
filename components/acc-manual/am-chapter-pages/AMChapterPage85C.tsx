@@ -42,7 +42,7 @@ const AMChapterPage85C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -61,7 +61,7 @@ const AMChapterPage85C = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📞</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -79,7 +79,7 @@ const AMChapterPage85C = () => {
                   {/* Guard Responsibilities */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">👨‍✈️</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -99,7 +99,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Type A */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">📱</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -117,7 +117,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Type B */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">💼</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">
@@ -135,7 +135,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Communication Systems */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🔌</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
@@ -153,7 +153,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* System Selection */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">⚙️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-indigo-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/30">
@@ -171,7 +171,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Connection Procedure */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🔗</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-pink-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/30">
@@ -189,7 +189,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Power Indication */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🟢</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-emerald-400/30">
@@ -207,7 +207,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Battery Status */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🔋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-violet-400/30">
@@ -225,7 +225,7 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                     {/* Low Battery Warning */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🔴</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -242,30 +242,60 @@ Every Guard working Mail, Express and Passenger trains shall ensure that his bra
                   </div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2 mt-6 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-indigo-200 mb-4 flex items-center gap-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
                     <span className="text-blue-400 text-2xl">📖</span>
                     Instructions for Using the Portable Emergency Control Phone
                   </h3>
                   <div className="space-y-4">
                     <div>
                       <h4 className="text-lg font-semibold text-blue-300 mb-2">On Electrified Sections (OHE Area)</h4>
-                      <ul className="list-none space-y-2 pl-2">
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> Emergency telephone sockets are provided on AC traction for maintenance of overhead electrical equipment and to enable train crew to contact the Controller during emergencies or accidents.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> Sockets are installed in socket boxes on rail posts (1.5 m height) at intervals of 1000 meters along the route.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> Each mast displays a Telephone Handset symbol, indicating the direction to the nearest telephone socket.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> The emergency socket box contains a 6-pin socket housed in a waterproof GI sheath box.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> The portable emergency control telephone is equipped with a matching 6-pin plug for connection.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> Train crew must plug the phone into the emergency socket to contact the Section Controller or Traction Loco Controller via TPC.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> Upon calling, the TPC connects the Section Controller on the emergency control circuit to respond to the train crew.</li>
-                        <li className="flex items-start gap-2"><span className="text-emerald-400">🔹</span> Every time the PT phone is used, an entry must be made in the register provided in the box.</li>
+                      <ul className="list-none space-y-2 pl-2 text-white/80">
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-600">☎️</span>
+                          Emergency telephone sockets are provided on AC traction for maintenance of overhead electrical equipment and to enable train crew to contact the Controller during emergencies or accidents.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">📦</span>
+                          Sockets are installed in socket boxes on rail posts (1.5 m height) at intervals of 1000 meters along the route.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">📞</span>
+                          Each mast displays a Telephone Handset symbol, indicating the direction to the nearest telephone socket.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">🔌</span>
+                          The emergency socket box contains a 6-pin socket housed in a waterproof GI sheath box.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">📱</span>
+                          The portable emergency control telephone is equipped with a matching 6-pin plug for connection.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">👨‍✈️</span>
+                          Train crew must plug the phone into the emergency socket to contact the Section Controller or Traction Loco Controller via TPC.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">🔗</span>
+                          Upon calling, the TPC connects the Section Controller on the emergency control circuit to respond to the train crew.
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-emerald-400">📝</span>
+                          Every time the PT phone is used, an entry must be made in the register provided in the box.
+                        </li>
                       </ul>
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-purple-300 mb-2">On Non-Electrified Sections</h4>
-                      <ul className="list-none space-y-2 pl-2">
-                        <li className="flex items-start gap-2"><span className="text-violet-400">🔸</span> Where underground quad cable is available, emergency sockets are provided in socket boxes on rail posts at 1000 meter intervals along the route.</li>
-                        <li className="flex items-start gap-2"><span className="text-violet-400">🔸</span> The procedure for using the field telephone is the same as for electrified sections to communicate with the Section Controller.</li>
-                      </ul>
+                        <ul className="list-none space-y-2 pl-2 text-white/80">
+                          <li className="flex items-start gap-2">
+                            <span className="text-violet-400">🪛</span>
+                            Where underground quad cable is available, emergency sockets are provided in socket boxes on rail posts at 1000 meter intervals along the route.
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-violet-400">📞</span>
+                            The procedure for using the field telephone is the same as for electrified sections to communicate with the Section Controller.
+                          </li>
+                        </ul>
                     </div>
                   </div>
                 </div>

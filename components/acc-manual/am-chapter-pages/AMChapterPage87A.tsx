@@ -42,7 +42,7 @@ const AMChapterPage87A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -62,27 +62,61 @@ const AMChapterPage87A = () => {
                   {/* Main Provision */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🚨</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Railway Administration Responsibilities</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-Whenever any accident has occurred in the course of working a railway, the Head of the Railway Administration concerned shall give all reasonable aid to the District Magistrate or the Magistrate appointed or deputed or to the Commission of Inquiry appointed under the Commissions of Inquiry Act, 1952 or any other authority to which all or any of the provisions of the said Act have been made applicable and to the Commissioner of Railway Safety, Medical Officers, the Police and others concerned to enable them to reach the scene of accident promptly and shall also assist those authorities in making inquiries and in obtaining evidence as to the cause of the accident.
-                          </p>
+                          <ul className="list-none space-y-3 pl-2 text-gray-200">
+                            <li className="flex items-start gap-2">
+                              <span>
+                                In case of a railway accident, the Head of the Railway Administration must provide all reasonable assistance to:
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2 ml-6">
+                              <span className="text-indigo-400">👨‍⚖️</span>
+                              <span>
+                                District Magistrate or any Magistrate appointed or deputed for the inquiry.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2 ml-6">
+                              <span className="text-indigo-400">📜</span>
+                              <span>
+                                Commission of Inquiry appointed under the Commissions of Inquiry Act, 1952, or any other authority as per the Act.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2 ml-6">
+                              <span className="text-indigo-400">🛡️</span>
+                              <span>
+                                Commissioner of Railway Safety, Medical Officers, Police, and other concerned officials.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">🚑</span>
+                              <span>
+                                Ensure these authorities can promptly reach the accident site.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400">🔍</span>
+                              <span>
+                                Assist them in conducting inquiries and gathering evidence regarding the cause of the accident.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2 mt-6 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-indigo-200 mb-4 flex items-center gap-2">
-                    <span className="text-blue-400 text-2xl">👮‍♂️</span>
+                  <h3 className="lg:text-2xl text-xl font-bold text-green-300 mb-4 flex flex-col text-center items-center gap-2">
+                    <span className="text-green-400 text-2xl">👮‍♂️</span>
                     701.1 Facility for Non-Railway Officials (Civil & Police) to Reach Accident Site
                   </h3>
-                  <ul className="list-none space-y-3 pl-2">
+                  <ul className="list-none space-y-3 pl-2 text-white/80">
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-400">🚄</span>
                       <span>

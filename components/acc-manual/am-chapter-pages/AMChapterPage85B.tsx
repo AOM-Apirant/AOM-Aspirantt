@@ -42,7 +42,7 @@ const AMChapterPage85B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
@@ -61,16 +61,39 @@ const AMChapterPage85B = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🎓</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Importance of Training</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            Trained manpower is an essential ingredient for any development. Modernization without such trained manpower will become futile. Particularly for handling an unforeseen situation like managing a disaster, training to the Officer / Official concerned is an inevitable input. To acquire necessary knowledge and skill, the Officer / Official may be given periodic training in his duties and other management fields.
-                          </p>
+                          <ul className="space-y-3 text-gray-200 leading-relaxed">
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">🧑‍💼</span>
+                              <span>
+                                Trained manpower is a vital component for any development.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">⚙️</span>
+                              <span>
+                                Modernization without skilled personnel becomes ineffective.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">🚨</span>
+                              <span>
+                                For managing unforeseen situations like disasters, training for concerned Officers/Officials is essential.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">📅</span>
+                              <span>
+                                Periodic training helps Officers/Officials acquire necessary knowledge and skills in their duties and management fields.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -79,7 +102,7 @@ const AMChapterPage85B = () => {
                   {/* Training Guidelines */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📚</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -99,7 +122,7 @@ const AMChapterPage85B = () => {
                     {/* Individual Training */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">👤</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -117,7 +140,7 @@ const AMChapterPage85B = () => {
                     {/* Seminars */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🎤</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">
@@ -135,7 +158,7 @@ const AMChapterPage85B = () => {
                     {/* Joint Exercises */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🤝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
@@ -153,7 +176,7 @@ const AMChapterPage85B = () => {
                     {/* Simulation Exercises */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">💻</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-indigo-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/30">
@@ -171,7 +194,7 @@ const AMChapterPage85B = () => {
                     {/* Skeleton Exercises */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🏃‍♂️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-pink-500/20 to-red-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/30">
@@ -189,16 +212,33 @@ const AMChapterPage85B = () => {
                     {/* Special Training */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">⭐</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-emerald-500/20 to-teal-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-emerald-400/30">
                               <h4 className="text-lg font-bold text-emerald-300 mb-3 text-center">f. Special Training</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              Special training may be arranged to the Officer / Official in extrication, rescue, medical relief, rolling stock restoration technique and Civil Defence by the concerned Department and list of such trained Staff shall be kept at every ART Depot.
-                            </p>
+                            <ul className="space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-center gap-2">
+                                🛠️ <span>Extrication training for Officers/Officials</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                🚑 <span>Rescue operations training</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                🩺 <span>Medical relief training</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                🚂 <span>Rolling stock restoration techniques</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                🛡️ <span>Civil Defence training by the concerned Department</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                📋 <span>List of such trained staff shall be kept at every ART Depot</span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -207,16 +247,24 @@ const AMChapterPage85B = () => {
                     {/* ART/MRV Training */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🚑</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-violet-400/30">
                               <h4 className="text-lg font-bold text-violet-300 mb-3 text-center">g. ART / MRV Training</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              All ART / MRV nominated Supervisors and staff shall be trained in rescue operations and First-Aid. Additional staff from the Depot from where ART / ARMV is stationed shall also be trained. Names of such additional trained staff shall be made available in ART / ARMV so that they can be called during major accidents / disasters.
-                            </p>
+                            <ul className="space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-center gap-2">
+                                👨‍✈️ <span>All ART / MRV nominated Supervisors and staff shall be trained in rescue operations and First-Aid.</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                🏢 <span>Additional staff from the Depot where ART / ARMV is stationed shall also be trained.</span>
+                              </li>
+                              <li className="flex items-center gap-2">
+                                📄 <span>Names of such additional trained staff shall be made available in ART / ARMV for quick mobilization during major accidents or disasters.</span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

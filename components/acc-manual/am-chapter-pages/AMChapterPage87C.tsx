@@ -42,7 +42,7 @@ const AMChapterPage87C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -61,7 +61,7 @@ const AMChapterPage87C = () => {
                   {/* Main Provision */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🏥</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -79,7 +79,7 @@ const AMChapterPage87C = () => {
                   {/* Local Medical Officers */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">👨‍⚕️</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -95,11 +95,11 @@ const AMChapterPage87C = () => {
                   </div>
 
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2 animate-fade-in">
-                    <h4 className="text-lg font-bold text-blue-300 mb-4 flex items-center gap-2">
+                    <h4 className="text-lg font-bold text-blue-300 mb-4 flex flex-col text-center items-center gap-2">
                       <span className="text-emerald-400 text-2xl">📝</span>
                       Procedure for Station Master When a Passenger or Trespasser is Injured within Railway Premises
                     </h4>
-                    <ul className="list-none space-y-4 pl-2">
+                    <ul className="list-none space-y-4 pl-2 text-white/80">
                       <li className="flex items-start gap-3">
                         <span className="text-green-400 mt-1">💊</span>
                         <span>
@@ -146,13 +146,13 @@ const AMChapterPage87C = () => {
                   </div>
                 </div>
                 <div className="mt-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-4 lg:px-6 px-2 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-indigo-200 mb-4 flex items-center gap-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-indigo-200 mb-4 flex flex-col text-center items-center gap-2">
                     <span className="text-blue-400 text-2xl">💼</span>
                     Schedule of Powers for Officers: Expenditure on Relief Measures in Serious Accidents
                   </h3>
                   <div className="space-y-5 text-gray-200 lg:text-lg text-base leading-relaxed">
                     <div>
-                      <span className="text-emerald-400 font-semibold">🟢 Ambulance/Transport of Injured:</span>
+                      <span className="text-emerald-400 font-semibold">Ambulance/Transport of Injured:</span>
                       <ul className="list-none space-y-2 pl-2 mt-2">
                         <li className="flex items-start gap-2"><span className="text-green-400">✔️</span> Headquarters officers (SAG, JAG) have full powers to sanction expenditure for ambulance or transport of injured employees or passengers involved in accidents, and for movement of officers and staff to the accident site.</li>
                         <li className="flex items-start gap-2"><span className="text-green-400">✔️</span> Divisional officers (Sr. Scale) have full powers up to ₹5,000 per occasion; Jr. Scale officers have powers up to ₹2,000 per occasion, and up to ₹200 per individual case.</li>
@@ -160,7 +160,7 @@ const AMChapterPage87C = () => {
                       </ul>
                     </div>
                     <div>
-                      <span className="text-blue-400 font-semibold">🔵 Camp Lighting & Transshipment Arrangements:</span>
+                      <span className="text-blue-400 font-semibold"> Camp Lighting & Transshipment Arrangements:</span>
                       <ul className="list-none space-y-2 pl-2 mt-2">
                         <li className="flex items-start gap-2"><span className="text-blue-400">✔️</span> Headquarters officers (SAG, JAG) have full powers to incur expenditure on setting up camp lighting and transshipment arrangements during breaches and accidents.</li>
                         <li className="flex items-start gap-2"><span className="text-blue-400">✔️</span> Divisional officers (Sr. Scale) have full powers up to ₹10,000 per occasion; Jr. Scale officers have powers up to ₹2,500 per occasion, and up to ₹200 per individual case.</li>
@@ -168,7 +168,7 @@ const AMChapterPage87C = () => {
                       </ul>
                     </div>
                     <div>
-                      <span className="text-pink-400 font-semibold">📌 Important Note:</span>
+                      <span className="text-pink-400 font-semibold"> Important Note:</span>
                       <ul className="list-none space-y-2 pl-2 mt-2">
                         <li className="flex items-start gap-2"><span className="text-pink-400">🔸</span> For exercising these powers, the senior-most Sr. Scale officer present at the accident site is authorized to withdraw the required amount from station earnings.</li>
                       </ul>
@@ -176,7 +176,7 @@ const AMChapterPage87C = () => {
                   </div>
                 </div>
                 <div className="mt-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-4 lg:px-6 px-2 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-yellow-200 mb-4 flex items-center gap-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-yellow-200 mb-4 flex flex-col text-center items-center gap-2">
                     <span className="text-yellow-400 text-2xl">🍽️</span>
                     Supply of Food and Drink at Accident Site
                   </h3>
@@ -202,7 +202,7 @@ const AMChapterPage87C = () => {
                   </ul>
                 </div>
                 <div className="mt-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-4 lg:px-6 px-2 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-orange-200 mb-4 flex items-center gap-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-orange-200 mb-4 flex flex-col text-center items-center gap-2">
                     <span className="text-orange-400 text-2xl">👷‍♂️</span>
                     Employment of Workmen for Heavy Machinery
                   </h3>
@@ -216,7 +216,7 @@ const AMChapterPage87C = () => {
                   </ul>
                 </div>
                 <div className="mt-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-4 lg:px-6 px-2 animate-fade-in">
-                  <h3 className="text-2xl font-bold text-pink-200 mb-4 flex items-center gap-2">
+                  <h3 className="lg:text-2xl text-xl font-bold text-pink-200 mb-4 flex flex-col text-center items-center gap-2">
                     <span className="text-pink-400 text-2xl">🚑</span>
                     Slight Injury Turning Serious
                   </h3>
