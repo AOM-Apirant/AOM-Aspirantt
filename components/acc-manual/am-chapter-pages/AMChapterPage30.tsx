@@ -22,7 +22,7 @@ const AMChapterPage30 = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - IV </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">ACCIDENT REPORT PARTICULARS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const AMChapterPage30 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -107,7 +107,7 @@ const AMChapterPage30 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                   <div className="mt-6 space-y-6">
                     <div className="space-y-4">
-                      <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
+                      <h4 className="text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                         <span className="bg-gradient-to-r from-purple-500 to-pink-600 p-2 rounded-lg">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -251,7 +251,7 @@ const AMChapterPage30 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                   <div className="mt-6 space-y-6">
                     <div className="space-y-4">
-                      <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
+                      <h4 className="text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                         <span className="bg-gradient-to-r from-emerald-500 to-teal-600 p-2 rounded-lg">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -360,7 +360,7 @@ const AMChapterPage30 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                   <div className="mt-6 space-y-6">
                     <div className="space-y-4">
-                      <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
+                      <h4 className="text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                         <span className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -497,7 +497,7 @@ const AMChapterPage30 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-4">
                   <div className="mt-6 space-y-6">
                     <div className="space-y-4">
-                      <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
+                      <h4 className="text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                         <span className="bg-gradient-to-r from-cyan-500 to-blue-600 p-2 rounded-lg">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

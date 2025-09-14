@@ -22,7 +22,7 @@ const AMChapterPage42 = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - IV </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">ACCIDENT RETURNS - TABLES 1 TO 7</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const AMChapterPage42 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -355,25 +355,45 @@ const AMChapterPage42 = () => {
                       
                       <div className="bg-gradient-to-r from-blue-500/5 to-indigo-500/5 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/10">
                         <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4">
-                          <p>
-                            It shall include the number and outcome of train accidents on open lines. Train accidents constitute train collisions, train derailments, fires (including explosions) in trains and train accidents at level crossings. The cases of collisions between trains and push trollies shall not be included under this Table. These shall be shown against item No.6 of Table 3.
-                          </p>
-                          
-                          <p>
-                            The data on train derailments should be given separately in respect of derailments in the mid-sections and derailments within station limits. Train derailments or serious damage to train occurring due to train wrecking, that is as a result of willful obstruction or tampering with permanent way, formations, structure or equipment should be shown separately against 2.01 A (d), 2.01 B (d), 2.02A (d) and 2.02B (d) – &apos;Train wrecking&apos; cases, where there was no intention of sabotage, should be reported against item 2.01A (b), 2.01 B (b), 2.02 A (b) and 2.02 B (b).
-                          </p>
-                          
-                          <p>
-                            The statistics of fire in trains reported under this table should include all cases where it results in death or injury or damage to property amounting to 50,000 and above upto 2 crore. Cases involving damages less than 50,000/- should be accounted for under&apos; Miscellaneous accidents in Table 3.
-                          </p>
-                          
-                          <p>
-                            The cases of &apos;Fire in trains&apos; should be reported separately for &apos;passenger and mixed trains&apos;. &apos;EMU stock&apos; and &apos;Other trains&apos;. Under item &apos;Fire in EMU stock&apos;, only those cases should be logged where the fires spread out to passenger compartments of EMU stock. If, however, such fire is confined to low / High Tension Compartment only, they should be treated as the cases of fire in electric/diesel engines and shall be included against item 1.05 in Table 2.
-                          </p>
-                          
-                          <p>
-                            The category of accidents involving trains at level crossings should include trains running into road traffic and/or road traffic running into trains at level crossings. Separate figures should be given for manned and unmanned level crossings for passenger and other trains.
-                          </p>
+                          <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🚆</span>
+                              <span>
+                                Includes the number and outcome of train accidents on open lines.<br />
+                                <span className="text-indigo-200">Train accidents:</span> collisions, derailments, fires (including explosions), and accidents at level crossings.<br />
+                                <span className="text-blue-300">Note:</span> Collisions between trains and push trollies are <b>not</b> included here; they are shown under item No.6 of Table 3.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🛤️</span>
+                              <span>
+                                <span className="text-indigo-200">Derailments:</span> Data should be given separately for derailments in mid-sections and within station limits.<br />
+                                <span className="text-blue-300">Train wrecking:</span> Serious damage or derailments due to willful obstruction/tampering should be shown under 2.01A(d), 2.01B(d), 2.02A(d), 2.02B(d).<br />
+                                <span className="text-blue-300">No sabotage:</span> If no intention of sabotage, report under 2.01A(b), 2.01B(b), 2.02A(b), 2.02B(b).
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🔥</span>
+                              <span>
+                                <span className="text-indigo-200">Fire in trains:</span> Include all cases resulting in death, injury, or property damage of ₹50,000 and above up to ₹2 crore.<br />
+                                <span className="text-blue-300">Below ₹50,000:</span> Accounted for under &apos;Miscellaneous accidents&apos; in Table 3.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🚉</span>
+                              <span>
+                                <span className="text-indigo-200">Fire cases reporting:</span> Report separately for &apos;passenger and mixed trains&apos;, &apos;EMU stock&apos;, and &apos;other trains&apos;.<br />
+                                <span className="text-blue-300">EMU stock:</span> Only log cases where fire spreads to passenger compartments. If confined to low/high tension compartment, treat as fire in electric/diesel engines (item 1.05, Table 2).
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🚦</span>
+                              <span>
+                                <span className="text-indigo-200">Level crossing accidents:</span> Include trains running into road traffic and/or road traffic running into trains at level crossings.<br />
+                                <span className="text-blue-300">Separate figures:</span> Provide for manned and unmanned level crossings, for both passenger and other trains.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -388,9 +408,34 @@ const AMChapterPage42 = () => {
                       
                       <div className="bg-gradient-to-r from-blue-500/5 to-indigo-500/5 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/10">
                         <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4">
-                          <p>
-                            Failure of railway equipment shall be classified under rolling stock, permanent way, electric overhead equipment and signalling apparatus failures. The number of failures of engines should be further split up into two categories – time failures (i.e., failures of engines on train when the delay to train is one hour or more) and other failures (failures of shunting engines in yards are not be included). The cases of failures of diesel and electric locomotives shall be shown separately. Failure due to fire in diesel and electric locomotives shall be shown against item 1.05 of this Table.
-                          </p>
+                          <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🚆</span>
+                              <span>
+                                Failures are classified as: <b>rolling stock</b>, <b>permanent way</b>, <b>electric overhead equipment</b>, and <b>signalling apparatus</b> failures.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">⏱️</span>
+                              <span>
+                                <b>Engine failures</b> are split into two categories:<br />
+                                <span className="ml-4">• <b>Time failures</b>: Engine fails on train causing delay of one hour or more.</span><br />
+                                <span className="ml-4">• <b>Other failures</b>: Excludes failures of shunting engines in yards.</span>
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🔌</span>
+                              <span>
+                                Failures of <b>diesel</b> and <b>electric locomotives</b> must be shown separately.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="text-2xl mt-1">🔥</span>
+                              <span>
+                                <b>Failures due to fire</b> in diesel and electric locomotives should be reported under item 1.05 of this Table.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                         
                         <div className="mt-6 space-y-6">
@@ -625,13 +670,35 @@ const AMChapterPage42 = () => {
                       
                       <div className="bg-gradient-to-r from-blue-500/5 to-indigo-500/5 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/10">
                         <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4">
-                          <p>
-                            Shall include the number of persons killed or injured by accidents on open lines of railway not coming under any of the classified heads in the pro-forma of Table 1 to 4 i.e., by accidents in which the movement of vehicles was not concerned.
-                          </p>
-                          
-                          <p>
-                            Casualties from causes unconnected with railway working, such as death of passengers in carriages or at stations, from natural causes or to other persons, such as cases of falling into wells or of drowning in wells or ponds, within the station limits of a railway, shall not be included in table 5 of the returns, nor shall slight abrasions or bruises which are incidental to a man&apos;s ordinary duties, be included in the said tables. Such type of accidents shall not figure at all in these returns.
-                          </p>
+                          <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                              <span className="mt-1 text-red-500 text-xl">🚫</span>
+                              <span>
+                                Includes the number of persons killed or injured by accidents on open railway lines <b>not covered under Table 1 to 4</b>, i.e., accidents where the movement of vehicles was <b>not involved</b>.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="mt-1 text-blue-500 text-xl">💧</span>
+                              <span>
+                                <b>Excludes</b> casualties from causes unconnected with railway working, such as:
+                                <ul className="ml-0 mt-2 space-y-2 list-none">
+                                  <li className="flex items-start gap-2">
+                                    <span className="text-green-500">🛌</span>
+                                    <span>Death of passengers in carriages or at stations from natural causes</span>
+                                  </li>
+                                  <li className="flex items-start gap-2">
+                                    <span className="text-cyan-500">🕳️</span>
+                                    <span>Falling into wells or drowning in wells/ponds within station limits</span>
+                                  </li>
+                                  <li className="flex items-start gap-2">
+                                    <span className="text-yellow-500">🤕</span>
+                                    <span>Slight abrasions or bruises incidental to a person&apos;s ordinary duties</span>
+                                  </li>
+                                </ul>
+                                Such accidents <b>should not be included</b> in Table 5 or these returns.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

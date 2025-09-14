@@ -22,7 +22,7 @@ const AMChapterPage38B = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - IV </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">STATION MASTER ACCIDENT REPORTING PROCEDURES</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const AMChapterPage38B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -67,12 +67,12 @@ const AMChapterPage38B = () => {
 
                   {/* Section 411.1 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">411.1</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">Reporting of Accidents by the Quickest possible means:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">Reporting of Accidents by the Quickest possible means:</h4>
                         <p className="text-gray-200 mb-4">For this purpose, accidents are divided into different categories, namely &quot;A to R&quot; excluding &apos;I&apos; and &apos;O&apos; according to seriousness and the accident classes have been serially numbered for each category. Every accident shall be reported by the quickest possible available means, to the Station Master of the station which can be reached quickly. As soon as the Station Master is aware of an accident, he must send a report in Forms Acc.1(i), (ii) and (iii) to the officials concerned.</p>
                         
                         <p className="text-gray-200 mb-4">The Station Master, on receipt of information about the occurrence of an untoward incident shall –</p>
@@ -130,7 +130,7 @@ const AMChapterPage38B = () => {
                         <p className="text-amber-200 font-medium mb-3">
                           <span className="font-bold">Note:</span> &quot;Untoward incident&quot; means-
                         </p>
-                        <div className="ml-4 space-y-2">
+                        <div className="ml-0 space-y-2">
                           <div className="flex items-start gap-2">
                             <span className="text-blue-400 font-bold">(i)</span>
                             <p className="text-amber-200">The commission of a terrorist act within the meaning of sub-section (i) of section 3 of the Terrorist and Disruptive Activities (Prevention) Act, 1987(28 of 1987); or</p>

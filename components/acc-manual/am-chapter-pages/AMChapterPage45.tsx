@@ -42,7 +42,7 @@ const AMChapterPage45 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -60,42 +60,147 @@ const AMChapterPage45 = () => {
                   
                   {/* Section 501.1 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex items-center flex-col gap-3">
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">501.1</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed">
-                          Action to be taken by Officer/Sr. Subordinate present at site. The officer and senior sub-ordinate of any department, who may happen to be present at the time of accident or who first arrives at the site of accident (irrespective of whether he is on duty or not), shall take action to preserve the clues and evidence at the site of accident. He shall inspect the site of accident and locate the crucial evidence and clues that will help in determining the cause of accident. Thereafter, he should organize to post RPF constables or other Railway men available at site to guard the locations, where clues and evidence is available. Once the officials from safety department (safety counsellors, DSO, Sr. DSO etc.,) arrive at the site the locations with evidence and clues will be handed over to them.
-                        </p>
+                        <ul className="space-y-4 list-none">
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-blue-500 text-xl">👮‍♂️</span>
+                            <span>
+                              <b>Presence at Site:</b> Any officer or senior subordinate present at the accident site (regardless of duty status) must take immediate action to preserve clues and evidence.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-green-600 text-xl">🔍</span>
+                            <span>
+                              <b>Inspection:</b> Carefully inspect the accident site to identify crucial evidence and clues that may help determine the cause of the accident.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-yellow-500 text-xl">🚧</span>
+                            <span>
+                              <b>Guarding Evidence:</b> Arrange for RPF constables or available railway staff to guard the locations where clues and evidence are found.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-red-500 text-xl">📝</span>
+                            <span>
+                              <b>Handover:</b> Once safety department officials (such as safety counsellors, DSO, Sr. DSO, etc.) arrive, formally hand over the guarded locations and evidence to them.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
 
                   {/* Additional Content */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex items-center flex-col gap-3">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">•</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed">
-                          The evidence and clues will be different in each accident. In a derailment due to track defect initial &quot;point of mount&quot; and &quot;point of drop&quot; are important. Sometimes &quot;Rail fracture&quot; or &quot;Weld failure&quot; can also cause derailment. Accidents are also caused by axle breakages, hanging parts from the wagon/coach, etc. Infringement of unloaded track materials like sleepers, rails can also cause accidents. In sabotage cases, the pandrol clips will be removed or sometimes rail itself is removed, or track is blasted, etc. Drivers passing signals at danger, receiving trains on occupied lines can also cause accidents. In order to determine the exact cause of the accident, the officer/Sr. sub-ordinate present at site should examine the site in detail and locate the clues and then take action to preserve them. This is apart from other duties like relief and restoration.
-                        </p>
+                        <ul className="space-y-4 list-none">
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-blue-500 text-xl">🛤️</span>
+                            <span>
+                              <b>Track Defect:</b> In derailments due to track defects, identifying the initial <span className="font-semibold text-blue-300">&quot;point of mount&quot;</span> and <span className="font-semibold text-blue-300">&quot;point of drop&quot;</span> is crucial.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-red-500 text-xl">💥</span>
+                            <span>
+                              <b>Rail/Weld Failure:</b> <span className="font-semibold text-red-300">Rail fracture</span> or <span className="font-semibold text-red-300">weld failure</span> can also lead to derailments.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-yellow-500 text-xl">🛞</span>
+                            <span>
+                              <b>Axle/Component Breakage:</b> Accidents may be caused by <span className="font-semibold text-yellow-300">axle breakages</span> or <span className="font-semibold text-yellow-300">hanging parts</span> from wagons or coaches.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-green-500 text-xl">🪵</span>
+                            <span>
+                              <b>Track Material Infringement:</b> Unloaded track materials like <span className="font-semibold text-green-300">sleepers</span> or <span className="font-semibold text-green-300">rails</span> infringing on the track can cause accidents.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-pink-500 text-xl">🧨</span>
+                            <span>
+                              <b>Sabotage:</b> In sabotage cases, <span className="font-semibold text-pink-300">pandrol clips</span> may be removed, rails may be taken out, or the track may be blasted.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-orange-500 text-xl">🚦</span>
+                            <span>
+                              <b>Signal/Operational Error:</b> Accidents can occur if drivers pass signals at danger or trains are received on occupied lines.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-indigo-500 text-xl">🔎</span>
+                            <span>
+                              <b>Detailed Examination:</b> To determine the exact cause, the officer or senior subordinate at site must thoroughly examine the area, locate all clues, and take steps to preserve them.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-gray-400 text-xl">🛠️</span>
+                            <span>
+                              <b>Other Duties:</b> These actions are in addition to other responsibilities such as relief and restoration.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
 
                   {/* Section 501.2 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex items-center flex-col gap-3">
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">501.2</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed">
-                          Action by Safety Team/Accident In-charge. On arrival at site, the safety team will take charge of the locations where evidence and clues are available. The safety team will thoroughly examine the site and come to some tentative conclusion about the probable cause of the accident. Careful observation of clues and a comprehensive record thereof is vital for accident enquiry. In addition, a comprehensive record of track and rolling stock parameters and operating features is required for investigation of derailments. The statements to be recorded and joint measurements to be taken. The following steps also to be taken.(Item No.1 of AS-6)
-                        </p>
+                        <ul className="space-y-4 text-gray-200 leading-relaxed">
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-blue-400 text-xl">🦺</span>
+                            <span>
+                              <b>Action by Safety Team/Accident In-charge:</b> Upon arrival, the safety team takes charge of all locations where evidence and clues are present.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-green-400 text-xl">🔍</span>
+                            <span>
+                              <b>Thorough Examination:</b> The team carefully examines the site to form a tentative conclusion about the probable cause of the accident.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-yellow-400 text-xl">📋</span>
+                            <span>
+                              <b>Clue Observation & Records:</b> Careful observation and comprehensive recording of all clues are essential for the accident enquiry.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-indigo-400 text-xl">🚆</span>
+                            <span>
+                              <b>Track & Rolling Stock Data:</b> Detailed records of track, rolling stock parameters, and operating features are required for derailment investigations.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-pink-400 text-xl">📝</span>
+                            <span>
+                              <b>Statements & Measurements:</b> Relevant statements must be recorded and joint measurements taken.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-orange-400 text-xl">➡️</span>
+                            <span>
+                              <b>Further Steps:</b> The following steps should also be taken as per Item No.1 of AS-6.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

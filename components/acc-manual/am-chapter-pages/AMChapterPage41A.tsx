@@ -22,7 +22,7 @@ const AMChapterPage41A = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - IV </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">TRAIN ACCIDENT RETURNS TO BE SENT TO THE RAILWAY BOARD</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const AMChapterPage41A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -79,9 +79,76 @@ const AMChapterPage41A = () => {
                         <span className="text-white font-bold text-sm">b</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed">
-                          Equipment failures falling under classification J (Failure of Engine and Rolling stock), K (Failure of Permanent Way), L (Failure of Electrical equipment – OHE) and M (Failure of S & T) will be compiled by the respective divisional control on daily basis and shall be handed over to Safety Branch. Every equipment failure shall be classified under the category of avoidable and unavoidable by the Branch officers concerned and summary shall be handed over to safety department of the division. It is further clarified that all equipment failures should be taken into account irrespective of the date of last schedule or examination and shall be subsequently classified under avoidable or unavoidable category as the case may be.
-                        </p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 🚂 Engine Icon */}
+                              <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 17V7a2 2 0 012-2h7a2 2 0 012 2v10M3 17h14M3 17l2 3m10-3l2 3M7 17v-2a2 2 0 012-2h2a2 2 0 012 2v2" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>J (Failure of Engine and Rolling Stock):</b> Compiled daily by divisional control and submitted to Safety Branch.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 🛤️ Track Icon */}
+                              <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 20h16M4 16h16M4 12h16M4 8h16M4 4h16" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>K (Failure of Permanent Way):</b> Recorded and reported daily to the Safety Branch.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* ⚡ Electrical Icon */}
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2L3 14h9l-1 8L21 10h-9l1-8z" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>L (Failure of Electrical Equipment – OHE):</b> Documented daily and handed over to Safety Branch.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 📡 S&T Icon */}
+                              <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                <path stroke="currentColor" strokeWidth="2" fill="none" d="M2 12a10 10 0 0120 0M6 12a6 6 0 0112 0" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>M (Failure of S & T):</b> Compiled by divisional control and submitted to Safety Branch.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 📝 Classification Icon */}
+                              <svg className="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16h8M8 12h8M8 8h8M4 6h16M4 18h16" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>Classification:</b> Every equipment failure is classified as <span className="font-semibold text-green-300">avoidable</span> or <span className="font-semibold text-red-300">unavoidable</span> by Branch officers, and a summary is submitted to the Safety Department.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 📅 All Failures Icon */}
+                              <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                <path stroke="currentColor" strokeWidth="2" d="M16 2v4M8 2v4M3 10h18" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>Note:</b> All equipment failures are considered, regardless of last schedule or examination date, and classified accordingly.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -93,9 +160,54 @@ const AMChapterPage41A = () => {
                         <span className="text-white font-bold text-sm">c</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed">
-                          Unusual incidents falling under classification N (Train wrecking or Sabotage to a Train), P (Casualties) and Q (Other incidents) shall be collected and compiled by Security (DSC - RPF) Department at Divisional level and they shall take subsequent follow up action. Security Department of the Division shall forward monthly statement to Chief Security Commissioner of Zonal Railway concerned. Chief Security Commissioner after compilation of statement shall forward monthly statement to the Security Directorate of Railway Board.
-                        </p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 🚨 Incident Icon */}
+                              <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>Unusual Incidents:</b> Incidents under classification <span className="font-semibold text-pink-300">N</span> (Train wrecking or Sabotage to a Train), <span className="font-semibold text-pink-300">P</span> (Casualties), and <span className="font-semibold text-pink-300">Q</span> (Other incidents) are collected and compiled by the Security (DSC - RPF) Department at the Divisional level.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 📋 Follow-up Icon */}
+                              <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                <path stroke="currentColor" strokeWidth="2" d="M8 8h8M8 12h8M8 16h4" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>Follow-up Action:</b> The Security Department takes necessary follow-up action on these incidents.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 📨 Forwarding Icon */}
+                              <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>Monthly Statement:</b> The Divisional Security Department forwards a monthly statement to the Chief Security Commissioner of the concerned Zonal Railway.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="flex-shrink-0 mt-1">
+                              {/* 🏢 Compilation Icon */}
+                              <svg className="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                <path stroke="currentColor" strokeWidth="2" d="M16 3v4M8 3v4M3 10h18" />
+                              </svg>
+                            </span>
+                            <span className="flex-1 text-gray-200">
+                              <b>Final Submission:</b> After compilation, the Chief Security Commissioner sends the monthly statement to the Security Directorate of the Railway Board.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

@@ -22,7 +22,7 @@ const AMChapterPage35 = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - IV </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">PROCEDURE FOR SENDING ACCIDENT MESSAGES</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const AMChapterPage35 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -60,12 +60,12 @@ const AMChapterPage35 = () => {
                   
                   {/* Section 408.1 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-col gap-3 w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">To the State / Central Government:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">To the State / Central Government:</h4>
                         <p className="text-gray-200 mb-4">The accident message as required by section 113 of the Railways Act-1989, shall be sent without delay by the Divisional Railway Administration to the state Government.</p>
                         
                         <div className="space-y-3">
@@ -75,7 +75,7 @@ const AMChapterPage35 = () => {
                             </div>
                             <div className="flex-1">
                               <p className="text-gray-200 mb-2">By Telephone / Fax in the case of -</p>
-                              <div className="ml-4 space-y-2">
+                              <div className="ml-1 space-y-2">
                                 <div className="flex items-start gap-2">
                                   <span className="text-blue-400 font-bold">(i)</span>
                                   <p className="text-gray-200">Accidents resulted in loss of human life;</p>
@@ -107,12 +107,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.1 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.1</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">To Commissioner for Workmen&apos;s Compensation:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">To Commissioner for Workmen&apos;s Compensation:</h4>
                         <p className="text-gray-200 mb-4">Accident Report to the Commissioner for Workmen&apos;s Compensation under section 10-A of the Workmen&apos;s Compensation Act;</p>
                         
                         <div className="space-y-3">
@@ -165,12 +165,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.2 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.2</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">To Chief Inspector of Explosives:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">To Chief Inspector of Explosives:</h4>  
                         <p className="text-gray-200 mb-4">Accident Report to the Chief Inspector of Explosives, New Delhi under Section 8 of the Indian Explosives Act, 1884, and Section 27 of the Petroleum Act, 1934.</p>
                         
                         <div className="space-y-3">
@@ -214,12 +214,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.3 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.3</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">To Military Authorities:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">To Military Authorities:</h4>
                         
                         <div className="space-y-3">
                           <div className="flex items-start gap-3">
@@ -229,7 +229,7 @@ const AMChapterPage35 = () => {
                             <div className="flex-1">
                               <p className="text-gray-200 mb-3">In all cases of accidents where the Military personnel are killed / injured, the DRM shall advise, by telephonic / fax message to -</p>
                               
-                              <div className="ml-4 space-y-2 mb-4">
+                              <div className="ml-1 space-y-2 mb-4">
                                 <div className="flex items-start gap-2">
                                   <span className="text-blue-400 font-bold">•</span>
                                   <p className="text-gray-200">Embarkation Headquarters, Nearest R.T.O. concerned, Army Headquarters, Quarter Master General&apos;s Branch, Q. Mov. S(1), New Delhi, and Milrail, New Delhi. -110011.</p>
@@ -259,7 +259,7 @@ const AMChapterPage35 = () => {
                               
                               <p className="text-gray-200 mb-3">The DRM shall at once report the matter by telephonic message to Officer Commanding of the train, when it is possible to communicate with him en- route,</p>
                               
-                              <div className="ml-4 space-y-2 mb-3">
+                              <div className="ml-1 space-y-2 mb-3">
                                 <div className="flex items-start gap-2">
                                   <span className="text-green-400 font-bold">or</span>
                                   <p className="text-gray-200">The Officer Commanding the station of destination.</p>
@@ -272,7 +272,7 @@ const AMChapterPage35 = () => {
                               
                               <p className="text-gray-200 mb-3">All such telephonic messages shall be repeated to:-</p>
                               
-                              <div className="ml-4 space-y-2">
+                              <div className="ml-1 space-y-2">
                                 <div className="flex items-start gap-2">
                                   <span className="text-blue-400 font-bold">•</span>
                                   <p className="text-gray-200">Milrail, New Delhi 110011;</p>
@@ -295,12 +295,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.4 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.4</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">To Postal Authorities:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">To Postal Authorities:</h4>
                         
                         <p className="text-gray-200 mb-4">When an accident causes or is likely to cause –</p>
                         
@@ -369,12 +369,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.5 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.5</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">To State Government Officials:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">To State Government Officials:</h4>
                         
                         <div className="space-y-3">
                           <div className="flex items-start gap-3">
@@ -387,7 +387,7 @@ const AMChapterPage35 = () => {
                               {/* Section 408.1.5.1 */}
                               <div className="space-y-3">
                                 <h5 className="text-lg font-semibold text-white mb-3">408.1.5.1 By Station Master to:</h5>
-                                <div className="ml-4 space-y-2">
+                                <div className="ml-1 space-y-2">
                                   <div className="flex items-start gap-2">
                                     <span className="text-blue-400 font-bold">(a)</span>
                                     <p className="text-gray-200">District Collector</p>
@@ -418,7 +418,7 @@ const AMChapterPage35 = () => {
                               {/* Section 408.1.5.2 */}
                               <div className="space-y-3 mt-6">
                                 <h5 className="text-lg font-semibold text-white mb-3">408.1.5.2 By Dy.CHC (Punctuality) to:</h5>
-                                <div className="ml-4 space-y-2">
+                                <div className="ml-1 space-y-2">
                                   <div className="flex items-start gap-2">
                                     <span className="text-blue-400 font-bold">(a)</span>
                                     <p className="text-gray-200">District Collector</p>
@@ -443,15 +443,15 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.6 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.6</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">By Divisional Officers:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">By Divisional Officers:</h4>
                         <p className="text-gray-200 mb-4">(DRM/ADRM/Emergency Officer/any Officer nominated by DRM for this purpose)</p>
                         
-                        <div className="ml-4 space-y-2">
+                        <div className="ml-1 space-y-2">
                           <div className="flex items-start gap-2">
                             <span className="text-blue-400 font-bold">(a)</span>
                             <p className="text-gray-200">Chief Secretary</p>
@@ -479,12 +479,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.7 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.7</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">Advice to Other Railways by Zonal Headquarters:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">Advice to Other Railways by Zonal Headquarters:</h4>
                         
                         <div className="space-y-3">
                           <div className="flex items-start gap-3">
@@ -511,12 +511,12 @@ const AMChapterPage35 = () => {
 
                   {/* Section 408.1.7.1 */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">408.1.7.1</span>
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-white mb-3">Advice to the Chambers of Commerce:</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-white mb-3">Advice to the Chambers of Commerce:</h4>
                         <p className="text-gray-200">On receipt of advice of an accident involving serious interruption to traffic, the Divisional Railway Manager must immediately advise, by telephone / fax, the Chambers of Commerce in their respective jurisdictions.</p>
                       </div>
                     </div>

@@ -22,7 +22,7 @@ const AMChapterPage39B = () => {
                 </svg>
               </div>
             </div>
-            
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"> CHAPTER - IV </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">NOTING DOWN TIME OF ACCIDENT</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const AMChapterPage39B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -60,9 +60,55 @@ const AMChapterPage39B = () => {
                   
                   {/* Main Paragraph */}
                   <div className="space-y-4">
-                    <p className="text-gray-200 mb-6 leading-relaxed">
-                      Railway employees present at an accident site shall take special note of the exact time of accident, and other important details connected with the accident. They shall also take the earliest opportunity of checking their time with the Guard&apos;s time or control time, as the exact time of an accident is often an important clue in determining the cause of the accident.
-                    </p>
+                    <ul className="space-y-4 mb-6">
+                      <li className="flex items-start gap-3">
+                        <span className="mt-1 text-blue-400 text-xl">
+                          {/* Clock Icon */}
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" strokeWidth="2" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6l4 2" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          Take special note of the <span className="font-semibold text-white">exact time</span> of the accident.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="mt-1 text-indigo-400 text-xl">
+                          {/* Notepad Icon */}
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="5" y="3" width="14" height="18" rx="2" strokeWidth="2" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6M9 11h6M9 15h2" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          Record all other <span className="font-semibold text-white">important details</span> related to the accident.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="mt-1 text-green-400 text-xl">
+                          {/* Sync Icon */}
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582M20 20v-5h-.581M19.418 9A7.978 7.978 0 0012 4.062M4.582 15A7.978 7.978 0 0012 19.938" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          At the earliest opportunity, <span className="font-semibold text-white">check your time</span> with the Guard&apos;s or Control&apos;s time.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="mt-1 text-yellow-400 text-xl">
+                          {/* Search/Clue Icon */}
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" strokeWidth="2" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-4.35-4.35" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          Remember, the <span className="font-semibold text-white">exact time</span> is often a crucial clue in determining the cause of the accident.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
