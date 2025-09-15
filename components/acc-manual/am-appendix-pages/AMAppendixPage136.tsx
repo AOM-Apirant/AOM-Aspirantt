@@ -45,7 +45,7 @@ const AMAppendixPage136 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -63,7 +63,7 @@ const AMAppendixPage136 = () => {
 
                   {/* Section i */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">i</span>
                       </div>
@@ -75,7 +75,7 @@ const AMAppendixPage136 = () => {
 
                   {/* Section ii */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">ii</span>
                       </div>
@@ -87,7 +87,7 @@ const AMAppendixPage136 = () => {
 
                   {/* Section iii */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">iii</span>
                       </div>
@@ -99,7 +99,7 @@ const AMAppendixPage136 = () => {
 
                   {/* Section iv */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">iv</span>
                       </div>
@@ -111,7 +111,7 @@ const AMAppendixPage136 = () => {
 
                   {/* Section v */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-lime-500 to-green-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">v</span>
                       </div>
@@ -123,7 +123,7 @@ const AMAppendixPage136 = () => {
 
                   {/* Section vi */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">vi</span>
                       </div>
@@ -135,42 +135,93 @@ const AMAppendixPage136 = () => {
 
                   {/* Section vii */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mt-1 shadow-lg">
                         <span className="text-white font-bold text-sm">vii</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed mb-3">As far as the jurisdiction of South Central Railway is concerned, the following are the details covered by NDRF;</p>
-
-                        {/* NDRF Contact Information Table */}
-                        <div className="overflow-x-auto">
-                          <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4">
-                            <table className="w-full text-sm text-gray-200 border-collapse">
-                              <thead>
-                                <tr className="border-b border-white/20">
-                                  <th className="text-left p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-l-lg">Division</th>
-                                  <th className="text-left p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20">Postal Address</th>
-                                  <th className="text-left p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20">Name & Designation</th>
-                                  <th className="text-left p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-r-lg">Contact number/s</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr className="border-b border-white/10">
-                                  <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-l-lg font-semibold">Guntakal, Secunderabad, Hyderabad, Vijayawada, Guntur, Nanded Divisions for the territories under Andhra Pradesh.</td>
-                                  <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10">Sr. Commandant CISF, NDRF Batallion Suraksha campus Post Arakkonam Vellore District Tamilnadu – 631152</td>
-                                  <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10">Sri. P.S. B. Nair, Senior Commandant</td>
-                                  <td className="p-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-r-lg">04177-246594, 246269</td>
-                                </tr>
-                                <tr>
-                                  <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-l-lg font-semibold">Nanded, Secunderabad, Guntakal Divisions for the territories under Maharashtra & Karnataka</td>
-                                  <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10">PO – Vishnupuri Telagaon Battalion No. 145 PUNE Maharashtra – 410507</td>
-                                  <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10">Sri. Alok Avasthy Commandant</td>
-                                  <td className="p-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-r-lg">02114-231509</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
+                        <ul className="space-y-6">
+                          <li className="flex items-start gap-3">
+                            <span className="inline-flex items-center justify-center w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full mt-1">
+                              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01" />
+                                <circle cx="12" cy="12" r="10" />
+                              </svg>
+                            </span>
+                            <span className="text-indigo-200 leading-relaxed text-lg font-semibold">
+                              For the jurisdiction of South Central Railway, the following NDRF contact details are provided for quick response and coordination during emergencies:
+                            </span>
+                          </li>
+                          <li>
+                            <div className="overflow-x-auto">
+                              <div className="bg-gradient-to-br from-purple-900/60 to-indigo-900/60 backdrop-blur-md rounded-2xl border border-purple-400/30 p-6 shadow-xl">
+                                <ul className="space-y-6">
+                                  <li className="flex flex-col md:flex-row md:items-center gap-4">
+                                    <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full">
+                                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 01-8 0" />
+                                        <circle cx="12" cy="12" r="10" />
+                                      </svg>
+                                    </span>
+                                    <div className="flex-1 space-y-1">
+                                      <div className="text-indigo-100 font-semibold">
+                                        Guntakal, Secunderabad, Hyderabad, Vijayawada, Guntur, Nanded Divisions (Andhra Pradesh)
+                                      </div>
+                                      <div className="text-indigo-200">
+                                        <span className="font-bold">Postal Address:</span> Sr. Commandant CISF, NDRF Battalion, Suraksha Campus, Post Arakkonam, Vellore District, Tamil Nadu – 631152
+                                      </div>
+                                      <div className="text-indigo-200">
+                                        <span className="font-bold">Name &amp; Designation:</span> Sri. P.S. B. Nair <span className="text-indigo-300">Senior Commandant</span>
+                                      </div>
+                                      <div className="text-indigo-200 flex items-center gap-2">
+                                        <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm12-12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                        </svg>
+                                        <span className="font-bold">Contact:</span> 04177-246594, 246269
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li className="flex flex-col md:flex-row md:items-center gap-4">
+                                    <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full">
+                                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 018 0v2" />
+                                        <circle cx="12" cy="12" r="10" />
+                                      </svg>
+                                    </span>
+                                    <div className="flex-1 space-y-1">
+                                      <div className="text-emerald-100 font-semibold">
+                                        Nanded, Secunderabad, Guntakal Divisions (Maharashtra &amp; Karnataka)
+                                      </div>
+                                      <div className="text-emerald-200">
+                                        <span className="font-bold">Postal Address:</span> PO – Vishnupuri, Telagaon Battalion No. 145, Pune, Maharashtra – 410507
+                                      </div>
+                                      <div className="text-emerald-200">
+                                        <span className="font-bold">Name &amp; Designation:</span> Sri. Alok Avasthy <span className="text-emerald-300">Commandant</span>
+                                      </div>
+                                      <div className="text-emerald-200 flex items-center gap-2">
+                                        <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm12-12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                        </svg>
+                                        <span className="font-bold">Contact:</span> 02114-231509
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="inline-flex items-center justify-center w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full mt-1">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01" />
+                                <circle cx="12" cy="12" r="10" />
+                              </svg>
+                            </span>
+                            <span className="text-indigo-300 text-base">
+                              Please contact the above NDRF officials for any disaster management assistance within the respective divisions.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

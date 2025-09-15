@@ -50,7 +50,7 @@ const AMAppendixPage148B = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SECTION 14</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SECTION III</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               TEMPORARY ENTRY UPON LAND TO REMOVE OBSTRUCTION, TO REPAIR OR TO PREVENT ACCIDENT
@@ -65,11 +65,11 @@ const AMAppendixPage148B = () => {
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
                     <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">14</span>
+                      <span className="text-white font-bold lg:text-lg text-base">2</span>
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -87,20 +87,20 @@ const AMAppendixPage148B = () => {
                   <div key={index} className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                     <div className="space-y-4">
                       {/* Section Header */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                      <div className="flex flex-col items-center lg:gap-4 gap-2">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                           <span className="text-white font-bold text-lg">({section.number})</span>
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-xl font-bold text-blue-300 mb-2">{section.title}</h4>
+                          <h4 className="lg:text-2xl text-xl font-bold text-blue-300 mb-2 text-center">{section.title}</h4>
                           <p className="text-gray-200 leading-relaxed mb-4">{section.content}</p>
 
                           {/* Subsections */}
                           {section.subsections && (
-                            <div className="space-y-2 ml-4">
+                            <div className="space-y-2 lg:ml-4 ml-2">
                               {section.subsections.map((subsection, subIndex) => (
-                                <div key={subIndex} className="flex items-start gap-3">
-                                  <div className="w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <div key={subIndex} className="flex items-start lg:gap-3 gap-2">
+                                  <div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <span className="text-white font-bold text-xs">{subsection.charAt(0)}</span>
                                   </div>
                                   <p className="text-gray-300 leading-relaxed">{subsection.substring(2)}</p>

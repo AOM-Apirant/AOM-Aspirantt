@@ -75,7 +75,7 @@ const AMAppendixPage142 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -92,7 +92,7 @@ const AMAppendixPage142 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Definition */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <h4 className="text-xl font-bold text-blue-300 mb-3">Definition</h4>
                     <p className="text-gray-200 leading-relaxed">
                       Shock is severe depression to vital functions of organs like brain, heart, lungs etc. due to less blood supply to the brain.
@@ -100,13 +100,13 @@ const AMAppendixPage142 = () => {
                   </div>
 
                   {/* Causes */}
-                  <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">1.1</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-red-300">Causes</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-red-300">Causes</h4>
                       </div>
                     </div>
 
@@ -123,20 +123,20 @@ const AMAppendixPage142 = () => {
                   </div>
 
                   {/* Signs and Symptoms */}
-                  <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 backdrop-blur-lg rounded-2xl border border-amber-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 backdrop-blur-lg rounded-2xl border border-amber-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">1.2</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-amber-300">Signs and Symptoms of Shock</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-amber-300">Signs and Symptoms of Shock</h4>
                       </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-3">
                       {symptoms.map((symptom, index) => (
                         <div key={index} className="flex items-start gap-3">
-                          <div className="w-8 h-8 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="lg:w-8 lg:h-8 w-6 h-6 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-sm">{index + 1}</span>
                           </div>
                           <p className="text-gray-300 leading-relaxed">{symptom}</p>
@@ -146,20 +146,20 @@ const AMAppendixPage142 = () => {
                   </div>
 
                   {/* General Treatment */}
-                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">1.3</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-green-300">General Treatment for Shock</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-green-300">General Treatment for Shock</h4>
                       </div>
                     </div>
 
                     <div className="space-y-4">
                       {treatments.map((treatment, index) => (
                         <div key={index} className="flex items-start gap-3">
-                          <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="lg:w-10 lg:h-10 w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-lg">{treatment.letter}</span>
                           </div>
                           <p className="text-gray-300 leading-relaxed">{treatment.description}</p>

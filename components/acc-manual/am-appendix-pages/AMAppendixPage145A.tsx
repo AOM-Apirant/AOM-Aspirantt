@@ -69,7 +69,7 @@ const AMAppendixPage145A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
@@ -87,7 +87,7 @@ const AMAppendixPage145A = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Definition */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <h4 className="text-xl font-bold text-blue-300 mb-3">Definition</h4>
 
                     {/* Burn Definition */}
@@ -120,13 +120,13 @@ const AMAppendixPage145A = () => {
                   </div>
 
                   {/* Degrees of Burns */}
-                  <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 lg:p-6 p-3">
+                    <div className="flex items-center flex-col gap-4 mb-6 text-center">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">3.1</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-red-300">Degrees of burns</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-red-300">Degrees of burns</h4>
                       </div>
                     </div>
 
@@ -136,8 +136,8 @@ const AMAppendixPage145A = () => {
                           key={index}
                           className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1"
                         >
-                          <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <div className="flex flex-col text-center items-center lg:gap-4 gap-2">
+                            <div className="w-20 h-20 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                               <span className="text-white font-bold text-lg">{degree.degree}</span>
                             </div>
                             <div className="flex-1">
@@ -152,20 +152,20 @@ const AMAppendixPage145A = () => {
                   </div>
 
                   {/* General Treatment */}
-                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 lg:p-6 p-3">
+                    <div className="flex items-center flex-col gap-4 mb-6 text-center">
+                      <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">3.2</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-green-300">General treatment for burns and scalds</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-green-300">General treatment for burns and scalds</h4>
                       </div>
                     </div>
 
                     <div className="space-y-4">
                       {burnTreatments.map((treatment, index) => (
-                        <div key={index} className="flex items-start gap-4">
-                          <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div key={index} className="flex items-start lg:gap-4 gap-2">
+                          <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-lg">{treatment.letter}</span>
                           </div>
                           <p className="text-gray-300 leading-relaxed">{treatment.description}</p>

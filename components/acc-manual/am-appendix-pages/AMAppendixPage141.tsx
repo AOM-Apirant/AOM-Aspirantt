@@ -97,7 +97,7 @@ const AMAppendixPage141 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -114,7 +114,7 @@ const AMAppendixPage141 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Definition */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <h4 className="text-xl font-bold text-blue-300 mb-3">Definition</h4>
                     <p className="text-gray-200 leading-relaxed">
                       When lungs are not getting sufficient fresh air, important organs of the body, mainly the brain is deprived of oxygen. This is a dangerous condition called asphyxia.
@@ -122,13 +122,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* Causes */}
-                  <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.1</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-red-300">Causes</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-red-300">Causes</h4>
                       </div>
                     </div>
 
@@ -145,13 +145,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* Signs and Symptoms */}
-                  <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 backdrop-blur-lg rounded-2xl border border-amber-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 backdrop-blur-lg rounded-2xl border border-amber-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.2</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-amber-300">Signs and Symptoms of Asphyxia/Suffocation</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-amber-300">Signs and Symptoms of Asphyxia/Suffocation</h4>
                       </div>
                     </div>
 
@@ -168,13 +168,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* General Treatment */}
-                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.3</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-green-300">General Treatment for Asphyxia</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-green-300">General Treatment for Asphyxia</h4>
                       </div>
                     </div>
 
@@ -190,7 +190,7 @@ const AMAppendixPage141 = () => {
                     </div>
 
                     {/* Notes */}
-                    <div className="mt-6 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <div className="mt-6 lg:p-4 p-3 bg-white/5 rounded-xl border border-white/10">
                       <h5 className="text-white font-bold mb-2">Note:</h5>
                       <ul className="space-y-1 text-sm text-gray-300">
                         <li>• Normal Breathing (Respiration) Rate 15 – 18 times per minute.</li>
@@ -200,22 +200,22 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* Artificial Respiration Methods */}
-                  <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-lg rounded-2xl border border-blue-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-lg rounded-2xl border border-blue-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.4</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-blue-300">Methods of Artificial Respiration</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-blue-300">Methods of Artificial Respiration</h4>
                       </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-4">
-                      <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-xl lg:p-4 p-3 border border-white/10">
                         <h5 className="text-white font-bold mb-2">Mouth to Mouth Method</h5>
                         <p className="text-gray-300 text-sm">of Artificial Respiration</p>
                       </div>
-                      <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-xl lg:p-4 p-3 border border-white/10">
                         <h5 className="text-white font-bold mb-2">Mouth to Nose Method</h5>
                         <p className="text-gray-300 text-sm">of Artificial Respiration</p>
                       </div>
@@ -223,13 +223,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* Mouth to Mouth Method */}
-                  <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-lg rounded-2xl border border-cyan-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-lg rounded-2xl border border-cyan-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.5</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-cyan-300">Mouth to Mouth Method of Artificial Respiration</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-cyan-300">Mouth to Mouth Method of Artificial Respiration</h4>
                       </div>
                     </div>
 
@@ -246,13 +246,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* Mouth to Nose Method */}
-                  <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl border border-indigo-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl border border-indigo-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.6</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-indigo-300">Mouth to Nose Method of Artificial Respiration</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-indigo-300">Mouth to Nose Method of Artificial Respiration</h4>
                       </div>
                     </div>
 
@@ -262,13 +262,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* Heart Stop Functioning */}
-                  <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 backdrop-blur-lg rounded-2xl border border-red-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-red-500 to-pink-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.7</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-red-300">WHEN THE HEART STOPS FUNCTIONING</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-red-300">WHEN THE HEART STOPS FUNCTIONING</h4>
                       </div>
                     </div>
 
@@ -288,7 +288,7 @@ const AMAppendixPage141 = () => {
                     </div>
 
                     {/* Additional Notes */}
-                    <div className="mt-6 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <div className="mt-6 lg:p-4 p-3 bg-white/5 rounded-xl border border-white/10">
                       <h5 className="text-white font-bold mb-2">Note:</h5>
                       <ul className="space-y-1 text-sm text-gray-300">
                         <li>• Even if the casualty is breathing but the breathing is not normal, it is wise to start artificial respiration.</li>
@@ -298,13 +298,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* External Heart Compression */}
-                  <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 backdrop-blur-lg rounded-2xl border border-orange-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 backdrop-blur-lg rounded-2xl border border-orange-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.8</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-orange-300">External Heart Compression or External Cardiac Massage</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-orange-300">External Heart Compression or External Cardiac Massage</h4>
                       </div>
                     </div>
 
@@ -319,7 +319,7 @@ const AMAppendixPage141 = () => {
                       ))}
 
                       {/* Treatment Effective Indicators */}
-                      <div className="mt-6 p-4 bg-green-500/10 rounded-xl border border-green-400/20">
+                      <div className="mt-6 lg:p-4 p-3 bg-green-500/10 rounded-xl border border-green-400/20">
                         <h5 className="text-green-300 font-bold mb-3">If the treatment is effective:</h5>
                         {treatmentEffective.map((indicator, index) => (
                           <div key={index} className="flex items-start gap-3 mb-2">
@@ -334,13 +334,13 @@ const AMAppendixPage141 = () => {
                   </div>
 
                   {/* CPR */}
-                  <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 backdrop-blur-lg rounded-2xl border border-purple-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 backdrop-blur-lg rounded-2xl border border-purple-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">5.9</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-purple-300">CPR (Cardio Pulmonary Resuscitation)</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-purple-300">CPR (Cardio Pulmonary Resuscitation)</h4>
                       </div>
                     </div>
 

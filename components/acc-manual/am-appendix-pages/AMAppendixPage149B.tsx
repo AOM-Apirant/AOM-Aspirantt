@@ -23,6 +23,7 @@ const AMAppendixPage149B = () => {
               </div>
             </div>
 
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">APPENDIX III</h2>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SECTIONS 113-122</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -38,11 +39,11 @@ const AMAppendixPage149B = () => {
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
                     <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">113</span>
+                      <span className="text-white font-bold lg:text-lg text-base">4</span>
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -62,8 +63,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 113 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">113</span>
                       </div>
                       <div className="flex-1">
@@ -75,7 +76,7 @@ const AMAppendixPage149B = () => {
                             </div>
                             <p className="text-gray-200 leading-relaxed">Where, in the course of working a railway. –</p>
                           </div>
-                          <div className="ml-11 space-y-2">
+                          <div className="ml-1 space-y-2">
                             <div className="flex items-start gap-2">
                               <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span className="text-white font-bold text-xs">•</span>
@@ -121,8 +122,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 114 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">114</span>
                       </div>
                       <div className="flex-1">
@@ -134,7 +135,7 @@ const AMAppendixPage149B = () => {
                             </div>
                             <p className="text-gray-200 leading-relaxed">On the receipt of a notice under section 113 of the occurrence of an accident to a train carrying passengers resulting loss of human life or grievous hurt causing total or partial disablement of permanent nature to a passenger or serious damage to railway proper, the Commissioner shall as soon as may be, notify the railway administration in whose jurisdiction the accident occurred of his intention to hold an inquiry into the causes that led to the accident and shall at the same time fix and communicate the date, time and place of inquiry</p>
                           </div>
-                          <div className="ml-11 bg-yellow-500/10 border border-yellow-400/20 rounded-lg p-3 mb-2">
+                          <div className="ml-1 bg-yellow-500/10 border border-yellow-400/20 rounded-lg p-3 mb-2">
                             <p className="text-yellow-200 leading-relaxed text-sm italic">Provided that it shall be open to the Commissioner to hold an inquiry into any other accident which, in his opinion, requires the holding of such an inquiry.</p>
                           </div>
                         </div>
@@ -151,8 +152,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 115 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">115</span>
                       </div>
                       <div className="flex-1">
@@ -165,8 +166,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 116 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">116</span>
                       </div>
                       <div className="flex-1">
@@ -212,8 +213,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 117 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">117</span>
                       </div>
                       <div className="flex-1">
@@ -244,8 +245,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 118 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">118</span>
                       </div>
                       <div className="flex-1">
@@ -258,8 +259,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 119 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">119</span>
                       </div>
                       <div className="flex-1">
@@ -272,8 +273,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 120 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">120</span>
                       </div>
                       <div className="flex-1">
@@ -287,8 +288,8 @@ const AMAppendixPage149B = () => {
                 {/* Section 121 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">121</span>
                       </div>
                       <div className="flex-1">
@@ -302,27 +303,27 @@ const AMAppendixPage149B = () => {
                 {/* Section 122 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">122</span>
                       </div>
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-blue-300 mb-2">Power to make rules in respect of matters in this chapter</h4>
                         <div className="mb-4">
                           <div className="flex items-start gap-3 mb-2">
-                            <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                               <span className="text-white font-bold text-sm">(1)</span>
                             </div>
                             <p className="text-gray-200 leading-relaxed">The Central Government may, by notification, make rules to carry out the purposes of this Chapter</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-3 mb-2">
-                          <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-sm">(2)</span>
                           </div>
                           <p className="text-gray-200 leading-relaxed">In particular, and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters, namely:</p>
                         </div>
-                        <div className="ml-11 space-y-2">
+                        <div className="ml-1 space-y-2">
                           <div className="flex items-start gap-2">
                             <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                               <span className="text-white font-bold text-xs">•</span>

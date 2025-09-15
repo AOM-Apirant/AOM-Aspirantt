@@ -45,7 +45,7 @@ const AMAppendixPage135B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -63,7 +63,7 @@ const AMAppendixPage135B = () => {
 
                   {/* Section i */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">i</span>
                       </div>
@@ -75,20 +75,70 @@ const AMAppendixPage135B = () => {
 
                   {/* Section ii */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">ii</span>
                       </div>
                       <div className="flex-1">
                         <p className="text-gray-200 leading-relaxed mb-3">It has been entrusted with the responsibility</p>
                         <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4">
-                          <div className="space-y-3">
-                            <p className="text-gray-200 leading-relaxed">To lay down the policies, plans and guidelines for Disaster Management Approve the National Disaster Management Plan and the plans prepared by the Ministries / Departments of Government of India</p>
-                            <p className="text-gray-200 leading-relaxed">Lay down guidelines to be followed by the State Disaster Management Authorities for drawing up the State Plan and the Ministries / Departments of the Government of India for the purpose of integrating the measures for prevention of disasters or the mitigations of their effects in their development plans and projects</p>
-                            <p className="text-gray-200 leading-relaxed">Co-ordinate enforcement and implementation of the policies and plans for Disaster Management</p>
-                            <p className="text-gray-200 leading-relaxed">Recommend provisions of funds for the purpose of mitigation and</p>
-                            <p className="text-gray-200 leading-relaxed">Lay down broad policies and guidelines for the functioning of National Institute of Disaster Management (NIDM).</p>
-                          </div>
+                          <ul className="space-y-3">
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">
+                                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3" />
+                                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                </svg>
+                              </span>
+                              <span className="text-gray-200 leading-relaxed">
+                                Lay down the policies, plans, and guidelines for Disaster Management; approve the National Disaster Management Plan and the plans prepared by the Ministries/Departments of Government of India.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">
+                                <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                </svg>
+                              </span>
+                              <span className="text-gray-200 leading-relaxed">
+                                Lay down guidelines to be followed by State Disaster Management Authorities and Ministries/Departments for integrating disaster prevention and mitigation measures in development plans and projects.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">
+                                <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7" />
+                                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                </svg>
+                              </span>
+                              <span className="text-gray-200 leading-relaxed">
+                                Coordinate enforcement and implementation of the policies and plans for Disaster Management.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">
+                                <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3" />
+                                  <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                </svg>
+                              </span>
+                              <span className="text-gray-200 leading-relaxed">
+                                Recommend provision of funds for the purpose of mitigation.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="mt-1">
+                                <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 17l4 4 4-4m0-5V3" />
+                                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none"/>
+                                </svg>
+                              </span>
+                              <span className="text-gray-200 leading-relaxed">
+                                Lay down broad policies and guidelines for the functioning of the National Institute of Disaster Management (NIDM).
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -96,7 +146,7 @@ const AMAppendixPage135B = () => {
 
                   {/* Section iii */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">iii</span>
                       </div>
@@ -108,7 +158,7 @@ const AMAppendixPage135B = () => {
 
                   {/* Section iv */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">iv</span>
                       </div>
@@ -159,19 +209,102 @@ const AMAppendixPage135B = () => {
                           </div>
                         </div>
 
-                        <p className="text-gray-200 leading-relaxed mt-4">The Central Relief Commissioner in the Ministry of Home Affairs is the Chairman of the Crisis Management Group (CMG) constituting of nodal officers from various concerned Ministries, Departments and Organisations in their respective sectors, who takes measures required for dealing with natural disaster, co-ordinates the activities of the Union Ministries and States in relation to disaster preparedness and relief, and to obtain information from the nodal officers on all these issues.</p>
+                        <ul className="mt-4 space-y-3">
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              The Central Relief Commissioner in the Ministry of Home Affairs is the Chairman of the Crisis Management Group (CMG).
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17 9V7a5 5 0 00-10 0v2M5 9h14v10a2 2 0 01-2 2H7a2 2 0 01-2-2V9z" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              CMG consists of nodal officers from various Ministries, Departments, and Organisations in their respective sectors.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 018 0v2M12 11a4 4 0 100-8 4 4 0 000 8z" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Takes measures required for dealing with natural disasters.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8 17l4 4 4-4m0-5V3a1 1 0 00-1-1h-6a1 1 0 00-1 1v9" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Coordinates activities of Union Ministries and States for disaster preparedness and relief.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Obtains information from nodal officers on all disaster management issues.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
 
                   {/* Section v */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-lime-500 to-green-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">v</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-200 leading-relaxed">NDMA has issued guidelines to deal with various vulnerabilities faced by India like earthquakes, floods, cyclones, etc.,. These guidelines are in a consolidated form and individual Ministries / Departments are to implement these guidelines in their respective areas of functioning within the specified time-frames. These guidelines are directed towards prevention and mitigation aspects of Disaster Management arising out of various vulnerabilities.</p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01" />
+                                <circle cx="12" cy="12" r="10" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              NDMA has issued consolidated guidelines to address various vulnerabilities in India such as earthquakes, floods, and cyclones.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Individual Ministries and Departments are responsible for implementing these guidelines in their respective areas within specified time-frames.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-green-400 to-lime-500 rounded-full mr-2">
+                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              The guidelines focus on prevention and mitigation aspects of Disaster Management for various vulnerabilities.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

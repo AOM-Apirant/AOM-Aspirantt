@@ -107,16 +107,16 @@ const AMAppendixPage138 = () => {
         <div className="absolute bottom-32 left-1/3 w-1.5 h-1.5 bg-indigo-300/30 rounded-full animate-bounce delay-1000"></div>
       </div>
 
-      <div className="relative z-10 py-8 lg:px-6 px-4">
+      <div className="relative z-10 py-8 lg:px-6 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Enhanced Header Section */}
           <div className="text-center mb-20">
             {/* Icon with glow effect */}
             <div className="inline-block relative mb-8">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full blur-xl opacity-50 animate-pulse"></div>
-              <div className="relative p-4 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full backdrop-blur-sm border border-white/20">
+              <div className="relative lg:p-4 p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full backdrop-blur-sm border border-white/20">
                 <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-4 rounded-full shadow-2xl">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="lg:w-10 lg:h-10 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
@@ -129,7 +129,7 @@ const AMAppendixPage138 = () => {
             <div className="w-32 h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 mx-auto mb-8 rounded-full shadow-lg"></div>
 
             <h2 className="lg:text-3xl text-xl font-bold text-white mb-4 tracking-wide">
-              📞 IMPORTANT CONTACT NUMBERS
+               IMPORTANT CONTACT NUMBERS
             </h2>
             <p className="lg:text-lg text-base text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium">
               GOVERNMENT OF ANDHRA PRADESH REVENUE (DM) DEPARTMENT – A.P. SECRETARIAT
@@ -137,21 +137,21 @@ const AMAppendixPage138 = () => {
           </div>
 
           {/* Enhanced Content Section */}
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl py-8 lg:px-8 px-4 border border-white/10 hover:bg-white/10 transition-all duration-500">
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl py-8 lg:px-8 px-2 border border-white/10 hover:bg-white/10 transition-all duration-500">
             <div className="space-y-8">
               {/* Section Header */}
-              <div className="group hover:bg-white/5 py-6 lg:px-8 px-4 rounded-2xl transition-all duration-300 border border-white/10 hover:border-white/20 relative overflow-hidden">
+              <div className="group hover:bg-white/5 py-3 lg:px-8 px-2 rounded-2xl transition-all duration-300 border border-white/10 hover:border-white/20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative flex flex-col items-center space-y-6">
                   <div className="flex-shrink-0">
-                    <div className="lg:w-20 lg:h-20 w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-xl group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 border border-white/20">
+                    <div className="lg:w-20 lg:h-20 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-xl group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 border border-white/20 absolute top-0 right-0">
                       <span className="text-white font-bold lg:text-2xl text-lg">6</span>
                     </div>
                   </div>
                   <div className="text-center">
-                    <h3 className="text-3xl font-bold text-white mb-3 flex items-center justify-center gap-3">
+                    <h3 className="lg:text-3xl text-xl font-bold text-white mb-3 flex flex-col items-center justify-center gap-3">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-3 rounded-xl shadow-lg">
-                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                       </span>
@@ -162,7 +162,7 @@ const AMAppendixPage138 = () => {
               </div>
 
               {/* Government Departments Grid */}
-              <div className="grid lg:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-2">
                 {governmentContacts.map((dept, index) => (
                   <div
                     key={dept.department}
@@ -174,9 +174,9 @@ const AMAppendixPage138 = () => {
                       <div className="absolute inset-0 bg-black/20"></div>
                       <div className="relative flex items-center justify-between">
                         <div>
-                          <h4 className="text-2xl font-bold text-white">{dept.department}</h4>
+                          <h4 className="lg:text-2xl text-xl font-bold text-white">{dept.department}</h4>
                         </div>
-                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <div className="w-10 h-10 lg:w-12 lg:h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                           </svg>
@@ -185,7 +185,7 @@ const AMAppendixPage138 = () => {
                     </div>
 
                     {/* Contact Details */}
-                    <div className="p-6 space-y-4">
+                    <div className="py-4 px-2 space-y-4">
                       {dept.contacts.map((contact, contactIndex) => (
                         <div
                           key={contactIndex}
@@ -214,21 +214,21 @@ const AMAppendixPage138 = () => {
               </div>
 
               {/* Ministry of Home Affairs Section */}
-              <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-lg rounded-2xl border border-cyan-400/20 p-6">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-xl">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-lg rounded-2xl border border-cyan-400/20 lg:p-6 p-3">
+                <div className="flex items-center flex-col text-center gap-4 mb-6">
+                  <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-xl">
+                    <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-cyan-300">Ministry of Home Affairs (DM)</h4>
+                    <h4 className="lg:text-2xl text-xl font-bold text-cyan-300">Ministry of Home Affairs (DM)</h4>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   {homeAffairsContacts.map((contact, index) => (
-                    <div key={index} className="bg-white/5 rounded-xl p-4 border border-white/10">
+                    <div key={index} className="bg-white/5 rounded-xl py-4 px-2 border border-white/10">
                       <h5 className="font-bold text-white text-sm uppercase tracking-wide mb-2">{contact.title}</h5>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {contact.details}
@@ -239,22 +239,22 @@ const AMAppendixPage138 = () => {
               </div>
 
               {/* NDMA Section */}
-              <div className="bg-gradient-to-r from-rose-500/10 to-pink-500/10 backdrop-blur-lg rounded-2xl border border-rose-400/20 p-6">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-rose-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-gradient-to-r from-rose-500/10 to-pink-500/10 backdrop-blur-lg rounded-2xl border border-rose-400/20 lg:p-6 p-3">
+                <div className="flex items-center flex-col text-center gap-4 mb-6">
+                  <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center shadow-xl">
+                    <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-rose-300">NDMA</h4>
+                    <h4 className="lg:text-2xl text-xl font-bold text-rose-300">NDMA</h4>
                     <p className="text-rose-200 text-sm font-medium">National Disaster Management Authority</p>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   {ndmaContacts.map((contact, index) => (
-                    <div key={index} className="bg-white/5 rounded-xl p-4 border border-white/10">
+                    <div key={index} className="bg-white/5 rounded-xl py-4 px-2 border border-white/10">
                       <h5 className="font-bold text-white text-sm uppercase tracking-wide mb-2">{contact.title}</h5>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {contact.details}
@@ -265,7 +265,7 @@ const AMAppendixPage138 = () => {
               </div>
 
               {/* Defense Forces Grid */}
-              <div className="grid lg:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-2">
                 {defenseContacts.map((dept, index) => (
                   <div
                     key={dept.department}
@@ -277,9 +277,9 @@ const AMAppendixPage138 = () => {
                       <div className="absolute inset-0 bg-black/20"></div>
                       <div className="relative flex items-center justify-between">
                         <div>
-                          <h4 className="text-2xl font-bold text-white">{dept.department}</h4>
+                          <h4 className="lg:text-2xl text-xl font-bold text-white">{dept.department}</h4>
                         </div>
-                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <div className="w-10 h-10 lg:w-12 lg:h-12 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                           </svg>
@@ -288,7 +288,7 @@ const AMAppendixPage138 = () => {
                     </div>
 
                     {/* Contact Details */}
-                    <div className="p-6 space-y-4">
+                    <div className="py-4 px-2 space-y-4">
                       {dept.contacts.map((contact, contactIndex) => (
                         <div
                           key={contactIndex}
@@ -317,25 +317,25 @@ const AMAppendixPage138 = () => {
               </div>
 
               {/* Control Room Information */}
-              <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl border border-indigo-400/20 p-6">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-xl">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl border border-indigo-400/20 lg:p-6 p-3">
+                <div className="flex items-center flex-col text-center gap-4 mb-6">
+                  <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-xl">
+                    <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-2xl font-bold text-indigo-300">Control Room/s</h4>
+                    <h4 className="lg:text-2xl text-xl font-bold text-indigo-300">Control Room/s</h4>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                  <div className="bg-white/5 rounded-xl py-4 px-2 border border-white/10">
                     <p className="text-gray-300 text-sm leading-relaxed">
                       Toll Free No. 1077 common to all Districts within the District limits only.
                     </p>
                   </div>
-                  <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                  <div className="bg-white/5 rounded-xl py-4 px-2 border border-white/10">
                     <p className="text-gray-300 text-sm leading-relaxed">
                       Toll Free No. 1070 – Main Control Room, Secretariat
                     </p>
@@ -344,15 +344,15 @@ const AMAppendixPage138 = () => {
               </div>
 
               {/* Important Note */}
-              <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-amber-400/20 p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl flex items-center justify-center shadow-xl flex-shrink-0">
+              <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 backdrop-blur-lg rounded-2xl border border-amber-400/20 lg:p-6 p-3">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center shadow-xl flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                     </svg>
                   </div>
                   <div>
-                    <h5 className="font-bold text-amber-300 text-lg mb-2">Important Note</h5>
+                    <h5 className="font-bold text-amber-300 lg:text-lg text-base mb-2">Important Note</h5>
                     <p className="text-gray-300 text-sm leading-relaxed">
                       These telephone numbers are subjected to change from time to time. They need to be updated by the concerned authorities.
                     </p>

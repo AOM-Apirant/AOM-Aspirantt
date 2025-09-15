@@ -32,7 +32,7 @@ const AMAppendixPage152 = () => {
               <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-center mb-6 max-w-4xl mx-auto">
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-8">
-                    <h4 className="text-2xl font-bold text-blue-300 mb-6">Risk Assessment Framework</h4>
+                    <h4 className="lg:text-2xl text-xl font-bold text-blue-300 mb-6">Risk Assessment Framework</h4>
                     <p className="text-gray-200 leading-relaxed">
                       Systematic approach to identify, assess, and mitigate potential risks in railway operations.
                     </p>

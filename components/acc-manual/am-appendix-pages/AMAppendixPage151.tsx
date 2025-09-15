@@ -23,6 +23,7 @@ const AMAppendixPage151 = () => {
               </div>
             </div>
 
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">APPENDIX – VII</h2>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SECTIONS 123-129</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -38,11 +39,11 @@ const AMAppendixPage151 = () => {
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
                     <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">123-129</span>
+                      <span className="text-white font-bold lg:text-lg text-base">5</span>
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -62,15 +63,15 @@ const AMAppendixPage151 = () => {
                 {/* Section 123 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">123</span>
                       </div>
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-blue-300 mb-2">Definitions</h4>
                         <div className="mb-4">
                           <p className="text-gray-200 leading-relaxed mb-4">In this Chapter, unless the context otherwise requires –</p>
-                          <div className="space-y-3 ml-4">
+                          <div className="space-y-3 ml-1">
                             <div className="flex items-start gap-3">
                               <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <span className="text-white font-bold text-sm">a</span>
@@ -119,13 +120,92 @@ const AMAppendixPage151 = () => {
                 {/* Section 124 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">124</span>
                       </div>
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-blue-300 mb-2">Extent of liability</h4>
-                        <p className="text-gray-200 leading-relaxed mb-4">When in the course of working a railway, an accident occurs, being either a collision between trains of which one is a train carrying passengers or the derailment of or other accident to a train or any part of a train carrying passengers, then whether or not there has been any wrongful act, neglect or default on the part of the railway administration such as would entitle a passenger who has been injured or has suffered a loss to maintain an action and recover damages in respect thereof, the railway administration shall, notwithstanding anything contained in any other law, be liable to pay compensation to such extent as may be prescribed and to that extent only for loss occasioned by the death of a passenger dying as a result of such accident, and for personal injury and loss, destruction, damage or deterioration of goods owned by the passenger and accompanying him in his compartment or on the train, sustained as a result of such accident.</p>
+                        <ul className="space-y-3 mb-4">
+                          <li className="flex items-start gap-2">
+                            <span className="text-blue-400 mt-0.5">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 17l4 4 4-4m-4-5v9" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              If, during railway operations, an accident occurs such as:
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2 ml-1">
+                            <span className="text-indigo-400 mt-0.5">
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Collision between trains (where at least one is carrying passengers)
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2 ml-1">
+                            <span className="text-indigo-400 mt-0.5">
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h8" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Derailment or any other accident to a train or part of a train carrying passengers
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-purple-400 mt-0.5">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              Then, regardless of any wrongful act, neglect, or default by the railway administration, and notwithstanding any other law:
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2 ml-1">
+                            <span className="text-green-400 mt-0.5">
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3" />
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed">
+                              The railway administration is liable to pay compensation (as prescribed) only for:
+                              <ul className="list-none ml-1 mt-1 space-y-1">
+                                <li className="flex items-start gap-1">
+                                  <span className="text-yellow-400 mt-0.5">
+                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <circle cx="12" cy="12" r="2" fill="currentColor" />
+                                    </svg>
+                                  </span>
+                                  <span>Death of a passenger resulting from such accident</span>
+                                </li>
+                                <li className="flex items-start gap-1">
+                                  <span className="text-yellow-400 mt-0.5">
+                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <circle cx="12" cy="12" r="2" fill="currentColor" />
+                                    </svg>
+                                  </span>
+                                  <span>Personal injury to a passenger</span>
+                                </li>
+                                <li className="flex items-start gap-1">
+                                  <span className="text-yellow-400 mt-0.5">
+                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <circle cx="12" cy="12" r="2" fill="currentColor" />
+                                    </svg>
+                                  </span>
+                                  <span>Loss, destruction, damage, or deterioration of goods owned by the passenger and accompanying them in their compartment or on the train, sustained as a result of such accident</span>
+                                </li>
+                              </ul>
+                            </span>
+                          </li>
+                        </ul>
                         <div className="bg-yellow-500/10 border border-yellow-400/20 rounded-lg p-3">
                           <p className="text-yellow-200 leading-relaxed text-sm italic">Explanation &ndash; For the purpose of this section &lsquo;passenger&rsquo; includes a railway servant on duty.</p>
                         </div>
@@ -136,8 +216,8 @@ const AMAppendixPage151 = () => {
                 {/* Section 125 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">125</span>
                       </div>
                       <div className="flex-1">
@@ -149,7 +229,7 @@ const AMAppendixPage151 = () => {
                             </div>
                             <p className="text-gray-200 leading-relaxed">An application for compensation under section 124 (or section 124-A) may be made to the Claims Tribunal–</p>
                           </div>
-                          <div className="ml-11 space-y-2">
+                          <div className="ml-1 space-y-2">
                             <div className="flex items-start gap-2">
                               <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span className="text-white font-bold text-xs">(a)</span>
@@ -190,8 +270,8 @@ const AMAppendixPage151 = () => {
                 {/* Section 126 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">126</span>
                       </div>
                       <div className="flex-1">
@@ -229,8 +309,8 @@ const AMAppendixPage151 = () => {
                 {/* Section 127 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">127</span>
                       </div>
                       <div className="flex-1">
@@ -257,8 +337,8 @@ const AMAppendixPage151 = () => {
                 {/* Section 128 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">128</span>
                       </div>
                       <div className="flex-1">
@@ -285,8 +365,8 @@ const AMAppendixPage151 = () => {
                 {/* Section 129 */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20 hover:border-blue-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">129</span>
                       </div>
                       <div className="flex-1">
@@ -305,7 +385,7 @@ const AMAppendixPage151 = () => {
                           </div>
                           <p className="text-gray-200 leading-relaxed">In particular and without prejudice to the generality of the foregoing power, such rules may provide for all or any of the following matters namely –</p>
                         </div>
-                        <div className="ml-11 space-y-2">
+                        <div className="ml-1 space-y-2">
                           <div className="flex items-start gap-2">
                             <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                               <span className="text-white font-bold text-xs">(a)</span>

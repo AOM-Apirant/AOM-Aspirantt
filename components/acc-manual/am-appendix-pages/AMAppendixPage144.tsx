@@ -36,8 +36,8 @@ const AMAppendixPage144 = () => {
               {/* Main Content */}
               <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-center mb-6 max-w-4xl mx-auto">
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-8">
-                    <h4 className="text-2xl font-bold text-blue-300 mb-6">EMERGENCY RESPONSE SYSTEM</h4>
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-8 p-3">
+                    <h4 className="lg:text-2xl text-xl font-bold text-blue-300 mb-6">EMERGENCY RESPONSE SYSTEM</h4>
                     <p className="text-gray-200 leading-relaxed mb-6">
                       Comprehensive emergency response procedures and protocols for railway accidents and incidents.
                       This section covers the complete emergency response framework including coordination,
@@ -45,14 +45,14 @@ const AMAppendixPage144 = () => {
                     </p>
 
                     <div className="grid lg:grid-cols-2 gap-6 mt-8">
-                      <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-xl border border-green-400/20 p-6">
+                      <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-xl border border-green-400/20 lg:p-6 p-3">
                         <h5 className="text-xl font-bold text-green-300 mb-4">Key Components</h5>
                         <ul className="text-gray-300 space-y-2 text-left">
-                          <li className="flex items-center gap-3">
+                          <li className="flex items-center lg:gap-3 gap-2">
                             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                             Emergency Communication
                           </li>
-                          <li className="flex items-center gap-3">
+                          <li className="flex items-center lg:gap-3 gap-2">
                             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                             Resource Coordination
                           </li>
@@ -67,7 +67,7 @@ const AMAppendixPage144 = () => {
                         </ul>
                       </div>
 
-                      <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-lg rounded-xl border border-blue-400/20 p-6">
+                      <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-lg rounded-xl border border-blue-400/20 lg:p-6 p-3">
                         <h5 className="text-xl font-bold text-blue-300 mb-4">Response Teams</h5>
                         <ul className="text-gray-300 space-y-2 text-left">
                           <li className="flex items-center gap-3">

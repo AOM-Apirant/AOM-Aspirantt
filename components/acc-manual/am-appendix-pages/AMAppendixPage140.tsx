@@ -103,7 +103,7 @@ const AMAppendixPage140 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -113,7 +113,7 @@ const AMAppendixPage140 = () => {
                     </h3>
                     <div className="text-center">
                       <h4 className="text-xl font-bold text-red-300 mb-2">D-R-A-B-C METHODOLOGY</h4>
-                      <div className="flex justify-center gap-4 flex-wrap">
+                      <div className="flex justify-center gap-4 flex-wrap flex-col items-center">
                         <span className="bg-gradient-to-r from-red-500 to-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">D-Danger</span>
                         <span className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-3 py-1 rounded-full text-sm font-bold">R-Response</span>
                         <span className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">A-Airway</span>
@@ -137,7 +137,7 @@ const AMAppendixPage140 = () => {
                         className="group bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4 hover:bg-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1"
                       >
                         <div className="text-center">
-                          <div className={`w-16 h-16 bg-gradient-to-r ${step.color} rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 mx-auto mb-3`}>
+                          <div className={`w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r ${step.color} rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 mx-auto mb-3`}>
                             <span className="text-white font-bold text-xl">{step.letter}</span>
                           </div>
                           <h4 className="text-white font-bold text-lg mb-2">{step.title}</h4>
@@ -148,13 +148,13 @@ const AMAppendixPage140 = () => {
                   </div>
 
                   {/* Airway Section */}
-                  <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-lg rounded-2xl border border-blue-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-lg rounded-2xl border border-blue-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">A</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-blue-300">4.4 AIRWAY</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-blue-300">4.4 AIRWAY</h4>
                         <p className="text-blue-200 text-sm font-medium">Airway Management</p>
                       </div>
                     </div>
@@ -178,13 +178,13 @@ const AMAppendixPage140 = () => {
                   </div>
 
                   {/* Breathing Section */}
-                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-lg rounded-2xl border border-green-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">B</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-green-300">4.5 Breathing</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-green-300">4.5 Breathing</h4>
                         <p className="text-green-200 text-sm font-medium">Respiratory Assessment</p>
                       </div>
                     </div>
@@ -202,13 +202,13 @@ const AMAppendixPage140 = () => {
                   </div>
 
                   {/* Circulation Section */}
-                  <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-lg rounded-2xl border border-purple-400/20 p-6">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-lg rounded-2xl border border-purple-400/20 lg:p-6 p-3">
+                    <div className="flex flex-col items-center text-center gap-4 mb-6">
+                      <div className="w-10 h-10 lg:w-16 lg:h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-xl">
                         <span className="text-white font-bold text-xl">C</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-bold text-purple-300">4.6 Circulation</h4>
+                        <h4 className="lg:text-2xl text-xl font-bold text-purple-300">4.6 Circulation</h4>
                         <p className="text-purple-200 text-sm font-medium">Cardiac Assessment</p>
                       </div>
                     </div>
