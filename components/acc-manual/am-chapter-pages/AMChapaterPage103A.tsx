@@ -42,7 +42,7 @@ const AMChapaterPage103A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,7 +61,7 @@ const AMChapaterPage103A = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🚂</span>
                         <div className="space-y-4">
                           <p className="text-gray-200 leading-relaxed">
@@ -77,7 +77,7 @@ const AMChapaterPage103A = () => {
                     {/* Section a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">⚠️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -115,16 +115,33 @@ const AMChapaterPage103A = () => {
                     {/* Section b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">🔍</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
                               <h4 className="text-lg font-bold text-orange-300 mb-3 text-center">b) Consequential Train Accidents Inquiry</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              All other consequential train accidents shall be inquired by Dy.CSOs from Safety Department to be nominated by GM with the GM as the accepting authority. The inquiry officer can co-opt any other officer as considered necessary. The investigation team would be assisted by the Divisional Officers.
-                            </p>
+                            <ul className="list-none space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-300 text-lg mt-1">👮‍♂️</span>
+                                <span>
+                                  All other consequential train accidents shall be inquired by Dy.CSOs from Safety Department, nominated by the General Manager (GM), with the GM as the accepting authority.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-300 text-lg mt-1">🤝</span>
+                                <span>
+                                  The inquiry officer may co-opt any other officer as considered necessary.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-300 text-lg mt-1">🧑‍💼</span>
+                                <span>
+                                  The investigation team will be assisted by the Divisional Officers.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -133,7 +150,7 @@ const AMChapaterPage103A = () => {
                     {/* Section c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">📋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -151,7 +168,7 @@ const AMChapaterPage103A = () => {
                     {/* Section d */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-pink-400 text-xl mt-1">🏢</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-pink-500/20 to-rose-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/30">
@@ -169,7 +186,7 @@ const AMChapaterPage103A = () => {
                     {/* Section e */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-teal-400 text-xl mt-1">📊</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-teal-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-teal-400/30">
@@ -187,7 +204,7 @@ const AMChapaterPage103A = () => {
                     {/* Section f */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-indigo-400 text-xl mt-1">⚡</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/30">
@@ -205,16 +222,39 @@ const AMChapaterPage103A = () => {
                     {/* Section g */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-yellow-400 text-xl mt-1">🌐</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
                               <h4 className="text-lg font-bold text-yellow-300 mb-3 text-center">g) Foreign Railway Staff Responsibility</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              In accident cases wherein the inquiry Committee determines responsibility on the staff of Foreign Railway, the Inquiry Report should be put up to the Principal Head of the Department of concerned department of the Railway on which the accident took place though CSO after which such inquiry report shall be accepted by the AGM (instead of DRM). Finalization of Inter-railway DAR cases arising out of such inquiry reports be followed up by the Principal Head of the Department of the concerned department of the Railway on which the accident took place. If suitable response is not received from the respondent railway at General Manager&apos;s level, then the case should be referred to Railway Board.
-                            </p>
+                            <ul className="space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-400 mt-0.5">🧑‍💼</span>
+                                <span>
+                                  If the inquiry committee finds responsibility on staff of a Foreign Railway, the Inquiry Report should be submitted to the Principal Head of the Department of the concerned department of the Railway where the accident occurred, through the CSO.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 mt-0.5">✅</span>
+                                <span>
+                                  Such an inquiry report will be accepted by the Additional General Manager (AGM) instead of the Divisional Railway Manager (DRM).
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 mt-0.5">🔄</span>
+                                <span>
+                                  The finalization of Inter-railway DAR (Disciplinary Action Report) cases arising from these inquiry reports should be followed up by the Principal Head of the Department of the concerned department of the Railway where the accident took place.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-red-400 mt-0.5">📨</span>
+                                <span>
+                                  If a suitable response is not received from the respondent railway at the General Manager’s level, the case should be referred to the Railway Board.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -223,7 +263,7 @@ const AMChapaterPage103A = () => {
                     {/* Section h */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-cyan-400 text-xl mt-1">🔧</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">
@@ -241,7 +281,7 @@ const AMChapaterPage103A = () => {
                     {/* Section i */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-emerald-400 text-xl mt-1">📝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-emerald-500/20 to-green-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-emerald-400/30">

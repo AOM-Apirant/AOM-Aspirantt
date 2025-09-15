@@ -42,7 +42,7 @@ const AMChapaterPage104A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,16 +63,33 @@ const AMChapaterPage104A = () => {
                     {/* Section a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">📋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
                               <h4 className="text-lg font-bold text-red-300 mb-3 text-center">a) Departmental Responsibility Acceptance</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              Except as provided for in clause (b) below, and irrespective of whether a joint or Inter departmental Inquiry is ordered by the General Manager, the Sr.DSO of the division shall be advised within two days by the other divisional officers whether their department is accepting responsibility or not. If no department accepts responsibility, the Divisional Safety Officer shall at once put up the case to the Divisional Railway Manager who will, if necessary, order an Inter Departmental inquiry.
-                            </p>
+                            <ul className="space-y-3">
+                              <li className="flex items-start gap-2">
+                                <span className="text-red-300 text-xl mt-1">⏰</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  Within <span className="font-semibold">two days</span>, all divisional officers must inform the Sr.DSO whether their department accepts responsibility, regardless of whether a joint or inter-departmental inquiry is ordered by the General Manager.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-red-300 text-xl mt-1">❓</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  If <span className="font-semibold">no department accepts responsibility</span>, the Divisional Safety Officer must immediately refer the case to the Divisional Railway Manager.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-red-300 text-xl mt-1">📝</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  The <span className="font-semibold">Divisional Railway Manager</span> will, if necessary, order an <span className="font-semibold">Inter Departmental Inquiry</span>.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -81,7 +98,7 @@ const AMChapaterPage104A = () => {
                     {/* Section b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">🚧</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">

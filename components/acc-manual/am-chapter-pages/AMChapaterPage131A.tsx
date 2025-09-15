@@ -42,7 +42,7 @@ const AMChapaterPage131A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -59,7 +59,7 @@ const AMChapaterPage131A = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Staff Duties Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <div className="space-y-6">
                       <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-400/20">
                         <p className="text-gray-200 leading-relaxed font-medium">
@@ -85,7 +85,7 @@ const AMChapaterPage131A = () => {
                         <p className="text-gray-200 leading-relaxed font-medium">
                           <strong>Note:</strong>
                         </p>
-                        <div className="ml-6 mt-3 space-y-2">
+                        <div className="ml-0 mt-3 space-y-2">
                           <p className="text-gray-200 leading-relaxed">
                             <strong>(i)</strong> In the case of an Officer or a Supervisor being on the train, the above duty will devolve on him.
                           </p>

@@ -42,7 +42,7 @@ const AMChapaterPage131D = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -59,7 +59,7 @@ const AMChapaterPage131D = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Officer Duties Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <div className="space-y-6">
                       <div className="bg-gradient-to-r from-emerald-500/10 to-green-500/10 p-4 rounded-lg border border-emerald-400/20">
                         <p className="text-gray-200 leading-relaxed font-medium">

@@ -42,7 +42,7 @@ const AMChapaterPage106E = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,7 +61,7 @@ const AMChapaterPage106E = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-green-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -81,7 +81,7 @@ const AMChapaterPage106E = () => {
                     {/* Guideline a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">⚖️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30">
@@ -99,7 +99,7 @@ const AMChapaterPage106E = () => {
                     {/* Guideline b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">🤝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -117,7 +117,7 @@ const AMChapaterPage106E = () => {
                     {/* Guideline c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-yellow-400 text-xl mt-1">🔍</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
@@ -135,7 +135,7 @@ const AMChapaterPage106E = () => {
                     {/* Guideline d */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">🔬</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -153,7 +153,7 @@ const AMChapaterPage106E = () => {
                     {/* Guideline e */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-indigo-400 text-xl mt-1">💭</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/30">
@@ -171,7 +171,7 @@ const AMChapaterPage106E = () => {
                     {/* Guideline f */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-teal-400 text-xl mt-1">📅</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-teal-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-teal-400/30">
@@ -189,16 +189,33 @@ const AMChapaterPage106E = () => {
                     {/* Guideline g */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">📊</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
                               <h4 className="text-lg font-bold text-orange-300 mb-3 text-center">g) Supervision Check</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              To check general laxity in working or ineffective supervision, the relevant records should be examined over some period to check whether the irregularities that have come to light relating to the accident had been repeated previously. The inspection notes of supervisory staff should be perused and it should be determined whether the irregularities could have been detected earlier and set right if effective supervision had been exercised.
-                            </p>
+                            <ul className="space-y-4 text-gray-200 leading-relaxed list-none">
+                              <li className="flex items-start gap-2">
+                                <span className="text-orange-400 text-xl mt-1">📁</span>
+                                <span>
+                                  Examine relevant records over a period to identify if the irregularities related to the accident had occurred previously.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-400 text-xl mt-1">📝</span>
+                                <span>
+                                  Review the inspection notes of supervisory staff for any indications of repeated issues.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 text-xl mt-1">🔍</span>
+                                <span>
+                                  Determine whether the irregularities could have been detected and corrected earlier if effective supervision had been exercised.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

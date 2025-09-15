@@ -42,7 +42,7 @@ const AMChapaterPage126 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -59,7 +59,7 @@ const AMChapaterPage126 = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Person Fallen Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <p className="text-gray-200 leading-relaxed mb-6">
                       In case of a person fallen out of train, the Guard of the train shall take the following action.
                     </p>
@@ -67,9 +67,59 @@ const AMChapaterPage126 = () => {
                     {/* Subsection (a) - Statement Recording */}
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 p-4 rounded-lg border border-blue-400/20 mb-6">
                       <p className="text-gray-200 font-medium mb-3">a) Statement Recording:</p>
-                      <p className="text-gray-200 leading-relaxed">
-                        A statement of the person involved in the accident should be recorded, in all cases where it is possible. But in case of child, the statement of the guardian with the child should be recorded. The statement of two co-passengers, who were eye witnesses to the incident, shall also be recorded. The statements shall be recorded in the presence of the Railway Police traveling by the train and countersigned by the police. If there is no Railway Police traveling by the train, the signature and addresses of two responsible passengers in whose presence the statement is recorded should be obtained.
-                      </p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-2">
+                          <span className="mt-1 text-blue-400">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 01-8 0M12 3v4m0 0a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4h1a4 4 0 014 4z" />
+                            </svg>
+                          </span>
+                          <span className="text-gray-200 leading-relaxed">
+                            Record a statement from the person involved in the accident, whenever possible.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="mt-1 text-indigo-400">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c0-1.104-.896-2-2-2s-2 .896-2 2 .896 2 2 2 2-.896 2-2zm0 0c0-1.104.896-2 2-2s2 .896 2 2-.896 2-2 2-2-.896-2-2z" />
+                            </svg>
+                          </span>
+                          <span className="text-gray-200 leading-relaxed">
+                            If the person is a child, record the statement of the guardian accompanying the child.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="mt-1 text-purple-400">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M16 3.13a4 4 0 010 7.75M8 3.13a4 4 0 000 7.75" />
+                            </svg>
+                          </span>
+                          <span className="text-gray-200 leading-relaxed">
+                            Record statements from two co-passengers who witnessed the incident.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="mt-1 text-pink-400">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M19 7v4a2 2 0 01-2 2H7a2 2 0 01-2-2V7" />
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2" />
+                            </svg>
+                          </span>
+                          <span className="text-gray-200 leading-relaxed">
+                            Ensure all statements are recorded in the presence of Railway Police traveling by the train and countersigned by the police.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="mt-1 text-yellow-400">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </span>
+                          <span className="text-gray-200 leading-relaxed">
+                            If no Railway Police is present, obtain the signatures and addresses of two responsible passengers in whose presence the statement is recorded.
+                          </span>
+                        </li>
+                      </ul>
                     </div>
 
                     {/* Subsection (b) - Information Collection */}
@@ -79,7 +129,7 @@ const AMChapaterPage126 = () => {
                         The following information shall be collected and furnished by the Guard of the train:
                       </p>
 
-                      <div className="space-y-3 ml-4">
+                      <div className="space-y-3 ml-0">
                         <div className="flex flex-col gap-1">
                           <p className="text-gray-200 font-medium">(i) KM at which:</p>
                           <p className="text-gray-200 leading-relaxed ml-4">a. The person fell down</p>

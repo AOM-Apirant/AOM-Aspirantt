@@ -42,7 +42,7 @@ const AMChapaterPage116A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -60,9 +60,41 @@ const AMChapaterPage116A = () => {
 
                   {/* Judicial Inquiry Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
-                    <p className="text-gray-200 leading-relaxed">
-                      A Magistrate, making an inquiry under rule No.934 may summon any railway servant, and any other person whose presence he may think necessary and, after taking the evidence and completing the inquiry, shall, if he considers that there are sufficient grounds for holding a judicial inquiry, take the requisite steps for bringing to trial any person whom he may consider to be criminally liable for the accident. Whenever technical points are involved, the Magistrate shall call for the opinion of the Commissioner of Railway Safety or other professional persons.
-                    </p>
+                    <ul className="space-y-6">
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mt-1">
+                          {/* Gavel Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 10l7 7m-1.414 1.414a2 2 0 01-2.828 0l-7.172-7.172a2 2 0 010-2.828l1.414-1.414a2 2 0 012.828 0l7.172 7.172a2 2 0 010 2.828z" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          The Magistrate conducting an inquiry under Rule No. 934 may summon any railway servant or any other person deemed necessary for the investigation.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mt-1">
+                          {/* Document Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8 16h8M8 12h8m-6 8h6a2 2 0 002-2V7.828a2 2 0 00-.586-1.414l-4.828-4.828A2 2 0 0012.172 1H6a2 2 0 00-2 2v16a2 2 0 002 2z" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          After collecting evidence and completing the inquiry, if the Magistrate finds sufficient grounds for a judicial inquiry, he shall initiate proceedings to bring to trial any person considered criminally liable for the accident.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mt-1">
+                          {/* Lightbulb/Expert Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 2a7 7 0 017 7c0 3.866-3.134 7-7 7s-7-3.134-7-7a7 7 0 017-7zm0 14v4m-4 0h8" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          Whenever technical points are involved, the Magistrate shall seek the opinion of the Commissioner of Railway Safety or other professional experts.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

@@ -23,7 +23,7 @@ const AMChapaterPage110 = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">
+            <h2 className="lg:text-2xl text-xl font-bold text-indigo-300 mb-4">
               927. Particulars to be Furnished in the Special Report or Inquiry Report
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
@@ -39,7 +39,7 @@ const AMChapaterPage110 = () => {
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-1 w-full">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                         <span className="text-white">🚦</span>
                       </span>
@@ -69,7 +69,7 @@ const AMChapaterPage110 = () => {
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-1 w-full">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                         <span className="text-white">🗺️</span>
                       </span>
@@ -89,7 +89,7 @@ const AMChapaterPage110 = () => {
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-1 w-full">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col text-center items-center gap-3">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                         <span className="text-white">🚂</span>
                       </span>
@@ -119,11 +119,11 @@ const AMChapaterPage110 = () => {
               </div>
             </div>
             <div className="mt-8">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🚦</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.1 Accidents Involving Signalling Issues</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.1 Accidents Involving Signalling Issues</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 For accidents where signalling is a key factor, consider the following points:
@@ -146,11 +146,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🚦</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.2 Loco Pilots Passing Signals at ‘ON’ & Brake Power Adequacy</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.2 Loco Pilots Passing Signals at ‘ON’ & Brake Power Adequacy</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 In cases where Loco Pilots pass signals at ‘ON’ and the adequacy or efficiency of brake power is in question, the following aspects should be examined:
@@ -165,11 +165,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🚦</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.3 Parting of Trains Due to Coupling Gear Breakage</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.3 Parting of Trains Due to Coupling Gear Breakage</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 In cases where trains part due to the breakage of coupling gear, the following particulars should be included in the report:
@@ -187,11 +187,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🛤️</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.4 Cases of Rail Fractures on Main or Running Line</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.4 Cases of Rail Fractures on Main or Running Line</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 For incidents involving rail fractures on main or running lines, the following particulars must be included in the report:
@@ -208,11 +208,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🛞</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.5 Cases of Fractures of Axles of Engines / Vehicles</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.5 Cases of Fractures of Axles of Engines / Vehicles</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 For incidents involving fractures of axles in engines or vehicles, the following particulars should be included in the report:
@@ -227,11 +227,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🪛</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.6 Accidents Attributable to Breakage of Journals of Vehicles</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.6 Accidents Attributable to Breakage of Journals of Vehicles</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 For accidents caused by the breakage of journals of vehicles, the following particulars should be included in the report:
@@ -243,11 +243,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🚨</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.7 Public Knocked Down or Run Over by Trains or Vehicles</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.7 Public Knocked Down or Run Over by Trains or Vehicles</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 For incidents where a member of the public is knocked down or run over by trains or vehicles, the following particulars should be included in the report:
@@ -264,11 +264,11 @@ const AMChapaterPage110 = () => {
               </ul>
             </div>
             <div className="mt-10">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-col text-center items-center gap-3 mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg">
                   <span className="text-white text-2xl">🚉</span>
                 </span>
-                <h3 className="text-2xl font-bold text-white">927.8 Terminal Stations – Train Running into Buffer End</h3>
+                <h3 className="lg:text-2xl text-xl font-bold text-white">927.8 Terminal Stations – Train Running into Buffer End</h3>
               </div>
               <p className="text-gray-200 mb-4 lg:text-lg text-base">
                 For incidents at terminal stations where a train runs into the buffer end, the following particulars should be included in the report:
@@ -279,7 +279,7 @@ const AMChapaterPage110 = () => {
                 <li className="flex items-start gap-3"><span className="mt-1">🚪</span>
                   <span>
                     <b>Persons Falling Out of Trains:</b> For accidents involving persons falling out of trains, include:
-                    <ul className="pl-6 mt-1 space-y-2 list-none">
+                    <ul className="pl-0 mt-1 space-y-2 list-none">
                       <li className="flex items-start gap-2"><span className="mt-1">🛤️</span><span>Description, type, and number of the carriage.</span></li>
                       <li className="flex items-start gap-2"><span className="mt-1">🪟</span><span>Whether the person fell through the window or doorway.</span></li>
                       <li className="flex items-start gap-2"><span className="mt-1">🔒</span><span>If through the doorway, the condition of the window/door and its fastenings.</span></li>
@@ -290,7 +290,7 @@ const AMChapaterPage110 = () => {
               </ul>
               <div className="mt-6">
                 <h4 className="text-lg font-semibold text-indigo-200 mb-2 flex items-center gap-2"><span>📝</span> <span>Notes:</span></h4>
-                <ul className="space-y-2 text-gray-200 lg:text-base text-sm leading-relaxed list-none pl-0">
+                <ul className="space-y-2 text-gray-200 lg:text-lg text-base leading-relaxed list-none pl-0">
                   <li className="flex items-start gap-2">
                     <span className="mt-1">👤</span>
                     <span>
@@ -325,7 +325,7 @@ const AMChapaterPage110 = () => {
                     <span className="mt-1">🆘</span>
                     <span>
                       <b>Application for Assistance:</b> If assistance was requested, the report should include:
-                      <ul className="pl-6 mt-1 space-y-1 list-none">
+                      <ul className="pl-0 mt-1 space-y-1 list-none">
                         <li className="flex items-start gap-2"><span className="mt-1">⏰</span><span>Time and person making the application.</span></li>
                         <li className="flex items-start gap-2"><span className="mt-1">🏢</span><span>Station and means by which application was sent.</span></li>
                         <li className="flex items-start gap-2"><span className="mt-1">📝</span><span>Details of assistance requested.</span></li>
@@ -347,7 +347,7 @@ const AMChapaterPage110 = () => {
                     <span className="mt-1">🚦</span>
                     <span>
                       <b>Level Crossing Accidents:</b> If a running train runs into road traffic at level crossings, include:
-                      <ul className="pl-6 mt-1 space-y-1 list-none">
+                      <ul className="pl-0 mt-1 space-y-1 list-none">
                         <li className="flex items-start gap-2"><span className="mt-1">📏</span><span>Distance at which the level crossing becomes visible to the Loco Pilot from the relevant direction.</span></li>
                         <li className="flex items-start gap-2"><span className="mt-1">👁️</span><span>Details of track visibility for the approaching road user.</span></li>
                       </ul>

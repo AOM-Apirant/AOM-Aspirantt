@@ -42,7 +42,7 @@ const AMChapaterPage121A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -59,13 +59,13 @@ const AMChapaterPage121A = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Attendance Requirements Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <p className="text-gray-200 leading-relaxed mb-4">
                       When an inquiry under rule 228 of the Statutory Investigation into Railway Accidents Rules, 1973, or a judicial inquiry is being held, the Head of the Railway Administration concerned shall arrange for the attendance, as long as may be necessary, at the place of inquiry, of all railway employees whose evidence is likely to be required at such an inquiry.
                     </p>
 
                     {/* Additional Requirements */}
-                    <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 p-4 rounded-lg border border-indigo-400/20">
+                    <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 lg:p-4 p-3 rounded-lg border border-indigo-400/20">
                       <p className="text-gray-200 leading-relaxed">
                         Further, if the inquiry is to be held by the Commissioner of Railway Safety under rule 228 of Statutory Investigation into Railway Accident Rules, 1973, the Head of the Railway Administration concerned shall issue notice of the date, hour and place at which the inquiry will begin to the officers concerned. He shall also arrange for the attendance of the Divisional Officers concerned at the inquiry.
                       </p>

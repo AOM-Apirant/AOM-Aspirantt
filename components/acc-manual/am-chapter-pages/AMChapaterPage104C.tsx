@@ -42,7 +42,7 @@ const AMChapaterPage104C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,12 +61,47 @@ const AMChapaterPage104C = () => {
                   {/* Main Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">🔍</span>
                         <div className="space-y-4">
-                          <p className="text-gray-200 leading-relaxed">
-                            When a Joint or Interdepartmental inquiry is ordered by the General Manager, the Senior Most Officer of the inquiry committee shall fix the date as per the schedule and place, in consultation with other members of the committee but, in all cases, the inquiry shall be held at the station nearest to the site of accident and within three days after the occurrence of accident. The site of accident shall be inspected immediately and such inspection shall not be dispensed with under any circumstances. The date once fixed may not be changed, except in case of absolute necessity. The representative of each department shall be responsible for summoning and arranging for the attendance at the inquiry of the staff of his department who may be able to give evidence in the case. The Presiding Officer shall arrange for the attendance of any other witnesses whose presence he considers necessary to examine.
-                          </p>
+                          <ul className="space-y-4">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 text-xl mt-1">🗂️</span>
+                              <span className="text-gray-200 leading-relaxed">
+                                When a Joint or Interdepartmental inquiry is ordered by the General Manager, the <span className="font-semibold">Senior Most Officer</span> of the inquiry committee shall fix the date and place in consultation with other members.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 text-xl mt-1">🚉</span>
+                              <span className="text-gray-200 leading-relaxed">
+                                The inquiry must be held at the <span className="font-semibold">station nearest to the site of accident</span> and within <span className="font-semibold">three days</span> after the occurrence.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 text-xl mt-1">🔎</span>
+                              <span className="text-gray-200 leading-relaxed">
+                                The <span className="font-semibold">site of accident shall be inspected immediately</span> and such inspection is mandatory under all circumstances.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-red-400 text-xl mt-1">📅</span>
+                              <span className="text-gray-200 leading-relaxed">
+                                The date once fixed <span className="font-semibold">should not be changed</span> except in case of absolute necessity.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400 text-xl mt-1">👥</span>
+                              <span className="text-gray-200 leading-relaxed">
+                                Each department&apos;s representative is responsible for <span className="font-semibold">summoning and arranging attendance</span> of their staff who can provide evidence.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400 text-xl mt-1">🧑‍⚖️</span>
+                              <span className="text-gray-200 leading-relaxed">
+                                The <span className="font-semibold">Presiding Officer</span> shall arrange for the attendance of any other witnesses deemed necessary.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

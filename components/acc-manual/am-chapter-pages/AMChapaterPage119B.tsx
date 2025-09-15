@@ -42,7 +42,7 @@ const AMChapaterPage119B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -59,7 +59,7 @@ const AMChapaterPage119B = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Telephonic Advice Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <p className="text-gray-200 leading-relaxed mb-6">
                       The Commissioner of Railway Safety should be given telephonic advice in case of the following accidents:
                     </p>
@@ -68,7 +68,7 @@ const AMChapaterPage119B = () => {
                     <div className="space-y-4 mb-8">
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 p-4 rounded-lg border border-blue-400/20">
                         <p className="text-gray-200 font-medium mb-2">a) Any accident to a train carrying passengers, workman special or material train resulting in:</p>
-                        <div className="ml-6 space-y-2">
+                        <div className="ml-0 space-y-2">
                           <p className="text-gray-200">i. loss of life and/or grievous injury (as defined in the Indian Penal Code) to anybody traveling in the train, and/or</p>
                           <p className="text-gray-200">ii. damage to Railway property exceeding a value of Rs.2 crores, and/or</p>
                           <p className="text-gray-200">iii. interruption to running on any important through line for at least 24 hours.</p>
@@ -87,7 +87,7 @@ const AMChapaterPage119B = () => {
                       <p className="text-gray-200 leading-relaxed mb-4">
                         The telephonic advice should be given by any of the Officers of the division in the order of priority given below:
                       </p>
-                      <div className="space-y-2 ml-4">
+                      <div className="space-y-2 ml-0">
                         <p className="text-gray-200">(1) Sr.Divisional Safety Officer</p>
                         <p className="text-gray-200">(2) Sr.Divisional Operations Manager</p>
                         <p className="text-gray-200">(3) Assistant Operations Manager (G)</p>

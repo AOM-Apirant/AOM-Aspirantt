@@ -3764,6 +3764,162 @@ export const allQuizzes = {
           explanation: "GR 5.10 is the correct answer.  Reference -Index G&SR ",
         },
       ],
+      '33': [
+          {
+            question: 'G&SR Rule pertaining reception of train on Non signalled line is mentioned in',
+            options: ['GR 5.07', 'GR 5.08', 'GR 5.09', 'GR 5.10'],
+            correct: 3,
+            explanation: ' GR 5.10 is the correct answer.  Reference -Index G&SR '
+          },
+         
+          {
+            question: 'G&SR Rule pertaining Despatch of train from Non signalled line is mentioned in',
+            options: ['GR 5.10', 'GR 5.11', 'GR 5.12', 'GR 5.14'],
+            correct: 1,
+            explanation: 'GR 5.11 is the correct answer.  Reference -Index G&SR '
+          },
+
+          {
+            question: 'G&SR Rule pertaining Despatch of train from line provided with common departure signal is mentioned in',
+            options: ['GR 5.10', 'GR 5.11', 'GR 5.12', 'GR 5.14'],
+            correct: 2,
+            explanation: 'GR 5.12 is the correct answer.  Reference -Index G&SR '
+          },
+ 
+          {
+            question: 'G&SR Rule pertaining control of shunting is mentioned in',
+            options: ['GR 5.13', 'GR 5.11', 'GR 5.12', 'GR 5.14'],
+            correct: 0,
+            explanation: 'GR 5.13 is the correct answer.  Reference - '
+          },
+ 
+          {
+            question: 'G&SR Rule pertaining shunting on gradients is mentioned in',
+            options: ['GR 5.14', 'GR 5.20', 'GR 5.22', 'GR 5.23'],
+            correct: 1,
+            explanation: 'GR 5.20 is the correct answer.  Reference -Index G&SR '
+          },
+ 
+          {
+            question: 'G&SR Rule pertaining Securing of vehicles at station is mentioned in',
+            options: ['GR 5.14', 'GR 5.20', 'GR 5.22', 'GR 5.23'],
+            correct: 3,
+            explanation: 'GR 5.23 is the correct answer.  Reference -Index G&SR '
+          },
+   
+          {
+            question: 'When a report of any accident or obstruction is received by the Station Master, he shall see that all necessary precautions are taken by the most expeditious means possible, for the_.',
+            options: ['Security of traffic', 'protection of traffic', 'resumption of traffic', 'stoppage of traffic'],
+            correct: 1,
+            explanation: 'protection of traffic is the correct answer.  Reference -GR 6.01 '
+          },
+ 
+          {
+            question: "When a train is stopped between stations on account of accident, failure, obstruction or other exceptional cause, and the Loco Pilot finds that his train cannot proceed, he shall apprise the Guard by ____________________.",
+            options: [
+              "sounding the prescribed code of whistle",
+              "exchange hand danger signals with him",
+              "Either 'A' or 'B'",
+              "Both 'A' & 'B'"
+            ],
+            correct: 3,
+            explanation: "Both 'A' & 'B' is the correct answer.  Reference -GR 6.03 "
+          },
+
+          {
+            question: "The Guard shall either _______________________ back to protect the train in case of train unable to proceed further",
+            options: [
+              "himself go back",
+              "send a competent person",
+              "Either 'A' or 'B'",
+              "Both 'A' & 'B'"
+            ],
+            correct: 2,
+            explanation: "Either 'A' or 'B' is the correct answer.  Reference - GR 6.03"
+          },
+
+          {
+            question: 'The person going back to protect the train shall continuously show his ____________to stop any approaching train,',
+            options: ['hand danger signal', 'Proceed hand signal', 'Hand signal', 'exhibit white light'],
+            correct: 0,
+            explanation: 'hand danger signal is the correct answer.  Reference - GR 6.03'
+          },
+],
+'34': [
+          {
+            question: 'Should any train be seen approaching, the person going to protect the train shall immediately place the detonators on the line,_.',
+            options: ['at that place only', 'as far away from the train as possible', 'at 800M', 'at 1200M'],
+            correct: 1,
+            explanation: ' as far away from the train as possible is the correct answer.  Reference -GR 6.03 '
+          },
+         
+          {
+            question: 'If a passenger train/goods train does not turn up, S M shall arrange to inform rear SM & SCOR even after normal running time and',
+            options: ['5/10 minutes', '10/20 minutes', '20/30 minutes', '15/25'],
+            correct: 1,
+            explanation: '10/20 minutes is the correct answer.  Reference -GR 6.04 '
+          },
+
+          {
+            question: 'If the engine is for any reason unable to proceed, the Guard or in his absence the Loco Pilot, shall covey by the most expeditious means, advice to the nearest station, stating the_,',
+            options: ['nature and cause of the accident', 'location and cause of the accident', 'location, nature and cause of the accident', 'location and nature of the accident'],
+            correct: 2,
+            explanation: 'location, nature and cause of the accident is the correct answer.  Reference -GR 6.05 '
+          },
+ 
+          {
+            question: 'Whenever relief engine is requested by the Guard and subsequently able to move, it may do so at_, and a competent railway servant is proceeding in front protect train at a distance of at least_______ in advance of the train, exhibiting hand danger signal on both sides',
+            options: ['10kmph, 400m', 'walking pace, 400m', '15kmph 600m', '20kmph, 600m'],
+            correct: 1,
+            explanation: 'walking pace, 400m is the correct answer.  Reference -GR 6.05 '
+          },
+ 
+          {
+            question: 'When a Loco Pilot becomes aware in a block section that he does not have an authority to proceed or a proper authority to proceed, he shall immediately_.',
+            options: ['reduce the speed', 'continue journey', 'stop at next gate/IB signal', 'stop the train'],
+            correct: 3,
+            explanation: 'stop the train is the correct answer.  Reference -GR 6.06 '
+          },
+ 
+          {
+            question: 'When a proper tangible authority to proceed is lost on the run, the Loco Pilot may ______________and report the occurrence to the Station Master',
+            options: [
+              'proceed to the next station',
+              'Stop immediately & contact SM',
+              'Proceed with cautious speed',
+              'Proceed with 15kmph'
+            ],
+            correct: 0,
+            explanation: 'proceed to the next station is the correct answer.  Reference -GR 6.06 '
+          },
+          {
+            question: 'Whenever on run train parting takes place, the Loco Pilot shall use his judgement to keep the front portion in motion if possible, until the rear portion has been brought to a stand.',
+            options: ['Stop immediately', 'reduce speed', 'keep the front portion in motion if possible', 'None of the above'],
+            correct: 2,
+            explanation: 'keep the front portion in motion if possible is the correct answer.  Reference -GR 6.08 '
+          },
+ 
+          {
+            question: 'Whenever on run train parting takes place the Loco Pilot shall use his judgement to keep the front portion in motion if possible until ____________',
+            options: ['rear portion has been brought to a stand', 'front portion stops', 'Guard is informed', 'None of these'],
+            correct: 0,
+            explanation: 'rear portion has been brought to a stand is the correct answer.  Reference -GR 6.08 '
+          },
+
+          {
+            question: 'When both portions of a parted train are brought to a stand within sight of each other and it is __________________________, the train shall be coupled with due caution under hand signals from Guard provided necessary precautions have been taken to __________________',
+            options: ['possible to couple, secure front portion', 'unsafe to couple, secure both portion', 'feasible to couple, protect', 'possible and safe to couple them, secure the rear portion'],
+            correct: 3,
+            explanation: 'possible and safe to couple them, secure the rear portion is the correct answer.  Reference -GR 6.08 '
+          },
+
+          {
+            question: 'If the engine is capable of proceeding either with or without vehicles, the Guard shall, _______________, carefully _________________of the train to ensure its remaining stationary',
+            options: ['before uncoupling, secure the rear portion', 'before coupling, release brakes', 'before uncoupling, release the brakes', 'before coupling secure the rear portion'],
+            correct: 0,
+            explanation: 'before uncoupling, secure the rear portionis the correct answer.  Reference -GR 6.09 '
+          },
+        ],
     },
   },
 

@@ -42,7 +42,7 @@ const AMChapaterPage108C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,16 +61,45 @@ const AMChapaterPage108C = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30">
                             <h4 className="text-lg font-bold text-blue-300 mb-3 text-center">Findings Guidelines</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            The findings shall be concise and should clear and consist of a simple statement of the opinion of the Committee as to what caused the accident. The findings shall also mention the name of the persons responsible and the rule/rules or instructions violated by each of the staff held responsible or the offences committed by them. In respect of cases where more than one staff / department is held responsible, the primary responsibility of the staff / department shall be specifically indicated. When the Committee is of the opinion that the evidence given by a witness is willfully false, they shall record this under the heading &apos;Matters Brought to Light&apos;. It should also be mentioned, under which of the following categories the accident falls:
-                          </p>
+                          <ul className="space-y-3 text-gray-200 leading-relaxed">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 mt-1">✍️</span>
+                              <span>
+                                Findings must be concise and clearly state the Committee’s opinion on the cause of the accident.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 mt-1">👤</span>
+                              <span>
+                                Mention the names of persons responsible and specify the rules or instructions violated by each staff member, or the offences committed.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400 mt-1">🏢</span>
+                              <span>
+                                If more than one staff or department is responsible, clearly indicate the primary responsibility.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400 mt-1">⚖️</span>
+                              <span>
+                                If the Committee believes a witness has given willfully false evidence, record this under the heading ‘Matters Brought to Light’.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 mt-1">📂</span>
+                              <span>
+                                Also mention under which of the following categories the accident falls.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -81,7 +110,7 @@ const AMChapaterPage108C = () => {
                     {/* Category a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">👥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -95,7 +124,7 @@ const AMChapaterPage108C = () => {
                     {/* Category b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">🚫</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -114,7 +143,7 @@ const AMChapaterPage108C = () => {
                     {/* Category c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-yellow-400 text-xl mt-1">⚙️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
@@ -135,7 +164,7 @@ const AMChapaterPage108C = () => {
                     {/* Category d */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">💥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -149,7 +178,7 @@ const AMChapaterPage108C = () => {
                     {/* Category e */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">🌪️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -168,7 +197,7 @@ const AMChapaterPage108C = () => {
                     {/* Category f */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-gray-400 text-xl mt-1">❓</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-gray-500/20 to-slate-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-gray-400/30">

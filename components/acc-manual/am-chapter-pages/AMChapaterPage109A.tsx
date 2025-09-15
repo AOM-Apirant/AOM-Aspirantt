@@ -42,7 +42,7 @@ const AMChapaterPage109A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,7 +61,7 @@ const AMChapaterPage109A = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📝</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30">
@@ -81,7 +81,7 @@ const AMChapaterPage109A = () => {
                     {/* Item a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">💭</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -95,7 +95,7 @@ const AMChapaterPage109A = () => {
                     {/* Item b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">⚖️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -109,7 +109,7 @@ const AMChapaterPage109A = () => {
                     {/* Item c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">🤝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -124,16 +124,39 @@ const AMChapaterPage109A = () => {
                   {/* Additional Guidelines */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-purple-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
                             <h4 className="text-lg font-bold text-purple-300 mb-3 text-center">Additional Guidelines</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            In the absence of conflicting evidence, contributory factors or extenuating circumstances in a particular accident shall be specifically mentioned. The Committee shall state the reasons fully which have led them to arrive at their findings bearing in mind that the proceedings have to be considered by those who have not had the advantage of hearing the evidence and reviewing the circumstances on the spot. The description of the accident and the remarks should, therefore, be comprehensive and self explanatory. The value of evidence of each witness should be noted upon and it shall be stated in case of doubtful witnesses, whether the witness is impartial or not.
-                          </p>
+                          <ul className="space-y-4 text-gray-200 leading-relaxed">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 mt-1">🔍</span>
+                              <span>
+                                If there is no conflicting evidence, contributory factors, or extenuating circumstances in an accident, this must be specifically mentioned.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-400 mt-1">📝</span>
+                              <span>
+                                The Committee should clearly state the full reasons that led to their findings, keeping in mind that the report will be reviewed by those who did not witness the evidence or visit the site.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 mt-1">📖</span>
+                              <span>
+                                The accident description and remarks should be comprehensive and self-explanatory.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 mt-1">👤</span>
+                              <span>
+                                The value of each witness’s evidence should be noted, and for doubtful witnesses, it must be stated whether the witness is impartial or not.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

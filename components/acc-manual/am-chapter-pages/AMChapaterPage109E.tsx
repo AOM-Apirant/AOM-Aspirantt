@@ -42,7 +42,7 @@ const AMChapaterPage109E = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,16 +63,45 @@ const AMChapaterPage109E = () => {
                     {/* Section a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🚂</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30">
                               <h4 className="text-lg font-bold text-blue-300 mb-3 text-center">a) Joint Station Accident Procedures</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              Accidents occurring at Joint stations should be treated as accidents of the working railway and the responsibility for initiating, conducting and finalizing the inquiry proceedings should devolve on the railway working the joint stations. In case the train of the using railway is involved in an accident, the railway, working the junction shall inform the railway concerned and the Officer of the appropriate level of that railway should be appointed as a member of the Inquiry Committee. This would be desirable as the staff working the particular train would have to be examined by the inquiry Committee and the presence of an Officer of that railway to which the staff belong would facilitate the smooth conduct of the Inquiry.
-                            </p>
+                            <ul className="space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-0.5">🚉</span>
+                                <span>
+                                  Accidents at Joint stations should be treated as accidents of the <b>working railway</b>.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 text-xl mt-0.5">📝</span>
+                                <span>
+                                  The responsibility for <b>initiating, conducting, and finalizing</b> the inquiry lies with the railway operating the joint station.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-400 text-xl mt-0.5">🚆</span>
+                                <span>
+                                  If a train of the <b>using railway</b> is involved in an accident, the junction railway must <b>inform the concerned railway</b>.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-purple-400 text-xl mt-0.5">👨‍💼</span>
+                                <span>
+                                  An <b>Officer of the appropriate level</b> from the concerned railway should be appointed as a member of the Inquiry Committee.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-pink-400 text-xl mt-0.5">🤝</span>
+                                <span>
+                                  This ensures that staff working the particular train can be properly examined, and the presence of an Officer from their own railway <b>facilitates smooth conduct</b> of the Inquiry.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -81,16 +110,39 @@ const AMChapaterPage109E = () => {
                     {/* Section b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">📋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                               <h4 className="text-lg font-bold text-green-300 mb-3 text-center">b) Documentation and Distribution</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              As a normal procedure whenever an Officer of another railway is appointed as a member of the Inquiry Committee constituted by another Railway, that Officer should be given two copies of the complete inquiry proceedings, one for his divisional office and other for his headquarters office.
-                            </p>
+                            <ul className="space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-0.5">👤</span>
+                                <span>
+                                  When an Officer from another railway is appointed as a member of the Inquiry Committee, special documentation procedures must be followed.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2 ml-6">
+                                <span className="text-green-400 text-xl mt-0.5">📄</span>
+                                <span>
+                                  That Officer should receive <b>two copies</b> of the complete inquiry proceedings.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2 ml-6">
+                                <span className="text-yellow-400 text-xl mt-0.5">🏢</span>
+                                <span>
+                                  <b>One copy</b> is for the Officer’s divisional office.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2 ml-6">
+                                <span className="text-purple-400 text-xl mt-0.5">🏛️</span>
+                                <span>
+                                  <b>One copy</b> is for the Officer’s headquarters office.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -99,16 +151,39 @@ const AMChapaterPage109E = () => {
                     {/* Section c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">⚖️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
                               <h4 className="text-lg font-bold text-purple-300 mb-3 text-center">c) Staff Responsibility and Punishment</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              If, in such cases, the Inquiry Committee hold the staff of the other railway responsible for the accident, the punishment awarded to the staff shall be finally accepted and communicated by the headquarters of the railway under which the staff work, to the headquarters of the other railway, who in turn will advise the same, to their own divisional officers, so that their records would be completed.
-                            </p>
+                            <ul className="space-y-3 text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-red-400 text-xl mt-0.5">⚠️</span>
+                                <span>
+                                  If the Inquiry Committee finds staff of another railway responsible for the accident, the following procedure should be followed:
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2 ml-6">
+                                <span className="text-blue-400 text-lg mt-0.5">✅</span>
+                                <span>
+                                  The punishment decided for the staff must be finally accepted by the headquarters of the railway under which the staff work.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2 ml-6">
+                                <span className="text-green-400 text-lg mt-0.5">📨</span>
+                                <span>
+                                  This decision should be communicated to the headquarters of the other railway involved.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2 ml-6">
+                                <span className="text-yellow-400 text-lg mt-0.5">🔄</span>
+                                <span>
+                                  The other railway’s headquarters will then inform their own divisional officers, ensuring all records are properly updated.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

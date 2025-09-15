@@ -42,7 +42,7 @@ const AMChapaterPage133B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -59,7 +59,7 @@ const AMChapaterPage133B = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Restoration Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <div className="space-y-6">
                       <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-400/20">
                         <p className="text-gray-200 leading-relaxed font-medium">
@@ -67,9 +67,57 @@ const AMChapaterPage133B = () => {
                         </p>
                       </div>
                       <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 p-4 rounded-lg border border-purple-400/20">
-                        <p className="text-gray-200 leading-relaxed font-medium">
-                          Restoration of traffic should only be taken up after complete investigation and examination have been made, a joint note and sketch have been prepared, and the Police and Civil Authorities have given in writing that their investigations have been completed and that no further check is necessary. Steps to remove the vehicles and for restoration should commence only after this has been completed.
-                        </p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-blue-400">
+                              {/* Magnifying Glass Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              Complete investigation and examination must be carried out before restoration of traffic.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-purple-400">
+                              {/* Document Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M8 8h8M8 12h8M8 16h4" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              Prepare a joint note and sketch of the site.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-green-400">
+                              {/* Checkmark/Approval Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              Obtain written confirmation from Police and Civil Authorities that their investigations are complete and no further check is required.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-yellow-400">
+                              {/* Train/Restoration Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <rect x="3" y="10" width="18" height="8" rx="2" />
+                                <circle cx="7.5" cy="18" r="1.5" />
+                                <circle cx="16.5" cy="18" r="1.5" />
+                                <path d="M3 10V7a2 2 0 012-2h14a2 2 0 012 2v3" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              Begin removal of vehicles and restoration only after all the above steps are completed.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

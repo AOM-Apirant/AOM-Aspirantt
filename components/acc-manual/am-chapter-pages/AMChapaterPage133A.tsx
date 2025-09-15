@@ -42,7 +42,7 @@ const AMChapaterPage133A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -59,7 +59,7 @@ const AMChapaterPage133A = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Notes and Drawings Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <div className="space-y-6">
                       <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 p-4 rounded-lg border border-orange-400/20">
                         <p className="text-gray-200 leading-relaxed font-medium">
@@ -105,7 +105,7 @@ const AMChapaterPage133A = () => {
                         <p className="text-gray-200 leading-relaxed font-medium">
                           <strong>g)</strong> If the nature of the accident requires:-
                         </p>
-                        <div className="ml-6 mt-3 space-y-2">
+                        <div className="ml-0 mt-3 space-y-2">
                           <p className="text-gray-200 leading-relaxed">
                             <strong>(i)</strong> The position and condition of signals, point and signal levers and block instruments should be inspected.
                           </p>

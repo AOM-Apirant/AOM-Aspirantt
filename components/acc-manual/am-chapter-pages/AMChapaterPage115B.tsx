@@ -42,7 +42,7 @@ const AMChapaterPage115B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -60,9 +60,53 @@ const AMChapaterPage115B = () => {
 
                   {/* Punishment Norms Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
-                    <p className="text-gray-200 leading-relaxed">
-                      The norms of punishments prescribed by Railway Board are given in Annexure-V. The norms should be followed rigidly. The Sr.DSO / DSO shall personally monitor the punishment awarded to the officials responsible for the accident & ensure that it is as per the rules in force. If it is inadequate, he will put the case to the DRM for review. A monthly summary of such cases shall be sent by Sr.DSO / DSO to CSO.
-                    </p>
+                    <ul className="space-y-6">
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Book/Document Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5V6.5A2.5 2.5 0 0 1 6.5 4H20v13M4 19.5V20a2 2 0 0 0 2 2h14" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          The norms of punishments prescribed by Railway Board are provided in Annexure-V and must be followed strictly.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Eye/Monitor Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.05 12a9.94 9.94 0 0 1 19.9 0 9.94 9.94 0 0 1-19.9 0Z" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          The Sr.DSO / DSO must personally monitor the punishments awarded to officials responsible for accidents and ensure compliance with the rules in force.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-red-400 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Alert/Review Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          If the punishment is found inadequate, the Sr.DSO / DSO will refer the case to the DRM for review.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Report/Send Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          A monthly summary of such cases must be sent by Sr.DSO / DSO to the CSO.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

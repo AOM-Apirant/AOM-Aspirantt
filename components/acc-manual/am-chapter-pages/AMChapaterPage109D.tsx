@@ -42,7 +42,7 @@ const AMChapaterPage109D = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,16 +61,45 @@ const AMChapaterPage109D = () => {
                   {/* Content Section */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-orange-400 text-xl mt-1">✍️</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
                             <h4 className="text-lg font-bold text-orange-300 mb-3 text-center">Signing Guidelines</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            The proceedings shall be drawn up and signed before the Committee disperses. If the members of the Committee are not unanimous regarding the findings or remarks and reasons for findings or suggestions, a note of dissent shall be drawn separately and signed. If a member is unable to agree with the findings wholly or any part, he shall record his note of dissent and reasons thereof. The note of dissent shall be drawn up on the spot and signed. This document shall accompany the proceedings together with the remarks of the President of the Inquiry Committee.
-                          </p>
+                          <ul className="space-y-3 text-gray-200 leading-relaxed">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 text-xl mt-0.5">📝</span>
+                              <span>
+                                The proceedings must be prepared and signed before the Committee disperses.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-red-400 text-xl mt-0.5">🤝</span>
+                              <span>
+                                If Committee members are not unanimous about the findings, remarks, or suggestions, a separate note of dissent should be prepared and signed.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 text-xl mt-0.5">✍️</span>
+                              <span>
+                                Any member who disagrees wholly or partly with the findings must record their note of dissent and the reasons for it.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 text-xl mt-0.5">📄</span>
+                              <span>
+                                The note of dissent should be written on the spot and signed immediately.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400 text-xl mt-0.5">🗂️</span>
+                              <span>
+                                This note, along with the President’s remarks, must accompany the official proceedings.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

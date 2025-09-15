@@ -42,7 +42,7 @@ const AMChapaterPage133C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -59,7 +59,7 @@ const AMChapaterPage133C = () => {
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed text-left mb-6 max-w-4xl mx-auto space-y-6">
 
                   {/* Inquiry Plan Content */}
-                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
+                  <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 p-3">
                     <div className="space-y-6">
                       <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-4 rounded-lg border border-cyan-400/20">
                         <p className="text-gray-200 leading-relaxed font-medium">
@@ -67,9 +67,47 @@ const AMChapaterPage133C = () => {
                         </p>
                       </div>
                       <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-4 rounded-lg border border-cyan-400/20">
-                        <p className="text-gray-200 leading-relaxed font-medium">
-                          A detailed plan should be prepared for the Commissioner of Railway Safety or Judicial Inquiry, which should be a reproduction of the original sketch. Copies of recorded note signed by the Railway and the Police representatives should form an appendix to the statement made by the senior most Official in his evidence at the inquiry.
-                        </p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-cyan-400">
+                              {/* Plan/Map Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <rect x="3" y="7" width="7" height="13" rx="2" />
+                                <rect x="14" y="3" width="7" height="17" rx="2" />
+                                <path d="M10 10l4-4" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              Prepare a detailed plan for the Commissioner of Railway Safety or Judicial Inquiry, ensuring it is a faithful reproduction of the original site sketch.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-blue-400">
+                              {/* Document/Signature Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M8 16c1.333-2 2.667-2 4 0" />
+                                <path d="M8 12h8M8 8h8" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              Attach copies of the recorded note, signed by both Railway and Police representatives, as an appendix.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="mt-1 text-green-400">
+                              {/* Evidence/Statement Icon */}
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                <path d="M8 17h8M8 13h8M8 9h8" />
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <path d="M16 2v4" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 leading-relaxed font-medium">
+                              The appendix should be included with the statement made by the senior-most official during the inquiry.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

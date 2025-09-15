@@ -42,7 +42,7 @@ const AMChapaterPage107 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,16 +61,39 @@ const AMChapaterPage107 = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📄</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30">
                             <h4 className="text-lg font-bold text-blue-300 mb-3 text-center">Proceedings Report</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            A report of the proceedings shall be drawn by the President or by someone deputed by him for this duty, in Form No. Acc. 9 to 9 (O) (Refer Appendix VI for Specimen forms). Any corrections in it shall be initialed by the President. The signature of the witness shall be obtained then and there on all pages of the deposition/evidence/ answers to cross examination, all corrections being attested by the Witness. The report of the proceedings shall be in the following sequence:-
-                          </p>
+                          <ul className="space-y-3 text-gray-200 leading-relaxed">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 text-xl mt-1">📝</span>
+                              <span>
+                                The <span className="font-semibold">President</span> or a person deputed by him must prepare a report of the proceedings using Form No. Acc. 9 to 9 (O) (<span className="italic">see Appendix VI for specimen forms</span>).
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 text-xl mt-1">✍️</span>
+                              <span>
+                                <span className="font-semibold">Any corrections</span> in the report must be initialed by the President.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 text-xl mt-1">🖊️</span>
+                              <span>
+                                The <span className="font-semibold">witness</span> must sign all pages of the deposition, evidence, and answers to cross-examination on the spot. All corrections should be attested by the witness.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400 text-xl mt-1">📑</span>
+                              <span>
+                                The <span className="font-semibold">report of the proceedings</span> should be arranged in the following sequence:
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -81,7 +104,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (i) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">📋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
@@ -95,7 +118,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (ii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">👥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
@@ -109,7 +132,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (iii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-yellow-400 text-xl mt-1">📝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
@@ -117,18 +140,52 @@ const AMChapaterPage107 = () => {
                             </div>
                             
                             <div className="text-gray-200 leading-relaxed space-y-2">
-                              <p>which shall, among other things , contain the following information:-</p>
-                              <div className="ml-4 space-y-1">
-                                <p>• Gradients. Curves.</p>
-                                <p>• Type of signalling and interlocking. Type and condition of permanent-Way.</p>
-                                <p>• Weight of engine and weight on each wheel. Marshalling of train.</p>
-                                <p>• Brakes and braking system. Condition of rolling stock.</p>
-                                <p>• Time the train was due, if late, time lost and reason therefor.</p>
-                                <p>• Extract from the Train Signal Register, Line Clear Enquiry and Reply Books at the stations at both ends of the block section concerned, if the running time, speed, departure / arrival time is in dispute,</p>
-                                <p>• Whether the train was booked to run through or to stop.at, Whether train was booked to cross, or was crossing out of course.</p>
-                                <p>• Weight on each wheel of vehicles concerned in a derailment.</p>
-                              </div>
-                              <p className="text-sm text-gray-300 italic">Note:- Only such of the above items as are directly relevant to the accident under Inquiry shall be included.</p>
+                              <p>
+                                which shall, among other things, contain the following information:
+                              </p>
+                              <ul className="ml-0 space-y-2">
+                                <li className="flex items-center gap-2">
+                                  <span className="text-blue-400">⛰️</span>
+                                  <span>Gradients and curves of the section.</span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-yellow-400">🚦</span>
+                                  <span>Type of signalling and interlocking; type and condition of permanent way.</span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-gray-300">🚂</span>
+                                  <span>Weight of engine and weight on each wheel; marshalling of the train.</span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-red-400">🛑</span>
+                                  <span>Brakes and braking system; condition of rolling stock.</span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-green-400">⏰</span>
+                                  <span>Scheduled time of train, if late, time lost and reason for delay.</span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-indigo-400">📖</span>
+                                  <span>
+                                    Extracts from the Train Signal Register, Line Clear Enquiry and Reply Books at both ends of the block section, if there is any dispute regarding running time, speed, or departure/arrival time.
+                                  </span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-purple-400">🛤️</span>
+                                  <span>
+                                    Whether the train was booked to run through or to stop, and whether it was booked to cross or was crossing out of course.
+                                  </span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                  <span className="text-pink-400">⚖️</span>
+                                  <span>
+                                    Weight on each wheel of vehicles involved in a derailment.
+                                  </span>
+                                </li>
+                              </ul>
+                              <p className="text-sm text-gray-300 italic">
+                                Note: Only such of the above items as are directly relevant to the accident under inquiry shall be included.
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -138,7 +195,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (iv) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">👤</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -152,7 +209,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (v) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-indigo-400 text-xl mt-1">📜</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-indigo-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/30">
@@ -166,7 +223,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (vi) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-teal-400 text-xl mt-1">💭</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-teal-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-teal-400/30">
@@ -180,7 +237,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (vii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">🤝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -194,7 +251,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (viii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-pink-400 text-xl mt-1">🔍</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-pink-500/20 to-rose-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/30">
@@ -208,7 +265,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (ix) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-cyan-400 text-xl mt-1">💡</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-cyan-400/30">
@@ -222,7 +279,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (x) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-emerald-400 text-xl mt-1">🚑</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-emerald-500/20 to-green-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-emerald-400/30">
@@ -236,7 +293,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xi) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-violet-400 text-xl mt-1">🚂</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-violet-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-violet-400/30">
@@ -250,7 +307,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-amber-400 text-xl mt-1">📸</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-amber-400/30">
@@ -264,7 +321,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xiii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-rose-400 text-xl mt-1">💰</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-rose-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-rose-400/30">
@@ -278,7 +335,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xiv) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-sky-400 text-xl mt-1">🛤️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-sky-500/20 to-blue-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-sky-400/30">
@@ -292,7 +349,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xv) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-lime-400 text-xl mt-1">📡</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-lime-500/20 to-green-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-lime-400/30">
@@ -306,7 +363,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xvi) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-fuchsia-400 text-xl mt-1">👥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-fuchsia-500/20 to-purple-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-fuchsia-400/30">
@@ -320,7 +377,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xvii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-slate-400 text-xl mt-1">📐</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-slate-500/20 to-gray-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-slate-400/30">
@@ -334,7 +391,7 @@ const AMChapaterPage107 = () => {
                     {/* Form (xviii) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-stone-400 text-xl mt-1">📋</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-stone-500/20 to-gray-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-stone-400/30">

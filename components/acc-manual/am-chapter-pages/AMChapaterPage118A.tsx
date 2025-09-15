@@ -42,7 +42,7 @@ const AMChapaterPage118A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -60,9 +60,53 @@ const AMChapaterPage118A = () => {
 
                   {/* Police Investigation Notice Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
-                    <p className="text-gray-200 leading-relaxed">
-                      The Police Officer who is to conduct an investigation shall at once inform the Head of the Railway Administration concerned and the Divisional Railway Manager of the date and time at which the investigation will commence, so that a railway official may be arranged to watch the proceedings and to help the officer making the investigation. After sending such advice, he shall proceed, without delay to the scene of the accident and conduct the investigation there. The absence of a railway official shall not, however, be allowed to delay the investigation which shall be conducted as soon as possible after the accident has taken place.
-                    </p>
+                    <ul className="space-y-6">
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Notification/Bell Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 7.165 6 9.388 6 12v2.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          The Police Officer assigned to the investigation must immediately inform the Head of the Railway Administration and the Divisional Railway Manager about the date and time when the investigation will begin.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                          {/* User/Official Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          This notification allows a railway official to be present to observe the proceedings and assist the investigating officer.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Clock/Time Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          After sending this advice, the Police Officer must proceed without delay to the accident site and conduct the investigation there.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-red-400 to-pink-600 rounded-full flex items-center justify-center mt-1">
+                          {/* Alert/Warning Icon */}
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z" />
+                          </svg>
+                        </span>
+                        <span className="text-gray-200 leading-relaxed">
+                          The absence of a railway official should not delay the investigation, which must be conducted as soon as possible after the accident.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

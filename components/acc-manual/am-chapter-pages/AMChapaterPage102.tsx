@@ -42,7 +42,7 @@ const AMChapaterPage102 = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,7 +61,7 @@ const AMChapaterPage102 = () => {
                   {/* Introduction */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📋</span>
                         <div className="space-y-4">
                           <p className="text-gray-200 leading-relaxed">
@@ -77,7 +77,7 @@ const AMChapaterPage102 = () => {
                     {/* Section a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-red-400 text-xl mt-1">📢</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-red-400/30">
@@ -124,7 +124,7 @@ const AMChapaterPage102 = () => {
                     {/* Section b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">⏰</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
@@ -142,16 +142,39 @@ const AMChapaterPage102 = () => {
                     {/* Section c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-pink-400 text-xl mt-1">📰</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-pink-500/20 to-rose-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/30">
                               <h4 className="text-lg font-bold text-pink-300 mb-3 text-center">c) Press Note for Joint Inquiry</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              Where a Joint Inquiry is held into an accident on receipt of information about the inability of the Commissioner of Railway Safety to hold an inquiry under Sub-rule(5) of rule 228 (Statutory Investigation into Railway Accidents Rules 1973), the Head of the Railway Administration concerned shall also issue a press note in this behalf inviting the public to tender evidence at the inquiry or to send information relating to the accident to the Joint Inquiry Committee at an address specified in the press
-                            </p>
+                            <ul className="space-y-3">
+                              <li className="flex items-start gap-2">
+                                <span className="text-pink-400 text-xl mt-1">🤝</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  When a Joint Inquiry is conducted into an accident due to the Commissioner of Railway Safety being unable to hold an inquiry (as per Sub-rule (5) of Rule 228, Statutory Investigation into Railway Accidents Rules 1973),
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-pink-400 text-xl mt-1">📰</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  The Head of the concerned Railway Administration must issue a press note regarding the Joint Inquiry.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-pink-400 text-xl mt-1">📢</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  The press note should invite the public to provide evidence at the inquiry or send information related to the accident.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-pink-400 text-xl mt-1">🏢</span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  The address of the Joint Inquiry Committee, where information can be sent, must be clearly specified in the press note.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

@@ -42,7 +42,7 @@ const AMChapaterPage116C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -62,21 +62,78 @@ const AMChapaterPage116C = () => {
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-4">
                     <div className="space-y-6">
                       <div className="grid grid-cols-1 gap-6">
-                        <div className="flex items-start gap-3">
-                          <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                        <div className="flex flex-col items-center gap-3">
+                          <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                             <span className="text-white font-bold text-sm">a</span>
                           </div>
                           <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">If, in the course of any Judicial Inquiry into an accident occurring in the course of working a railway, the Magistrate holding such inquiry desires the assistance of the Commissioner of Railway Safety or of the Head of the Railway Administration concerned or the attendance of any Officer of the railway to explain any matter relating to railway working, he shall issue a requisition to the Commissioner of Railway Safety or the Head of the Railway Administration concerned, as the case may be, for the attendance in the court, (stating the nature of the assistance required). In summoning railway employees, the Magistrate shall take care not to summon on the same day so large a number of the employees, especially of one class, as to cause inconvenience to the working of railway. In the case of very serious accidents, it will generally be advisable for the Magistrate to obtain reports from both the Commissioner of Railway Safety and the Head of the Railway Administration concerned in regard to the accident, before finally concluding the Judicial Inquiry.</p>
+                            <ul className="space-y-4">
+                              <li className="flex items-start gap-3">
+                                <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mt-1">
+                                  {/* Handshake Icon */}
+                                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2m14-6V7a2 2 0 00-2-2h-3.5a2 2 0 00-2 2v2m0 0V7a2 2 0 012-2h3.5a2 2 0 012 2v2m-7 0h6" />
+                                  </svg>
+                                </span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  If the Magistrate requires assistance from the Commissioner of Railway Safety, Head of Railway Administration, or any railway officer during a Judicial Inquiry, a formal requisition should be issued stating the nature of assistance needed.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-3">
+                                <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                                  {/* Users Icon */}
+                                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M16 3.13a4 4 0 010 7.75M8 3.13a4 4 0 000 7.75" />
+                                  </svg>
+                                </span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  While summoning railway employees, care should be taken not to call too many employees of the same class on the same day, to avoid disruption of railway operations.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-3">
+                                <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mt-1">
+                                  {/* Report Icon */}
+                                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 16h8M8 12h8m-6 8h6a2 2 0 002-2V7.828a2 2 0 00-.586-1.414l-4.828-4.828A2 2 0 0012.172 1H6a2 2 0 00-2 2v16a2 2 0 002 2z" />
+                                  </svg>
+                                </span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  In very serious accidents, it is generally advisable for the Magistrate to obtain reports from both the Commissioner of Railway Safety and the Head of Railway Administration before concluding the Judicial Inquiry.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
 
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mt-1">
                             <span className="text-white font-bold text-sm">b</span>
                           </div>
                           <div className="flex-1">
-                            <p className="text-gray-200 leading-relaxed">The Magistrate conducting the Judicial Inquiry shall, as far as possible, avoid summoning the Commissioner of Railway Safety, if in the report submitted under rule 230 of the Statutory Investigation into Railway Accidents Rules, 1973, the opinion of the said Commissioner on technical matters which required explanation has already been expressed.</p>
+                            <ul className="space-y-4">
+                              <li className="flex items-start gap-3">
+                                <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mt-1">
+                                  {/* Judge/Gavel Icon */}
+                                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 10V3.5a1.5 1.5 0 10-3 0V10m-2 4h7m-7 4h7m-7 4h7" />
+                                  </svg>
+                                </span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  The Magistrate conducting the Judicial Inquiry should, as far as possible, avoid summoning the Commissioner of Railway Safety.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-3">
+                                <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center mt-1">
+                                  {/* Document/Report Icon */}
+                                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 16h8M8 12h8m-6 8h6a2 2 0 002-2V7.828a2 2 0 00-.586-1.414l-4.828-4.828A2 2 0 0012.172 1H6a2 2 0 00-2 2v16a2 2 0 002 2z" />
+                                  </svg>
+                                </span>
+                                <span className="text-gray-200 leading-relaxed">
+                                  This applies if, in the report submitted under rule 230 of the Statutory Investigation into Railway Accidents Rules, 1973, the Commissioner&apos;s opinion on technical matters requiring explanation has already been provided.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

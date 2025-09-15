@@ -42,7 +42,7 @@ const AMChapaterPage106D = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,16 +61,39 @@ const AMChapaterPage106D = () => {
                   {/* Content Section */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-orange-400 text-xl mt-1">⏰</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
                             <h4 className="text-lg font-bold text-orange-300 mb-3 text-center">Postponing of an Inquiry</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            An inquiry will not ordinarily be postponed due to the absence of a witness, but if after recording all other evidences, a decision cannot be arrived at, the inquiry may be adjourned till the witness is available. In case of a witness being sick, the President of the inquiry committee will advise the medical authorities to instruct the witness to attend the inquiry and if the witness is unable to attend himself, he may depute a representative to record his evidence, subject to the concurrence of the Medical Officer.
-                          </p>
+                          <ul className="space-y-4 text-gray-200 leading-relaxed list-none">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 text-xl mt-1">🚫</span>
+                              <span>
+                                An inquiry will <span className="font-semibold">not ordinarily be postponed</span> due to the absence of a witness.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 text-xl mt-1">📄</span>
+                              <span>
+                                If, after recording all other evidence, a decision <span className="font-semibold">cannot be arrived at</span>, the inquiry may be <span className="font-semibold">adjourned</span> until the witness is available.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 text-xl mt-1">🤒</span>
+                              <span>
+                                In case a witness is <span className="font-semibold">sick</span>, the President of the inquiry committee will <span className="font-semibold">advise medical authorities</span> to instruct the witness to attend the inquiry.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400 text-xl mt-1">👤</span>
+                              <span>
+                                If the witness is <span className="font-semibold">unable to attend</span> personally, he may <span className="font-semibold">depute a representative</span> to record his evidence, subject to the concurrence of the Medical Officer.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

@@ -42,7 +42,7 @@ const AMChapaterPage113A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -60,7 +60,7 @@ const AMChapaterPage113A = () => {
 
                   {/* Main Section */}
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-col text-center items-center gap-3">
                       <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                         <span className="text-white font-bold text-sm">a</span>
                       </div>
@@ -162,14 +162,14 @@ const AMChapaterPage113A = () => {
                   <div className="mt-8 space-y-8">
                     {/* Section b */}
                     <div className="bg-gradient-to-r from-orange-400/10 to-amber-500/10 rounded-xl p-5 border border-amber-400/20 shadow-lg">
-                      <h4 className="text-lg font-semibold text-amber-300 mb-3 flex items-center gap-2">
+                      <h4 className="text-lg font-semibold text-amber-300 mb-3 flex flex-col text-center items-center gap-2">
                         <span className="text-2xl">📝</span>
                         Forwarding of Report
                       </h4>
                       <p className="text-gray-200 mb-3">
                         The Head of the Railway Administration concerned shall forward, along with his remarks regarding actions to be taken (either against staff responsible for the accident or for revision of rules or working systems), a copy of the report to:
                       </p>
-                      <ul className="pl-5 space-y-2 text-gray-100 list-none">
+                      <ul className="pl-0 space-y-2 text-gray-100 list-none">
                         <li className="flex items-start gap-2">
                           <span className="mt-1">➊</span>
                           <span>
@@ -193,11 +193,11 @@ const AMChapaterPage113A = () => {
 
                     {/* Section c */}
                     <div className="bg-gradient-to-r from-lime-400/10 to-green-500/10 rounded-xl p-5 border border-lime-400/20 shadow-lg">
-                      <h4 className="text-lg font-semibold text-lime-300 mb-3 flex items-center gap-2">
+                      <h4 className="text-lg font-semibold text-lime-300 mb-3 flex flex-col text-center items-center gap-2">
                         <span className="text-2xl">📎</span>
                         Accompanying Documents
                       </h4>
-                      <ul className="pl-5 space-y-2 text-gray-100 list-none">
+                      <ul className="pl-0 space-y-2 text-gray-100 list-none">
                         <li className="flex items-start gap-2">
                           <span className="mt-1">🟢</span>
                           <span>
@@ -215,11 +215,11 @@ const AMChapaterPage113A = () => {
 
                     {/* Section d */}
                     <div className="bg-gradient-to-r from-violet-400/10 to-purple-500/10 rounded-xl p-5 border border-violet-400/20 shadow-lg">
-                      <h4 className="text-lg font-semibold text-violet-300 mb-3 flex items-center gap-2">
+                      <h4 className="text-lg font-semibold text-violet-300 mb-3 flex flex-col text-center items-center gap-2">
                         <span className="text-2xl">👨‍⚖️</span>
                         Committee Proceedings & Distribution
                       </h4>
-                      <ul className="pl-5 space-y-2 text-gray-100 list-none">
+                      <ul className="pl-0 space-y-2 text-gray-100 list-none">
                         <li className="flex items-start gap-2">
                           <span className="mt-1">📝</span>
                           <span>

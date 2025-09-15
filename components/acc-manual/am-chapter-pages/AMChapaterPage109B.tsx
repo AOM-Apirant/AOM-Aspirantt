@@ -42,7 +42,7 @@ const AMChapaterPage109B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,16 +61,39 @@ const AMChapaterPage109B = () => {
                   {/* Content Section */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-green-400 text-xl mt-1">💡</span>
                         <div className="space-y-4">
                           <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                             <h4 className="text-lg font-bold text-green-300 mb-3 text-center">Suggestions Guidelines</h4>
                           </div>
                           
-                          <p className="text-gray-200 leading-relaxed">
-                            The Committee may suggest any improvements in the rules or practices of working, which in their opinion, would prevent similar accidents in future or improve the working in any way, based not only on the cause or causes of the accident, but also the contributory factors, if any, and the extenuating circumstances, if any. If there are no suggestions to be made, a &apos;nil&apos; entry should be made in Form Acc. 9.(I).
-                          </p>
+                          <ul className="space-y-3 text-gray-200 leading-relaxed">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 text-xl mt-0.5">🛠️</span>
+                              <span>
+                                The Committee may suggest improvements in the rules or practices of working to help prevent similar accidents in the future.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 text-xl mt-0.5">🔍</span>
+                              <span>
+                                Suggestions can be based not only on the main causes of the accident, but also on contributory factors and any extenuating circumstances.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 text-xl mt-0.5">✨</span>
+                              <span>
+                                The aim is to improve working practices in any possible way, ensuring better safety and efficiency.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-red-400 text-xl mt-0.5">❗</span>
+                              <span>
+                                If there are no suggestions to be made, a &apos;nil&apos; entry should be recorded in Form Acc. 9.(I).
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

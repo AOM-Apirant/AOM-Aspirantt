@@ -42,7 +42,7 @@ const AMChapaterPage104B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,12 +61,53 @@ const AMChapaterPage104B = () => {
                   {/* Main Content */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                     <div className="space-y-6">
-                      <div className="flex items-start gap-3">
+                      <div className="flex flex-col items-center gap-3">
                         <span className="text-blue-400 text-xl mt-1">📄</span>
                         <div className="space-y-4">
-                          <p className="text-gray-200 leading-relaxed">
-                            A special report on an accident is a brief narrative report and it shall be submitted in cases indicated in Chapter-II. It shall contain only the facts of the case, relevant particulars from the statements of staff, the conclusions regarding the cause of accident and the responsibility of staff, together with the rules violated. When a special report contains any detail which is in supersession of what has already been furnished in the accident message, this shall be specifically indicated in the special report. The &apos;Matters Brought to Light&apos; in the course of the investigation of the accident, and &apos;suggestions&apos;, if any, regarding the steps to be taken to avoid recurrence of the accident, shall be incorporated in the separate paragraphs. The special report shall not contain any reference to the disciplinary action proposed to be taken against the staff held responsible. Disciplinary action against the staff held responsible shall be initiated only on acceptance of the findings by the appropriate authority. The actual punishments imposed on staff shall be communicated, within the stipulated time limit to the Chief Safety Officer.
-                          </p>
+                          <ul className="space-y-4">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-400 text-xl mt-1">📝</span>
+                              <span>
+                                <span className="font-semibold">A special report</span> on an accident is a brief narrative and must be submitted in cases indicated in Chapter-II.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-green-400 text-xl mt-1">📋</span>
+                              <span>
+                                It should include only the <span className="font-semibold">facts of the case</span>, relevant particulars from staff statements, conclusions about the cause, responsibility, and the rules violated.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-yellow-400 text-xl mt-1">🔄</span>
+                              <span>
+                                If any detail in the special report <span className="font-semibold">supersedes</span> information already given in the accident message, this must be clearly indicated.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-purple-400 text-xl mt-1">💡</span>
+                              <span>
+                                <span className="font-semibold">Matters Brought to Light</span> during investigation and any <span className="font-semibold">suggestions</span> to prevent recurrence should be included in separate paragraphs.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-red-400 text-xl mt-1">🚫</span>
+                              <span>
+                                The special report <span className="font-semibold">must not mention</span> any proposed disciplinary action against staff held responsible.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-400 text-xl mt-1">✅</span>
+                              <span>
+                                Disciplinary action is to be initiated <span className="font-semibold">only after acceptance</span> of findings by the appropriate authority.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400 text-xl mt-1">📨</span>
+                              <span>
+                                The <span className="font-semibold">actual punishments</span> imposed must be communicated within the stipulated time to the Chief Safety Officer.
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>

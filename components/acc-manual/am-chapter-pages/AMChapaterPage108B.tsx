@@ -42,7 +42,7 @@ const AMChapaterPage108B = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,16 +63,33 @@ const AMChapaterPage108B = () => {
                     {/* Section a */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-blue-400 text-xl mt-1">🔢</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30">
                               <h4 className="text-lg font-bold text-blue-300 mb-3 text-center">a) Witness Numbering and Documentation</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              Each witness shall be assigned a number, which, in addition to being entered for the name of the witness at the commencement of the statement, shall be repeated after the signature / thumb impression at the end as &apos;Witness No …&apos; and in the proceedings wherever he is referred to. All particulars required from Form Acc. 9 (D) of the inquiry proceedings shall be filled up in case of each witness. In case of a witness belonging to train or station staff, the hours of duty and rest availed shall also be recorded.
-                            </p>
+                            <ul className="space-y-3 list-none text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-1">🔖</span>
+                                <span>
+                                  Each witness shall be assigned a unique number. This number should be entered with the witness&apos;s name at the start of their statement, and repeated after their signature or thumb impression at the end as <b>&apos;Witness No …&apos;</b>, as well as wherever the witness is referred to in the proceedings.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-cyan-400 text-xl mt-1">📄</span>
+                                <span>
+                                  All required particulars from <b>Form Acc. 9 (D)</b> of the inquiry proceedings must be filled in for each witness.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-indigo-400 text-xl mt-1">⏰</span>
+                                <span>
+                                  For witnesses belonging to train or station staff, the hours of duty and rest availed should also be recorded.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -81,16 +98,39 @@ const AMChapaterPage108B = () => {
                     {/* Section b */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">📝</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                               <h4 className="text-lg font-bold text-green-300 mb-3 text-center">b) Evidence Recording Process</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              Evidence should be recorded as connected, narrative, subsequent demands brought out in cross question and answers. Care should be taken not to intimidate witnesses. Witnesses who understand English shall read and sign the recorded statement on each page.
-                            </p>
+                            <ul className="space-y-3 list-none text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 text-xl mt-1">🔗</span>
+                                <span>
+                                  Evidence should be recorded in a connected and narrative manner, ensuring clarity and flow.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-400 text-xl mt-1">❓</span>
+                                <span>
+                                  Any additional points or clarifications should be brought out through cross-questions and answers.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-red-400 text-xl mt-1">🙅‍♂️</span>
+                                <span>
+                                  Care must be taken not to intimidate or pressure witnesses during the process.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-1">✍️</span>
+                                <span>
+                                  Witnesses who understand English should read and sign the recorded statement on each page.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -99,16 +139,33 @@ const AMChapaterPage108B = () => {
                     {/* Section c */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-purple-400 text-xl mt-1">🌐</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/30">
                               <h4 className="text-lg font-bold text-purple-300 mb-3 text-center">c) Illiterate Witnesses and Language Issues</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              While recording the evidence of illiterate witnesses or when witnesses are not conversant with English, their evidence should be read over and explained in vernacular language before their signatures are obtained and the President should certify that this has been done. If the witness is unable to sign his name, his thumb impression should be taken on each page and attested by the President.
-                            </p>
+                            <ul className="space-y-3 list-none text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-purple-400 text-xl mt-1">🗣️</span>
+                                <span>
+                                  If a witness is illiterate or not conversant with English, their evidence must be read aloud and explained in the local language before obtaining their signature.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-1">✅</span>
+                                <span>
+                                  The President should certify that the evidence has been properly explained in the vernacular language.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-pink-400 text-xl mt-1">👍</span>
+                                <span>
+                                  If the witness cannot sign, their thumb impression should be taken on each page and attested by the President.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -117,16 +174,33 @@ const AMChapaterPage108B = () => {
                     {/* Section d */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-orange-400 text-xl mt-1">⌨️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/30">
                               <h4 className="text-lg font-bold text-orange-300 mb-3 text-center">d) Stenographer and Recording Services</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              For recording the evidence, the President of Inquiry Committee may utilize the services of a stenographer to take down the evidence duly typing on computer for this purpose. If a stenographer is not available, he will nominate a representative of the department concerned. The typed statement shall be read and signed by the witness on each page.
-                            </p>
+                            <ul className="space-y-3 list-none text-gray-200 leading-relaxed">
+                              <li className="flex items-start gap-2">
+                                <span className="text-orange-400 text-xl mt-1">🖊️</span>
+                                <span>
+                                  The President of the Inquiry Committee may use the services of a stenographer to record the evidence, ensuring it is typed on a computer.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-400 text-xl mt-1">👤</span>
+                                <span>
+                                  If a stenographer is not available, a representative from the concerned department should be nominated for this task.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 text-xl mt-1">📝</span>
+                                <span>
+                                  The typed statement must be read aloud and signed by the witness on each page.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>

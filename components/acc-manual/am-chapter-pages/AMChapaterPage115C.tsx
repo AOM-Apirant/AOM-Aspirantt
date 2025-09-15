@@ -42,7 +42,7 @@ const AMChapaterPage115C = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -65,7 +65,7 @@ const AMChapaterPage115C = () => {
                     </p>
 
                     {/* Inquiry Methods */}
-                    <div className="space-y-3 ml-4">
+                    <div className="space-y-3 ml-0">
                       <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mt-1">
                           <span className="text-white font-bold text-sm">(a)</span>
@@ -108,7 +108,7 @@ const AMChapaterPage115C = () => {
                             If the Central Government appoints a Commission of Inquiry under the Commissions of Inquiry Act, 1952, or any other authority for the same purpose, then:
                           </span>
                         </li>
-                        <li className="flex items-start gap-3 ml-6">
+                        <li className="flex items-start gap-3 ml-0">
                           <span className="mt-1 text-yellow-500">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -118,7 +118,7 @@ const AMChapaterPage115C = () => {
                             A Magistrate or Police Officer shall not conduct or continue any inquiry or investigation under this rule.
                           </span>
                         </li>
-                        <li className="flex items-start gap-3 ml-6">
+                        <li className="flex items-start gap-3 ml-0">
                           <span className="mt-1 text-yellow-500">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 018 0v2" />
@@ -129,7 +129,7 @@ const AMChapaterPage115C = () => {
                             If an inquiry or investigation has already started, it must be stopped immediately.
                           </span>
                         </li>
-                        <li className="flex items-start gap-3 ml-6">
+                        <li className="flex items-start gap-3 ml-0">
                           <span className="mt-1 text-yellow-500">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
@@ -145,7 +145,7 @@ const AMChapaterPage115C = () => {
 
                   {/* Section 934.1 */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 p-6">
-                    <div className="flex items-center gap-3 mb-4">
+                    <div className="flex flex-col text-center items-center gap-3 mb-4">
                       <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                         <span className="text-white font-bold text-lg">934.1</span>
                       </div>

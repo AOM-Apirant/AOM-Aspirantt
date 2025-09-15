@@ -42,7 +42,7 @@ const AMChapaterPage106A = () => {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
+                    <h3 className="lg:text-2xl text-xl font-bold text-white mb-4 flex flex-col gap-3 items-center justify-center text-center">
                       <span className="bg-gradient-to-r from-blue-400 to-indigo-500 p-2 rounded-lg mr-4">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,16 +63,33 @@ const AMChapaterPage106A = () => {
                     {/* Section (1) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-green-400 text-xl mt-1">🏛️</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-green-400/30">
                               <h4 className="text-lg font-bold text-green-300 mb-3 text-center">(1) Joint/Inter Departmental Inquiry</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              In a Joint/Inter Departmental Inquiry, the senior most Officer in the highest grade among those nominated for the enquiry will act as president of enquiry committee. Seniority in the same grade among Officers belonging to different departments being reckoned on the total length of service and among officers of the same department, from the date of appointment to the grade.
-                            </p>
+                            <ul className="space-y-4 text-gray-200 leading-relaxed list-none">
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 text-xl mt-1">👤</span>
+                                <span>
+                                  The <span className="font-semibold">senior most Officer</span> in the highest grade among those nominated for the inquiry will act as the <span className="font-semibold">President of the Inquiry Committee</span>.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-1">🏢</span>
+                                <span>
+                                  <span className="font-semibold">Seniority</span> in the same grade among Officers from <span className="font-semibold">different departments</span> is determined by their <span className="font-semibold">total length of service</span>.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-purple-400 text-xl mt-1">📅</span>
+                                <span>
+                                  Among Officers of the <span className="font-semibold">same department</span> in the same grade, seniority is based on the <span className="font-semibold">date of appointment to the grade</span>.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -81,16 +98,33 @@ const AMChapaterPage106A = () => {
                     {/* Section (2) */}
                     <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 lg:p-6 py-3 lg:px-4 px-2">
                       <div className="space-y-6">
-                        <div className="flex items-start gap-3">
+                        <div className="flex flex-col items-center gap-3">
                           <span className="text-yellow-400 text-xl mt-1">👥</span>
                           <div className="space-y-4">
                             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 lg:p-4 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/30">
                               <h4 className="text-lg font-bold text-yellow-300 mb-3 text-center">(2) Senior Supervisors Inquiry</h4>
                             </div>
                             
-                            <p className="text-gray-200 leading-relaxed">
-                              At a Senior Supervisors Inquiry, the senior most subordinate in the highest grade among those present at the inquiry will preside, seniority as between Sub-ordinates belonging to different departments in the same grade being reckoned on the total length of service, and as between subordinates belonging to the same department, the respective seniority in the Department.
-                            </p>
+                            <ul className="space-y-4 text-gray-200 leading-relaxed list-none">
+                              <li className="flex items-start gap-2">
+                                <span className="text-yellow-400 text-xl mt-1">👑</span>
+                                <span>
+                                  The <span className="font-semibold">senior most subordinate</span> in the highest grade present at the inquiry will preside.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-blue-400 text-xl mt-1">🏢</span>
+                                <span>
+                                  <span className="font-semibold">Seniority</span> between subordinates from <span className="font-semibold">different departments</span> (in the same grade) is determined by their <span className="font-semibold">total length of service</span>.
+                                </span>
+                              </li>
+                              <li className="flex items-start gap-2">
+                                <span className="text-green-400 text-xl mt-1">📋</span>
+                                <span>
+                                  For subordinates from the <span className="font-semibold">same department</span>, <span className="font-semibold">departmental seniority</span> is considered.
+                                </span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
