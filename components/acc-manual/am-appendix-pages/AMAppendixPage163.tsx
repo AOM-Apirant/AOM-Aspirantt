@@ -36,8 +36,8 @@ const AMAppendixPage163 = () => {
               {/* Zone 1 */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">1</span>
                     </div>
                     <div className="flex-1">
@@ -80,8 +80,8 @@ const AMAppendixPage163 = () => {
               {/* Zone 2 */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">2</span>
                     </div>
                     <div className="flex-1">
@@ -122,8 +122,8 @@ const AMAppendixPage163 = () => {
               </div>
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-orange-900/30 to-red-900/30 p-5 rounded-xl border border-orange-400/20 shadow-lg">
-                  <h3 className="text-2xl font-bold text-orange-300 mb-2 flex items-center gap-2">
-                    <span className="bg-gradient-to-r from-red-500 to-orange-600 rounded-lg px-3 py-1 text-white text-lg font-bold shadow">2</span>
+                  <h3 className="text-2xl font-bold text-orange-300 mb-2 flex flex-col items-center gap-2 text-center">
+                    <span className="bg-gradient-to-r from-red-500 to-orange-600 rounded-full px-3 py-1 text-white text-lg font-bold shadow">2</span>
                     Zone II - North Telangana Region
                   </h3>
                   <div className="space-y-3 mt-4">
@@ -140,18 +140,18 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Control Office, Secunderabad Division, Sanchalan Bhavan, S.C. Railway, Secunderabad – 500071<br />
-                            <span className="ml-7">Phone: 040-27823156</span><br />
-                            <span className="ml-7">Email: drmsc.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 040-27823156</span><br />
+                            <span className="ml-0">Email: drmsc.railnet.gov.in</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className=" w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Control Office, Hyderabad Division, Hyderabad Bhavan, S.C. Railway, Secunderabad – 500071<br />
-                            <span className="ml-7">Phone: 040-27823905</span><br />
-                            <span className="ml-7">Email: drmhyb@scr.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 040-27823905</span><br />
+                            <span className="ml-0">Email: drmhyb@scr.railnet.gov.in</span>
                           </span>
                         </li>
                       </ul>
@@ -161,16 +161,16 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className=" w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             State Meteorological Centre, Hyderabad Airport, Hyderabad – 500019<br />
-                            <span className="ml-7">Phone: 040-27908506, 27904950</span>
+                            <span className="ml-0">Phone: 040-27908506, 27904950</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className=" w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Regional Meteorological Centre, Colaba, Mumbai – 400005<br />
-                            <span className="ml-7">Phone: 022-8393473</span>
+                            <span className="ml-0">Phone: 022-8393473</span>
                           </span>
                         </li>
                       </ul>
@@ -179,20 +179,20 @@ const AMAppendixPage163 = () => {
                 </div>
               </div>
               <div className="mt-8 space-y-4">
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col items-center gap-3">
                   <span className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">III</span>
                   <span className="text-orange-200 font-semibold text-lg">South Telangana Region</span>
                 </div>
                 <div className="ml-4 space-y-2">
                   <div>
                     <span className="font-semibold text-orange-200">State & Districts:</span>
-                    <span className="text-gray-200 ml-2">
+                    <span className="text-gray-200 ml-0">
                       Andhra Pradesh – Khammam, Nalgonda, Hyderabad, and Mahabubnagar districts of South Telangana Region
                     </span>
                   </div>
                   <div>
                     <span className="font-semibold text-orange-200">Railway Sections:</span>
-                    <span className="text-gray-200 ml-2">
+                    <span className="text-gray-200 ml-0">
                       Dornakal–Madhira, Dornakal–Bhadrachalam Road, Bhadrachalam Road–Manuguru, Karepalli–Singareni Collieries, Secunderabad–Aler, Begumpet–Hyderabad, Secunderabad–Nawandgi, Vikarabad–Sadasivpet Road
                     </span>
                   </div>
@@ -201,18 +201,18 @@ const AMAppendixPage163 = () => {
                     <ul className="list-none ml-0 mt-2 space-y-1">
                       <li className="flex items-start gap-2">
                         <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                        <span className="text-gray-200">
+                        <span className="text-gray-200 space-y-2">
                           Chief Controller, Operating Branch, Control Office, Secunderabad Division, Sanchalan Bhavan, S.C. Railway, Secunderabad – 500071<br />
-                          <span className="ml-7">Phone: 040-27823156</span><br />
-                          <span className="ml-7">Email: drmsc.railnet.gov.in</span>
+                          <span className="ml-0">Phone: 040-27823156</span><br />
+                          <span className="ml-0">Email: drmsc.railnet.gov.in</span>
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                        <span className="text-gray-200">
+                        <span className="text-gray-200 space-y-2">
                           Chief Controller, Operating Branch, Control Office, Hyderabad Division, Hyderabad Bhavan, S.C. Railway, Secunderabad – 500071<br />
-                          <span className="ml-7">Phone: 040-27823905</span><br />
-                          <span className="ml-7">Email: drmhyb@scr.railnet.gov.in</span>
+                          <span className="ml-0">Phone: 040-27823905</span><br />
+                          <span className="ml-0">Email: drmhyb@scr.railnet.gov.in</span>
                         </span>
                       </li>
                     </ul>
@@ -222,9 +222,9 @@ const AMAppendixPage163 = () => {
                     <ul className="list-none ml-0 mt-2 space-y-1">
                       <li className="flex items-start gap-2">
                         <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                        <span className="text-gray-200">
+                        <span className="text-gray-200 space-y-2">
                           State Meteorological Centre, Hyderabad Airport, Hyderabad – 500019<br />
-                          <span className="ml-7">Phone: 040-27908506, 27904950</span>
+                          <span className="ml-0">Phone: 040-27908506, 27904950</span>
                         </span>
                       </li>
                     </ul>
@@ -236,13 +236,13 @@ const AMAppendixPage163 = () => {
                 <div className="ml-4 space-y-4 mt-2">
                   <div>
                     <span className="font-semibold text-orange-200">State & Districts:</span>
-                    <span className="text-gray-200 ml-2">
+                    <span className="text-gray-200 ml-0">
                       Andhra Pradesh – Kurnool, Anantapur, Cuddapah, and Chittoor districts of Rayalaseema Region
                     </span>
                   </div>
                   <div>
                     <span className="font-semibold text-orange-200">Railway Sections:</span>
-                    <span className="text-gray-200 ml-2">
+                    <span className="text-gray-200 ml-0">
                       Guntakal–Manthralayam Road, Guntakal–Renigunta, Renigunta–Venkatagiri, Guntakal–Dharmavaram, Dharmavaram–Pakala, Pakala–Katpadi, Pakala–Renigunta, Guntakal–Bevinahalu, Guntakal–Dronachellam, Dronachellam–Nandyal, Kurnool Town–Dronachellam, Pendekallu–Gooty, Guntakal–Kalluru (MG)
                     </span>
                   </div>
@@ -251,18 +251,18 @@ const AMAppendixPage163 = () => {
                     <ul className="list-none ml-0 mt-2 space-y-1">
                       <li className="flex items-start gap-2">
                         <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                        <span className="text-gray-200">
+                        <span className="text-gray-200 space-y-2">
                           Chief Controller, Operating Branch, Guntakal Division, S.C. Railway, Guntakal – 515801, Andhra Pradesh<br />
-                          <span className="ml-7">Phone: 08552-227882</span><br />
-                          <span className="ml-7">Email: drmgtl@scr.railnet.gov.in</span>
+                          <span className="ml-0">Phone: 08552-227882</span><br />
+                          <span className="ml-0">Email: drmgtl@scr.railnet.gov.in</span>
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                        <span className="text-gray-200">
+                        <span className="text-gray-200 space-y-2">
                           Chief Controller, Operating Branch, Control Office, Hyderabad Division, Hyderabad Bhavan, S.C. Railway, Secunderabad – 500071, Andhra Pradesh<br />
-                          <span className="ml-7">Phone: 040-27823905</span><br />
-                          <span className="ml-7">Email: drmhyb@scr.railnet.gov.in</span>
+                          <span className="ml-0">Phone: 040-27823905</span><br />
+                          <span className="ml-0">Email: drmhyb@scr.railnet.gov.in</span>
                         </span>
                       </li>
                     </ul>
@@ -272,9 +272,9 @@ const AMAppendixPage163 = () => {
                     <ul className="list-none ml-0 mt-2 space-y-1">
                       <li className="flex items-start gap-2">
                         <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                        <span className="text-gray-200">
+                        <span className="text-gray-200 space-y-2">
                           State Meteorological Centre, Hyderabad Airport, Hyderabad – 500019<br />
-                          <span className="ml-7">Phone: 040-27908506, 27904950</span>
+                          <span className="ml-0">Phone: 040-27908506, 27904950</span>
                         </span>
                       </li>
                     </ul>
@@ -287,13 +287,13 @@ const AMAppendixPage163 = () => {
                   <div className="ml-4 mt-2 space-y-3">
                     <div>
                       <span className="font-semibold text-orange-200">State & Districts:</span>
-                      <span className="text-gray-200 ml-2">
+                      <span className="text-gray-200 ml-0">
                         Andhra Pradesh – Guntur, Prakasam, and Nellore districts
                       </span>
                     </div>
                     <div>
                       <span className="font-semibold text-orange-200">Railway Section:</span>
-                      <span className="text-gray-200 ml-2">
+                      <span className="text-gray-200 ml-0">
                         Vijayawada – Gudur
                       </span>
                     </div>
@@ -302,10 +302,10 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Vijayawada Division, S.C. Railway, Vijayawada – 520001, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 0866-2578860</span><br />
-                            <span className="ml-7">Email: drmbza@scr.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 0866-2578860</span><br />
+                            <span className="ml-0">Email: drmbza@scr.railnet.gov.in</span>
                           </span>
                         </li>
                       </ul>
@@ -315,9 +315,9 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Meteorologist Incharge, Cyclone Warning Centre, Andhra University Campus, Visakhapatnam – 530003<br />
-                            <span className="ml-7">Phone: 0891-2543034</span>
+                            <span className="ml-0">Phone: 0891-2543034</span>
                           </span>
                         </li>
                       </ul>
@@ -330,7 +330,7 @@ const AMAppendixPage163 = () => {
                   <div className="ml-4 mt-2 space-y-3">
                     <div>
                       <span className="font-semibold text-orange-200">Railway Sections:</span>
-                      <span className="text-gray-200 ml-2">
+                      <span className="text-gray-200 ml-0">
                         Miryalaguda–Nadikudi, Guntur–Donakonda, Guntur–Tenali, Tenali–Repalle, Krishna Canal Jn–Guntur (excluding KCC), Donakonda–Nandyal, Pagidipalli–Nalgonda–Miryalaguda (excluding Pagidipalli), Guntur–Macherla
                       </span>
                     </div>
@@ -339,10 +339,10 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Guntur Division, S.C. Railway, Guntur, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 08663-2234152</span><br />
-                            <span className="ml-7">Email: drmgnt@scr.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 08663-2234152</span><br />
+                            <span className="ml-0">Email: drmgnt@scr.railnet.gov.in</span>
                           </span>
                         </li>
                       </ul>
@@ -352,7 +352,7 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Phone: 2543036
                           </span>
                         </li>
@@ -363,10 +363,10 @@ const AMAppendixPage163 = () => {
 
                 <div>
                   <span className="text-orange-200 font-semibold text-lg">Nellore District</span>
-                  <div className="ml-4 mt-2 space-y-3">
+                  <div className="ml-0 mt-2 space-y-3">
                     <div>
                       <span className="font-semibold text-orange-200">Railway Section:</span>
-                      <span className="text-gray-200 ml-2">
+                      <span className="text-gray-200 ml-0">
                         Gudur – Venkatagiri
                       </span>
                     </div>
@@ -375,10 +375,10 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Guntakal Division, S.C. Railway, Guntakal – 515801, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 08552-246351, 246427</span><br />
-                            <span className="ml-7">Email: drmgtl@scr.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 08552-246351, 246427</span><br />
+                            <span className="ml-0">Email: drmgtl@scr.railnet.gov.in</span>
                           </span>
                         </li>
                       </ul>
@@ -395,7 +395,7 @@ const AMAppendixPage163 = () => {
                   <div className="ml-4 space-y-2">
                     <div>
                       <span className="font-semibold text-orange-200">Important Railway Sections:</span>
-                      <span className="text-gray-200 ml-2">
+                      <span className="text-gray-200 ml-0">
                         Vijayawada–Waltair, Samalkot–Kakinada Port, Vijayawada–Gudivada, Gudivada–Machilipatnam, Gudivada–Bhimavaram, Bhimavaram–Narsapur, Bhimavaram–Nidadavolu, Kakinada Town Jn–Kotipalli, Madhira–Vijayawada, Motumarri–Jaggaiahpet
                       </span>
                     </div>
@@ -404,18 +404,18 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Vijayawada Division, S.C. Railway, Vijayawada – 520 001, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 0866-2578860</span><br />
-                            <span className="ml-7">Email: drmbza@scr.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 0866-2578860</span><br />
+                            <span className="ml-0">Email: drmbza@scr.railnet.gov.in</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Control Office, Secunderabad Division, Sanchalan Bhavan, S.C. Railway, Secunderabad – 500 071, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 040-27823156</span><br />
-                            <span className="ml-7">Email: drmsc.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 040-27823156</span><br />
+                            <span className="ml-0">Email: drmsc.railnet.gov.in</span>
                           </span>
                         </li>
                       </ul>
@@ -425,16 +425,16 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Meteorologist Incharge, Cyclone Warning Centre, Andhra University Campus, Visakhapatnam – 530 003<br />
-                            <span className="ml-7">Phone: 0891-2543034, 2543036</span>
+                            <span className="ml-0">Phone: 0891-2543034, 2543036</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             State Meteorological Centre, Hyderabad Airport, Hyderabad – 500 019<br />
-                            <span className="ml-7">Phone: 040-27908506, 27904950</span>
+                            <span className="ml-0">Phone: 040-27908506, 27904950</span>
                           </span>
                         </li>
                       </ul>
@@ -447,10 +447,10 @@ const AMAppendixPage163 = () => {
                     <span className="w-7 h-7 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">VII</span>
                     Karnataka State (Raichur, Bellary, Mohammadabad, Bidar & Gulbarga Districts)
                   </h3>
-                  <div className="ml-4 space-y-2">
+                  <div className="ml-0 space-y-2">
                     <div>
                       <span className="font-semibold text-orange-200">Important Railway Sections:</span>
-                      <span className="text-gray-200 ml-2">
+                      <span className="text-gray-200 ml-0">
                         Bellary–Bevinhalli, Mantralayam Road–Wadi, Zahirabad–Kamalanagar, Nawandgi–Chitapur–Sulehalli–Wadi
                       </span>
                     </div>
@@ -459,18 +459,18 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Guntakal Division, S.C. Railway, Guntakal – 515801, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 08552-227882</span><br />
-                            <span className="ml-7">Email: drmgtl@scr.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 08552-227882</span><br />
+                            <span className="ml-0">Email: drmgtl@scr.railnet.gov.in</span>
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">★</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             Chief Controller, Operating Branch, Control Office, Secunderabad Division, Sanchalan Bhavan, S.C. Railway, Secunderabad – 500 071, Andhra Pradesh<br />
-                            <span className="ml-7">Phone: 040-27823156</span><br />
-                            <span className="ml-7">Email: drmsc.railnet.gov.in</span>
+                            <span className="ml-0">Phone: 040-27823156</span><br />
+                            <span className="ml-0">Email: drmsc.railnet.gov.in</span>
                           </span>
                         </li>
                       </ul>
@@ -480,9 +480,9 @@ const AMAppendixPage163 = () => {
                       <ul className="list-none ml-0 mt-2 space-y-1">
                         <li className="flex items-start gap-2">
                           <span className="w-5 h-5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full text-white text-xs flex items-center justify-center font-bold">☁️</span>
-                          <span className="text-gray-200">
+                          <span className="text-gray-200 space-y-2">
                             State Meteorological Centre, HAL Airport, Bangalore – 560 017<br />
-                            <span className="ml-7">Phone: 080-22211118, 22235675</span>
+                            <span className="ml-0">Phone: 080-22211118, 22235675</span>
                           </span>
                         </li>
                       </ul>
@@ -492,9 +492,9 @@ const AMAppendixPage163 = () => {
 
                 <div className="mt-6 bg-orange-900/20 border border-orange-400/20 rounded-lg p-4">
                   <span className="text-orange-200 font-semibold">Note:</span>
-                  <span className="text-gray-200 ml-2">
+                  <span className="text-gray-200 ml-0">
                     All warning messages should be addressed to the Chief Controller, Central Control Office, Rail Nilayam, Secunderabad. <br />
-                    <span className="ml-7">Phone: 040-27820326</span>
+                    <span className="ml-0">Phone: 040-27820326</span>
                   </span>
                 </div>
               </div>

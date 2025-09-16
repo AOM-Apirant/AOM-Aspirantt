@@ -36,15 +36,15 @@ const AMAppendixPage188B = () => {
               {/* Form Header Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📋</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Specimen Form ACC. 6-B<br />B. Reporter&apos;s Diary:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-center text-gray-200 space-y-2">
                             <h5 className="text-lg font-semibold">Reporter&apos;s Diary</h5>
                             <p><strong>Form &lsquo;A&rsquo; Serial No. &lsquo;A&rsquo;</strong></p>
@@ -60,50 +60,50 @@ const AMAppendixPage188B = () => {
               {/* Passenger Details Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">👤</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Deceased Passenger Details:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
-                              <strong>1.</strong> Name of passenger ……………………………………………………………..……
+                              <strong>1.</strong> Name of passenger ………………………………
                             </div>
                             <div>
-                              <strong>2.</strong> Father&apos;s name / husband&apos;s name……………………………………………………
+                              <strong>2.</strong> Father&apos;s name / husband&apos;s name………………………………
                             </div>
                             <div>
-                              <strong>3.</strong> Passenger&apos;s address………………………………………………………….………</div>
+                              <strong>3.</strong> Passenger&apos;s address………………………………</div>
                             <div>
-                              <strong>4.</strong> Occupation………………………………………………………………………..……
+                              <strong>4.</strong> Occupation………………………………
                             </div>
                             <div>
-                              <strong>5.</strong> Compartment No. and Carriage No. in which travelling at the time of accident. Compartment No……………………………………………………………………… Carriage No……………………………………………………………………….……
+                              <strong>5.</strong> Compartment No. and Carriage No. in which travelling at the time of accident. Compartment No……………………………… Carriage No………………………………
                             </div>
                             <div>
                               <strong>6.</strong> Particulars of tickets held
                             </div>
                             <div className="ml-4">
-                              From Station………………………………………………………………………..… To Station……………………………………………………………………………… Class…………………………………………………………………………………… Ticket No……………………………………………………………………….……… Date ……………………………………………………………………………….……
+                              From Station……………………………… To Station……………………………… Class……………………………… Ticket No……………………………… Date ………………………………
                             </div>
                             <div>
                               <strong>7.</strong> Position where the dead body was found
                             </div>
                             <div className="ml-4">
-                              Give full particulars……………………………………………………………………
+                              Give full particulars………………………………
                             </div>
                             <div>
-                              <strong>8.</strong> How dead body was disposed off (whether handed over to relatives, police etc.) Give full particulars ……………………………………………………………………
+                              <strong>8.</strong> How dead body was disposed off (whether handed over to relatives, police etc.) Give full particulars ………………………………
                             </div>
                             <div>
-                              <strong>9.</strong> Details of belongings of the killed and how disposed off (whether boxes, or suitcases or beddings etc., approximate weight and size and whether handed over to Police, relatives etc.,……………………………………………………….…
+                              <strong>9.</strong> Details of belongings of the killed and how disposed off (whether boxes, or suitcases or beddings etc., approximate weight and size and whether handed over to Police, relatives etc.,………………………………
                             </div>
                             <div>
-                              <strong>10.</strong> Any other information ………………………………………………………….........
+                              <strong>10.</strong> Any other information ………………………………
                             </div>
                           </div>
                         </div>
@@ -116,15 +116,15 @@ const AMAppendixPage188B = () => {
               {/* Signature Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">✍️</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Signature:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-2">
                             <div className="border-t border-gray-600 pt-2">
                               <p><strong>Place</strong> <strong>Signature</strong></p>

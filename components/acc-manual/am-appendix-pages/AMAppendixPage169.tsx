@@ -36,12 +36,12 @@ TIPS FOR SAFETY
               {/* Section 1: Pre-Cyclone Season Preparation */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">1</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">Steps to be taken before the commencement of Cyclone season</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">Steps to be taken before the commencement of Cyclone season</h4>
 
                       <div className="space-y-4">
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
@@ -90,12 +90,12 @@ TIPS FOR SAFETY
               {/* Section 2: During Cyclone Warning */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">2</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">Steps to be taken when a warning for a Cyclone threatening the area is received</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">Steps to be taken when a warning for a Cyclone threatening the area is received</h4>
 
                       <div className="space-y-4">
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
@@ -232,12 +232,12 @@ TIPS FOR SAFETY
               {/* Section 3: Evacuation Instructions */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">3</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">When the Authorities advise evacuation follow the following instructions promptly</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">When the Authorities advise evacuation follow the following instructions promptly</h4>
 
                       <div className="space-y-4">
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
@@ -286,12 +286,12 @@ TIPS FOR SAFETY
               {/* Section 4: Post-Cyclone Measures */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">4</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">Post-Cyclone measures</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">Post-Cyclone measures</h4>
 
                       <div className="space-y-4">
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">

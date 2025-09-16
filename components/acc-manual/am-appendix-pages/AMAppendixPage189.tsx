@@ -36,15 +36,15 @@ const AMAppendixPage189 = () => {
               {/* Form Header Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">  
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📋</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Specimen Form Acc. 6-C<br />C. Reporter&apos;s Diary:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-center text-gray-200 space-y-2">
                             <p><strong>Form &lsquo;A&rsquo; Serial No. &lsquo;A&rsquo;</strong></p>
                             <p><strong>Particulars of Persons Injured (Use one form for each person)</strong></p>
@@ -59,53 +59,53 @@ const AMAppendixPage189 = () => {
               {/* Injured Passenger Details Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">🚑</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Injured Passenger Details:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
-                              <strong>1.</strong> Name of passenger…………………………………………………………………
+                              <strong>1.</strong> Name of passenger………………………………
                             </div>
                             <div>
-                              <strong>2.</strong> Father&apos;s name / husband&apos;s name……………………………………………….…</div>
+                              <strong>2.</strong> Father&apos;s name / husband&apos;s name………………………………</div>
                             <div>
-                              <strong>3.</strong> Age……………………………………………………………………………………
+                              <strong>3.</strong> Age………………………………
                             </div>
                             <div>
-                              <strong>4.</strong> Occupation……………………………………………………………………...……
+                              <strong>4.</strong> Occupation………………………………
                             </div>
                             <div>
-                              <strong>5.</strong> Address…………………………………………………………………………….…
+                              <strong>5.</strong> Address………………………………
                             </div>
                             <div>
-                              <strong>6.</strong> Compartment No. and Carriage No. in which travelling at the time of accident. Compartment No………………………………………………………………….… Carriage No……………………………………………………………………..……
+                              <strong>6.</strong> Compartment No. and Carriage No. in which travelling at the time of accident. Compartment No……………………………… Carriage No………………………………
                             </div>
                             <div>
                               <strong>7.</strong> Particulars of tickets held
                             </div>
                             <div className="ml-4">
-                              From Station………………………………………………………………………… To Station……………………………………………………………………….…… Class…………………………………………………………………………………. Ticket No…………………………………………………………………………….. Date …………………………………………………………………………………..
+                              From Station……………………………… To Station……………………………… Class……………………………… Ticket No……………………………… Date ………………………………
                             </div>
                             <div>
-                              <strong>8.</strong> Nature of injuries and full description……………………………………...………</div>
+                              <strong>8.</strong> Nature of injuries and full description………………………………</div>
                             <div>
                               <strong>9.</strong> Whether given &lsquo;First Aid&rsquo; on the spot. If so, nature of Aid rendered and time…
                             </div>
                             <div>
-                              <strong>10.</strong> Whether sent to hospital for treatment. If so how and at what time or whether allowed to continue his journey to destination………………………………………</div>
+                              <strong>10.</strong> Whether sent to hospital for treatment. If so how and at what time or whether allowed to continue his journey to destination………………………………</div>
                             <div>
-                              <strong>11.</strong> Whether handed over to relatives after &lsquo;First Aid&rsquo; was given …………………</div>
+                              <strong>11.</strong> Whether handed over to relatives after &lsquo;First Aid&rsquo; was given …………………</div> 
                             <div>
                               <strong>12.</strong> Give details of belongings of the injured and how disposed of ………………
                             </div>
                             <div>
-                              <strong>13.</strong> Any other information…………………………………………………………...…
+                              <strong>13.</strong> Any other information…………………………… 
                             </div>
                             <div>
                               <strong>14.</strong> Obtain injured person&apos;s statement on the subjoined form by tearing off and handing over portion below the dotted line, if he is in a sufficiently sound state to give a statement. This statement should be signed by the passenger and attached to this
@@ -121,15 +121,15 @@ const AMAppendixPage189 = () => {
               {/* Reporter Signature Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">✍️</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Reporter Signature:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-2">
                             <div className="border-t border-gray-600 pt-2">
                               <p><strong>Place:</strong> <strong>Signature:</strong></p>
@@ -148,21 +148,21 @@ const AMAppendixPage189 = () => {
               {/* Passenger Statement Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📝</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Statement of Injured Passenger:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
-                              <strong>1.</strong> Name of the passenger………………………………………………………………
+                              <strong>1.</strong> Name of the passenger………………………………
                             </div>
                             <div>
-                              <strong>2.</strong> Statement of the passenger…………………………………………………………
+                              <strong>2.</strong> Statement of the passenger………………………………
                             </div>
                             <div>
                               <strong>Place ……………………………</strong>

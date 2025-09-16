@@ -36,15 +36,15 @@ const AMAppendixPage205B = () => {
               {/* Form Header Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📋</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Damages to P.Way:<br />Details of damages to Permanent way and approximate cost thereof</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-center text-gray-200 space-y-2">
                             <h5 className="text-lg font-semibold">Form Acc.9-N</h5>
                           </div>
@@ -58,17 +58,17 @@ const AMAppendixPage205B = () => {
               {/* Permanent Way Damage Assessment Table Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">🛤️</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Permanent Way Damage Assessment Table:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-2">
-                            <div className="grid grid-cols-4 gap-4 font-bold text-center">
+                            <div className="grid grid-cols-4 gap-4 font-medium text-center">
                               <div className="p-3 bg-red-800/30 rounded">Item Number</div>
                               <div className="p-3 bg-red-800/30 rounded">Description</div>
                               <div className="p-3 bg-red-800/30 rounded">No. in each</div>

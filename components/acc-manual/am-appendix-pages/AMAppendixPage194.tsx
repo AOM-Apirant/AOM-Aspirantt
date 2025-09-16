@@ -36,15 +36,15 @@ const AMAppendixPage194 = () => {
               {/* Form Header Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📋</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Form Acc 9-B<br />Descriptive account of the Accident:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-center text-gray-200 space-y-2">
                             <p><strong>Descriptive account of the accident (in concise terms).</strong></p>
                           </div>
@@ -58,15 +58,15 @@ const AMAppendixPage194 = () => {
               {/* Important Instructions Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">⚠️</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Important Instructions:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
                               Care should be taken by the President to see that this form is correctly and appropriately filled up and contains no matter which falls under the head of either the Findings or Suggestions and Recommendations which should be entered in Acc. 9 (G) &(I)

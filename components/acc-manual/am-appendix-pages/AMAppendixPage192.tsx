@@ -36,8 +36,8 @@ const AMAppendixPage192 = () => {
               {/* Form Header Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📋</span>
                     </div>
                     <div className="flex-1">
@@ -50,33 +50,33 @@ const AMAppendixPage192 = () => {
               {/* Accident Details Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">🚂</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Accident Summary Details:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
                               <strong>1.</strong> Nature of Accident (such as &lsquo;Derailment&rsquo; or &lsquo;Collision&rsquo; as the case may be)
                             </div>
                             <div>
-                              <strong>2.</strong> Date ……………………………………………………………………………………
+                              <strong>2.</strong> Date ………………………………
                             </div>
                             <div>
-                              <strong>3.</strong> Time……………………………………………………………………………………
+                              <strong>3.</strong> Time………………………………
                             </div>
                             <div>
                               <strong>4.</strong> Railway
                             </div>
                             <div>
-                              <strong>5.</strong> Location………………………………………………………………………………
+                              <strong>5.</strong> Location………………………………
                             </div>
                             <div className="ml-4">
-                              (Type of trains involved)…………………………………………………………
+                              (Type of trains involved)………………………………
                             </div>
                           </div>
                         </div>
@@ -89,33 +89,33 @@ const AMAppendixPage192 = () => {
               {/* Train Information Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">🚆</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Train Information:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
-                              Train number Up…..Vacuum/Air pressure in B.V…………………… Dn….Vacuum/Air pressure in B.V……………………
+                              Train number Up…..Vacuum/Air pressure in B.V…………………… Dn….Vacuum/Air pressure in B.V………………
                             </div>
                             <div>
                               Engine number Up…..Vacuum/Air pressure in Engine ……………… Dn….Vacuum/Air pressure in Engine ………………
                             </div>
                             <div>
-                              Trains consisting Up…..……………………………………………………. Dn….……………………………………………………..
+                              Trains consisting Up…..…………………………. Dn….…………………………
                             </div>
                             <div>
-                              Estimated speeds Up…..……………………………………………………. Dn….……………………………………………………..
+                              Estimated speeds Up…..…………………………. Dn….………………………
                             </div>
                             <div>
-                              System of working………………………………………………………………………………..…… Brief description of Track …………………………………………………………….……………… Weather………………………………………………………………………………………………… Casualties…………………………………………………………………………………………….. Brief cause of Accident………………………………………………………………………………………
+                              System of working…………………………………..…… Brief description of Track ……………………………………… Weather………………………………………… Casualties…………………………………….. Brief cause of Accident………………………………
                             </div>
                             <div>
-                              Time taken in clearing the line………………………………………………….…………
+                              Time taken in clearing the line…………………………………
                             </div>
                           </div>
                         </div>
@@ -128,28 +128,28 @@ const AMAppendixPage192 = () => {
               {/* Cost of Damage Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">💰</span>
                     </div>
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-red-300 mb-4">Cost of Damage:</h4>
 
                       <div className="space-y-4">
-                        <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
+                        <div className="bg-red-900/20 lg:p-4 p-2 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-3">
                             <div>
-                              <strong>(i)</strong> Engine …………………………………………………………………… …………………
+                              <strong>(i)</strong> Engine …………………………………
                             </div>
                             <div>
-                              <strong>(ii)</strong> Rolling stock…………………………………………………………………………………
+                              <strong>(ii)</strong> Rolling stock……………………………………
                             </div>
                             <div>
-                              <strong>(iii)</strong> Permanent Way………………………………………………………………………….………</div>
+                              <strong>(iii)</strong> Permanent Way…………………………….………</div>
                             <div>
-                              <strong>(iv)</strong> Signal interlocking & Communication gear………………………….……………………</div>
+                              <strong>(iv)</strong> Signal interlocking & Communication gear…………………………</div>
                             <div>
-                              <strong>(v)</strong> Other than railway property, if any………………………….………………………………..</div>
+                              <strong>(v)</strong> Other than railway property, if any……………………………..</div>
                           </div>
                         </div>
                       </div>

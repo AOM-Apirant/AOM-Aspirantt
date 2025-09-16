@@ -33,8 +33,8 @@ const AMAppendixPage176 = () => {
               {/* Introduction Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">📋</span>
                     </div>
                     <div className="flex-1">
@@ -51,8 +51,8 @@ const AMAppendixPage176 = () => {
               {/* Minor Penalties Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">⚠️</span>
                     </div>
                     <div className="flex-1">
@@ -61,7 +61,7 @@ const AMAppendixPage176 = () => {
                       <div className="space-y-4">
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-2">
-                            <ul className="space-y-1">
+                            <ul className="space-y-3">
                               <li>• (i) Censure;</li>
                               <li>• (ii) Withholding of promotion for a specified period;</li>
                               <li>• (iii) Recovery from pay of the whole or part of any pecuniary loss caused to the Government or Railway Administration by negligence or breach of orders;</li>
@@ -80,8 +80,8 @@ const AMAppendixPage176 = () => {
               {/* Major Penalties Section */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">🚫</span>
                     </div>
                     <div className="flex-1">
@@ -90,7 +90,7 @@ const AMAppendixPage176 = () => {
                       <div className="space-y-4">
                         <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/20">
                           <div className="text-gray-200 space-y-2">
-                            <ul className="space-y-1">
+                            <ul className="space-y-3">
                               <li>• (v) Same as provided for in clause (iii-b), reduction to a lower stage in the time-scale of pay for a specified period, with further directions as to whether on the expiry of such period, the reduction will or will not have the effect of postponing the future increments of his pay;</li>
                               <li>• (vi) Reduction to a lower time scale of pay, grade, post or service, with or without further directions regarding conditions of restoration to the grade or post or service from which the Railway servant was reduced and his seniority and pay on such restoration to that grade, post or service;</li>
                               <li>• (vii) Compulsory retirement</li>
