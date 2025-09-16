@@ -23,10 +23,10 @@ const AMAppendixPage156C = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">1.2</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">APPENDIX-V</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Normal Weather Warnings: Conveying messages by Indian Meteorological Department
+              1.2 Normal Weather Warnings: Conveying messages by Indian Meteorological Department
             </p>
           </div>
 
@@ -36,12 +36,12 @@ const AMAppendixPage156C = () => {
               {/* Section A - Railway Zones */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">a</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Railway Zones</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Railway Zones</h4>
                       <p className="text-gray-200 leading-relaxed">The entire South Central Railway has been divided into 7 zones as per drawing appended in Annexure &apos;B&apos;. A list showing these zones, the railway officials to whom messages will be addressed and the offices of the Meteorological Department which will issue the weather warning messages is appended in Annexure &apos;A&apos;.</p>
                     </div>
                   </div>
@@ -51,12 +51,12 @@ const AMAppendixPage156C = () => {
               {/* Section B - Weather Warning Messages */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">b</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Weather Warning Messages</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Weather Warning Messages</h4>
                       <p className="text-gray-200 leading-relaxed">Weather warning messages will be classified as &quot;XXW&quot; (Weather Warning) or &apos;000&apos; (Weather immediate). These messages will be normally delivered by the BSNL office direct to the Central Control office / S.C.Railway / Secunderabad and Divisional Control Offices concerned. Liaison should be kept with local BSNL authorities for the receipt of messages over phone to avoid transit delay in actual delivery of the message.</p>
                     </div>
                   </div>
@@ -66,15 +66,15 @@ const AMAppendixPage156C = () => {
               {/* Section C - State Meteorological Centres */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">c</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">State Meteorological Centres</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">State Meteorological Centres</h4>
                       <p className="text-gray-200 leading-relaxed mb-4">State Meteorological Centres function at Hyderabad for Andhra Pradesh State, at Bangalore for Karnataka State and at Mumbai for Maharashtra State. In addition, Cyclone Warning Centre has been established at Visakhapatnam. Weather warning messages will emanate from:</p>
 
-                      <div className="space-y-3 ml-4">
+                      <div className="space-y-3 ml-0">
                         <div className="flex items-start gap-3">
                           <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-sm">i</span>
@@ -108,12 +108,12 @@ const AMAppendixPage156C = () => {
               {/* Section D - Cyclone Warning Centre */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">d</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Cyclone Warning Centre</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Cyclone Warning Centre</h4>
                       <p className="text-gray-200 leading-relaxed">The Cyclone Warning Centre, Visakhapatnam will give the adverse weather warning messages on depressions and cyclonic storms coming from Bay of Bengal and storms are still at Sea, for the coastal area of Andhra Pradesh.</p>
                     </div>
                   </div>
@@ -123,12 +123,12 @@ const AMAppendixPage156C = () => {
               {/* Section E - Long Distance Telephone Calls */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">e</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Long Distance Telephone Calls</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Long Distance Telephone Calls</h4>
                       <p className="text-gray-200 leading-relaxed">Long distance telephone calls will not be resorted to normally, but on special occasions this mode of communication may be utilized by the Forecasting Officer at his discretion.</p>
                     </div>
                   </div>

@@ -37,14 +37,14 @@ const AMAppendixPage156 = () => {
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                    <div className="flex flex-col gap-4">
+                      <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                         <span className="text-white font-bold text-lg">1</span>
                       </div>
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-red-300 mb-2">Weather Warning Message</h4>
                         <p className="text-gray-200 leading-relaxed mb-4">Arrangements exist with the Meteorological Department, Government of India for issuing messages of warning and also through fax and e- mail, whenever storm/gales or heavy rainfall are expected. The following are conditions under which warnings are issued.</p>
-                        <div className="space-y-3 ml-4">
+                        <div className="space-y-3 ml-0">
                           <div className="flex items-start gap-3">
                             <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                               <span className="text-white font-bold text-sm">a</span>

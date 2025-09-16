@@ -23,10 +23,10 @@ const AMAppendixPage156B = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">1.1</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">APPENDIX-IV</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Terminology Used in Meteorological Bulletins regarding Cyclones
+              1.1 Terminology Used in Meteorological Bulletins regarding Cyclones
             </p>
           </div>
 
@@ -36,12 +36,12 @@ const AMAppendixPage156B = () => {
               {/* Section A - Cyclones */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">a</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">Cyclones</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">Cyclones</h4>
 
                       {/* Cyclone Table */}
                       <div className="bg-white/5 rounded-lg p-4 mb-4">
@@ -109,15 +109,15 @@ const AMAppendixPage156B = () => {
               {/* Section B - Intensity of Precipitation */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">b</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Intensity of Precipitation</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Intensity of Precipitation</h4>
                       <p className="text-gray-200 leading-relaxed mb-4">Rainfall amount (in cm)-Description</p>
 
-                      <div className="space-y-3 ml-4">
+                      <div className="space-y-3 ml-0">
                         <div className="flex items-start gap-3">
                           <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-xs">•</span>
@@ -157,15 +157,15 @@ const AMAppendixPage156B = () => {
               {/* Section C - Spatial Distribution */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">c</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Spatial Distribution</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Spatial Distribution</h4>
                       <p className="text-gray-200 leading-relaxed mb-4">The area over which the phenomenon like rainfall is expected to occur.</p>
 
-                      <div className="space-y-3 ml-4">
+                      <div className="space-y-3 ml-0">
                         <div className="flex items-start gap-3">
                           <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-xs">•</span>

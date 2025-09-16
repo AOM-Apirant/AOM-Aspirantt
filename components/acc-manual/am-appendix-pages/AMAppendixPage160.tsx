@@ -23,7 +23,7 @@ const AMAppendixPage160 = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">1.4</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">APPENDIX - IV</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               Flood Warning
@@ -36,12 +36,12 @@ const AMAppendixPage160 = () => {
               {/* Introduction - Flood Warning Indicator */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
-                      <span className="text-white font-bold text-lg">•</span>
+                  <div className="flex flex-col items-center gap-4 relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 absolute right-0 top-0">
+                      <span className="text-white font-bold text-lg">1.4</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">FLOOD WARNING INDICATOR</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center mt-12">FLOOD WARNING INDICATOR</h4>
                       <p className="text-gray-200 leading-relaxed">Flood warning devices have been installed on trail basis at some of the bridges. Two types of devices are installed as follows:</p>
                     </div>
                   </div>
@@ -51,14 +51,14 @@ const AMAppendixPage160 = () => {
               {/* Section A - GSM based device */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">a</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">GSM based device</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">GSM based device</h4>
 
-                      <div className="space-y-4 ml-4">
+                      <div className="space-y-4 ml-0">
                         <div className="flex items-start gap-3">
                           <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-sm">i</span>
@@ -80,14 +80,14 @@ const AMAppendixPage160 = () => {
               {/* Section B - VHF based device */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">b</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-4">VHF based device</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-4 text-center">VHF based device</h4>
 
-                      <div className="space-y-4 ml-4">
+                      <div className="space-y-4 ml-0">
                         <div className="flex items-start gap-3">
                           <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                             <span className="text-white font-bold text-sm">i</span>
@@ -109,12 +109,12 @@ const AMAppendixPage160 = () => {
               {/* Section C - Station Master Actions */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">c</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Station Master and concerned staff shall take the following action</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Station Master and concerned staff shall take the following action</h4>
                       <p className="text-gray-200 leading-relaxed">Once the Station Master receives the message from the flood warning device, he should stop immediately the approaching train and inform adjacent Station Masters and concerned JE/SE/SSE/P.Way to take precautionary measures till such time he gets clearance from JE/SE/SSE/P.Way for safe passage of trains.</p>
                     </div>
                   </div>
@@ -124,12 +124,12 @@ const AMAppendixPage160 = () => {
               {/* Section D - SE/JE P.Way Actions */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">d</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">SE/JE P.Way Actions</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">SE/JE P.Way Actions</h4>
                       <div className="space-y-4">
                         <p className="text-gray-200 leading-relaxed">As soon as SE/JE P.way receives the message, he should visit the site and assess the situation and regulate the traffic.</p>
                         <p className="text-gray-200 leading-relaxed">He should post temporary Watchmen until the flood water recedes.</p>

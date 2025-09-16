@@ -23,10 +23,10 @@ const AMAppendixPage157 = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">1.3</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">APPENDIX-VI</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Dissemination of Messages within Railway
+              1.3 Dissemination of Messages within Railway
             </p>
             <p className="lg:text-lg text-sm text-gray-300 max-w-4xl mx-auto leading-relaxed mt-2">
               On receipt of Weather / Cyclone warning message in the Control office, the following action should be taken.
@@ -39,18 +39,33 @@ const AMAppendixPage157 = () => {
               {/* Section A - Central Control */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">a</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Central Control</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Central Control</h4>
                       <div className="space-y-4">
-                        <p className="text-gray-200 leading-relaxed">Central Control, Rail Nilayam, Secunderabad - 500 071. The Chief Controller shall give the copy of message to all controls i.e. Engineering Control, Traction Power Control, Traction Loco Control, Power (Diesel) Control, Security Control, Commercial Control, Electrical Control, Test Room and Divisional Control office concerned.</p>
-
-                        <p className="text-gray-200 leading-relaxed">It is the responsibility of these controls in their turn, to inform the Officers, Supervisors and all concerned pertaining to their departments for taking necessary steps to be in readiness for meeting any eventualities. They should record the names and designation with the time and date to whom the message has been repeated.</p>
-
-                        <p className="text-gray-200 leading-relaxed">He should also verify with the Divisional Control that such weather / cyclone warning messages received by him have also been received by the Divisional Chief Controllers of the concerned divisions, so that lapses can be remedied then and there.</p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-3">
+                            <span className="text-orange-400 text-2xl mt-0.5">📄</span>
+                            <span className="text-gray-200 leading-relaxed">
+                              <strong>Central Control, Rail Nilayam, Secunderabad - 500 071:</strong> The Chief Controller shall provide a copy of the message to all controls, including Engineering Control, Traction Power Control, Traction Loco Control, Power (Diesel) Control, Security Control, Commercial Control, Electrical Control, Test Room, and the concerned Divisional Control office.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-orange-400 text-2xl mt-0.5">📢</span>
+                            <span className="text-gray-200 leading-relaxed">
+                              <strong>Further Dissemination:</strong> Each control is responsible for informing Officers, Supervisors, and all concerned in their departments to ensure readiness for any eventualities. They must record the names, designations, time, and date of those informed.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-orange-400 text-2xl mt-0.5">✅</span>
+                            <span className="text-gray-200 leading-relaxed">
+                              <strong>Verification:</strong> The Chief Controller should confirm with Divisional Control that the weather/cyclone warning messages have also been received by the Divisional Chief Controllers of the relevant divisions, so that any lapses can be immediately addressed.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -60,18 +75,33 @@ const AMAppendixPage157 = () => {
               {/* Section B - Divisional Control Office */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">b</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Action by the Divisional Control Office</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Action by the Divisional Control Office</h4>
                       <div className="space-y-4">
-                        <p className="text-gray-200 leading-relaxed">The Chief Controller shall give the copy of message to all controls i.e. Engineering Control, Traction Power Control, Traction Loco Control, Power (Diesel) Control, Security Control, Commercial Control, Electrical Control and Test Room.</p>
-
-                        <p className="text-gray-200 leading-relaxed">It is the responsibility of these controls in their turn, to inform the Officers, Supervisors and all concerned pertaining to their departments for taking necessary steps to be in readiness for meeting any eventuality. They should record the names and designation with the time and date to whom the message has been repeated.</p>
-
-                        <p className="text-gray-200 leading-relaxed">The Section Controller shall repeat the message to Station Masters on section likely to be affected and record the names of Station Masters on duty to whom the message has been repeated.</p>
+                        <ul className="space-y-4">
+                          <li className="flex items-start gap-3">
+                            <span className="text-yellow-400 text-2xl mt-0.5">📤</span>
+                            <span className="text-gray-200 leading-relaxed">
+                              <strong>Message Distribution:</strong> The Chief Controller shall provide a copy of the message to all controls, including Engineering Control, Traction Power Control, Traction Loco Control, Power (Diesel) Control, Security Control, Commercial Control, Electrical Control, and Test Room.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-green-400 text-2xl mt-0.5">🗂️</span>
+                            <span className="text-gray-200 leading-relaxed">
+                              <strong>Departmental Notification:</strong> Each control must inform Officers, Supervisors, and all concerned in their departments to ensure readiness for any eventuality. They should record the names, designations, time, and date of those informed.
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 text-2xl mt-0.5">🔁</span>
+                            <span className="text-gray-200 leading-relaxed">
+                              <strong>Section Controller&apos;s Role:</strong> The Section Controller shall repeat the message to Station Masters on sections likely to be affected and record the names of Station Masters on duty to whom the message has been repeated.
+                            </span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -81,12 +111,12 @@ const AMAppendixPage157 = () => {
               {/* Section C - XXR Message Note */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">c</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">XXR Message Procedure</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">XXR Message Procedure</h4>
                       <div className="space-y-4">
                         <div className="bg-yellow-500/10 border border-yellow-400/20 rounded-lg p-4">
                           <p className="text-yellow-200 leading-relaxed text-sm font-medium">Note: In respect of sections which are not controlled or when the control phone is interrupted, an &apos;XXR&apos; (immediate) message should be issued by the Chief Controller or in his absence by the Dy. Chief Controller to the Officials referred above.</p>
@@ -108,12 +138,12 @@ const AMAppendixPage157 = () => {
               {/* Section D - Register Maintenance */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">d</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Register Maintenance</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Register Maintenance</h4>
                       <p className="text-gray-200 leading-relaxed">A register should be maintained in each Control of concerned department i.e. Engineering, Electrical etc. showing full particulars of the receipt and action taken on the weather/cyclone warning messages, showing the date and time of receipt of warning message, the full text of the message and the date and time of dispatch of telephonic advices to the officials concerned and the initials of the Station Masters on duty to whom the message has been repeated.</p>
                     </div>
                   </div>
@@ -121,66 +151,86 @@ const AMAppendixPage157 = () => {
               </div>
               <div className="bg-gradient-to-r from-orange-500/10 to-yellow-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/20 hover:border-orange-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">c</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-orange-300 mb-2">Action by the Station Master</h4>
-                      <div className="space-y-4">
+                      <h4 className="text-xl font-bold text-orange-300 mb-2 text-center">Action by the Station Master</h4>
+                      <div className="space-y-6">
+                        <div className="flex items-center gap-3">
+                          <span className="text-yellow-400 text-2xl">📢</span>
+                          <span className="font-semibold text-yellow-200 text-lg">Staff Intimation Procedure</span>
+                        </div>
                         <p className="text-gray-200 leading-relaxed">
-                          <span className="font-semibold text-yellow-200">Intimation to Staff:</span> Upon receiving a weather or cyclone warning from the Section Controller, the Station Master must promptly take the following actions:
+                          When a weather or cyclone warning is received from the Section Controller, the Station Master must act immediately as follows:
                         </p>
-                        <ul className="list-none space-y-2 pl-0">
-                          <li className="flex items-start gap-2">
-                            <span className="text-yellow-400 mt-1">⮞</span>
+                        <div className="space-y-4 pl-0">
+                          <div className="flex items-start gap-3">
+                            <span className="text-orange-400 text-xl mt-1">📄</span>
                             <span className="text-gray-200">
-                              At stations where ADEN / SE (Works) / SE (P.Way) / SE (OHE/PSI) are headquartered, the Station Master on duty should immediately hand over a copy of the verbatim message received from the Section Controller to the concerned parties and obtain their acknowledgement.
+                              <span className="font-semibold text-yellow-100">If ADEN / SE (Works) / SE (P.Way) / SE (OHE/PSI) are at headquarters:</span> The Station Master on duty must promptly hand over a copy of the exact message received from the Section Controller to the concerned officials and obtain their acknowledgement.
                             </span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-yellow-400 mt-1">⮞</span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <span className="text-orange-400 text-xl mt-1">📞</span>
                             <span className="text-gray-200">
-                              If the ADEN / SE (Works) / SE (P.Way) / SE (OHE/PSI) is out of headquarters, the Station Master should inform the Controller on duty, who will then ensure that the message is communicated verbatim to the Engineering and TRD officers at the station.
+                              <span className="font-semibold text-yellow-100">If the above officials are out of headquarters:</span> The Station Master should inform the Controller on duty, who will ensure the message is communicated verbatim to the Engineering and TRD officers at the station.
                             </span>
-                          </li>
-                        </ul>
-                        <div className="mt-4">
-                          <h5 className="text-orange-200 font-semibold mb-2">Message Register Format:</h5>
-                          <div className="overflow-x-auto">
-                            <table className="min-w-full text-sm text-gray-200 border border-orange-400/20 rounded-lg">
-                              <thead>
-                                <tr className="bg-orange-400/10">
-                                  <th className="px-3 py-2 border-b border-orange-400/20">Date &amp; Time of Receipt</th>
-                                  <th className="px-3 py-2 border-b border-orange-400/20">Full Text of Message</th>
-                                  <th className="px-3 py-2 border-b border-orange-400/20">Name/Designation of Officials Informed</th>
-                                  <th className="px-3 py-2 border-b border-orange-400/20">Signature of SM</th>
-                                  <th className="px-3 py-2 border-b border-orange-400/20">Actual Weather Condition</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td className="px-3 py-2 border-b border-orange-400/10 text-center">--</td>
-                                  <td className="px-3 py-2 border-b border-orange-400/10 text-center">--</td>
-                                  <td className="px-3 py-2 border-b border-orange-400/10 text-center">--</td>
-                                  <td className="px-3 py-2 border-b border-orange-400/10 text-center">--</td>
-                                  <td className="px-3 py-2 border-b border-orange-400/10 text-center">--</td>
-                                </tr>
-                              </tbody>
-                            </table>
                           </div>
                         </div>
-                        <p className="text-gray-200 leading-relaxed mt-4">
-                          The office copy of the message, with acknowledgement including name, designation, time, and date, should be pasted in the register for record.
-                        </p>
+                        <div className="mt-6 space-y-2">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-orange-300 text-xl">🗂️</span>
+                            <h5 className="text-orange-200 font-semibold">Message Register Details</h5>
+                          </div>
+                          <div className="text-gray-200 leading-relaxed space-y-2">
+                            <div className="flex items-start gap-2">
+                              <span className="text-orange-400 text-lg mt-1">🕒</span>
+                              <span>
+                                <span className="font-semibold text-yellow-100">Date &amp; Time of Receipt:</span> Record the exact date and time when the warning message is received.
+                              </span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="text-orange-400 text-lg mt-1">📝</span>
+                              <span>
+                                <span className="font-semibold text-yellow-100">Full Text of Message:</span> Enter the complete message as received from the Section Controller.
+                              </span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="text-orange-400 text-lg mt-1">👤</span>
+                              <span>
+                                <span className="font-semibold text-yellow-100">Officials Informed:</span> List the names of all officials who have been informed about the warning.
+                              </span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="text-orange-400 text-lg mt-1">✍️</span>
+                              <span>
+                                <span className="font-semibold text-yellow-100">SM Signature:</span> The Station Master must sign after making the necessary entries.
+                              </span>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="text-orange-400 text-lg mt-1">🌦️</span>
+                              <span>
+                                <span className="font-semibold text-yellow-100">Actual Weather:</span> Note the actual weather conditions at the time of receiving the message.
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-2 mt-4">
+                          <span className="text-yellow-400 text-xl mt-1">📝</span>
+                          <p className="text-gray-200 leading-relaxed">
+                            The office copy of the message, with acknowledgement (including name, designation, time, and date), must be pasted in the register for official record.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl font-bold text-orange-300 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1 rounded-lg shadow">d</span>
+                <h4 className="text-xl font-bold text-orange-300 mb-4 flex flex-col items-center gap-2 text-center">
+                  <span className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1 rounded-full shadow">d</span>
                   Precautions During Storms & Strong Winds: Train Control Guidelines
                 </h4>
                 <ul className="space-y-6 pl-0">
@@ -214,13 +264,13 @@ const AMAppendixPage157 = () => {
                 </ul>
               </div>
               <div className="mt-8">
-                <h4 className="text-xl font-bold text-orange-300 mb-4 flex items-center gap-2">
-                  <span className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1 rounded-lg shadow">e</span>
+                <h4 className="text-xl font-bold text-orange-300 mb-4 flex flex-col items-center gap-2 text-center">
+                  <span className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-3 py-1 rounded-full shadow">e</span>
                   Section Engineer (P.Way): Actions During Cyclone & Monsoon Warnings
                 </h4>
                 <div className="space-y-6">
                   <div className="bg-gradient-to-r from-yellow-700/30 to-orange-700/30 rounded-xl border border-yellow-400/20 p-5">
-                    <p className="text-yellow-100 font-semibold mb-2 flex items-center gap-2">
+                    <p className="text-yellow-100 font-semibold mb-2 flex flex-col items-center gap-2">
                       <span className="text-yellow-400 text-2xl">🛤️</span>
                       On receiving a weather or cyclone warning, the Section Engineer (P.Way) must:
                     </p>
@@ -298,16 +348,16 @@ const AMAppendixPage157 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-r from-orange-600 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                <div className="flex flex-col items-center gap-4 mb-4">
+                  <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-orange-600 to-yellow-500 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                     <span className="text-white font-bold text-lg">f</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-bold text-orange-200 mb-2">Action by the Gang Mate</h4>
+                    <h4 className="text-xl font-bold text-orange-200 mb-2 text-center">Action by the Gang Mate</h4>
                     <p className="text-gray-200 mb-3">
                       Upon receiving instructions from the Station Master, the Gang Mate should take the following actions:
                     </p>
-                    <ul className="space-y-3 pl-2">
+                    <ul className="space-y-3 pl-0">
                       <li className="flex items-start gap-2">
                         <span className="text-yellow-300 text-lg mt-1">🌤️</span>
                         <div>
@@ -339,13 +389,13 @@ const AMAppendixPage157 = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-14 h-14 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+              <div className="flex flex-col items-center gap-4 mb-4">
+                <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                   <span className="text-white font-bold text-lg">g</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-yellow-200 mb-2">Action by Traction Power Controller</h4>
-                  <ul className="space-y-3 pl-2">
+                  <h4 className="text-xl font-bold text-yellow-200 mb-2 text-center">Action by Traction Power Controller</h4>
+                  <ul className="space-y-3 pl-0">
                     <li className="flex items-start gap-2">
                       <span className="text-yellow-300 text-lg mt-1">📞</span>
                       <div>
@@ -376,13 +426,13 @@ const AMAppendixPage157 = () => {
                   </ul>
                 </div>
               </div>
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-14 h-14 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+              <div className="flex flex-col items-center gap-4 mb-4">
+                <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                   <span className="text-white font-bold text-lg">h</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-yellow-200 mb-2">Detailed Actions by Traction Power Controller & Key Personnel</h4>
-                  <ul className="space-y-4 pl-2">
+                  <h4 className="text-xl font-bold text-yellow-200 mb-2 text-center">Detailed Actions by Traction Power Controller & Key Personnel</h4>
+                  <ul className="space-y-4 pl-0">
                     <li className="flex items-start gap-2">
                       <span className="text-yellow-300 text-lg mt-1">🔁</span>
                       <div>
@@ -432,14 +482,14 @@ const AMAppendixPage157 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <div className="flex items-start gap-3 mb-2">
-                  <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-400 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                <div className="flex flex-col items-center gap-3 mb-2">
+                  <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-400 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                     <span className="text-white font-bold text-lg">h</span>
                   </div>
-                  <h4 className="text-lg font-bold text-yellow-200">Action by OHE/PSI Depot In-Charge</h4>
+                  <h4 className="text-lg font-bold text-yellow-200 text-center">Action by OHE/PSI Depot In-Charge</h4>
                 </div>
                 <div className="bg-yellow-500/10 border border-yellow-400/20 rounded-lg p-4 space-y-4">
-                  <ul className="space-y-3 pl-2">
+                  <ul className="space-y-3 pl-0">
                     <li className="flex items-start gap-2">
                       <span className="text-yellow-300 text-lg mt-1">⚡</span>
                       <div>
@@ -471,17 +521,17 @@ const AMAppendixPage157 = () => {
                 </div>
               </div>
               <div className="mt-8">
-                <div className="flex items-start gap-3 mb-2">
-                  <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-orange-400 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                <div className="flex flex-col items-center gap-3 mb-2">
+                  <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-pink-500 to-orange-400 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                     <span className="text-white font-bold text-lg">i</span>
                   </div>
-                  <h4 className="text-lg font-bold text-pink-200">Readiness by Electrical General Services Wing</h4>
+                  <h4 className="text-lg font-bold text-pink-200 text-center">Readiness by Electrical General Services Wing</h4>
                 </div>
                 <div className="bg-pink-500/10 border border-pink-400/20 rounded-lg p-4 space-y-4">
                   <p className="text-gray-200 mb-2">
                     The Electrical General Services Wing of the division must ensure the following are always ready:
                   </p>
-                  <ul className="space-y-3 pl-2">
+                  <ul className="space-y-3 pl-0">
                     <li className="flex items-start gap-2">
                       <span className="text-yellow-300 text-lg mt-1">⛽</span>
                       <div>

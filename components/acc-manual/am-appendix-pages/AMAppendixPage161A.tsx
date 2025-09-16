@@ -23,7 +23,7 @@ const AMAppendixPage161A = () => {
               </div>
             </div>
 
-            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">1.5</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-orange-300 mb-4">APPENDIX - IV</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               Danger to track and bridges due to Railway Affecting Tanks
@@ -36,12 +36,12 @@ const AMAppendixPage161A = () => {
               {/* Introduction */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
-                      <span className="text-white font-bold text-lg">•</span>
+                  <div className="flex flex-col items-center gap-4 relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 absolute right-0 top-0">
+                      <span className="text-white font-bold text-lg">1.5</span>
                     </div>
                     <div className="flex-1">
-                      <p className="text-gray-200 leading-relaxed">As soon as message is received from State Govt. Officials i.e. from Village Servant / Village Assistant, Panchayat Secretaries / Assistant Panchayat Secretaries or any other general public by Station Master and officials concerned regarding the endangering of Railway Affecting Tank, the following action should be taken:</p>
+                      <p className="text-gray-200 leading-relaxed mt-12">As soon as message is received from State Govt. Officials i.e. from Village Servant / Village Assistant, Panchayat Secretaries / Assistant Panchayat Secretaries or any other general public by Station Master and officials concerned regarding the endangering of Railway Affecting Tank, the following action should be taken:</p>
                     </div>
                   </div>
                 </div>
@@ -50,12 +50,12 @@ const AMAppendixPage161A = () => {
               {/* Section A - Station Master Actions */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">a</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">Station Master Actions</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">Station Master Actions</h4>
                       <p className="text-gray-200 leading-relaxed">The Station Master on receipt of information regarding the danger to track or bridge due to RAT should stop immediately the approaching train and inform the concerned SE/JE P.Way and the adjacent Station Master for necessary action.</p>
                     </div>
                   </div>
@@ -65,12 +65,12 @@ const AMAppendixPage161A = () => {
               {/* Section B - JE/SE P.Way Actions */}
               <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20 hover:border-red-400/30 transition-all duration-300">
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-r from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-r from-red-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                       <span className="text-white font-bold text-lg">b</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-red-300 mb-2">JE/SE P.Way Actions</h4>
+                      <h4 className="text-xl font-bold text-red-300 mb-2 text-center">JE/SE P.Way Actions</h4>
                       <p className="text-gray-200 leading-relaxed">The sectional JE/SE P.Way in-charge should immediately proceed to the site and assess the situation and post a stationary Watchman until the flood recedes. He should inform the adjacent Station Master regarding the condition of flood and whether train movement can take place or not.</p>
                     </div>
                   </div>
