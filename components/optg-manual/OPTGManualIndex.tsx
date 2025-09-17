@@ -268,7 +268,7 @@ const OPTGIndex = () => {
                       
                       {/* Page Range */}
                       <p className="text-white/70 text-sm font-medium mb-4">
-                        Pages {Math.min(...section.topics.map(topic => parseInt(topic.page)))} - {Math.max(...section.topics.map(topic => parseInt(topic.page)))}
+                        Pages: {Math.min(...section.topics.map(topic => parseInt(topic.page)))} - {Math.max(...section.topics.map(topic => parseInt(topic.page)))}
                       </p>
                       
                       {/* Expand/Collapse Icon */}
@@ -314,7 +314,7 @@ const OPTGIndex = () => {
                                   ) : (
                                     <FileText className="w-4 h-4" />
                                   )}
-                                  <span>{openingPDF === topic.page ? 'Opening...' : `Page - ${topic.page}`} (Document)</span>
+                                  <span>{openingPDF === topic.page ? 'Opening...' : 'View Document'}</span>
                                   {!isMobile && openingPDF !== topic.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
                                 

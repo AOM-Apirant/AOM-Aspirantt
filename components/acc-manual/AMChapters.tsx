@@ -465,7 +465,7 @@ const AMChapters = () => {
                        
                        {/* Page Range */}
                        <p className="text-white/70 text-sm font-medium mb-4">
-                         Pages {Math.min(...chapter.rules.map(rule => parseInt(rule.page)))} - {Math.max(...chapter.rules.map(rule => parseInt(rule.page)))}
+                         Pages: {Math.min(...chapter.rules.map(rule => parseInt(rule.page)))} - {Math.max(...chapter.rules.map(rule => parseInt(rule.page)))}
                        </p>
                        
                        {/* Expand/Collapse Icon */}
@@ -511,7 +511,7 @@ const AMChapters = () => {
                                   ) : (
                                     <FileText className="w-4 h-4" />
                                   )}
-                                  <span>{openingPDF === rule.page ? 'Opening...' : `Page - ${rule.page}`} (Document)</span>
+                                  <span>{openingPDF === rule.page ? 'Opening...' :  'View Document'}</span>
                                   {!isMobile && openingPDF !== rule.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
 
@@ -533,8 +533,8 @@ const AMChapters = () => {
                                   <span>{openingContent === rule.page ? 'Opening...' : 'View Content'}</span>
                                 </button>
 
-                                <span className="text-gray-400 text-xs lg:ml-2">
-                                  Rule {rule.number}
+                                <span className="text-gray-400 text-sm lg:ml-2">
+                                  Rule: {rule.number}
                                 </span>
                               </div>
                             </div>

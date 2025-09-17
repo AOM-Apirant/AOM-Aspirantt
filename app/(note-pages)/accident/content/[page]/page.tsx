@@ -1082,14 +1082,16 @@ const ContentPage = () => {
               </button>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 rounded-sm backdrop-blur-sm border border-red-400/30">
+            <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 mr-2 rounded-sm backdrop-blur-sm border border-red-400/30">
                 <ul className="space-y-1 text-center">
                   <li className="flex items-center space-x-2">
-                    <span className="text-white text-xs lg:text-base">{currentRule ? `Rule : ${currentRule.title}` : 'Rule title not found for this page.'}</span>
+                    <span className="text-white text-xs lg:text-base">{currentRule ? `Topic : ${currentRule.title}` : 'Topic title not found for this page.'}</span>
                   </li>
                 </ul>
               </div>
+
+            <div className="flex items-center space-x-4">
+              
 
               <button
                 onClick={openPDF}
@@ -1108,11 +1110,11 @@ const ContentPage = () => {
           <div className="bg-gradient-to-r from-red-500 to-orange-600 text-white py-4 px-2">
             <div className="flex items-center justify-center space-x-3">
               <div>
-                <h1 className="text-2xl lg:text-3xl font-semibold text-center uppercase">Accident Manual</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold text-center uppercase">Accident Manual</h1>
                 <hr className="border-white/20"/>
                 <ul className="mt-2 space-y-1 text-center">
                   <li className="flex items-center space-x-2">
-                    <span className="text-orange-200">Rule : </span>
+                    <span className="text-orange-200">Topic: </span>
                     <span className="text-white font-normal">{currentRule ? currentRule.title : 'Rule title not found for this page.'}</span>
                   </li>
                 </ul>

@@ -186,11 +186,8 @@ const ContentPage = () => {
               
               
             </div>
-            
-            <div className="flex items-center space-x-4">
 
-              
-              <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 rounded-sm backdrop-blur-sm border border-blue-400/30">
+            <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 mr-2 rounded-sm backdrop-blur-sm border border-blue-400/30">
               <ul className="space-y-1 text-center">
                   {(() => {
                     // OPTGManualIndex లోని sections array ని ఇక్కడ define చేయాలి లేదా import చేయాలి.
@@ -291,7 +288,8 @@ const ContentPage = () => {
                   })()}
                 </ul>
               </div>
-
+            
+            <div className="flex items-center space-x-4">
               <button
                 onClick={openPDF}
                 className="flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-red-600 hover:to-pink-700 transition-all duration-300"
@@ -402,8 +400,8 @@ const ContentPage = () => {
                     // ఇప్పుడు pageNumber కి match అయ్యే topic తీసుకోవాలి
                     const topic = allTopics.find(t => t.page === pageNumber);
                     return topic ? (
-                      <li className="flex items-center space-x-2">
-                        <span className="text-blue-300">Topic : </span>
+                      <li className="flex items-center justify-center space-x-2">
+                        <span className="text-blue-300">Topic: </span>
                         <span className="text-white font-normal">{topic.title}</span>
                       </li>
                     ) : (

@@ -265,7 +265,7 @@ const AMAppendix = () => {
                       
                       {/* Page Range */}
                       <p className="text-white/70 text-sm font-medium mb-4">
-                        Pages {appendix.pageRange}
+                        Pages: {appendix.pageRange}
                       </p>
                       
                       {/* Expand/Collapse Icon */}
@@ -311,7 +311,7 @@ const AMAppendix = () => {
                                   ) : (
                                     <FileText className="w-4 h-4" />
                                   )}
-                                  <span>{openingPDF === item.page ? 'Opening...' : `Page - ${item.page}`} (Document)</span>
+                                  <span>{openingPDF === item.page ? 'Opening...' : 'View Document'}</span>
                                   {!isMobile && openingPDF !== item.page && <ExternalLink className="w-3 h-3" />}
                                 </button>
 
@@ -333,9 +333,7 @@ const AMAppendix = () => {
                                   <span>{openingContent === item.page ? 'Opening...' : 'View Content'}</span>
                                 </button>
 
-                                <span className="text-gray-400 text-xs lg:ml-2">
-                                  Appendix {appendix.id}.{item.number}
-                                </span>
+                                
                               </div>
                             </div>
                           </div>
