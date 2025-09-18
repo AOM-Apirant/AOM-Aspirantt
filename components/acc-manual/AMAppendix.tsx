@@ -33,7 +33,31 @@ const AMAppendix = () => {
   }
 
   const openPDF = (pageNumber: string) => {
-    const pdfPath = `/ampdfs/am-appendix-pages/AMAppendixPage${pageNumber}.pdf`
+    // Handle special cases for page numbers that have different file names
+    let pdfFileName = ''
+    
+    // Special cases for pages that don't follow the standard naming pattern
+    const specialCases: { [key: string]: string } = {
+      '145': 'AMAppendixPage145A.pdf', // This page has multiple variants
+      '146': 'AMAppendixPage146A.pdf', // This page has multiple variants
+      '147': 'AMAppendixPage147A.pdf', // This page has multiple variants
+      '148': 'AMAppendixPage148A.pdf', // This page has multiple variants
+      '149': 'AMAppendixPage149A.pdf', // This page has multiple variants
+      '156': 'AMAppendixPage156A.pdf', // This page has multiple variants
+      '161': 'AMAppendixPage161A.pdf', // This page has multiple variants
+      '188': 'AMAppendixPage188A.pdf', // This page has multiple variants  
+      '190': 'AMAppendixPage190A.pdf', // This page has multiple variants
+      '205': 'AMAppendixPage205A.pdf', // This page has multiple variants
+      '208': 'AMAppendixPage208A.pdf'  // This page has multiple variants
+    }
+    
+    if (specialCases[pageNumber]) {
+      pdfFileName = specialCases[pageNumber]
+    } else {
+      pdfFileName = `AMAppendixPage${pageNumber}.pdf`
+    }
+    
+    const pdfPath = `/ampdfs/am-appendix-pages/${pdfFileName}`
 
     setOpeningPDF(pageNumber)
 

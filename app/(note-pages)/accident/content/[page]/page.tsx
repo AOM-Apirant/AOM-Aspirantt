@@ -912,9 +912,65 @@ const ContentPage = () => {
 
   const openPDF = () => {
     const isAppendix = Boolean(appendixComponents[pageNumber])
-    const pdfPath = isAppendix
-      ? `/ampdfs/am-appendix-pages/AMAppendixPage${pageNumber}.pdf`
-      : `/ampdfs/am-chapter-pages/AMPAGE${pageNumber}.pdf`
+    let pdfPath = ''
+    
+    if (isAppendix) {
+      // Handle special cases for appendix pages that have different file names
+      const specialCases: { [key: string]: string } = {
+        '145': 'AMAppendixPage145A.pdf', // This page has multiple variants
+        '146': 'AMAppendixPage146A.pdf', // This page has multiple variants
+        '147': 'AMAppendixPage147A.pdf', // This page has multiple variants
+        '148': 'AMAppendixPage148A.pdf', // This page has multiple variants
+        '149': 'AMAppendixPage149A.pdf', // This page has multiple variants
+        '156': 'AMAppendixPage156A.pdf', // This page has multiple variants
+        '161': 'AMAppendixPage161A.pdf', // This page has multiple variants
+        '188': 'AMAppendixPage188A.pdf', // This page has multiple variants  
+        '190': 'AMAppendixPage190A.pdf', // This page has multiple variants
+        '205': 'AMAppendixPage205A.pdf', // This page has multiple variants
+        '208': 'AMAppendixPage208A.pdf'  // This page has multiple variants
+      }
+      
+      if (specialCases[pageNumber]) {
+        pdfPath = `/ampdfs/am-appendix-pages/${specialCases[pageNumber]}`
+      } else {
+        pdfPath = `/ampdfs/am-appendix-pages/AMAppendixPage${pageNumber}.pdf`
+      }
+    } else {
+      // Handle special cases for chapter pages that have different file names
+      const specialCases: { [key: string]: string } = {
+        '101': 'AMPAGE101A.pdf', // This page has multiple variants
+        '103': 'AMPAGE103A.pdf', // This page has multiple variants
+        '104': 'AMPAGE104A.pdf', // This page has multiple variants
+        '106': 'AMPAGE106A.pdf', // This page has multiple variants
+        '108': 'AMPAGE108A.pdf', // This page has multiple variants
+        '109': 'AMPAGE109A.pdf', // This page has multiple variants
+        '113': 'AMPAGE113A.pdf', // This page has multiple variants
+        '114': 'AMPAGE114A.pdf', // This page has multiple variants
+        '115': 'AMPAGE115A.pdf', // This page has multiple variants
+        '116': 'AMPAGE116A.pdf', // This page has multiple variants
+        '118': 'AMPAGE118A.pdf', // This page has multiple variants
+        '119': 'AMPAGE119A.pdf', // This page has multiple variants
+        '121': 'AMPAGE121A.pdf', // This page has multiple variants
+        '122': 'AMPAGE122A.pdf', // This page has multiple variants
+        '123': 'AMPAGE123A.pdf', // This page has multiple variants
+        '125': 'AMPAGE125A.pdf', // This page has multiple variants
+        '127': 'AMPAGE127A.pdf', // This page has multiple variants
+        '128': 'AMPAGE128A.pdf', // This page has multiple variants
+        '129': 'AMPAGE129A.pdf', // This page has multiple variants
+        '130': 'AMPAGE130A.pdf', // This page has multiple variants
+        '131': 'AMPAGE131A.pdf', // This page has multiple variants
+        '132': 'AMPAGE132A.pdf', // This page has multiple variants
+        '133': 'AMPAGE133A.pdf', // This page has multiple variants
+        '134': 'AMPAGE134A.pdf'  // This page has multiple variants
+      }
+      
+      if (specialCases[pageNumber]) {
+        pdfPath = `/ampdfs/am-chapter-pages/${specialCases[pageNumber]}`
+      } else {
+        pdfPath = `/ampdfs/am-chapter-pages/AMPAGE${pageNumber}.pdf`
+      }
+    }
+    
     window.open(pdfPath, '_blank')
   }
 
