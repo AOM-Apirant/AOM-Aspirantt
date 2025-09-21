@@ -294,3 +294,66 @@ body {
 .animate-pulse-slow {
   animation: pulse-slow 3s ease-in-out infinite;
 }
+
+/* Snake border animation */
+@keyframes snake-border {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.snake-border {
+  position: relative;
+  background: linear-gradient(45deg, 
+    #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, 
+    #dda0dd, #98d8c8, #f7dc6f, #bb8fce, #85c1e9,
+    #f8c471, #82e0aa, #f1948a, #85c1e9, #f7dc6f
+  );
+  background-size: 400% 400%;
+  animation: snake-border 4s ease-in-out infinite;
+  padding: 2px;
+  border-radius: 50px;
+}
+
+.snake-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, 
+    #dda0dd, #98d8c8, #f7dc6f, #bb8fce, #85c1e9,
+    #f8c471, #82e0aa, #f1948a, #85c1e9, #f7dc6f
+  );
+  background-size: 400% 400%;
+  animation: snake-border 4s ease-in-out infinite reverse;
+  border-radius: 50px;
+  z-index: -1;
+}

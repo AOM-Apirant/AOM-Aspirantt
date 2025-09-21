@@ -263,24 +263,20 @@ export default function Navbar() {
                 )}
               </div>
               
-              {session && (
-                <>
-                <button 
-                  onClick={() => handleNavigation('/dashboard')}
-                  className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
-                >
-                  Dashboard
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
-                </button>
-                <button 
-                  onClick={() => handleNavigation('/quiz')}
-                  className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
-                >
-                  Quizzes
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
-                </button>
-                </>
-              )}
+              <button 
+                onClick={() => handleNavigation('/dashboard')}
+                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
+              >
+                Dashboard
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+              </button>
+              <button 
+                onClick={() => handleNavigation('/quiz')}
+                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
+              >
+                Quizzes
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+              </button>
           
               <button 
                 onClick={() => handleNavigation('/contact')}
@@ -301,12 +297,17 @@ export default function Navbar() {
                   Logout
                 </button>
               ) : (
-                <Link
-                  href="/"
-                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 touch-button text-sm lg:text-base"
-                >
-                  Login
-                </Link>
+                <div className="snake-border">
+                  <button
+                    onClick={() => {
+                      // Redirect to Google sign in
+                      window.location.href = '/api/auth/signin/google';
+                    }}
+                    className="bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500 text-white px-5 lg:px-6 py-1.5 rounded-full font-medium hover:from-violet-600 hover:via-purple-600 hover:to-indigo-600 transition-all duration-200 transform hover:scale-105 touch-button text-sm lg:text-base backdrop-blur-sm"
+                  >
+                    Login
+                  </button>
+                </div>
               )}
             </div>
 
@@ -511,33 +512,29 @@ export default function Navbar() {
                     </div>
                   </div>
 
-                  {session && (
-                    <>
-                    <button 
-                      onClick={() => handleNavigation('/dashboard')}
-                      className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
-                    >
-                      <div className="w-9 h-9 bg-gradient-to-r from-indigo-400 to-indigo-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
-                      </div>
-                      <span className="text-base">Dashboard</span>
-                    </button>
-                    
-                    <button 
-                      onClick={() => handleNavigation('/quiz')}
-                      className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
-                    >
-                      <div className="w-9 h-9 bg-gradient-to-r from-teal-400 to-teal-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                      <span className="text-base">Quizzes</span>
-                    </button>
-                    </>
-                  )}
+                  <button 
+                    onClick={() => handleNavigation('/dashboard')}
+                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                  >
+                    <div className="w-9 h-9 bg-gradient-to-r from-indigo-400 to-indigo-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                    <span className="text-base">Dashboard</span>
+                  </button>
+                  
+                  <button 
+                    onClick={() => handleNavigation('/quiz')}
+                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                  >
+                    <div className="w-9 h-9 bg-gradient-to-r from-teal-400 to-teal-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <span className="text-base">Quizzes</span>
+                  </button>
                   
                   <button 
                     onClick={() => handleNavigation('/contact')}

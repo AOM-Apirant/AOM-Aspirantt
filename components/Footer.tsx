@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { UserCheck, Globe } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 interface UserCountData {
   totalUsers: number;
@@ -42,36 +42,7 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           
-          {/* User Count Section */}
-          <div className="text-center md:text-left">
-            
-            
-            {isLoading ? (
-              <div className="flex items-center space-x-2">
-                <div className="animate-pulse bg-gray-600 h-4 w-16 rounded"></div>
-                <div className="animate-pulse bg-gray-600 h-4 w-12 rounded"></div>
-              </div>
-            ) : userCount ? (
-              <div className="space-y-1">
-                <div className="flex items-center space-x-3 text-xs">
-                  <div className="flex items-center space-x-1">
-                    <Globe className="h-3 w-3 text-green-400" />
-                    <span className="text-gray-300">{userCount.googleUsers} Google</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <UserCheck className="h-3 w-3 text-purple-400" />
-                    <span className="text-gray-300">{userCount.credentialUsers} Email</span>
-                  </div>
-                  <div className="text-xs text-gray-400">
-                  Total: <span className="text-blue-400 font-semibold">{userCount.totalUsers}</span> Aspirants
-                </div>
-                </div>
-                
-              </div>
-            ) : (
-              <div className="text-xs text-gray-400">Loading community stats...</div>
-            )}
-          </div>
+          
 
           {/* Copyright */}
           <div className="text-center md:text-right">
@@ -84,9 +55,29 @@ const Footer = () => {
               <span>for Aspirants</span>
             </p>
           </div>
-        </div>
 
-        
+          {/* User Count Section */}
+          <div className="text-center md:text-left">
+            {isLoading ? (
+              <div className="flex items-center space-x-2">
+                <div className="animate-pulse bg-gray-600 h-4 w-16 rounded"></div>
+                <div className="animate-pulse bg-gray-600 h-4 w-12 rounded"></div>
+              </div>
+            ) : userCount ? (
+              <div className="flex items-center justify-center text-center md:justify-start space-x-2 bg-gradient-to-r from-green-700 via-blue-700 to-purple-700 px-6 py-1.5 rounded-full shadow-lg border border-green-400/30">
+                  <div className="flex items-center justify-center space-x-1">
+                    <Globe className="h-4 w-4 text-green-300" />
+                    <span className="text-gray-300 text-sm font-medium">{userCount.googleUsers}</span>
+                  </div>
+                  <div className="text-xs text-green-300">
+                    Aspirants
+                  </div>
+                </div>
+            ) : (
+              <div className="text-xs text-gray-400">Loading Google users...</div>
+            )}
+          </div>
+        </div>
       </div>
     </footer>
   )

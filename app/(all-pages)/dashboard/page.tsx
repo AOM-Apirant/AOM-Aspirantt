@@ -61,22 +61,23 @@ export default function Dashboard() {
     );
   }
 
-  if (!session) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center">
-        <div className="text-center px-4 sm:px-8">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">Access Denied</h1>
-          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-6">Please log in to access your dashboard.</p>
-          <Link
-            href="/"
-            className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-sm font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base"
-          >
-            Go to Login
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  // Remove authentication requirement - show dashboard for all users
+  // if (!session) {
+  //   return (
+  //     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center">
+  //       <div className="text-center px-4 sm:px-8">
+  //         <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">Access Denied</h1>
+  //         <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4 sm:mb-6">Please log in to access your dashboard.</p>
+  //         <Link
+  //           href="/"
+  //           className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-sm font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm sm:text-base"
+  //         >
+  //           Go to Login
+  //         </Link>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   const categoryNames: { [key: string]: string } = {
     'general-knowledge': 'General Knowledge',
@@ -93,7 +94,7 @@ export default function Dashboard() {
           <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div></div>
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 gradient-text">
-              Welcome Back, {session.user?.name}!
+              {session ? `Welcome Back, ${session.user?.name}!` : 'Welcome to AOM Aspirant Dashboard!'}
             </h1>
             <button
               onClick={fetchProgress}
@@ -110,7 +111,9 @@ export default function Dashboard() {
               )}
             </button>
           </div>
-          <p className="text-sm sm:text-base md:text-lg text-gray-600">Here&apos;s your learning progress and quick actions</p>
+          <p className="text-sm sm:text-base md:text-lg text-gray-600">
+            {session ? 'Here\'s your learning progress and quick actions' : 'Explore our platform features and start your learning journey'}
+          </p>
         </div>
 
         {/* Stats Cards */}
@@ -119,7 +122,7 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs sm:text-sm md:text-base text-gray-600">Total Quizzes</p>
-                <p className="text-2xl sm:text-3xl font-bold text-blue-600">{progress?.totalQuizzes || 0}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-blue-600">{session ? (progress?.totalQuizzes || 0) : '10+'}</p>
               </div>
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,7 +136,7 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs sm:text-sm md:text-base text-gray-600">Average Score</p>
-                <p className="text-2xl sm:text-3xl font-bold text-green-600">{progress?.averageScore || 0}%</p>
+                <p className="text-2xl sm:text-3xl font-bold text-green-600">{session ? `${progress?.averageScore || 0}%` : '85%'}</p>
               </div>
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,7 +150,7 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs sm:text-sm md:text-base text-gray-600">Questions Answered</p>
-                <p className="text-2xl sm:text-3xl font-bold text-purple-600">{progress?.totalQuestions || 0}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-purple-600">{session ? (progress?.totalQuestions || 0) : '500+'}</p>
               </div>
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -161,7 +164,7 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs sm:text-sm md:text-base text-gray-600">Study Time</p>
-                <p className="text-2xl sm:text-3xl font-bold text-orange-600">{progress?.formattedStudyTime || '0m'}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-orange-600">{session ? (progress?.formattedStudyTime || '0m') : '2h 30m'}</p>
               </div>
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -222,7 +225,7 @@ export default function Dashboard() {
           <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 md:p-8 border border-gray-300 animate-fade-in-up">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">Recent Activity</h2>
             <div className="space-y-3 sm:space-y-4">
-              {progress?.recentActivity && progress.recentActivity.length > 0 ? (
+              {session && progress?.recentActivity && progress.recentActivity.length > 0 ? (
                 progress.recentActivity.map((activity, index) => (
                   <div key={index} className="p-3 sm:p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl border border-gray-200">
                     <div className="flex items-center justify-between mb-2">
@@ -247,8 +250,12 @@ export default function Dashboard() {
                 ))
               ) : (
                 <div className="p-3 sm:p-4 bg-gray-50 rounded-lg">
-                  <p className="text-gray-600 text-sm sm:text-base">No recent activity</p>
-                  <p className="text-gray-500 text-xs sm:text-sm">Start your first quiz to see your activity here!</p>
+                  <p className="text-gray-600 text-sm sm:text-base">
+                    {session ? 'No recent activity' : 'Sample Activity'}
+                  </p>
+                  <p className="text-gray-500 text-xs sm:text-sm">
+                    {session ? 'Start your first quiz to see your activity here!' : 'Sign in to track your learning progress'}
+                  </p>
                 </div>
               )}
             </div>
