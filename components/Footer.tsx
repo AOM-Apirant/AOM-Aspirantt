@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Globe } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 
 interface UserCountData {
   totalUsers: number;
@@ -66,7 +66,7 @@ const Footer = () => {
             ) : userCount ? (
               <div className="flex items-center justify-center text-center md:justify-start space-x-2 bg-gradient-to-r from-green-700 via-blue-700 to-purple-700 px-6 py-1.5 rounded-full shadow-lg border border-green-400/30">
                   <div className="flex items-center justify-center space-x-1">
-                    <Globe className="h-4 w-4 text-green-300" />
+                    <GraduationCap className="h-4 w-4 text-green-300 -mt-0.5" />
                     <span className="text-gray-300 text-sm font-medium">{userCount.googleUsers}</span>
                   </div>
                   <div className="text-xs text-green-300">

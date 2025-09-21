@@ -292,22 +292,24 @@ export default function Navbar() {
               {session ? (
                 <button
                   onClick={handleSignOut}
-                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 touch-button text-sm lg:text-base"
+                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 text-sm lg:text-base"
                 >
                   Logout
                 </button>
               ) : (
-                <div className="snake-border">
-                  <button
-                    onClick={() => {
-                      // Redirect to Google sign in
-                      window.location.href = '/api/auth/signin/google';
-                    }}
-                    className="bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500 text-white px-5 lg:px-6 py-1.5 rounded-full font-medium hover:from-violet-600 hover:via-purple-600 hover:to-indigo-600 transition-all duration-200 transform hover:scale-105 touch-button text-sm lg:text-base backdrop-blur-sm"
-                  >
-                    Login
-                  </button>
-                </div>
+                <button
+                  onClick={() => {
+                    // Redirect to Google sign in
+                    window.location.href = '/api/auth/signin/google';
+                  }}
+                  className="relative bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 text-sm lg:text-base overflow-hidden snake-border-container"
+                >
+                  {/* Snake Border Dot Animation */}
+                  <div className="absolute inset-0 rounded-full">
+                    <div className="absolute top-0 right-0 w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-snake-border-dot shadow-xl border-2 border-white"></div>
+                  </div>
+                  <span className="relative z-10">Login</span>
+                </button>
               )}
             </div>
 
