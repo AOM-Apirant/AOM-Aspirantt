@@ -450,6 +450,13 @@ export const safetyDrivePdfFiles = [
       "Railway Board Safety Calendar Drive for the month of September 2025",
     date: "05/09/2025",
   },
+  {
+    name: "Safety Drive September 7 2025",
+    filename: "Safety Drive September 7 2025.pdf",
+    subject:
+      "Railway Board Safety Drive No:13: Drive on shunting precautions covering all shunting locations in the Division-reg",
+    date: "17/09/2025",
+  },
 ];
 
 export const ruleOfTheMonthPdfFiles = [
