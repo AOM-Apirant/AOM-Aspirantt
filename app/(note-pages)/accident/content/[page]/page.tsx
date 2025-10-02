@@ -263,7 +263,7 @@ import AMAppendixPage152 from '@/components/acc-manual/am-appendix-pages/AMAppen
 import AMAppendixPage153 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage153'
 import AMAppendixPage154 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage154'
 import AMAppendixPage155 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage155'
-import AMAppendixPage156 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156'
+import AMAppendixPage156A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156A'
 import AMAppendixPage156B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156B'
 import AMAppendixPage156C from '@/components/acc-manual/am-appendix-pages/AMAppendixPage156C'
 import AMAppendixPage157 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage157'
@@ -286,7 +286,7 @@ import AMAppendixPage181 from '@/components/acc-manual/am-appendix-pages/AMAppen
 import AMAppendixPage183 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage183'
 import AMAppendixPage185 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage185'
 import AMAppendixPage186 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage186'
-import AMAppendixPage188 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage188'
+import AMAppendixPage188A from '@/components/acc-manual/am-appendix-pages/AMAppendixPage188A'
 import AMAppendixPage188B from '@/components/acc-manual/am-appendix-pages/AMAppendixPage188B'
 import AMAppendixPage189 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage189'
 import AMAppendixPage190 from '@/components/acc-manual/am-appendix-pages/AMAppendixPage190'
@@ -577,7 +577,7 @@ const appendixComponents: { [key: string]: React.ComponentType } = {
   '153': AMAppendixPage153,
   '154': AMAppendixPage154,
   '155': AMAppendixPage155,
-  '156': AMAppendixPage156,
+  '156': AMAppendixPage156A,
   '156B': AMAppendixPage156B,
   '156C': AMAppendixPage156C,
   '157': AMAppendixPage157,
@@ -600,7 +600,7 @@ const appendixComponents: { [key: string]: React.ComponentType } = {
   '183': AMAppendixPage183,
   '185': AMAppendixPage185,
   '186': AMAppendixPage186,
-  '188': AMAppendixPage188,
+  '188': AMAppendixPage188A,
   '188B': AMAppendixPage188B,
   '189': AMAppendixPage189,
   '190': AMAppendixPage190,
@@ -937,36 +937,36 @@ const ContentPage = () => {
     } else {
       // Handle special cases for chapter pages that have different file names
       const specialCases: { [key: string]: string } = {
-        '101': 'AMPAGE101A.pdf', // This page has multiple variants
-        '103': 'AMPAGE103A.pdf', // This page has multiple variants
-        '104': 'AMPAGE104A.pdf', // This page has multiple variants
-        '106': 'AMPAGE106A.pdf', // This page has multiple variants
-        '108': 'AMPAGE108A.pdf', // This page has multiple variants
-        '109': 'AMPAGE109A.pdf', // This page has multiple variants
-        '113': 'AMPAGE113A.pdf', // This page has multiple variants
-        '114': 'AMPAGE114A.pdf', // This page has multiple variants
-        '115': 'AMPAGE115A.pdf', // This page has multiple variants
-        '116': 'AMPAGE116A.pdf', // This page has multiple variants
-        '118': 'AMPAGE118A.pdf', // This page has multiple variants
-        '119': 'AMPAGE119A.pdf', // This page has multiple variants
-        '121': 'AMPAGE121A.pdf', // This page has multiple variants
-        '122': 'AMPAGE122A.pdf', // This page has multiple variants
-        '123': 'AMPAGE123A.pdf', // This page has multiple variants
-        '125': 'AMPAGE125A.pdf', // This page has multiple variants
-        '127': 'AMPAGE127A.pdf', // This page has multiple variants
-        '128': 'AMPAGE128A.pdf', // This page has multiple variants
-        '129': 'AMPAGE129A.pdf', // This page has multiple variants
-        '130': 'AMPAGE130A.pdf', // This page has multiple variants
-        '131': 'AMPAGE131A.pdf', // This page has multiple variants
-        '132': 'AMPAGE132A.pdf', // This page has multiple variants
-        '133': 'AMPAGE133A.pdf', // This page has multiple variants
-        '134': 'AMPAGE134A.pdf'  // This page has multiple variants
+        '101': 'AMCHAPTERPAGE101A.pdf', // This page has multiple variants
+        '103': 'AMCHAPTERPAGE103A.pdf', // This page has multiple variants
+        '104': 'AMCHAPTERPAGE104A.pdf', // This page has multiple variants
+        '106': 'AMCHAPTERPAGE106A.pdf', // This page has multiple variants
+        '108': 'AMCHAPTERPAGE108A.pdf', // This page has multiple variants
+        '109': 'AMCHAPTERPAGE109A.pdf', // This page has multiple variants
+        '113': 'AMCHAPTERPAGE113A.pdf', // This page has multiple variants
+        '114': 'AMCHAPTERPAGE114A.pdf', // This page has multiple variants
+        '115': 'AMCHAPTERPAGE115A.pdf', // This page has multiple variants
+        '116': 'AMCHAPTERPAGE116A.pdf', // This page has multiple variants
+        '118': 'AMCHAPTERPAGE118A.pdf', // This page has multiple variants
+        '119': 'AMCHAPTERPAGE119A.pdf', // This page has multiple variants
+        '121': 'AMCHAPTERPAGE121A.pdf', // This page has multiple variants
+        '122': 'AMCHAPTERPAGE122A.pdf', // This page has multiple variants
+        '123': 'AMCHAPTERPAGE123A.pdf', // This page has multiple variants
+        '125': 'AMCHAPTERPAGE125A.pdf', // This page has multiple variants
+        '127': 'AMCHAPTERPAGE127A.pdf', // This page has multiple variants
+        '128': 'AMCHAPTERPAGE128A.pdf', // This page has multiple variants
+        '129': 'AMCHAPTERPAGE129A.pdf', // This page has multiple variants
+        '130': 'AMCHAPTERPAGE130A.pdf', // This page has multiple variants
+        '131': 'AMCHAPTERPAGE131A.pdf', // This page has multiple variants
+        '132': 'AMCHAPTERPAGE132A.pdf', // This page has multiple variants
+        '133': 'AMCHAPTERPAGE133A.pdf', // This page has multiple variants
+        '134': 'AMCHAPTERPAGE134A.pdf'  // This page has multiple variants
       }
       
       if (specialCases[pageNumber]) {
         pdfPath = `/ampdfs/am-chapter-pages/${specialCases[pageNumber]}`
       } else {
-        pdfPath = `/ampdfs/am-chapter-pages/AMPAGE${pageNumber}.pdf`
+        pdfPath = `/ampdfs/am-chapter-pages/AMCHAPTERPAGE${pageNumber}.pdf`
       }
     }
     

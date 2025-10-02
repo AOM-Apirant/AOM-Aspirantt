@@ -33,7 +33,7 @@ const AMChapters = () => {
   }
 
   const openPDF = (pageNumber: string) => {
-    const pdfPath = `/ampdfs/am-chapter-pages/AMPAGE${pageNumber.toUpperCase()}.pdf`
+    const pdfPath = `/ampdfs/am-chapter-pages/AMCHAPTERPAGE${pageNumber.toUpperCase()}.pdf`
 
     setOpeningPDF(pageNumber)
 

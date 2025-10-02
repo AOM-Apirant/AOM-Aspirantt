@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const AMAppendixPage188 = () => {
+const AMAppendixPage188A = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-900 via-orange-900 to-yellow-900 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -105,4 +105,4 @@ const AMAppendixPage188 = () => {
   )
 }
 
-export default AMAppendixPage188
+export default AMAppendixPage188A
