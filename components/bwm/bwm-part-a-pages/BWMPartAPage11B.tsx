@@ -2,7 +2,9 @@ import React from 'react'
 
 const BWMPartAPage11B = () => {
   return (
-    <div>BWMPartAPage11B</div>
+    <div>
+      
+    </div>
   )
 }
 
