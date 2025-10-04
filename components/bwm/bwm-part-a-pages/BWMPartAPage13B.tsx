@@ -45,193 +45,211 @@ const BWMPartAPage13B = () => {
                         <div className="flex items-start gap-3">
                           <span className="text-blue-400 text-xl mt-1">🚂</span>
                           <div>
-                            <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                               Taking &apos;X&apos; and &apos;Y&apos; as two consecutive Block Stations, the sequential procedure for despatching a train, cancelling Line Clear etc., are detailed below. Before asking for Line Clear on controlled sections, the Station Master shall obtain the permission of the Controller.
                             </p>
                           </div>
                         </div>
 
-                        {/* 
-                          ఈ భాగం పూర్తిగా ఇంగ్లీష్‌లో టేబుల్ ఫార్మాట్‌లో ఉంది. 
-                          Content is already in English and table format as per the instructions.
-                        */}
                         <div className="mb-6">
                           <h3 className="text-lg lg:text-xl font-semibold text-blue-300 mb-2">
-                            A) Token Block Instruments – Despatching a Train
+                            A) Token block instruments – Despatching a train.
                           </h3>
                           <div className="text-gray-200 mb-2">
-                            <span className="font-semibold">Sending Station:</span> ‘X’ &nbsp; | &nbsp;
-                            <span className="font-semibold">Receiving Station:</span> ‘Y’
+                            <span className="font-semibold">Sending Station:</span> &apos;X&apos; &nbsp; | &nbsp;
+                            <span className="font-semibold">Receiving Station:</span> &apos;Y&apos;
                           </div>
                           <div className="overflow-x-auto">
                             <table className="min-w-full border border-blue-400/20 rounded-lg bg-gradient-to-r from-blue-900/40 to-indigo-900/40 text-gray-100">
                               <thead>
                                 <tr>
                                   <th className="px-3 py-2 border-b border-blue-400/20 text-left">Step</th>
-                                  <th className="px-3 py-2 border-b border-blue-400/20 text-left">Action</th>
+                                  <th className="px-3 py-2 border-b border-blue-400/20 text-left">Sending Station &apos;X&apos;</th>
+                                  <th className="px-3 py-2 border-b border-blue-400/20 text-left">Receiving Station &apos;Y&apos;</th>
                                 </tr>
                               </thead>
                               <tbody className="divide-y divide-blue-400/10">
                                 <tr>
                                   <td className="px-3 py-2">1</td>
-                                  <td className="px-3 py-2">Insert SM’s Key and turn.</td>
+                                  <td className="px-3 py-2">Insert SM&apos;s Key and turn.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">2</td>
-                                  <td className="px-3 py-2">Give ‘Call attention’ signal.</td>
+                                  <td className="px-3 py-2">Give &apos;Call attention&apos; signal</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">3</td>
-                                  <td className="px-3 py-2">Insert SM’s Key and turn.</td>
+                                  <td className="px-3 py-2">-</td>
+                                  <td className="px-3 py-2">Insert SM&apos;s Key and turn.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">4</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">Acknowledge. Attend telephone and give out station name.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">5</td>
                                   <td className="px-3 py-2">On receipt of acknowledgement, attend telephone. Give out station name.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">6</td>
-                                  <td className="px-3 py-2">After ensuring correct station has responded, ask for ‘Is line clear for ------- train’.</td>
+                                  <td className="px-3 py-2">After ensuring correct station has responded, ask for &apos;Is line clear for ------- train&apos;</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">7</td>
-                                  <td className="px-3 py-2">Ensure correctness of station to which ‘Line Clear’ is required to be given. If line is clear and conditions for granting ‘Line Clear’ are complied with, inform ‘Line is clear’ for train and give Private Number (e.g., 24 - two, four).</td>
+                                  <td className="px-3 py-2">-</td>
+                                  <td className="px-3 py-2">Ensure correctness of station to which &apos;Line Clear&apos; is required to be given. If line is clear and conditions for granting &apos;Line Clear&apos; are complied with, inform &apos;Line is clear&apos; for train and give Private Number ---- (Ex..24-two, four).</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">8</td>
                                   <td className="px-3 py-2">Repeat the Private Number.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">9</td>
-                                  <td className="px-3 py-2">Give ‘Call Attention’ signal.</td>
+                                  <td className="px-3 py-2">Give &apos;Call Attention&apos; signal.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">10</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">Acknowledge.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">11</td>
-                                  <td className="px-3 py-2">Give ‘Is Line Clear’ signal. Prolong the last beat.</td>
+                                  <td className="px-3 py-2">Give &apos;Is Line Clear&apos; signal. Prolong the last beat.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">12</td>
-                                  <td className="px-3 py-2">Turn the Operating handle to ‘Train Coming From’ position. Acknowledge ‘Is Line Clear’ signal. Prolong the last beat till the needle of Galvanometer deflects.</td>
+                                  <td className="px-3 py-2">Turn the Operating Handle to &apos;Train Going To&apos; position, a token comes out.</td>
+                                  <td className="px-3 py-2">Turn the Operating handle to &apos;Train Coming From&apos; position. Acknowledge &apos;Is Line Clear&apos; signal. Prolong the last beat till the needle of Galvanometer deflects.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">13</td>
-                                  <td className="px-3 py-2">Turn the Operating Handle to ‘Train Going To’ position, a token comes out.</td>
+                                  <td className="px-3 py-2">-</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">14</td>
-                                  <td className="px-3 py-2">Give ‘Call attention’ signal.</td>
+                                  <td className="px-3 py-2">Give &apos;Call attention&apos; signal</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">15</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">Acknowledge and attend telephone.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">16</td>
                                   <td className="px-3 py-2">Give token number and class.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">17</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">Repeat token number with class.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">18</td>
                                   <td className="px-3 py-2">
-                                    <div className="mb-1">a) Take ‘OFF’ Last Stop Signal, if any.</div>
+                                    <div className="mb-1">a) Take &apos;OFF&apos; Last Stop Signal, if any.</div>
                                     <div className="mb-1">b) Hand over token to Driver.</div>
-                                    <div>c) On train entering the block section put back the Last Stop Signal if any, to ‘ON’.</div>
+                                    <div>c) On train entering the block section put back the Last Stop Signal if any, to &apos;ON&apos;.</div>
                                   </td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">19</td>
-                                  <td className="px-3 py-2">Send ‘Call attention’ signal.</td>
+                                  <td className="px-3 py-2">Send &apos;Call attention&apos; signal.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">20</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">Acknowledge.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">21</td>
-                                  <td className="px-3 py-2">Give ‘Train entering block section’ signal.</td>
+                                  <td className="px-3 py-2">Give &apos;Train entering block section&apos; signal.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">22</td>
+                                  <td className="px-3 py-2">Attend telephone and give departure time.</td>
                                   <td className="px-3 py-2">Acknowledge, attend telephone and note departure time.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">23</td>
-                                  <td className="px-3 py-2">Attend telephone and give departure time.</td>
+                                  <td className="px-3 py-2">-</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">24</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">
-                                    <div className="mb-1">a) Take ‘OFF’ reception signals.</div>
+                                    <div className="mb-1">a) Take &apos;OFF&apos; reception signals.</div>
                                     <div className="mb-1">b) Ensure that train has arrived complete.</div>
-                                    <div className="mb-1">c) Put back reception signals to ‘ON’.</div>
+                                    <div className="mb-1">c) Put back reception signals to &apos;ON&apos;.</div>
                                     <div className="mb-1">d) Obtain the token from the Driver and ensure its correctness.</div>
                                     <div>e) Insert the token into block instrument.</div>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">25</td>
-                                  <td className="px-3 py-2">Give ‘Call attention’ signal, attend telephone and give arrival time.</td>
+                                  <td className="px-3 py-2">Give &apos;Call attention&apos; signal, attend telephone and give arrival time.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">26</td>
+                                  <td className="px-3 py-2">-</td>
                                   <td className="px-3 py-2">Acknowledge, attend telephone and note arrival time.</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">27</td>
-                                  <td className="px-3 py-2">Give ‘Train out of block section’ signal. Prolong the last beat.</td>
+                                  <td className="px-3 py-2">Give &apos;Train out of block section&apos; signal. Prolong the last beat.</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">28</td>
+                                  <td className="px-3 py-2">Turn the operating handle to &apos;Line closed&apos; position</td>
                                   <td className="px-3 py-2">
-                                    <div>Turn the Operating Handle to ‘Line closed’ position.</div>
-                                    <div>Acknowledge the ‘Train out of block section’ signal. Prolong the last beat.</div>
+                                    <div className="mb-1">Turn the Operating Handle to &apos;Line closed&apos; position.</div>
+                                    <div className="mb-1">Acknowledge the &apos;Train out of block section&apos; signal.</div>
+                                    <div>Prolong the last beat.</div>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td className="px-3 py-2">29</td>
-                                  <td className="px-3 py-2">Turn the operating handle to ‘Line closed’ position.</td>
+                                  <td className="px-3 py-2">-</td>
+                                  <td className="px-3 py-2">-</td>
                                 </tr>
                               </tbody>
                             </table>
                           </div>
                         </div>
 
-                        <div className="mt-6 bg-blue-900/30 border border-blue-400/20 rounded-xl p-4">
-                          <div className="flex items-center mb-2">
-                            <span className="text-blue-300 text-xl mr-2">💡</span>
-                            <span className="text-blue-200 font-semibold">Important Note:</span>
-                          </div>
+                        <div className="mt-6 p-4 bg-gradient-to-r from-blue-800/30 to-indigo-800/30 rounded-xl border border-blue-400/20 shadow-inner">
+                          <h4 className="text-blue-300 font-semibold text-lg mb-2 flex items-center gap-2">
+                            <span className="text-xl">📝</span>
+                            Important Note on Galvanometer Deflection
+                          </h4>
                           <p className="text-gray-200 mb-2">
-                            Before turning the Operating Handle, always ensure the Galvanometer is showing the correct deflection as per the following conditions:
+                            <span className="font-semibold">Before operating the handle, always ensure the Galvanometer is deflecting correctly as per the following conditions:</span>
                           </p>
-                          <ul className="list-none space-y-2 pl-0 text-white">
-                            <li className="flex items-start">
-                              <span className="mr-2 text-green-400">🔒</span>
-                              <span>
-                                <span className="font-semibold">Both instruments in ‘Line Closed’ position:</span> Incoming and outgoing beats give <span className="text-green-300 font-semibold">clockwise</span> deflections.
-                              </span>
+                          <ul className="list-decimal list-inside text-gray-100 space-y-1 pl-2">
+                            <li>
+                              <span className="font-semibold">Both instruments in &lsquo;Line Closed&rsquo; position:</span> Incoming and outgoing beats show <span className="text-blue-200 font-semibold">clockwise</span> deflections.
                             </li>
-                            <li className="flex items-start">
-                              <span className="mr-2 text-yellow-400">🔑</span>
-                              <span>
-                                <span className="font-semibold">Both instruments not in ‘Line Closed’ position and a token is out:</span> Incoming and outgoing beats give <span className="text-yellow-300 font-semibold">anticlockwise</span> deflections.
-                              </span>
+                            <li>
+                              <span className="font-semibold">Both instruments not in &lsquo;Line Closed&rsquo; position and a token is out:</span> Incoming and outgoing beats show <span className="text-blue-200 font-semibold">anticlockwise</span> deflections.
                             </li>
-                            <li className="flex items-start">
-                              <span className="mr-2 text-purple-400">🔄</span>
-                              <span>
-                                <span className="font-semibold">Each instrument not in the same position:</span> Outgoing and incoming beats give deflections in <span className="text-purple-300 font-semibold">opposite directions</span>.
-                              </span>
+                            <li>
+                              <span className="font-semibold">Each instrument not in &lsquo;Line Closed&rsquo; position:</span> Outgoing and incoming beats show deflections in <span className="text-blue-200 font-semibold">opposite directions</span>.
                             </li>
                           </ul>
                         </div>

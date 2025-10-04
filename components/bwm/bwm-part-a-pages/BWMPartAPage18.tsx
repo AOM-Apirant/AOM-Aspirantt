@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const BWMPartAPage21A = () => {
+const BWMPartAPage18 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -23,17 +23,19 @@ const BWMPartAPage21A = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.7
+              3.5
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">The &apos;Call attention&apos; signal</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Outlying sidings controlled by the token of the block section</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
+            <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              General Rule 3.35 - Token-controlled siding operations
+            </p>
           </div>
 
           {/* Content Section */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-3 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
             <div className="space-y-8">
-              
-              {/* Point a */}
+              {/* Main Rule Section */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
@@ -43,15 +45,40 @@ const BWMPartAPage21A = () => {
                   </div>
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
-                      <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        The &apos;Call attention&apos; signal shall be given when it is necessary to direct the attention of the Station Master at the other end of the block section on the block instrument.
-                      </p>
+                      <div className="space-y-4">
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                          Outlying sidings, taking off the running line, are provided on certain block sections. The points taking off the running line to such sidings are provided with locking arrangements, the siding lock being controlled and operated by the &apos;token&apos; of the block section.
+                        </p>
+                        
+                        <div className="space-y-3 ml-6">
+                          <div className="flex items-start gap-3">
+                            <span className="mt-1 text-blue-400">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 lg:text-lg text-base">
+                              On certain sidings, key token exchanger (siding key apparatus) is in use. At these sidings the key token is inserted into the exchanger to release the siding key which shall be used to unlock the siding lock.
+                            </span>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <span className="mt-1 text-indigo-400">
+                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </span>
+                            <span className="text-gray-200 lg:text-lg text-base">
+                              On the sections worked with Neale&apos;s (ball or tablet) token instrument, where such tokens cannot be directly inserted into the siding locks, a token key exchanger(siding key apparatus) is provided at the siding. The ball or the tablet shall be inserted into the apparatus to release the siding key which shall, in turn be inserted into the siding lock and the lock unlocked for performing shunting into and out of the siding.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Point b */}
+              {/* Auxiliary Token Section */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
@@ -62,14 +89,14 @@ const BWMPartAPage21A = () => {
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        In order to ascertain that only the correct block station is in contact and to convey the description and number of the train for which &apos;Line clear&apos; is required, as well as to ascertain whether the block station in advance is in a position to accept the &apos;Is line clear&apos; signal, the &apos;Call attention&apos; signal shall be sent to the block station in advance.
+                        On busy sections where the regular train services are not to be dislocated by the work inside such siding i.e., where the service has to be maintained even before the shunting train sent into the siding returns to either of the block stations auxiliary token (occupation block) instruments are provided, one instrument at one of the two adjacent block stations and the other at the siding itself. With this arrangement, it is possible after shunting the train into the siding, to set and lock the points for the main line and clear the block section maintaining the main line trains services.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Point c */}
+              {/* Station Working Rules Section */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
@@ -80,13 +107,38 @@ const BWMPartAPage21A = () => {
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        &apos;X&apos; shall call Y&apos;s attention by giving single beat until Y&apos;s attention is obtained. &apos;Y&apos; shall signify his attention by acknowledging it with one beat.
+                        Detailed instructions for working the sidings shall be incorporated in the Station Working Rules of the stations concerned.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
+          {/* Key Points Summary */}
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 mt-6 border border-white/20">
+            <h3 className="lg:text-3xl text-2xl font-bold text-white mb-6 text-center flex flex-col gap-3 items-center justify-center">
+              <span className="bg-gradient-to-r from-blue-500 to-indigo-500 lg:p-3 p-2 rounded-full mr-4">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              Key Components
+            </h3>
+            <div className="grid lg:grid-cols-3 gap-2 lg:gap-6">
+              <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
+                <span className="text-blue-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">🔑</span>
+                <span className="text-gray-200 lg:text-lg text-base">Key token exchanger</span>
+              </div>
+              <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
+                <span className="text-indigo-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">⚡</span>
+                <span className="text-gray-200 lg:text-lg text-base">Auxiliary token instruments</span>
+              </div>
+              <div className="flex items-start group hover:bg-white/5 lg:p-4 p-2 rounded-lg transition-all duration-300">
+                <span className="text-purple-400 mr-4 mt-1 lg:text-2xl text-xl group-hover:scale-110 transition-transform">📋</span>
+                <span className="text-gray-200 lg:text-lg text-base">Station Working Rules</span>
+              </div>
             </div>
           </div>
         </div>
@@ -105,4 +157,4 @@ const BWMPartAPage21A = () => {
   )
 }
 
-export default BWMPartAPage21A
+export default BWMPartAPage18
