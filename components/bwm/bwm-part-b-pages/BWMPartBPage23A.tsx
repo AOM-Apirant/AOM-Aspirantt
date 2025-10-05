@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const BWMPartBPage17B: React.FC = () => {
+const BWMPartBPage23A: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -25,7 +25,7 @@ const BWMPartBPage17B: React.FC = () => {
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               CHAPTER II
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">BLOCK COMPETENCY CERTIFICATE</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">INSPECTION OF TRAIN SIGNAL REGISTER</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
@@ -36,37 +36,30 @@ const BWMPartBPage17B: React.FC = () => {
                 
                 <div className="space-y-6">
                   <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">2.2. Block Competency Certificate: (G.R.14.04)</h3>
+                    <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">2.8. Inspection of Train Signal Register:</h3>
                     
                     <div className="space-y-6">
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">a) Principal of Zonal Railway Training Institute/Moula-Ali:</h4>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          The Principal of the Zonal Railway Training Institute/Moula- Ali is responsible for the proper Initial/Refresher training of the staff in the rules connected with Block working. After the staff are declared successful in the examination held for this purpose, he shall grant the necessary competency certificate in respect of all the block instruments. Such certificates shall be valid only for a period of three years from the date of their issue. The certificate should be issued by the Principal of the ZRTI/ MLY under his signature for those who attend the Initial/ Refresher course.
+                          <span className="font-bold text-blue-300">a)</span> The Train Signal Register in use shall be checked and signed by the Station Master in charge of the Station daily and his signature in the remarks column (at the end of the entries for the previous day) will be considered as a certificate and all trains have been duly and correctly entered in their regular course and sequence that he has taken note of the irregularities of any description recorded in the Train Signal Register and also those observed by him in the course of his check.
                         </p>
                       </div>
 
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">b) Principal, STTC / MLY:</h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
-                          Principal, STTC / MLY is authorised to issue the Block Competency Certificate to the Signal Maintainers who are required to maintain and test the block instruments. The certificate should be issued after successful completion of Initial / Refresher course which is valid for a period of four years.
-                        </p>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          As a temporary measure , DSTE / ADSTE of the divisions can extend the validity of BCC for one year. However, only one such extension is permissible.
+                          <span className="font-bold text-blue-300">b)</span> The Train Signal Register shall also be examined and signed by the Traffic Inspector / Signal Inspector of the section whenever he visits the station and inspects the block room in the course of his duties.
                         </p>
                       </div>
 
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">c) Staff Transfer and Testing:</h4>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          If the staff, working for a year or more at stations where they are not required to operate the Block Instruments, are transferred to a station where they are required to operate the Block Instruments, they shall not be allowed to operate the Block Instruments, even though they are in possession of valid block competency certificate. They should be tested locally by the Traffic inspector concerned and an endorsement made by the Senior Divisional Operations Manager / Divisional Operations Manager of the Division on the Block Competency Certificate before they are put to operate Block Instruments.
+                          <span className="font-bold text-blue-300">c)</span> Irregularities, if any, shall be noted in the Train Signal Register and brought to the notice of officials concerned.
                         </p>
                       </div>
 
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">d) Certificate Custody:</h4>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          The BCC shall be kept in the personal custody of the staff while on duty and produced for inspection on demand by the inspecting officials.
+                          <span className="font-bold text-blue-300">d)</span> The Train Signal Register in use shall not be removed from the Cabin or the room, in which block instruments are placed without the orders of the DRM.
                         </p>
                       </div>
                     </div>
@@ -91,4 +84,4 @@ const BWMPartBPage17B: React.FC = () => {
   )
 }
 
-export default BWMPartBPage17B
+export default BWMPartBPage23A
