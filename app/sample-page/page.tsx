@@ -1,10 +1,11 @@
 import React from 'react'
-import BWMPartBPage55B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage55B'
+import BWMPartCPage1A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage1A'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-        <BWMPartBPage55B/>
+        <BWMPartCPage1A/>
+
     </div>
   )
 }
