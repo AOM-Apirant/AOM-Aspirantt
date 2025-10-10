@@ -86,6 +86,12 @@ export const alertAdvicePdfFiles = [
     subject: "Running trains without Guard (SR 4.25.4) & Duties LP/ALP in absence of Guard",
     date: "02/09/2025",
   },
+  {
+    name: "Alert Advice 15 of 2025",
+    filename: "Alert Advice 15 of 2025.pdf",
+    subject: "Shunting on Hand operated points precautions",
+    date: "03/10/2025",
+  },
 ];
 
 export const flyLeafPdfFiles = [
@@ -316,6 +322,11 @@ export const fortnightlySafetyBulletinPdfFiles = [
     name: "Fortnightly Safety Bulletin August 2nd FN 2025",
     filename: "Fortnightly Safety Bulletin August 2nd FN 2025.pdf",
     date: "31/08/2025",
+  },
+  {
+    name: "Fortnightly Safety Bulletin September 2nd FN 2025",
+    filename: "Fortnightly Safety Bulletin September 2nd FN 2025.pdf",
+    date: "31/09/2025",
   },
   
 ];
