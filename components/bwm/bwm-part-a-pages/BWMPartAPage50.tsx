@@ -30,28 +30,59 @@ const BWMPartAPage50: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
-              <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div className="text-center mb-8">
-                  <h5 className="lg:text-xl text-lg font-bold text-blue-300 mb-4">8.6. Procedure to be adopted when the &apos;Train entering block section&apos; signal cannot be given owing to the Block Instrument having failed after the departure of the train or before clearing the block section for the train:</h5>
-                </div>
+          <div className="space-y-8">
+            {/* Section Title */}
+            <div className="text-center">
+              <div className="inline-block bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl py-4 px-8 border border-white/20">
+                <h5 className="lg:text-xl text-lg font-bold text-blue-300">8.6. Procedure to be adopted when the &apos;Train entering block section&apos; signal cannot be given owing to the Block Instrument having failed after the departure of the train or before clearing the block section for the train:</h5>
+              </div>
+            </div>
 
-                <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+            {/* Point A */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">a</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-blue-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-blue-300">Post-Departure Signal Failure</h3>
+                    </div>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">a)</span> If, after the departure of a train the &apos;Train entering block section&apos; signal or &apos;Train out of block section&apos; signal for the train cannot be given to the station &apos;Y&apos; owing to the block instrument having failed, &apos;X&apos; shall enter the time of departure/arrival in the Train Signal Register in red ink and communicate to &apos;Y&apos; or &apos;X&apos; by alternative means of communication and exchange messages as per para (d) of 8.5.above.
+                      If, after the departure of a train the &apos;Train entering block section&apos; signal or &apos;Train out of block section&apos; signal for the train cannot be given to the station &apos;Y&apos; owing to the block instrument having failed, &apos;X&apos; shall enter the time of departure/arrival in the Train Signal Register in red ink and communicate to &apos;Y&apos; or &apos;X&apos; by alternative means of communication and exchange messages as per para (d) of 8.5.above.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+            {/* Point B */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">b</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-purple-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-purple-300">Train Arrival Communication Protocol</h3>
+                    </div>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                      <span className="font-semibold text-blue-300">b)</span> Whenever token working is suspended before the block section has been cleared on the token instrument for the train which last occupied the block section, the Station Master at &apos;Y&apos; shall, on arrival of the train, enter the time of arrival in the Train Signal Register in red ink and send the following message by telephone to the Station Master at &apos;X&apos;.
+                      Whenever token working is suspended before the block section has been cleared on the token instrument for the train which last occupied the block section, the Station Master at &apos;Y&apos; shall, on arrival of the train, enter the time of arrival in the Train Signal Register in red ink and send the following message by telephone to the Station Master at &apos;X&apos;.
                     </p>
-                    <div className="bg-white/10 rounded-lg p-6 border border-white/20 ml-6">
+                    <div className="bg-white/10 rounded-lg py-3 px-2 border border-white/20">
                       <div className="space-y-4">
-                        <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                          <h6 className="text-blue-300 font-bold text-lg mb-3">Message to be sent:</h6>
+                        <div className="bg-white/5 rounded-lg py-3 px-2 border border-white/10">
+                          <h6 className="text-purple-300 font-bold text-lg mb-3">Message to be sent:</h6>
                           <div className="space-y-2 text-gray-200">
                             <p className="lg:text-base text-sm leading-relaxed">No. ………….</p>
                             <p className="lg:text-base text-sm leading-relaxed">Train (number and description) …………… arrived here complete at ………hrs.</p>
@@ -63,7 +94,7 @@ const BWMPartAPage50: React.FC = () => {
                           <p className="text-gray-200 lg:text-base text-sm leading-relaxed mb-3">
                             The Station Master at &apos;X&apos; shall record the time of arrival in his Train Signal Register in red ink and then acknowledge the message as under:
                           </p>
-                          <h6 className="text-blue-300 font-bold text-lg mb-3">Acknowledgement:</h6>
+                          <h6 className="text-purple-300 font-bold text-lg mb-3">Acknowledgement:</h6>
                           <div className="space-y-2 text-gray-200">
                             <p className="lg:text-base text-sm leading-relaxed">No. ……………..</p>
                             <p className="lg:text-base text-sm leading-relaxed">Your number ……………… Understand the train (number and description) ……….. arrived at your station complete at …..hrs.</p>

@@ -23,26 +23,66 @@ const BWMPartAPage32: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              5.6
+              CHAPTER - V
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">&apos;Stop and examine train&apos; signal</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">5.6 &apos;Stop and examine train&apos; signal</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
-              <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">a)</span> When the Station Master at &apos;X&apos; observes anything unusual (other than the Tail lamp or Tail board missing) on a train during its passage through his station, such as goods falling off, a vehicle on fire, broken axle or coupling etc., rendering it necessary to stop such trains at the next station, the &apos;Stop and examine train&apos; signal shall be sent to &apos;Y&apos;, the station in advance intimating the nature of the irregularity observed. The Station Master at &apos;Y&apos; shall acknowledge this signal by repeating it. He shall examine the train on arrival, stopping run through trains out of course for the purpose and take remedial action. On ensuring that the line is clear, he shall send to the station &apos;X&apos; the &apos;Train out of block section&apos; signal, which will be an intimation that all is right.
-                  </p>
+          <div className="space-y-6">
+            {/* Point A */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">a</span>
+                    </div>
+                    
+                  </div>
                 </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-blue-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      
+                      <h3 className="text-xl font-semibold text-blue-300">Station Master at &apos;X&apos; - Forward Action</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      When the Station Master at &apos;X&apos; observes anything unusual (other than the Tail lamp or Tail board missing) on a train during its passage through his station, such as goods falling off, a vehicle on fire, broken axle or coupling etc., rendering it necessary to stop such trains at the next station, the &apos;Stop and examine train&apos; signal shall be sent to &apos;Y&apos;, the station in advance intimating the nature of the irregularity observed. The Station Master at &apos;Y&apos; shall acknowledge this signal by repeating it. He shall examine the train on arrival, stopping run through trains out of course for the purpose and take remedial action. On ensuring that the line is clear, he shall send to the station &apos;X&apos; the &apos;Train out of block section&apos; signal, which will be an intimation that all is right.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> If the Station Master at &apos;X&apos; observing the unusual occurrence suspects that it would have caused damage or obstruction to the block section in rear, he shall inform the Station Master &apos;W&apos; in rear, the nature of irregularity. Both the Station Masters should issue caution orders for trains entering the block section until it is confirmed that all is right.
-                  </p>
+            {/* Point B */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">b</span>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-purple-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      
+                      <h3 className="text-xl font-semibold text-purple-300">Station Master at &apos;X&apos; - Rear Action</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      If the Station Master at &apos;X&apos; observing the unusual occurrence suspects that it would have caused damage or obstruction to the block section in rear, he shall inform the Station Master &apos;W&apos; in rear, the nature of irregularity. Both the Station Masters should issue caution orders for trains entering the block section until it is confirmed that all is right.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

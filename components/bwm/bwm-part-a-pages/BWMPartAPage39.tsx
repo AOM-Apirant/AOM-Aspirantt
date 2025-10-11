@@ -38,9 +38,49 @@ const BWMPartAPage39: React.FC = () => {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                    When a defective token is removed from or a new token is inserted into a block instrument, an entry shall be made in the Train Signal Register showing the class and the number of the token removed or inserted, the reasons therefor and the time at which it is done. These entries shall be made in red ink and signed by the Signal Inspector or any other authorised official and countersigned by the Station Master.
-                  </p>
+                  <ul className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4 text-left max-w-2xl mx-auto">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 text-xl mt-1">🔧</span>
+                      <span>
+                        <b>When a defective token is removed</b> or <b>a new token is inserted</b> into a block instrument,
+                        <br />
+                        an entry must be made in the <span className="text-indigo-200 font-semibold">Train Signal Register</span>.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 text-xl mt-1">📋</span>
+                      <span>
+                        The entry should display:
+                        <ul className="list-none ml-2 mt-2 space-y-1">
+                          <li className="flex items-center gap-1">
+                            <span className="text-indigo-300 text-lg">#️⃣</span>
+                            <span>Class and number of the token removed or inserted</span>
+                          </li>
+                          <li className="flex items-center gap-1">
+                            <span className="text-indigo-300 text-lg">📝</span>
+                            <span>Reasons for removal or insertion</span>
+                          </li>
+                          <li className="flex items-center gap-1">
+                            <span className="text-indigo-300 text-lg">⏰</span>
+                            <span>Date and time of the action</span>
+                          </li>
+                        </ul>
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 text-xl mt-1">🖊️</span>
+                      <span>
+                        These entries must be written in <span className="text-red-400 font-semibold">red ink</span>.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 text-xl mt-1">✅</span>
+                      <span>
+                        The entry must be <b>signed by the Signal Inspector</b> or any authorised official, <br />
+                        and <b>countersigned by the Station Master</b>.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

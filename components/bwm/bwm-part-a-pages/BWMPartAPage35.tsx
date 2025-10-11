@@ -23,70 +23,186 @@ const BWMPartAPage35: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              5.10
+              CHAPTER - V
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Precautions when Government or Railway Telecommunication staff require to work on the telecommunication wires</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">5.10 Precautions when Government or Railway Telecommunication staff require to work on the telecommunication wires</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
-              <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">a)</span> Before the Government or Railway Telecommunication Branch commences work on any line between any two stations, likely to affect train signalling, the Government or Railway Telecommunication official in charge of the work shall give notice to the Station Masters at both ends of the block section in the following form:–
-                  </p>
-                  
-                  {/* Notice Form */}
-                  <div className="bg-white/5 rounded-lg p-6 my-6 border border-white/10">
-                    <div className="space-y-4">
-                      <div className="text-center">
-                        <p className="text-blue-300 font-semibold">To</p>
-                        <p className="text-indigo-300">SMs X and Y</p>
-                      </div>
-                      <div className="text-center">
-                        <p className="text-gray-300">Telecommunication line party will commence work on wires; section from</p>
-                        <p className="text-gray-300">………………to ……….on ………… from ........... hours.</p>
-                      </div>
-                      <div className="text-center">
-                        <p className="text-blue-300 font-semibold">Acknowledge</p>
-                        <p className="text-gray-300">… ...................... (Designation)</p>
-                        <p className="text-gray-300">… ............................ (Station)</p>
-                        <p className="text-gray-300">… ............................... (Date)</p>
+          <div className="space-y-6">
+            {/* Point A */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">a</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-blue-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-blue-300">Notice Requirement Before Work Commencement</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
+                      Before the Government or Railway Telecommunication Branch commences work on any line between any two stations, likely to affect train signalling, the Government or Railway Telecommunication official in charge of the work shall give notice to the Station Masters at both ends of the block section in the following form:–
+                    </p>
+                    
+                    {/* Notice Form */}
+                    <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="space-y-4">
+                        <div className="text-center">
+                          <p className="text-blue-300 font-semibold">To</p>
+                          <p className="text-indigo-300">SMs X and Y</p>
+                        </div>
+                        <div className="text-center">
+                          <p className="text-gray-300">Telecommunication line party will commence work on wires; section from</p>
+                          <p className="text-gray-300">………………to ……….on ………… from ........... hours.</p>
+                        </div>
+                        <div className="text-center">
+                          <p className="text-blue-300 font-semibold">Acknowledge</p>
+                          <p className="text-gray-300">...................... (Designation)</p>
+                          <p className="text-gray-300">............................ (Station)</p>
+                          <p className="text-gray-300">............................... (Date)</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> Both the Station Masters shall immediately acknowledge the notice as in no circumstances may the work be commenced until these acknowledgements have been received. If the notice is from the Government Telecommunication official in charge, the Station Masters shall promptly communicate it to the Signal Inspector and DRM / T and S&T, through Control. If the notice is from the Railway Telecommunication official in charge, the Station Master shall promptly communicate it to the DRM/ T and S&T.
-                  </p>
+            {/* Point B */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">b</span>
+                    </div>
+                  </div>
                 </div>
-
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">c)</span> On receipt of the above warning, block working need not be suspended, but Station Masters shall be particularly careful to carry out the instructions for suspending block working, if they suspect a contact or notice any defect in the working of block instruments.
-                  </p>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-purple-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-purple-300">Acknowledgement and Communication Protocol</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      Both the Station Masters shall immediately acknowledge the notice as in no circumstances may the work be commenced until these acknowledgements have been received. If the notice is from the Government Telecommunication official in charge, the Station Masters shall promptly communicate it to the Signal Inspector and DRM / T and S&T, through Control. If the notice is from the Railway Telecommunication official in charge, the Station Master shall promptly communicate it to the DRM/ T and S&T.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">d)</span> These precautions shall be observed until notice is received about the completion of the work on the telecommunication wires. The notice of completion of the work shall be communicated to all concerned.
-                  </p>
+            {/* Point C */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">c</span>
+                    </div>
+                  </div>
                 </div>
-
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">e)</span> A copy of the rules relating to the undertaking of work on the wires shall be supplied to all Engineering Supervisors, General Line Inspectors and Sub-Inspectors of the Government Telecommunication Department. All Sub-Divisional Officers, construction and Supervisory Officials shall take personal action to ensure that these rules are explained to all members of the line staff and satisfy themselves that these rules have been fully understood, and that they will be duly carried out. Similarly, the S&T department will adhere to these rules when the block line wires are under S&T department,
-                  </p>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 lg:p-6 py-4 px-4 rounded-xl border border-emerald-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-emerald-300">Block Working Precautions</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      On receipt of the above warning, block working need not be suspended, but Station Masters shall be particularly careful to carry out the instructions for suspending block working, if they suspect a contact or notice any defect in the working of block instruments.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">f)</span> The Station Masters shall ordinarily approve of the work being undertaken on line wire unless any important or special is due to travel over the section, when it is essential that the block instruments shall be in proper working order.
-                  </p>
+            {/* Point D */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">d</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-orange-500/10 to-amber-500/10 lg:p-6 py-4 px-4 rounded-xl border border-orange-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-orange-300">Work Completion Notice</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      These precautions shall be observed until notice is received about the completion of the work on the telecommunication wires. The notice of completion of the work shall be communicated to all concerned.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Point E */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">e</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 lg:p-6 py-4 px-4 rounded-xl border border-pink-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-pink-300">Rules Distribution and Training</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      A copy of the rules relating to the undertaking of work on the wires shall be supplied to all Engineering Supervisors, General Line Inspectors and Sub-Inspectors of the Government Telecommunication Department. All Sub-Divisional Officers, construction and Supervisory Officials shall take personal action to ensure that these rules are explained to all members of the line staff and satisfy themselves that these rules have been fully understood, and that they will be duly carried out. Similarly, the S&T department will adhere to these rules when the block line wires are under S&T department,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Point F */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">f</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 lg:p-6 py-4 px-4 rounded-xl border border-cyan-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-cyan-300">Work Approval Considerations</h3>
+                    </div>
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                      The Station Masters shall ordinarily approve of the work being undertaken on line wire unless any important or special is due to travel over the section, when it is essential that the block instruments shall be in proper working order.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

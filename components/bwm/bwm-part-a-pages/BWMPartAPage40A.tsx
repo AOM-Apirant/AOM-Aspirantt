@@ -30,23 +30,83 @@ const BWMPartAPage40A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
-              <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div className="text-center mb-8">
-                  <h5 className="lg:text-2xl text-xl font-bold text-blue-300 mb-4">7.6. Replacement of Token Instruments:</h5>
-                </div>
+          <div className="space-y-8">
+            {/* Section Title */}
+            <div className="text-center">
+              <div className="inline-block bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl py-4 px-8 border border-white/20">
+                <h5 className="lg:text-2xl text-xl font-bold text-blue-300">7.6. Replacement of Token Instruments:</h5>
+              </div>
+            </div>
 
-                <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">a)</span> Whenever a Token block instrument in use at a station is replaced by another of the same type and class, the Station Master shall satisfy himself that all the tokens which were in the old block instrument are transferred to the new one. An entry in red ink shall be made by the Signal Inspector or any other authorised official, in the Train Signal Register, giving the time and date on which the change of instrument has been effected, with the individual number of each token transferred, and signed by him. The entry shall be countersigned by the Station Master with a further remark regarding the test of the instrument made by him and the result of the same.
-                    </p>
+            {/* Point A */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">a</span>
+                    </div>
                   </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-blue-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-blue-300">Same Type and Class Replacement</h3>
+                    </div>
+                    <ul className="space-y-4 lg:text-lg text-base text-gray-200 leading-relaxed">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-400 text-xl mt-1">🔄</span>
+                        <span>
+                          When a Token block instrument at a station is replaced by another of the <span className="font-semibold text-blue-300">same type and class</span>, the Station Master must ensure that <span className="font-semibold">all tokens from the old instrument are transferred to the new one</span>.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-400 text-xl mt-1">🖊️</span>
+                        <span>
+                          An <span className="font-semibold text-red-400">entry in red ink</span> must be made by the Signal Inspector or any authorised official in the Train Signal Register.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-300 text-xl mt-1">⏰</span>
+                        <span>
+                          The entry should include the <span className="font-semibold">time and date of the instrument change</span>, along with the <span className="font-semibold">individual numbers of each token transferred</span>, and must be <span className="font-semibold">signed by the official</span>.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-indigo-300 text-xl mt-1">✅</span>
+                        <span>
+                          The entry must be <span className="font-semibold">countersigned by the Station Master</span>, including a remark regarding the <span className="font-semibold">result of the instrument test</span> performed by him.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+            {/* Point B */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl lg:p-8 py-6 lg:px-8 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                {/* Icon Badge */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="lg:w-14 lg:h-14 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">b</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 lg:p-6 py-4 px-4 rounded-xl border border-purple-400/20">
+                    <div className="flex items-center gap-2 mb-3">
+                      <h3 className="text-xl font-semibold text-purple-300">Different Class or Type Replacement</h3>
+                    </div>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">b)</span> Whenever a block instrument in use at a station is replaced by another of a different class or type already in use on the railway, the red ink entry made by the Signal Inspector or any other authorised official shall specify the number, class and type of the instrument removed or replaced, with the individual numbers of the tokens in each.
+                      Whenever a block instrument in use at a station is replaced by another of a different class or type already in use on the railway, the red ink entry made by the Signal Inspector or any other authorised official shall specify the number, class and type of the instrument removed or replaced, with the individual numbers of the tokens in each.
                     </p>
                   </div>
                 </div>

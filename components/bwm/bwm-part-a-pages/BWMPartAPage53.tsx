@@ -30,20 +30,26 @@ const BWMPartAPage53: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
-              <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div className="text-center mb-8">
-                  <h5 className="lg:text-lg text-base font-bold text-blue-300 mb-4">8.9 Procedure for obtaining/granting Line clear using VHF sets as a means of communication between Stations &apos;X&apos; & &apos;Y&apos;:</h5>
-                  <p className="text-gray-300 lg:text-base text-sm mb-6">(AS No.3/- Freezed channels on 25W VHF sets</p>
-                </div>
+          <div className="space-y-8">
+            {/* Section Title */}
+            <div className="text-center">
+              <div className="inline-block bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl py-4 px-8 border border-white/20">
+                <h5 className="lg:text-lg text-base font-bold text-blue-300 mb-2">8.9 Procedure for obtaining/granting Line clear using VHF sets as a means of communication between Stations &apos;X&apos; & &apos;Y&apos;:</h5>
+                <p className="text-gray-300 lg:text-base text-sm">(AS No.3/- Freezed channels on 25W VHF sets)</p>
+              </div>
+            </div>
 
-                <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+            {/* Points Grid */}
+            <div className="grid gap-4">
+              {/* Point A */}
+              <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl p-4 border border-blue-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">a</span>
+                  <div className="flex-1">
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                      <span className="font-semibold text-blue-300">a)</span> The Station Masters of X-Y block section shall contact each other on the channel/frequency allotted in their VHF sets as given below for the purpose of obtaining/granting Line clear. These channels/frequencies shall be incorporated in the respective SWRs.
+                      The Station Masters of X-Y block section shall contact each other on the channel/frequency allotted in their VHF sets as given below for the purpose of obtaining/granting Line clear. These channels/frequencies shall be incorporated in the respective SWRs.
                     </p>
-                    <div className="bg-white/10 rounded-lg p-6 border border-white/20 ml-6">
+                    <div className="bg-white/10 rounded-lg p-4 border border-white/20">
                       <div className="overflow-x-auto">
                         <table className="w-full text-gray-200">
                           <thead>
@@ -104,78 +110,131 @@ const BWMPartAPage53: React.FC = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                      <span className="font-semibold text-blue-300">b)</span> (AS-2,/Item No.3/Rule No.8.9 (b) is amended)
+              {/* Point B */}
+              <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-xl p-4 border border-purple-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">b</span>
+                  <div className="flex-1">
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3 italic">
+                      (AS-2,/Item No.3/Rule No.8.9 (b) is amended)
                     </p>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                       Station Masters at stations &apos;X&apos; and &apos;Y&apos; shall call out their station name and identify each other with their full name. Then they shall cross check private numbers given for line clear, for the last three preceding trains along with train numbers on the **freezed channel/frequency and record these particulars in red ink in TSR. Then they shall exchange messages in the proforma given vide Rule No.8.5 (d) above.
                     </p>
                   </div>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">c)</span> The SM at &apos;X&apos; shall clearly mention to SM at &apos;Y&apos;, the Train No. in full (two / three / four digits), description (Express, Passenger, Goods train), direction (Up/Dn) for which Line clear is required.
-                    </p>
-                  </div>
+              {/* Point C */}
+              <div className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-xl p-4 border border-emerald-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold">c</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    The SM at &apos;X&apos; shall clearly mention to SM at &apos;Y&apos;, the Train No. in full (two / three / four digits), description (Express, Passenger, Goods train), direction (Up/Dn) for which Line clear is required.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">d)</span> The Station Master at &apos;Y&apos;, after complying with the conditions for granting Line clear shall grant Line clear supported by a Private Number.
-                    </p>
-                  </div>
+              {/* Point D */}
+              <div className="bg-gradient-to-r from-orange-500/10 to-amber-500/10 rounded-xl p-4 border border-orange-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">d</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    The Station Master at &apos;Y&apos;, after complying with the conditions for granting Line clear shall grant Line clear supported by a Private Number.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">e)</span> The train number in full, description, direction (UP/DN) and the arrival / departure timings of each train dealt with between &apos;X&apos; and &apos;Y&apos; and the Private Number obtained / issued shall be recorded in red ink then and there in the TSR by Station Masters at &apos;X&apos; and &apos;Y&apos;.
-                    </p>
-                  </div>
+              {/* Point E */}
+              <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 rounded-xl p-4 border border-pink-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center text-white font-bold">e</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    The train number in full, description, direction (UP/DN) and the arrival / departure timings of each train dealt with between &apos;X&apos; and &apos;Y&apos; and the Private Number obtained / issued shall be recorded in red ink then and there in the TSR by Station Masters at &apos;X&apos; and &apos;Y&apos;.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">f)</span> The SMs at &apos;X&apos; and &apos;Y&apos; shall record the above details and the means of communication through which the line clear is obtained / granted in the document T/A.1425 (outward) /T/B 1425 (inward), as the case may be.
-                    </p>
-                  </div>
+              {/* Point F */}
+              <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl p-4 border border-cyan-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">f</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    The SMs at &apos;X&apos; and &apos;Y&apos; shall record the above details and the means of communication through which the line clear is obtained / granted in the document T/A.1425 (outward) /T/B 1425 (inward), as the case may be.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">g)</span> After obtaining line clear from station &apos;Y&apos;, the Station Master at station &apos;X&apos; shall prepare Paper Line Clear Ticket (T/C 1425 for UP or T/D 1425 for DN) and arrange to deliver it to the Loco Pilot of the train after obtaining the acknowledgement in T/A 1425.
-                    </p>
-                  </div>
+              {/* Point G */}
+              <div className="bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-xl p-4 border border-violet-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">g</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    After obtaining line clear from station &apos;Y&apos;, the Station Master at station &apos;X&apos; shall prepare Paper Line Clear Ticket (T/C 1425 for UP or T/D 1425 for DN) and arrange to deliver it to the Loco Pilot of the train after obtaining the acknowledgement in T/A 1425.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">h)</span> The serial numbers of the PLCTs issued to each train shall be recorded in the remarks column of the TSR against the entry for the train.
-                    </p>
-                  </div>
+              {/* Point H */}
+              <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl p-4 border border-blue-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">h</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    The serial numbers of the PLCTs issued to each train shall be recorded in the remarks column of the TSR against the entry for the train.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">i)</span> The SMs at &apos;X&apos; and &apos;Y&apos; shall communicate the timings of &apos;Train entering block section&apos; and &apos;Train out of block section&apos; in full ( eg.1410 hrs.) to each other and record the same in TSR and T/A 1425 or T/B 1425 document immediately after the departure/complete arrival at the respective stations.
-                    </p>
-                  </div>
+              {/* Point I */}
+              <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-xl p-4 border border-purple-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">i</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    The SMs at &apos;X&apos; and &apos;Y&apos; shall communicate the timings of &apos;Train entering block section&apos; and &apos;Train out of block section&apos; in full ( eg.1410 hrs.) to each other and record the same in TSR and T/A 1425 or T/B 1425 document immediately after the departure/complete arrival at the respective stations.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-semibold text-blue-300">j)</span> Whenever the line clear is cancelled, the Station Masters at &apos;X&apos; and &apos;Y&apos; stations shall record the same in the &apos;D&apos; column of the T/A 1425 & T/B 1425 immediately.
-                    </p>
-                  </div>
+              {/* Point J */}
+              <div className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 rounded-xl p-4 border border-emerald-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold">j</span>
+                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                    Whenever the line clear is cancelled, the Station Masters at &apos;X&apos; and &apos;Y&apos; stations shall record the same in the &apos;D&apos; column of the T/A 1425 & T/B 1425 immediately.
+                  </p>
+                </div>
+              </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                      <span className="font-semibold text-blue-300">k)</span> All trains shall be stopped for issuing PLCT. (AS-2,/Item No.4/Note is added to Rule No.8.9)
+              {/* Point K */}
+              <div className="bg-gradient-to-r from-orange-500/10 to-amber-500/10 rounded-xl p-4 border border-orange-400/20">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-orange-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">k</span>
+                  <div className="flex-1">
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
+                      All trains shall be stopped for issuing PLCT. (AS-2,/Item No.4/Note is added to Rule No.8.9)
                     </p>
-                    <div className="bg-white/10 rounded-lg p-4 border border-white/20 ml-6 space-y-3">
-                      <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
-                        <span className="font-semibold text-blue-300">i)</span> VHF sets for prolonged duration of three hours or more should be permitted only in the presence of supervisory staff.
-                      </p>
-                      <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
-                        <span className="font-semibold text-blue-300">ii)</span> VHF sets should not be used as the sole means of communication where passenger trains run. However VHF sets can be used as the only means of communication with the permission of Authorized Officer for specific sidings / sections where only freight trains run.
-                      </p>
-                      <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
-                        <span className="font-semibold text-blue-300">iii)</span> Wherever GSMR (Global Signal Mobile Receiver) (Cell phones) has been provided, the use of VHF sets should not be permitted.
-                      </p>
+                    <div className="bg-white/10 rounded-lg p-4 border border-white/20 space-y-3">
+                      <div className="flex items-start gap-2">
+                        <span className="flex-shrink-0 w-6 h-6 bg-orange-500/30 rounded-full flex items-center justify-center text-orange-200 font-semibold text-xs">i</span>
+                        <p className="text-gray-200 lg:text-base text-sm leading-relaxed flex-1">
+                          VHF sets for prolonged duration of three hours or more should be permitted only in the presence of supervisory staff.
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="flex-shrink-0 w-6 h-6 bg-orange-500/30 rounded-full flex items-center justify-center text-orange-200 font-semibold text-xs">ii</span>
+                        <p className="text-gray-200 lg:text-base text-sm leading-relaxed flex-1">
+                          VHF sets should not be used as the sole means of communication where passenger trains run. However VHF sets can be used as the only means of communication with the permission of Authorized Officer for specific sidings / sections where only freight trains run.
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="flex-shrink-0 w-6 h-6 bg-orange-500/30 rounded-full flex items-center justify-center text-orange-200 font-semibold text-xs">iii</span>
+                        <p className="text-gray-200 lg:text-base text-sm leading-relaxed flex-1">
+                          Wherever GSMR (Global Signal Mobile Receiver) (Cell phones) has been provided, the use of VHF sets should not be permitted.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
