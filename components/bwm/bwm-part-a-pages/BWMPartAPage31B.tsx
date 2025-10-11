@@ -23,49 +23,129 @@ const BWMPartAPage31B: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              5.5
+              CHAPTER - V
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Trains unusually delayed (G.R. 6.04)</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">5.5 Trains unusually delayed (G.R. 6.04)</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-3 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">a)</span> If a train carrying passengers does not arrive at &apos;Y&apos; within ten minutes or if a goods train does not arrive at &apos;Y&apos; within twenty minutes after allowing for its normal running time from &apos;X&apos;, the Station Masters at &apos;X&apos; and &apos;Y&apos; shall contact each other immediately and ascertain the cause and
-                  </p>
-                  <div className="ml-6 mt-4 space-y-2">
-                    <p>
-                      <span className="font-semibold text-indigo-300">i)</span> Inform the Controller on the controlled sections,
-                    </p>
-                    <p>
-                      <span className="font-semibold text-indigo-300">ii)</span> Arrange to send a competent railway servant into the block section to fetch information regarding the whereabouts and condition of the delayed train and the nature of assistance required, if any; and
-                    </p>
-                    <p>
-                      <span className="font-semibold text-indigo-300">iii)</span> Take such other action as may be deemed necessary depending on the merits of the case.
-                    </p>
+                {/* Point a) */}
+                <div className="group relative">
+                  <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 lg:p-6 p-4 rounded-xl border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-lg">a</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-gray-100 leading-relaxed mb-4">
+                          If a train carrying passengers does not arrive at &apos;Y&apos; within ten minutes or if a goods train does not arrive at &apos;Y&apos; within twenty minutes after allowing for its normal running time from &apos;X&apos;, the Station Masters at &apos;X&apos; and &apos;Y&apos; shall contact each other immediately and ascertain the cause and
+                        </p>
+                        
+                        {/* Sub-points */}
+                        <div className="ml-0 space-y-3 mt-4">
+                          {/* Point i) */}
+                          <div className="flex items-start gap-3 bg-indigo-500/10 p-3 rounded-lg border border-indigo-400/20 hover:border-indigo-400/40 transition-all duration-300">
+                            <div className="flex-shrink-0">
+                              <div className="w-7 h-7 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full flex items-center justify-center shadow-md">
+                                <span className="text-white font-semibold text-sm">i</span>
+                              </div>
+                            </div>
+                            <p className="text-gray-100 text-base leading-relaxed pt-0.5">
+                              Inform the Controller on the controlled sections,
+                            </p>
+                          </div>
+
+                          {/* Point ii) */}
+                          <div className="flex items-start gap-3 bg-indigo-500/10 p-3 rounded-lg border border-indigo-400/20 hover:border-indigo-400/40 transition-all duration-300">
+                            <div className="flex-shrink-0">
+                              <div className="w-7 h-7 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full flex items-center justify-center shadow-md">
+                                <span className="text-white font-semibold text-sm">ii</span>
+                              </div>
+                            </div>
+                            <p className="text-gray-100 text-base leading-relaxed pt-0.5">
+                              Arrange to send a competent railway servant into the block section to fetch information regarding the whereabouts and condition of the delayed train and the nature of assistance required, if any; and
+                            </p>
+                          </div>
+
+                          {/* Point iii) */}
+                          <div className="flex items-start gap-3 bg-indigo-500/10 p-3 rounded-lg border border-indigo-400/20 hover:border-indigo-400/40 transition-all duration-300">
+                            <div className="flex-shrink-0">
+                              <div className="w-7 h-7 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full flex items-center justify-center shadow-md">
+                                <span className="text-white font-semibold text-sm">iii</span>
+                              </div>
+                            </div>
+                            <p className="text-gray-100 text-base leading-relaxed pt-0.5">
+                              Take such other action as may be deemed necessary depending on the merits of the case.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> The Guards /Drivers of trains carrying passengers and goods trains who are provided with VHF sets (Walkie-talkie sets) and portable field telephone, when delayed in the block section for over ten minutes and twenty minutes respectively, shall first try to inform the adjacent Station Master over VHF set, the cause and the probable duration of delay for the train. In case it is not possible to contact the Station Master on VHF set, they shall use the portable field telephone to inform the Controller on the controlled sections, the cause and the probable duration of delay for the train.
-                  </p>
+                {/* Point b) */}
+                <div className="group relative">
+                  <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 lg:p-6 p-4 rounded-xl border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-lg">b</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-gray-100 leading-relaxed">
+                          The Guards /Drivers of trains carrying passengers and goods trains who are provided with VHF sets (Walkie-talkie sets) and portable field telephone, when delayed in the block section for over ten minutes and twenty minutes respectively, shall first try to inform the adjacent Station Master over VHF set, the cause and the probable duration of delay for the train. In case it is not possible to contact the Station Master on VHF set, they shall use the portable field telephone to inform the Controller on the controlled sections, the cause and the probable duration of delay for the train.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">c)</span> The Controller on receipt of such advice shall immediately warn the stations where Accident Relief Train & Medical Relief Train are located to arrange to keep them in readiness for moving immediately on receipt of further information. He will also issue preliminary warning to the Chief Crew Controller / Crew Controller and the Station Master concerned to get the Accident Relief Train ready and will also arrange for an engine to be made available immediately for despatching the Medical Relief Train to the site of the accident, if necessary.
-                  </p>
+                {/* Point c) */}
+                <div className="group relative">
+                  <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-pink-500 to-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="bg-gradient-to-br from-pink-500/20 to-purple-500/20 lg:p-6 p-4 rounded-xl border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-lg">c</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-gray-100 leading-relaxed">
+                          The Controller on receipt of such advice shall immediately warn the stations where Accident Relief Train & Medical Relief Train are located to arrange to keep them in readiness for moving immediately on receipt of further information. He will also issue preliminary warning to the Chief Crew Controller / Crew Controller and the Station Master concerned to get the Accident Relief Train ready and will also arrange for an engine to be made available immediately for despatching the Medical Relief Train to the site of the accident, if necessary.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">d)</span> The action mentioned above shall be taken earlier if the circumstances so warrant.
-                  </p>
+                {/* Point d) */}
+                <div className="group relative">
+                  <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-rose-500 to-pink-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="bg-gradient-to-br from-rose-500/20 to-pink-500/20 lg:p-6 p-4 rounded-xl border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-to-br from-rose-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-lg">d</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-gray-100 leading-relaxed">
+                          The action mentioned above shall be taken earlier if the circumstances so warrant.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

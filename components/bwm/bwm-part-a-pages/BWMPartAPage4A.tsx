@@ -60,12 +60,12 @@ const BWMPartAPage4A = () => {
                         
                         <div className="space-y-6">
                           {/* For Neale's Ball and Tablet token block Instruments */}
-                          <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
+                          <div className="group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
                             <h4 className="text-xl font-semibold text-blue-300 mb-3 flex items-center gap-2">
                               <span className="text-blue-400">a)</span>
                               For Neale&apos;s Ball and Tablet token block Instruments
                             </h4>
-                            <div className="space-y-4 ml-6">
+                            <div className="space-y-4 ml-2">
                               <div className="group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
                                 <h5 className="text-lg font-semibold text-indigo-300 mb-2 flex items-center gap-2">
                                   <span className="text-indigo-400">i)</span>

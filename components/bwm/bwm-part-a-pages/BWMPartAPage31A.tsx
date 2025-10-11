@@ -23,26 +23,52 @@ const BWMPartAPage31A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              5.4
+              CHAPTER - V
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">&apos;Signal given in error&apos; signal</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">5.4 &apos;Signal given in error&apos; signal</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-3 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">a)</span> Whenever incorrect beats have been given or whenever beats received are not understood, the Station Master detecting the irregularity shall give the &apos;Signal given in error&apos; signal. After this has been acknowledged, the signal, which ought to have been sent, shall be distinctly repeated.
-                  </p>
+                {/* Point a) */}
+                <div className="group relative">
+                  <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 lg:p-6 p-4 rounded-xl border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-lg">a</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-gray-100 leading-relaxed">
+                          Whenever incorrect beats have been given or whenever beats received are not understood, the Station Master detecting the irregularity shall give the &apos;Signal given in error&apos; signal. After this has been acknowledged, the signal, which ought to have been sent, shall be distinctly repeated.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> If the error mentioned above is not rectified even after repeating the signal, block working shall be suspended.
-                  </p>
+                {/* Point b) */}
+                <div className="group relative">
+                  <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="bg-gradient-to-br from-purple-500/20 to-indigo-500/20 lg:p-6 p-4 rounded-xl border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-lg">b</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-gray-100 leading-relaxed">
+                          If the error mentioned above is not rectified even after repeating the signal, block working shall be suspended.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

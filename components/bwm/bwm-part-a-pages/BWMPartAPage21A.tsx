@@ -23,9 +23,9 @@ const BWMPartAPage21A = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.7
+              CHAPTER - III
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">The &apos;Call attention&apos; signal</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4"> 3.7 The &apos;Call attention&apos; signal</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 

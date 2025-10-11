@@ -120,9 +120,9 @@ const BWMPartAPage8B = () => {
                       {/* Note Section */}
                       <div className="bg-gradient-to-r from-orange-500/10 to-yellow-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-orange-400/20">
                         <div className="flex items-start gap-3 mb-4">
-                          <span className="text-orange-400 text-xl mt-1">📝</span>
                           <div>
-                            <h4 className="text-xl font-semibold text-orange-300 mb-3">Testing and Safety Procedures</h4>
+                          <span className="text-orange-400 text-xl mt-1 text-center flex items-center justify-center">📝</span>
+                            <h4 className="text-xl font-semibold text-orange-300 mb-3 text-center flex items-center justify-center">Testing and Safety Procedures</h4>
                             <div className="space-y-4">
                               <div className="bg-white/5 p-3 rounded-lg border border-white/10">
                                 <p className="text-gray-200 lg:text-base text-sm mb-2">
@@ -161,38 +161,56 @@ const BWMPartAPage8B = () => {
                       </div>
 <div className="space-y-4 mt-6">
   <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 p-4 rounded-xl border border-yellow-400/20">
-    <h4 className="text-lg font-semibold text-yellow-300 mb-2 flex items-center gap-2">
+    <h4 className="text-lg font-semibold text-yellow-300 mb-2 flex flex-col items-center justify-center gap-2">
       <span className="text-yellow-400 text-xl">🖋️</span>
       Train Signal Register Entry Guidelines
     </h4>
-    <ul className="list-disc list-inside text-gray-200 lg:text-base text-sm space-y-2">
-      <li>
-        <span className="font-semibold text-yellow-200">All entries in the Train Signal Register must be made in ink.</span>
-      </li>
-      <li>
-        <span className="font-semibold text-yellow-200">No erasures or overwriting are permitted.</span> If an entry is found to be incorrect, draw a single line through it (so it remains legible), write the correct entry above, and initial it.
-      </li>
-      <li>
-        <span className="font-semibold text-yellow-200">At the end of each day,</span> draw a line in <span className="text-red-400 font-semibold">red ink</span> below the entry for the last train of the date.
-      </li>
-    </ul>
+    <div className="flex flex-col gap-3 text-gray-200 lg:text-base text-sm">
+      <div className="flex items-start gap-2">
+        <span className="text-yellow-300 text-lg mt-1">🖊️</span>
+        <span><span className="font-semibold text-yellow-200">All entries in the Train Signal Register must be written using ink.</span></span>
+      </div>
+      <div className="flex items-start gap-2">
+        <span className="text-yellow-300 text-lg mt-1">🚫</span>
+        <span>
+          <span className="font-semibold text-yellow-200">No erasures or overwriting are allowed.</span>
+          If a mistake is made, cross it out with a single line (so the original is still readable), write the correct entry above, and initial it.
+        </span>
+      </div>
+      <div className="flex items-start gap-2">
+        <span className="text-red-400 text-lg mt-1">🟥</span>
+        <span>
+          <span className="font-semibold text-yellow-200">At the end of each day,</span>
+          &nbsp;draw a line in <span className="text-red-400 font-semibold">red ink</span> below the last entry of the date.
+        </span>
+      </div>
+    </div>
   </div>
   <div className="bg-gradient-to-r from-red-500/10 to-pink-500/10 p-4 rounded-xl border border-red-400/20">
-    <h4 className="text-lg font-semibold text-red-300 mb-2 flex items-center gap-2">
+    <h4 className="text-lg font-semibold text-red-300 mb-2 flex flex-col items-center justify-center gap-2">
       <span className="text-red-400 text-xl">📝</span>
       Special Red Ink Entries
     </h4>
     <p className="text-gray-200 mb-2">Entries must be made in <span className="text-red-400 font-semibold">red ink</span> in the following situations:</p>
-    <ul className="list-decimal list-inside text-gray-200 lg:text-base text-sm space-y-1 ml-4">
-      <li>Material trains entering the block section.</li>
-      <li>Motor trollies, lorries, and trollies entering the block section on line clear.</li>
-      <li>When testing signals are exchanged.</li>
-      <li>Whenever block working is interrupted.</li>
-      <li>Trolley movements (as per SR 15.26.2.1) and lorry movements (as per SR 15.27.6.1).</li>
-      <li>When a notice of obstruction of lines (Line block) is received from the Engineering Branch.</li>
-      <li>Any other special occurrence related to block working.</li>
-      <li>Whenever a running line at a station is blocked by stabled vehicles or trains.</li>
-    </ul>
+    <ol className="relative ml-6 space-y-4 text-gray-200 lg:text-base text-sm">
+      {[
+        "When a material train enters the block section.",
+        "When a motor trolley, lorry, or trolley enters the block section on 'Line Clear'.",
+        "When signals are being tested and signal exchange occurs.",
+        "When there is any interruption in block working.",
+        "During trolley movements (as per SR 15.26.2.1) and lorry movements (as per SR 15.27.6.1).",
+        "When a notification of line obstruction (Line Block) is received from the Engineering Branch.",
+        "For any other special occurrence related to block working.",
+        "When a running line at a station is blocked by stabled vehicles or trains.",
+      ].map((item, idx) => (
+        <li key={idx} className="flex items-start gap-3 group">
+          <span className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-tr from-red-600 via-pink-400 to-yellow-400 shadow-lg flex items-center justify-center font-bold text-lg text-white border-2 border-red-300 group-hover:scale-110 group-hover:from-red-400 group-hover:to-yellow-300 transition-all">
+            {idx + 1}
+          </span>
+          <span className="font-medium text-yellow-100">{item}</span>
+        </li>
+      ))}
+    </ol>
   </div>
 </div>
                     </div>

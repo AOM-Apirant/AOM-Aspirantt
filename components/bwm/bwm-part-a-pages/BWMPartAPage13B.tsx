@@ -23,7 +23,7 @@ const BWMPartAPage13B = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.2. Signalling of a train from one block station to another block station
+              Signalling of a train from one block station to another block station
             </h1>
           </div>
 
@@ -43,8 +43,8 @@ const BWMPartAPage13B = () => {
                       {/* Rule Section */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-start gap-3">
-                          <span className="text-blue-400 text-xl mt-1">🚂</span>
                           <div>
+                          <span className="text-blue-400 text-xl mt-1 text-center flex items-center justify-center gap-3">🚂</span>
                             <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                               Taking &apos;X&apos; and &apos;Y&apos; as two consecutive Block Stations, the sequential procedure for despatching a train, cancelling Line Clear etc., are detailed below. Before asking for Line Clear on controlled sections, the Station Master shall obtain the permission of the Controller.
                             </p>
@@ -234,24 +234,45 @@ const BWMPartAPage13B = () => {
                         </div>
 
                         <div className="mt-6 p-4 bg-gradient-to-r from-blue-800/30 to-indigo-800/30 rounded-xl border border-blue-400/20 shadow-inner">
-                          <h4 className="text-blue-300 font-semibold text-lg mb-2 flex items-center gap-2">
-                            <span className="text-xl">📝</span>
+                          <h4 className="text-blue-300 font-semibold text-lg mb-2 flex flex-col text-center items-center gap-2">
+                            <span className="text-xl text-center flex items-center justify-center gap-3">📝</span>
                             Important Note on Galvanometer Deflection
                           </h4>
                           <p className="text-gray-200 mb-2">
                             <span className="font-semibold">Before operating the handle, always ensure the Galvanometer is deflecting correctly as per the following conditions:</span>
                           </p>
-                          <ul className="list-decimal list-inside text-gray-100 space-y-1 pl-2">
-                            <li>
-                              <span className="font-semibold">Both instruments in &lsquo;Line Closed&rsquo; position:</span> Incoming and outgoing beats show <span className="text-blue-200 font-semibold">clockwise</span> deflections.
+                          <ol className="space-y-4 pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white text-lg font-bold shadow-md flex-shrink-0 mt-1">
+                                1
+                              </span>
+                              <div className="text-gray-100">
+                                <span className="font-semibold">Both block instruments in <span className="italic">&lsquo;Line Closed&rsquo;</span> position:</span>
+                                <br />
+                                Incoming and outgoing galvanometer beats indicate <span className="text-blue-200 font-semibold">clockwise</span> deflections.
+                              </div>
                             </li>
-                            <li>
-                              <span className="font-semibold">Both instruments not in &lsquo;Line Closed&rsquo; position and a token is out:</span> Incoming and outgoing beats show <span className="text-blue-200 font-semibold">anticlockwise</span> deflections.
+                            <li className="flex items-start gap-3">
+                              <span className="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 text-white text-lg font-bold shadow-md flex-shrink-0 mt-1">
+                                2
+                              </span>
+                              <div className="text-gray-100">
+                                <span className="font-semibold">Both instruments NOT in <span className="italic">&lsquo;Line Closed&rsquo;</span> position and token is OUT:</span>
+                                <br />
+                                Incoming and outgoing galvanometer beats indicate <span className="text-blue-200 font-semibold">anticlockwise</span> deflections.
+                              </div>
                             </li>
-                            <li>
-                              <span className="font-semibold">Each instrument not in &lsquo;Line Closed&rsquo; position:</span> Outgoing and incoming beats show deflections in <span className="text-blue-200 font-semibold">opposite directions</span>.
+                            <li className="flex items-start gap-3">
+                              <span className="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 text-white text-lg font-bold shadow-md flex-shrink-0 mt-1">
+                                3
+                              </span>
+                              <div className="text-gray-100">
+                                <span className="font-semibold">Each instrument NOT in <span className="italic">&lsquo;Line Closed&rsquo;</span> position:</span>
+                                <br />
+                                Outgoing and incoming galvanometer beats indicate deflections in <span className="text-blue-200 font-semibold">opposite directions</span>.
+                              </div>
                             </li>
-                          </ul>
+                          </ol>
                         </div>
                       </div>
                     </div>

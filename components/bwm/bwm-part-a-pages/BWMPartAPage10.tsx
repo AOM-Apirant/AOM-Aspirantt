@@ -42,8 +42,8 @@ const BWMPartAPage10 = () => {
                     <div className="space-y-6">
                       {/* Section a */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
+                          <span className="text-blue-400 text-xl mt-1 text-center flex items-center justify-center gap-3">📋</span>
                         <div className="flex items-start gap-3">
-                          <span className="text-blue-400 text-xl mt-1">📋</span>
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             a) The Train Signal Register in use shall be checked and signed by the Station Master in charge of the Station daily and his signature in the remarks column (at the end of the entries for the previous day) will be considered as a certificate and all trains have been duly and correctly entered in their regular course and sequence and that he has taken note of the irregularities of any description recorded in the Train Signal Register and also those observed by him in the course of his check.
                           </p>
@@ -52,8 +52,8 @@ const BWMPartAPage10 = () => {
 
                       {/* Section b */}
                       <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/20">
+                          <span className="text-indigo-400 text-xl mt-1 text-center flex items-center justify-center gap-3">📝</span>
                         <div className="flex items-start gap-3">
-                          <span className="text-indigo-400 text-xl mt-1">📝</span>
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             b) The Train Signal Register shall also be examined and signed by the Traffic Inspector and Signal Inspector of the section whenever they visit the station and inspect the block room in the course of their duties.
                           </p>
@@ -62,8 +62,8 @@ const BWMPartAPage10 = () => {
 
                       {/* Section c */}
                       <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/20">
+                          <span className="text-purple-400 text-xl mt-1 text-center flex items-center justify-center gap-3">⚠️</span>
                         <div className="flex items-start gap-3">
-                          <span className="text-purple-400 text-xl mt-1">⚠️</span>
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             c) Irregularities, if any, shall be noted in the Train Signal Register and brought to the notice of officials concerned.
                           </p>
@@ -72,8 +72,8 @@ const BWMPartAPage10 = () => {
 
                       {/* Section d */}
                       <div className="bg-gradient-to-r from-pink-500/10 to-red-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/20">
+                          <span className="text-pink-400 text-xl mt-1 text-center flex items-center justify-center gap-3">🚫</span>
                         <div className="flex items-start gap-3">
-                          <span className="text-pink-400 text-xl mt-1">🚫</span>
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             d) The Train Signal Register in use shall not be removed from the Cabin or the room, in which block instruments are placed without the orders of the DRM.
                           </p>

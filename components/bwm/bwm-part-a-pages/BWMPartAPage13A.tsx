@@ -46,9 +46,9 @@ const BWMPartAPage13A = () => {
                       {/* Rule Section */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-start gap-3">
-                          <span className="text-blue-400 text-xl mt-1">🔒</span>
                           <div>
-                            <h4 className="text-xl font-semibold text-blue-300 mb-2">3.1. Access to and operation of equipment (G.R. 5.08)</h4>
+                          <span className="text-blue-400 text-xl mt-1 text-center flex items-center justify-center gap-3">🔒</span>
+                            <h4 className="text-xl font-semibold text-blue-300 mb-2 text-center">Access to and operation of equipment (G.R. 5.08)</h4>
                             <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                               No unauthorised person shall be permitted to have access to or operate signals, points, electrical block instruments and electrical communication instruments or any other appliances connected with working of the railway.
                             </p>

@@ -23,7 +23,7 @@ const BWMPartAPage11B = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              2.9. Station Masters handing over /taking over charge
+              Station Masters handing over /taking over charge
             </h1>
           </div>
 
@@ -38,17 +38,33 @@ const BWMPartAPage11B = () => {
                       <span className="text-white font-bold lg:text-lg text-base">2.9</span>
                     </div>
                   </div>
-                  <div className="flex-1">
+                  <div className="">
                     <div className="space-y-6">
                       {/* Clause a) */}
-                      <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
-                        <div className="flex items-start gap-3">
-                          <span className="text-blue-400 text-xl mt-1">🔄</span>
-                          <div>
-                            <h4 className="text-xl font-semibold text-blue-300 mb-2">a) Continuation of Duty</h4>
-                            <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                              The Station Master who makes an entry for a train in the Train Signal Register shall continue to be on duty till all entries pertaining to that train are completed. By this it is meant that the Station Master who asks for &apos;Line Clear&apos; for a train to enter a block section shall remain on duty till the &apos;train out of block section&apos; signal is received and acknowledged. The Station Master who gives &apos;Line Clear&apos; for a train to enter a block section, shall remain on duty till the train has arrived and the &apos;train out of block section&apos; signal is given and acknowledged.
-                            </p>
+                      <div className="bg-gradient-to-r from-blue-600/10 to-indigo-600/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/30 group hover:shadow-xl hover:bg-white/15 transition-all duration-300 overflow-x-auto">
+                        <div className="flex items-start gap-4">
+                          <span className="flex-shrink-0 text-blue-400 text-2xl mt-1 transition-transform group-hover:scale-125">⏳</span>
+                          <div className="w-full">
+                            <h4 className="text-2xl font-semibold text-blue-200 mb-2 flex items-center gap-2 whitespace-normal">
+                              Continuation of Duty
+                            </h4>
+                            <div className="text-gray-100 lg:text-lg text-base leading-relaxed break-words">
+                              <p className="mb-3">
+                                The Station Master who enters a train in the Train Signal Register must remain on duty until every record for that train is fully completed.
+                              </p>
+                              <div className="flex items-start gap-2 mb-2">
+                                <span className="text-blue-300 mt-1">🚦</span>
+                                <span className="block flex-1 break-words whitespace-pre-line overflow-x-auto">
+                                  If the Station Master requests ‘Line Clear’ for a train to enter a block section, they must be on duty until the ‘Train Out of Block Section’ signal is both received and acknowledged.
+                                </span>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <span className="text-blue-300 mt-1">🔔</span>
+                                <span className="block flex-1 break-words whitespace-pre-line overflow-x-auto">
+                                  Similarly, the Station Master who gives ‘Line Clear’ must stay on duty until the train has arrived and the ‘Train Out of Block Section’ signal is given and acknowledged.
+                                </span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

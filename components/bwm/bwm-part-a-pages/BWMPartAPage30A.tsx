@@ -31,35 +31,75 @@ const BWMPartAPage30A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-3 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 <div className="text-center mb-8">
                   <h4 className="lg:text-2xl text-xl font-bold text-blue-300 mb-4">5.1. Refusal of the &apos;Is line clear&apos; signal and sending of the &apos;Obstruction danger signal&apos;:</h4>  
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">a)</span> If, for any reason, the station in advance is unable to accept the &apos;Is line clear&apos; signal, such station shall refuse it by sending the &apos;Obstruction danger signal&apos;.
-                  </p>
+                {/* Point A */}
+                <div className="group bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-xl py-6 px-3 border-l-4 border-blue-400 hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 backdrop-blur-sm">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">a</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-2">
+                      <p className="text-gray-100 leading-relaxed">
+                        If, for any reason, the station in advance is unable to accept the &apos;Is line clear&apos; signal, such station shall refuse it by sending the &apos;Obstruction danger signal&apos;.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> If the block station in advance is not in a position to accept &apos;Is line clear&apos; signal, the train shall be stopped at the station and shall not be allowed to leave it, until &apos;Is line clear&apos; signal has been given to and accepted by the block station in advance,
-                  </p>
+                {/* Point B */}
+                <div className="group bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-xl py-6 px-3 border-l-4 border-indigo-400 hover:border-indigo-300 hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 backdrop-blur-sm">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">b</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-2">
+                      <p className="text-gray-100 leading-relaxed">
+                        If the block station in advance is not in a position to accept &apos;Is line clear&apos; signal, the train shall be stopped at the station and shall not be allowed to leave it, until &apos;Is line clear&apos; signal has been given to and accepted by the block station in advance,
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">c)</span> When &apos;Y&apos; intimates refusal to accept the train, both &apos;X&apos; and &apos;Y&apos; shall enter the words &apos;Line Clear refused&apos; in the Train Signal Register duly signed, showing the time of receipt of intimation with the reasons there for.
-                  </p>
+                {/* Point C */}
+                <div className="group bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-xl py-6 px-3 border-l-4 border-purple-400 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 backdrop-blur-sm">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">c</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-2">
+                      <p className="text-gray-100 leading-relaxed">
+                        When &apos;Y&apos; intimates refusal to accept the train, both &apos;X&apos; and &apos;Y&apos; shall enter the words &apos;Line Clear refused&apos; in the Train Signal Register duly signed, showing the time of receipt of intimation with the reasons there for.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">d)</span> When &apos;Y&apos; sends &apos;Obstruction removed&apos; signal, both &apos;X&apos; and &apos;Y&apos; shall enter the same with time in the Train Signal Register.
-                  </p>
+                {/* Point D */}
+                <div className="group bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl py-6 px-3 border-l-4 border-cyan-400 hover:border-cyan-300 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 backdrop-blur-sm">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-white font-bold text-xl">d</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-2">
+                      <p className="text-gray-100 leading-relaxed">
+                        When &apos;Y&apos; sends &apos;Obstruction removed&apos; signal, both &apos;X&apos; and &apos;Y&apos; shall enter the same with time in the Train Signal Register.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

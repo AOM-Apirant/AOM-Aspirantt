@@ -23,9 +23,9 @@ const BWMPartAPage27C: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.22
+              CHAPTER - III
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Private Number</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4"> 3.22 Private Number</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
@@ -88,77 +88,166 @@ const BWMPartAPage27C: React.FC = () => {
                 </div>
 
                 <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> A Private Number shall be given for each train for which the Station
-                    Master grants Line Clear to the Station Master applying for Line Clear.
-                    Both Station Masters shall record the Private Number given and
-                    received for the train in the Train Signal Register. Numbers shall be
-                    allotted to the successive trains in the order in which the numbers are
-                    printed in the sheet in use. When a number is allotted to a train, it shall
-                    be scored out with a line drawn horizontally through it, the number of
-                    the train for which it is issued and the date on which it is issued being
-                    entered in the columns provided for the purpose. If a Private Number
-                    has been allotted to a train the running of which is subsequently
-                    cancelled, the same Private Number shall not be re-allotted to any
-                    succeeding train.
-                  </p>
+                  <div className="my-4">
+                    <div className="flex flex-col gap-5">
+                        <span className="font-semibold text-blue-300 text-center">b)</span>
+                      <div className="flex items-start gap-3">
+                        <span className="text-blue-400 text-xl mt-1">🔢</span>
+                        <span className="text-gray-200">
+                          <span className="font-semibold text-blue-300">A Private Number (PN)</span> must be allotted for each train when the Station Master grants Line Clear to the applying Station Master.
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-indigo-400 text-xl mt-1">📝</span>
+                        <span className="text-gray-200">
+                          Both Station Masters must record the given and received Private Number for every train in the Train Signal Register.
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-purple-400 text-xl mt-1">↪️</span>
+                        <span className="text-gray-200">
+                          Numbers are allotted to trains in the order they appear on the PN sheet currently in use.
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-blue-400 text-xl mt-1">✏️</span>
+                        <span className="text-gray-200">
+                          Once a Private Number has been allotted to a train, it should be scored out (crossed horizontally), and the corresponding train number and date entered in the appropriate columns.
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-red-400 text-xl mt-1">🚫</span>
+                        <span className="text-gray-200">
+                          If the run of a train is cancelled after a PN has already been allotted, the same Private Number must not be re-issued to any future train.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">c)</span> If the next number to be used is the same as the one last issued, the
-                    sender shall cancel the number in his sheet, add the remark as
-                    last sign it and issue the next number. If the similar number had
-                    already been given before it is detected, the station to which the
-                    number has been given shall be advised so that the number can be
-                    cancelled and the next number issued. The Station Master receiving
-                    the Private number shall be held responsible for seeing that no two
-                    consecutive Private Numbers are received from the same station giving
-                    Line Clear.
-                  </p>
+                <div className="my-4">
+                  <div className="flex flex-col gap-5">
+                    <span className="font-semibold text-blue-300 text-center">c)</span>
+                    <div className="flex items-start gap-3">
+                      <span className="text-yellow-400 text-xl mt-1">🔄</span>
+                      <span className="text-gray-200">
+                        If the <span className="font-semibold text-blue-300">next Private Number</span> to be used is the same as the one last issued, the sender must cancel the number in the sheet, add a remark as &quot;last&quot;, sign it, and issue the next number.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-red-400 text-xl mt-1">⚠️</span>
+                      <span className="text-gray-200">
+                        If a duplicate number is already given before detection, the station which received it must be informed so the number can be cancelled and the next number issued.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-blue-500 text-xl mt-1">🛡️</span>
+                      <span className="text-gray-200">
+                        The Station Master receiving the Private Number is responsible for ensuring that no two consecutive Private Numbers are received from the same station granting Line Clear.
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">d)</span> No person (except Inspecting Officials) shall be allowed to have access
-                    to it. Each sheet, when exhausted, shall be sent in a sealed cover to the
-                    Traffic Inspector of the section who shall replace it by another.
-                  </p>
+                <div className="flex flex-col gap-3 my-4">
+                  <span className="font-semibold text-blue-300 text-center">d)</span>
+                  <div className="flex items-start gap-3">
+                    <span className="text-purple-500 text-xl mt-1">🔒</span>
+                    <span className="text-gray-200">
+                      Access to the PN sheet is restricted: <span className="font-semibold">only Inspecting Officials</span> are permitted to access it.
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-400 text-xl mt-1">📦</span>
+                    <span className="text-gray-200">
+                      When a PN sheet is exhausted, it must be <span className="font-semibold">sent in a sealed cover</span> to the Traffic Inspector of the section, who will provide a new sheet as replacement.
+                    </span>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">e)</span> Only one sheet shall be in use at a time. Care shall be taken to see that
-                    adjacent stations are supplied with sheets bearing different numbers.
-                    The PN sheets shall not be issued to individuals and shall be issued to a
-                    post. Not more than two PN sheets shall be available with staff on duty.
-                    PN sheets shall be serially numbered before issue.
-                  </p>
+                <div className="my-4">
+                  <div className="flex flex-col gap-5">
+                    <span className="font-semibold text-blue-300 text-center">e)</span>
+                    <div className="flex items-start gap-3">
+                      <span className="text-blue-400 text-xl mt-1">📄</span>
+                      <span className="text-gray-200">
+                        <span className="font-semibold text-blue-300"></span>  shall be in use at any given time.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-purple-400 text-xl mt-1">🔢</span>
+                      <span className="text-gray-200">
+                        Ensure that <span className="font-semibold">adjacent stations</span> are supplied with sheets bearing <span className="font-semibold">different numbers</span>.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-yellow-500 text-xl mt-1">🙅‍♂️</span>
+                      <span className="text-gray-200">
+                        PN sheets shall <span className="font-semibold">not be issued to individuals</span> but <span className="font-semibold">only to a post</span>.
+                      </span>
+                    </div>
+                    <span className="font-semibold text-blue-300 text-center">f)</span>
+                    <div className="flex items-start gap-3">
+                      <span className="text-red-400 text-xl mt-1">✌️</span>
+                      <span className="text-gray-200">
+                        <span className="font-semibold">No more than two PN sheets</span> shall be available with the staff on duty.
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-green-400 text-xl mt-1">🔖</span>
+                      <span className="text-gray-200">
+                        All PN sheets must be <span className="font-semibold">serially numbered before issue</span>.
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">f)</span> Traffic Inspector or any other Inspecting Official when visiting stations
-                    shall see that PNs are scored out correctly and that the train number
-                    and date are entered against each.
-                  </p>
+                <div className="flex items-start gap-3 my-3">
+                  <span className="text-blue-400 text-xl mt-1">🕵️‍♂️</span>
+                  <span className="text-gray-200">
+                    <span className="font-semibold text-blue-300"></span>{' '}
+                    The <span className="font-semibold">Traffic Inspector</span> or any other <span className="font-semibold">Inspecting Official</span> visiting stations shall ensure that <span className="font-semibold">PNs are properly scored out</span> and that the <span className="font-semibold">train number</span> and <span className="font-semibold">date</span> are entered against each entry.
+                  </span>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">g)</span> When a PN sheet in use is lost or mislaid, the Station Master shall utilise,
-                    if available, the PN sheet supplied for future use. The Station Master
-                    shall also immediately write to the Traffic Inspector for a fresh PN sheet
-                    stating the reasons.
-                  </p>
+                <div className="my-4">
+                  <div className="flex justify-center">
+                    <span className="font-semibold text-blue-300 text-center">g)</span>
+                  </div>
+                  <ul className="list-none mt-2 space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 text-xl mt-0.5">❌</span>
+                      <span className="text-gray-200">
+                        If a <span className="font-semibold">PN sheet is lost or mislaid</span> while in use, the Station Master should, if available, use the PN sheet meant for future use.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 text-xl mt-0.5">✉️</span>
+                      <span className="text-gray-200">
+                        The Station Master must <span className="font-semibold">immediately inform</span> the Traffic Inspector in writing, stating the reason, and request a fresh PN sheet.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">h)</span> Used up PN sheets shall be preserved for 6 months after the half year in
-                    which they are completed and after that they shall be treated as old
-                    records and disposed off.
-                  </p>
+                <div className="my-4">
+                  <div className="flex justify-center">
+                    <span className="font-semibold text-blue-300 text-center">h)</span>
+                  </div>
+                  <ul className="list-none mt-2 space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 text-xl mt-0.5">🗃️</span>
+                      <span className="text-gray-200">
+                        All <span className="font-semibold">used PN sheets</span> must be <span className="font-semibold">preserved for 6 months</span> after the end of the half-year in which they are completed.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 text-xl mt-0.5">🗑️</span>
+                      <span className="text-gray-200">
+                        After this retention period, <span className="font-semibold">used PN sheets</span> should be <span className="font-semibold">treated as old records and disposed of</span> as per guidelines.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

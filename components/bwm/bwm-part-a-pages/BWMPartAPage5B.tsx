@@ -55,7 +55,7 @@ const BWMPartAPage5B = () => {
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                       <div className="space-y-6">
                         {/* Section a */}
-                        <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
+                        <div className="group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
                           <h4 className="text-xl font-semibold text-blue-300 mb-3 flex items-center gap-2">
                             <span className="text-blue-400">a)</span>
                             Zonal Railway Training Institute / Moula-Ali
@@ -66,7 +66,7 @@ const BWMPartAPage5B = () => {
                         </div>
 
                         {/* Section b */}
-                        <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
+                        <div className="group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
                           <h4 className="text-xl font-semibold text-indigo-300 mb-3 flex items-center gap-2">
                             <span className="text-indigo-400">b)</span>
                             Signal Maintainers Certification
@@ -80,7 +80,7 @@ As a temporary measure, DSTE / ADSTE of the divisions can extend the validity of
                         </div>
 
                         {/* Section c */}
-                        <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
+                        <div className="group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
                           <h4 className="text-xl font-semibold text-purple-300 mb-3 flex items-center gap-2">
                             <span className="text-purple-400">c)</span>
                             Transfer and Local Testing
@@ -91,7 +91,7 @@ As a temporary measure, DSTE / ADSTE of the divisions can extend the validity of
                         </div>
 
                         {/* Section d */}
-                        <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
+                        <div className="group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
                           <h4 className="text-xl font-semibold text-green-300 mb-3 flex items-center gap-2">
                             <span className="text-green-400">d)</span>
                             Certificate Custody

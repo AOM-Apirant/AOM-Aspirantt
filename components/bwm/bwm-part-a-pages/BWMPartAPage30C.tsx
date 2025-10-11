@@ -23,38 +23,70 @@ const BWMPartAPage30C: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              5.3
+              CHAPTER - V
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Cancel last signal (G.R. 14.22)</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">5.3 Cancel last signal (G.R. 14.22)</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-3 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">a)</span> The &apos;Cancel last signal&apos; cancels the last signal given from the block station from which it is sent.
-                  </p>
+                {/* Point a) */}
+                <div className="group bg-gradient-to-r from-blue-500/5 to-indigo-500/5 py-6 px-3 rounded-xl border border-blue-400/30 hover:border-blue-400/50 hover:from-blue-500/10 hover:to-indigo-500/10 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        a
+                      </div>
+                    </div>
+                    <p className="flex-1 pt-1.5">
+                      The &apos;Cancel last signal&apos; cancels the last signal given from the block station from which it is sent.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">b)</span> Where &apos;Is line clear&apos; signal has been forwarded and it is afterwards found that the train to which it refers has to be detained for shunting or other purposes, or has returned to the block station from which that signal was sent, the &apos; Cancel last signal&apos; shall be sent to the block station in advance so that the previous signal may be cancelled.
-                  </p>
+                {/* Point b) */}
+                <div className="group bg-gradient-to-r from-blue-500/5 to-indigo-500/5 py-6 px-3 rounded-xl border border-blue-400/30 hover:border-blue-400/50 hover:from-blue-500/10 hover:to-indigo-500/10 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        b
+                      </div>
+                    </div>
+                    <p className="flex-1 pt-1.5">
+                      Where &apos;Is line clear&apos; signal has been forwarded and it is afterwards found that the train to which it refers has to be detained for shunting or other purposes, or has returned to the block station from which that signal was sent, the &apos; Cancel last signal&apos; shall be sent to the block station in advance so that the previous signal may be cancelled.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">c)</span> On a single line when &apos;Line clear&apos; has been cancelled, no train shall be allowed to leave in the opposite direction until a message has been received acknowledging such cancellation and stating that the train for which the &apos;Line clear&apos; has been given shall be detained.
-                  </p>
+                {/* Point c) */}
+                <div className="group bg-gradient-to-r from-blue-500/5 to-indigo-500/5 py-6 px-3 rounded-xl border border-blue-400/30 hover:border-blue-400/50 hover:from-blue-500/10 hover:to-indigo-500/10 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        c
+                      </div>
+                    </div>
+                    <p className="flex-1 pt-1.5">
+                      On a single line when &apos;Line clear&apos; has been cancelled, no train shall be allowed to leave in the opposite direction until a message has been received acknowledging such cancellation and stating that the train for which the &apos;Line clear&apos; has been given shall be detained.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold text-blue-300">d)</span> The procedure as detailed in Paras 3.3(A)and 3.3(B) shall be followed. After canceling the &apos;Line clear&apos; Station Master shall enter the reasons for doing so in the remarks column of the Train Signal Register against the entry pertaining to the train.
-                  </p>
+                {/* Point d) */}
+                <div className="group bg-gradient-to-r from-blue-500/5 to-indigo-500/5 py-6 px-3 rounded-xl border border-blue-400/30 hover:border-blue-400/50 hover:from-blue-500/10 hover:to-indigo-500/10 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        d
+                      </div>
+                    </div>
+                    <p className="flex-1 pt-1.5">
+                      The procedure as detailed in Paras 3.3(A)and 3.3(B) shall be followed. After canceling the &apos;Line clear&apos; Station Master shall enter the reasons for doing so in the remarks column of the Train Signal Register against the entry pertaining to the train.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

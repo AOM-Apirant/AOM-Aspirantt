@@ -23,7 +23,7 @@ const BWMPartAPage15 = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.3. Line Clear Cancellation & Block Section Closing
+              Line Clear Cancellation & Block Section Closing
             </h1>
           </div>
 
@@ -35,7 +35,7 @@ const BWMPartAPage15 = () => {
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
                     <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">A</span>
+                      <span className="text-white font-bold lg:text-lg text-base">3.3</span>
                     </div>
                   </div>
                   <div className="flex-1">
@@ -43,8 +43,8 @@ const BWMPartAPage15 = () => {
                       {/* Rule Section */}
                       <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                         <div className="flex items-start gap-3">
-                          <span className="text-blue-400 text-xl mt-1">🚂</span>
                           <div>
+                          <span className="text-blue-400 text-xl mt-1 text-center flex items-center justify-center gap-3">🚂</span>
                             <h3 className="text-lg lg:text-xl font-semibold text-blue-300 mb-4">
                               3.3. (A) To cancel &apos;Line Clear&apos; before train enters into Block Section (G.R. 14.22).
                             </h3>
@@ -122,18 +122,14 @@ const BWMPartAPage15 = () => {
               {/* Section B */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
-                  <div className="flex-shrink-0">
-                    <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">B</span>
-                    </div>
-                  </div>
+                  
                   <div className="flex-1">
                     <div className="space-y-6">
                       {/* Rule Section */}
                       <div className="bg-gradient-to-r from-purple-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/20">
                         <div className="flex items-start gap-3">
-                          <span className="text-purple-400 text-xl mt-1">🚂</span>
                           <div>
+                          <span className="text-purple-400 text-xl mt-1 text-center flex items-center justify-center gap-3">🚂</span>
                             <h3 className="text-lg lg:text-xl font-semibold text-purple-300 mb-4">
                               3.3. (B) Closing of Block Section after pushing back of the train:
                             </h3>

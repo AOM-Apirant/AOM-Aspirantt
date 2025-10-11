@@ -23,7 +23,7 @@ const BWMPartAPage19 = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.6
+              CHAPTER - III
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Exchange of Private Numbers between Station Master and Cabin/Cabins for reception of trains</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
@@ -38,6 +38,11 @@ const BWMPartAPage19 = () => {
               {/* Introduction */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="bg-gradient-to-r from-gray-500/10 to-slate-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-gray-400/20">
+                <div className="flex-shrink-0">
+                    <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
+                      <span className="text-white font-bold lg:text-lg text-base">3.6</span>
+                    </div>
+                  </div>
                   <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
 The sequence of action to be followed from the time reception line is nominated till Station Master releases his control on the Home/Routing signal and exchange of Private Numbers is explained below:
                   </p>

@@ -23,9 +23,9 @@ const BWMPartAPage26C = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.19
+              CHAPTER - III
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Insertion of Token in the Block Instrument</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4"> 3.19 Insertion of Token in the Block Instrument</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
@@ -46,7 +46,7 @@ const BWMPartAPage26C = () => {
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                         Before the Station Master inserts the incoming token in the block instrument, he shall-
                       </p>
-                      <div className="space-y-3 ml-6">
+                      <div className="space-y-3 ml-1">
                         <div className="flex items-start gap-3">
                           <span className="mt-1 text-blue-400 font-bold">i)</span>
                           <span className="text-gray-200 lg:text-base text-sm">

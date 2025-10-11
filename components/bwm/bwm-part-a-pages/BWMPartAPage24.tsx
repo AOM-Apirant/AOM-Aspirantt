@@ -23,9 +23,9 @@ const BWMPartAPage24 = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.16
+              CHAPTER - III
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Delivery of token (&apos;Authority to Proceed&apos;) to the Driver</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4"> 3.16 Delivery of token (&apos;Authority to Proceed&apos;) to the Driver</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
@@ -64,7 +64,7 @@ const BWMPartAPage24 = () => {
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                         Delivery of token to the Driver of a stopping train:
                       </p>
-                      <div className="space-y-3 ml-6">
+                      <div className="space-y-3 ml-1">
                         <div className="flex items-start gap-3">
                           <span className="mt-1 text-indigo-400 font-bold">i)</span>
                           <span className="text-gray-200 lg:text-base text-sm">
@@ -107,7 +107,7 @@ const BWMPartAPage24 = () => {
                     <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                         <span className="inline-flex items-center gap-2">
-                          <svg className="w-5 h-5 text-purple-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01" /></svg>
+                          
                           <span>Delivery of token to the Driver of a non-stopping train:</span>
                         </span>
                         <br />
@@ -130,7 +130,7 @@ const BWMPartAPage24 = () => {
                     <div className="bg-gradient-to-r from-pink-500/10 to-yellow-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-pink-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                         <span className="inline-flex items-center gap-2">
-                          <svg className="w-5 h-5 text-yellow-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7" /></svg>
+                          
                           <span>Delivery of ‘Authority to proceed’ when two engines are on train:</span>
                         </span>
                         <br />
@@ -153,11 +153,11 @@ const BWMPartAPage24 = () => {
                     <div className="bg-gradient-to-r from-yellow-500/10 to-green-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-yellow-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-2">
                         <span className="inline-flex items-center gap-2">
-                          <svg className="w-5 h-5 text-green-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                          
                           <span>Driver to examine ‘Authority to proceed’ <span className="text-xs text-gray-400">(G.R. 14.09)</span>:</span>
                         </span>
                       </p>
-                      <ul className="list-none ml-6 space-y-2">
+                      <ul className="list-none ml-1 space-y-2">
                         <li className="flex items-start gap-2">
                           <span className="mt-1 text-green-400 font-bold">i)</span>
                           <span className="text-gray-200 lg:text-base text-sm">
@@ -193,10 +193,10 @@ const BWMPartAPage24 = () => {
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-red-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-2 flex items-center gap-2">
-                        <svg className="w-5 h-5 text-orange-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-1.414 1.414M6.343 17.657l-1.414 1.414M12 8v4l3 3M12 2a10 10 0 100 20 10 10 0 000-20z" /></svg>
+                        
                         <span>Train in Block Section Without ‘Authority to Proceed’ <span className="text-xs text-gray-400">(G.R. 6.06)</span>:</span>
                       </p>
-                      <ul className="list-none ml-6 space-y-2">
+                      <ul className="list-none ml-1 space-y-2">
                         <li className="flex items-start gap-2">
                           <span className="mt-1 text-orange-400 font-bold">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5" /></svg>

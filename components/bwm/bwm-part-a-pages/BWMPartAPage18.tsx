@@ -22,9 +22,7 @@ const BWMPartAPage18 = () => {
                 </svg>
               </div>
             </div>
-            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.5
-            </h1>
+            
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Outlying sidings controlled by the token of the block section</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -40,17 +38,17 @@ const BWMPartAPage18 = () => {
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
                   <div className="flex-shrink-0">
                     <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">a</span>
+                      <span className="text-white font-bold lg:text-lg text-base">3.5</span>
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                       <div className="space-y-4">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          Outlying sidings, taking off the running line, are provided on certain block sections. The points taking off the running line to such sidings are provided with locking arrangements, the siding lock being controlled and operated by the &apos;token&apos; of the block section.
+                          <span className="text-blue-400 font-bold text-xl">a)</span> Outlying sidings, taking off the running line, are provided on certain block sections. The points taking off the running line to such sidings are provided with locking arrangements, the siding lock being controlled and operated by the &apos;token&apos; of the block section.
                         </p>
                         
-                        <div className="space-y-3 ml-6">
+                        <div className="space-y-3 ml-1">
                           <div className="flex items-start gap-3">
                             <span className="mt-1 text-blue-400">
                               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -81,15 +79,11 @@ const BWMPartAPage18 = () => {
               {/* Auxiliary Token Section */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
-                  <div className="flex-shrink-0">
-                    <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-indigo-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">b</span>
-                    </div>
-                  </div>
+                  
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-indigo-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        On busy sections where the regular train services are not to be dislocated by the work inside such siding i.e., where the service has to be maintained even before the shunting train sent into the siding returns to either of the block stations auxiliary token (occupation block) instruments are provided, one instrument at one of the two adjacent block stations and the other at the siding itself. With this arrangement, it is possible after shunting the train into the siding, to set and lock the points for the main line and clear the block section maintaining the main line trains services.
+                        <span className="text-indigo-400 font-bold text-xl">b)</span> On busy sections where the regular train services are not to be dislocated by the work inside such siding i.e., where the service has to be maintained even before the shunting train sent into the siding returns to either of the block stations auxiliary token (occupation block) instruments are provided, one instrument at one of the two adjacent block stations and the other at the siding itself. With this arrangement, it is possible after shunting the train into the siding, to set and lock the points for the main line and clear the block section maintaining the main line trains services.
                       </p>
                     </div>
                   </div>
@@ -99,15 +93,11 @@ const BWMPartAPage18 = () => {
               {/* Station Working Rules Section */}
               <div className="group hover:bg-white/5 py-3 lg:px-4 px-2 lg:py-6 rounded-xl transition-all duration-300 border border-white/10 hover:border-white/20">
                 <div className="flex flex-col gap-3 items-center space-y-4 relative">
-                  <div className="flex-shrink-0">
-                    <div className="lg:w-16 lg:h-16 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 group-hover:scale-110 absolute top-0 right-0">
-                      <span className="text-white font-bold lg:text-lg text-base">c</span>
-                    </div>
-                  </div>
+                  
                   <div className="flex-1">
                     <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-purple-400/20">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        Detailed instructions for working the sidings shall be incorporated in the Station Working Rules of the stations concerned.
+                        <span className="text-purple-400 font-bold text-xl">c)</span> Detailed instructions for working the sidings shall be incorporated in the Station Working Rules of the stations concerned.
                       </p>
                     </div>
                   </div>

@@ -62,12 +62,8 @@ const BWMPartAPage6 = () => {
                       </div>
                       <div className="space-y-6">
                         <div className="mb-4">
-                          <h4 className="text-xl font-semibold text-blue-300 mb-2 flex items-center gap-2">
-                            <span>
-                              <svg className="inline w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-5 5v-5zM4.5 5.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S3 7.83 3 7s.67-1.5 1.5-1.5zm0 4c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S3 11.83 3 11s.67-1.5 1.5-1.5zm0 4c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S3 15.83 3 15s.67-1.5 1.5-1.5z" />
-                              </svg>
-                            </span>
+                          <h4 className="text-xl font-semibold text-blue-300 mb-2 flex items-center text-center justify-center gap-2">
+                            
                             Bell Signal Indications and Codes
                           </h4>
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">

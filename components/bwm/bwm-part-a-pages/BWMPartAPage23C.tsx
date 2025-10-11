@@ -23,9 +23,9 @@ const BWMPartAPage23C = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              3.15
+              CHAPTER - III
             </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">Authority to proceed (G.R. 14.08)</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4"> 3.15 Authority to proceed (G.R. 14.08)</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
@@ -46,7 +46,7 @@ const BWMPartAPage23C = () => {
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                         The Driver shall not take his train from a block station unless he has been given an &apos;Authority to proceed&apos; on single line, either,
                       </p>
-                      <div className="space-y-3 ml-6">
+                      <div className="space-y-3 ml-1">
                         <div className="flex items-start gap-3">
                           <span className="mt-1 text-blue-400 font-bold">i)</span>
                           <span className="text-gray-200 lg:text-base text-sm">
