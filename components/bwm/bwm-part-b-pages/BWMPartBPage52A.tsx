@@ -23,6 +23,9 @@ const BWMPartBPage52A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Precautions Before Giving Line Clear
             </h1>
             <h2 className="lg:text-3xl text-xl font-bold text-indigo-300 mb-4">Diodo Handle Type Token Less Block Instruments</h2>
@@ -30,61 +33,91 @@ const BWMPartBPage52A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.10. Precautions before giving &apos;Line Clear&apos; – Diodo Handle type token less block instruments:</h3>
                     
-                    <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                         Before <span className="text-green-300 font-semibold">&apos;Y&apos;</span> gives <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> to <span className="text-green-300 font-semibold">&apos;X&apos;</span>, he shall examine his Train Signal Register in order to ascertain –
                       </p>
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">a)</span> That the <span className="text-blue-300 font-semibold">&apos;Train out of block section&apos;</span> or <span className="text-blue-300 font-semibold">&apos;Obstruction removed&apos;</span> signal has been received and entered in his Train Signal Register for the previous train that has passed over <span className="text-green-300 font-semibold">&apos;X&apos;</span> – <span className="text-green-300 font-semibold">&apos;Y&apos;</span> block section and also that the block section is clear.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">a</span>
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-2">
+                            That the <span className="text-blue-300 font-semibold">&apos;Train out of block section&apos;</span> or <span className="text-blue-300 font-semibold">&apos;Obstruction removed&apos;</span> signal has been received and entered in his Train Signal Register for the previous train that has passed over <span className="text-green-300 font-semibold">&apos;X&apos;</span> – <span className="text-green-300 font-semibold">&apos;Y&apos;</span> block section and also that the block section is clear.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">b)</span> That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been given to <span className="text-green-300 font-semibold">&apos;X&apos;</span> for any other train.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">b</span>
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-2">
+                            That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been given to <span className="text-green-300 font-semibold">&apos;X&apos;</span> for any other train.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">c)</span> That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been obtained from <span className="text-green-300 font-semibold">&apos;X&apos;</span> for a train in the opposite direction.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">c</span>
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-2">
+                            That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been obtained from <span className="text-green-300 font-semibold">&apos;X&apos;</span> for a train in the opposite direction.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section d */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">d)</span> That Private Number has been given for the train.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">d</span>
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-2">
+                            That Private Number has been given for the train.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section e */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">e)</span> That the <span className="text-yellow-300 font-semibold">&apos;Operating handle&apos;</span> is in the <span className="text-yellow-300 font-semibold">&apos;Line closed&apos;</span> position.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">e</span>
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-2">
+                            That the <span className="text-yellow-300 font-semibold">&apos;Operating handle&apos;</span> is in the <span className="text-yellow-300 font-semibold">&apos;Line closed&apos;</span> position.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section f */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">f)</span> That the <span className="text-yellow-300 font-semibold">&apos;Shunt key&apos;</span> and switches <span className="text-blue-300 font-semibold">S 1</span> and <span className="text-blue-300 font-semibold">S 2</span> are in their normal position in the instrument.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-rose-400 to-rose-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">f</span>
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-2">
+                            That the <span className="text-yellow-300 font-semibold">&apos;Shunt key&apos;</span> and switches <span className="text-blue-300 font-semibold">S 1</span> and <span className="text-blue-300 font-semibold">S 2</span> are in their normal position in the instrument.
+                          </p>
+                        </div>
                       </div>
                     </div>
 

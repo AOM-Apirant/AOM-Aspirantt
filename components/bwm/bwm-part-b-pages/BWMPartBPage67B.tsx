@@ -22,6 +22,9 @@ const BWMPartBPage67B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">CHAPTER - VII</h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"></h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in"></h1>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Persons Authorised to Test
             </h1>
@@ -30,33 +33,47 @@ const BWMPartBPage67B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">7.2. Persons authorised to test:</h3>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> Authorized Officials for Testing
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          The <span className="text-green-300 font-semibold">Instruments and Apparatus</span> connected with them may only be tested by <span className="text-blue-300 font-semibold">SI/ESM</span> or other <span className="text-blue-300 font-semibold">authorised officials of the S&T department</span>. <span className="text-yellow-300 font-semibold">&apos;Testing&apos;</span> signal shall not be exchanged unless the <span className="text-blue-300 font-semibold">SI/ESM</span> or other <span className="text-blue-300 font-semibold">authorised official of the S&T department</span> is at one end of the <span className="text-green-300 font-semibold">Block Section</span> and the receipt of the <span className="text-yellow-300 font-semibold">&apos;Testing&apos;</span> signal shall be regarded as an intimation that the <span className="text-blue-300 font-semibold">SI/ESM</span> or other <span className="text-blue-300 font-semibold">authorised official of the S&T department</span> is present.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">a</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Authorized Officials for Testing
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-green-300 font-semibold">Instruments and Apparatus</span> connected with them may only be tested by <span className="text-blue-300 font-semibold">SI/ESM</span> or other <span className="text-blue-300 font-semibold">authorised officials of the S&T department</span>. <span className="text-yellow-300 font-semibold">&apos;Testing&apos;</span> signal shall not be exchanged unless the <span className="text-blue-300 font-semibold">SI/ESM</span> or other <span className="text-blue-300 font-semibold">authorised official of the S&T department</span> is at one end of the <span className="text-green-300 font-semibold">Block Section</span> and the receipt of the <span className="text-yellow-300 font-semibold">&apos;Testing&apos;</span> signal shall be regarded as an intimation that the <span className="text-blue-300 font-semibold">SI/ESM</span> or other <span className="text-blue-300 font-semibold">authorised official of the S&T department</span> is present.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Testing on Behalf by Station Master
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          Whenever any <span className="text-blue-300 font-semibold">authorised person</span> who is not competent to test the <span className="text-green-300 font-semibold">block instrument</span> is present at one end, he may request the <span className="text-blue-300 font-semibold">Station Master</span> to test the <span className="text-green-300 font-semibold">block instrument</span> on his behalf. The <span className="text-blue-300 font-semibold">Station Master</span> shall comply with such request and exchange <span className="text-yellow-300 font-semibold">testing signals</span> with the <span className="text-blue-300 font-semibold">Station Master</span> at the other end. Both the <span className="text-blue-300 font-semibold">Station Masters</span> shall make the necessary entries in the <span className="text-red-400 font-semibold">Train Signal Register</span>.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">b</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Testing on Behalf by Station Master
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Whenever any <span className="text-blue-300 font-semibold">authorised person</span> who is not competent to test the <span className="text-green-300 font-semibold">block instrument</span> is present at one end, he may request the <span className="text-blue-300 font-semibold">Station Master</span> to test the <span className="text-green-300 font-semibold">block instrument</span> on his behalf. The <span className="text-blue-300 font-semibold">Station Master</span> shall comply with such request and exchange <span className="text-yellow-300 font-semibold">testing signals</span> with the <span className="text-blue-300 font-semibold">Station Master</span> at the other end. Both the <span className="text-blue-300 font-semibold">Station Masters</span> shall make the necessary entries in the <span className="text-red-400 font-semibold">Train Signal Register</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
 

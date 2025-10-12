@@ -22,6 +22,7 @@ const BWMPartBPage80B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">CHAPTER - VIII</h1>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Resumption of Block Working
             </h1>
@@ -30,53 +31,81 @@ const BWMPartBPage80B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">8.11. Resumption of block working after interruption or suspension:</h3>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> Resumption by Station Masters
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          When <span className="text-red-400 font-semibold">block working has been suspended</span> under items <span className="text-yellow-300 font-semibold">(vii)</span>, <span className="text-yellow-300 font-semibold">(viii)</span> and <span className="text-yellow-300 font-semibold">(ix)</span> of <span className="text-yellow-300 font-semibold">Rule 8.1(d)</span> above, <span className="text-green-300 font-semibold">block working</span> shall be resumed in these cases by the <span className="text-blue-300 font-semibold">Station Masters</span> themselves on the conditions laid down in the note under each item being fulfilled and after exchanging messages in accordance with <span className="text-yellow-300 font-semibold">para ( d )</span> below.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-blue-600/5 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">a</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg">
+                              Resumption by Station Masters
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When <span className="text-red-400 font-semibold">block working has been suspended</span> under items <span className="text-yellow-300 font-semibold">(vii)</span>, <span className="text-yellow-300 font-semibold">(viii)</span> and <span className="text-yellow-300 font-semibold">(ix)</span> of <span className="text-yellow-300 font-semibold">Rule 8.1(d)</span> above, <span className="text-green-300 font-semibold">block working</span> shall be resumed in these cases by the <span className="text-blue-300 font-semibold">Station Masters</span> themselves on the conditions laid down in the note under each item being fulfilled and after exchanging messages in accordance with <span className="text-yellow-300 font-semibold">para ( d )</span> below.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Resumption After Testing
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          When <span className="text-red-400 font-semibold">block working has been suspended</span> under any of the other items (i.e., those not included in clause <span className="text-yellow-300 font-semibold">(a)</span> above) <span className="text-green-300 font-semibold">block working</span> shall not be resumed by the <span className="text-blue-300 font-semibold">Station Masters</span> themselves, even if the <span className="text-green-300 font-semibold">block instrument</span> or communication is restored until the <span className="text-green-300 font-semibold">block instruments</span> have been tested and certified by the <span className="text-blue-300 font-semibold">ESM / SI</span> and the messages have been exchanged in accordance with <span className="text-yellow-300 font-semibold">para (c)</span> below.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-green-500/10 to-green-600/5 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/50 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">b</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg">
+                              Resumption After Testing
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When <span className="text-red-400 font-semibold">block working has been suspended</span> under any of the other items (i.e., those not included in clause <span className="text-yellow-300 font-semibold">(a)</span> above) <span className="text-green-300 font-semibold">block working</span> shall not be resumed by the <span className="text-blue-300 font-semibold">Station Masters</span> themselves, even if the <span className="text-green-300 font-semibold">block instrument</span> or communication is restored until the <span className="text-green-300 font-semibold">block instruments</span> have been tested and certified by the <span className="text-blue-300 font-semibold">ESM / SI</span> and the messages have been exchanged in accordance with <span className="text-yellow-300 font-semibold">para (c)</span> below.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">c)</span> Block Section Clearance Verification
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          Before resuming <span className="text-green-300 font-semibold">block working</span>, <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span> shall satisfy themselves that the <span className="text-green-300 font-semibold">block section</span> is clear by exchanging messages by <span className="text-green-300 font-semibold">telephone</span> giving the time of arrival and departure of the last train at stations <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span>.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">c</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg">
+                              Block Section Clearance Verification
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Before resuming <span className="text-green-300 font-semibold">block working</span>, <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span> shall satisfy themselves that the <span className="text-green-300 font-semibold">block section</span> is clear by exchanging messages by <span className="text-green-300 font-semibold">telephone</span> giving the time of arrival and departure of the last train at stations <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section d */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">d)</span> Notification of Resumption
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          When <span className="text-green-300 font-semibold">block working is resumed</span> at <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span> shall advise each other, the <span className="text-blue-300 font-semibold">ESM</span> and <span className="text-blue-300 font-semibold">SI</span> by <span className="text-green-300 font-semibold">telephone</span> of the resumption. A copy of this message shall be sent to <span className="text-blue-300 font-semibold">DRM/T and S&T</span> by cover and the <span className="text-blue-300 font-semibold">SCOR</span> on duty advised on the controlled sections by the <span className="text-blue-300 font-semibold">Station Masters</span> of stations <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span>.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-orange-500/10 to-orange-600/5 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/50 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">d</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg">
+                              Notification of Resumption
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When <span className="text-green-300 font-semibold">block working is resumed</span> at <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span> shall advise each other, the <span className="text-blue-300 font-semibold">ESM</span> and <span className="text-blue-300 font-semibold">SI</span> by <span className="text-green-300 font-semibold">telephone</span> of the resumption. A copy of this message shall be sent to <span className="text-blue-300 font-semibold">DRM/T and S&T</span> by cover and the <span className="text-blue-300 font-semibold">SCOR</span> on duty advised on the controlled sections by the <span className="text-blue-300 font-semibold">Station Masters</span> of stations <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
 

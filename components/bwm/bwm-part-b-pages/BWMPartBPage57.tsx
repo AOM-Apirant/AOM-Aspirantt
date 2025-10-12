@@ -30,48 +30,69 @@ const BWMPartBPage57: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">4.1. Caution order (G.R. 4.09):</h3>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> When Caution Orders are Necessary
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          Whenever, in consequence of the line being under repair or for any other reason, special precautions are necessary, a <span className="text-green-300 font-semibold">Caution Order</span> detailing the kilometers between which such precautions are necessary, the reasons for taking such precautions, and the speed at which a train shall travel, shall be handed over to the Driver at the stopping station immediately short of the place where such precautions are necessary, or at such other stations and in such manner, as prescribed under Special Instructions.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">a</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              When Caution Orders are Necessary
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Whenever, in consequence of the line being under repair or for any other reason, special precautions are necessary, a <span className="text-green-300 font-semibold">Caution Order</span> detailing the kilometers between which such precautions are necessary, the reasons for taking such precautions, and the speed at which a train shall travel, shall be handed over to the Driver at the stopping station immediately short of the place where such precautions are necessary, or at such other stations and in such manner, as prescribed under Special Instructions.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Exceptions
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          Sub-rule (a) does not apply in the case of long continued repairs when fixed signals are provided at an adequate distance short of such place and have been notified to the running staff concerned.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">b</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Exceptions
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Sub-rule (a) does not apply in the case of long continued repairs when fixed signals are provided at an adequate distance short of such place and have been notified to the running staff concerned.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">c)</span> Format of Caution Order
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                          The <span className="text-green-300 font-semibold">Caution Order</span> referred to in sub-rule (1) shall be on <span className="text-blue-300 font-semibold">white paper with green font</span> and be made out and signed in full:
-                        </p>
-                        
-                        <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4">
-                          <p className="text-yellow-200 lg:text-base text-sm leading-relaxed">
-                            <span className="font-bold">Provided that</span> as a temporary measure the <span className="text-green-300 font-semibold">Caution Order</span> may be on <span className="text-blue-300 font-semibold">white paper with a green band running diagonally across the form</span>.
-                          </p>
+                      <div className="group relative bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">c</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Format of Caution Order
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-green-300 font-semibold">Caution Order</span> referred to in sub-rule (1) shall be on <span className="text-blue-300 font-semibold">white paper with green font</span> and be made out and signed in full:
+                            </p>
+                            
+                            <div className="bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4">
+                              <p className="text-yellow-200 lg:text-base text-sm leading-relaxed">
+                                <span className="font-bold">Provided that</span> as a temporary measure the <span className="text-green-300 font-semibold">Caution Order</span> may be on <span className="text-blue-300 font-semibold">white paper with a green band running diagonally across the form</span>.
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
 

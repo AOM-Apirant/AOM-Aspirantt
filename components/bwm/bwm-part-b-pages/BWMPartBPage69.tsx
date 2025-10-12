@@ -30,25 +30,30 @@ const BWMPartBPage69: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">8.1. Failure of Tokenless block instruments:</h3>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                       The <span className="text-green-300 font-semibold">block instrument</span> shall be considered to be interrupted and their working suspended in the following circumstances:
                     </p>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> Diodo Handle type and Kyosan / Podanur push button tokenless block instruments.
-                        </h4>
-                        
-                        <div className="space-y-3 ml-4">
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">a</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Diodo Handle type and Kyosan / Podanur push button tokenless block instruments.
+                            </h4>
+                            
+                            <div className="space-y-3 ml-1">
                           <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                             <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
                               <span className="text-yellow-300 font-semibold">i)</span> When attention cannot be obtained directly on the <span className="text-green-300 font-semibold">block instrument</span>.
@@ -139,16 +144,23 @@ const BWMPartBPage69: React.FC = () => {
                               <span className="text-yellow-300 font-semibold">x)</span> If it is known that the <span className="text-green-300 font-semibold">block instrument</span> is defective in any way not specified above.
                             </p>
                           </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Diado Handle type tokenless block instruments – other failures:
-                        </h4>
-                        
-                        <div className="space-y-3 ml-4">
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">b</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Diado Handle type tokenless block instruments – other failures:
+                            </h4>
+                            
+                            <div className="space-y-3 ml-1">
                           <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                             <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
                               <span className="text-yellow-300 font-semibold">i)</span> If the <span className="text-green-300 font-semibold">galvanometer needle</span> fails to move, when bell signals are given or received.
@@ -207,16 +219,23 @@ const BWMPartBPage69: React.FC = () => {
                               <span className="text-yellow-300 font-semibold">ix)</span> If <span className="text-yellow-300 font-semibold">&apos;Line clear&apos;</span> when obtained cannot be cancelled even though proper procedure has been followed;
                             </p>
                           </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">c)</span> Kyosan/Podanur Push button Tokenless block instrument – other failures:
-                        </h4>
-                        
-                        <div className="space-y-3 ml-4">
+                      <div className="group relative bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">c</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Kyosan/Podanur Push button Tokenless block instrument – other failures:
+                            </h4>
+                            
+                            <div className="space-y-3 ml-1">
                           <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                             <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
                               <span className="text-yellow-300 font-semibold">i)</span> If the <span className="text-yellow-300 font-semibold">&apos;TGT&apos;</span> indication is not displayed on the <span className="text-green-300 font-semibold">block instrument</span> when operated or <span className="text-yellow-300 font-semibold">&apos;TOL&apos;</span> indication is not displayed on the <span className="text-green-300 font-semibold">block instrument</span> after the train has entered the block section;
@@ -268,19 +287,26 @@ const BWMPartBPage69: React.FC = () => {
                               <span className="text-yellow-300 font-semibold">vii)</span> If the <span className="text-yellow-300 font-semibold">&apos;TGT&apos;</span> indication can be cancelled without the co-operation of the <span className="text-blue-300 font-semibold">Station Master</span> as required in the procedure <span className="text-yellow-300 font-semibold">3.3(B)</span> at the other end of the block section;
                             </p>
                           </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
                       {/* Section d */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">d)</span> Failure of Axle Counter Proven Block Panel (UFSBI & SSBPAC (D) single line) and Last stop signal.
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                          The <span className="text-green-300 font-semibold">block panels</span> must be considered as defective in the following cases:
-                        </p>
-                        
-                        <div className="space-y-3 ml-4">
+                      <div className="group relative bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">d</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Failure of Axle Counter Proven Block Panel (UFSBI & SSBPAC (D) single line) and Last stop signal.
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-green-300 font-semibold">block panels</span> must be considered as defective in the following cases:
+                            </p>
+                            
+                            <div className="space-y-3 ml-1">
                           <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                             <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
                               <span className="text-yellow-300 font-semibold">i)</span> When no indication is available on the <span className="text-green-300 font-semibold">Block Panel</span>;
@@ -376,19 +402,26 @@ const BWMPartBPage69: React.FC = () => {
                               <span className="font-bold text-yellow-300">Note:</span> Whenever, a difficulty is faced to set the <span className="text-green-300 font-semibold">Block Panel</span> to <span className="text-yellow-300 font-semibold">TGT</span> or <span className="text-yellow-300 font-semibold">&apos;Line Closed&apos;</span>, the <span className="text-blue-300 font-semibold">Station Master</span> shall verify from other end <span className="text-blue-300 font-semibold">Station Master</span> about the availability of <span className="text-yellow-300 font-semibold">SNK</span> , <span className="text-yellow-300 font-semibold">SHK (IN)</span>, <span className="text-yellow-300 font-semibold">SCK (IN)</span> indicators before treating the <span className="text-green-300 font-semibold">Block Panel</span> as failed.
                             </p>
                           </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
                       {/* Section e */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">e.</span> Failure of Last Stop Signal:
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                          In the following cases of failure of <span className="text-green-300 font-semibold">LSS</span>, <span className="text-green-300 font-semibold">Block instrument</span> shall not be suspended.
-                        </p>
-                        
-                        <div className="space-y-3 ml-4">
+                      <div className="group relative bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">e</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Failure of Last Stop Signal:
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              In the following cases of failure of <span className="text-green-300 font-semibold">LSS</span>, <span className="text-green-300 font-semibold">Block instrument</span> shall not be suspended.
+                            </p>
+                            
+                            <div className="space-y-3 ml-1">
                           <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                             <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
                               <span className="text-yellow-300 font-semibold">1.</span> Where <span className="text-green-300 font-semibold">block instrument</span> is interlocked with <span className="text-green-300 font-semibold">LSS</span> and <span className="text-green-300 font-semibold">LSS</span> cannot be taken off even though <span className="text-yellow-300 font-semibold">Line Clear</span> has been obtained on <span className="text-green-300 font-semibold">block instrument</span>
@@ -425,6 +458,8 @@ const BWMPartBPage69: React.FC = () => {
                             <p className="text-red-200 lg:text-base text-sm leading-relaxed">
                               <span className="font-bold text-red-300">NOTE: Failure advice:</span> In case of <span className="text-green-300 font-semibold">Block panel</span> or <span className="text-green-300 font-semibold">Last stop signal</span> failure the <span className="text-blue-300 font-semibold">Station Master</span> on duty shall promptly advise the concerned <span className="text-blue-300 font-semibold">Electrical Signal Maintainer</span> and the <span className="text-blue-300 font-semibold">Signal Supervisor</span> and issue <span className="text-red-400 font-semibold">failure memo</span> for the rectification of the failure.
                             </p>
+                          </div>
+                            </div>
                           </div>
                         </div>
                       </div>

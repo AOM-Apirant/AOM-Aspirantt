@@ -1,10 +1,10 @@
 import React from 'react'
-import BWMPartBPage51B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage51B'
+import BWMPartBPage80B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage80B'
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <BWMPartBPage51B/>
+          <BWMPartBPage80B/>
 
     </div>
   )
@@ -16,3 +16,5 @@ export default SamplePage
 
 
 // Make this content beautiful in the form of list style, in place of bullet points use simple icons related to content and content should be in english.
+
+// Design the a) b) c) d) without disturbing the content.

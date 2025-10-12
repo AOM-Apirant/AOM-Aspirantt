@@ -22,6 +22,7 @@ const BWMPartBPage74A: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">CHAPTER - VIII</h1>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Reports to be Sent
             </h1>
@@ -30,33 +31,47 @@ const BWMPartBPage74A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">8.4. Reports to be sent:</h3>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> Block Working Suspension Reporting
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          When <span className="text-red-400 font-semibold">block working is suspended</span>, the <span className="text-blue-300 font-semibold">Station Masters</span> at both ends of the <span className="text-green-300 font-semibold">block section</span> shall at once make entries in <span className="text-red-400 font-semibold">red ink</span>, in the <span className="text-green-300 font-semibold">Train Signal Register</span>, immediately below the entries for the last train, showing the date and time from which <span className="text-red-400 font-semibold">block working has been suspended</span> and the cause of suspension if known. Both the <span className="text-blue-300 font-semibold">Station Masters</span> shall then advise each other by <span className="text-green-300 font-semibold">telephone</span> of the suspension of <span className="text-red-400 font-semibold">block working</span> and the causes thereof, if known, and also advise the <span className="text-blue-300 font-semibold">ESM</span>, <span className="text-blue-300 font-semibold">SI</span> and <span className="text-blue-300 font-semibold">DRM/T and S&T</span>.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-gray-900 lg:text-xl text-lg">a</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Block Working Suspension Reporting
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When <span className="text-red-400 font-semibold">block working is suspended</span>, the <span className="text-blue-300 font-semibold">Station Masters</span> at both ends of the <span className="text-green-300 font-semibold">block section</span> shall at once make entries in <span className="text-red-400 font-semibold">red ink</span>, in the <span className="text-green-300 font-semibold">Train Signal Register</span>, immediately below the entries for the last train, showing the date and time from which <span className="text-red-400 font-semibold">block working has been suspended</span> and the cause of suspension if known. Both the <span className="text-blue-300 font-semibold">Station Masters</span> shall then advise each other by <span className="text-green-300 font-semibold">telephone</span> of the suspension of <span className="text-red-400 font-semibold">block working</span> and the causes thereof, if known, and also advise the <span className="text-blue-300 font-semibold">ESM</span>, <span className="text-blue-300 font-semibold">SI</span> and <span className="text-blue-300 font-semibold">DRM/T and S&T</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Last Stop Signal Failure Reporting
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          The <span className="text-blue-300 font-semibold">ESM</span> and the <span className="text-blue-300 font-semibold">MSM</span> shall also be advised, when there is a <span className="text-red-400 font-semibold">failure of the Last Stop Signal</span> after <span className="text-yellow-300 font-semibold">&apos;Line clear&apos;</span> has been obtained from the station ahead.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl lg:p-5 p-3 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:scale-[1.02]">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <span className="font-black text-white lg:text-xl text-lg">b</span>
+                          </div>
+                          <div className="flex-1 space-y-3">
+                            <h4 className="text-blue-200 font-bold lg:text-xl text-lg pt-1">
+                              Last Stop Signal Failure Reporting
+                            </h4>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-blue-300 font-semibold">ESM</span> and the <span className="text-blue-300 font-semibold">MSM</span> shall also be advised, when there is a <span className="text-red-400 font-semibold">failure of the Last Stop Signal</span> after <span className="text-yellow-300 font-semibold">&apos;Line clear&apos;</span> has been obtained from the station ahead.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
