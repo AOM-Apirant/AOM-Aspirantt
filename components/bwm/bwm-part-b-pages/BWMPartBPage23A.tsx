@@ -23,44 +23,72 @@ const BWMPartBPage23A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER II
+              CHAPTER - II
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">INSPECTION OF TRAIN SIGNAL REGISTER</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">2.8. Inspection of Train Signal Register:</h3>
                     
                     <div className="space-y-6">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">a)</span> The Train Signal Register in use shall be checked and signed by the Station Master in charge of the Station daily and his signature in the remarks column (at the end of the entries for the previous day) will be considered as a certificate and all trains have been duly and correctly entered in their regular course and sequence that he has taken note of the irregularities of any description recorded in the Train Signal Register and also those observed by him in the course of his check.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            The Train Signal Register in use shall be checked and signed by the Station Master in charge of the Station daily and his signature in the remarks column (at the end of the entries for the previous day) will be considered as a certificate and all trains have been duly and correctly entered in their regular course and sequence that he has taken note of the irregularities of any description recorded in the Train Signal Register and also those observed by him in the course of his check.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">b)</span> The Train Signal Register shall also be examined and signed by the Traffic Inspector / Signal Inspector of the section whenever he visits the station and inspects the block room in the course of his duties.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            The Train Signal Register shall also be examined and signed by the Traffic Inspector / Signal Inspector of the section whenever he visits the station and inspects the block room in the course of his duties.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">c)</span> Irregularities, if any, shall be noted in the Train Signal Register and brought to the notice of officials concerned.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            Irregularities, if any, shall be noted in the Train Signal Register and brought to the notice of officials concerned.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">d)</span> The Train Signal Register in use shall not be removed from the Cabin or the room, in which block instruments are placed without the orders of the DRM.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">d</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            The Train Signal Register in use shall not be removed from the Cabin or the room, in which block instruments are placed without the orders of the DRM.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -23,29 +23,29 @@ const BWMPartBPage34: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER III
+              CHAPTER - III
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SIGNALLING OF A TRAIN OVER THE BLOCK SECTION</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">3.4. Operation of Slip siding and catch sidings while despatching / receiving a train in Kyosan / Podanur push button type and Diodo handle type token less block instruments.</h3>
                     
-                    <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                         (Station &apos;X&apos; is assumed to be provided with slip siding protected by Last Stop Signal Station &apos;Y&apos; with a catch siding protected by First Stop Signal.)
                       </p>
                     </div>
 
                     <div className="space-y-6">
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">Initial Conditions:</h4>
                         
                         <div className="overflow-x-auto">
@@ -70,7 +70,7 @@ const BWMPartBPage34: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">Operation Procedure:</h4>
                         
                         <div className="overflow-x-auto">
@@ -199,7 +199,7 @@ const BWMPartBPage34: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">Final Steps - Block Section Closure:</h4>
                         
                         <div className="overflow-x-auto">

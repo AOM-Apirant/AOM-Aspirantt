@@ -23,6 +23,9 @@ const BWMPartBPage43: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Operation of Slip Siding and Catch Siding
             </h1>
             <h2 className="lg:text-3xl text-xl font-bold text-indigo-300 mb-4">While Sending/Receiving a Train</h2>
@@ -30,15 +33,15 @@ const BWMPartBPage43: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">3.6. Operation of Slip siding and catch siding while sending/receiving a train:</h3>
                     
-                    <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                         Slip siding and catch siding control keys are locked in EKT controlled by Block Panel. To operate the slip/catch siding points the key locked in the EKT controlled by Block Panel is removed and inserted in another EKT controlling the slip/catch siding points.
                       </p>
@@ -48,7 +51,7 @@ const BWMPartBPage43: React.FC = () => {
                     </div>
 
                     <div className="space-y-6">
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <div className="overflow-x-auto">
                           <table className="w-full border-collapse border border-white/20">
                             <thead>
@@ -184,7 +187,7 @@ const BWMPartBPage43: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10 mt-6">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10 mt-6">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           <span className="font-bold text-yellow-300">Note:</span> Though home signal may go automatically to &apos;ON&apos; by passage of the train, home signal switch (if any) shall not be put back to normal, unless the whole of the train has arrived inside the LVT. Failure to adhere to this will result in block failure and the train arrival buzzer will not sound alarm under such circumstances.
                         </p>

@@ -23,6 +23,9 @@ const BWMPartBPage51B: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Precautions Before Asking Is Line Clear
             </h1>
             <h2 className="lg:text-3xl text-xl font-bold text-indigo-300 mb-4">Diodo Handle Type Token Less Block Instrument</h2>
@@ -30,15 +33,15 @@ const BWMPartBPage51B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.9. Precautions before asking &apos;Is Line Clear&apos;— Diodo Handle type token less block instrument:</h3>
                     
-                    <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                         Before <span className="text-green-300 font-semibold">&apos;X&apos;</span> asks <span className="text-green-300 font-semibold">&apos;Y&apos;</span> for <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span>, he shall examine his Train Signal Register in order to ascertain —
                       </p>
@@ -46,45 +49,87 @@ const BWMPartBPage51B: React.FC = () => {
 
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">a)</span> That the <span className="text-blue-300 font-semibold">&apos;Train out of block section&apos;</span> or <span className="text-blue-300 font-semibold">&apos;Obstruction removed&apos;</span> signal has been received and entered in his Train Signal Register for the previous train that has passed over the <span className="text-green-300 font-semibold">&apos;X&apos;</span> – <span className="text-green-300 font-semibold">&apos;Y&apos;</span> block section and also that the block section is clear.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            That the <span className="text-blue-300 font-semibold">&apos;Train out of block section&apos;</span> or <span className="text-blue-300 font-semibold">&apos;Obstruction removed&apos;</span> signal has been received and entered in his Train Signal Register for the previous train that has passed over the <span className="text-green-300 font-semibold">&apos;X&apos;</span> – <span className="text-green-300 font-semibold">&apos;Y&apos;</span> block section and also that the block section is clear.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">b)</span> That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been obtained from <span className="text-green-300 font-semibold">&apos;Y&apos;</span> for any other train.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been obtained from <span className="text-green-300 font-semibold">&apos;Y&apos;</span> for any other train.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">c)</span> That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been given to <span className="text-green-300 font-semibold">&apos;Y&apos;</span> for a train in the opposite direction.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            That <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> has not been given to <span className="text-green-300 font-semibold">&apos;Y&apos;</span> for a train in the opposite direction.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section d */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">d)</span> That the Operating handle is in the <span className="text-yellow-300 font-semibold">&apos;Line closed&apos;</span> position.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">d</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            That the Operating handle is in the <span className="text-yellow-300 font-semibold">&apos;Line closed&apos;</span> position.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section e */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">e)</span> That a Private Number has been obtained for the train.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">e</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            That a Private Number has been obtained for the train.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section f */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">f)</span> That the shunt key and switches <span className="text-blue-300 font-semibold">S 1</span> and <span className="text-blue-300 font-semibold">S 2</span> are in their normal position in the instrument.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">f</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            That the shunt key and switches <span className="text-blue-300 font-semibold">S 1</span> and <span className="text-blue-300 font-semibold">S 2</span> are in their normal position in the instrument.
+                          </p>
+                        </div>
                       </div>
                     </div>
 

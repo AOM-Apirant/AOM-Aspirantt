@@ -23,6 +23,9 @@ const BWMPartBPage51A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Call Attention Signal
             </h1>
             <h2 className="lg:text-3xl text-xl font-bold text-indigo-300 mb-4">Block Section Communication</h2>
@@ -30,34 +33,55 @@ const BWMPartBPage51A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.8. The &apos;Call attention&apos; signal:</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">a)</span> <span className="text-blue-300 font-semibold">&apos;Call attention&apos;</span> signal shall be given when it is necessary to attract the attention of Station Master at the other end of the block section on the block instrument.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            <span className="text-blue-300 font-semibold">&apos;Call attention&apos;</span> signal shall be given when it is necessary to attract the attention of Station Master at the other end of the block section on the block instrument.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">b)</span> In order to ascertain that only the correct block station is in contact and then convey the description and number of the train for which <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> is required, as well as to ascertain whether the block station in advance is in a position to accept the <span className="text-blue-300 font-semibold">&apos;Is line clear&apos;</span> signal, the <span className="text-blue-300 font-semibold">&apos;Call attention&apos;</span> signal shall be sent to the block station in advance.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            In order to ascertain that only the correct block station is in contact and then convey the description and number of the train for which <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> is required, as well as to ascertain whether the block station in advance is in a position to accept the <span className="text-blue-300 font-semibold">&apos;Is line clear&apos;</span> signal, the <span className="text-blue-300 font-semibold">&apos;Call attention&apos;</span> signal shall be sent to the block station in advance.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-yellow-300">c)</span> <span className="text-green-300 font-semibold">&apos;X&apos;</span> shall call <span className="text-green-300 font-semibold">&apos;Y&apos;s</span> attention by giving single beat until <span className="text-green-300 font-semibold">Y&apos;s</span> attention is obtained. <span className="text-green-300 font-semibold">&apos;Y&apos;</span> shall signify his attention by acknowledging with one beat.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            <span className="text-green-300 font-semibold">&apos;X&apos;</span> shall call <span className="text-green-300 font-semibold">&apos;Y&apos;s</span> attention by giving single beat until <span className="text-green-300 font-semibold">Y&apos;s</span> attention is obtained. <span className="text-green-300 font-semibold">&apos;Y&apos;</span> shall signify his attention by acknowledging with one beat.
+                          </p>
+                        </div>
                       </div>
                     </div>
 

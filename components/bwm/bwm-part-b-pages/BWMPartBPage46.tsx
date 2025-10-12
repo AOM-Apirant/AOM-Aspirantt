@@ -23,6 +23,9 @@ const BWMPartBPage46: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              CHAPTER - III
+            </h1>
+            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Shunting Operations
             </h1>
             <h2 className="lg:text-3xl text-xl font-bold text-indigo-300 mb-4">Between Stop Signals on Single Line</h2>
@@ -30,72 +33,103 @@ const BWMPartBPage46: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.7. Shunting.</h3>
                     
                     {/* Section 3.7.1 */}
-                    <div className="bg-white/5 rounded-lg p-6 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mb-6">
                       <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-4">
                         3.7.1. Shunting between the Last Stop Signal and opposing First Stop Signal at a Class &apos;B&apos; single line station equipped with two aspect signals- (G.R. 8.11)
                       </h4>
                       
                       <div className="space-y-4">
-                        <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
-                            <span className="font-bold text-yellow-300">i)</span> At a class &apos;B&apos; station on single line, the line between the Last Stop Signal and the opposing Outer signal shall not be obstructed, unless a railway servant specially appointed in this behalf by the Station Master is in charge of the operations and unless: -
-                          </p>
-                          
-                          <div className="ml-6 space-y-3">
-                            <div className="flex items-start gap-3">
-                              <span className="text-green-400 mt-1 font-bold">a)</span>
-                              <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
-                                The block section into which the shunting is to take place is clear of an approaching train and all relevant signals are at <span className="text-red-400 font-semibold">&apos;ON&apos;</span> position,
-                              </p>
+                        <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center shadow-lg">
+                                <span className="text-white font-bold text-sm">i</span>
+                              </div>
                             </div>
-                            
-                            <p className="text-center text-yellow-300 font-semibold">or</p>
-                            
-                            <div className="flex items-start gap-3">
-                              <span className="text-green-400 mt-1 font-bold">b)</span>
-                              <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
-                                If an approaching train has arrived at the Outer signal, the Station Master has personally satisfied himself that the train has been brought to a dead stop at the signal.
+                            <div className="flex-1">
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
+                                At a class &apos;B&apos; station on single line, the line between the Last Stop Signal and the opposing Outer signal shall not be obstructed, unless a railway servant specially appointed in this behalf by the Station Master is in charge of the operations and unless: -
                               </p>
+                              
+                              <div className="space-y-3 ml-2">
+                                <div className="flex gap-3">
+                                  <div className="flex-shrink-0 mt-1">
+                                    <div className="w-6 h-6 rounded-md bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow">
+                                      <span className="text-white font-medium text-xs">a</span>
+                                    </div>
+                                  </div>
+                                  <p className="text-gray-200 lg:text-base text-sm leading-relaxed flex-1">
+                                    The block section into which the shunting is to take place is clear of an approaching train and all relevant signals are at <span className="text-red-400 font-semibold">&apos;ON&apos;</span> position,
+                                  </p>
+                                </div>
+                                
+                                <p className="text-center text-yellow-300 font-semibold">or</p>
+                                
+                                <div className="flex gap-3">
+                                  <div className="flex-shrink-0 mt-1">
+                                    <div className="w-6 h-6 rounded-md bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow">
+                                      <span className="text-white font-medium text-xs">b</span>
+                                    </div>
+                                  </div>
+                                  <p className="text-gray-200 lg:text-base text-sm leading-relaxed flex-1">
+                                    If an approaching train has arrived at the Outer signal, the Station Master has personally satisfied himself that the train has been brought to a dead stop at the signal.
+                                  </p>
+                                </div>
+                              </div>
+                              
+                              <div className="mt-4 bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4">
+                                <p className="text-yellow-200 lg:text-base text-sm leading-relaxed italic">
+                                  &quot;Provided that the line shall not be obstructed under clause (b) in thick, foggy or tempestuous weather impairing visibility or during night at stations where the Outer signal concerned is not visible from the Station Master&apos;s office&quot;.
+                                </p>
+                              </div>
                             </div>
                           </div>
-                          
-                          <div className="mt-4 bg-yellow-500/10 border border-yellow-400/30 rounded-lg p-4">
-                            <p className="text-yellow-200 lg:text-base text-sm leading-relaxed italic">
-                              &quot;Provided that the line shall not be obstructed under clause (b) in thick, foggy or tempestuous weather impairing visibility or during night at stations where the Outer signal concerned is not visible from the Station Master&apos;s office&quot;.
+                        </div>
+                        
+                        <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center shadow-lg">
+                                <span className="text-white font-bold text-sm">ii</span>
+                              </div>
+                            </div>
+                            <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                              <span className="text-blue-300 font-semibold">T/806</span> shall be given along with shunt key where available.
                             </p>
                           </div>
                         </div>
                         
-                        <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="font-bold text-yellow-300">ii)</span> <span className="text-blue-300 font-semibold">T/806</span> shall be given along with shunt key where available.
-                          </p>
-                        </div>
-                        
-                        <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="font-bold text-yellow-300">iii)</span> A tail lamp/tail board shall be placed on the rear most vehicle or on the engine if no vehicles are attached on the side facing the station in rear so as to serve as an indication of the complete return of all the vehicles before the &apos;Cancel last signal&apos; is given.
-                          </p>
+                        <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                          <div className="flex gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center shadow-lg">
+                                <span className="text-white font-bold text-sm">iii</span>
+                              </div>
+                            </div>
+                            <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                              A tail lamp/tail board shall be placed on the rear most vehicle or on the engine if no vehicles are attached on the side facing the station in rear so as to serve as an indication of the complete return of all the vehicles before the &apos;Cancel last signal&apos; is given.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     {/* Section 3.7.2 */}
-                    <div className="bg-white/5 rounded-lg p-6 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mb-6">
                       <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-4">
                         3.7.2. Shunting between the Last Stop Signal and opposing First Stop Signal at a class B&apos; single line station equipped with multiple aspect signals- (G.R.8.12)
                       </h4>
                       
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           The line outside Last Stop Signal/Shunting Limit Board and up to First Stop Signal shall not be obstructed unless a railway servant specially appointed in this behalf by the Station Master in charge of operations and also the block section into which shunting is to take place is clear of an approaching train.
                         </p>
@@ -103,19 +137,19 @@ const BWMPartBPage46: React.FC = () => {
                     </div>
 
                     {/* Section 3.7.3 */}
-                    <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                    <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                       <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-4">
                         3.7.3. Shunting beyond First Stop Signal on single line in Two Aspect Signalling & Multiple Aspect Signalling territories.
                       </h4>
                       
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           When <span className="text-green-300 font-semibold">&apos;X&apos;</span> requires shunting a train partly or fully outside the First Stop Signal, he shall obtain <span className="text-blue-300 font-semibold">&apos;Line clear&apos;</span> from <span className="text-green-300 font-semibold">&apos;Y&apos;</span> explaining the reasons which shall also be recorded in the Train Signal Registers at <span className="text-green-300 font-semibold">&apos;X&apos;</span> and <span className="text-green-300 font-semibold">&apos;Y&apos;</span>. The Station Master shall then issue to the Driver an <span className="text-yellow-300 font-semibold">&apos;Authority to proceed&apos;</span> applicable to the section and manuscript memo to return to <span className="text-green-300 font-semibold">&apos;X&apos;</span>. The departure and the reception signals shall be taken <span className="text-green-400 font-semibold">&apos;OFF&apos;</span> for this purpose.
                         </p>
                       </div>
                     </div>
 
-                    <div className="bg-white/5 rounded-lg p-6 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mb-6">
                       <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-4">
                         3.7.4. Shunting between Last Stop Signal and Opposing First Stop Signal <span className="italic">(Daido Handle Type Tokenless Block Instruments)</span>
                       </h4>
@@ -173,7 +207,7 @@ const BWMPartBPage46: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 bg-white/5 rounded-lg p-6 border border-white/10">
+                <div className="mt-8 bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                   <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4 flex items-center gap-2">
                     <svg className="w-6 h-6 text-blue-400 inline" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                       <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -235,7 +269,7 @@ const BWMPartBPage46: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-white/5 rounded-lg p-6 border border-white/10 mt-8 animate-fade-in">
+              <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mt-8 animate-fade-in text-white">
                 <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">
                   3.7.6. Shunting Between Last Stop Signal and Opposing First Stop Signal
                   <span className="block text-base font-medium text-blue-200 mt-1">
@@ -343,41 +377,92 @@ const BWMPartBPage46: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white/5 rounded-lg p-6 border border-white/10 mt-8">
+            <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mt-8">
               <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4 flex items-center gap-2">
-                <svg className="w-6 h-6 text-blue-400 inline" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
+                
                 3.7.7 Procedure for Shunting During Failure of Shunt Key in Tokenless Block Instruments
               </h3>
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4">
-                <ol className="list-decimal pl-5 space-y-2">
-                  <li>
-                    <span className="font-semibold text-blue-200">If the shunt key gets stuck in the block instrument or block panel:</span>
-                    <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>
-                        Immediately inform the Station Master at the other end about the intention to perform shunting, and obtain a <span className="font-semibold text-yellow-200">Private Number (PN)</span> from them as authorization.
-                      </li>
-                      <li>
-                        Advise the Station Master at the other end to extract their shunt key and keep it in their personal custody to ensure safety.
-                      </li>
-                      <li>
-                        Make a <span className="font-semibold text-red-400">red ink entry</span> in the Train Signal Register, clearly describing the shunting movement performed without the shunt key.
-                      </li>
-                      <li>
-                        Issue <span className="font-semibold text-blue-200">T/806</span> authority form to the Loco Pilot for the shunting operation.
-                      </li>
-                      <li>
-                        After shunting is completed, immediately inform the Station Master at the other end, supported by a <span className="font-semibold text-yellow-200">Private Number</span>.
-                      </li>
-                      <li>
-                        Upon receipt of the completion advice, the Station Master at &apos;Y&apos; shall replace the shunt key in the instrument or panel.
-                      </li>
-                    </ul>
+                <div className="font-semibold text-blue-200 flex items-center gap-2 mb-2">
+                  
+                  If the shunt key gets stuck in the block instrument or block panel, follow these steps:
+                </div>
+                <ul className="pl-2 space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span>
+                      <svg className="w-5 h-5 mt-1 text-cyan-300" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-9.33-5.002" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h2a2 2 0 012 2v4.159c0 .538.214 1.055.595 1.436L21 17" />
+                      </svg>
+                    </span>
+                    <span>
+                      Immediately inform the Station Master at the other end about the intention to perform shunting, and obtain a <span className="font-semibold text-yellow-200">Private Number (PN)</span> as authorization.
+                    </span>
                   </li>
-                </ol>
-                <div className="mt-3 bg-blue-900/20 rounded-md p-3 text-blue-200 text-sm border border-blue-900/30">
-                  <span className="font-semibold">Note:</span> This procedure ensures operational safety during shunting when the shunt key cannot be removed normally due to instrument failure.
+                  <li className="flex items-start gap-3">
+                    <span>
+                      <svg className="w-5 h-5 mt-1 text-green-300" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c0-1.104-.895-2-2-2s-2 .896-2 2 .895 2 2 2 2-.896 2-2zm0 0c0 2 2 6 2 6h4v-2c0-2-4-6-6-6v0z" />
+                        <circle cx="12" cy="12" r="10" />
+                      </svg>
+                    </span>
+                    <span>
+                      Advise the Station Master at the other end to extract their shunt key and keep it safely in their personal custody.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span>
+                      <svg className="w-5 h-5 mt-1 text-red-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7-7-7 7" />
+                      </svg>
+                    </span>
+                    <span>
+                      Make a <span className="font-semibold text-red-400">red ink entry</span> in the Train Signal Register, detailing the shunting movement performed without the shunt key.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span>
+                      <svg className="w-5 h-5 mt-1 text-blue-300" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8M12 8v8" />
+                      </svg>
+                    </span>
+                    <span>
+                      Issue <span className="font-semibold text-blue-200">T/806</span> authority form to the Loco Pilot for the shunting operation.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span>
+                      <svg className="w-5 h-5 mt-1 text-yellow-200" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-3-3v6" />
+                        <circle cx="12" cy="12" r="10" />
+                      </svg>
+                    </span>
+                    <span>
+                      After shunting is completed, immediately inform the Station Master at the other end and support it with a <span className="font-semibold text-yellow-200">Private Number</span>.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span>
+                      <svg className="w-5 h-5 mt-1 text-indigo-300" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16 12H8" />
+                      </svg>
+                    </span>
+                    <span>
+                      Upon receipt of the completion advice, the Station Master at &#39;Y&#39; shall replace the shunt key in the instrument or panel.
+                    </span>
+                  </li>
+                </ul>
+                <div className="mt-3 bg-blue-900/20 rounded-md p-3 text-blue-200 text-sm border border-blue-900/30 flex items-start gap-2">
+                  <svg className="w-5 h-5 mt-0.5 text-blue-200 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 16v-4" />
+                    <circle cx="12" cy="8" r="1" />
+                  </svg>
+                  <span>
+                    <span className="font-semibold">Note:</span> This procedure ensures operational safety during shunting when the shunt key cannot be removed normally due to instrument failure.
+                  </span>
                 </div>
               </div>
             </div>

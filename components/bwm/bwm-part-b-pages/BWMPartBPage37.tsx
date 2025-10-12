@@ -23,32 +23,32 @@ const BWMPartBPage37: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER III
+              CHAPTER - III
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SIGNALLING OF A TRAIN OVER THE BLOCK SECTION</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">3.5. Signalling of a train over the block section using Axle Counter proven Block Panel (UFSBI & SSBPAC (D) Single Line):</h3>
                     
-                    <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                         Taking &apos;X&apos; and &apos;Y&apos; as two consecutive Block Stations, the sequential procedure for despatching a train, cancelling &apos;Line Clear&apos; etc., is as detailed below. Before asking for &apos;Line Clear&apos; on controlled sections, the Station Master shall obtain the permission of the Controller.
                       </p>
                     </div>
 
                     <div className="space-y-6">
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">3.5. (A) (i) Despatching a train.</h4>
                         
-                        <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                        <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             Block panel operators at sending and receiving stations will follow the events listed hereunder for despatching and receiving a train:
                           </p>
@@ -134,7 +134,7 @@ const BWMPartBPage37: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           <span className="font-bold text-blue-300">Note:</span> 1. The procedure for sending a train from station &apos;Y&apos; to &apos;X&apos; will be similar to the above.<br/>
                           2. To prevent the other end station from taking Line Clear, the Station Master shall remove the Shunt key from Block panel.
@@ -149,7 +149,7 @@ const BWMPartBPage37: React.FC = () => {
                   */}
                   <div className="mt-8">
                     <h2 className="text-2xl lg:text-3xl font-bold text-blue-200 mb-4 flex items-center gap-2">
-                      <svg className="w-6 h-6 text-blue-400 inline" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      
                       Procedure for Despatch of Trains Involving IBS (Single Line UFSBI)
                     </h2>
                     <p className="text-blue-100 mb-6">Assuming X-Y as UP direction</p>
@@ -295,7 +295,7 @@ const BWMPartBPage37: React.FC = () => {
                     </ol>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10 mt-8">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mt-8">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">
                       3.5 (B). Refusal to ‘LINE CLEAR INQUIRY’
                     </h3>
@@ -315,11 +315,9 @@ const BWMPartBPage37: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/5 rounded-lg p-6 border border-white/10 mt-8">
+                <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mt-8">
                   <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4 flex items-center gap-2">
-                    <svg className="w-6 h-6 text-blue-400 inline" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+                    
                     3.5 (C). Cancellation of <span className="italic">&apos;LINE CLEAR&apos;</span>
                   </h3>
                   <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4">
@@ -348,11 +346,9 @@ const BWMPartBPage37: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-white/5 rounded-lg p-6 border border-white/10 mt-8">
+              <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10 mt-8">
                 <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4 flex items-center gap-2">
-                  <svg className="w-6 h-6 text-blue-400 inline" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
+                  
                   3.5 (D) Method of Line Clear Cancellation <span className="italic">before the train enters the block section</span>
                 </h3>
                 <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-4">
@@ -516,57 +512,138 @@ const BWMPartBPage37: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-8">
-              <h3 className="text-lg font-bold text-blue-700 mb-2">3.5 (E). Closing the Block Section After Train Push Back</h3>
-              <p className="mb-4">
-                When a train is pushed back at the sending station, the sending station must inform the receiving station by exchanging a private number. The receiving station can then close the section by pressing the <span className="font-semibold text-yellow-600">BELL</span> and <span className="font-semibold text-yellow-600">CANCEL</span> buttons after obtaining cancel co-operation from the other end.
+            <div className="mt-8 animate-fade-in">
+              <h3 className="text-xl font-bold text-blue-700 mb-3">
+                3.5 (E). Beautiful Procedure: Closing the Block Section After Train Push Back
+              </h3>
+              <p className="mb-5 leading-relaxed text-gray-100">
+                When a train is pushed back from the sending station, specific coordinated actions are required at both stations to safely close the block section. The sending station must inform the receiving station by exchanging a <span className="text-yellow-300 font-bold">Private Number (PN)</span>, and the sequence must involve prescribed use of <span className="text-yellow-400 font-semibold">BELL</span> and <span className="text-yellow-400 font-semibold">CANCEL</span> buttons after receiving cancellation co-operation from the other end.
               </p>
-              <h4 className="font-semibold text-blue-600 mb-2">Procedure for Cancellation After Push Back Operation</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h5 className="font-semibold text-green-700 mb-1">Sending Station ‘X’</h5>
-                  <ol className="list-decimal list-inside space-y-2">
-                    <li>
-                      <span className="font-medium">Train clears the Block Section:</span> <span className="text-green-600">LINE FREE</span> indicator turns <span className="font-semibold">GREEN</span>. <span className="text-yellow-600">SECTION buzzer</span> starts ringing. <span className="text-blue-600">ACKN</span> indicator lights up.
+
+              <div className="flex flex-col md:flex-row gap-8">
+                {/* Sending Station Table */}
+                <div className="flex-1 bg-white/5 rounded-xl border border-white/10 p-5 shadow">
+                  <h4 className="font-semibold text-green-500 text-lg mb-3 flex items-center gap-2">
+                    <span>
+                      <svg width="20" height="20" className="inline mr-1 -mt-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17 9V7a5 5 0 00-10 0v2a4 4 0 00-3 3.87v2.26A4 4 0 006 21h12a4 4 0 002.99-3.87V12.87A4 4 0 0017 9z" /></svg>
+                    </span>
+                    Sending Station <span className="text-green-700">‘X’</span>
+                  </h4>
+                  <ul className="space-y-5">
+                    <li className="flex gap-2">
+                      <span className="text-green-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="10" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Block Section Clear:</span> <span className="text-green-300 font-bold">LINE FREE</span> indicator glows <span className="font-bold">GREEN</span>. <span className="text-yellow-300">SECTION buzzer</span> rings. <span className="text-blue-400 font-semibold">ACKN</span> indicator lights up.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">Notify Receiving Station:</span> Inform the receiving station Station Master (SM) about the cancellation, communicating the Private Number (PN) over telephone after the prescribed BELL code.
+                    <li className="flex gap-2">
+                      <span className="text-blue-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Notify Receiving Station:</span> Inform the SM at the receiving station regarding the cancellation, and communicate the <span className="text-yellow-400 font-bold">Private Number (PN)</span> over telephone after following the prescribed <span className="font-semibold text-yellow-400">BELL</span> code.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">After verbal consent from Receiving Station:</span> Ensure <span className="text-yellow-500">SNK</span> and <span className="text-yellow-500">SNOEK</span> indicators are <span className="font-semibold">YELLOW</span>, <span className="text-green-500">SHUNT KEY</span> indicator is <span className="font-semibold">GREEN</span>. Press the <span className="font-semibold">CANCEL CO-OP</span> button and release it upon receipt of the BELL code.
+                    <li className="flex gap-2">
+                      <span className="text-yellow-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <rect x="4" y="4" width="16" height="16" rx="2" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Obtain Consent:</span> Once verbal consent is received, confirm <span className="text-yellow-300">SNK</span> and <span className="text-yellow-300">SNOEK</span> indicators show <span className="font-bold">YELLOW</span>, <span className="text-green-300">SHUNT KEY</span> indicator is <span className="font-bold">GREEN</span>. Press and release the <span className="font-bold">CANCEL CO-OP</span> button upon BELL code receipt.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">CO-OP Indicator:</span> <span className="text-yellow-500">CO-OP</span> lights up <span className="font-semibold">YELLOW</span>. Press <span className="font-semibold">BELL</span> & <span className="font-semibold">CANCEL</span> buttons with SM key IN. <span className="text-blue-600">CANCEL COUNTER</span> increments. <span className="text-yellow-500">CANCEL</span> indicator flashes <span className="font-semibold">YELLOW</span> for 120 seconds.
+                    <li className="flex gap-2">
+                      <span className="text-orange-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Operate Buttons:</span> <span className="text-yellow-300 font-semibold">CO-OP</span> glows <span className="font-bold">YELLOW</span>. Press both <span className="font-bold">BELL</span> and <span className="font-bold">CANCEL</span> buttons with SM key IN. <span className="text-blue-400 font-semibold">CANCEL COUNTER</span> increments. <span className="text-yellow-300 font-bold">CANCEL</span> indicator flashes <span className="font-bold">YELLOW</span> for 120 seconds.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">Final Indications:</span> <span className="text-green-600">TRAIN GOING TO</span> arrowhead indication turns off. <span className="text-yellow-600">LINE CLOSED</span> indication lights up.
+                    <li className="flex gap-2">
+                      <span className="text-gray-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Completion:</span> <span className="text-green-300">TRAIN GOING TO</span> indicator switches off. <span className="text-yellow-300 font-semibold">LINE CLOSED</span> indicator glows, confirming the block section is secured.
+                      </span>
                     </li>
-                  </ol>
+                  </ul>
                 </div>
-                <div>
-                  <h5 className="font-semibold text-green-700 mb-1">Receiving Station ‘Y’</h5>
-                  <ol className="list-decimal list-inside space-y-2">
-                    <li>
-                      <span className="font-medium">Train clears the Block Section:</span> <span className="text-green-600">LINE FREE</span> indicator turns <span className="font-semibold">GREEN</span>. <span className="text-yellow-600">SECTION buzzer</span> starts ringing. <span className="text-blue-600">ACKN</span> indicator lights up. <span className="text-green-600">‘TRAIN GOING TO’</span> arrowhead indication flashes <span className="font-semibold">GREEN</span>.
-                      <br />
-                      <span className="font-medium">Acknowledge:</span> Press <span className="font-semibold">ACKN</span> button. <span className="text-blue-600">ACKN</span> indicator turns off.
+                {/* Receiving station Table */}
+                <div className="flex-1 bg-white/5 rounded-xl border border-white/10 p-5 shadow">
+                  <h4 className="font-semibold text-green-500 text-lg mb-3 flex items-center gap-2">
+                    <span>
+                      <svg width="20" height="20" className="inline mr-1 -mt-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    </span>
+                    Receiving Station <span className="text-green-700">‘Y’</span>
+                  </h4>
+                  <ul className="space-y-5">
+                    <li className="flex gap-2">
+                      <span className="text-green-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="10" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Block Section Clear:</span> <span className="text-green-300 font-bold">LINE FREE</span> indicator glows <span className="font-bold">GREEN</span>. <span className="text-yellow-300">SECTION buzzer</span> rings. <span className="text-blue-400 font-semibold">ACKN</span> indicator lights up. <span className="text-green-300">TRAIN GOING TO</span> arrow flashes <span className="font-bold">GREEN</span>.
+                        <br />
+                        <span className="font-medium">Action:</span> Press the <span className="font-bold">ACKN</span> button to turn off ACKN indicator.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">Train clears the Block Section (alternate):</span> <span className="text-green-600">LINE FREE</span> indicator turns <span className="font-semibold">GREEN</span>. <span className="text-yellow-600">SECTION buzzer</span> starts ringing. <span className="text-blue-600">ACKN</span> indicator lights up. <span className="text-green-600">‘TRAIN COMING FROM’</span> arrowhead indication flashes <span className="font-semibold">GREEN</span>.
-                      <br />
-                      <span className="font-medium">Acknowledge:</span> Press <span className="font-semibold">ACKN</span> button. <span className="text-blue-600">ACKN</span> indicator turns off.
+                    <li className="flex gap-2">
+                      <span className="text-green-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="10" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Alternate Indication:</span> <span className="text-green-300 font-bold">LINE FREE</span> indicator, <span className="text-yellow-300">SECTION buzzer</span>, <span className="text-blue-400 font-semibold">ACKN</span> indicator active. <span className="text-green-300">TRAIN COMING FROM</span> arrow flashes <span className="font-bold">GREEN</span>.
+                        <br />
+                        <span className="font-medium">Action:</span> Press <span className="font-bold">ACKN</span> button to reset ACKN indicator.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">Consent for Cancellation:</span> Agree to the request, communicate the PN, and ensure <span className="text-yellow-500">SNK</span> and <span className="text-yellow-500">SNOEK</span> indicators are <span className="font-semibold">YELLOW</span>, <span className="text-green-500">SHUNT KEY</span> indicator is <span className="font-semibold">GREEN</span>. Give consent over telephone after the prescribed BELL code.
+                    <li className="flex gap-2">
+                      <span className="text-blue-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Consent to Cancel:</span> Communicate agreement, PN, and verify <span className="text-yellow-300">SNK</span> &amp; <span className="text-yellow-300">SNOEK</span> indicators (YELLOW) and <span className="text-green-300">SHUNT KEY</span> indicator (GREEN). Confirm telephone consent after BELL code.
+                      </span>
                     </li>
-                    <li>
-                      <span className="font-medium">After 120 Seconds:</span> <span className="text-green-600">‘TRAIN COMING FROM’</span> arrowhead indication and <span className="text-yellow-500">CANCEL</span> indication turn off. <span className="text-yellow-600">‘LINE CLOSED’</span> indication lights up.
+                    <li className="flex gap-2">
+                      <span className="text-gray-400 mt-1">
+                        <svg className="inline w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
+                        </svg>
+                      </span>
+                      <span>
+                        <span className="font-medium">Closure:</span> After 120 seconds, <span className="text-green-300">TRAIN COMING FROM</span> and <span className="text-yellow-300">CANCEL</span> indicators extinguish. <span className="text-yellow-300 font-semibold">LINE CLOSED</span> indicator lights up.
+                      </span>
                     </li>
-                  </ol>
+                  </ul>
                 </div>
               </div>
-              <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-                <span className="font-semibold text-yellow-700">Note:</span> The above procedure ensures safe and proper closure of the block section after a train has been pushed back, following all prescribed communication and indication protocols.
+
+              <div className="mt-8 bg-yellow-800/10 border-l-2 border-yellow-400 p-4 rounded-lg flex lg:flex-row flex-col items-center gap-2">
+                <span className="text-yellow-500 font-bold text-lg mr-2">Note:</span>
+                <span className="text-gray-100">
+                  Always follow the prescribed procedure for canceling and closing the block section after a train push back. This ensures safety and maintains correct block instrument indications at both stations.
+                </span>
               </div>
             </div>
           </div>

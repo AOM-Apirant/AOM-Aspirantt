@@ -23,29 +23,29 @@ const BWMPartBPage24B: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER III
+              CHAPTER - III
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">SIGNALLING OF A TRAIN OVER THE BLOCK SECTION</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">3.2. Signalling of a train over the block section - Daido Handle Type Tokenless Block Instrument:</h3>
                     
-                    <div className="bg-white/5 rounded-lg p-4 border border-white/10 mb-6">
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 mb-6">
                       <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                         Taking &apos;X&apos; and &apos;Y&apos; as two consecutive Block Stations, the sequential procedure for despatching a train, cancelling &apos;Line clear&apos; etc., is as detailed below. Before asking for &apos;Line Clear&apos; on controlled sections, the Station Master shall obtain the permission of the Controller.
                       </p>
                     </div>
 
                     <div className="space-y-6">
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">3.2. (A) Despatching a train:</h4>
                         
                         <div className="overflow-x-auto">
@@ -192,20 +192,20 @@ const BWMPartBPage24B: React.FC = () => {
                           </table>
                         </div>
                         
-                        <div className="mt-6 bg-white/5 rounded-lg p-4 border border-white/10">
+                        <div className="mt-6 bg-white/5 rounded-lg p-3 border border-white/10">
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             <span className="font-bold text-blue-300">Note:</span> Though Home signal may go automatically to &apos;ON&apos; by passage of the train Home signal lever/knob shall not be normalized, unless the whole of the train has arrived inside the home signal. Failure to adhere to this, will result in block failure and the train arrival buzzer will not sound alarm under such circumstances.
                           </p>
                         </div>
                         
-                        <div className="mt-4 bg-white/5 rounded-lg p-4 border border-white/10">
+                        <div className="mt-4 bg-white/5 rounded-lg p-3 border border-white/10">
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             <span className="font-bold text-blue-300">Note:-</span> Similar procedure is repeated when despatching a train from station &apos;Y&apos; to station &apos;X&apos;.
                           </p>
                         </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">3.2 (B) To cancel &apos;Line Clear&apos; before the train enters the Block Section.</h4>
                         
                         <div className="overflow-x-auto">
@@ -284,7 +284,7 @@ const BWMPartBPage24B: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-6">3.2 (C) Closing of Block Section after pushing back of train:</h4>
                         
                         <div className="overflow-x-auto">

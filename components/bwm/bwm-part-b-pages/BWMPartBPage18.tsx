@@ -23,19 +23,19 @@ const BWMPartBPage18: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER II
+              CHAPTER - II
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">BELL CODE</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">2.3. Bell Code (G.R. 14.05)</h3>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                       For the signalling of trains, the prescribed code of bell signals as detailed below, shall be used and a copy thereof shall be exhibited at each block station near the place of operation of the block working equipment –
@@ -139,19 +139,43 @@ const BWMPartBPage18: React.FC = () => {
                     
                     <div className="mt-6 space-y-3">
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">Note:</span> 1) &apos;0&apos; indicates a stroke or a beat and &apos; &apos; indicates a pause.
-                        </p>
+                        <div className="mb-4">
+                          <span className="font-bold text-blue-300 text-xl">Note:</span>
+                        </div>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-sm">1</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            &apos;0&apos; indicates a stroke or a beat and &apos; &apos; indicates a pause.
+                          </p>
+                        </div>
                       </div>
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          2) Each signal shall be given slowly and distinctly.
-                        </p>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-sm">2</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            Each signal shall be given slowly and distinctly.
+                          </p>
+                        </div>
                       </div>
                       <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          3) * Item (3) and (4) are not required to be given wherever Axle counter proving Block Instruments or continuous track circuiting is in use.
-                        </p>
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-sm">3</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            * Item (3) and (4) are not required to be given wherever Axle counter proving Block Instruments or continuous track circuiting is in use.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -23,26 +23,26 @@ const BWMPartBPage11: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER I
+              CHAPTER - I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">PARTS AND DESCRIPTION OF AXLE COUNTER PROVEN BLOCK PANEL (UFSBI & SSBPAC (D) SINGLE LINE)</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">1.4. Parts and Description of Axle Counter proven Block Panel (UFSBI & SSBPAC (D) Single Line): (See Figure Nos. 6 & 7 at the end of this Chapter)</h3>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
                       A set of two block panels and their associated equipment as shown in the diagrams will be used as a pair, one at station &apos;X&apos; and the other at station &apos;Y&apos;. Telephone communications is provided in conjunction with block panels.
                     </p>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-4">a) DESCRIPTION OF BLOCK PANEL FOR SINGLE LINE (UFSBI & SSBPAC (D) Single Line:</h4>
                     
                     <div className="space-y-6">
@@ -171,7 +171,7 @@ const BWMPartBPage11: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-4">(III) INDICATORS:</h5>
                     <div className="overflow-x-auto">
                       <table className="w-full border-collapse border border-white/20">
@@ -236,7 +236,7 @@ const BWMPartBPage11: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-4">(III) INDICATORS (Contd.)</h5>
                     <div className="overflow-x-auto">
                       <table className="w-full border-collapse border border-white/20">
@@ -314,7 +314,7 @@ const BWMPartBPage11: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-4">iv) COUNTERS</h5>
                     <div className="overflow-x-auto">
                       <table className="w-full border-collapse border border-white/20">
@@ -338,7 +338,7 @@ const BWMPartBPage11: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-4">v) BUZZERS</h5>
                     <div className="overflow-x-auto">
                       <table className="w-full border-collapse border border-white/20">
@@ -362,70 +362,118 @@ const BWMPartBPage11: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-3">vi) BLOCK TELEPHONE:</h5>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed">For Speech Communication with SM at other end of Block Section.</p>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-3">vii) SHUNT KEY OF EKT:</h5>
                     <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
                       An auxiliary EKT is provided with SM&apos;s Block Panel to serve as SHUNTING Authority. The Key of this transmitter is normally &apos;IN&apos; and taken &apos;OUT&apos; to use as tangible authority given to Driver of a train to perform shunting upto opposing First Stop Signal (FSS). Released when SHUNT RELEASE KEY of Block Panel is turned to &apos;IN&apos;.
                     </p>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">a) Indoor Apparatus:</h4>
-                    <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">Electric Lock on Last Stop Signal:</h5>
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
-                      An electric lock is provided on the Last Stop Signal lever which is released only when &apos;Train Going To&apos; indication is displayed on the block instrument of the concerned block section.
-                    </p>
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      <span className="font-bold text-blue-300">Note:</span> The above lever lock is dispensed with in case of single line tokenless block instrument with colour light signals.
-                    </p>
-                  </div>
-
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">b) Outdoor Apparatus:</h4>
-                    <div className="space-y-4">
-                      <div>
-                        <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">i) First Vehicle Track Circuit:</h5>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          This is fixed slightly in advance of the Last Stop Signal. As soon as the engine or first vehicle of a train going from &apos;X&apos; to &apos;Y&apos; passes over this FVT, the indication &apos;TOL&apos; is displayed automatically on the Block panel at stations &apos;X&apos; and &apos;Y&apos;. In addition, an audible warning sounds at the receiving and sending stations, until acknowledged by the receiving and sending stations.
-                        </p>
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-base">a</span>
+                        </div>
                       </div>
-                      <div>
-                        <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">ii) Electrical Signal Reverser:</h5>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          This equipment is provided where Semaphore Signalling is adopted and is actuated by the First Vehicle Track Circuit and it replaces the Last Stop Signal at &apos;X&apos; to &apos;ON&apos; immediately the engine or the first vehicle of the train going to &apos;Y&apos; passes over the FVT.
+                      <div className="flex-1">
+                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">Indoor Apparatus:</h4>
+                        <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">Electric Lock on Last Stop Signal:</h5>
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
+                          An electric lock is provided on the Last Stop Signal lever which is released only when &apos;Train Going To&apos; indication is displayed on the block instrument of the concerned block section.
                         </p>
-                      </div>
-                      <div>
-                        <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">iii) Last Vehicle Track Circuit:</h5>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          This is provided at an adequate distance beyond First Stop Signal. When the last vehicle of the train passes over this LVT, the buzzer gives alarm at &apos;Y&apos; and continue to do so until &apos;Y&apos; replaces the SM&apos;s Control slide/lever/knob for the First Stop Signal to normal.
+                          <span className="font-bold text-blue-300">Note:</span> The above lever lock is dispensed with in case of single line tokenless block instrument with colour light signals.
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">c) Resetting of Axle counter:</h4>
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                      After complete arrival of the train or after the shunting is completed or when no train entered the block section, if the &apos;Section occupied&apos; indication (Red) is lit, the Station Masters at both ends of the block section shall arrange for resetting of the Axle Counter. Station Master at &apos;Evaluator end&apos; Block Panel resets the axle counter with the co-operation of the &apos;Non evaluator end&apos; of Block panel Station Master. Non-evaluator end Block panel Station Master presses the Axle Counter reset button on his Block panel. Evaluator end Block panel Station Master on receiving the Axle Counter reset co-operation indication, inserts the resetting key, unlocks and presses the resetting button. Before resetting the Axle Counter, it has to be verified that the block section is clear. The following shall be ensured by the Station Masters on both ends of block section.
-                    </p>
-                    <div className="space-y-4">
-                      <div>
-                        <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">I. Receiving end Station Master-</h5>
-                        <div className="ml-4 space-y-2">
-                          <p>i. Get the particulars of the last train despatched by the sending end Station Master supported by Private Number;</p>
-                          <p>ii. Ensure that the last despatched train has arrived complete into his station by verifying the Tail board/ Flashing Tail lamp.</p>
-                          <p>iii. If there is no Tail board/ Flashing Tail lamp, the Station Master on duty shall send &quot;Train passed without tail board/ Flashing tail lamp&quot; signal to concerned station and wait for confirmation about complete arrival of the train supported by Private Number (e.g. presuming a train from &apos;X&apos; passed through &apos;Y&apos; without tail board/lamp to Z, then &apos;Y&apos; sends &quot;Train passed without tail board/ Flashing tail lamp signal to Z).</p>
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-base">b</span>
                         </div>
                       </div>
-    <div>
-                        <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">II. Sending end Station Master-</h5>
-                        <p className="ml-4">He shall give the particulars of the last train he has despatched to the receiving station and give Private Number.</p>
+                      <div className="flex-1">
+                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">Outdoor Apparatus:</h4>
+                        <div className="space-y-4 ml-2">
+                          <div className="flex gap-3">
+                            <div className="flex-shrink-0 mt-1">
+                              <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center shadow">
+                                <span className="text-white font-medium text-xs">i</span>
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">First Vehicle Track Circuit:</h5>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                                This is fixed slightly in advance of the Last Stop Signal. As soon as the engine or first vehicle of a train going from &apos;X&apos; to &apos;Y&apos; passes over this FVT, the indication &apos;TOL&apos; is displayed automatically on the Block panel at stations &apos;X&apos; and &apos;Y&apos;. In addition, an audible warning sounds at the receiving and sending stations, until acknowledged by the receiving and sending stations.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex gap-3">
+                            <div className="flex-shrink-0 mt-1">
+                              <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center shadow">
+                                <span className="text-white font-medium text-xs">ii</span>
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">Electrical Signal Reverser:</h5>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                                This equipment is provided where Semaphore Signalling is adopted and is actuated by the First Vehicle Track Circuit and it replaces the Last Stop Signal at &apos;X&apos; to &apos;ON&apos; immediately the engine or the first vehicle of the train going to &apos;Y&apos; passes over the FVT.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex gap-3">
+                            <div className="flex-shrink-0 mt-1">
+                              <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center shadow">
+                                <span className="text-white font-medium text-xs">iii</span>
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">Last Vehicle Track Circuit:</h5>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                                This is provided at an adequate distance beyond First Stop Signal. When the last vehicle of the train passes over this LVT, the buzzer gives alarm at &apos;Y&apos; and continue to do so until &apos;Y&apos; replaces the SM&apos;s Control slide/lever/knob for the First Stop Signal to normal.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
+                    <div className="flex gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                          <span className="text-white font-bold text-base">c</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-3">Resetting of Axle counter:</h4>
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                          After complete arrival of the train or after the shunting is completed or when no train entered the block section, if the &apos;Section occupied&apos; indication (Red) is lit, the Station Masters at both ends of the block section shall arrange for resetting of the Axle Counter. Station Master at &apos;Evaluator end&apos; Block Panel resets the axle counter with the co-operation of the &apos;Non evaluator end&apos; of Block panel Station Master. Non-evaluator end Block panel Station Master presses the Axle Counter reset button on his Block panel. Evaluator end Block panel Station Master on receiving the Axle Counter reset co-operation indication, inserts the resetting key, unlocks and presses the resetting button. Before resetting the Axle Counter, it has to be verified that the block section is clear. The following shall be ensured by the Station Masters on both ends of block section.
+                        </p>
+                        <div className="space-y-4">
+                          <div>
+                            <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">I. Receiving end Station Master-</h5>
+                            <div className="ml-4 space-y-2">
+                              <p>i. Get the particulars of the last train despatched by the sending end Station Master supported by Private Number;</p>
+                              <p>ii. Ensure that the last despatched train has arrived complete into his station by verifying the Tail board/ Flashing Tail lamp.</p>
+                              <p>iii. If there is no Tail board/ Flashing Tail lamp, the Station Master on duty shall send &quot;Train passed without tail board/ Flashing tail lamp&quot; signal to concerned station and wait for confirmation about complete arrival of the train supported by Private Number (e.g. presuming a train from &apos;X&apos; passed through &apos;Y&apos; without tail board/lamp to Z, then &apos;Y&apos; sends &quot;Train passed without tail board/ Flashing tail lamp signal to Z).</p>
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="text-blue-300 font-bold lg:text-base text-sm mb-2">II. Sending end Station Master-</h5>
+                            <p className="ml-4">He shall give the particulars of the last train he has despatched to the receiving station and give Private Number.</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

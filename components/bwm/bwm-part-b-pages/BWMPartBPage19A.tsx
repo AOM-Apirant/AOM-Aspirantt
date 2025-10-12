@@ -23,55 +23,90 @@ const BWMPartBPage19A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER II
+              CHAPTER - II
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">ACKNOWLEDGEMENT OF SIGNALS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-3 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-6">2.4. Acknowledgement of Signals (G.R. 14.06)</h3>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">a)</span> Each signal received shall be acknowledged by sending its authorised acknowledgement.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            Each signal received shall be acknowledged by sending its authorised acknowledgement.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">b)</span> No signal shall be acknowledged until it is clearly understood.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            No signal shall be acknowledged until it is clearly understood.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">c)</span> A signal shall not be deemed to be complete until it is acknowledged.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            A signal shall not be deemed to be complete until it is acknowledged.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">d)</span> If the station to which a signal is sent does not reply, the signal shall be repeated at intervals of not less than twenty seconds until reply is received.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">d</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            If the station to which a signal is sent does not reply, the signal shall be repeated at intervals of not less than twenty seconds until reply is received.
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="font-bold text-blue-300">e)</span> In no circumstances may unauthorised bell signals be exchanged on the instruments.
-                        </p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-base">e</span>
+                            </div>
+                          </div>
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                            In no circumstances may unauthorised bell signals be exchanged on the instruments.
+                          </p>
+                        </div>
                       </div>
                     </div>
                     
                     <div className="mt-6">
-                      <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                      <div className="bg-white/5 rounded-lg lg:p-6 p-4 border border-white/10">
                         <h4 className="text-blue-300 font-bold lg:text-lg text-base mb-4">Note:</h4>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           As a precaution against unauthorised manipulation of block instrument, great care shall be taken not to acknowledge any but the correct authorised signals. Strange or indistinct bell signals, such as may sometimes be received due to disturbances by lightning, contact of wires, or other irregularity, shall on no account be acknowledged or responded to on the instrument. No attempt shall be made to operate the instrument which is affected by one or other of the causes mentioned above.

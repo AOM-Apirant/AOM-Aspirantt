@@ -23,7 +23,7 @@ const BWMPartBPage1A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER I
+              CHAPTER - I
             </h1>
             <h2 className="lg:text-4xl text-2xl font-bold text-indigo-300 mb-4">DESCRIPTION OF BLOCK INSTRUMENTS, INDOOR APPARATUS AND OUTDOOR APPARATUS</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
@@ -36,47 +36,130 @@ const BWMPartBPage1A: React.FC = () => {
                 
                 <div className="space-y-6">
                   <div className="bg-white/5 rounded-lg p-6 border border-white/10">
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
-                      <span className="font-bold text-blue-300">Note:</span> 1. The term&apos; Station Master&apos; wherever used in this Manual, also applies to Assistant Station Master, Cabin Assistant Station Master, Cabin Master / Switchman and any other competent staff, who may, for the time being, be in charge of block working.
-                    </p>
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                      2. The name of stations as represented by W, X, Y and Z in this Manual and the number, direction and description of trains mentioned shall be read only as examples. In actual working, the proper names of the stations and the number, direction and description of trains shall be used.
-                    </p>
+                    <div className="mb-6">
+                      <span className="font-bold text-blue-300 text-xl">Note:</span>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0">
+                          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                            <span className="text-white font-bold text-sm">1</span>
+                          </div>
+                        </div>
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                          The term&apos; Station Master&apos; wherever used in this Manual, also applies to Assistant Station Master, Cabin Assistant Station Master, Cabin Master / Switchman and any other competent staff, who may, for the time being, be in charge of block working.
+                        </p>
+                      </div>
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0">
+                          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                            <span className="text-white font-bold text-sm">2</span>
+                          </div>
+                        </div>
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                          The name of stations as represented by W, X, Y and Z in this Manual and the number, direction and description of trains mentioned shall be read only as examples. In actual working, the proper names of the stations and the number, direction and description of trains shall be used.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="bg-white/5 rounded-lg p-6 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">1.1. Provision of Block Instrument:</h3>
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                       The following types of Token less Block Instruments are in use on certain Single Line sections of this Railway.
                     </p>
-                    <div className="ml-4 space-y-2">
-                      <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        a) Daido Handle Type and
-                      </p>
-                      <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        b) Push Button Type: Following types of Push Button type Block Instruments are provided in this Railway.
-                      </p>
-                      <div className="ml-4 space-y-1">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          i. Kyosan make;
-                        </p>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          ii. Podanur make and
+                    <div className="space-y-4">
+                      {/* Item a) */}
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-md">
+                            <span className="text-white font-semibold text-sm">a</span>
+                          </div>
+                        </div>
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                          Daido Handle Type and
                         </p>
                       </div>
-                      <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                        iii. Axle Counter Proven Block Panel: Following types of Axle Counter Proven Block Instruments are provided on this Railway:
-                      </p>
-                      <div className="ml-4 space-y-1">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          a) UFSBI and
-                        </p>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          b) SSBPAC (D) - Single Line.
-                        </p>
+                      
+                      {/* Item b) */}
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-md">
+                            <span className="text-white font-semibold text-sm">b</span>
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                            Push Button Type: Following types of Push Button type Block Instruments are provided in this Railway.
+                          </p>
+                          <div className="space-y-3 ml-2">
+                            {/* Sub-item i */}
+                            <div className="flex gap-3">
+                              <div className="flex-shrink-0 mt-1">
+                                <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center shadow">
+                                  <span className="text-white font-medium text-xs">i</span>
+                                </div>
+                              </div>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                                Kyosan make;
+                              </p>
+                            </div>
+                            
+                            {/* Sub-item ii */}
+                            <div className="flex gap-3">
+                              <div className="flex-shrink-0 mt-1">
+                                <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center shadow">
+                                  <span className="text-white font-medium text-xs">ii</span>
+                                </div>
+                              </div>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                                Podanur make and
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Item iii */}
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center shadow-md">
+                            <span className="text-white font-semibold text-sm">iii</span>
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                            Axle Counter Proven Block Panel: Following types of Axle Counter Proven Block Instruments are provided on this Railway:
+                          </p>
+                          <div className="space-y-3 ml-2">
+                            {/* Sub-item a */}
+                            <div className="flex gap-3">
+                              <div className="flex-shrink-0 mt-1">
+                                <div className="w-6 h-6 rounded-md bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow">
+                                  <span className="text-white font-medium text-xs">a</span>
+                                </div>
+                              </div>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                                UFSBI and
+                              </p>
+                            </div>
+                            
+                            {/* Sub-item b */}
+                            <div className="flex gap-3">
+                              <div className="flex-shrink-0 mt-1">
+                                <div className="w-6 h-6 rounded-md bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow">
+                                  <span className="text-white font-medium text-xs">b</span>
+                                </div>
+                              </div>
+                              <p className="text-gray-200 lg:text-lg text-base leading-relaxed flex-1">
+                                SSBPAC (D) - Single Line.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mt-4">
+                    <p className="text-gray-200 lg:text-lg text-base leading-relaxed mt-6">
                       The sections of the line provided with these Block Instruments are notified in the Working Time Table for passenger trains.
                     </p>
                   </div>
