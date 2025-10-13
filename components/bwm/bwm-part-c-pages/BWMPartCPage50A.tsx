@@ -14,13 +14,13 @@ const BWMPartCPage50A: React.FC = () => {
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* Chapter VIII Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     {/* Chapter Heading */}
                     <div className="text-center mb-4">
                       <h2 className="text-yellow-300 font-bold lg:text-3xl text-2xl">CHAPTER VIII</h2>
@@ -36,35 +36,53 @@ const BWMPartCPage50A: React.FC = () => {
                       <h4 className="text-blue-300 font-bold lg:text-xl text-lg mb-4">8.1. Failure of Last Stop Signal:</h4>
                       
                       {/* Intro paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           In the following cases of failure of LSS, Block instrument shall not be suspended.
                         </p>
                       </div>
 
                       {/* Point 1 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">1.</span> Where block instrument is interlocked with LSS and LSS cannot be taken off even though Line Clear has been obtained on block instrument.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">1</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Where block instrument is interlocked with LSS and LSS cannot be taken off even though Line Clear has been obtained on block instrument.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Point 2 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">2.</span> Where block instrument is interlocked with IBS, and line clear has been obtained on block instrument, but LSS cannot be taken OFF despite the track circuiting provided beyond the LSS and the axle counters provided at either end of block section are in working condition.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">2</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Where block instrument is interlocked with IBS, and line clear has been obtained on block instrument, but LSS cannot be taken OFF despite the track circuiting provided beyond the LSS and the axle counters provided at either end of block section are in working condition.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* In both cases paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           In both the cases above, the Last stop signal shall be treated as defective and PLCT (T/C or T/D 1425) shall be issued to <span className="text-blue-300 font-semibold">Loco pilot</span> as authority to proceed duly mentioning that Line clear was obtained through Block instrument.
                         </p>
                       </div>
 
                       {/* Where IBS paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           Where IBS is working, it can be taken OFF.
                         </p>
@@ -78,7 +96,7 @@ const BWMPartCPage50A: React.FC = () => {
                       </div>
 
                       {/* Failure of IBS heading */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10 mt-6">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10 mt-6">
                         <h5 className="text-blue-300 font-bold lg:text-lg text-base mb-3">Failure of IBS:</h5>
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           During all cases of IBS failure, Block working shall be suspended.

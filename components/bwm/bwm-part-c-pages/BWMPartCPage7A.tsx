@@ -23,34 +23,59 @@ const BWMPartCPage7A: React.FC = () => {
               </div>
             </div>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              CHAPTER II
+              CHAPTER - II
             </h1>
             <h2 className="lg:text-3xl text-xl font-bold text-indigo-300 mb-4">SYSTEMS OF WORKING, BLOCK COMPETENCY CERTIFICATE, CODE OF BELL SIGNALS, PRECEDENCE OF TRAINS, AND TRAIN SIGNAL REGISTER.</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 2.1 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">2.1. Systems of working (G.R. 7.01).</h3>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                           The systems normally used on this Railway are:-
                         </p>
-                        <div className="space-y-3 ml-4">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">a)</span> The <span className="text-green-300 font-semibold">Automatic Block System</span> : As specified under <span className="text-yellow-300 font-semibold">SR 7.01</span>
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">b)</span> The <span className="text-green-300 font-semibold">Absolute Block System</span> :- On all other sections.
-                          </p>
+                        <div className="space-y-3">
+                          {/* a) Item */}
+                          <div className="bg-gradient-to-r from-emerald-500/10 to-emerald-600/5 rounded-lg lg:p-4 p-3 border border-emerald-400/30 hover:border-emerald-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">a</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  The <span className="text-green-300 font-semibold">Automatic Block System</span> : As specified under <span className="text-yellow-300 font-semibold">SR 7.01</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* b) Item */}
+                          <div className="bg-gradient-to-r from-emerald-500/10 to-emerald-600/5 rounded-lg lg:p-4 p-3 border border-emerald-400/30 hover:border-emerald-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">b</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  The <span className="text-green-300 font-semibold">Absolute Block System</span> :- On all other sections.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

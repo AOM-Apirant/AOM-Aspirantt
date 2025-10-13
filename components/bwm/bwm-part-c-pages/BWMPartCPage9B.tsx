@@ -22,6 +22,7 @@ const BWMPartCPage9B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - II</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Advise of Code Signals
             </h1>
@@ -29,36 +30,100 @@ const BWMPartCPage9B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 2.5 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">2.5. Advise of code signals by Cabin Station Master to the Station Master at the station:</h3>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                           At stations where <span className="text-green-300 font-semibold">block instruments</span> are placed in <span className="text-blue-300 font-semibold">cabins</span> , the <span className="text-blue-300 font-semibold">Station Master</span> on duty shall , whenever the <span className="text-green-300 font-semibold">code signals</span> for the following are given or received , immediately advise the <span className="text-blue-300 font-semibold">Station Master</span> at the station.
                         </p>
-                        <div className="space-y-2 ml-4">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">a)</span> Stop and examine train.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">b)</span> Train passed without tail lamp or tail board.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">c)</span> Train divided.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">d)</span> Vehicles running away in the wrong direction.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">e)</span> Vehicles running away in the right direction.
-                          </p>
+                        <div className="space-y-3">
+                          {/* a) Item */}
+                          <div className="bg-gradient-to-r from-rose-500/10 to-rose-600/5 rounded-lg lg:p-4 p-3 border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">a</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  Stop and examine train.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* b) Item */}
+                          <div className="bg-gradient-to-r from-rose-500/10 to-rose-600/5 rounded-lg lg:p-4 p-3 border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">b</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  Train passed without tail lamp or tail board.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* c) Item */}
+                          <div className="bg-gradient-to-r from-rose-500/10 to-rose-600/5 rounded-lg lg:p-4 p-3 border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">c</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  Train divided.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* d) Item */}
+                          <div className="bg-gradient-to-r from-rose-500/10 to-rose-600/5 rounded-lg lg:p-4 p-3 border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">d</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  Vehicles running away in the wrong direction.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* e) Item */}
+                          <div className="bg-gradient-to-r from-rose-500/10 to-rose-600/5 rounded-lg lg:p-4 p-3 border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">e</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  Vehicles running away in the right direction.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

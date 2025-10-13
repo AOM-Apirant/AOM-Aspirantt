@@ -13,26 +13,27 @@ const BWMPartCPage34: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - V</h2>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 5.4 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">5.4. Obstruction on double line in the block section in rear (wrong line)- Block back (G.R.1.02(8)).</h3>
                     
                     <div className="space-y-4">
                       {/* First paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           Shunting or obstruction for any other purpose shall not be permitted in <span className="text-green-300 font-semibold">block section in rear</span> unless it is clear and is <span className="text-blue-300 font-semibold">blocked back</span>. When line clear has been given, no obstruction shall be permitted in the <span className="text-green-300 font-semibold">block section in rear</span>.
                         </p>
                       </div>
 
                       {/* Second paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           <span className="text-blue-300 font-semibold">Block back</span> [<span className="text-yellow-300 font-semibold">Rule 1.02 (8)</span>] means to despatch a message from a <span className="text-green-300 font-semibold">block station</span> intimating to the <span className="text-green-300 font-semibold">block station</span> immediately in rear on a double line or to the next <span className="text-green-300 font-semibold">block station</span> on either side on a single line, that the <span className="text-green-300 font-semibold">block section</span> is obstructed or is to be obstructed.
                         </p>
@@ -42,7 +43,7 @@ const BWMPartCPage34: React.FC = () => {
                 </div>
 
                 {/* 5.4.1 Table Presentation */}
-                <div className="bg-white/5 rounded-lg p-6 border border-white/10 mt-8">
+                <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10 mt-8">
                   <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">5.4.1. Signalling Procedure Between X and Y Stations for Shunting into Y-X Block Section</h3>
                   <p className="text-gray-200 mb-6">
                     The following table describes the sequential procedure for signalling between Station X (Sending) and Station Y (Receiving) when shunting is required into the Y-X block section (in rear of the Block Section Limit Board or outermost facing points in Multiple Aspect Signalling Territory).

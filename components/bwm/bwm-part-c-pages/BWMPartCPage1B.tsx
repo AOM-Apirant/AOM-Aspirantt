@@ -22,6 +22,7 @@ const BWMPartCPage1B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-3xl text-xl font-bold text-purple-300 mb-4">CHAPTER - I</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Parts of Block Instrument
             </h1>
@@ -29,45 +30,122 @@ const BWMPartCPage1B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 1.2 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">1.2. Parts of Block Instrument:</h3>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           <span className="text-yellow-300 font-semibold">( See Figure No. 7 at the end of this Chapter )</span>
                         </p>
                       </div>
 
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                           <span className="text-blue-300 font-semibold">SGE type Lock and Block Instrument.</span>
                         </p>
-                        <div className="space-y-2 ml-4">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">a)</span> A <span className="text-green-300 font-semibold">&apos;Train Going To&apos; dial</span> or <span className="text-green-300 font-semibold">TGT dial</span> with indicator having three positions.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">b)</span> A <span className="text-green-300 font-semibold">&apos;Train Coming From&apos; dial</span> or <span className="text-green-300 font-semibold">TCF dial</span> with indicator having three positions.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">c)</span> An <span className="text-green-300 font-semibold">operating handle</span>.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">d)</span> A <span className="text-green-300 font-semibold">bell plunger</span>.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">e)</span> A <span className="text-green-300 font-semibold">single stroke bell</span>.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">f)</span> A <span className="text-green-300 font-semibold">telephone</span>.
-                          </p>
+                        <div className="space-y-3">
+                          {/* a) Item */}
+                          <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-lg lg:p-4 p-3 border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">a</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  A <span className="text-green-300 font-semibold">&apos;Train Going To&apos; dial</span> or <span className="text-green-300 font-semibold">TGT dial</span> with indicator having three positions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* b) Item */}
+                          <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-lg lg:p-4 p-3 border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">b</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  A <span className="text-green-300 font-semibold">&apos;Train Coming From&apos; dial</span> or <span className="text-green-300 font-semibold">TCF dial</span> with indicator having three positions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* c) Item */}
+                          <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-lg lg:p-4 p-3 border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">c</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  An <span className="text-green-300 font-semibold">operating handle</span>.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* d) Item */}
+                          <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-lg lg:p-4 p-3 border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">d</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  A <span className="text-green-300 font-semibold">bell plunger</span>.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* e) Item */}
+                          <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-lg lg:p-4 p-3 border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">e</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  A <span className="text-green-300 font-semibold">single stroke bell</span>.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* f) Item */}
+                          <div className="bg-gradient-to-r from-purple-500/10 to-purple-600/5 rounded-lg lg:p-4 p-3 border border-purple-400/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">f</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  A <span className="text-green-300 font-semibold">telephone</span>.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

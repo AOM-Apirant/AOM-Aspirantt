@@ -22,6 +22,7 @@ const BWMPartCPage7B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - II</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Block Competency Certificate
             </h1>
@@ -29,32 +30,52 @@ const BWMPartCPage7B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 2.2 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">2.2. Block Competency Certificate (G.R.14.04)</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> Training and Certificate Issuance
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          The <span className="text-blue-300 font-semibold">Principal</span> of the <span className="text-blue-300 font-semibold">Zonal Railway Training Institute / Moula-Ali</span> is responsible for the proper <span className="text-green-300 font-semibold">Initial/Refresher training</span> of the staff in the rules connected with <span className="text-green-300 font-semibold">Block working</span>. After the staff are declared successful in the examination held for this purpose, he shall grant the necessary <span className="text-green-300 font-semibold">competency certificate</span> in respect of all the <span className="text-green-300 font-semibold">block instruments</span>. Such certificates shall be valid only for a period of <span className="text-yellow-300 font-semibold">three years</span> from the date of their issue. The certificate should be issued by the <span className="text-blue-300 font-semibold">Principal of the ZRTI/ MLY</span> under his signature for those who attend the <span className="text-green-300 font-semibold">Initial / Refresher course</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-sky-500/10 to-sky-600/5 rounded-xl lg:p-5 p-3 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-sky-200 font-bold lg:text-xl text-lg">
+                              Training and Certificate Issuance
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            The <span className="text-blue-300 font-semibold">Principal</span> of the <span className="text-blue-300 font-semibold">Zonal Railway Training Institute / Moula-Ali</span> is responsible for the proper <span className="text-green-300 font-semibold">Initial/Refresher training</span> of the staff in the rules connected with <span className="text-green-300 font-semibold">Block working</span>. After the staff are declared successful in the examination held for this purpose, he shall grant the necessary <span className="text-green-300 font-semibold">competency certificate</span> in respect of all the <span className="text-green-300 font-semibold">block instruments</span>. Such certificates shall be valid only for a period of <span className="text-yellow-300 font-semibold">three years</span> from the date of their issue. The certificate should be issued by the <span className="text-blue-300 font-semibold">Principal of the ZRTI/ MLY</span> under his signature for those who attend the <span className="text-green-300 font-semibold">Initial / Refresher course</span>.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Certificate for Signal Maintainers
-                        </h4>
-                        <div className="space-y-3">
+                      <div className="bg-gradient-to-r from-teal-500/10 to-teal-600/5 rounded-xl lg:p-5 p-3 border border-teal-400/30 hover:border-teal-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-teal-200 font-bold lg:text-xl text-lg">
+                              Certificate for Signal Maintainers
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2 space-y-3">
                           <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                             <span className="text-blue-300 font-semibold">Principal , STTC / MLY</span> is authorised to issue the <span className="text-green-300 font-semibold">BCC</span> to the <span className="text-blue-300 font-semibold">Signal Maintainers</span> who are required to maintain and test the <span className="text-green-300 font-semibold">block instruments</span>. The certificate should be issued after successful completion of <span className="text-green-300 font-semibold">Initial / Refresher course</span> which is valid for a period of <span className="text-yellow-300 font-semibold">four years</span>.
                           </p>
@@ -65,23 +86,45 @@ const BWMPartCPage7B: React.FC = () => {
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">c)</span> Transfer and Local Testing
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          If the staff, working for a year or more at stations where they are not required to operate the <span className="text-green-300 font-semibold">block instruments</span> , are transferred to a station where they are required to operate the <span className="text-green-300 font-semibold">block instruments</span>, they shall not be allowed to operate the <span className="text-green-300 font-semibold">block instruments</span> even though they are in possession of valid <span className="text-green-300 font-semibold">Block Competency Certificates</span>. They should be tested locally by the <span className="text-blue-300 font-semibold">Traffic Inspector</span> concerned and an endorsement be made by the <span className="text-blue-300 font-semibold">Sr.Divisional Operations Manager/ Divisional Operations Manager</span> of the division on the <span className="text-green-300 font-semibold">Block Competency Certificate</span> before they are put to operate <span className="text-green-300 font-semibold">block instruments</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-amber-500/10 to-amber-600/5 rounded-xl lg:p-5 p-3 border border-amber-400/30 hover:border-amber-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">c</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-amber-200 font-bold lg:text-xl text-lg">
+                              Transfer and Local Testing
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            If the staff, working for a year or more at stations where they are not required to operate the <span className="text-green-300 font-semibold">block instruments</span> , are transferred to a station where they are required to operate the <span className="text-green-300 font-semibold">block instruments</span>, they shall not be allowed to operate the <span className="text-green-300 font-semibold">block instruments</span> even though they are in possession of valid <span className="text-green-300 font-semibold">Block Competency Certificates</span>. They should be tested locally by the <span className="text-blue-300 font-semibold">Traffic Inspector</span> concerned and an endorsement be made by the <span className="text-blue-300 font-semibold">Sr.Divisional Operations Manager/ Divisional Operations Manager</span> of the division on the <span className="text-green-300 font-semibold">Block Competency Certificate</span> before they are put to operate <span className="text-green-300 font-semibold">block instruments</span>.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section d */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">d)</span> Custody and Inspection
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          The <span className="text-green-300 font-semibold">BCC</span> shall be kept in the personal custody of the staff while on duty and produced for inspection on demand by the inspecting officials.
-                        </p>
+                      <div className="bg-gradient-to-r from-rose-500/10 to-rose-600/5 rounded-xl lg:p-5 p-3 border border-rose-400/30 hover:border-rose-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">d</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-rose-200 font-bold lg:text-xl text-lg">
+                              Custody and Inspection
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            The <span className="text-green-300 font-semibold">BCC</span> shall be kept in the personal custody of the staff while on duty and produced for inspection on demand by the inspecting officials.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

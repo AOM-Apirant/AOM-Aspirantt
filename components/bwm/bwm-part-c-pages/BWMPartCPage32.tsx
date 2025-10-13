@@ -13,26 +13,27 @@ const BWMPartCPage32: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - V</h2>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 5.3 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">5.3. Obstruction on double line in the block section in advance (right line)- Block Forward (G.R.1.02(9)).</h3>
                     
                     <div className="space-y-4">
                       {/* First paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           Shunting or obstruction for any other purpose shall not be permitted in the <span className="text-green-300 font-semibold">block section in advance</span> unless it is clear and <span className="text-blue-300 font-semibold">blocked forward</span> (Exception – refer <span className="text-yellow-300 font-semibold">G.R. 8.06 (3)</span>).
                         </p>
                       </div>
 
                       {/* Second paragraph */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           <span className="text-blue-300 font-semibold">Block forward</span> ( <span className="text-yellow-300 font-semibold">Rule 1.02.9</span> ) means to despatch a message from a <span className="text-green-300 font-semibold">block station</span> on double line intimating to the <span className="text-green-300 font-semibold">block station</span> immediately in advance the fact that the <span className="text-green-300 font-semibold">block section</span> is obstructed or is to be obstructed.
                         </p>

@@ -22,6 +22,7 @@ const BWMPartCPage24A: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - III</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Precautions Before Giving Line Clear
             </h1>
@@ -29,33 +30,84 @@ const BWMPartCPage24A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 3.6 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.6. Precautions before giving &apos;Line clear&apos;:</h3>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-4">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-6">
                           Before <span className="text-green-300 font-semibold">&apos;Y&apos;</span> gives <span className="text-green-300 font-semibold">&apos;Line Clear&apos;</span> to <span className="text-green-300 font-semibold">&apos;X&apos;</span>, he shall inspect the <span className="text-green-300 font-semibold">block instrument</span> connected with <span className="text-green-300 font-semibold">X</span>, the <span className="text-green-300 font-semibold">lever frame</span> and the <span className="text-green-300 font-semibold">Train Signal Register</span> in order to ascertain –
                         </p>
-                        <div className="space-y-2 ml-4">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">a)</span> that the <span className="text-green-300 font-semibold">TCF dial</span> is showing <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> indication .
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">b)</span> that the <span className="text-green-300 font-semibold">operating handle</span> is in the <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">c)</span> that the <span className="text-blue-300 font-semibold">reception signals</span> are in the <span className="text-red-400 font-semibold">&apos;ON&apos;</span> position.
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">d)</span> that all the entries relating to the previous train over the <span className="text-green-300 font-semibold">down block section</span> from <span className="text-green-300 font-semibold">&apos;X&apos;</span> to <span className="text-green-300 font-semibold">&apos;Y&apos;</span> have been completed.
-                          </p>
+                        <div className="space-y-3">
+                          {/* a) Item */}
+                          <div className="bg-gradient-to-r from-sky-500/10 to-sky-600/5 rounded-lg lg:p-4 p-3 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">a</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  that the <span className="text-green-300 font-semibold">TCF dial</span> is showing <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> indication .
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* b) Item */}
+                          <div className="bg-gradient-to-r from-sky-500/10 to-sky-600/5 rounded-lg lg:p-4 p-3 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">b</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  that the <span className="text-green-300 font-semibold">operating handle</span> is in the <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* c) Item */}
+                          <div className="bg-gradient-to-r from-sky-500/10 to-sky-600/5 rounded-lg lg:p-4 p-3 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">c</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  that the <span className="text-blue-300 font-semibold">reception signals</span> are in the <span className="text-red-400 font-semibold">&apos;ON&apos;</span> position.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* d) Item */}
+                          <div className="bg-gradient-to-r from-sky-500/10 to-sky-600/5 rounded-lg lg:p-4 p-3 border border-sky-400/30 hover:border-sky-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">d</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  that all the entries relating to the previous train over the <span className="text-green-300 font-semibold">down block section</span> from <span className="text-green-300 font-semibold">&apos;X&apos;</span> to <span className="text-green-300 font-semibold">&apos;Y&apos;</span> have been completed.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

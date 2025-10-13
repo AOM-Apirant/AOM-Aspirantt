@@ -22,6 +22,7 @@ const BWMPartCPage4B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - I</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Outdoor Apparatus
             </h1>
@@ -29,44 +30,77 @@ const BWMPartCPage4B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 1.6 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">1.6. Outdoor Apparatus:</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> First Vehicle Track Circuit:
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          This is fixed slightly in advance of the <span className="text-blue-300 font-semibold">Last Stop Signal</span>. As soon as the engine or first vehicle of a train travelling away from the station passes over the <span className="text-green-300 font-semibold">First Vehicle Track Circuit</span>, the <span className="text-blue-300 font-semibold">Last Stop Signal</span> is replaced to <span className="text-red-400 font-semibold">&apos;ON&apos;</span> automatically.
-                        </p>
+                      <div className="bg-gradient-to-r from-fuchsia-500/10 to-fuchsia-600/5 rounded-xl lg:p-5 p-3 border border-fuchsia-400/30 hover:border-fuchsia-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-fuchsia-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-fuchsia-400 to-fuchsia-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-fuchsia-200 font-bold lg:text-xl text-lg">
+                              First Vehicle Track Circuit:
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            This is fixed slightly in advance of the <span className="text-blue-300 font-semibold">Last Stop Signal</span>. As soon as the engine or first vehicle of a train travelling away from the station passes over the <span className="text-green-300 font-semibold">First Vehicle Track Circuit</span>, the <span className="text-blue-300 font-semibold">Last Stop Signal</span> is replaced to <span className="text-red-400 font-semibold">&apos;ON&apos;</span> automatically.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">b)</span> Electric signal reverser on Last Stop Signal:
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          This is controlled by the <span className="text-green-300 font-semibold">First Vehicle Track Circuit</span> and replaces the <span className="text-blue-300 font-semibold">Last Stop Signal</span>, at the station from which the train starts, to <span className="text-red-400 font-semibold">&apos;ON&apos;</span> immediately the engine or first vehicle of the train starting from the station passes over the <span className="text-green-300 font-semibold">First Vehicle Track Circuit</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-indigo-500/10 to-indigo-600/5 rounded-xl lg:p-5 p-3 border border-indigo-400/30 hover:border-indigo-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-indigo-200 font-bold lg:text-xl text-lg">
+                              Electric signal reverser on Last Stop Signal:
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            This is controlled by the <span className="text-green-300 font-semibold">First Vehicle Track Circuit</span> and replaces the <span className="text-blue-300 font-semibold">Last Stop Signal</span>, at the station from which the train starts, to <span className="text-red-400 font-semibold">&apos;ON&apos;</span> immediately the engine or first vehicle of the train starting from the station passes over the <span className="text-green-300 font-semibold">First Vehicle Track Circuit</span>.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">c)</span> Last Vehicle Track Circuit:
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          This is fixed at an adequate distance inside the <span className="text-blue-300 font-semibold">First Stop Signal</span>. When the last vehicle of the train arriving into the station passes over the <span className="text-green-300 font-semibold">Last Vehicle Track Circuit</span>, it permits the <span className="text-green-300 font-semibold">&apos;Operating handle&apos;</span> to be restored to normal, i.e., from <span className="text-green-300 font-semibold">&apos;Train On Line&apos;</span> to <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position after the <span className="text-blue-300 font-semibold">Home signal</span> has been replaced to its normal position.
-                        </p>
+                      <div className="bg-gradient-to-r from-cyan-500/10 to-cyan-600/5 rounded-xl lg:p-5 p-3 border border-cyan-400/30 hover:border-cyan-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">c</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-cyan-200 font-bold lg:text-xl text-lg">
+                              Last Vehicle Track Circuit:
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            This is fixed at an adequate distance inside the <span className="text-blue-300 font-semibold">First Stop Signal</span>. When the last vehicle of the train arriving into the station passes over the <span className="text-green-300 font-semibold">Last Vehicle Track Circuit</span>, it permits the <span className="text-green-300 font-semibold">&apos;Operating handle&apos;</span> to be restored to normal, i.e., from <span className="text-green-300 font-semibold">&apos;Train On Line&apos;</span> to <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position after the <span className="text-blue-300 font-semibold">Home signal</span> has been replaced to its normal position.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -22,6 +22,7 @@ const BWMPartCPage13B: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - II</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Inspection of Train Signal Register
             </h1>
@@ -29,42 +30,78 @@ const BWMPartCPage13B: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 2.9 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">2.9. Inspection of Train Signal Register:</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">a)</span> The <span className="text-green-300 font-semibold">Train Signal Register</span> in use shall be checked and signed by the <span className="text-blue-300 font-semibold">Station Master incharge</span> of the Station daily and his signature in the remarks column (at the end of the entries for the previous day) will be considered as a certificate and all trains have been duly and correctly entered in their regular course and sequence that he has taken note of the irregularities of any description recorded in the <span className="text-green-300 font-semibold">Train Signal Register</span> and also those observed by him in the course of his check.
-                        </p>
+                      <div className="bg-gradient-to-r from-blue-500/10 to-blue-600/5 rounded-lg lg:p-4 p-3 border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-green-300 font-semibold">Train Signal Register</span> in use shall be checked and signed by the <span className="text-blue-300 font-semibold">Station Master incharge</span> of the Station daily and his signature in the remarks column (at the end of the entries for the previous day) will be considered as a certificate and all trains have been duly and correctly entered in their regular course and sequence that he has taken note of the irregularities of any description recorded in the <span className="text-green-300 font-semibold">Train Signal Register</span> and also those observed by him in the course of his check.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">b)</span> The <span className="text-green-300 font-semibold">Train Signal Register</span> shall also be examined and signed by the <span className="text-blue-300 font-semibold">Traffic Inspector / Signal Inspector</span> of the section whenever he visits the station and inspects the <span className="text-green-300 font-semibold">block room</span> in the course of his duties.
-                        </p>
+                      <div className="bg-gradient-to-r from-blue-500/10 to-blue-600/5 rounded-lg lg:p-4 p-3 border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-green-300 font-semibold">Train Signal Register</span> shall also be examined and signed by the <span className="text-blue-300 font-semibold">Traffic Inspector / Signal Inspector</span> of the section whenever he visits the station and inspects the <span className="text-green-300 font-semibold">block room</span> in the course of his duties.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">c)</span> Irregularities, if any, shall be noted in the <span className="text-green-300 font-semibold">Train Signal Register</span> and brought to the notice of officials concerned.
-                        </p>
+                      <div className="bg-gradient-to-r from-blue-500/10 to-blue-600/5 rounded-lg lg:p-4 p-3 border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              Irregularities, if any, shall be noted in the <span className="text-green-300 font-semibold">Train Signal Register</span> and brought to the notice of officials concerned.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section d */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">d)</span> The <span className="text-green-300 font-semibold">Train Signal Register</span> in use shall not be removed from the <span className="text-blue-300 font-semibold">Cabin</span> or the room, in which <span className="text-green-300 font-semibold">block instruments</span> are placed without the orders of the <span className="text-blue-300 font-semibold">DRM</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-blue-500/10 to-blue-600/5 rounded-lg lg:p-4 p-3 border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">d</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-green-300 font-semibold">Train Signal Register</span> in use shall not be removed from the <span className="text-blue-300 font-semibold">Cabin</span> or the room, in which <span className="text-green-300 font-semibold">block instruments</span> are placed without the orders of the <span className="text-blue-300 font-semibold">DRM</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

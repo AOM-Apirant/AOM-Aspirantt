@@ -22,6 +22,7 @@ const BWMPartCPage8: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - II</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Bell Code
             </h1>
@@ -29,24 +30,24 @@ const BWMPartCPage8: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 2.3 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">2.3. Bell Code:(G.R. 14.05)</h3>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           For the signalling of trains, the prescribed code of bell signals as detailed below, shall be used and a copy thereof shall be exhibited in each <span className="text-blue-300 font-semibold">block station</span> near the place of operation of the <span className="text-green-300 font-semibold">block working equipment</span> –
                         </p>
                       </div>
 
                       {/* Table Header */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 font-bold text-yellow-300 lg:text-lg text-base">
                           <div>Ref. No</div>
                           <div>Indication</div>
@@ -57,7 +58,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 1 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 text-gray-200 lg:text-lg text-base">
                           <div className="text-yellow-300 font-semibold">1</div>
                           <div>Call attention or attend telephone</div>
@@ -68,7 +69,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 2 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 text-gray-200 lg:text-lg text-base">
                           <div className="text-yellow-300 font-semibold">2</div>
                           <div>Is Line Clear or Line Clear enquiry</div>
@@ -79,7 +80,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 3 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 text-gray-200 lg:text-lg text-base">
                           <div className="text-yellow-300 font-semibold">3 *</div>
                           <div>Train entering block section</div>
@@ -90,7 +91,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 4 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 text-gray-200 lg:text-lg text-base">
                           <div className="text-yellow-300 font-semibold">4*</div>
                           <div>(a) Train out of block section (b) Obstruction removed</div>
@@ -101,7 +102,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 5 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 text-gray-200 lg:text-lg text-base">
                           <div className="text-yellow-300 font-semibold">5.</div>
                           <div>(a) Cancel last signal (b) Signal given in error</div>
@@ -112,7 +113,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 6 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="text-gray-200 lg:text-lg text-base space-y-3">
                           <div className="grid grid-cols-5 gap-2">
                             <div className="text-yellow-300 font-semibold">6</div>
@@ -160,7 +161,7 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Row 7 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <div className="grid grid-cols-5 gap-2 text-gray-200 lg:text-lg text-base">
                           <div className="text-yellow-300 font-semibold">7</div>
                           <div>Testing</div>
@@ -171,12 +172,56 @@ const BWMPartCPage8: React.FC = () => {
                       </div>
 
                       {/* Note Section */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">Note :</h4>
-                        <div className="space-y-2 text-gray-200 lg:text-lg text-base">
-                          <p><span className="text-yellow-300 font-semibold">i)</span> `<span className="text-green-300 font-semibold">0</span>&apos; indicates a stroke or a beat and &apos;<span className="text-green-300 font-semibold">––</span>&apos; indicates a pause.</p>
-                          <p><span className="text-yellow-300 font-semibold">ii)</span> Each signal shall be given slowly and distinctly.</p>
-                          <p><span className="text-yellow-300 font-semibold">iii)</span> <span className="text-red-400 font-semibold">*</span> Item <span className="text-yellow-300 font-semibold">(3)</span> and <span className="text-yellow-300 font-semibold">(4)</span> are not required to be given wherever <span className="text-green-300 font-semibold">Axle counter proving Block Instruments</span> or <span className="text-green-300 font-semibold">continuous track circuiting</span> is in use.</p>
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
+                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-6">Note :</h4>
+                        <div className="space-y-3">
+                          {/* i) Item */}
+                          <div className="bg-gradient-to-r from-indigo-500/10 to-indigo-600/5 rounded-lg lg:p-4 p-3 border border-indigo-400/30 hover:border-indigo-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">i</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  `<span className="text-green-300 font-semibold">0</span>&apos; indicates a stroke or a beat and &apos;<span className="text-green-300 font-semibold">––</span>&apos; indicates a pause.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* ii) Item */}
+                          <div className="bg-gradient-to-r from-indigo-500/10 to-indigo-600/5 rounded-lg lg:p-4 p-3 border border-indigo-400/30 hover:border-indigo-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">ii</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  Each signal shall be given slowly and distinctly.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* iii) Item */}
+                          <div className="bg-gradient-to-r from-indigo-500/10 to-indigo-600/5 rounded-lg lg:p-4 p-3 border border-indigo-400/30 hover:border-indigo-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20">
+                            <div className="flex gap-3 items-start">
+                              <div className="flex-shrink-0">
+                                <div className="w-9 h-9 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center shadow-md">
+                                  <span className="text-white font-bold text-base">iii</span>
+                                </div>
+                              </div>
+                              <div className="flex-1 pt-1">
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                                  <span className="text-red-400 font-semibold">*</span> Item <span className="text-yellow-300 font-semibold">(3)</span> and <span className="text-yellow-300 font-semibold">(4)</span> are not required to be given wherever <span className="text-green-300 font-semibold">Axle counter proving Block Instruments</span> or <span className="text-green-300 font-semibold">continuous track circuiting</span> is in use.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

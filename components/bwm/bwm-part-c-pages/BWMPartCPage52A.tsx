@@ -13,29 +13,48 @@ const BWMPartCPage52A: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - VIII</h2>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 8.4 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">8.4. Reports to be sent.</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">a)</span> When block working is suspended, the <span className="text-blue-300 font-semibold">Station Masters</span> at both ends of the block section shall at once make entries in red ink in the Train Signal Registers immediately below the entries for the last train, showing the date and time from which block working was suspended and the cause of suspension, if known. Both the <span className="text-blue-300 font-semibold">Station Masters</span> shall then advise each other by telephone of the suspension of block working and the cause thereof, if known and also advise the <span className="text-blue-300 font-semibold">Signal Inspector</span> and <span className="text-blue-300 font-semibold">DRM/T</span> and <span className="text-blue-300 font-semibold">S&T</span> by telephone.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When block working is suspended, the <span className="text-blue-300 font-semibold">Station Masters</span> at both ends of the block section shall at once make entries in red ink in the Train Signal Registers immediately below the entries for the last train, showing the date and time from which block working was suspended and the cause of suspension, if known. Both the <span className="text-blue-300 font-semibold">Station Masters</span> shall then advise each other by telephone of the suspension of block working and the cause thereof, if known and also advise the <span className="text-blue-300 font-semibold">Signal Inspector</span> and <span className="text-blue-300 font-semibold">DRM/T</span> and <span className="text-blue-300 font-semibold">S&T</span> by telephone.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">b)</span> The <span className="text-blue-300 font-semibold">MSM</span>, <span className="text-blue-300 font-semibold">ESM</span> and <span className="text-blue-300 font-semibold">Signal Inspector</span> shall also be advised when there is a failure of the Last Stop Signal after <span className="text-yellow-300 font-semibold">&apos;Line clear&apos;</span> has been obtained from the station ahead.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              The <span className="text-blue-300 font-semibold">MSM</span>, <span className="text-blue-300 font-semibold">ESM</span> and <span className="text-blue-300 font-semibold">Signal Inspector</span> shall also be advised when there is a failure of the Last Stop Signal after <span className="text-yellow-300 font-semibold">&apos;Line clear&apos;</span> has been obtained from the station ahead.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

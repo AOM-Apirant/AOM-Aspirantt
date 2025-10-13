@@ -35,35 +35,62 @@ const BWMPartCPage31A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 5.1 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">5. 1. Refusal of the &apos;Is line clear&apos; signal, and sending of the &apos;Obstruction danger&apos; signal.</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">a)</span> If for any reason, the station in advance is unable to accept the <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal, such station shall refuse it by sending the <span className="text-blue-300 font-semibold">&apos;Obstruction danger signal&apos;</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              If for any reason, the station in advance is unable to accept the <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal, such station shall refuse it by sending the <span className="text-blue-300 font-semibold">&apos;Obstruction danger signal&apos;</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">b)</span> If the block station in advance is not in a position to accept <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal, the train shall be stopped at the station and shall not be allowed to leave it, until <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal has been given to and accepted by the block station in advance.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              If the block station in advance is not in a position to accept <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal, the train shall be stopped at the station and shall not be allowed to leave it, until <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal has been given to and accepted by the block station in advance.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">c)</span> This signal shall be used by <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> if for any reason he is unable to accept the <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal, from <span className="text-blue-300 font-semibold">&apos;X&apos;</span>. When <span className="text-blue-300 font-semibold">Y</span> refuses <span className="text-green-300 font-semibold">&apos;Line clear&apos;</span> for any train both <span className="text-blue-300 font-semibold">&apos;X&apos;</span> and <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> shall enter the words <span className="text-yellow-300 font-semibold">&apos;Line clear refused&apos;</span> on the same line against the train entry, in the <span className="text-green-300 font-semibold">Train Signal Register</span> showing the time <span className="text-blue-300 font-semibold">&apos;X&apos;</span> asked <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span>. They shall make entirely new entries in their <span className="text-green-300 font-semibold">Train Signal Registers</span> when <span className="text-blue-300 font-semibold">&apos;X&apos;</span> again asks <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              This signal shall be used by <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> if for any reason he is unable to accept the <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span> signal, from <span className="text-blue-300 font-semibold">&apos;X&apos;</span>. When <span className="text-blue-300 font-semibold">Y</span> refuses <span className="text-green-300 font-semibold">&apos;Line clear&apos;</span> for any train both <span className="text-blue-300 font-semibold">&apos;X&apos;</span> and <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> shall enter the words <span className="text-yellow-300 font-semibold">&apos;Line clear refused&apos;</span> on the same line against the train entry, in the <span className="text-green-300 font-semibold">Train Signal Register</span> showing the time <span className="text-blue-300 font-semibold">&apos;X&apos;</span> asked <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span>. They shall make entirely new entries in their <span className="text-green-300 font-semibold">Train Signal Registers</span> when <span className="text-blue-300 font-semibold">&apos;X&apos;</span> again asks <span className="text-blue-300 font-semibold">&apos;Y&apos;</span> <span className="text-green-300 font-semibold">&apos;Is line clear&apos;</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -22,6 +22,7 @@ const BWMPartCPage25C: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - III</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Conditions for Closing the Block Section
             </h1>
@@ -29,43 +30,84 @@ const BWMPartCPage25C: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 3.11 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.11. Conditions for closing the block section (G.R. 14.10):</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">a)</span> When the <span className="text-green-300 font-semibold">block section</span> has been cleared by the arrival of the train or by the removal of the cause of blocking, the <span className="text-green-300 font-semibold">block section</span> shall be closed by the <span className="text-blue-300 font-semibold">block station</span> in advance by giving the prescribed <span className="text-green-300 font-semibold">bell code signal</span>.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When the <span className="text-green-300 font-semibold">block section</span> has been cleared by the arrival of the train or by the removal of the cause of blocking, the <span className="text-green-300 font-semibold">block section</span> shall be closed by the <span className="text-blue-300 font-semibold">block station</span> in advance by giving the prescribed <span className="text-green-300 font-semibold">bell code signal</span>.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed mb-3">
-                          <span className="text-yellow-300 font-semibold">b)</span> Before such signal is given, the <span className="text-blue-300 font-semibold">Station Master</span> shall satisfy himself:
-                        </p>
-                        <div className="space-y-2 ml-4">
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">i)</span> that the train has arrived complete, or the cause of blocking the section has been removed, and
-                          </p>
-                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                            <span className="text-yellow-300 font-semibold">ii)</span> that the conditions under which <span className="text-green-300 font-semibold">line clear</span> can begiven, are complied with.
-                          </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed mb-3">
+                              Before such signal is given, the <span className="text-blue-300 font-semibold">Station Master</span> shall satisfy himself:
+                            </p>
+                            <div className="space-y-3 ml-4">
+                              <div className="flex items-start gap-3 bg-white/5 rounded-lg p-3 border border-pink-300/20">
+                                <div className="flex-shrink-0">
+                                  <div className="w-7 h-7 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-md">
+                                    <span className="text-white font-bold text-sm">i</span>
+                                  </div>
+                                </div>
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-0.5">
+                                  that the train has arrived complete, or the cause of blocking the section has been removed, and
+                                </p>
+                              </div>
+                              <div className="flex items-start gap-3 bg-white/5 rounded-lg p-3 border border-pink-300/20">
+                                <div className="flex-shrink-0">
+                                  <div className="w-7 h-7 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-md">
+                                    <span className="text-white font-bold text-sm">ii</span>
+                                  </div>
+                                </div>
+                                <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-0.5">
+                                  that the conditions under which <span className="text-green-300 font-semibold">line clear</span> can begiven, are complied with.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
                       {/* Section c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">c)</span> After the complete train has passed inside the <span className="text-green-300 font-semibold">LVT</span> at <span className="text-green-300 font-semibold">&apos;Y&apos;</span>, <span className="text-green-300 font-semibold">&apos;Y&apos;</span> will replace the <span className="text-blue-300 font-semibold">Home signal lever/knob</span> to normal position. The replacement of the signal lever/knob and the operation of the <span className="text-green-300 font-semibold">track circuit</span> will release the lock on the <span className="text-green-300 font-semibold">operating handle</span> at <span className="text-green-300 font-semibold">&apos;Y&apos;</span>. <span className="text-green-300 font-semibold">&apos;Y&apos;</span> will then give <span className="text-green-300 font-semibold">&apos;Train out of block section&apos;</span> signal and keeping the <span className="text-green-300 font-semibold">bell plunger</span> pressed on the last beat, turn the <span className="text-green-300 font-semibold">operating handle</span> to <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position. The <span className="text-green-300 font-semibold">TCF dial</span> at <span className="text-green-300 font-semibold">&apos;Y&apos;</span> and <span className="text-green-300 font-semibold">TGT dial</span> at <span className="text-green-300 font-semibold">&apos;X&apos;</span> will then display <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position.
-                        </p>
+                      <div className="bg-gradient-to-r from-pink-500/10 to-pink-600/5 rounded-lg lg:p-4 p-3 border border-pink-400/30 hover:border-pink-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">c</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              After the complete train has passed inside the <span className="text-green-300 font-semibold">LVT</span> at <span className="text-green-300 font-semibold">&apos;Y&apos;</span>, <span className="text-green-300 font-semibold">&apos;Y&apos;</span> will replace the <span className="text-blue-300 font-semibold">Home signal lever/knob</span> to normal position. The replacement of the signal lever/knob and the operation of the <span className="text-green-300 font-semibold">track circuit</span> will release the lock on the <span className="text-green-300 font-semibold">operating handle</span> at <span className="text-green-300 font-semibold">&apos;Y&apos;</span>. <span className="text-green-300 font-semibold">&apos;Y&apos;</span> will then give <span className="text-green-300 font-semibold">&apos;Train out of block section&apos;</span> signal and keeping the <span className="text-green-300 font-semibold">bell plunger</span> pressed on the last beat, turn the <span className="text-green-300 font-semibold">operating handle</span> to <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position. The <span className="text-green-300 font-semibold">TCF dial</span> at <span className="text-green-300 font-semibold">&apos;Y&apos;</span> and <span className="text-green-300 font-semibold">TGT dial</span> at <span className="text-green-300 font-semibold">&apos;X&apos;</span> will then display <span className="text-green-300 font-semibold">&apos;Line closed&apos;</span> position.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

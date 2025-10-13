@@ -22,6 +22,7 @@ const BWMPartCPage3: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - I</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Indoor Apparatus
             </h1>
@@ -29,34 +30,56 @@ const BWMPartCPage3: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 1.4 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">1.4. Indoor Apparatus:</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">a)</span> Electric Lock on the Last Stop Signal:
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          An <span className="text-green-300 font-semibold">electric lock</span> locks the <span className="text-blue-300 font-semibold">Last Stop Signal</span> in the normal position and is released only when <span className="text-green-300 font-semibold">&apos;Line clear&apos;</span> has been obtained from the <span className="text-green-300 font-semibold">block station</span> in advance.
-                        </p>
+                      <div className="bg-gradient-to-r from-amber-500/10 to-amber-600/5 rounded-xl lg:p-5 p-3 border border-amber-400/30 hover:border-amber-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-amber-200 font-bold lg:text-xl text-lg">
+                              Electric Lock on the Last Stop Signal:
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            An <span className="text-green-300 font-semibold">electric lock</span> locks the <span className="text-blue-300 font-semibold">Last Stop Signal</span> in the normal position and is released only when <span className="text-green-300 font-semibold">&apos;Line clear&apos;</span> has been obtained from the <span className="text-green-300 font-semibold">block station</span> in advance.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <h4 className="text-blue-200 font-bold lg:text-xl text-lg mb-3">
-                          <span className="text-yellow-300">(b)</span> Last Stop Signal lever (Shunt) key:
-                        </h4>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          A <span className="text-green-300 font-semibold">mechanical key</span>, if provided for the <span className="text-blue-300 font-semibold">Last Stop Signal lever</span>, locks the lever in the normal position, and when extracted ,the key is used for <span className="text-green-300 font-semibold">shunt movements</span> past the <span className="text-blue-300 font-semibold">Last Stop Signal</span>. The station code and the line, <span className="text-green-300 font-semibold">&apos;UP&apos;</span> or <span className="text-green-300 font-semibold">&apos;DOWN&apos;</span> to which it applies are inscribed on the respective keys.
-                        </p>
+                      <div className="bg-gradient-to-r from-orange-500/10 to-orange-600/5 rounded-xl lg:p-5 p-3 border border-orange-400/30 hover:border-orange-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20">
+                        <div className="flex gap-4 items-start mb-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                              <span className="text-white font-bold text-xl">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-2">
+                            <h4 className="text-orange-200 font-bold lg:text-xl text-lg">
+                              Last Stop Signal lever (Shunt) key:
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="lg:ml-16 ml-2">
+                          <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                            A <span className="text-green-300 font-semibold">mechanical key</span>, if provided for the <span className="text-blue-300 font-semibold">Last Stop Signal lever</span>, locks the lever in the normal position, and when extracted ,the key is used for <span className="text-green-300 font-semibold">shunt movements</span> past the <span className="text-blue-300 font-semibold">Last Stop Signal</span>. The station code and the line, <span className="text-green-300 font-semibold">&apos;UP&apos;</span> or <span className="text-green-300 font-semibold">&apos;DOWN&apos;</span> to which it applies are inscribed on the respective keys.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Note Section */}

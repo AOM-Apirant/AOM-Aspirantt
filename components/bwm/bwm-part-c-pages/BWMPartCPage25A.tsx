@@ -22,6 +22,7 @@ const BWMPartCPage25A: React.FC = () => {
                 </svg>
               </div>
             </div>
+            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">CHAPTER - III</h2>
             <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               Train Entering Block Section Signal
             </h1>
@@ -29,28 +30,46 @@ const BWMPartCPage25A: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* 3.9 Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h3 className="text-blue-300 font-bold lg:text-2xl text-xl mb-6">3.9. The &apos;Train entering block section&apos; signal:</h3>
                     
                     <div className="space-y-4">
                       {/* Section a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">a)</span> On the departure of a train from a <span className="text-blue-300 font-semibold">block station</span> the <span className="text-green-300 font-semibold">&apos;Train entering block section&apos;</span> signal shall be sent to the <span className="text-blue-300 font-semibold">block station</span> in advance, and be duly acknowledged.
-                        </p>
+                      <div className="bg-gradient-to-r from-violet-500/10 to-violet-600/5 rounded-lg lg:p-4 p-3 border border-violet-400/30 hover:border-violet-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-violet-400 to-violet-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">a</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              On the departure of a train from a <span className="text-blue-300 font-semibold">block station</span> the <span className="text-green-300 font-semibold">&apos;Train entering block section&apos;</span> signal shall be sent to the <span className="text-blue-300 font-semibold">block station</span> in advance, and be duly acknowledged.
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-yellow-300 font-semibold">b)</span> When so acknowledged, the <span className="text-green-300 font-semibold">block section</span> shall be deemed to be blocked, against any other train following.
-                        </p>
+                      <div className="bg-gradient-to-r from-violet-500/10 to-violet-600/5 rounded-lg lg:p-4 p-3 border border-violet-400/30 hover:border-violet-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/20">
+                        <div className="flex gap-3 items-start">
+                          <div className="flex-shrink-0">
+                            <div className="w-9 h-9 bg-gradient-to-br from-violet-400 to-violet-600 rounded-full flex items-center justify-center shadow-md">
+                              <span className="text-white font-bold text-base">b</span>
+                            </div>
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              When so acknowledged, the <span className="text-green-300 font-semibold">block section</span> shall be deemed to be blocked, against any other train following.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
