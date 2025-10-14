@@ -1,10 +1,13 @@
 import React from 'react'
-import BWMPartCPage60C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage60C'
+import BWMAnnexureOnePage19 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage19'
+
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <BWMPartCPage60C/>
+          <BWMAnnexureOnePage19/>
+
+
     </div>
   )
 }

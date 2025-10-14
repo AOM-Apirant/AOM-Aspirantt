@@ -13,18 +13,19 @@ const BWMAnnexurePage2C: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-6">ANNEXURE</h1>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* Main Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h4 className="text-indigo-300 font-semibold lg:text-xl text-lg mb-4">1.4. Method of sending a train from &apos;X&apos; to &apos;Y&apos; using T/A1425, T/B1425 , T/C1425 and T/D.1425:</h4>
                     
                     <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                      <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                         <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
                           If &apos;X&apos; and &apos;Y&apos; are two consecutive block stations, the method of sending a train from station &apos;X&apos; to station &apos;Y&apos; using T/A1425, T/B1425 , T/C1425 and T/D.1425 is as follows:(Item no.25 of AS-6 Dt:18.06.2024)
                         </p>
@@ -33,7 +34,7 @@ const BWMAnnexurePage2C: React.FC = () => {
                   </div>
                 </div>
                 <div className="overflow-x-auto mt-6">
-                  <table className="min-w-full border border-blue-600 rounded-lg overflow-hidden bg-white/5">
+                  <table className="min-w-full border-t border-b border-l border-blue-600 rounded-lg overflow-hidden bg-white/5">
                     <thead>
                       <tr className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900">
                         <th className="px-3 py-3 text-left text-indigo-200 font-semibold border-b border-blue-600">Step</th>

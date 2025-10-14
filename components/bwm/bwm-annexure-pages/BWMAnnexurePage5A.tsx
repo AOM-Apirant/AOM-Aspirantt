@@ -13,29 +13,40 @@ const BWMAnnexurePage5A: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-6">ANNEXURE</h1>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* Main Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h4 className="text-indigo-300 font-semibold lg:text-xl text-lg mb-4">1.9 Applying for &apos;Line clear&apos; for shunting train outside the First Stop Signal on Single line token territory and Single line tokenless territory:</h4>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Point a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">a)</span> When the Station Master at &apos;X&apos; requires to shunt a train partly or fully outside the First Stop Signal in the direction of the station &apos;Y&apos;, he shall obtain &apos;Line clear&apos; from the Station Master at &apos;Y&apos; as per the procedure laid down in 1 to 3 of 1.4 above.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-blue-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            a
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            When the Station Master at &apos;X&apos; requires to shunt a train partly or fully outside the First Stop Signal in the direction of the station &apos;Y&apos;, he shall obtain &apos;Line clear&apos; from the Station Master at &apos;Y&apos; as per the procedure laid down in 1 to 3 of 1.4 above.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Point b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">b)</span> The Station Master shall then issue to the Driver, along with the PLCT, a memo authorising him to shunt outside the First Stop Signal and return to the station and obtain his acknowledgement. The shunting shall not be commenced until this is done. When the shunting is completed and the &apos;X&apos; – &apos;Y&apos; block section is again clear, &apos;X&apos; shall cancel the &apos;Line clear&apos; and inform &apos;Y&apos;.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-purple-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-purple-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            b
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            The Station Master shall then issue to the Driver, along with the PLCT, a memo authorising him to shunt outside the First Stop Signal and return to the station and obtain his acknowledgement. The shunting shall not be commenced until this is done. When the shunting is completed and the &apos;X&apos; – &apos;Y&apos; block section is again clear, &apos;X&apos; shall cancel the &apos;Line clear&apos; and inform &apos;Y&apos;.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

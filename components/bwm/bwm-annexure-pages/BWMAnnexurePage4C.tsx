@@ -13,36 +13,52 @@ const BWMAnnexurePage4C: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-6">ANNEXURE</h1>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* Main Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h4 className="text-indigo-300 font-semibold lg:text-xl text-lg mb-4">1.8. Withdrawal of &apos;Line clear&apos; in case of emergency:</h4>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Point a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">a)</span> If Station Master &apos;X&apos; , after obtaining &apos;Line clear&apos; from &apos;Y&apos; desires to withdraw &apos;Line Clear&apos; in case of any emergency , he shall withhold PLCT from sending to the Driver. If PLCT already handed over to the Driver, it shall be collected back, if possible. If the train has already left the station &apos;X&apos; to &apos;Y&apos; before the withdrawal of PLCT, the Station Master at &apos;X&apos; shall immediately warn the Station Master at &apos;Y&apos; about the train&apos;s position.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-blue-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            a
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            If Station Master &apos;X&apos; , after obtaining &apos;Line clear&apos; from &apos;Y&apos; desires to withdraw &apos;Line Clear&apos; in case of any emergency , he shall withhold PLCT from sending to the Driver. If PLCT already handed over to the Driver, it shall be collected back, if possible. If the train has already left the station &apos;X&apos; to &apos;Y&apos; before the withdrawal of PLCT, the Station Master at &apos;X&apos; shall immediately warn the Station Master at &apos;Y&apos; about the train&apos;s position.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Point b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">b)</span> If Station Master &apos;Y&apos; , after granting &apos;Line clear&apos; to &apos;X&apos;, desires to withdraw &apos;Line Clear&apos; in case of any emergency , he shall make all possible efforts to inform station &apos;X&apos; through any means of communication.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-purple-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-purple-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            b
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            If Station Master &apos;Y&apos; , after granting &apos;Line clear&apos; to &apos;X&apos;, desires to withdraw &apos;Line Clear&apos; in case of any emergency , he shall make all possible efforts to inform station &apos;X&apos; through any means of communication.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Point c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">c)</span> If &apos;X&apos; or &apos;Y&apos; succeeds in withdrawing &apos;Line clear&apos; in an emergency the PLCT shall be cancelled following prescribed procedure.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl lg:p-5 p-3 hover:from-cyan-500/20 hover:to-blue-500/20 transition-all duration-300 shadow-lg hover:shadow-cyan-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            c
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            If &apos;X&apos; or &apos;Y&apos; succeeds in withdrawing &apos;Line clear&apos; in an emergency the PLCT shall be cancelled following prescribed procedure.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

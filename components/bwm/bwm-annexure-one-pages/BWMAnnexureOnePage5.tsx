@@ -13,33 +13,46 @@ const BWMAnnexureOnePage5: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-6">ANNEXURE ONE</h1>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* Main Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h4 className="text-indigo-300 font-semibold lg:text-xl text-lg mb-4">2.4 SM&apos;s Block Panel is provided with following Buzzers</h4>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Section 2.4.1 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-blue-300 font-semibold mb-2">2.4.1</p>
-                        <p className="text-gray-200 font-semibold mb-2">BLOCK Buzzer</p>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          To register the BELL CODE sent by other end SM
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-blue-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 lg:w-14 lg:h-14 w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold lg:text-base text-sm shadow-lg">
+                            2.4.1
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-blue-200 font-semibold lg:text-xl text-lg mb-3">BLOCK Buzzer</p>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              To register the BELL CODE sent by other end SM
+                            </p>
+                          </div>
+                        </div>
                       </div>
 
                       {/* Section 2.4.2 */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-blue-300 font-semibold mb-2">2.4.2</p>
-                        <p className="text-gray-200 font-semibold mb-2">SECTION Buzzer</p>
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          To register the occupation & clearance of each Block Section
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-purple-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-purple-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 lg:w-14 lg:h-14 w-12 h-12 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold lg:text-base text-sm shadow-lg">
+                            2.4.2
+                          </div>
+                          <div className="flex-1 pt-1">
+                            <p className="text-purple-200 font-semibold lg:text-xl text-lg mb-3">SECTION Buzzer</p>
+                            <p className="text-gray-100 lg:text-lg text-base leading-relaxed">
+                              To register the occupation & clearance of each Block Section
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

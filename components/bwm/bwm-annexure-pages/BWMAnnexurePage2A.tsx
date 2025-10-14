@@ -13,37 +13,53 @@ const BWMAnnexurePage2A: React.FC = () => {
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
         <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-6">ANNEXURE</h1>
           {/* Content Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-6 rounded-xl border border-blue-400/20">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-6 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-8 py-6 lg:px-8 px-2 rounded-xl border border-blue-400/20">
               <div className="text-gray-200 lg:text-lg text-base leading-relaxed space-y-6">
                 
                 <div className="space-y-6">
                   {/* Main Section */}
-                  <div className="bg-white/5 rounded-lg p-6 border border-white/10">
+                  <div className="bg-white/5 rounded-lg lg:p-6 p-2 border border-white/10">
                     <h4 className="text-indigo-300 font-semibold lg:text-xl text-lg mb-4">1.2. Daily serial numbers and Private Numbers:</h4>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       {/* Point a */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">a)</span> Each &apos;Line clear inquiry message (Outward)&apos; shall be numbered consecutively from one, commencing from zero hour each day.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-blue-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            a
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            Each &apos;Line clear inquiry message (Outward)&apos; shall be numbered consecutively from one, commencing from zero hour each day.
+                          </p>
+                        </div>
                       </div>
 
                       {/* Point b */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">b)</span> In &apos;Reply despatched to Line clear enquiry received to station… .............. &apos;,
+                      <div className="group relative bg-gradient-to-r from-purple-500/10 to-indigo-500/10 rounded-xl lg:p-5 p-3 hover:from-purple-500/20 hover:to-indigo-500/20 transition-all duration-300 shadow-lg hover:shadow-purple-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            b
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            In &apos;Reply despatched to Line clear enquiry received to station… .............. &apos;,
 reference to the message number shall be quoted.
-                        </p>
+                          </p>
+                        </div>
                       </div>
 
                       {/* Point c */}
-                      <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                        <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
-                          <span className="text-blue-300 font-semibold">c)</span> Every &apos;Line Clear&apos; sent shall be allotted a Private Number. The Private Number shall be recorded both in figures and words in &apos;reply despatched&apos; and &apos;reply received&apos; portions of T/A1425 and T/B.1425 respectively.
-                        </p>
+                      <div className="group relative bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl lg:p-5 p-3 hover:from-cyan-500/20 hover:to-blue-500/20 transition-all duration-300 shadow-lg hover:shadow-cyan-500/20">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                            c
+                          </div>
+                          <p className="text-gray-100 lg:text-lg text-base leading-relaxed flex-1 pt-1">
+                            Every &apos;Line Clear&apos; sent shall be allotted a Private Number. The Private Number shall be recorded both in figures and words in &apos;reply despatched&apos; and &apos;reply received&apos; portions of T/A1425 and T/B.1425 respectively.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
