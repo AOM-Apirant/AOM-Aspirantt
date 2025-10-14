@@ -302,13 +302,9 @@ export default function Navbar() {
                     // Redirect to Google sign in
                     window.location.href = '/api/auth/signin/google';
                   }}
-                  className="relative bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40 shadow-sm hover:shadow-md transform hover:scale-105 text-sm lg:text-base overflow-hidden snake-border-container"
+                  className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-colors duration-200 border border-white/20 hover:border-white/40 text-sm lg:text-base"
                 >
-                  {/* Snake Border Dot Animation */}
-                  <div className="absolute inset-0 rounded-full">
-                    <div className="absolute top-0 right-0 w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full animate-snake-border-dot shadow-xl border-2 border-white"></div>
-                  </div>
-                  <span className="relative z-10">Login</span>
+                  Login
                 </button>
               )}
             </div>

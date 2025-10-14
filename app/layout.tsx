@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 import { SessionProvider } from 'next-auth/react';
 import Footer from '@/components/Footer';
+import FloatingTopicNavigator from '@/components/FloatingTopicNavigator';
 
 export const metadata = {
   title: 'AOM Aspirant',
@@ -26,6 +27,7 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-1 pt-16">{children}</main>
             <Footer />
+            <FloatingTopicNavigator />
           </div>
         </SessionProvider>
       </body>

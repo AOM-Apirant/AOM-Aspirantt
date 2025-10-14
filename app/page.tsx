@@ -3,6 +3,7 @@
 import AuthForm from '@/components/AuthForm';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -18,9 +19,73 @@ export default function Home() {
       {/* Show login form only when user is not logged in */}
       {!session ? (
         <div className="flex items-center justify-center min-h-screen p-4">
-          <div className={`w-full max-w-md transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="bg-white rounded-xl shadow-2xl p-8 border border-gray-100">
-              <AuthForm />
+          <div className={`w-full max-w-5xl transition-all duration-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Single Beautiful Frame */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
+              {/* Decorative Header */}
+              <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-blue-600 p-6 text-center relative overflow-hidden">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute top-4 left-4 w-16 h-16 bg-white rounded-full"></div>
+                  <div className="absolute top-8 right-8 w-12 h-12 bg-white rounded-full"></div>
+                  <div className="absolute bottom-4 left-8 w-8 h-8 bg-white rounded-full"></div>
+                  <div className="absolute bottom-8 right-4 w-20 h-20 bg-white rounded-full"></div>
+                </div>
+                
+                <div className="relative z-10">
+                  <h1 className="text-4xl lg:text-5xl font-bold text-white mb-2">
+                    AOM Aspirant
+                  </h1>
+                  <p className="text-blue-100 text-lg font-medium">
+                    Your Gateway to Success
+                  </p>
+                  <div className="mt-4 flex justify-center">
+                    <div className="w-24 h-1 bg-white/30 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main Content */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+                {/* Left Side - Image */}
+                <div className="flex justify-center lg:justify-end">
+                  <div className="relative">
+                    {/* Image Container */}
+                    <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                      {/* Decorative elements */}
+                      <div className="absolute -top-2 -right-2 w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20"></div>
+                      <div className="absolute -bottom-3 -left-3 w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20"></div>
+                      
+                      {/* Main Image */}
+                      <div className="relative z-10">
+                        <Image 
+                          src="/master.jpg" 
+                          alt="AOM Aspirant" 
+                          width={300}
+                          height={400}
+                          className="w-full max-w-xs h-auto rounded-xl shadow-lg border-2 border-white"
+                          priority
+                        />
+                        
+                        {/* Image overlay */}
+                        <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-md">
+                          <h3 className="text-base font-bold text-gray-800 mb-1">AOM Aspirant</h3>
+                          <p className="text-xs text-gray-600">Your Learning Guide</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side - Login Form */}
+                <div className="flex justify-center lg:justify-start">
+                  <div className="w-full max-w-sm">
+                    <AuthForm />
+                  </div>
+                </div>
+              </div>
+
+              
             </div>
           </div>
         </div>

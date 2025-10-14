@@ -73,6 +73,168 @@ import BWMPartAPage53 from '@/components/bwm/bwm-part-a-pages/BWMPartAPage53'
 import BWMPartAPage55A from '@/components/bwm/bwm-part-a-pages/BWMPartAPage55A'
 import BWMPartAPage55B from '@/components/bwm/bwm-part-a-pages/BWMPartAPage55B'
 
+// Import all BWM Part B content components
+import BWMPartBPage1A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage1A'
+import BWMPartBPage1B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage1B'
+import BWMPartBPage6 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage6'
+import BWMPartBPage11 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage11'
+import BWMPartBPage17A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage17A'
+import BWMPartBPage17B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage17B'
+import BWMPartBPage18 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage18'
+import BWMPartBPage19A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage19A'
+import BWMPartBPage19B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage19B'
+import BWMPartBPage20 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage20'
+import BWMPartBPage22 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage22'
+import BWMPartBPage23A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage23A'
+import BWMPartBPage23B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage23B'
+import BWMPartBPage24A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage24A'
+import BWMPartBPage24B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage24B'
+import BWMPartBPage29 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage29'
+import BWMPartBPage34 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage34'
+import BWMPartBPage37 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage37'
+import BWMPartBPage43 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage43'
+import BWMPartBPage46 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage46'
+import BWMPartBPage51A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage51A'
+import BWMPartBPage51B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage51B'
+import BWMPartBPage52A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage52A'
+import BWMPartBPage52B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage52B'
+import BWMPartBPage53A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage53A'
+import BWMPartBPage53B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage53B'
+import BWMPartBPage53C from '@/components/bwm/bwm-part-b-pages/BWMPartBPage53C'
+import BWMPartBPage54A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage54A'
+import BWMPartBPage54B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage54B'
+import BWMPartBPage55A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage55A'
+import BWMPartBPage55B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage55B'
+import BWMPartBPage57 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage57'
+import BWMPartBPage58A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage58A'
+import BWMPartBPage58B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage58B'
+import BWMPartBPage59A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage59A'
+import BWMPartBPage59B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage59B'
+import BWMPartBPage60A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage60A'
+import BWMPartBPage60B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage60B'
+import BWMPartBPage61A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage61A'
+import BWMPartBPage61B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage61B'
+import BWMPartBPage62 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage62'
+import BWMPartBPage63 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage63'
+import BWMPartBPage64 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage64'
+import BWMPartBPage66 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage66'
+import BWMPartBPage67A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage67A'
+import BWMPartBPage67B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage67B'
+import BWMPartBPage67C from '@/components/bwm/bwm-part-b-pages/BWMPartBPage67C'
+import BWMPartBPage67D from '@/components/bwm/bwm-part-b-pages/BWMPartBPage67D'
+import BWMPartBPage69 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage69'
+import BWMPartBPage73A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage73A'
+import BWMPartBPage73B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage73B'
+import BWMPartBPage74A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage74A'
+import BWMPartBPage74B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage74B'
+import BWMPartBPage76A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage76A'
+import BWMPartBPage76B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage76B'
+import BWMPartBPage77 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage77'
+import BWMPartBPage79 from '@/components/bwm/bwm-part-b-pages/BWMPartBPage79'
+import BWMPartBPage80A from '@/components/bwm/bwm-part-b-pages/BWMPartBPage80A'
+import BWMPartBPage80B from '@/components/bwm/bwm-part-b-pages/BWMPartBPage80B'
+
+// Import all BWM Part C content components
+import BWMPartCPage1A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage1A'
+import BWMPartCPage1B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage1B'
+import BWMPartCPage2 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage2'
+import BWMPartCPage3 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage3'
+import BWMPartCPage4A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage4A'
+import BWMPartCPage4B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage4B'
+import BWMPartCPage7A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage7A'
+import BWMPartCPage7B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage7B'
+import BWMPartCPage8 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage8'
+import BWMPartCPage9A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage9A'
+import BWMPartCPage9B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage9B'
+import BWMPartCPage10 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage10'
+import BWMPartCPage11 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage11'
+import BWMPartCPage13A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage13A'
+import BWMPartCPage13B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage13B'
+import BWMPartCPage14 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage14'
+import BWMPartCPage15A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage15A'
+import BWMPartCPage15B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage15B'
+import BWMPartCPage23A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage23A'
+import BWMPartCPage23B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage23B'
+import BWMPartCPage23C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage23C'
+import BWMPartCPage24A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage24A'
+import BWMPartCPage24B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage24B'
+import BWMPartCPage24C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage24C'
+import BWMPartCPage25A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage25A'
+import BWMPartCPage25B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage25B'
+import BWMPartCPage25C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage25C'
+import BWMPartCPage26 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage26'
+import BWMPartCPage27 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage27'
+import BWMPartCPage30 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage30'
+import BWMPartCPage31A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage31A'
+import BWMPartCPage31B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage31B'
+import BWMPartCPage32 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage32'
+import BWMPartCPage34 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage34'
+import BWMPartCPage35 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage35'
+import BWMPartCPage36 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage36'
+import BWMPartCPage37 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage37'
+import BWMPartCPage38A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage38A'
+import BWMPartCPage38B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage38B'
+import BWMPartCPage39 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage39'
+import BWMPartCPage40 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage40'
+import BWMPartCPage42 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage42'
+import BWMPartCPage43 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage43'
+import BWMPartCPage44 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage44'
+import BWMPartCPage46A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage46A'
+import BWMPartCPage46B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage46B'
+import BWMPartCPage47A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage47A'
+import BWMPartCPage47B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage47B'
+import BWMPartCPage47C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage47C'
+import BWMPartCPage48 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage48'
+import BWMPartCPage49 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage49'
+import BWMPartCPage50A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage50A'
+import BWMPartCPage50B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage50B'
+import BWMPartCPage50C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage50C'
+import BWMPartCPage52A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage52A'
+import BWMPartCPage52B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage52B'
+import BWMPartCPage53 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage53'
+import BWMPartCPage55 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage55'
+import BWMPartCPage56 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage56'
+import BWMPartCPage58 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage58'
+import BWMPartCPage59 from '@/components/bwm/bwm-part-c-pages/BWMPartCPage59'
+import BWMPartCPage60A from '@/components/bwm/bwm-part-c-pages/BWMPartCPage60A'
+import BWMPartCPage60B from '@/components/bwm/bwm-part-c-pages/BWMPartCPage60B'
+import BWMPartCPage60C from '@/components/bwm/bwm-part-c-pages/BWMPartCPage60C'
+
+// Import all BWM Annexure content components
+import BWMAnnexurePage1 from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage1'
+import BWMAnnexurePage2A from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage2A'
+import BWMAnnexurePage2B from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage2B'
+import BWMAnnexurePage2C from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage2C'
+import BWMAnnexurePage3 from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage3'
+import BWMAnnexurePage4A from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage4A'
+import BWMAnnexurePage4B from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage4B'
+import BWMAnnexurePage4C from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage4C'
+import BWMAnnexurePage5A from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage5A'
+import BWMAnnexurePage5B from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage5B'
+import BWMAnnexurePage6 from '@/components/bwm/bwm-annexure-pages/BWMAnnexurePage6'
+
+// Import all BWM Annexure One content components
+import BWMAnnexureOnePage1A from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage1A'
+import BWMAnnexureOnePage1B from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage1B'
+import BWMAnnexureOnePage2A from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage2A'
+import BWMAnnexureOnePage2B from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage2B'
+import BWMAnnexureOnePage3 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage3'
+import BWMAnnexureOnePage5 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage5'
+import BWMAnnexureOnePage6A from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage6A'
+import BWMAnnexureOnePage6B from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage6B'
+import BWMAnnexureOnePage6C from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage6C'
+import BWMAnnexureOnePage7 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage7'
+import BWMAnnexureOnePage9 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage9'
+import BWMAnnexureOnePage10 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage10'
+import BWMAnnexureOnePage11A from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage11A'
+import BWMAnnexureOnePage11B from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage11B'
+import BWMAnnexureOnePage12 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage12'
+import BWMAnnexureOnePage14 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage14'
+import BWMAnnexureOnePage16A from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage16A'
+import BWMAnnexureOnePage16B from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage16B'
+import BWMAnnexureOnePage18 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage18'
+import BWMAnnexureOnePage19 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage19'
+
 const ContentPage = () => {
   const params = useParams()
   const router = useRouter()
@@ -189,7 +351,165 @@ const ContentPage = () => {
     '53': BWMPartAPage53,
     '55': BWMPartAPage55A,
     '55A': BWMPartAPage55A,
-    '55B': BWMPartAPage55B
+    '55B': BWMPartAPage55B,
+    // Part B Pages (prefixed with 'B')
+    'B1A': BWMPartBPage1A,
+    'B1B': BWMPartBPage1B,
+    'B6': BWMPartBPage6,
+    'B11': BWMPartBPage11,
+    'B17A': BWMPartBPage17A,
+    'B17B': BWMPartBPage17B,
+    'B18': BWMPartBPage18,
+    'B19A': BWMPartBPage19A,
+    'B19B': BWMPartBPage19B,
+    'B20': BWMPartBPage20,
+    'B22': BWMPartBPage22,
+    'B23A': BWMPartBPage23A,
+    'B23B': BWMPartBPage23B,
+    'B24A': BWMPartBPage24A,
+    'B24B': BWMPartBPage24B,
+    'B29': BWMPartBPage29,
+    'B34': BWMPartBPage34,
+    'B37': BWMPartBPage37,
+    'B43': BWMPartBPage43,
+    'B46': BWMPartBPage46,
+    'B51A': BWMPartBPage51A,
+    'B51B': BWMPartBPage51B,
+    'B52A': BWMPartBPage52A,
+    'B52B': BWMPartBPage52B,
+    'B53A': BWMPartBPage53A,
+    'B53B': BWMPartBPage53B,
+    'B53C': BWMPartBPage53C,
+    'B54A': BWMPartBPage54A,
+    'B54B': BWMPartBPage54B,
+    'B55A': BWMPartBPage55A,
+    'B55B': BWMPartBPage55B,
+    'B57': BWMPartBPage57,
+    'B58A': BWMPartBPage58A,
+    'B58B': BWMPartBPage58B,
+    'B59A': BWMPartBPage59A,
+    'B59B': BWMPartBPage59B,
+    'B60A': BWMPartBPage60A,
+    'B60B': BWMPartBPage60B,
+    'B61A': BWMPartBPage61A,
+    'B61B': BWMPartBPage61B,
+    'B62': BWMPartBPage62,
+    'B63': BWMPartBPage63,
+    'B64': BWMPartBPage64,
+    'B66': BWMPartBPage66,
+    'B67A': BWMPartBPage67A,
+    'B67B': BWMPartBPage67B,
+    'B67C': BWMPartBPage67C,
+    'B67D': BWMPartBPage67D,
+    'B69': BWMPartBPage69,
+    'B73A': BWMPartBPage73A,
+    'B73B': BWMPartBPage73B,
+    'B74A': BWMPartBPage74A,
+    'B74B': BWMPartBPage74B,
+    'B76A': BWMPartBPage76A,
+    'B76B': BWMPartBPage76B,
+    'B77': BWMPartBPage77,
+    'B79': BWMPartBPage79,
+    'B80A': BWMPartBPage80A,
+    'B80B': BWMPartBPage80B,
+    // Part C Pages (prefixed with 'C')
+    'C1A': BWMPartCPage1A,
+    'C1B': BWMPartCPage1B,
+    'C2': BWMPartCPage2,
+    'C3': BWMPartCPage3,
+    'C4A': BWMPartCPage4A,
+    'C4B': BWMPartCPage4B,
+    'C7A': BWMPartCPage7A,
+    'C7B': BWMPartCPage7B,
+    'C8': BWMPartCPage8,
+    'C9A': BWMPartCPage9A,
+    'C9B': BWMPartCPage9B,
+    'C10': BWMPartCPage10,
+    'C11': BWMPartCPage11,
+    'C13A': BWMPartCPage13A,
+    'C13B': BWMPartCPage13B,
+    'C14': BWMPartCPage14,
+    'C15A': BWMPartCPage15A,
+    'C15B': BWMPartCPage15B,
+    'C23A': BWMPartCPage23A,
+    'C23B': BWMPartCPage23B,
+    'C23C': BWMPartCPage23C,
+    'C24A': BWMPartCPage24A,
+    'C24B': BWMPartCPage24B,
+    'C24C': BWMPartCPage24C,
+    'C25A': BWMPartCPage25A,
+    'C25B': BWMPartCPage25B,
+    'C25C': BWMPartCPage25C,
+    'C26': BWMPartCPage26,
+    'C27': BWMPartCPage27,
+    'C30': BWMPartCPage30,
+    'C31A': BWMPartCPage31A,
+    'C31B': BWMPartCPage31B,
+    'C32': BWMPartCPage32,
+    'C34': BWMPartCPage34,
+    'C35': BWMPartCPage35,
+    'C36': BWMPartCPage36,
+    'C37': BWMPartCPage37,
+    'C38A': BWMPartCPage38A,
+    'C38B': BWMPartCPage38B,
+    'C39': BWMPartCPage39,
+    'C40': BWMPartCPage40,
+    'C42': BWMPartCPage42,
+    'C43': BWMPartCPage43,
+    'C44': BWMPartCPage44,
+    'C46A': BWMPartCPage46A,
+    'C46B': BWMPartCPage46B,
+    'C47A': BWMPartCPage47A,
+    'C47B': BWMPartCPage47B,
+    'C47C': BWMPartCPage47C,
+    'C48': BWMPartCPage48,
+    'C49': BWMPartCPage49,
+    'C50A': BWMPartCPage50A,
+    'C50B': BWMPartCPage50B,
+    'C50C': BWMPartCPage50C,
+    'C52A': BWMPartCPage52A,
+    'C52B': BWMPartCPage52B,
+    'C53': BWMPartCPage53,
+    'C55': BWMPartCPage55,
+    'C56': BWMPartCPage56,
+    'C58': BWMPartCPage58,
+    'C59': BWMPartCPage59,
+    'C60A': BWMPartCPage60A,
+    'C60B': BWMPartCPage60B,
+    'C60C': BWMPartCPage60C,
+    // Annexure Pages (prefixed with 'A')
+    'A1': BWMAnnexurePage1,
+    'A2A': BWMAnnexurePage2A,
+    'A2B': BWMAnnexurePage2B,
+    'A2C': BWMAnnexurePage2C,
+    'A3': BWMAnnexurePage3,
+    'A4A': BWMAnnexurePage4A,
+    'A4B': BWMAnnexurePage4B,
+    'A4C': BWMAnnexurePage4C,
+    'A5A': BWMAnnexurePage5A,
+    'A5B': BWMAnnexurePage5B,
+    'A6': BWMAnnexurePage6,
+    // Annexure One Pages (prefixed with 'O')
+    'O1A': BWMAnnexureOnePage1A,
+    'O1B': BWMAnnexureOnePage1B,
+    'O2A': BWMAnnexureOnePage2A,
+    'O2B': BWMAnnexureOnePage2B,
+    'O3': BWMAnnexureOnePage3,
+    'O5': BWMAnnexureOnePage5,
+    'O6A': BWMAnnexureOnePage6A,
+    'O6B': BWMAnnexureOnePage6B,
+    'O6C': BWMAnnexureOnePage6C,
+    'O7': BWMAnnexureOnePage7,
+    'O9': BWMAnnexureOnePage9,
+    'O10': BWMAnnexureOnePage10,
+    'O11A': BWMAnnexureOnePage11A,
+    'O11B': BWMAnnexureOnePage11B,
+    'O12': BWMAnnexureOnePage12,
+    'O14': BWMAnnexureOnePage14,
+    'O16A': BWMAnnexureOnePage16A,
+    'O16B': BWMAnnexureOnePage16B,
+    'O18': BWMAnnexureOnePage18,
+    'O19': BWMAnnexureOnePage19
   }
 
   // Rule titles mapping based on page numbers
@@ -282,7 +602,165 @@ const ContentPage = () => {
       '53': 'Procedure using VHF sets',
       '55': 'Resumption of block working after interruption',
       '55A': 'Resumption of block working after interruption',
-      '55B': 'Total interruption of communications on single line'
+      '55B': 'Total interruption of communications on single line',
+      // Part B titles (prefixed with 'B')
+      'B1A': 'Provision of Block Instruments',
+      'B1B': 'Parts and description of Diodo Handle Type tokenless Block Instrument',
+      'B6': 'Parts and description of Kyosan / Podanur make Push button tokenless block instruments',
+      'B11': 'Parts and Description of Axle Counter Proven Block Panel',
+      'B17A': 'Systems of working',
+      'B17B': 'Block Competency Certificate',
+      'B18': 'Bell Code',
+      'B19A': 'Acknowledgement of Signals',
+      'B19B': 'Precedence of trains',
+      'B20': 'Train Signal Register',
+      'B22': 'Station Masters handing over / taking over charge',
+      'B23A': 'Inspection of Train Signal Register',
+      'B23B': 'Preservation of Train Signal Register',
+      'B24A': 'Access to and operation of equipment',
+      'B24B': 'Signalling of a train over the block section - Daido Handle Type',
+      'B29': 'Signalling of a train - Kyosan / Podanur make push button tokenless',
+      'B34': 'Operation of Slip siding and Catch siding',
+      'B37': 'Signalling of a train - Axle Counter Proven Block Panel',
+      'B43': 'Operation of Slip siding and Catch siding while sending / receiving',
+      'B46': 'Shunting',
+      'B51A': 'Procedure for shunting during failure of Shunt key',
+      'B51B': 'The Call attention signal',
+      'B52A': 'Precautions before asking Is line clear',
+      'B52B': 'Precautions before giving Line clear',
+      'B53A': 'Precautions before obtaining Train Going To indication',
+      'B53B': 'Is line clear / Train Going To indication - when to be obtained',
+      'B53C': 'Giving Line clear',
+      'B54A': 'Loco Pilots Authority to proceed',
+      'B54B': 'The Train entering block section signal',
+      'B55A': 'Clearing the section and train arrival buzzer',
+      'B55B': 'Precautions before giving Train out of block section signal',
+      'B57': 'Caution order',
+      'B58A': 'Refusal of the Is line clear signal',
+      'B58B': 'Special use of Obstruction danger signal',
+      'B59A': 'Working of trains required to go beyond First Stop Signal',
+      'B59B': 'Cancel last signal',
+      'B60A': 'Signal given in error signal',
+      'B60B': 'Trains unusually delayed',
+      'B61A': 'Stop and examine train signal',
+      'B61B': 'Train passed without tail lamp',
+      'B62': 'Train divided signal',
+      'B63': 'Vehicles running away into the block section',
+      'B64': 'Precautions when Telecommunication staff work on wires',
+      'B66': 'Blocking the line for Lorries and Trollies',
+      'B67A': 'The Testing signal',
+      'B67B': 'Persons authorized to test',
+      'B67C': 'Block Section to be clear during Test',
+      'B67D': 'Procedure for testing',
+      'B69': 'Failure of tokenless block instruments',
+      'B73A': 'Alternative means of communication',
+      'B73B': 'Block instruments failure record',
+      'B74A': 'Reports to be sent',
+      'B74B': 'Train signalling during interruption of block working',
+      'B76A': 'Procedure when Train entering block section signal cannot be given',
+      'B76B': 'Procedure for obtaining/granting Line Clear using telephone',
+      'B77': 'Procedure using Control telephone',
+      'B79': 'Procedure using VHF sets',
+      'B80A': 'Instructions for working trains during total interruption',
+      'B80B': 'Resumption of block working after interruption',
+      // Part C titles (prefixed with 'C')
+      'C1A': 'Provision of Block Instrument',
+      'C1B': 'Parts and Description of Block Instrument',
+      'C2': 'Systems of working and Block Competency Certificate',
+      'C3': 'Access to and operation of equipment',
+      'C4A': 'Despatching a train',
+      'C4B': 'Cancel Line clear and IBS procedure',
+      'C7A': 'The Call attention signal',
+      'C7B': 'Precautions and procedures for Line clear',
+      'C8': 'Caution order',
+      'C9A': 'Refusal of Is Line clear signal',
+      'C9B': 'Special use of Obstruction danger signal',
+      'C10': 'Obstruction on double line - Block Forward',
+      'C11': 'Obstruction on double line - Block Back',
+      'C13A': 'Cancel last signal',
+      'C13B': 'Train wrongly described',
+      'C14': 'Train unusually delayed',
+      'C15A': 'Stop and examine train signal',
+      'C15B': 'Train passed without tail lamp and other signals',
+      'C23A': 'Material trains',
+      'C23B': 'Lorries, Trollies and Rail-cum-Road Vehicles',
+      'C23C': 'Persons authorized to test',
+      'C24A': 'Block Section to be clear during test',
+      'C24B': 'Procedure for testing',
+      'C24C': 'Consent required before interfering',
+      'C25A': 'Block instrument maintenance work',
+      'C25B': 'Failure of Last Stop Signal',
+      'C25C': 'Failure of operating handle lock',
+      'C26': 'Failure of block instrument',
+      'C27': 'Reports to be sent',
+      'C30': 'Paper line clear ticket',
+      'C31A': 'Working of trains during failure',
+      'C31B': 'Procedure using telephone for Line Clear',
+      'C32': 'Procedure using Control telephone',
+      'C34': 'Procedure using VHF sets',
+      'C35': 'Total interruption of communications',
+      'C36': 'Restoration of working with block instruments',
+      'C37': 'TSL working when one line is obstructed',
+      'C38A': 'TSL working during total interruption',
+      'C38B': 'TSL working procedures',
+      'C39': 'TSL working additional procedures',
+      'C40': 'TSL working safety measures',
+      'C42': 'TSL working communication protocols',
+      'C43': 'TSL working emergency procedures',
+      'C44': 'TSL working restoration procedures',
+      'C46A': 'TSL working special instructions',
+      'C46B': 'TSL working documentation',
+      'C47A': 'TSL working reporting',
+      'C47B': 'TSL working supervision',
+      'C47C': 'TSL working final procedures',
+      'C48': 'TSL working completion',
+      'C49': 'TSL working follow-up',
+      'C50A': 'TSL working review',
+      'C50B': 'TSL working analysis',
+      'C50C': 'TSL working comprehensive procedures',
+      'C52A': 'Additional TSL procedures',
+      'C52B': 'TSL safety protocols',
+      'C53': 'TSL emergency measures',
+      'C55': 'TSL restoration guidelines',
+      'C56': 'TSL operational procedures',
+      'C58': 'TSL final instructions',
+      'C59': 'TSL closing procedures',
+      'C60A': 'TSL documentation completion',
+      'C60B': 'TSL reporting completion',
+      'C60C': 'TSL work completion',
+      // Annexure titles (prefixed with 'A')
+      'A1': 'Use of Line Clear inquiry message',
+      'A2A': 'Daily serial numbers and Private Numbers',
+      'A2B': 'Preservation of Forms',
+      'A2C': 'Method of sending trains',
+      'A3': 'Delivery of Paper Line Clear Ticket',
+      'A4A': 'Counter Line Clear enquiry',
+      'A4B': 'Refusal of Line Clear',
+      'A4C': 'Withdrawal of Line Clear in emergency',
+      'A5A': 'Applying Line Clear for shunting',
+      'A5B': 'Cancelling Line Clear',
+      'A6': 'Specimen Forms',
+      // Annexure One titles (prefixed with 'O')
+      'O1A': 'Block Panel overview',
+      'O1B': 'Description of Block Panel',
+      'O2A': 'Operations of Block Panel',
+      'O2B': 'Detailed operations procedures',
+      'O3': 'Advanced operations',
+      'O5': 'Special procedures',
+      'O6A': 'Catch siding operations',
+      'O6B': 'Slip siding operations',
+      'O6C': 'Additional operations',
+      'O7': 'Shunting operations',
+      'O9': 'Testing procedures',
+      'O10': 'Maintenance operations',
+      'O11A': 'Emergency operations',
+      'O11B': 'Block Failures and Actions',
+      'O12': 'Types of failures',
+      'O14': 'Failure procedures',
+      'O16A': 'Failure of LSS',
+      'O16B': 'Failure of IBS',
+      'O18': 'Suspension of block instrument working',
+      'O19': 'Restoration procedures'
     }
     return ruleTitles[page] || 'Block Working Manual Content'
   }
@@ -290,8 +768,32 @@ const ContentPage = () => {
   const ContentComponent = pageComponents[pageNumber]
 
   const openPDF = () => {
-    const pdfFileName = `BWMPartAPage${pageNumber}.pdf`
-    const pdfPath = `/bwmpdfs/BWMPartAPages/${pdfFileName}`
+    // Determine if it's Part A, B, C, Annexure, or Annexure One
+    const isPartB = pageNumber.startsWith('B')
+    const isPartC = pageNumber.startsWith('C')
+    const isAnnexure = pageNumber.startsWith('A')
+    const isAnnexureOne = pageNumber.startsWith('O')
+    const actualPageNumber = (isPartB || isPartC || isAnnexure || isAnnexureOne) ? pageNumber.substring(1) : pageNumber
+    
+    let pdfFileName = ''
+    let pdfPath = ''
+    
+    if (isAnnexureOne) {
+      pdfFileName = `BWMAnnexureOnePage${actualPageNumber}.pdf`
+      pdfPath = `/bwmpdfs/BWMAnnexureOnePages/${pdfFileName}`
+    } else if (isAnnexure) {
+      pdfFileName = `BWMAnnexurePage${actualPageNumber}.pdf`
+      pdfPath = `/bwmpdfs/BWMAnnexurePages/${pdfFileName}`
+    } else if (isPartC) {
+      pdfFileName = `BWMPartCPage${actualPageNumber}.pdf`
+      pdfPath = `/bwmpdfs/BWMPartCPages/${pdfFileName}`
+    } else if (isPartB) {
+      pdfFileName = `BWMPartBPage${actualPageNumber}.pdf`
+      pdfPath = `/bwmpdfs/BWMPartBPages/${pdfFileName}`
+    } else {
+      pdfFileName = `BWMPartAPage${pageNumber}.pdf`
+      pdfPath = `/bwmpdfs/BWMPartAPages/${pdfFileName}`
+    }
     
     try {
       // Open PDF in new tab
@@ -333,8 +835,46 @@ const ContentPage = () => {
     )
   }
 
+  // Determine if it's Part A, B, C, Annexure, or Annexure One for styling
+  const isPartB = pageNumber.startsWith('B')
+  const isPartC = pageNumber.startsWith('C')
+  const isAnnexure = pageNumber.startsWith('A')
+  const isAnnexureOne = pageNumber.startsWith('O')
+  
+  let bgGradient = "from-blue-900 via-indigo-900 to-purple-900"
+  let headerGradient = "from-blue-500 to-indigo-600"
+  let partTitle = "PART-A - SINGLE LINE - TOKEN"
+  let textColor = "text-blue-100"
+  let borderColor = "border-blue-400/30"
+  
+  if (isAnnexureOne) {
+    bgGradient = "from-cyan-900 via-sky-900 to-blue-900"
+    headerGradient = "from-cyan-500 to-sky-600"
+    partTitle = "ANNEXURE-I - SSBPAC (D)/UFSBI DOUBLE LINE"
+    textColor = "text-cyan-100"
+    borderColor = "border-cyan-400/30"
+  } else if (isAnnexure) {
+    bgGradient = "from-orange-900 via-amber-900 to-yellow-900"
+    headerGradient = "from-orange-500 to-amber-600"
+    partTitle = "ANNEXURE - PAPER LINE CLEAR TICKETS"
+    textColor = "text-orange-100"
+    borderColor = "border-orange-400/30"
+  } else if (isPartC) {
+    bgGradient = "from-purple-900 via-violet-900 to-fuchsia-900"
+    headerGradient = "from-purple-500 to-violet-600"
+    partTitle = "PART-C - DOUBLE LINE BWMD"
+    textColor = "text-purple-100"
+    borderColor = "border-purple-400/30"
+  } else if (isPartB) {
+    bgGradient = "from-emerald-900 via-teal-900 to-cyan-900"
+    headerGradient = "from-emerald-500 to-teal-600"
+    partTitle = "PART-B - SINGLE LINE - TOKENLESS"
+    textColor = "text-emerald-100"
+    borderColor = "border-emerald-400/30"
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900"> 
+    <div className={`min-h-screen bg-gradient-to-br ${bgGradient}`}> 
       {/* Header Navigation */}
       <div className="bg-white/10 backdrop-blur-lg border-b border-white/20 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-2 lg:px-4 py-4">
@@ -342,13 +882,13 @@ const ContentPage = () => {
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => router.push('/bwm')}
-                className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 mr-2"
+                className={`flex items-center space-x-2 bg-gradient-to-r ${headerGradient} text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:brightness-110 transition-all duration-300 mr-2`}
               >
                 <span>Back to Index</span>
               </button>
             </div>
 
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 mr-2 rounded-sm backdrop-blur-sm border border-blue-400/30">
+            <div className={`bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 mr-2 rounded-sm backdrop-blur-sm border ${borderColor}`}>
               <ul className="space-y-1 text-center">
                 <li className="flex items-center justify-center space-x-2">
                   <span className="text-white text-xs lg:text-sm">Topic: {getRuleTitle(pageNumber)}</span>
@@ -371,13 +911,13 @@ const ContentPage = () => {
       {/* Content */}
       <div className="max-w-7xl mx-auto lg:px-4 px-2 py-4">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/20 overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-4 px-2">
+          <div className={`bg-gradient-to-r ${headerGradient} text-white py-4 px-2`}>
             <div className="flex items-center justify-center space-x-3">
               <div>
                 <h1 className="text-2xl lg:text-3xl font-semibold text-center uppercase">Block Working Manual</h1>
                 <hr className="border-white/20"/>
-                <p className="text-blue-100 text-sm lg:text-base text-center mt-2">
-                  PART-A - SINGLE LINE - TOKEN
+                <p className={`${textColor} text-sm lg:text-base text-center mt-2`}>
+                  {partTitle}
                 </p>
                 <p className="text-white text-sm lg:text-base text-center mt-1">
                   Topic: {getRuleTitle(pageNumber)}
@@ -418,7 +958,7 @@ const ContentPage = () => {
                     const currentIndex = availablePages.indexOf(currentPageNum)
                     return currentIndex > 0
                   })()
-                    ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:scale-105'
+                    ? `bg-gradient-to-r ${headerGradient} hover:brightness-110 hover:scale-105`
                     : 'bg-gray-500 cursor-not-allowed opacity-50'
                 }`}
               >
@@ -497,7 +1037,13 @@ const ContentPage = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-4 bg-gradient-to-tr from-blue-600 via-blue-400 to-blue-700 text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:from-blue-700 hover:to-blue-500 transition-all duration-300 z-50 flex items-center justify-center animate-pulse"
+          className={`fixed bottom-2 left-2 bg-gradient-to-tr ${
+            isAnnexureOne ? 'from-cyan-600 via-cyan-400 to-cyan-700' :
+            isAnnexure ? 'from-orange-600 via-orange-400 to-orange-700' :
+            isPartC ? 'from-purple-600 via-purple-400 to-purple-700' : 
+            isPartB ? 'from-emerald-600 via-emerald-400 to-emerald-700' : 
+            'from-blue-600 via-blue-400 to-blue-700'
+          } text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:brightness-110 transition-all duration-300 z-50 flex items-center justify-center animate-pulse`}
           aria-label="Scroll to top"
         >
           {/* Up Arrow Icon */}

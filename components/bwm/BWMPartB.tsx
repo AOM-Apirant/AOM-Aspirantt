@@ -1,9 +1,25 @@
 "use client"
-import React, { useState } from 'react'
-import { BookOpen, AlertTriangle, CheckCircle, AlertCircle, Search, Clipboard, ChevronDown, ChevronUp, Train, Signal, Wrench } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { BookOpen, AlertTriangle, CheckCircle, AlertCircle, Search, Clipboard, ChevronDown, ChevronUp, Train, Signal, Wrench, AlertTriangle as ExclamationTriangle, FileText, BookOpenCheck, ExternalLink } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const BWMPartB = () => {
   const [expandedChapters, setExpandedChapters] = useState<number[]>([])
+  const [isMobile, setIsMobile] = useState(false)
+  const [openingPDF, setOpeningPDF] = useState<string | null>(null)
+  const [openingContent, setOpeningContent] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    
+    checkDevice()
+    window.addEventListener('resize', checkDevice)
+    
+    return () => window.removeEventListener('resize', checkDevice)
+  }, [])
 
   const toggleChapter = (chapterId: number) => {
     setExpandedChapters(prev => {
@@ -14,6 +30,36 @@ const BWMPartB = () => {
     })
   }
 
+  const openPDF = (page: string) => {
+    const pdfFileName = `BWMPartBPage${page}.pdf`
+    const pdfPath = `/bwmpdfs/BWMPartBPages/${pdfFileName}`
+    
+    setOpeningPDF(page)
+    
+    // Small delay to show loading state
+    setTimeout(() => {
+      try {
+        // Always try to open in new tab
+        window.open(pdfPath, '_blank', 'noopener,noreferrer')
+      } catch (error) {
+        console.error('Error opening PDF:', error)
+        // Fallback: try without parameters
+        window.open(pdfPath, '_blank')
+      } finally {
+        setOpeningPDF(null)
+      }
+    }, 100)
+  }
+
+  const openContent = (page: string) => {
+    setOpeningContent(page)
+    
+    setTimeout(() => {
+      router.push(`/bwm/content/B${page}`)
+      setOpeningContent(null)
+    }, 100)
+  }
+
   const chapters = [
     {
       id: 1,
@@ -22,8 +68,8 @@ const BWMPartB = () => {
       color: "from-emerald-500 to-emerald-600",
       description: "Comprehensive overview of tokenless block instruments and their components",
       rules: [
-        { number: "1.1", title: "Provision of Block Instruments", page: "1" },
-        { number: "1.2", title: "Parts and description of Diodo Handle Type token less Block Instrument", page: "1" },
+        { number: "1.1", title: "Provision of Block Instruments", page: "1A" },
+        { number: "1.2", title: "Parts and description of Diodo Handle Type token less Block Instrument", page: "1B" },
         { number: "1.3", title: "Parts and description of Kyosan / Podanur make Push button token less block instruments", page: "6" },
         { number: "1.4", title: "Parts and Description of Axle Counter Proven Block Panel", page: "11" }
       ]
@@ -35,15 +81,15 @@ const BWMPartB = () => {
       color: "from-blue-500 to-blue-600",
       description: "Working systems, competency requirements, and signal management procedures",
       rules: [
-        { number: "2.1", title: "Systems of working", page: "17" },
-        { number: "2.2", title: "Block Competency Certificate", page: "17" },
+        { number: "2.1", title: "Systems of working", page: "17A" },
+        { number: "2.2", title: "Block Competency Certificate", page: "17B" },
         { number: "2.3", title: "Bell Code", page: "18" },
-        { number: "2.4", title: "Acknowledgement of Signals", page: "19" },
-        { number: "2.5", title: "Precedence of trains", page: "19" },
+        { number: "2.4", title: "Acknowledgement of Signals", page: "19A" },
+        { number: "2.5", title: "Precedence of trains", page: "19B" },
         { number: "2.6", title: "Train Signal Register", page: "20" },
         { number: "2.7", title: "Station Masters handing over / taking over charge", page: "22" },
-        { number: "2.8", title: "Inspection of Train Signal Register", page: "23" },
-        { number: "2.9", title: "Preservation of Train Signal Register", page: "23" }
+        { number: "2.8", title: "Inspection of Train Signal Register", page: "23A" },
+        { number: "2.9", title: "Preservation of Train Signal Register", page: "23B" }
       ]
     },
     {
@@ -53,40 +99,40 @@ const BWMPartB = () => {
       color: "from-purple-500 to-purple-600",
       description: "Detailed procedures for operating tokenless block instruments and signaling",
       rules: [
-        { number: "3.1", title: "Access to and operation of equipment", page: "24" },
-        { number: "3.2", title: "Signalling of a train over the block section - Daido Handle Type tokenless block instrument", page: "24" },
-        { number: "3.2(A)", title: "Despatching a train", page: "24" },
-        { number: "3.2(B)", title: "To cancel 'Line clear' before the train enters block section", page: "27" },
-        { number: "3.2(C)", title: "Closing of block section after pushing back of train", page: "28" },
+        { number: "3.1", title: "Access to and operation of equipment", page: "24A" },
+        { number: "3.2", title: "Signalling of a train over the block section - Daido Handle Type tokenless block instrument", page: "24B" },
+        { number: "3.2(A)", title: "Despatching a train", page: "24B" },
+        { number: "3.2(B)", title: "To cancel 'Line clear' before the train enters block section", page: "24B" },
+        { number: "3.2(C)", title: "Closing of block section after pushing back of train", page: "24B" },
         { number: "3.3", title: "Signalling of a train over the block section - Kyson / Podanur make push button tokenless block instruments", page: "29" },
-        { number: "3.3(A)", title: "Despatching a train", page: "30" },
-        { number: "3.3(B)", title: "To cancel 'Train Going To' indication before the train enters block section", page: "32" },
-        { number: "3.3(C)", title: "To set the block instrument to 'Line closed' condition after train pushes back to the despatching station", page: "33" },
+        { number: "3.3(A)", title: "Despatching a train", page: "29" },
+        { number: "3.3(B)", title: "To cancel 'Train Going To' indication before the train enters block section", page: "29" },
+        { number: "3.3(C)", title: "To set the block instrument to 'Line closed' condition after train pushes back to the despatching station", page: "29" },
         { number: "3.4", title: "Operation of Slip siding and Catch siding while despatching / receiving a train in Kyosan/Podanur Push button type and Daido Handle type tokenless block instruments", page: "34" },
         { number: "3.5", title: "Signalling of a train over the block section - Axle Counter Proven Block Panel", page: "37" },
         { number: "3.5(A)", title: "Despatching a train", page: "37" },
-        { number: "3.5(B)", title: "To cancel 'Line clear' before a train enters the block section", page: "40" },
-        { number: "3.5(C)", title: "To Close the block section after pushing back of a train", page: "41" },
+        { number: "3.5(B)", title: "To cancel 'Line clear' before a train enters the block section", page: "37" },
+        { number: "3.5(C)", title: "To Close the block section after pushing back of a train", page: "37" },
         { number: "3.6", title: "Operation of Slip siding and Catch siding while sending / receiving a train", page: "43" },
         { number: "3.7", title: "Shunting", page: "46" },
         { number: "3.7.1", title: "Shunting between the Last Stop Signal and opposing First Stop Signal at a class 'B' single line station equipped with two aspect signals", page: "46" },
-        { number: "3.7.2", title: "Shunting between the Last Stop Signal and opposing First Stop Signal at a class 'B' single line station equipped with multiple aspect signals", page: "47" },
-        { number: "3.7.3", title: "Shunting beyond First Stop Signal on a single line in Two Aspect Signalling & Multiple Aspect Signalling territories", page: "47" },
-        { number: "3.7.4", title: "Shunting between the Last Stop Signal and opposing First Stop Signal - Daido Handle Type tokenless block instruments", page: "47" },
-        { number: "3.7.5", title: "Shunting between the Last Stop Signal and opposing First Stop Signal – Kyosan / Podanur Type tokenless block instruments", page: "48" },
-        { number: "3.7.6", title: "To Shunt between the Last Stop Signal and opposing First Stop Signal – Axle Counter Proven Block Panel", page: "49" },
-        { number: "3.7.7", title: "Procedure for shunting during failure of Shunt key in all tokenless block instruments", page: "51" },
-        { number: "3.8", title: "The 'Call attention' signal", page: "51" },
-        { number: "3.9", title: "Precautions before asking 'Is line clear' (Daido Handle Type token less block instrument)", page: "51" },
-        { number: "3.10", title: "Precautions before giving 'Line clear'(Daido Handle Type tokenless block instrument)", page: "52" },
-        { number: "3.11", title: "Precautions before obtaining 'Train Going To indication' in Kyosan / Podanur push button tokenless block instrument", page: "52" },
-        { number: "3.12", title: "'Is line clear' in case of Daido Handle type tokenless block instrument and 'Train Going To' indication in respect of Kyosan / Podanur Push button tokenless block instrument – when to be obtained", page: "53" },
-        { number: "3.13", title: "Giving 'Line clear' – Daido Handle type tokenless block instruments", page: "53" },
-        { number: "3.14", title: "Loco Pilot's Authority to proceed", page: "53" },
-        { number: "3.15", title: "The 'Train entering block section' signal", page: "54" },
-        { number: "3.16", title: "Clearing the section and train arrival buzzer (Daido Handle type and Kyosan/Podanur push button/ tokenless block instruments)", page: "54" },
-        { number: "3.17", title: "Precautions before giving the 'Train out of block section' or 'Obstruction removed' signal", page: "55" },
-        { number: "3.18", title: "Private Numbers", page: "55" }
+        { number: "3.7.2", title: "Shunting between the Last Stop Signal and opposing First Stop Signal at a class 'B' single line station equipped with multiple aspect signals", page: "46" },
+        { number: "3.7.3", title: "Shunting beyond First Stop Signal on a single line in Two Aspect Signalling & Multiple Aspect Signalling territories", page: "46" },
+        { number: "3.7.4", title: "Shunting between the Last Stop Signal and opposing First Stop Signal - Daido Handle Type tokenless block instruments", page: "46" },
+        { number: "3.7.5", title: "Shunting between the Last Stop Signal and opposing First Stop Signal – Kyosan / Podanur Type tokenless block instruments", page: "46" },
+        { number: "3.7.6", title: "To Shunt between the Last Stop Signal and opposing First Stop Signal – Axle Counter Proven Block Panel", page: "46" },
+        { number: "3.7.7", title: "Procedure for shunting during failure of Shunt key in all tokenless block instruments", page: "51A" },
+        { number: "3.8", title: "The 'Call attention' signal", page: "51B" },
+        { number: "3.9", title: "Precautions before asking 'Is line clear' (Daido Handle Type token less block instrument)", page: "52A" },
+        { number: "3.10", title: "Precautions before giving 'Line clear'(Daido Handle Type tokenless block instrument)", page: "52B" },
+        { number: "3.11", title: "Precautions before obtaining 'Train Going To indication' in Kyosan / Podanur push button tokenless block instrument", page: "53A" },
+        { number: "3.12", title: "'Is line clear' in case of Daido Handle type tokenless block instrument and 'Train Going To' indication in respect of Kyosan / Podanur Push button tokenless block instrument – when to be obtained", page: "53B" },
+        { number: "3.13", title: "Giving 'Line clear' – Daido Handle type tokenless block instruments", page: "53C" },
+        { number: "3.14", title: "Loco Pilot's Authority to proceed", page: "54A" },
+        { number: "3.15", title: "The 'Train entering block section' signal", page: "54B" },
+        { number: "3.16", title: "Clearing the section and train arrival buzzer (Daido Handle type and Kyosan/Podanur push button/ tokenless block instruments)", page: "55A" },
+        { number: "3.17", title: "Precautions before giving the 'Train out of block section' or 'Obstruction removed' signal", page: "55B" },
+        { number: "3.18", title: "Private Numbers", page: "57" }
       ]
     },
     {
@@ -102,18 +148,18 @@ const BWMPartB = () => {
     {
       id: 5,
       title: "USE OF SPECIAL SIGNALS AND PROCEDURE IN EMERGENCIES",
-      icon: <AlertTriangle className="w-6 h-6" />,
+      icon: <ExclamationTriangle className="w-6 h-6" />,
       color: "from-red-500 to-red-600",
       description: "Emergency procedures and special signal usage protocols",
       rules: [
-        { number: "5.1", title: "Refusal of the 'Is line clear' signal; sending of the 'Obstruction danger' signal", page: "58" },
-        { number: "5.2", title: "Special use of 'Obstruction danger' signal", page: "58" },
-        { number: "5.3", title: "Working of trains required to go beyond the First Stop Signal at a class B station – Daido Handle type and Kyosan/Podanur push button tokenless block instruments", page: "59" },
-        { number: "5.4", title: "'Cancel last signal'", page: "59" },
-        { number: "5.5", title: "'Signal given in error' signal", page: "60" },
-        { number: "5.6", title: "Trains unusually delayed", page: "60" },
-        { number: "5.7", title: "'Stop and examine train' signal", page: "61" },
-        { number: "5.8", title: "'Train passed without tail lamp / flashing tail lamp or tail board' signal", page: "61" },
+        { number: "5.1", title: "Refusal of the 'Is line clear' signal; sending of the 'Obstruction danger' signal", page: "58A" },
+        { number: "5.2", title: "Special use of 'Obstruction danger' signal", page: "58B" },
+        { number: "5.3", title: "Working of trains required to go beyond the First Stop Signal at a class B station – Daido Handle type and Kyosan/Podanur push button tokenless block instruments", page: "59A" },
+        { number: "5.4", title: "'Cancel last signal'", page: "59B" },
+        { number: "5.5", title: "'Signal given in error' signal", page: "60A" },
+        { number: "5.6", title: "Trains unusually delayed", page: "60B" },
+        { number: "5.7", title: "'Stop and examine train' signal", page: "61A" },
+        { number: "5.8", title: "'Train passed without tail lamp / flashing tail lamp or tail board' signal", page: "61B" },
         { number: "5.9", title: "'Train divided' signal", page: "62" },
         { number: "5.10", title: "'Vehicles running away into the block section' signal", page: "63" },
         { number: "5.11", title: "Precautions when Government or Railway Telecommunication staff require to work on the telecommunication wires", page: "64" }
@@ -136,10 +182,10 @@ const BWMPartB = () => {
       color: "from-teal-500 to-teal-600",
       description: "Testing procedures and maintenance protocols for tokenless block instruments",
       rules: [
-        { number: "7.1", title: "The 'Testing' signal", page: "67" },
-        { number: "7.2", title: "Persons authorized to test", page: "67" },
-        { number: "7.3", title: "Block Section to be clear during Test", page: "67" },
-        { number: "7.4", title: "Procedure for testing", page: "67" }
+        { number: "7.1", title: "The 'Testing' signal", page: "67A" },
+        { number: "7.2", title: "Persons authorized to test", page: "67B" },
+        { number: "7.3", title: "Block Section to be clear during Test", page: "67C" },
+        { number: "7.4", title: "Procedure for testing", page: "67D" }
       ]
     },
     {
@@ -150,16 +196,16 @@ const BWMPartB = () => {
       description: "Failure handling procedures and emergency communication protocols",
       rules: [
         { number: "8.1", title: "Failure of tokenless block instruments", page: "69" },
-        { number: "8.2", title: "Alternative means of communication", page: "73" },
-        { number: "8.3", title: "Block instruments failure record", page: "73" },
-        { number: "8.4", title: "Reports to be sent", page: "74" },
-        { number: "8.5", title: "Train signalling during interruption or suspension of block working", page: "74" },
-        { number: "8.6", title: "Procedure to be adopted when the 'Train entering block section' signal cannot be given owing to the Block Instrument having failed after the departure of the train or before clearing the block section for the train", page: "76" },
-        { number: "8.7", title: "Procedure for obtaining/granting Line Clear-using telephone attached to Block Instrument, Station to Station fixed telephone, Fixed telephone such as Railway auto-phone and BSNL phone as a means of communication between stations 'X' and 'Y'", page: "76" },
+        { number: "8.2", title: "Alternative means of communication", page: "73A" },
+        { number: "8.3", title: "Block instruments failure record", page: "73B" },
+        { number: "8.4", title: "Reports to be sent", page: "74A" },
+        { number: "8.5", title: "Train signalling during interruption or suspension of block working", page: "74B" },
+        { number: "8.6", title: "Procedure to be adopted when the 'Train entering block section' signal cannot be given owing to the Block Instrument having failed after the departure of the train or before clearing the block section for the train", page: "76A" },
+        { number: "8.7", title: "Procedure for obtaining/granting Line Clear-using telephone attached to Block Instrument, Station to Station fixed telephone, Fixed telephone such as Railway auto-phone and BSNL phone as a means of communication between stations 'X' and 'Y'", page: "76B" },
         { number: "8.8", title: "Procedure for obtaining/granting Line Clear-using Control telephone as a means of communication between stations 'X' and 'Y'", page: "77" },
         { number: "8.9", title: "Procedure for obtaining/granting Line Clear using VHF sets as a means of communication between stations 'X' and 'Y'", page: "79" },
-        { number: "8.10", title: "Instructions for working trains during total interruption of communications", page: "80" },
-        { number: "8.11", title: "Resumption of block working after interruption or suspension", page: "80" }
+        { number: "8.10", title: "Instructions for working trains during total interruption of communications", page: "80A" },
+        { number: "8.11", title: "Resumption of block working after interruption or suspension", page: "80B" }
       ]
     }
   ]
@@ -254,10 +300,10 @@ const BWMPartB = () => {
                         {chapter.rules.map((rule, index) => (
                           <div
                             key={index}
-                            className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
                           >
                             <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                              {rule.number.split('.')[1] || rule.number.split('(')[0]}
+                              {index + 1}
                             </div>
                             <div className="flex-1">
                               <p className="text-gray-200 font-medium">
@@ -266,6 +312,44 @@ const BWMPartB = () => {
                               <p className="text-gray-400 text-sm mt-1">
                                 Rule {rule.number} • Page - {rule.page}
                               </p>
+                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                {/* View Document Button */}
+                                <button
+                                  onClick={() => openPDF(rule.page)}
+                                  disabled={openingPDF === rule.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingPDF === rule.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingPDF === rule.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <FileText className="w-4 h-4" />
+                                  )}
+                                  <span>{openingPDF === rule.page ? 'Opening...' : 'View Document'}</span>
+                                  {!isMobile && openingPDF !== rule.page && <ExternalLink className="w-3 h-3" />}
+                                </button>
+                                
+                                {/* View Content Button */}
+                                <button
+                                  onClick={() => openContent(rule.page)}
+                                  disabled={openingContent === rule.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingContent === rule.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingContent === rule.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <BookOpenCheck className="w-4 h-4" />
+                                  )}
+                                  <span>{openingContent === rule.page ? 'Opening...' : 'View Content'}</span>
+                                </button>
+                              </div>
                             </div>
                           </div>
                         ))}
