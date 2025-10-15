@@ -1037,7 +1037,7 @@ const ContentPage = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className={`fixed bottom-2 left-2 bg-gradient-to-tr ${
+          className={`fixed bottom-4 left-4 bg-gradient-to-tr ${
             isAnnexureOne ? 'from-cyan-600 via-cyan-400 to-cyan-700' :
             isAnnexure ? 'from-orange-600 via-orange-400 to-orange-700' :
             isPartC ? 'from-purple-600 via-purple-400 to-purple-700' : 

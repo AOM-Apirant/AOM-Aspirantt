@@ -240,6 +240,12 @@ export const operatingGeneralCircularPdfFiles = [
     subject: "Unauthorised Parking of Personal Vehicles on Station Platforms",
     date: "21/08/2025",
   },
+  {
+    name: "Operating General Circular 06 of 2025",
+    filename: "Operating General Circular 06 of 2025.pdf",
+    subject: "Issuing of written memo for the work to be done inside the Siding",
+    date: "14/10/2025",
+  },
 ];
 
 export const fortnightlySafetyBulletinPdfFiles = [

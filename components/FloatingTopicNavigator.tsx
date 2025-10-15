@@ -46,10 +46,10 @@ export default function FloatingTopicNavigator() {
     { name: 'Quizzes', href: '/quiz', icon: '✅' },
     { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' },
     { name: 'Railway Compensation Act - 2010', href: '/ec-act', icon: '💰' },
-    { name: 'RS Conduct Rules - 1966', href: '/conduct-rules', icon: '⚖️' },
-    { name: 'RS DA Rules - 1968', href: '/da-rules', icon: '📋' },
-    { name: 'RS Pass Rules - 1986', href: '/pass-rules', icon: '🎫' },
-    { name: 'RS Rest Rules - 2005', href: '/rest-rules', icon: '🛏️' },
+    { name: 'Railway Servants Conduct Rules - 1966', href: '/conduct-rules', icon: '⚖️' },
+    { name: 'Railway Servants DA Rules - 1968', href: '/da-rules', icon: '📋' },
+    { name: 'Railway Servants Pass Rules - 1986', href: '/pass-rules', icon: '🎫' },
+    { name: 'Railway Servants Rest Rules - 2005', href: '/rest-rules', icon: '🛏️' },
     { name: 'Station Working Rules', href: '/swr', icon: '🚉' },
     { name: 'Trade Union Act - 1926', href: '/trade-union', icon: '🏛️' },
     { name: 'Workmen Compensation Act - 1923', href: '/workmen-act', icon: '💰' },
@@ -66,9 +66,9 @@ export default function FloatingTopicNavigator() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-2 right-2 bg-gradient-to-tr ${
+        className={`fixed bottom-4 right-4 bg-gradient-to-tr ${
           isOpen ? 'from-red-600 via-red-400 to-red-700' : 'from-blue-800 via-blue-400 to-blue-700'
-        } text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:brightness-110 transition-all duration-300 z-50 flex items-center justify-center `}
+        } text-white p-2 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:brightness-110 transition-all duration-300 z-50 flex items-center justify-center `}
         aria-label="Topics Navigator"
       >
         {isOpen ? (
@@ -107,11 +107,11 @@ export default function FloatingTopicNavigator() {
                 <button
                   key={topic.href}
                   onClick={() => handleTopicClick(topic.href)}
-                  className="w-full flex items-center space-x-3 px-3 py-1 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-200 text-left group border border-transparent hover:border-blue-200 hover:shadow-md"
+                  className="w-full flex items-center space-x-3 px-1 py-1 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all duration-200 text-left group border border-transparent hover:border-blue-200 hover:shadow-md"
                   style={{ animationDelay: `${index * 20}ms` }}
                 >
                   <div className="w-8 h-8 flex items-center justify-center bg-gradient-to-br from-blue-100 to-cyan-100 rounded-sm group-hover:scale-110 group-hover:from-blue-200 group-hover:to-cyan-200 transition-all duration-200">
-                    <span className="text-base">
+                    <span className="ltext-base">
                       {topic.icon}
                     </span>
                   </div>

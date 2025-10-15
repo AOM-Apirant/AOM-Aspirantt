@@ -24,11 +24,11 @@ export default function LoginForm() {
       <div className="mb-8">
         <button
           onClick={handleGoogleSignIn}
-          className="group w-full bg-white border-2 border-gray-200 text-gray-700 py-4 px-6 rounded-xl font-semibold hover:border-blue-300 hover:shadow-lg hover:shadow-blue-100 transition-all duration-300 flex items-center justify-center gap-4 transform hover:scale-[1.02]"
+          className="group w-full bg-white border-1 border-gray-400 text-gray-700 py-3 px-4 rounded-lg font-semibold hover:border-blue-800 hover:shadow-lg hover:shadow-blue-100 transition-all duration-300 flex items-center justify-center gap-3 transform hover:scale-[1.02]"
         >
           {/* Google Logo with animation */}
           <div className="relative">
-            <div className="w-6 h-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="w-5 h-5 group-hover:scale-110 transition-transform duration-300">
               <svg className="w-full h-full" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                 <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -66,6 +66,30 @@ export default function LoginForm() {
               </svg>
             </div>
             <span>Complete Study Materials & Notes</span>
+          </div>
+          <div className="flex items-center gap-3 text-sm text-gray-600">
+            <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <span>Complete Syllabus Coverage for the AOM exam</span>
+          </div>
+          <div className="flex items-center gap-3 text-sm text-gray-600">
+            <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <span>Abbreviations and Acronyms with explanations</span>
+          </div>
+          <div className="flex items-center gap-3 text-sm text-gray-600">
+            <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <span>Important Definitions with Explanations</span>
           </div>
           <div className="flex items-center gap-3 text-sm text-gray-600">
             <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">

@@ -1218,7 +1218,7 @@ const ContentPage = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-2 left-4 bg-gradient-to-tr from-red-600 via-orange-500 to-amber-600 text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:from-red-700 hover:to-orange-600 transition-all duration-300 z-50 flex items-center justify-center animate-pulse"
+          className="fixed bottom-4 left-4 bg-gradient-to-tr from-red-600 via-orange-500 to-amber-600 text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:from-red-700 hover:to-orange-600 transition-all duration-300 z-50 flex items-center justify-center animate-pulse"
           aria-label="Scroll to top"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">

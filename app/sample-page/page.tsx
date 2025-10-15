@@ -1,11 +1,11 @@
 import React from 'react'
-import BWMAnnexureOnePage19 from '@/components/bwm/bwm-annexure-one-pages/BWMAnnexureOnePage19'
+import BWMPartAPage4A from '@/components/bwm/bwm-part-a-pages/BWMPartAPage4A'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <BWMAnnexureOnePage19/>
+          <BWMPartAPage4A/>
 
 
     </div>

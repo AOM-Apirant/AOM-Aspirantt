@@ -61,40 +61,82 @@ const BWMPartAPage3 = () => {
                         </div>
                         
                         <div className="space-y-6">
-                          <p className="text-gray-200 lg:text-lg text-base text-center">
-                            The instrument is similar to Neale&apos;s Ball token instrument except for the following differences: -
-                          </p>
-
-                          {/* Token slide with handle */}
-                          <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
-                            <h4 className="text-xl font-semibold text-blue-300 mb-3 flex items-center gap-2">
-                              <span className="text-blue-400">a)</span>
-                              Token slide with handle
-                            </h4>
-                            <p className="text-gray-200 lg:text-lg text-base ml-6">
-                              A token slide is provided at the top of the instrument instead of a Token Receiver cover. A tablet token is inserted into the instrument by pulling out the slide, placing the tablet token in the recess and pushing back the slide.
+                          <div className="bg-gradient-to-r from-indigo-500/10 to-blue-500/10 lg:p-5 p-3 rounded-xl border border-indigo-400/30">
+                            <p className="text-gray-200 lg:text-lg text-base text-center font-medium leading-relaxed">
+                              The instrument is similar to Neale&apos;s Ball token instrument except for the following differences: -
                             </p>
                           </div>
 
-                          {/* Tablet windows */}
-                          <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
-                            <h4 className="text-xl font-semibold text-indigo-300 mb-3 flex items-center gap-2">
-                              <span className="text-indigo-400">b)</span>
-                              Tablet windows
-                            </h4>
-                            <p className="text-gray-200 lg:text-lg text-base ml-6">
-                              The Neale&apos;s Tablet token instruments are provided with Tablet windows instead of token indicators.
-                            </p>
-                          </div>
+                          <div className="space-y-4">
+                            {/* Token slide with handle */}
+                            <div className="group hover:bg-white/5 lg:p-5 p-3 rounded-xl transition-all duration-300 border border-blue-400/30 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20">
+                              <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0">
+                                  <div className="lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110">
+                                    <span className="text-white font-bold lg:text-xl text-lg">a</span>
+                                  </div>
+                                </div>
+                                <div className="flex-1">
+                                  <h4 className="text-xl font-semibold text-blue-300 mb-3 lg:text-2xl">
+                                    Token slide with handle
+                                  </h4>
+                                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                                    A token slide is provided at the top of the instrument instead of a Token Receiver cover. A tablet token is inserted into the instrument by pulling out the slide, placing the tablet token in the recess and pushing back the slide.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
 
-                          {/* Note about Tokens */}
-                          <div className="group hover:bg-white/5 p-4 rounded-lg transition-all duration-300">
-                            <h4 className="text-xl font-semibold text-yellow-300 mb-3 flex items-center gap-2">
-                              <span className="text-yellow-400">Note</span>
-                            </h4>
-                            <p className="text-gray-200 lg:text-lg text-base ml-6">
-                              The number of the token and the code initials of the two block stations at each end of the block section to which the token applies are engraved on each token. Tablet Tokens are placed in different pattern of recess and pushed back the slide. Tablet tokens are provided in four different classes viz., A, B, C & D for different block sections.
-                            </p>
+                            {/* Tablet windows */}
+                            <div className="group hover:bg-white/5 lg:p-5 p-3 rounded-xl transition-all duration-300 border border-indigo-400/30 hover:border-indigo-400/50 hover:shadow-lg hover:shadow-indigo-500/20">
+                              <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0">
+                                  <div className="lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-indigo-500/50 transition-all duration-300 group-hover:scale-110">
+                                    <span className="text-white font-bold lg:text-xl text-lg">b</span>
+                                  </div>
+                                </div>
+                                <div className="flex-1">
+                                  <h4 className="text-xl font-semibold text-indigo-300 mb-3 lg:text-2xl">
+                                    Tablet windows
+                                  </h4>
+                                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed">
+                                    The Neale&apos;s Tablet token instruments are provided with Tablet windows instead of token indicators.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* Divider before Note */}
+                            <div className="flex items-center gap-4 py-4">
+                              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent"></div>
+                              <div className="flex-shrink-0">
+                                <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                              </div>
+                              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent"></div>
+                            </div>
+
+                            {/* Note about Tokens */}
+                            <div className="group hover:bg-white/5 lg:p-5 p-3 rounded-xl transition-all duration-300 border-2 border-yellow-400/40 hover:border-yellow-400/60 hover:shadow-lg hover:shadow-yellow-500/30 bg-gradient-to-r from-yellow-500/5 to-orange-500/5">
+                              <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0">
+                                  <div className="lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-yellow-500/50 transition-all duration-300 group-hover:scale-110">
+                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div className="flex-1">
+                                  <h4 className="text-xl font-bold text-yellow-300 mb-3 lg:text-2xl">
+                                    Note
+                                  </h4>
+                                  <p className="text-gray-200 lg:text-lg text-base leading-relaxed font-medium">
+                                    The number of the token and the code initials of the two block stations at each end of the block section to which the token applies are engraved on each token. Tablet Tokens are placed in different pattern of recess and pushed back the slide. Tablet tokens are provided in four different classes viz., A, B, C & D for different block sections.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

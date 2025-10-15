@@ -54,54 +54,102 @@ const BWMPartAPage4A = () => {
                     </h3>
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                       <div className="space-y-6">
-                        <p className="text-gray-200 lg:text-lg text-base text-center">
-                          The control on the Last Stop Signal may be: -
-                        </p>
+                        <div className="bg-gradient-to-r from-indigo-500/10 to-blue-500/10 lg:p-5 p-3 rounded-xl border border-indigo-400/30">
+                          <p className="text-gray-200 lg:text-lg text-base text-center font-medium leading-relaxed">
+                            The control on the Last Stop Signal may be: -
+                          </p>
+                        </div>
                         
                         <div className="space-y-6">
                           {/* For Neale's Ball and Tablet token block Instruments */}
-                          <div className="group hover:bg-white/5 p-1 rounded-lg transition-all duration-300">
-                            <h4 className="text-xl font-semibold text-blue-300 mb-3 flex items-center gap-2">
-                              <span className="text-blue-400">a)</span>
-                              For Neale&apos;s Ball and Tablet token block Instruments
-                            </h4>
-                            <div className="space-y-4 ml-2">
-                              <div className="group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
-                                <h5 className="text-lg font-semibold text-indigo-300 mb-2 flex items-center gap-2">
-                                  <span className="text-indigo-400">i)</span>
-                                  Mechanical control key
-                                </h5>
-                                <p className="text-gray-200 lg:text-base text-sm">
-                                  By using a mechanical control key extracted from the instrument adjunct, on receipt of Line Clear to release the Last Stop Signal.
-                                </p>
+                          <div className="group hover:bg-white/5 lg:p-5 p-3 rounded-xl transition-all duration-300 border border-blue-400/30 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20">
+                            <div className="flex items-start gap-4 mb-6">
+                              <div className="flex-shrink-0">
+                                <div className="lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110">
+                                  <span className="text-white font-bold lg:text-xl text-lg">a</span>
+                                </div>
+                              </div>
+                              <div className="flex-1">
+                                <h4 className="text-xl font-semibold text-blue-300 lg:text-2xl leading-relaxed">
+                                  For Neale&apos;s Ball and Tablet token block Instruments
+                                </h4>
+                              </div>
+                            </div>
+
+                            <div className="space-y-4 lg:ml-8 ml-4">
+                              {/* i) Mechanical control key */}
+                              <div className="group hover:bg-white/5 lg:p-4 p-3 rounded-xl transition-all duration-300 border border-indigo-400/30 hover:border-indigo-400/50 hover:shadow-lg hover:shadow-indigo-500/20">
+                                <div className="flex items-start gap-3">
+                                  <div className="flex-shrink-0">
+                                    <div className="lg:w-10 lg:h-10 w-8 h-8 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-indigo-500/50 transition-all duration-300 group-hover:scale-110">
+                                      <span className="text-white font-bold lg:text-base text-sm">i</span>
+                                    </div>
+                                  </div>
+                                  <div className="flex-1">
+                                    <h5 className="text-lg font-semibold text-indigo-300 mb-2 lg:text-xl">
+                                      Mechanical control key
+                                    </h5>
+                                    <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
+                                      By using a mechanical control key extracted from the instrument adjunct, on receipt of Line Clear to release the Last Stop Signal.
+                                    </p>
+                                  </div>
+                                </div>
                               </div>
                               
-                              <div className="text-center">
-                                <span className="text-gray-400 font-semibold">or</span>
+                              {/* OR Divider */}
+                              <div className="flex items-center gap-4 py-2">
+                                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-400/50 to-transparent"></div>
+                                <div className="flex-shrink-0 bg-gradient-to-r from-gray-500 to-gray-600 px-4 py-1 rounded-full">
+                                  <span className="text-white font-semibold text-sm">or</span>
+                                </div>
+                                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-400/50 to-transparent"></div>
                               </div>
                               
-                              <div className="group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
-                                <h5 className="text-lg font-semibold text-purple-300 mb-2 flex items-center gap-2">
-                                  <span className="text-purple-400">ii)</span>
-                                  Electrical control on reverser
-                                </h5>
-                                <p className="text-gray-200 lg:text-base text-sm">
-                                  By electrical control on reverser being released when &apos;Operating Handle&apos; is turned to &apos;TGT&apos; position.
-                                </p>
+                              {/* ii) Electrical control on reverser */}
+                              <div className="group hover:bg-white/5 lg:p-4 p-3 rounded-xl transition-all duration-300 border border-purple-400/30 hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/20">
+                                <div className="flex items-start gap-3">
+                                  <div className="flex-shrink-0">
+                                    <div className="lg:w-10 lg:h-10 w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 group-hover:scale-110">
+                                      <span className="text-white font-bold lg:text-base text-sm">ii</span>
+                                    </div>
+                                  </div>
+                                  <div className="flex-1">
+                                    <h5 className="text-lg font-semibold text-purple-300 mb-2 lg:text-xl">
+                                      Electrical control on reverser
+                                    </h5>
+                                    <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
+                                      By electrical control on reverser being released when &apos;Operating Handle&apos; is turned to &apos;TGT&apos; position.
+                                    </p>
+                                  </div>
+                                </div>
                               </div>
                               
-                              <div className="text-center">
-                                <span className="text-gray-400 font-semibold">or</span>
+                              {/* OR Divider */}
+                              <div className="flex items-center gap-4 py-2">
+                                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-400/50 to-transparent"></div>
+                                <div className="flex-shrink-0 bg-gradient-to-r from-gray-500 to-gray-600 px-4 py-1 rounded-full">
+                                  <span className="text-white font-semibold text-sm">or</span>
+                                </div>
+                                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-400/50 to-transparent"></div>
                               </div>
                               
-                              <div className="group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
-                                <h5 className="text-lg font-semibold text-green-300 mb-2 flex items-center gap-2">
-                                  <span className="text-green-400">iii)</span>
-                                  Electrical lever lock
-                                </h5>
-                                <p className="text-gray-200 lg:text-base text-sm">
-                                  By electrical lever lock on route lever for despatch being released when &apos;Operating Handle&apos; is turned to &apos;TGT&apos; position.
-                                </p>
+                              {/* iii) Electrical lever lock */}
+                              <div className="group hover:bg-white/5 lg:p-4 p-3 rounded-xl transition-all duration-300 border border-green-400/30 hover:border-green-400/50 hover:shadow-lg hover:shadow-green-500/20">
+                                <div className="flex items-start gap-3">
+                                  <div className="flex-shrink-0">
+                                    <div className="lg:w-10 lg:h-10 w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 group-hover:scale-110">
+                                      <span className="text-white font-bold lg:text-base text-sm">iii</span>
+                                    </div>
+                                  </div>
+                                  <div className="flex-1">
+                                    <h5 className="text-lg font-semibold text-green-300 mb-2 lg:text-xl">
+                                      Electrical lever lock
+                                    </h5>
+                                    <p className="text-gray-200 lg:text-base text-sm leading-relaxed">
+                                      By electrical lever lock on route lever for despatch being released when &apos;Operating Handle&apos; is turned to &apos;TGT&apos; position.
+                                    </p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>

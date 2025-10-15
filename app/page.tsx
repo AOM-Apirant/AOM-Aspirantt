@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex items-center justify-center min-h-screen p-4">
           <div className={`w-full max-w-5xl transition-all duration-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {/* Single Beautiful Frame */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 overflow-hidden">
               {/* Decorative Header */}
               <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-blue-600 p-6 text-center relative overflow-hidden">
                 {/* Background Pattern */}
@@ -46,12 +46,12 @@ export default function Home() {
               </div>
 
               {/* Main Content */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-6 px-4">
                 {/* Left Side - Image */}
                 <div className="flex justify-center lg:justify-end">
                   <div className="relative">
                     {/* Image Container */}
-                    <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl lg:p-6 p-4 shadow-lg border border-gray-100">
                       {/* Decorative elements */}
                       <div className="absolute -top-2 -right-2 w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20"></div>
                       <div className="absolute -bottom-3 -left-3 w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20"></div>

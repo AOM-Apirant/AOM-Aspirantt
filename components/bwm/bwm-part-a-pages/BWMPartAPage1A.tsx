@@ -95,39 +95,69 @@ const BWMPartAPage1A = () => {
                     </h3>
                     <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 lg:p-6 py-3 lg:px-4 px-2 rounded-xl border border-blue-400/20">
                       <div className="space-y-6">
-                        <div>
-                          <h4 className="text-xl font-semibold text-blue-300 mb-3 flex items-center gap-2">
-                            <span className="text-blue-400">a)</span>
-                            The types of token block instruments in use on the single line sections of this railway are:
-                          </h4>
-                          <ul className="space-y-3 ml-6">
-                            <li className="flex items-start gap-3">
-                              <span className="mt-1 text-blue-400">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                              </span>
-                              <span className="text-gray-200 lg:text-lg text-base">
-                                Neale&apos;s Ball token instrument.
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                              <span className="mt-1 text-indigo-400">
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                              </span>
-                              <span className="text-gray-200 lg:text-lg text-base">
-                                Neale&apos;s Tablet token instrument.
-                              </span>
-                            </li>
-                          </ul>
+                        {/* Point a) */}
+                        <div className="group hover:bg-white/5 lg:p-5 p-3 rounded-xl transition-all duration-300 border border-blue-400/30 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20">
+                          <div className="flex items-start gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 group-hover:scale-110">
+                                <span className="text-white font-bold lg:text-xl text-lg">a</span>
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="text-xl font-semibold text-blue-300 mb-4 lg:text-2xl">
+                                The types of token block instruments in use on the single line sections of this railway are:
+                              </h4>
+                              <ul className="space-y-4">
+                                <li className="flex items-start gap-3 bg-gradient-to-r from-blue-500/5 to-transparent lg:p-4 p-2 rounded-lg hover:from-blue-500/10 transition-all duration-300">
+                                  <span className="mt-1 text-blue-400 flex-shrink-0">
+                                    <svg className="lg:w-6 lg:h-6 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                  </span>
+                                  <span className="text-gray-200 lg:text-lg text-base font-medium">
+                                    Neale&apos;s Ball token instrument.
+                                  </span>
+                                </li>
+                                <li className="flex items-start gap-3 bg-gradient-to-r from-indigo-500/5 to-transparent lg:p-4 p-2 rounded-lg hover:from-indigo-500/10 transition-all duration-300">
+                                  <span className="mt-1 text-indigo-400 flex-shrink-0">
+                                    <svg className="lg:w-6 lg:h-6 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                  </span>
+                                  <span className="text-gray-200 lg:text-lg text-base font-medium">
+                                    Neale&apos;s Tablet token instrument.
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="text-xl font-semibold text-indigo-300 mb-3 flex items-center gap-2">
-                            <span className="text-indigo-400">b)</span>
-                            The sections of the line provided with these token block instruments are notified in the Working Time Table.
-                          </h4>
+
+                        {/* Divider */}
+                        <div className="flex items-center gap-4">
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-indigo-400/50 to-transparent"></div>
+                          <div className="flex-shrink-0">
+                            <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                          </div>
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-indigo-400/50 to-transparent"></div>
+                        </div>
+
+                        {/* Point b) */}
+                        <div className="group hover:bg-white/5 lg:p-5 p-3 rounded-xl transition-all duration-300 border border-indigo-400/30 hover:border-indigo-400/50 hover:shadow-lg hover:shadow-indigo-500/20">
+                          <div className="flex items-start gap-4">
+                            <div className="flex-shrink-0">
+                              <div className="lg:w-12 lg:h-12 w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-indigo-500/50 transition-all duration-300 group-hover:scale-110">
+                                <span className="text-white font-bold lg:text-xl text-lg">b</span>
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="text-xl font-semibold text-indigo-300 lg:text-2xl leading-relaxed">
+                                The sections of the line provided with these token block instruments are notified in the Working Time Table.
+                              </h4>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
