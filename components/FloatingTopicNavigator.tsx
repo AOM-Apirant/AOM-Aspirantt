@@ -68,7 +68,7 @@ export default function FloatingTopicNavigator() {
         onClick={() => setIsOpen(!isOpen)}
         className={`fixed bottom-4 right-4 bg-gradient-to-tr ${
           isOpen ? 'from-red-600 via-red-400 to-red-700' : 'from-blue-800 via-blue-400 to-blue-700'
-        } text-white p-2 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:brightness-110 transition-all duration-300 z-50 flex items-center justify-center `}
+        } text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:brightness-110 transition-all duration-300 z-50 flex items-center justify-center `}
         aria-label="Topics Navigator"
       >
         {isOpen ? (
