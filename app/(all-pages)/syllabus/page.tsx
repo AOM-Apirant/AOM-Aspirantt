@@ -22,13 +22,13 @@ const Syllabus = () => {
   const trafficTopics = [
     {
       title: "TRAFFIC (TRANSPORTATION) - GENERAL",
-      content: `1. HIERARCHICAL SET UP AND LINE OF CONTROL OF OPERATING DEPARTMENT AT THE DIVISIONAL, ZONAL AND RAILWAY BOARD LEVEL.
+      content: `1. Organizational structure and hierarchy of Operating Department (Division --> Zone --> Railway Board).
 2. G&SR
-3. ACCIDENT MANUAL
-4. OPERATING MANUAL
-5. BLOCK WORKING MANUAL
-6. RED TARIFF
-7. INDIAN RAILWAY ACT, 1989`
+3. Accident Manual
+4. Operating Manual
+5. Block Working Manual
+6. Red Tariff
+7. Indian Railway Act, 1989`
     },
   ];
 
