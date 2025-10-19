@@ -21,75 +21,44 @@ const Syllabus = () => {
   }
   const trafficTopics = [
     {
-      title: "TRAFFIC (TRANSPORTATION) - GENERAL",
-      content: `1. Organizational structure and hierarchy of Operating Department (Division --> Zone --> Railway Board).
-2. G&SR
-3. Accident Manual
-4. Operating Manual
-5. Block Working Manual
-6. Red Tariff
-7. Indian Railway Act, 1989`
-    },
-  ];
-
-  const operatingTopics = [
-    {
-      title: "OPERATING DEPARTMENT",
-      content: `1. Responsibility and function of Guard before starting and while on run and during abnormal/unusual situations.
-2. Role & Responsibility of Station Staff in Working of Trains.
-3. Various Systems of Working of Trains and Conditions for Granting LC.
-4. Classification of Stations.
-5. Standards of Interlocking.
-6. Signalling Systems, Equipment & their working.
-7. Station Working Rules and Block Working.
-8. Level Crossings.
-9. Line Capacity.
-10. Method of Calculating Line Capacity.
-11. Measures for augmenting it.
-12. Token less working.`
-    },
-    
-  ];
-
-  const operatingManualTopics = [
-    {
-      title: "OPERATING MANUAL",
-      content: `1.	Objective and set up of Control Offices.
-2.	Functions of Control Organization pertaining to Train Ordering
-3.	Punctuality
-4.	Maintenance of Operating Statistics
-5.	Wagon & Loco Stock Management
-6.	Duties and responsibilities of Chief Controllers
-7.	Dy. Chief Controllers 
-8.	Section Controllers
-9.	TNCs, Recorders and their Coordination with Lobbies
-10.	Station & Yards.
-11.	Freight Train Operations (FTO) 
-12.	Freight Train Ordering Principles with or without coordination with Crew Lobbies.
-13.	Power Control Organization - Engine and Crew Scheduling.
-14.	Factors affecting Wagon & Engine utilization and methods of improvements.
-15.	Wagon Turn Round Time (WTR) & Factors affecting Optimum Utilization of the Wagon Fleet and methods of improvement.
-16.	Merry-Go-Round (MGR) System. 
-17.	Engine on Load (EOL) System.
+      title: "GENERAL",
+      content: `1.	Organizational structure and hierarchy of Operating Department (Division --> Zone --> Railway Board).
 `
     },
-    
   ];
+
+  
+
+  
 
   const organizationTopics = [
     {
       title: "TRAFFIC, TRAIN AND POWER CONTROL ORGANIZATION",
       content: `1.	Blocks Management and Management during Accident 
-2.	Unusual Situations Circumstances
-3.	Special Instructions during abnormal conditions of working & during emergencies like Cyclone, Civil Disturbances, and Accidents etc.
-4.	Daily Performances Reporting from Stations/Yards/Sheds to Area Sub-control, Area Sub-control to Divisional Control Office and from Divisional Control Office to Zonal Control Office and from Zonal Control Office to Railway Board.
-5.	Basic and important Documents/Registers maintained in Control Office and their basis.
-6.	Periodical Performance Reporting and Analysis of Operating Performance along with compilation of Statistical Data.
-7.	Working pertaining to issue of Caution Orders from Nominated and Notice Stations.
-8.	Liaison / Co-ordination with Control Establishments of other Departments like Engineering, Traction Control, Signalling Control, Mechanical etc.
+2.	Functions of Control Organization pertaining to…
+i.	Train Ordering
+ii.	Punctuality
+iii.	Maintenance of Operating Statistics
+iv.	Wagon & Loco Stock Management
+v.	Blocks Management and Management during Accident & Unusual Situations/Circumstances & Disaster Management
+3.	Duties & Responsibilities of ….
+i.	Chief Controllers
+ii.	Deputy Chief Controllers
+iii.	Sections Controllers
+iv.	TNCs
+v.	Recorders and their coordination with Lobbies, Station & Yards
+4.	Freight Train Operations (FTO)
+5.	Freight Train Ordering Principles with or without coordination with Crew Lobbies
+6.	Special instructions during abnormal conditions of working & during emergencies like Cyclone, Civil Disturbances, and Accidents etc
+7.	Daily Performances Reporting from (Stations/Yards/Sheds to --> Area Sub-control --> Divisional Control Office --> Zonal Control Office  --> Railway Board)
+8.	Basic and important Documents/Registers maintained in Control Office and their basis.
+9.	Periodical Performance Reporting and Analysis of Operating Performance along with compilation of Statistical Data.
+10.	Power Control Organization (Engine and Crew Scheduling)
+11.	Factors affecting Wagon & Engine utilization and methods of improvements
+12.	Working pertaining to issue of Caution Orders from Nominated and Notice Stations.
+13.	Liaison / Co-ordination with Control Establishments of other Departments like Engineering, Traction Control, Signalling Control, Mechanical etc.
 `
     },
-    
   ];
 
   const freightTopics = [
@@ -99,42 +68,57 @@ const Syllabus = () => {
 2.	Integrated Lobbies.
 3.	Crew Management: Assessment of Crew Requirement
 4.	Running Room and its Management.
-5.	Engine Utilization aspects requiring special attention: 
-6.	Engine Crew and Train Crew Schedule.
-7.	Rules regarding Outstation, Home Station Rest etc. to ensure observation of 10 Hour Rule or Rules applicable from time to time, Role of LI and Crew Control.
-8.	Power Plan: Assessment of Loco Requirement. 
-9.	Movement of Dead Locomotives.
-10.	Management of Maintenance Schedule of Locomotives.
-11.	Shed and Traffic Outage of Locomotives.
-12.	Specific Fuel Consumption and Assessment of Fuel Requirement.
-13.	Shunting Operations in Yards or Roadside Stations.
-14.	Working of Marshalling Yards & Transhipment Points.
-15.	Causes of Yard and Section Congestion and remedial strategies.
-16.	All India Marshalling Order and Railway-wise Marshalling Orders - Principles and Procedures.
-17.	Rules regarding Carriage of Explosive and other General Goods.
-18.	Preferential Traffic Schedule, Priority within same class and ODR.
-19.	Indent Allotment and Supply of Freight Stock at Stations
-20.	Premium Indents and procedure to place Premium Indents
-21.	Allotment of Rakes in case of Quota Restrictions.
-22.	Notified Stations.
-23.	Wagon Stock Management for Loading and Unloading Operations.
-24.	Imposition of Operating Restrictions on Wagon Loading 
-25.	Acceptance of Wagon Indents
-26.	Cancellation and Withdrawal of Indents.
-27.	Observance of Civil ban and Carriage of Contraband Goods etc,
-28.	Important Documents & Registers maintained in Yards & at Stations.
-29.	Running of Unit Trains and formation of Captive Rakes. 
-30.	Block Train Operations.
-31.	Nominated Day Loading.
-32.	Rationalization Scheme of movement of Freight Traffic for avoiding congestion by specific routes.
-33.	Mini/Two Point Multi Point Rake System.
-34.	Container Train Operation, Hub and Spoke system.
-35.	Supervision and control over movement of Special type of Stock, ODC.
-36.	Definition, meaning and methods of compilation of the Primary, Fundamental and Derived units.
-37.	Engine Tickets and maintenance of Engine Tickets
-38.	Analysis of the Operating Statistics.
-39.	Important Operating Efficiency Indices, their meaning and uses, WTR, NTKM, GTKM, Average Speed etc.
-40.	Operating Ratio: Different types of Expenditures and Plan Heads, Revenue Earnings and Non-Revenue Earnings.
+5.	Engine Utilization aspects requiring special attention :--
+i.	Engine Crew and Train Crew Schedule.
+ii.	Rules regarding Outstation, Home Station Rest etc. to ensure observation of 10 Hour Rule or Rules applicable from time to time, Role of LI and Crew Control.
+iii.	Power Plan: Assessment of Loco Requirement.
+iv.	Movement of Dead Locomotives.
+v.	Management of Maintenance Schedule of Locomotives.
+vi.	Shed and Traffic Outage of Locomotives.
+vii.	Specific Fuel Consumption and Assessment of Fuel Requirement.
+6.	
+7.	Shunting Operations in Yards or Roadside Stations.
+8.	Working of Marshalling Yards & Transhipment Points.
+9.	Causes of Yard and Section Congestion and remedial strategies.
+10.	All India Marshalling Order and Railway-wise Marshalling Orders - Principles and Procedures.
+11.	Rules regarding Carriage of Explosive and other General Goods.
+12.	Preferential Traffic Schedule, Priority within same class and ODR.
+13.	Indent Allotment and Supply of Freight Stock at Stations
+14.	Premium Indents and procedure to place Premium Indents
+15.	Allotment of Rakes in case of Quota Restrictions.
+16.	Notified Stations.
+17.	Wagon Stock Management for Loading and Unloading Operations.
+18.	Imposition of Operating Restrictions on Wagon Loading 
+19.	Acceptance of Wagon Indents
+20.	Cancellation and Withdrawal of Indents.
+21.	Observance of Civil ban and Carriage of Contraband Goods etc,
+22.	Important Documents & Registers maintained in Yards & at Stations.
+23.	Familiarity with …..
+i.	G&SR
+ii.	Accident Manual
+iii.	Operating Manual
+iv.	Block Working Manual
+v.	Red Tariff
+vi.	Indian Railways Act 1989
+24.	Wagon Turn Round Time (WTR) & Factors affecting Optimum Utilization of the Wagon Fleet and methods of improvement.
+25.	Running of Unit Trains and formation of Captive Rakes
+i.	Block Train Operations.
+ii.	Nominated Day Loading.
+iii.	Rationalization Scheme of movement of Freight Traffic for avoiding congestion by specific routes.
+iv.	Merry-Go-Round (MGR) System.
+v.	Engine on Load (EOL) System.
+vi.	Mini/Two Point Multi Point Rake System.
+vii.	Container Train Operation, Hub and Spoke system.
+26.	Supervision and control over movement of Special type of Stock, ODC.
+27.	Definition, meaning and methods of compilation of the Primary, Fundamental and Derived units.
+28.	Engine Tickets and maintenance of Engine Tickets
+29.	Analysis of the Operating Statistics.
+30.	Important Operating Efficiency Indices, their meaning and uses of ….
+i.	 WTR
+ii.	NTKM
+iii.	GTKM
+iv.	Average Speed
+29.	Operating Ratio: Different types of Expenditures and Plan Heads, Revenue Earnings and Non-Revenue Earnings.
 `
     },
     
@@ -145,26 +129,23 @@ const Syllabus = () => {
       title: "PASSENGER TRAINS OPERATIONS",
       content: `1.	General Principles and Methodology of Time Tabling of Passenger Trains. 
 2.	Zero Based Time Tabling.
-3.	Platform and Pit Occupancy Planning and 
-4.	Preparing Charts.
-5.	Consultative Machinery for revision of Timetable at Divisional, Zonal and Railway Board levels.
-6.	Publication of Working Timetable, 
-7.	Public Timetable & Sheet Timetable, 
-8.	Components of WTT and PTT.
-9.	Punctuality of Passenger Carrying Trains.
-10.	Factors affecting Punctuality of Passenger carrying Trains and methods of improving the Punctuality, Monitoring of Asset Failures and Planning of blocks for Track, 
-11.	Signal and OHE maintenance. 
-12.	Corridor Blocks, 
-13.	Integrated Maintenance Blocks.
-14.	Augmentation of Train Loads for meeting Traffic requirements, 
-15.	Rules of Marshalling and Slip Coaches etc.
-16.	Running of Tourists Coaches, Special Carriages and Special Trains.
-17.	Planning & Running of Holiday Specials, Mela Specials, Tourist Specials, etc.
-18.	Introduction of new Trains, extension of Train runs, introduction of Through and Sectional Coaches.
-19.	Preparation of Engine Links, Driver/Guards Links & Rake Links.
-20.	Commuter Service Operations.
-21.	Vande Bharat Trains
-22.	High Speed Corridors and Trains.
+3.	Platform and Pit Occupancy Planning and Preparing Charts.
+4.	Consultative Machinery for revision of Timetable at (Divisional --> Zone --> Railway Board)
+5.	Publication of (Working Timetable --> Public Timetable --> Sheet Timetable)
+6.	Components of WTT and PTT.
+7.	Punctuality of Passenger Carrying Trains.
+8.	Factors affecting Punctuality of Passenger carrying Trains and methods of improving the Punctuality, Monitoring of Asset Failures and Planning of blocks for Track, 
+9.	Signal and OHE maintenance. 
+10.	Corridor Blocks.
+11.	Integrated Maintenance Blocks.
+12.	Augmentation of Train Loads for meeting Traffic requirements, Rules of Marshalling and Slip Coaches etc.
+13.	Running of Tourists Coaches, Special Carriages and Special Trains.
+14.	Planning & Running of Holiday Specials, Mela Specials, Tourist Specials, etc.
+15.	Introduction of new Trains, extension of Train runs, introduction of Through and Sectional Coaches.
+16.	Preparation of (Engine Links + Driver/Guards Links + Rake Links)
+17.	Commuter Service Operations.
+18.	Vande Bharat Trains
+19.	High Speed Corridors and Trains.
 `
     },
     
@@ -173,37 +154,46 @@ const Syllabus = () => {
 
   const trainWorkingTopics = [
     {
-      title: "WORKING OF TRAINS GENERALLY AND GENERAL AND SUBSIDIARY RULES",
+      title: "WORKING OF TRAINS AND G&SR",
       content: `1.	Responsibility and Function of Engine Crew before starting and while on run and during abnormal/unusual situations.
 2.	Consignments.
 3.	Maximum Moving Dimensions. Wagon Census.
-4.	Relevant Rules and important Policy guidelines.
-5.	C&W examination for STR, Intensive, Round Trips, Premium and Close Circuit Rakes.
-6.	Sickliness and TXR Repair Depots including POH & ROH Depots and their functions.
-7.	Supply of Coaches/Wagons to C&W shops for POH and special repairs, 
-8.	Cycle period of different Stocks 
-9.	Workshop Feed Management.
-10.	Working of Travelling Traffic Cranes for handling heavy Consignments at Intermediate Stations.
-11.	Detaching of Sick Wagons at enroute Stations and their repair and clearance.
-12.	Interchange transactions - Junction returns of Inter Railway Inter Change Traffic.
-13.	Weighment of Rakes,  
-14.	Electronic In-Motion Weighbridge,  
-15.	Automatic Pre-Weighing System, 
-16.	Nominated and Alternative Weighbridges, 
-17.	Load Adjustment, 
-18.	Exempted Commodities, 
-19.	Maintenance of Weighbridges and Role of Weights
-20.	Measures Department,  
+4.	IT Applications: 
+i.	Freight Operations Information System (FOIS)
+ii.	Rake Management System (RMS)
+iii.	Terminal Management System (TMS)
+iv.	Coaching Operations Information System (COIS)
+v.	Integrated Coaching Management System (ICMS)
+vi.	Control Office Application (COA)
+vii.	Crew Management System (CMS)
+viii.	Software Aided Train Scheduling And Network Governance (SATSANG)
+ix.	Realtime Train Information System (RTIS)
+5.	Relevant Rules and important Policy guidelines.
+6.	C&W examination for STR, Intensive, Round Trips, Premium and Close Circuit Rakes.
+7.	Sickliness and TXR Repair Depots including POH & ROH Depots and their functions.
+8.	Supply of Coaches/Wagons to C&W shops for POH and special repairs
+9.	Cycle period of different Stocks 
+10.	Workshop Feed Management.
+11.	Working of Travelling Traffic Cranes for handling heavy Consignments at Intermediate Stations.
+12.	Detaching of Sick Wagons at enroute Stations and their repair and clearance.
+13.	Interchange transactions - Junction returns of Inter Railway Inter Change Traffic.
+14.	Weighment of Rakes,  
+15.	Electronic In-Motion Weighbridge,  
+16.	Automatic Pre-Weighing System, 
+17.	Nominated and Alternative Weighbridges, 
+18.	Load Adjustment, 
+19.	Exempted Commodities, 
+20.	Maintenance of Weighbridges and Role of Weights and Measures Department,  
 21.	Metrological Department and other Railway Departments, Integration of Weighbridge with FOIS.
 22.	MIL RAIL.
-23.	Permissible Axle Loads, 
-24.	Heavy Haul and Long-Haul Operations, 
-25.	factors affecting Axle Load, 
+23.	Permissible Axle Loads
+24.	Heavy Haul and Long-Haul Operations
+25.	Factors affecting Axle Load
 26.	Rules regarding Heavy Haul and Long-Haul Operations.
 27.	'Payload' to 'Tare' Ratio of Wagons. 
 28.	Factors affecting Payload and Tare Weight.
 29.	Concept of Convoy Trains.
-30.	Foreign Traffic and its components@attern.
+30.	Foreign Traffic and its components pattern.
 `
     },
     
@@ -212,18 +202,29 @@ const Syllabus = () => {
   const statisticsTopics = [
     {
       title: "OPERATING STATISTICS",
-      content: `1.	Centralized Traffic Control, 
-2.	Doubling, 
-3.	Automatic Block, IBS / IBH, 
-4.	Advanced Signalling and Interlocking.
-5.	Combined Train Report, 
-6.	Guard's Rough Journal Book,
-7.	Vehicle Guidance, 
-8.	Driver’s Ticket, 
-9.	Brake Power Certificate etc.
-10.	Rules regarding Marshalling of vehicles on Passenger, Mixed and Freight Trains.
-11.	Air Brake Systems along with Continuity Test.
-12.	Precautions to be taken on Ghat Sections.
+      content: `1.	Responsibility and function of Guard before starting and while on run and during abnormal/unusual situations.
+2.	Role & Responsibility of Station Staff in Working of Trains. 
+3.	Various Systems of Working of Trains and Conditions for Granting Line Clear.
+4.	Classification	of Stations
+5.	Standards of Interlocking	
+6.	Signalling Systems, Equipment & their working.
+7.	Station Working Rules and Block Working.
+8.	Level Crossings.
+9.	Line Capacity, 
+10.	Method of Calculating Line Capacity, Measures for augmenting it
+11.	Token less working
+12.	Centralized Traffic Control,
+13.	Doubling, 
+14.	Automatic Block, IBS / IBH, 
+15.	Advanced Signalling and Interlocking.
+16.	Combined Train Report, 
+17.	Guard's Rough Journal Book,
+18.	Vehicle Guidance, 
+19.	Driver’s Ticket, 
+20.	Brake Power Certificate etc.
+21.	Rules regarding Marshalling of vehicles on Passenger, Mixed and Freight Trains.
+22.	Air Brake Systems along with Continuity Test.
+23.	Precautions to be taken on Ghat Sections.
 `
     }
   ]
@@ -235,15 +236,15 @@ const Syllabus = () => {
 2.	Functioning of Railway Safety Organization.
 3.	Chief Commissioner of Railway Safety Organization and his Functions.
 4.	Rules for reporting Accidents.
-5.	Accident Relief Medical Equipment (ARMEs) & 
+5.	Accident Relief Medical Equipment (ARMEs)
 6.	Accident Relief Trains (ARTs).
 7.	Role & Responsibilities of various Officials and Departments during Accidents.
 8.	Responsibility of the Control Organization Station Masters and Traffic Staff on the affected Section.
 9.	Accidents Enquiries and DAR action against Staff held responsible for the Accidents, minimum recommended penalties in case of various Accidents.
 10.	Review and Analysis of Accidents for taking Corrective Measures.
 11.	Disaster Management on Indian Railways, 
-12.	DISASTER MANAGEMENT ACT, 2005
-13.	Disaster Management Plan, 
+12.	Disaster Management Act, 2005
+13.	Disaster Management Plan
 14.	Role of NDMA and NDRF.
 `
     }
@@ -256,20 +257,20 @@ const Syllabus = () => {
 2.	Psycho-Technical Analysis in case of Accidents attributed to Human Failures.
 3.	SPAD and its Prevention.
 4.	Train Operation during Fog, Fog PASS.
-5.	Improved Technological Aids to prevent Human Errors like
-6.	Improved Signalling and Inter-locking arrangement
-7.	SM's central and inter cabin control over route
-8.	Track circuit and Axle counters
-9.	Route Relay Inter-locking
-10.	Solid State Interlocking/Electronic Interlocking
-11.	Automatic Train Protection (ATP), 
-12.	KAVACH (TCAS - Train Collision Avoidance System)
-13.	WHEEL IMPACT LOAD DETECTOR (WILD)
-14.	END OF TRAIN TELEMETRY (EOTT) AND ITS FUNCTIONS.
-15.	Centralised Traffic Control (CTC)
-16.	On Board Monitoring of Rolling Stock (OMRS).
-17.	Refresher Courses, Safety Camps, Safety Campaigns and Safety Drives.
-18.	Planning of PME and Refresher of Safety Category Staff.
+5.	Improved Technological Aids to prevent Human Errors like: 
+i.	Improved Signalling and Inter-locking arrangement
+ii.	SM's central and inter cabin control over route
+iii.	Track circuit and Axle counters
+iv.	Route Relay Inter-locking
+v.	Solid State Interlocking/Electronic Interlocking
+vi.	Automatic Train Protection (ATP), 
+vii.	KAVACH (TCAS - Train Collision Avoidance System)
+viii.	WHEEL IMPACT LOAD DETECTOR (WILD)
+ix.	END OF TRAIN TELEMETRY (EOTT) AND ITS FUNCTIONS.
+x.	Centralised Traffic Control (CTC)
+xi.	On Board Monitoring of Rolling Stock (OMRS).
+6.	Refresher Courses, Safety Camps, Safety Campaigns and Safety Drives.
+7.	Planning of PME and Refresher of Safety Category Staff.
 `
     }
       
@@ -278,11 +279,11 @@ const Syllabus = () => {
   const railwayPlanningTopics = [
     {
       title: "PLANNING ON THE RAILWAYS",
-      content: `1.	SET UP & FUNCTIONS OF PLANNING WING ON INDIAN RAILWAYS
+      content: `1.	Set Up & Functions of Planning Wing on Indian Railways
 2.	Corporate Plan and Annual Plan
-3.	NATIONAL RAIL PLAN
-4.	MISSION 3000MT
-5.	NATIONAL LOGISTICS POLICY
+3.	National Rail Plan
+4.	Mission 3000MT
+5.	National Logistics Policy
 6.	Traffic Survey.
 7.	Calculation of Line Capacity.
 8.	Traffic Planning and 
@@ -300,46 +301,23 @@ const Syllabus = () => {
   const financialRulesTopics = [
     {
       title: "FINANCIAL RULES",
-      content: `1.	Parliamentary Control over Railway Finance, 
-2.	Public Accountability, 
-3.	Cannons of Financial Propriety.
-4.	Railway Budget – 
-5.	Budgetary terms, 
-6.	Types of Budgets, 
-7.	Budget cycle, 
-8.	Demand of Grants, 
-9.	Budgetary and Financial Reviews.
-10.	Rules of Allocation – 
-11.	Classification of expenditure – 
-12.	Control of expenditure 
-13.	Responsibility Accounting – 
-14.	Performance Budgeting – 
-15.	Exchequer Control – 
-16.	Financial Results of Working lines.
-17.	Works Programme – 
-18.	Financial justification of Works – 
-19.	Surveys –
-20.	Preparation of Estimates – 
-21.	Capital Budget – 
-22.	Control over Capital Expenditure – 
-23.	Reappropriation of Funds.
-24.	Financial control over Stores Expenditure – 
-25.	Purchase and Stores Keeping Procedure – 
-26.	Inventory Control and ABC Analysis.
-27.	Financial & Cost Control in Railway Workshops/Sheds units.
-28.	Rules and procedure relating to Tenders and contracts for execution of works and 
-29.	Procurement of Stores, 
-30.	M&P Programme and RSP.
-31.	Procedure for Possessing and finalizing Audit Objections and Draft Paras.
-32.	Delegation of Powers.
-33.	Losses, Frauds and Embezzlements.
-34.	General Financial Rules
-35.	Government e-Market (GeM)
-36.	Classification of Railway Revenue (Earnings)
-37.	Information Technology in general with specific reference to Railway's IT Applications
-38.	Taxation matters with special focus on GST & Income Tax
-39.	Organization of CGA and C&AG
-40.	Any other topic felt necessary from time to time.
+      content: `1.	Parliamentary Control over Railway Finance, Public Accountability, Cannons of Financial Propriety.
+2.	Railway Budget (Budgetary terms -->  Types of Budgets -->  Budget cycle -->  Demand of Grants --> Budgetary and Financial Reviews.
+3.	Rules of Allocation --> Classification of expenditure --> Control of expenditure --> Responsibility Accounting --> Performance Budgeting --> Exchequer Control --> Financial Results of Working lines.
+4.	Works Programme -->  Financial justification of Works --> Surveys --> Preparation of Estimates --> Capital Budget --> Control over Capital Expenditure --> Reappropriation of Funds.
+5.	Financial control over Stores Expenditure --> Purchase and Stores Keeping Procedure --> Inventory Control and ABC Analysis.
+6.	Financial & Cost Control in Railway Workshops/Sheds units.
+7.	Rules and procedure relating to Tenders and contracts for execution of works and Procurement of Stores, M&P Programme and RSP.
+8.	Procedure for Possessing and finalizing Audit Objections and Draft Paras.
+9.	Delegation of Powers.
+10.	Losses, Frauds and Embezzlements.
+11.	General Financial Rules
+12.	Government e-Market (GeM)
+13.	Classification of Railway Revenue (Earnings)
+14.	Information Technology in general with specific reference to Railway's IT Applications
+15.	Taxation matters with special focus on GST & Income Tax
+16.	Organization of CGA and C&AG
+17.	Any other topic felt necessary from time to time.
 `
     }
   ]
@@ -361,48 +339,43 @@ const Syllabus = () => {
 12.	Training Modules for different posts, 
 13.	Training under Apprentices Act, 
 14.	Online Training, 
-15.	APAR (ANNUAL PERFORMANCE APPRAISAL REPORT)
+15.	APAR (Annual Performance Appraisal Report)
 16.	General conditions of service in Railways, 
 17.	Seniority, Lien, Inter Railway & Inter Division transfers, 
 18.	Deputation, Promotion Policy & methods. 
 19.	Selection, Suitability, Trade Tests, 
-20.	Leave Rules, Pass Rules, Joining Time Reservation policy, HOER,
-21.	Overtime, 
-22.	Payment of wages, 
-23.	current CPC Pay Rules, 
-24.	Advances in Railways. 
-25.	Manpower planning, 
-26.	Rightsizing & Benchmarking, 
-27.	creation, extension and surrender of posts, 
-28.	creation of posts against new assets, 
-29.	different types of posts including work charged posts.
-30.	The Railway Servants (Discipline & Appeal) Rules, 1968 and related instructions. 
-31.	The Railway Services (Conduct) Rules, 1966 and related instructions.
-32.	Retirement benefits, 
-33.	qualifying service, 
-34.	pension, 
-35.	family pension, 
-36.	commutation gratuity, 
-37.	new pension scheme (NPS)
-38.	Staff welfare, 
-39.	STAFF BENEFIT FUND (SBF)
-40.	RAILWAY INSTITUTES, 
-41.	RAILWAY SCHOOLS, 
-42.	Ex-gratia payment, 
-43.	Incentive Bonus Scheme, 
-44.	Staff Grievances Redressal Mechanisms.
-45.	INDUSTRIAL RELATIONS IN RAILWAYS
-46.	recognized trade unions, industrial disputes. 
-47.	THE INDUSTRIAL DISPUTES ACT, 1947
-48.	THE INDUSTRIAL RELATIONS CODE, 2020
-49.	THE TRADE UNIONS ACT, 1926 
-50.	PNM (PERMANENT NEGOTIATING MACHINERY)
-51.	PREM (Participation of Railway Employees in Management)
-52.	JCM (Joint Consultative Machinery)
-53.	Various Associations & Informal Meetings. 
-54.	THE FACTORIES ACT, 1948
-55.	THE WORKMEN'S COMPENSATION ACT, 1923
-56.	Functions of Labour Enforcement Officers, Right to Information Act.
+20.	Leave Rules
+21.	Pass Rules
+22.	Joining Time Reservation policy
+23.	HOER
+24.	Overtime
+25.	Payment of wages
+26.	Current CPC Pay Rules
+27.	Advances in Railways
+28.	Manpower planning, 
+29.	Rightsizing & Benchmarking, 
+30.	Creation, extension and surrender of posts, 
+31.	Creation of posts against new assets, 
+32.	Different types of posts including work charged posts.
+33.	The Railway Servants (Discipline & Appeal) Rules - 1968 and related instructions. 
+34.	The Railway Services (Conduct) Rules - 1966 and related instructions.
+35.	Retirement benefits --> Qualifying service --> Pension --> Family pension --> Commutation gratuity, 
+36.	New Pension Scheme (NPS)
+37.	Staff welfare, 
+38.	Staff Benefit Fund (SBF)
+39.	Railway Institutes --> Railway Schools, 
+40.	Ex-gratia payment --> Incentive Bonus Scheme --> Staff Grievances Redressal Mechanisms.
+41.	Industrial Relations in Railways --> Recognized Trade Unions --> Industrial Disputes
+42.	The Industrial Disputes Act, 1947
+43.	The Industrial Relations Code, 2020
+44.	The Trade Unions Act, 1926 
+45.	PNM (Permanent Negotiating Machinery)
+46.	PREM (Participation of Railway Employees in Management)
+47.	JCM (Joint Consultative Machinery)
+48.	Various Associations & Informal Meetings. 
+49.	The Factories Act, 1948
+50.	The Workmen's Compensation Act, 1923
+51.	Functions of Labour Enforcement Officers, Right to Information Act.
 `
     }
   ]
@@ -410,9 +383,9 @@ const Syllabus = () => {
   const languageTopics = [
     {
       title: "OFFICIAL LANGUAGE",
-      content: `1.	Official Language Policy, 
-2.	Act, 
-3.	Rules, 
+      content: `1.	Official Language Polic
+2.	Act
+3.	Rules
 4.	Incentive Schemes
 `
     }
@@ -424,18 +397,6 @@ const Syllabus = () => {
       topics: trafficTopics,
       color: "from-blue-500 to-blue-600",
       icon: "🚂"
-    },
-    {
-      title: "OPERATING DEPARTMENT",
-      topics: operatingTopics,
-      color: "from-green-500 to-green-600",
-      icon: "💰"
-    },
-    {
-      title: "OPERATING MANUAL",
-      topics: operatingManualTopics,
-      color: "from-purple-500 to-purple-600",
-      icon: "📊"
     },
     {
       title: "TRAFFIC, TRAIN AND POWER CONTROL ORGANIZATION",
@@ -456,7 +417,7 @@ const Syllabus = () => {
       icon: "🛤️"
     },
     {
-      title: "WORKING OF TRAINS GENERALLY AND GENERAL AND SUBSIDIARY RULES",
+      title: "WORKING OF TRAINS AND G&SR",
       topics: trainWorkingTopics,
       color: "from-pink-500 to-pink-600",
       icon: "🌐"
@@ -543,19 +504,37 @@ const Syllabus = () => {
                         <div className="space-y-2">
                           {topic.content.split('\n').filter(line => line.trim()).map((line, lineIndex) => {
                             const trimmedLine = line.trim();
-                            // Check if line starts with a number followed by a period or tab
-                            const match = trimmedLine.match(/^(\d+)\.\s*(.+)$/);
-                            if (match) {
+                            
+                            // Check if line starts with a number followed by a period
+                            const numberMatch = trimmedLine.match(/^(\d+)\.\s*(.+)$/);
+                            // Check if line starts with roman numerals (i., ii., iii., iv., v., vi., vii., viii., ix., x.)
+                            const romanMatch = trimmedLine.match(/^([ivx]+)\.\s*(.+)$/i);
+                            
+                            if (numberMatch) {
                               return (
                                 <div 
                                   key={lineIndex} 
                                   className="flex items-start gap-3 lg:p-3 p-1 rounded-lg hover:bg-white hover:shadow-sm transition-all duration-200 group/item"
                                 >
                                   <span className="flex-shrink-0 lg:w-8 lg:h-8 w-7 h-7 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center font-semibold text-sm group-hover/item:scale-110 transition-transform duration-200 shadow-sm">
-                                    {match[1]}
+                                    {numberMatch[1]}
                                   </span>
                                   <p className="text-gray-700 leading-relaxed flex-1 group-hover/item:text-gray-900 transition-colors duration-200 lg:text-lg text-sm font-medium">
-                                    {match[2]}
+                                    {numberMatch[2]}
+                                  </p>
+                                </div>
+                              );
+                            } else if (romanMatch) {
+                              return (
+                                <div 
+                                  key={lineIndex} 
+                                  className="flex items-start gap-2 lg:pl-11 pl-9 lg:pr-3 pr-1 lg:py-2 py-1 ml-2 rounded-lg hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 transition-all duration-200 group/subitem border-l-2 border-transparent hover:border-indigo-400"
+                                >
+                                  <span className="flex-shrink-0 lg:w-6 lg:h-6 w-5 h-5 bg-gradient-to-br from-indigo-400 to-purple-500 text-white rounded flex items-center justify-center font-semibold lg:text-xs text-[10px] group-hover/subitem:scale-110 group-hover/subitem:rotate-6 transition-all duration-200 shadow-sm">
+                                    {romanMatch[1]}
+                                  </span>
+                                  <p className="text-gray-600 leading-relaxed flex-1 group-hover/subitem:text-gray-800 transition-colors duration-200 lg:text-base text-xs font-normal">
+                                    {romanMatch[2]}
                                   </p>
                                 </div>
                               );

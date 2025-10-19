@@ -7,10 +7,15 @@ import FloatingTopicNavigator from '@/components/FloatingTopicNavigator';
 export const metadata = {
   title: 'AOM Aspirant',
   description: 'Your gateway to become AOM',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   icons: {
     icon: '/favicon.ico',
   },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
