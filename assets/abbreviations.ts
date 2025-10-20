@@ -139,6 +139,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "ATP", fullForm: "Automatic Train Protection",
+      explanation: "Kavach",
+      reference: "--"
+    },
     { acronym: "ATVM", fullForm: "Automatic Ticket Vending Machine",
       explanation: "Will be added later",
       reference: "--"
@@ -180,6 +184,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "BIC", fullForm: "Bogie Isolation Cock",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "BIB", fullForm: "Brake Interface Unit",
+      explanation: "It is a part of Loco Kavach. It executes the brake commanded by Onboard Vital Computer automatically when Loco pilot is not controlling the speed in commensuration with permitted speed which is based on signalling information including permanent speed restrictions, gradient, braking characterstics of train.",
       reference: "--"
     },
     { acronym: "BLW", fullForm: "Banaras Locomotive Works",
@@ -818,7 +826,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DMI", fullForm: "Driver Machine Interface",
-      explanation: "Will be added later",
+      explanation: "It is a part of Loco Kavach. DMI is a display panel in the locomotive cab that provides real-time information about the track conditions, movement authority, signal aspects, and allows Loco Pilot to acknowledge warnings or initiate emergency actions through buttons.",
       reference: "--"
     },
     { acronym: "DMM", fullForm: "Divisional Material Manager",
@@ -1030,6 +1038,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    
     { acronym: "EWSS", fullForm: "E-Working Software Solution",
       explanation: "Will be added later",
       reference: "--"
@@ -1343,6 +1352,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "IRATP",
+      fullForm: "Indian Railway Automatic Train Protection System",
+      explanation: "Kavach",
+      reference: "--"
+    },
     { acronym: "IRCA", fullForm: "Indian Railway Conference Association",
       explanation: "Will be added later",
       reference: "--"
@@ -1532,6 +1546,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     fullForm: "Konkan Railway Corporation Limited",
     explanation: "To construct and operate railway lines, construct Road Over Bridges and rail line projects.",
     reference: "--"
+  },
+  { acronym: "KMS",
+    fullForm: "Key Management Systme",
+    explanation: "Ensures secure exchange of Movement Authorities between Stationary Kavach and Onboard Kavach system.",
+    reference: "--"
   }],
   L: [
     { acronym: "LAP", fullForm: "Leave on Average Pay",
@@ -1570,6 +1589,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "LPOCIP",
+      fullForm: "Loco Pilot's Operation Cum Indication Panel",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "LRZAC", fullForm: "EOG AC Track Recording Car LHB Variant Coach",
       explanation: "Will be added later",
       reference: "--"
@@ -1592,6 +1616,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "LTC", fullForm: "Leave Travel Concession",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "LTE", fullForm: "Long Term Evolution",
+      explanation: "Kavach",
       reference: "--"
     },
     { acronym: "LTTC", fullForm: "Long Term Traffic Contact",
@@ -1803,8 +1831,8 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "NMS", fullForm: "Network Management System",
-      explanation: "Will be added later",
+    { acronym: "NMS", fullForm: "Network Monitoring System",
+      explanation: "Logs train movements, inputs, and fault messages. It automatically alerts the fault teams to address issues.",
       reference: "--"
     },
     { acronym: "NPG", fullForm: "Network Planning Group",
@@ -2295,7 +2323,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { 
       acronym: "RIU", 
       fullForm: "Remote Interface Unit",
-      explanation: "Will be added later",
+      explanation: "Kavach",
       reference: "--"
     },
     { acronym: "RKMS", fullForm: "Route Kilometers",
@@ -2487,6 +2515,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "SIL", fullForm: "Safety Integrity Level",
+      explanation: "Kavach",
+      reference: "--"
+    },
     { acronym: "SIMRAN", fullForm: "Satellite Imaging for Rail Navigation",
       explanation: "Will be added later",
       reference: "--"
@@ -2536,7 +2568,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     {
       acronym: "SMOCIP",
       fullForm: "Station Master Operation Cum Identification Panel",
-      explanation: "Will be added later",
+      explanation: "SMOCIP is a part of Station Kavach. It is a display unit provided to the Station Master. It is placed in SM Office. It is operated by Station Master as and when necessary, like manual SOS generation etc.",
       reference: "--"
     },
     { acronym: "SOB", fullForm: "Standing Order Book",
@@ -2553,6 +2585,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "SOP", fullForm: "Schedule Off Powers",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "SOS", fullForm: "Save Our Souls",
+      explanation: "Kavach",
       reference: "--"
     },
     { acronym: "SPAD", fullForm: "Signal Passing At Danger",
@@ -2663,6 +2699,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "STBA", fullForm: "Station Ticket Booking Agent",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "SVK", fullForm: "Stationary Vital Kavach",
+      explanation: "Kavach",
       reference: "--"
     },
     { acronym: "SWR", fullForm: "Station Working Rule",
@@ -2829,7 +2869,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "TSR", fullForm: "Temporary Speed Restriction",
+    { acronym: "TSRMS", fullForm: "Temporary Speed Restriction Management System",
+      explanation: "Kavach",
+      reference: "--"
+    },
+    { acronym: "LTC", fullForm: "Leave Travel Concession",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -2889,6 +2933,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "UFSBI", fullForm: "Universal Fail Safe Block Interface",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "UHF", fullForm: "Ultra High Frequency",
+      explanation: "Kavach",
       reference: "--"
     },
     { acronym: "ULIP", fullForm: "Unified Logistics Interface Platform",
