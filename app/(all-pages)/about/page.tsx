@@ -35,17 +35,17 @@ export default function About() {
           </div>
 
           {/* What We Offer Section */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl py-12 px-8 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
-            <h2 className="lg:text-4xl text-3xl font-bold text-white mb-10 flex items-center justify-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-8 px-4 mb-12 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h2 className="lg:text-4xl text-2xl font-bold text-white mb-10 flex items-center justify-center flex-col gap-3 text-center">
               <span className="bg-gradient-to-r from-orange-500 to-red-500 p-4 rounded-full mr-4 shadow-2xl">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="lg:w-10 lg:h-10 w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </span>
               What We Offer
             </h2>
-            <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-2xl p-10 shadow-2xl border border-orange-400/30 hover:shadow-3xl transition-all duration-300">
-              <p className="text-gray-100 leading-relaxed text-xl text-center max-w-4xl mx-auto font-medium">
+            <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-lg rounded-2xl py-6 px-6 shadow-2xl border border-orange-400/30 hover:shadow-3xl transition-all duration-300">
+              <p className="text-gray-100 leading-relaxed lg:text-xl text-base text-center max-w-4xl mx-auto font-medium">
                 AOM Aspirant is the premier digital learning platform specifically designed for Assistant Operations Manager (AOM) aspirants in Indian Railways. We provide comprehensive study materials, railway manuals, regulations, and practice resources to help you excel in your AOM examination and career.
               </p>
             </div>
