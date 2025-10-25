@@ -11,7 +11,7 @@ export default function About() {
         <div className="absolute top-1/3 right-1/3 w-80 h-80 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-full blur-3xl animate-pulse delay-700"></div>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
+      <div className="relative z-10 py-12 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
@@ -26,10 +26,10 @@ export default function About() {
               AOM ASPIRANT
             </h1>
             <div className="w-32 h-1.5 bg-gradient-to-r from-orange-500 via-white to-blue-500 mx-auto mb-6 rounded-full shadow-lg"></div>
-            <p className="text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed font-medium">
+            <p className="lg:text-2xl text-xl text-gray-100 max-w-4xl mx-auto leading-relaxed font-medium">
               Your Complete Digital Platform for Assistant Operations Manager Excellence
             </p>
-            <p className="text-lg text-blue-200 mt-4 max-w-3xl mx-auto">
+            <p className="lg:text-lg text-base text-blue-200 mt-4 max-w-3xl mx-auto">
               Indian Railways | Comprehensive Study Materials | Expert Guidance
             </p>
           </div>
