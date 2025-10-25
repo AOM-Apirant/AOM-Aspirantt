@@ -70,7 +70,7 @@ export default function Home() {
                         {/* Image overlay */}
                         <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-md">
                           <h3 className="text-base font-bold text-gray-800 mb-1">AOM Aspirant</h3>
-                          <p className="text-xs text-gray-600">Your Learning Guide</p>
+                          <p className="text-xs text-gray-600">Your Learning Partner</p>
                         </div>
                       </div>
                     </div>

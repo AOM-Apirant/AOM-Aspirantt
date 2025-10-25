@@ -13,7 +13,13 @@ export async function POST(request: NextRequest) {
     const user = await registerUser(
       validatedData.name,
       validatedData.email,
-      validatedData.password
+      validatedData.password,
+      validatedData.designation,
+      validatedData.department,
+      validatedData.division,
+      validatedData.zone,
+      validatedData.address,
+      validatedData.phoneNumber
     );
 
     return NextResponse.json(

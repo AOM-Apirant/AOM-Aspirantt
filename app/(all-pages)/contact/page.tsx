@@ -7,7 +7,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    phoneNumber: '',
     message: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -51,7 +51,7 @@ const Contact = () => {
       // Reset form after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false)
-        setFormData({ name: '', email: '', subject: '', message: '' })
+        setFormData({ name: '', email: '', phoneNumber: '', message: '' })
       }, 5000)
       
     } catch (err) {
@@ -215,18 +215,19 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-xs lg:text-sm font-semibold text-gray-700 mb-1 lg:mb-2">
-                      Subject
+                    <label htmlFor="phoneNumber" className="block text-xs lg:text-sm font-semibold text-gray-700 mb-1 lg:mb-2">
+                      Phone Number
                     </label>
                     <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
                       onChange={handleInputChange}
                       required
                       className="w-full px-3 lg:px-4 py-2 border-2 border-gray-300 rounded-lg focus:ring-4 focus:ring-blue-100 focus:border-blue-500 transition-all duration-200 text-sm lg:text-base"
-                      placeholder="What&apos;s this about?"
+                      placeholder="Enter your phone number"
+                      maxLength={10}
                     />
                   </div>
 

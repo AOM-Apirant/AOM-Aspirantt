@@ -1,5 +1,4 @@
 import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 import connectDB from "./db";
 import User from "@/models/User";
@@ -7,10 +6,6 @@ import bcrypt from "bcryptjs";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-    }),
     CredentialsProvider({
       name: "Credentials",
       credentials: {
@@ -60,20 +55,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     maxAge: 30 * 24 * 60 * 60, // 30 days
   },
   callbacks: {
-    async signIn({ user, account }) {
-      await connectDB();
-      if (account?.provider === "google") {
-        const existingUser = await User.findOne({ email: user.email });
-        if (!existingUser) {
-          await User.create({
-            name: user.name,
-            email: user.email,
-            image: user.image,
-          });
-        }
-      }
-      return true;
-    },
     async redirect({ url, baseUrl }) {
       // Allows relative callback URLs
       if (url.startsWith("/")) return `${baseUrl}${url}`;
@@ -97,8 +78,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
   },
   pages: {
-    signIn: "/",
-    error: "/",
+    signIn: "/login",
+    error: "/login",
   },
 });
 
@@ -106,7 +87,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 export async function registerUser(
   name: string,
   email: string,
-  password: string
+  password: string,
+  designation?: string,
+  department?: string,
+  division?: string,
+  zone?: string,
+  address?: string,
+  phoneNumber?: string
 ) {
   await connectDB();
 
@@ -124,6 +111,12 @@ export async function registerUser(
     name,
     email,
     password: hashedPassword,
+    designation,
+    department,
+    division,
+    zone,
+    address,
+    phoneNumber,
   });
 
   return { id: user._id.toString(), name: user.name, email: user.email };

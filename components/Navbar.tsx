@@ -16,6 +16,9 @@ export default function Navbar() {
   const [isMobileNotesOpen, setIsMobileNotesOpen] = useState(false);
   const [isPdfsDropdownOpen, setIsPdfsDropdownOpen] = useState(false);
   const [isMobilePdfsOpen, setIsMobilePdfsOpen] = useState(false);
+  const [isQuizzesDropdownOpen, setIsQuizzesDropdownOpen] = useState(false);
+  const [isMobileQuizzesOpen, setIsMobileQuizzesOpen] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,24 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const checkAdminStatus = async () => {
+      if (session?.user?.email) {
+        try {
+          const response = await fetch('/api/users');
+          if (response.ok) {
+            const data = await response.json();
+            setIsAdmin(data.isAdmin || false);
+          }
+        } catch (error) {
+          console.error('Error checking admin status:', error);
+        }
+      }
+    };
+
+    checkAdminStatus();
+  }, [session]);
 
   const handleSignOut = async () => {
     setIsLoading(true);
@@ -54,46 +75,52 @@ export default function Navbar() {
     setIsMobileNotesOpen(false);
     setIsPdfsDropdownOpen(false);
     setIsMobilePdfsOpen(false);
+    setIsQuizzesDropdownOpen(false);
+    setIsMobileQuizzesOpen(false);
     // Reset loading after a short delay to show the spinner
     setTimeout(() => setIsLoading(false), 500);
   };
 
   const notesPages = [
-    { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' },
-    { name: 'Operating', href: '/operating', icon: '⚙️' },
-    { name: 'Commercial', href: '/commercial', icon: '🏢' },
-    { name: 'Accounts', href: '/accounts', icon: '💰' },
-    { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
     { name: 'Accident Manual', href: '/accident', icon: '🚨' },
-    { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
-    { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
-    { name: 'G&SR', href: '/gsr', icon: '📜' },
-    { name: 'Station Working Rules', href: '/swr', icon: '🚉' },
-    { name: 'Working Time Table', href: '/wtt', icon: '⏰' },
+    { name: 'Accounts', href: '/accounts', icon: '💰' },
     { name: 'Appendix', href: '/appendix', icon: '📄' },
-    { name: 'IT Applications', href: '/it-apps', icon: '💻' },
-    { name: 'RS Conduct Rules-1966', href: '/conduct-rules', icon: '⚖️' },
-    { name: 'RS DA Rules - 1968', href: '/da-rules', icon: '💰' },
-    { name: 'Compensation Act - 2010', href: '/ec-act', icon: '🏛️' },
-    { name: 'Industrial Disputes Act - 1947', href: '/disputes-act', icon: '⚖️' },
+    { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
+    { name: 'Commercial', href: '/commercial', icon: '🏢' },
     { name: 'Disaster Management Act - 2005', href: '/disaster-act', icon: '🚨' },
-    { name: 'The Trade Union Act - 1926', href: '/trade-union', icon: '🏛️' },
-    { name: 'The Workmen Compensation Act - 1923', href: '/workmen-act', icon: '💰' },
-    { name: 'The Factories Act - 1948', href: '/factories-act', icon: '🏭' },
-    { name: 'Industrial Relations Code - 2020', href: '/industrial-code', icon: '🏭' },
+    { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
+    { name: 'Factories Act - 1948', href: '/factories-act', icon: '🏭' },
+    { name: 'G&SR', href: '/gsr', icon: '📜' },
     { name: 'Indian Railway Act - 1989', href: '/ir-act', icon: '🚂' },
-    { name: 'RS Pass Rules - 1986', href: '/pass-rules', icon: '🎫' },
-    { name: 'RS Rest Rules - 2005', href: '/rest-rules', icon: '🛏️' },
+    { name: 'Industrial Disputes Act - 1947', href: '/disputes-act', icon: '⚖️' },
+    { name: 'Industrial Relations Code - 2020', href: '/industrial-code', icon: '🏭' },
+    { name: 'IT Applications', href: '/it-apps', icon: '💻' },
+    { name: 'Operating', href: '/operating', icon: '⚙️' },
+    { name: 'Operating Manual', href: '/optg-manual', icon: '📖' },
+    { name: 'Rajabhasha', href: '/rajabhasha', icon: '🌐' },
+    { name: 'Railway Servants Conduct Rules - 1966', href: '/conduct-rules', icon: '⚖️' },
+    { name: 'Railway Servants DA Rules - 1968', href: '/da-rules', icon: '💰' },
+    { name: 'Railway Compensation Act - 2010', href: '/ec-act', icon: '🏛️' },
+    { name: 'Workmen Compensation Act - 1923', href: '/workmen-act', icon: '💰' },
+    { name: 'Railway Servants Pass Rules - 1986', href: '/pass-rules', icon: '🎫' },
+    { name: 'Railway Servants Rest Rules - 2005', href: '/rest-rules', icon: '🛏️' },
+    { name: 'Station Working Rules', href: '/swr', icon: '🚉' },
+    { name: 'Trade Union Act - 1926', href: '/trade-union', icon: '🏛️' },
+    { name: 'Working Time Table', href: '/wtt', icon: '⏰' },
   ];
 
   const pdfsPages = [
-    { name: 'G&SR Amendments', href: '/gsr-amendments', icon: '📜' },
-    { name: 'Accident Amendments', href: '/accident-amendment', icon: '🚨' },
+    { name: 'AM Amendments', href: '/accident-amendment', icon: '🚨' },
+    { name: 'Authorities', href: '/authorities', icon: '🏛️' },
     { name: 'BWM Amendments', href: '/bwm-amendment', icon: '📋' },
     { name: 'Circulars', href: '/circulars', icon: '📢' },
+    { name: 'G&SR Amendments', href: '/gsr-amendments', icon: '📜' },
     { name: 'JPOs', href: '/jpo', icon: '📄' },
-    { name: 'Authorities', href: '/authorities', icon: '🏛️' },
-    { name: 'Miscellaneous', href: '/miscellaneous', icon: '📄' },
+  ];
+
+  const quizzesPages = [
+    { name: 'Dashboard', href: '/dashboard', icon: '📊' },
+    { name: 'Quizzes', href: '/quiz', icon: '📝' },
     { name: 'Previous Papers', href: '/previous', icon: '📚' },
   ];
 
@@ -153,14 +180,14 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
               </button>
               
-              {/* Notes Dropdown */}
+              {/* Notes/Topics Dropdown */}
               <div className="relative group">
                 <button 
                   onMouseEnter={() => setIsNotesDropdownOpen(true)}
                   onMouseLeave={() => setIsNotesDropdownOpen(false)}
                   className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base flex items-center space-x-1"
                 >
-                  Study Notes
+                  Topics
                   <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -174,36 +201,23 @@ export default function Navbar() {
                     onMouseLeave={() => setIsNotesDropdownOpen(false)}
                     className="absolute top-full left-0 mt-2 w-80 bg-gradient-to-br from-white/95 via-blue-50/95 to-purple-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
                   >
-                    <div className="px-4 py-2 border-b border-gray-200/50">
-                      <h3 className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                        Study Notes
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">Select a topic to explore</p>
-                    </div>
+                    
                     <div className="py-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                       {notesPages.map((page) => (
                         <button
                           key={page.href}
                           onClick={() => handleNavigation(page.href)}
-                          className="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-200 text-sm group"
+                          className="w-full flex items-center space-x-3 px-3 py-2 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:text-blue-600 transition-all duration-200 text-sm group"
                         >
-                          <span className="text-lg group-hover:scale-110 transition-transform duration-200">
+                          <span className="text-medium group-hover:scale-110 transition-transform duration-200">
                             {page.icon}
                           </span>
                           <span className="font-medium">{page.name}</span>
-                          <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                            <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </div>
+                          {/* Right arrow removed as per instruction */}
                         </button>
                       ))}
                     </div>
-                    <div className="px-4 py-2 border-t border-gray-200/50">
-                      <div className="text-xs text-gray-500 text-center">
-                        📚 Comprehensive study materials
-                      </div>
-                    </div>
+                    
                   </div>
                 )}
               </div>
@@ -229,54 +243,67 @@ export default function Navbar() {
                     onMouseLeave={() => setIsPdfsDropdownOpen(false)}
                     className="absolute top-full left-0 mt-2 w-72 bg-gradient-to-br from-white/95 via-red-50/95 to-orange-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
                   >
-                    <div className="px-4 py-2 border-b border-gray-200/50">
-                      <h3 className="text-sm font-semibold bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent">
-                        PDF Documents
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">Download study materials</p>
-                    </div>
+                    
                     <div className="py-2 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
                       {pdfsPages.map((page) => (
                         <button
                           key={page.href}
                           onClick={() => handleNavigation(page.href)}
-                          className="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 hover:text-red-600 transition-all duration-200 text-sm group"
+                          className="w-full flex items-center space-x-3 px-3 py-2 text-gray-700 hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 hover:text-red-600 transition-all duration-200 text-sm group"
                         >
-                          <span className="text-lg group-hover:scale-110 transition-transform duration-200">
+                          <span className="text-medium group-hover:scale-110 transition-transform duration-200">
                             {page.icon}
                           </span>
                           <span className="font-medium">{page.name}</span>
-                          <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                            <svg className="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </div>
+                          {/* Right arrow removed as per instruction */}
                         </button>
                       ))}
                     </div>
-                    <div className="px-4 py-2 border-t border-gray-200/50">
-                      <div className="text-xs text-gray-500 text-center">
-                        📄 Downloadable PDF files
-                      </div>
-                    </div>
+                    
                   </div>
                 )}
               </div>
               
-              <button 
-                onClick={() => handleNavigation('/dashboard')}
-                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
-              >
-                Dashboard
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
-              </button>
-              <button 
-                onClick={() => handleNavigation('/quiz')}
-                className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base"
-              >
-                Quizzes
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
-              </button>
+              {/* Quizzes Dropdown */}
+              <div className="relative group">
+                <button 
+                  onMouseEnter={() => setIsQuizzesDropdownOpen(true)}
+                  onMouseLeave={() => setIsQuizzesDropdownOpen(false)}
+                  className="text-white/90 hover:text-white font-medium transition-all duration-200 relative group text-sm lg:text-base flex items-center space-x-1"
+                >
+                  Quizzes
+                  <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+                </button>
+                
+                {/* Quizzes Dropdown Menu */}
+                {isQuizzesDropdownOpen && (
+                  <div 
+                    onMouseEnter={() => setIsQuizzesDropdownOpen(true)}
+                    onMouseLeave={() => setIsQuizzesDropdownOpen(false)}
+                    className="absolute top-full left-0 mt-2 w-72 bg-gradient-to-br from-white/95 via-green-50/95 to-teal-50/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/30 py-3 z-50 transform transition-all duration-300 ease-out animate-fadeIn"
+                  >
+                    
+                    <div className="py-2">
+                      {quizzesPages.map((page) => (
+                        <button
+                          key={page.href}
+                          onClick={() => handleNavigation(page.href)}
+                          className="w-full flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-teal-50 hover:text-green-600 transition-all duration-200 text-sm group"
+                        >
+                          <span className="text-medium group-hover:scale-110 transition-transform duration-200">
+                            {page.icon}
+                          </span>
+                          <span className="font-medium">{page.name}</span>
+                          {/* Right arrow removed as per instruction */}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
           
               <button 
                 onClick={() => handleNavigation('/contact')}
@@ -288,7 +315,18 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Auth Button */}
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center gap-3">
+              {isAdmin && (
+                <button 
+                  onClick={() => handleNavigation('/admin')}
+                  className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-4 lg:px-5 py-1.5 rounded-md font-medium hover:from-yellow-600 hover:to-orange-600 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105 text-sm lg:text-base flex items-center gap-2"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                  Admin
+                </button>
+              )}
               {session ? (
                 <button
                   onClick={handleSignOut}
@@ -298,10 +336,7 @@ export default function Navbar() {
                 </button>
               ) : (
                 <button
-                  onClick={() => {
-                    // Redirect to Google sign in
-                    window.location.href = '/api/auth/signin/google';
-                  }}
+                  onClick={() => handleNavigation('/login')}
                   className="bg-white/10 backdrop-blur-sm text-white px-4 lg:px-6 py-1.5 rounded-md font-medium hover:bg-white/20 transition-colors duration-200 border border-white/20 hover:border-white/40 text-sm lg:text-base"
                 >
                   Login
@@ -343,7 +378,7 @@ export default function Navbar() {
           {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden mt-4 pb-4 transition-all duration-500 ease-in-out animate-bounce-in">
-              <div className="flex flex-col bg-gradient-to-br from-slate-800/95 via-purple-900/90 to-blue-900/95 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl max-h-[80vh] overflow-y-auto scrollbar-hide relative overflow-hidden">
+              <div className="flex flex-col bg-gradient-to-br from-slate-800/95 via-purple-900/90 to-blue-900/95 backdrop-blur-md rounded-lg p-4 border border-white/20 shadow-2xl max-h-[80vh] overflow-y-auto scrollbar-hide relative overflow-hidden">
                 {/* Decorative background elements */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"></div>
                 {/* Navigation Links Section */}
@@ -412,15 +447,15 @@ export default function Navbar() {
                   <div className="space-y-2">
                     <button 
                       onClick={() => setIsMobileNotesOpen(!isMobileNotesOpen)}
-                      className="w-full flex items-center justify-between text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                      className="w-full flex items-center justify-between text-white font-semibold transition-all duration-300 py-3 px-2 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
                     >
-                      <div className="flex items-center space-x-4">
+                      <div className="flex items-center space-x-2">
                         <div className="w-9 h-9 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                           </svg>
                         </div>
-                        <span className="text-base">Study Notes</span>
+                        <span className="text-base">Topics</span>
                       </div>
                       <svg 
                         className={`w-5 h-5 transition-transform duration-300 ${isMobileNotesOpen ? 'rotate-180' : ''}`} 
@@ -436,15 +471,15 @@ export default function Navbar() {
                     <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
                       isMobileNotesOpen ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
                     }`}>
-                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-1 border border-white/10 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
+                      <div className="ml-2 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-1 border border-white/10 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
                         {notesPages.map((page, index) => (
                           <button 
                             key={page.href}
                             onClick={() => handleNavigation(page.href)}
-                            className="w-full flex items-center space-x-3 text-white/90 hover:text-white font-medium transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/15 touch-button group transform hover:scale-[1.02]"
+                            className="w-full flex items-center space-x-3 text-white/90 hover:text-white font-medium transition-all duration-300 py-3 px-2 rounded-lg hover:bg-white/15 touch-button group transform hover:scale-[1.02]"
                             style={{ animationDelay: `${index * 50}ms` }}
                           >
-                            <div className="w-8 h-8 bg-gradient-to-r from-yellow-400/30 to-yellow-500/30 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <div className="w-8 h-8 bg-gradient-to-r from-yellow-400/30 to-yellow-500/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                               <span className="text-sm">{page.icon}</span>
                             </div>
                             <span className="text-sm font-medium">{page.name}</span>
@@ -495,7 +530,7 @@ export default function Navbar() {
                             className="w-full flex items-center space-x-3 text-white/90 hover:text-white font-medium transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/15 touch-button group transform hover:scale-[1.02]"
                             style={{ animationDelay: `${index * 50}ms` }}
                           >
-                            <div className="w-8 h-8 bg-gradient-to-r from-red-400/30 to-red-500/30 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <div className="w-8 h-8 bg-gradient-to-r from-red-400/30 to-red-500/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                               <span className="text-sm">{page.icon}</span>
                             </div>
                             <span className="text-sm font-medium">{page.name}</span>
@@ -510,29 +545,56 @@ export default function Navbar() {
                     </div>
                   </div>
 
-                  <button 
-                    onClick={() => handleNavigation('/dashboard')}
-                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
-                  >
-                    <div className="w-9 h-9 bg-gradient-to-r from-indigo-400 to-indigo-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  {/* Enhanced Mobile Quizzes Section */}
+                  <div className="space-y-2">
+                    <button 
+                      onClick={() => setIsMobileQuizzesOpen(!isMobileQuizzesOpen)}
+                      className="w-full flex items-center justify-between text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
+                    >
+                      <div className="flex items-center space-x-4">
+                        <div className="w-9 h-9 bg-gradient-to-r from-green-400 to-teal-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                          <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <span className="text-base">Quizzes</span>
+                      </div>
+                      <svg 
+                        className={`w-5 h-5 transition-transform duration-300 ${isMobileQuizzesOpen ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
+                    </button>
+                    
+                    {/* Animated Quizzes Submenu */}
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      isMobileQuizzesOpen ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="ml-4 space-y-2 bg-gradient-to-br from-white/5 to-white/10 rounded-lg p-1 border border-white/10">
+                        {quizzesPages.map((page, index) => (
+                          <button 
+                            key={page.href}
+                            onClick={() => handleNavigation(page.href)}
+                            className="w-full flex items-center space-x-3 text-white/90 hover:text-white font-medium transition-all duration-300 py-3 px-4 rounded-lg hover:bg-white/15 touch-button group transform hover:scale-[1.02]"
+                            style={{ animationDelay: `${index * 50}ms` }}
+                          >
+                            <div className="w-8 h-8 bg-gradient-to-r from-green-400/30 to-teal-500/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                              <span className="text-sm">{page.icon}</span>
+                            </div>
+                            <span className="text-sm font-medium">{page.name}</span>
+                            <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                              <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                    <span className="text-base">Dashboard</span>
-                  </button>
-                  
-                  <button 
-                    onClick={() => handleNavigation('/quiz')}
-                    className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-white/10 to-white/15 border border-white/20 hover:border-white/30 shadow-lg hover:shadow-xl"
-                  >
-                    <div className="w-9 h-9 bg-gradient-to-r from-teal-400 to-teal-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="text-base">Quizzes</span>
-                  </button>
+                  </div>
                   
                   <button 
                     onClick={() => handleNavigation('/contact')}
@@ -545,6 +607,20 @@ export default function Navbar() {
                     </div>
                     <span className="text-base">Contact</span>
                   </button>
+                  
+                  {isAdmin && (
+                    <button 
+                      onClick={() => handleNavigation('/admin')}
+                      className="w-full flex items-center space-x-4 text-white font-semibold transition-all duration-300 py-4 px-5 rounded-lg hover:bg-white/20 hover:scale-[1.02] touch-button group bg-gradient-to-r from-yellow-500/30 to-yellow-600/30 border border-yellow-400/40 hover:border-yellow-400/60 shadow-lg hover:shadow-xl"
+                    >
+                      <div className="w-9 h-9 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                      </div>
+                      <span className="text-base">Admin Dashboard</span>
+                    </button>
+                  )}
                 </div>
 
                 {/* Logout Button - Bottom position */}
