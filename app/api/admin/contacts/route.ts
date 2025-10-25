@@ -4,7 +4,7 @@ import Contact from "@/models/Contact";
 import User from "@/models/User";
 import { auth } from "@/lib/auth";
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     const session = await auth();
 

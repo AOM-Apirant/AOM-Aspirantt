@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import {
   Users,
   Mail,
-  TrendingUp,
   Clock,
   CheckCircle,
   XCircle,
@@ -16,7 +15,6 @@ import {
   Eye,
   Filter,
   Search,
-  Download,
 } from "lucide-react";
 
 interface User {
