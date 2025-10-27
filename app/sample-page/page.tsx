@@ -1,13 +1,11 @@
 import React from 'react'
-import BWMPartAPage4A from '@/components/bwm/bwm-part-a-pages/BWMPartAPage4A'
+import IRACT1989Section6 from '@/components/ir-act/ir-act-index-sections/IRACT1989Section6'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <BWMPartAPage4A/>
-
-
+          <IRACT1989Section6/>
     </div>
   )
 }
