@@ -1,9 +1,25 @@
 "use client"
-import React, { useState } from 'react'
-import { BookOpen, Scale, Shield, Building2, Train, Users, PackageCheck, Truck, AlertTriangle, Gavel, FileText, Settings, ChevronDown, ChevronUp, CheckCircle } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { BookOpen, Scale, Shield, Building2, Train, Users, PackageCheck, Truck, AlertTriangle, Gavel, FileText, Settings, ChevronDown, ChevronUp, CheckCircle, ExternalLink, BookOpenCheck } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const IRAct1989 = () => {
   const [expandedSections, setExpandedSections] = useState<number[]>([])
+  const [isMobile, setIsMobile] = useState(false)
+  const [openingPDF, setOpeningPDF] = useState<string | null>(null)
+  const [openingContent, setOpeningContent] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    
+    checkDevice()
+    window.addEventListener('resize', checkDevice)
+    
+    return () => window.removeEventListener('resize', checkDevice)
+  }, [])
 
   const toggleSection = (sectionId: number) => {
     setExpandedSections(prev => {
@@ -12,6 +28,30 @@ const IRAct1989 = () => {
       }
       return [sectionId]
     })
+  }
+
+  const openPDF = (sectionNumber: string) => {
+    const pdfFileName = `IRACT1989SECTION${sectionNumber}.pdf`
+    const pdfPath = `/ir-act-1989/${pdfFileName}`
+    
+    setOpeningPDF(sectionNumber)
+    setTimeout(() => {
+      if (isMobile) {
+        window.location.href = pdfPath
+      } else {
+        window.open(pdfPath, '_blank')
+        setOpeningPDF(null)
+      }
+    }, 100)
+  }
+
+  const openContent = (sectionNumber: string) => {
+    setOpeningContent(sectionNumber)
+    
+    setTimeout(() => {
+      router.push(`/ir-act/content/${sectionNumber}`)
+      setOpeningContent(null)
+    }, 100)
   }
 
   const chapters = [
@@ -460,6 +500,44 @@ const IRAct1989 = () => {
                               <p className="text-gray-200 font-medium text-sm lg:text-base">
                                 {section.title}
                               </p>
+                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                {/* View Document Button */}
+                                <button
+                                  onClick={() => openPDF(section.number)}
+                                  disabled={openingPDF === section.number}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingPDF === section.number
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingPDF === section.number ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <FileText className="w-4 h-4" />
+                                  )}
+                                  <span>{openingPDF === section.number ? 'Opening...' : 'View Document'}</span>
+                                  {!isMobile && openingPDF !== section.number && <ExternalLink className="w-3 h-3" />}
+                                </button>
+                                
+                                {/* View Content Button */}
+                                <button
+                                  onClick={() => openContent(section.number)}
+                                  disabled={openingContent === section.number}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingContent === section.number
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingContent === section.number ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <BookOpenCheck className="w-4 h-4" />
+                                  )}
+                                  <span>{openingContent === section.number ? 'Opening...' : 'View Content'}</span>
+                                </button>
+                              </div>
                             </div>
                           </div>
                         ))}
