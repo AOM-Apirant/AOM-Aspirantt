@@ -1,11 +1,11 @@
 import React from 'react'
-import IRACT1989Section6 from '@/components/ir-act/ir-act-index-sections/IRACT1989Section6'
+import DARule3 from '@/components/da-rules/da-rules-index-pages/DARule3'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <IRACT1989Section6/>
+          <DARule3/>
     </div>
   )
 }
