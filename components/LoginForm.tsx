@@ -104,6 +104,8 @@ export default function LoginForm() {
               name="emailOrPhone"
               value={formData.emailOrPhone}
               onChange={handleInputChange}
+              spellCheck={false}
+              autoComplete="username"
               className={`w-full px-3 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ${
                 errors.emailOrPhone 
                   ? 'border-red-300 bg-red-50' 
@@ -139,6 +141,8 @@ export default function LoginForm() {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
+              spellCheck={false}
+              autoComplete="current-password"
               className={`w-full px-3 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ${
                 errors.password 
                   ? 'border-red-300 bg-red-50' 

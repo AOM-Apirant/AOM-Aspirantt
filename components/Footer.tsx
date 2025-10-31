@@ -1,38 +1,40 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { GraduationCap } from 'lucide-react';
 
-interface UserCountData {
-  totalUsers: number;
-  googleUsers: number;
-  credentialUsers: number;
+import DigitalCounter from './DigitalCounter';
+
+interface VisitorData {
+  totalVisitors: number;
   lastUpdated: string;
 }
 
 const Footer = () => {
-  const [userCount, setUserCount] = useState<UserCountData | null>(null);
+  const [visitorData, setVisitorData] = useState<VisitorData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchUserCount = async () => {
+    const fetchVisitorCount = async () => {
       try {
-        const response = await fetch('/api/users/count');
+        const response = await fetch('/api/visitors/count', {
+          credentials: 'include', // Important for cookies
+        });
         const data = await response.json();
         if (data.success) {
-          setUserCount(data.data);
+          setVisitorData(data.data);
         }
       } catch (error) {
-        console.error('Error fetching user count:', error);
+        console.error('Error fetching visitor count:', error);
       } finally {
         setIsLoading(false);
       }
     };
 
-    fetchUserCount();
+    // Fetch immediately on mount to track visit
+    fetchVisitorCount();
     
-    // Update every 30 seconds
-    const interval = setInterval(fetchUserCount, 30000);
+    // Update every 30 seconds to show real-time updates
+    const interval = setInterval(fetchVisitorCount, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -56,25 +58,29 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* User Count Section */}
+          {/* Visitor Count Section */}
           <div className="text-center md:text-left">
             {isLoading ? (
               <div className="flex items-center space-x-2">
                 <div className="animate-pulse bg-gray-600 h-4 w-16 rounded"></div>
                 <div className="animate-pulse bg-gray-600 h-4 w-12 rounded"></div>
               </div>
-            ) : userCount ? (
-              <div className="flex items-center justify-center text-center md:justify-start space-x-2 bg-gradient-to-r from-green-700 via-blue-700 to-purple-700 px-6 py-1.5 rounded-full shadow-lg border border-green-400/30">
-                  <div className="flex items-center justify-center space-x-1">
-                    <GraduationCap className="h-4 w-4 text-green-300 -mt-0.5" />
-                    <span className="text-gray-300 text-sm font-medium">{userCount.googleUsers}</span>
-                  </div>
-                  <div className="text-xs text-green-300">
-                    Aspirants
+            ) : visitorData ? (
+              <div className="flex items-center justify-center text-center md:justify-start bg-gradient-to-r from-green-700 via-blue-700 to-purple-700 px-4 sm:px-6 py-2.5 sm:py-2 rounded-lg shadow-lg border border-green-400/30 backdrop-blur-sm">
+                  <div className="flex items-center justify-center space-x-2 sm:space-x-3">
+                    <span className="lg:text-base text-sm text-green-300 font-semibold tracking-wide">
+                      Visitors:
+                    </span>
+                    <DigitalCounter 
+                      value={visitorData.totalVisitors} 
+                      duration={1500}
+                      digits={8}
+                      className=""
+                    />
                   </div>
                 </div>
             ) : (
-              <div className="text-xs text-gray-400">Loading Google users...</div>
+              <div className="text-xs text-gray-400">Loading visitors...</div>
             )}
           </div>
         </div>

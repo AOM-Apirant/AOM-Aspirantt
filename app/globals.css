@@ -668,3 +668,75 @@ body {
   border: 2px solid transparent;
   background-clip: padding-box;
 }
+
+/* Digital Counter Animation */
+@keyframes digital-glow {
+  from {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 136, 0.4));
+  }
+  to {
+    filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.8)) drop-shadow(0 0 25px rgba(0, 212, 255, 0.4));
+  }
+}
+
+.digital-counter-display {
+  font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.digital-digit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.2em;
+  min-height: 1.5em;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, #00ff88 0%, #00d4ff 50%, #6c5ce7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.4));
+  animation: digital-glow 2s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  
+  /* Individual box styling */
+  border: 2px solid rgba(0, 255, 136, 0.3);
+  border-radius: 8px;
+  padding: 0.2em 0.3em;
+  margin: 0 2px;
+  background-color: rgba(0, 255, 136, 0.05);
+  box-shadow: 
+    0 0 10px rgba(0, 255, 136, 0.2),
+    inset 0 0 10px rgba(0, 255, 136, 0.1);
+  transition: all 0.3s ease;
+}
+
+.digital-digit:hover {
+  border-color: rgba(0, 255, 136, 0.6);
+  background-color: rgba(0, 255, 136, 0.1);
+  box-shadow: 
+    0 0 20px rgba(0, 255, 136, 0.4),
+    inset 0 0 15px rgba(0, 255, 136, 0.15);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .digital-digit {
+    font-size: 1.25rem;
+    min-width: 1em;
+    min-height: 1.3em;
+    padding: 0.15em 0.25em;
+    margin: 0 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .digital-digit {
+    font-size: 1.75rem;
+  }
+}
