@@ -1,11 +1,12 @@
 import React from 'react'
-import DARule3 from '@/components/da-rules/da-rules-index-pages/DARule3'
+import DASchedule1 from '@/components/da-rules/da-rules-index-pages/DASchedule1'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <DARule3/>
+          <DASchedule1/>
+
     </div>
   )
 }
