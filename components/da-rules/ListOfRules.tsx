@@ -31,11 +31,31 @@ const ListOfRules = () => {
   }
 
   const openPDF = (ruleNumber: string) => {
-    const pdfFileName = `DARULE${ruleNumber.replace(/[^0-9]/g, '')}.pdf`
-    const pdfPath = `/da-rules/${pdfFileName}`
-    
     setOpeningPDF(ruleNumber)
+    
     setTimeout(() => {
+      let pdfFileName = ''
+      
+      // Handle Schedule numbers
+      if (ruleNumber.toLowerCase().includes('schedule')) {
+        const scheduleNum = ruleNumber.toLowerCase().replace('schedule', '').trim()
+        if (scheduleNum === 'i' || scheduleNum === '1') {
+          pdfFileName = 'DASection1.pdf'
+        } else if (scheduleNum === 'ii' || scheduleNum === '2') {
+          pdfFileName = 'DASection2.pdf'
+        } else if (scheduleNum === 'iii' || scheduleNum === '3') {
+          pdfFileName = 'DASection3.pdf'
+        } else {
+          pdfFileName = `DASection${scheduleNum}.pdf`
+        }
+      } else {
+        // Handle rules with -A suffix (they use the base rule PDF)
+        const ruleNum = ruleNumber.replace(/[^0-9]/g, '')
+        pdfFileName = `DARule${ruleNum}.pdf`
+      }
+      
+      const pdfPath = `/da-rules-1968/${pdfFileName}`
+      
       if (isMobile) {
         window.location.href = pdfPath
       } else {
@@ -49,7 +69,23 @@ const ListOfRules = () => {
     setOpeningContent(ruleNumber)
     
     setTimeout(() => {
-      router.push(`/da-rules/content/${ruleNumber.replace(/[^0-9]/g, '')}`)
+      // Handle Schedule numbers
+      if (ruleNumber.toLowerCase().includes('schedule')) {
+        const scheduleNum = ruleNumber.toLowerCase().replace('schedule', '').trim()
+        if (scheduleNum === 'i' || scheduleNum === '1') {
+          router.push(`/da-rules/content/schedule1`)
+        } else if (scheduleNum === 'ii' || scheduleNum === '2') {
+          router.push(`/da-rules/content/schedule2`)
+        } else if (scheduleNum === 'iii' || scheduleNum === '3') {
+          router.push(`/da-rules/content/schedule3`)
+        } else {
+          router.push(`/da-rules/content/${ruleNumber.replace(/[^0-9]/g, '')}`)
+        }
+      } else {
+        // Handle rules with -A suffix (e.g., 25-A, 26-A)
+        const normalizedRule = ruleNumber.replace(/\s+/g, '-').toLowerCase()
+        router.push(`/da-rules/content/${normalizedRule}`)
+      }
       setOpeningContent(null)
     }, 100)
   }

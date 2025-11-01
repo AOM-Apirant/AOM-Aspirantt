@@ -187,7 +187,7 @@ const RSDARules = () => {
                   Get the complete Railway Servants (Discipline and Appeal) Rules, 1968 document in PDF format for offline reference and detailed study.
                 </p>
                 <Link 
-                  href="/Railway Servants DA Rules 1968.pdf" 
+                  href="/da-rules-1968/DARULESACT1968.pdf" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 bg-white text-emerald-600 font-bold lg:text-lg text-base rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 group"
