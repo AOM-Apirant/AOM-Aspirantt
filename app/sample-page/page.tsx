@@ -1,11 +1,11 @@
 import React from 'react'
-import DASchedule1 from '@/components/da-rules/da-rules-index-pages/DASchedule1'
+import LeaveRules1949Index from '@/components/leave-rules-1949/LeaveRules1949Index'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <DASchedule1/>
+          <LeaveRules1949Index/>
 
     </div>
   )
