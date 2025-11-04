@@ -1,11 +1,12 @@
 import React from 'react'
-import LeaveRules1949Index from '@/components/leave-rules-1949/LeaveRules1949Index'
+import LeaveRules1949Rule550 from '@/components/leave-rules-1949/leave-rules-1949-index-topics/LeaveRules1949Rule550'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <LeaveRules1949Index/>
+          <LeaveRules1949Rule550/>
+
 
     </div>
   )

@@ -861,6 +861,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "DPCS", fullForm: "Distributed Power Control System",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "DPO", fullForm: "Divisional Personnel Officer",
       explanation: "Will be added later",
       reference: "--"
