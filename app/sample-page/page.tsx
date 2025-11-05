@@ -1,13 +1,11 @@
 import React from 'react'
-import LeaveRules1949Rule550 from '@/components/leave-rules-1949/leave-rules-1949-index-topics/LeaveRules1949Rule550'
+import ConductRules1966Rule1 from '@/components/conduct-rules-1966/conduct-rules-1966-index-topics/ConductRules1966Rule1'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <LeaveRules1949Rule550/>
-
-
+          <ConductRules1966Rule1/>
     </div>
   )
 }
