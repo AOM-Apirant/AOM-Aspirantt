@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { FileText, Scale, Eye, Shield, Users, BookOpen, Info, CheckCircle, Gavel, Search } from 'lucide-react'
+import { FileText, Scale, Shield, Users, BookOpen, Info, CheckCircle, Gavel, Search } from 'lucide-react'
 import Link from 'next/link'
 import RTIAct2005Index from '@/components/rti-act-2005/RTIAct2005Index'
 
@@ -10,25 +10,112 @@ const RTIAct2005 = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-teal-600 via-emerald-700 to-green-800 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <div className="p-3 bg-white/20 rounded-full backdrop-blur-sm">
-                <Eye className="w-8 h-8 text-white" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
+          <div className="max-w-6xl mx-auto text-center bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl sm:rounded-3xl shadow-2xl px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-10 md:py-12 lg:py-14 mb-6 relative overflow-hidden hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-500">
+            {/* Animated Background Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 via-emerald-500/10 to-green-500/10 opacity-50 animate-pulse"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+            
+            <div className="relative z-10">
+              {/* Title */}
+              <div className="mb-4 sm:mb-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-teal-200 via-emerald-100 to-green-200 bg-clip-text text-transparent mb-3 sm:mb-4 drop-shadow-lg leading-tight">
+                  The Right to Information Act, 2005
+                </h1>
+              </div>
+              
+              {/* Act Details */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-5 sm:mb-6">
+                <span className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full text-teal-100 text-xs sm:text-sm md:text-base font-semibold uppercase tracking-wider border border-white/30">
+                  Act No. 22 of 2005
+                </span>
+                <span className="hidden sm:inline text-white/60">|</span>
+                <span className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full text-teal-100 text-xs sm:text-sm md:text-base font-semibold uppercase tracking-wider border border-white/30">
+                  Enacted on 15<sup>th</sup> June, 2005
+                </span>
+              </div>
+              
+              {/* Decorative Line */}
+              <div className="mx-auto w-20 sm:w-24 md:w-32 h-1 bg-gradient-to-r from-teal-400 via-emerald-400 to-green-300 mb-6 sm:mb-8 rounded-full shadow-lg"></div>
+              
+              {/* Description */}
+              <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 leading-relaxed max-w-4xl mx-auto font-light drop-shadow-md px-2">
+                An Act to establish a practical framework for citizens of India to access information held by public authorities, thereby promoting transparency and accountability in governance. The Act provides for the appointment of Central and State Information Commissions and covers all matters related or incidental to the effective implementation of the right to information.
+              </p>
+              
+              {/* Feature Cards Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5 text-left max-w-4xl mx-auto mb-6 sm:mb-8">
+                {/* Preamble Card */}
+                <div className="group relative bg-gradient-to-br from-teal-500/15 to-emerald-500/15 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal-400/5 to-emerald-400/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                      <Scale className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-200 flex-shrink-0" />
+                      <span className="font-bold text-emerald-100 text-sm sm:text-base md:text-lg">Preamble:</span>
+                    </div>
+                    <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed">
+                      Recalling that the <span className="font-semibold text-white">Constitution of India</span> envisions a democratic Republic, this Act recognizes that an informed citizenry and transparency of information are cornerstones of democracy.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Purpose Card */}
+                <div className="group relative bg-gradient-to-br from-green-500/15 to-teal-500/15 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-400/5 to-teal-400/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-200 flex-shrink-0" />
+                      <span className="font-bold text-emerald-100 text-sm sm:text-base md:text-lg">Purpose:</span>
+                    </div>
+                    <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed">
+                      It seeks to empower citizens, prevent corruption, and hold governments and their instrumentalities accountable.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Balance of Interests Card */}
+                <div className="group relative bg-gradient-to-br from-cyan-500/15 to-teal-500/15 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] sm:col-span-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 to-teal-400/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                      <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-200 flex-shrink-0" />
+                      <span className="font-bold text-emerald-100 text-sm sm:text-base md:text-lg">Balance of Interests:</span>
+                    </div>
+                    <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed">
+                      While public access to information is a right, the Act recognizes that such access must be balanced with other public interests such as efficient government functioning, prudent use of resources, and confidentiality of sensitive data.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Harmonization Card */}
+                <div className="group relative bg-gradient-to-br from-emerald-500/15 to-green-500/15 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] sm:col-span-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/5 to-green-400/5 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                      <Users className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-200 flex-shrink-0" />
+                      <span className="font-bold text-emerald-100 text-sm sm:text-base md:text-lg">Harmonization:</span>
+                    </div>
+                    <p className="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed">
+                      The Act aims to harmonize conflicting interests, preserving the supremacy of democratic ideals, and ensures that the right to information advances transparency without compromising vital interests.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Enacted by Parliament Section */}
+              <div className="mt-6 sm:mt-8 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border border-white/20">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+                  <div className="flex items-center gap-2">
+                    <Gavel className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-200 flex-shrink-0" />
+                    <span className="font-bold text-white text-sm sm:text-base md:text-lg">Enacted by Parliament:</span>
+                  </div>
+                  <p className="text-emerald-100 italic text-xs sm:text-sm md:text-base lg:text-lg text-center sm:text-left leading-relaxed">
+                    In the fifty-sixth year of the Republic of India, the Right to Information Act, 2005 was brought into force to guarantee citizens the right to seek and receive information from the government authorities.
+                  </p>
+                </div>
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-              Right To Information Act
-            </h1>
-            <div className="text-2xl md:text-3xl font-light mb-8 text-teal-100">
-              2005
-            </div>
-            <p className="text-lg md:text-xl text-teal-100 max-w-4xl mx-auto leading-relaxed">
-              The Right to Information Act, 2005 is a landmark legislation enacted by the Parliament of India 
-              to provide for setting out the practical regime of right to information for citizens. It came into 
-              force on October 12, 2005, replacing the Freedom of Information Act, 2002, and aims to promote 
-              transparency and accountability in the working of every public authority.
-            </p>
           </div>
         </div>
         
@@ -41,59 +128,7 @@ const RTIAct2005 = () => {
 
       {/* Key Features Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mb-20">
-          {/* Transparency */}
-          <div className="group relative bg-gradient-to-br from-teal-50 via-white to-teal-100 rounded-3xl p-6 shadow-2xl hover:shadow-teal-300 transition-all duration-300 transform hover:-translate-y-3 border border-teal-300 overflow-hidden">
-            <div className="absolute -top-6 -right-6 lg:w-24 lg:h-24 w-16 h-16 bg-teal-200/30 rounded-full blur-2xl z-0"></div>
-            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 bg-teal-200 rounded-full mb-8 group-hover:bg-teal-300 transition-colors z-10 relative shadow-lg">
-              <Eye className="lg:w-10 lg:h-10 w-8 h-8 text-teal-700 drop-shadow-lg" />
-            </div>
-            <h3 className="lg:text-2xl text-xl font-bold text-teal-900 mb-4 z-10 relative">Transparency</h3>
-            <p className="lg:text-lg text-base text-teal-700 leading-relaxed z-10 relative">
-              Ensures transparency in the working of public authorities by providing access to information
-            </p>
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-teal-100 rounded-tr-3xl blur-lg"></div>
-          </div>
-
-          {/* Accountability */}
-          <div className="group relative bg-gradient-to-br from-emerald-50 via-white to-emerald-100 rounded-3xl p-6 shadow-2xl hover:shadow-emerald-300 transition-all duration-300 transform hover:-translate-y-3 border border-emerald-300 overflow-hidden">
-            <div className="absolute -top-6 -right-6 lg:w-24 lg:h-24 w-16 h-16 bg-emerald-200/30 rounded-full blur-2xl z-0"></div>
-            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 bg-emerald-200 rounded-full mb-8 group-hover:bg-emerald-300 transition-colors z-10 relative shadow-lg">
-              <Shield className="lg:w-10 lg:h-10 w-8 h-8 text-emerald-700 drop-shadow-lg" />
-            </div>
-            <h3 className="lg:text-2xl text-xl font-bold text-emerald-900 mb-4 z-10 relative">Accountability</h3>
-            <p className="lg:text-lg text-base text-emerald-700 leading-relaxed z-10 relative">
-              Promotes accountability of public authorities by enabling citizens to seek information
-            </p>
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-emerald-100 rounded-tr-3xl blur-lg"></div>
-          </div>
-
-          {/* Citizen Empowerment */}
-          <div className="group relative bg-gradient-to-br from-green-50 via-white to-green-100 rounded-3xl p-6 shadow-2xl hover:shadow-green-300 transition-all duration-300 transform hover:-translate-y-3 border border-green-300 overflow-hidden">
-            <div className="absolute -top-6 -right-6 lg:w-24 lg:h-24 w-16 h-16 bg-green-200/30 rounded-full blur-2xl z-0"></div>
-            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 bg-green-200 rounded-full mb-8 group-hover:bg-green-300 transition-colors z-10 relative shadow-lg">
-              <Users className="lg:w-10 lg:h-10 w-8 h-8 text-green-700 drop-shadow-lg" />
-            </div>
-            <h3 className="lg:text-2xl text-xl font-bold text-green-900 mb-4 z-10 relative">Citizen Empowerment</h3>
-            <p className="lg:text-lg text-base text-green-700 leading-relaxed z-10 relative">
-              Empowers citizens by providing them the right to access information from public authorities
-            </p>
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-green-100 rounded-tr-3xl blur-lg"></div>
-          </div>
-
-          {/* Legal Framework */}
-          <div className="group relative bg-gradient-to-br from-cyan-50 via-white to-cyan-100 rounded-3xl p-6 shadow-2xl hover:shadow-cyan-300 transition-all duration-300 transform hover:-translate-y-3 border border-cyan-300 overflow-hidden">
-            <div className="absolute -top-6 -right-6 lg:w-24 lg:h-24 w-16 h-16 bg-cyan-200/30 rounded-full blur-2xl z-0"></div>
-            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 bg-cyan-200 rounded-full mb-8 group-hover:bg-cyan-300 transition-colors z-10 relative shadow-lg">
-              <Gavel className="lg:w-10 lg:h-10 w-8 h-8 text-cyan-700 drop-shadow-lg" />
-            </div>
-            <h3 className="lg:text-2xl text-xl font-bold text-cyan-900 mb-4 z-10 relative">Legal Framework</h3>
-            <p className="lg:text-lg text-base text-cyan-700 leading-relaxed z-10 relative">
-              Establishes a comprehensive legal framework for information access and disclosure
-            </p>
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-cyan-100 rounded-tr-3xl blur-lg"></div>
-          </div>
-        </div>
+        
 
         {/* Overview Section */}
         <div className="bg-gradient-to-r from-teal-500 via-emerald-600 to-green-600 rounded-3xl shadow-2xl p-8 lg:p-12 mb-12 text-white border border-teal-200/20 hover:shadow-3xl transition-all duration-500 hover:scale-[1.01] relative overflow-hidden">

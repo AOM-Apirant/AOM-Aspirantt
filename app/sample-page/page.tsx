@@ -1,11 +1,11 @@
 import React from 'react'
-import ConductRules1966Rule1 from '@/components/conduct-rules-1966/conduct-rules-1966-index-topics/ConductRules1966Rule1'
+import RTIAct2005Section1 from '@/components/rti-act-2005/rti-act-2005-index-sections/RTIAct2005Section1'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <ConductRules1966Rule1/>
+          <RTIAct2005Section1/>
     </div>
   )
 }
