@@ -7,10 +7,7 @@ import {
   Users,
   Mail,
   Clock,
-  CheckCircle,
   XCircle,
-  MessageCircle,
-  UserCheck,
   RefreshCw,
   Eye,
   Filter,
@@ -146,8 +143,7 @@ export default function AdminDashboard() {
         <div className="mb-8">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h1 className="text-4xl font-bold text-white mb-2 flex items-center gap-3">
-                <UserCheck className="w-10 h-10 text-purple-400" />
+              <h1 className="lg:text-4xl text-2xl font-bold text-white mb-2 flex items-center gap-3">
                 Admin Dashboard
               </h1>
               <p className="text-purple-200">
@@ -156,26 +152,26 @@ export default function AdminDashboard() {
             </div>
             <button
               onClick={fetchData}
-              className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-purple-500/50"
+              className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white lg:text-base text-sm px-4 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-purple-500/50"
             >
-              <RefreshCw className="w-5 h-5" />
+              <RefreshCw className="lg:w-5 lg:h-5 w-4 h-4" />
               Refresh
             </button>
           </div>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 shadow-xl">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-blue-100 text-sm font-medium">
                     Total Users
                   </p>
-                  <p className="text-4xl font-bold text-white mt-2">
+                  <p className="lg:text-4xl text-2xl font-bold text-white mt-2">
                     {stats.totalUsers}
                   </p>
                 </div>
-                <Users className="w-12 h-12 text-blue-200" />
+                <Users className="lg:w-12 lg:h-12 w-8 h-8 text-blue-200" />
               </div>
             </div>
 
@@ -185,46 +181,18 @@ export default function AdminDashboard() {
                   <p className="text-purple-100 text-sm font-medium">
                     Total Messages
                   </p>
-                  <p className="text-4xl font-bold text-white mt-2">
+                  <p className="lg:text-4xl text-2xl font-bold text-white mt-2">
                     {stats.totalContacts}
                   </p>
                 </div>
-                <Mail className="w-12 h-12 text-purple-200" />
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-6 shadow-xl">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-orange-100 text-sm font-medium">
-                    Unread Messages
-                  </p>
-                  <p className="text-4xl font-bold text-white mt-2">
-                    {stats.unreadContacts}
-                  </p>
-                </div>
-                <MessageCircle className="w-12 h-12 text-orange-200" />
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-6 shadow-xl">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-green-100 text-sm font-medium">
-                    Replied Messages
-                  </p>
-                  <p className="text-4xl font-bold text-white mt-2">
-                    {stats.repliedContacts}
-                  </p>
-                </div>
-                <CheckCircle className="w-12 h-12 text-green-200" />
+                <Mail className="lg:w-12 lg:h-12 w-8 h-8 text-purple-200" />
               </div>
             </div>
           </div>
         </div>
 
         {/* Tabs */}
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 shadow-2xl">
+        <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl lg:p-6 p-3 shadow-2xl">
           <div className="flex gap-4 mb-6 border-b border-slate-700 pb-4">
             <button
               onClick={() => setActiveTab("users")}
@@ -234,7 +202,6 @@ export default function AdminDashboard() {
                   : "bg-slate-700 text-slate-300 hover:bg-slate-600"
               }`}
             >
-              <Users className="w-5 h-5" />
               Registered Users
             </button>
             <button
@@ -245,7 +212,6 @@ export default function AdminDashboard() {
                   : "bg-slate-700 text-slate-300 hover:bg-slate-600"
               }`}
             >
-              <Mail className="w-5 h-5" />
               Contact Messages
               {stats.unreadContacts > 0 && (
                 <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full">
@@ -273,7 +239,7 @@ export default function AdminDashboard() {
                 <select
                   value={statusFilter}
                   onChange={(e) => setStatusFilter(e.target.value)}
-                  className="pl-10 pr-8 py-3 bg-slate-700 text-white rounded-lg border border-slate-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none"
+                  className="pl-6 pr-8 py-3 bg-slate-700 text-white rounded-lg border border-slate-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none"
                 >
                   <option value="all">All Status</option>
                   <option value="unread">Unread</option>
@@ -318,9 +284,7 @@ export default function AdminDashboard() {
                     >
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            {user.name.charAt(0).toUpperCase()}
-                          </div>
+                          
                           <div>
                             <p className="text-white font-medium">
                               {user.name}
