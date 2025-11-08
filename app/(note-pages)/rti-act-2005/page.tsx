@@ -17,7 +17,7 @@ const RTIAct2005 = () => {
                 <Scale className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+            <h1 className="lg:text-4xl text-3xl font-bold mb-6 tracking-tight">
               Right to Information Act
             </h1>
             <div className="text-2xl md:text-3xl font-light mb-8 text-blue-100">
@@ -41,10 +41,10 @@ const RTIAct2005 = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mb-20">
           {/* Transparency */}
-          <div className="group relative bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-3xl p-6 shadow-2xl hover:shadow-blue-300 transition-all duration-300 transform hover:-translate-y-3 border border-blue-300 overflow-hidden">
+          <div className="group relative bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-xl p-6 shadow-xl hover:shadow-blue-300 transition-all duration-300 transform hover:-translate-y-3 border border-blue-300 overflow-hidden">
             <div className="absolute -top-6 -right-6 lg:w-24 lg:h-24 w-16 h-16 bg-blue-200/30 rounded-full blur-2xl z-0"></div>
-            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 bg-blue-200 rounded-full mb-8 group-hover:bg-blue-300 transition-colors z-10 relative shadow-lg">
-              <BookOpen className="lg:w-10 lg:h-10 w-8 h-8 text-blue-700 drop-shadow-lg" />
+            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-12 h-12 bg-blue-200 rounded-full mb-8 group-hover:bg-blue-300 transition-colors z-10 relative shadow-lg">
+              <BookOpen className="lg:w-10 lg:h-10 w-6 h-6 text-blue-700 drop-shadow-lg" />
             </div>
             <h3 className="lg:text-2xl text-xl font-bold text-blue-900 mb-4 z-10 relative">Transparency</h3>
             <p className="lg:text-lg text-base text-blue-700 leading-relaxed z-10 relative">
@@ -54,10 +54,10 @@ const RTIAct2005 = () => {
           </div>
 
           {/* Accountability */}
-          <div className="group relative bg-gradient-to-br from-green-50 via-white to-green-100 rounded-3xl p-6 shadow-2xl hover:shadow-green-300 transition-all duration-300 transform hover:-translate-y-3 border border-green-300 overflow-hidden">
+          <div className="group relative bg-gradient-to-br from-green-50 via-white to-green-100 rounded-xl p-6 shadow-xl hover:shadow-green-300 transition-all duration-300 transform hover:-translate-y-3 border border-green-300 overflow-hidden">
             <div className="absolute -top-6 -right-6 lg:w-24 lg:h-24 w-16 h-16 bg-green-200/30 rounded-full blur-2xl z-0"></div>
-            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 bg-green-200 rounded-full mb-8 group-hover:bg-green-300 transition-colors z-10 relative shadow-lg">
-              <Shield className="lg:w-10 lg:h-10 w-8 h-8 text-green-700 drop-shadow-lg" />
+            <div className="flex items-center justify-center lg:w-20 lg:h-20 w-12 h-12 bg-green-200 rounded-full mb-8 group-hover:bg-green-300 transition-colors z-10 relative shadow-lg">
+              <Shield className="lg:w-10 lg:h-10 w-6 h-6 text-green-700 drop-shadow-lg" />
             </div>
             <h3 className="lg:text-2xl text-xl font-bold text-green-900 mb-4 z-10 relative">Accountability</h3>
             <p className="lg:text-lg text-base text-green-700 leading-relaxed z-10 relative">

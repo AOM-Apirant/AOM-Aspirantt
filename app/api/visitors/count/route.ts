@@ -2,50 +2,81 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/lib/db";
 import Visitor from "@/models/Visitor";
 
+type VisitorSnapshot = {
+  totalVisitors: number;
+  lastUpdated: Date;
+};
+
+const fallbackVisitorState: VisitorSnapshot = {
+  totalVisitors: 0,
+  lastUpdated: new Date(),
+};
+
+function createResponse(
+  data: VisitorSnapshot,
+  shouldIncrement: boolean,
+  request: NextRequest,
+  extras?: Record<string, unknown>
+) {
+  const response = NextResponse.json({
+    success: true,
+    data: {
+      totalVisitors: data.totalVisitors,
+      lastUpdated: data.lastUpdated.toISOString(),
+      ...extras,
+    },
+  });
+
+  if (shouldIncrement) {
+    response.cookies.set("visitor_session_id", Date.now().toString(), {
+      path: "/",
+      sameSite: "lax",
+    });
+  }
+
+  return response;
+}
+
 export async function GET(request: NextRequest) {
   try {
-    await connectDB();
-
-    // Check if visitor has been counted in this session (using cookie)
     const sessionId = request.cookies.get("visitor_session_id");
-    
+    const shouldIncrement = !sessionId;
+    let isDbAvailable = true;
+
+    try {
+      await connectDB();
+    } catch (dbError) {
+      console.error("Visitor API: Database connection failed, using fallback.", dbError);
+      isDbAvailable = false;
+    }
+
+    if (!isDbAvailable) {
+      if (shouldIncrement) {
+        fallbackVisitorState.totalVisitors += 1;
+        fallbackVisitorState.lastUpdated = new Date();
+      }
+
+      return createResponse(fallbackVisitorState, shouldIncrement, request, {
+        source: "memory",
+        warning: "Database connection unavailable; using in-memory counter.",
+      });
+    }
+
     // Get or create visitor document (single document to track total)
     let visitor = await Visitor.findOne();
-    
+
     if (!visitor) {
       visitor = new Visitor({ totalVisitors: 0 });
       await visitor.save();
     }
 
-    // If this is a new session (no session cookie), increment count
-    const shouldIncrement = !sessionId;
-    
     if (shouldIncrement) {
-      // Increment visitor count for new visitor or new session
       visitor.totalVisitors += 1;
       visitor.lastUpdated = new Date();
       await visitor.save();
     }
 
-    // Create response with updated count
-    const response = NextResponse.json({
-      success: true,
-      data: {
-        totalVisitors: visitor.totalVisitors,
-        lastUpdated: visitor.lastUpdated.toISOString(),
-      },
-    });
-
-    // Set session cookie if this is a new visit (expires when browser closes)
-    if (shouldIncrement) {
-      response.cookies.set("visitor_session_id", Date.now().toString(), {
-        path: "/",
-        sameSite: "lax",
-        // No maxAge means session cookie - expires when browser closes
-      });
-    }
-
-    return response;
+    return createResponse(visitor, shouldIncrement, request);
   } catch (error) {
     console.error("Error tracking visitor:", error);
     return NextResponse.json(

@@ -90,7 +90,7 @@ export default function Navbar() {
     { name: 'Disaster Management Act - 2005', href: '/disaster-act', icon: '🚨' },
     { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
     { name: 'Factories Act - 1948', href: '/factories-act', icon: '🏭' },
-    { name: 'G&SR', href: '/gsr', icon: '📜' },
+    { name: 'G&SR', href: '/g&sr', icon: '📜' },
     { name: 'Indian Railway Act - 1989', href: '/ir-act', icon: '🚂' },
     { name: 'Industrial Disputes Act - 1947', href: '/disputes-act', icon: '⚖️' },
     { name: 'Industrial Relations Code - 2020', href: '/industrial-code', icon: '🏭' },
