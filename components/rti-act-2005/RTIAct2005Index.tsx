@@ -30,10 +30,28 @@ const RTIAct2005Index = () => {
     })
   }
 
+  const normalizeSectionNumber = (sectionNumber: string) => {
+    if (/^\d+$/.test(sectionNumber)) {
+      return sectionNumber
+    }
+
+    const digits = sectionNumber.match(/\d+/g)
+    if (digits?.length) {
+      return digits.join('')
+    }
+
+    return null
+  }
+
   const openPDF = (sectionNumber: string) => {
-    const pdfFileName = `RTIACT2005SECTION${sectionNumber}.pdf`
+    const normalized = normalizeSectionNumber(sectionNumber)
+    if (!normalized) {
+      return
+    }
+
+    const pdfFileName = `RTIACT2005SECTION${normalized}.pdf`
     const pdfPath = `/rti-act-2005/${pdfFileName}`
-    
+
     setOpeningPDF(sectionNumber)
     setTimeout(() => {
       if (isMobile) {
@@ -154,35 +172,35 @@ const RTIAct2005Index = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-900 via-emerald-900 to-green-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-teal-400/20 to-emerald-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-green-400/20 to-teal-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-teal-400/10 to-green-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
       <div className="relative z-10 py-4 lg:px-4 px-2">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-8">
-            <div className="inline-block p-2 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 rounded-full mb-6 backdrop-blur-sm">
-              <div className="bg-gradient-to-r from-teal-500 to-emerald-600 lg:p-3 p-2 rounded-full">
+            <div className="inline-block p-2 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-blue-500 to-indigo-600 lg:p-3 p-2 rounded-full">
                 <Eye className="lg:w-8 lg:h-8 w-6 h-6 text-white" />
               </div>
             </div>
-            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-teal-100 to-emerald-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in">
               THE RIGHT TO INFORMATION ACT, 2005
             </h1>
-            <h2 className="lg:text-4xl text-xl font-bold text-green-300 mb-4">ARRANGEMENT OF SECTIONS</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-emerald-600 mx-auto mb-6 rounded-full"></div>
+            <h2 className="lg:text-4xl text-xl font-bold text-purple-300 mb-4">ARRANGEMENT OF SECTIONS</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
               Complete Chapter Index for Right To Information Act, 2005 - Comprehensive legal framework covering all 6 chapters 
               and 31 sections with detailed provisions, regulations, and procedures for transparency and accountability in public authorities.
             </p>
-            <div className="mt-6 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 rounded-lg p-4 backdrop-blur-sm border border-teal-400/30">
-              <p className="text-teal-200 font-medium">Right To Information Act, 2005 - Legal Reference Document</p>
-              <p className="text-teal-300/80 text-sm mt-1">Last Updated: 11-3-2022</p>
+            <div className="mt-6 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-lg p-4 backdrop-blur-sm border border-blue-400/30">
+              <p className="text-blue-200 font-medium">Right To Information Act, 2005 - Legal Reference Document</p>
+              <p className="text-blue-300/80 text-sm mt-1">Last Updated: 11-3-2022</p>
             </div>
           </div>
 
@@ -241,59 +259,73 @@ const RTIAct2005Index = () => {
                   {expandedSections.includes(chapter.id) && (
                     <div className="py-4 lg:px-4 px-2">
                       <div className="grid gap-3">
-                        {chapter.sections.map((section, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
-                          >
-                            <div className="flex-shrink-0 w-12 h-8 bg-gradient-to-r from-teal-500 to-emerald-600 text-white rounded-lg flex items-center justify-center text-sm font-semibold">
-                              {section.number}
-                            </div>
-                            <div className="flex-1">
-                              <p className="text-gray-200 font-medium text-sm lg:text-base">
-                                {section.number.includes('Schedule') ? section.title : `Section ${section.number}: ${section.title}`}
-                              </p>
-                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
-                                {/* View Document Button */}
-                                <button
-                                  onClick={() => openPDF(section.number.replace(/[^0-9]/g, '') || section.number.toLowerCase().replace('schedule', '').replace('-', '').replace('i', '1').replace('ii', '2'))}
-                                  disabled={openingPDF === section.number}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
-                                    openingPDF === section.number
-                                      ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
-                                  }`}
-                                >
-                                  {openingPDF === section.number ? (
-                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : (
-                                    <FileText className="w-4 h-4" />
-                                  )}
-                                  <span>{openingPDF === section.number ? 'Opening...' : 'View Document'}</span>
-                                  {!isMobile && openingPDF !== section.number && <ExternalLink className="w-3 h-3" />}
-                                </button>
-                                
-                                {/* View Content Button */}
-                                <button
-                                  onClick={() => openContent(section.number.includes('Schedule') ? section.number.toLowerCase().replace(' ', '-') : section.number)}
-                                  disabled={openingContent === section.number}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
-                                    openingContent === section.number
-                                      ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 hover:shadow-lg hover:scale-105'
-                                  }`}
-                                >
-                                  {openingContent === section.number ? (
-                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : (
-                                    <BookOpenCheck className="w-4 h-4" />
-                                  )}
-                                  <span>{openingContent === section.number ? 'Opening...' : 'View Content'}</span>
-                                </button>
+                        {chapter.sections.map((section, index) => {
+                          const pdfSection = normalizeSectionNumber(section.number)
+                          const isPdfLoading = openingPDF === section.number
+                          const isPdfAvailable = Boolean(pdfSection)
+
+                          return (
+                            <div
+                              key={index}
+                              className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            >
+                              <div className="flex-shrink-0 w-12 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg flex items-center justify-center text-sm font-semibold">
+                                {section.number}
+                              </div>
+                              <div className="flex-1">
+                                <p className="text-gray-200 font-medium text-sm lg:text-base">
+                                  {section.number.includes('Schedule') ? section.title : `Section ${section.number}: ${section.title}`}
+                                </p>
+                                <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                  {/* View Document Button */}
+                                  <button
+                                    onClick={() => isPdfAvailable && openPDF(section.number)}
+                                    disabled={!isPdfAvailable || isPdfLoading}
+                                    className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                      !isPdfAvailable
+                                        ? 'bg-gray-500 cursor-not-allowed opacity-60'
+                                        : isPdfLoading
+                                          ? 'bg-gray-500 cursor-not-allowed'
+                                          : 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:scale-105'
+                                    }`}
+                                  >
+                                    {isPdfLoading ? (
+                                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                    ) : (
+                                      <FileText className="w-4 h-4" />
+                                    )}
+                                    <span>
+                                      {!isPdfAvailable
+                                        ? 'Document Unavailable'
+                                        : isPdfLoading
+                                          ? 'Opening...'
+                                          : 'View Document'}
+                                    </span>
+                                    {!isMobile && isPdfAvailable && !isPdfLoading && <ExternalLink className="w-3 h-3" />}
+                                  </button>
+                                  
+                                  {/* View Content Button */}
+                                  <button
+                                    onClick={() => openContent(section.number.includes('Schedule') ? section.number.toLowerCase().replace(' ', '-') : section.number)}
+                                    disabled={openingContent === section.number}
+                                    className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                      openingContent === section.number
+                                        ? 'bg-gray-500 cursor-not-allowed'
+                                        : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                    }`}
+                                  >
+                                    {openingContent === section.number ? (
+                                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                    ) : (
+                                      <BookOpenCheck className="w-4 h-4" />
+                                    )}
+                                    <span>{openingContent === section.number ? 'Opening...' : 'View Content'}</span>
+                                  </button>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        ))}
+                          )
+                        })}
                       </div>
                     </div>
                   )}
@@ -305,7 +337,7 @@ const RTIAct2005Index = () => {
             <div className="mt-6 text-center">
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
                 <div className="flex flex-col lg:flex-row gap-4 items-center justify-center space-x-3 mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-400" />
+                  <CheckCircle className="w-8 h-8 text-blue-300" />
                   <h3 className="text-2xl font-bold text-white">
                     Complete Right To Information Act, 2005 Reference
                   </h3>
