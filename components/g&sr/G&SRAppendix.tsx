@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { FileText, AlertTriangle, CheckCircle, BookOpen, Heart } from 'lucide-react'
+import { FileText, AlertTriangle, CheckCircle, Heart } from 'lucide-react'
 import { AlertCircle, Gavel } from 'lucide-react'
 import { FileSpreadsheet } from 'lucide-react'
 
@@ -121,171 +121,327 @@ const GSRAppendix = () => {
     },
     {
       id: 6,
-      title: "SPECIMEN FORMS",
+      title: "APPENDIX - VI",
       icon: <FileSpreadsheet className="w-6 h-6" />,
       color: "from-teal-500 to-teal-600",
-      description: "Standard forms and templates for accident reporting and documentation",
-      pageRange: "177 to 208",
+      description: "BRAKE POWER ON TRAINS",
+      pageRange: "409 to 417",
       content: [
-        {number: "1", title: "Specimen Form Acc 1 (i)", page: "177"},
-        {number: "2", title: "Specimen Form Acc 1 (ii)", page: "178"},
-        {number: "3", title: "Specimen Form Acc 1(iii)", page: "179"},
-        {number: "4", title: "Specimen Form Acc.2", page: "180"},
-        {number: "5", title: "Specimen form ACC.3", page: "181"},
-        {number: "6", title: "Specimen Form ACC.4", page: "183"},
-        {number: "7", title: "Specimen Form ACC.5", page: "185"},
-        {number: "8", title: "Specimen Form ACC.6", page: "186"},
-        {number: "9", title: "Specimen form Acc. 6-A", page: "188"},
-        {number: "10", title: "Specimen Form ACC, 6-B", page: "188"},
-        {number: "11", title: "Specimen Form Acc. 6-C", page: "189"},
-        {number: "12", title: "Specimen Form ACC 6-D", page: "190"},
-        {number: "13", title: "Specimen Form Acc. 7", page: "190"},
-        {number: "14", title: "Specimen Form Acc. 8", page: "191"},
-        {number: "15", title: "Form Acc.9", page: "192"},
-        {number: "16", title: "Form Acc. 9-A", page: "193"},
-        {number: "17", title: "Form Acc 9-B", page: "194"},
-        {number: "18", title: "Form Acc. 9-C", page: "195"},
-        {number: "19", title: "Form Acc. 9-D", page: "196"},
-        {number: "20", title: "Form Acc. 9-E", page: "197"},
-        {number: "21", title: "Form Acc. 9-F", page: "198"},
-        {number: "22", title: "Form Acc. 9-G", page: "199"},
-        {number: "23", title: "Form Acc. 9-H", page: "200"},
-        {number: "24", title: "Form Acc. 9-I", page: "201"},
-        {number: "25", title: "Form Acc. 9-J", page: "202"},
-        {number: "26", title: "Form Acc. 9-K", page: "203"},
-        {number: "27", title: "Form Acc. 9-L", page: "204"},
-        {number: "28", title: "Form Acc. 9-M", page: "205"},
-        {number: "29", title: "Form Acc. 9-N", page: "205"},
-        {number: "30", title: "Form Acc. 9-O", page: "205"},
-        {number: "31", title: "Form Acc.10", page: "206"},
-        {number: "32", title: "Form Acc.11", page: "207"},
-        {number: "32", title: "Form Acc.12", page: "208"},
-        {number: "32", title: "Form Acc.13", page: "208"},
+        {number: "1", title: "Replacement page no. 409 to G&SR including and upto AS no. 12", page: "409"},
+        {number: "2", title: "Replacement page no. 410 to G&SR including and upto AS no. 12", page: "410"},
+        {number: "3", title: "Replacement page no. 411 to G&SR including and upto AS no. 12", page: "411"},
+        {number: "4", title: "Replacement page no. 412 to G&SR including and upto AS no. 12", page: "412"},
+        {number: "5", title: "Replacement page no. 413 to G&SR including and upto AS no. 12", page: "413"},
+        {number: "6", title: "Replacement page no. 414 to G&SR including and upto AS no. 12", page: "414"},
+        {number: "7", title: "Replacement page no. 415 to G&SR including and upto AS no. 12", page: "415"},
+        {number: "8", title: "Replacement page no. 416 to G&SR including and upto AS no. 12", page: "416"},
+        {number: "9", title: "Replacement page no. 417 to G&SR including and upto AS no. 12", page: "417"},
       ]
-    }
+    },
+    {
+      id: 7,
+      title: "APPENDIX - VII",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "SPECIAL INSTRUCTIONS FOR THE USE OF DETONATING (FOG) SIGNALS AT STATIONS TO INDICATE TO THE LOCO PILOTS OF APPROACHING TRAINS THE LOCATION OF A SIGNAL",
+      pageRange: "418 to 422",
+      content: [
+        {number: "1", title: "Station Detonators Register", page: "418"},
+        {number: "2", title: "PART-I", page: "419"},
+        {number: "3", title: "PART-II", page: "420"},
+        {number: "4", title: "PART-III", page: "421"},
+        {number: "5", title: "PART-IV", page: "422"},
+      ]
+    },
+    {
+      id: 8,
+      title: "APPENDIX - VIII",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "MARSHALLING",
+      pageRange: "423 to 432",
+      content: [
+        {
+          number: "1",
+          title: "Precautions to be observed during marshalling of carriages/wagons containing explosives",
+          page: "423"
+        },
+        {
+          number: "2",
+          title: "Precautions to be observed during marshalling of wagons containing petroleum and other inflammable liquids",
+          page: "424"
+        },
+        { number: "3", title: "Guard or dummy wagons", page: "425" },
+        { number: "4", title: "For marshalling of wagons containing gases", page: "426" },
+        { number: "5", title: "Definition of Coaching Stock", page: "426" },
+        {number: "6", title: "Definition of Goods Stock", page: "426"},
+        {number: "7", title: "Goods vehicles not to be used for carrying passengers", page: "426"},
+        {number: "8", title: "Marshalling of passengers/mixed trains", page: "426"},
+        { number: "9", title: "Marshalling of goods trains", page: "427" },
+        { number: "10", title: "Railway Officers saloons", page: "430" },
+        {
+          number: "11",
+          title: "Marshalling of trains, attaching of SLR/LR and anti-telescopic/steel bodied coaches on passenger carrying trains",
+          page: "431"
+        },
+      ]
+    },
+    {
+      id: 9,
+      title: "APPENDIX - IX",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "Rules Applicable to Different Categories",
+      pageRange: "433 to 441",
+      content: [
+        {number: "1", title: "PART-I", page: "433"},
+        {number: "2", title: "PART-II", page: "434"},
+        {number: "3", title: "PART-III", page: "435"},
+        {number: "4", title: "PART-IV", page: "436"},
+        {number: "5", title: "PART-V", page: "437"},
+        {number: "6", title: "PART-VI", page: "438"},
+        {number: "7", title: "PART-VII", page: "439"},
+        {number: "8", title: "PART-VIII", page: "440"},
+      ]
+    },
+    {
+      id: 10,
+      title: "APPENDIX - X",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "AUTOMATIC DANGER LEVEL INDICATORS",
+      pageRange: "442 to 444",
+      content: [
+        {number: "1", title: "Automatic Danger Level Indicators at vulnerable locations", page: "442"},
+      ]
+    },
+    {
+      id: 11,
+      title: "APPENDIX - XI",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "INTERLOCKING",
+      pageRange: "445 to 456",
+      content: [
+        {number: "1", title: "Interlocking", page: "445"},
+        {number: "2", title: "PANEL INTERLOCKING", page: "447"},
+        {number: "3", title: "SIEMEN’S PANEL", page: "447"},
+        {number: "4", title: "PODANUR WORKSHOP PANEL", page: "450"},
+        {number: "5", title: "Common features in the operation of Siemens’ and Podanur workshop panels", page: "452"},
+        {number: "6", title: "‘Dos’ for Station Masters", page: "454"},
+        {number: "7", title: "‘Don’ts for Station Masters", page: "455"},
+      ]
+    },
+    {
+      id: 12,
+      title: "APPENDIX - XII",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "SHUNTING",
+      pageRange: "457 to 458",
+      content: [
+        {number: "1", title: "General", page: "457"},
+        {number: "2", title: "TO SHUNT PAST LSS", page: "457"},
+        {number: "3", title: "TO SHUNT INTO REAR BLOCK SECTION", page: "458"},
+      ]
+    },
+    {
+      id: 13,
+      title: "APPENDIX - XIII",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "S&T maintenance works – Testing of points, signals and other equipment – Disconnection Notice",
+      pageRange: "459 to 464D",
+      content: [
+        {number: "1", title: "Disconnection and testing of S&T gears", page: "459"},
+        {number: "2", title: "GROUP (A)", page: "460"},
+        {number: "3", title: "GROUP (B)", page: "461"},
+        {number: "4", title: "GROUP (C)", page: "461"},
+        {number: "5", title: "DOUBLE KEY LOCK ARRANGEMENT", page: "463"},
+        {number: "6", title: "OPENING OF RELAY ROOM", page: "464"},
+        {number: "7", title: "RELAY ROOM REGISTER", page: "464A"},
+        {number: "8", title: "DUTIES OF S&T STAFF", page: "464A"},
+        {number: "9", title: "DUTIES OF OPERATING STAFF", page: "464B"},
+        {number: "10", title: "REPORTING AND RECORDING OF OPENING OF RELAY ROOMS", page: "464B"},
+      ]
+    },
+    {
+      id: 14,
+      title: "APPENDIX - XIV",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "STATION WORKING RULES",
+      pageRange: "465 to 472",
+      content: [
+        {number: "1", title: "Station Working Rule diagram", page: "465"},
+        {number: "2", title: "Description of station", page: "466"},
+        {number: "3", title: "System and means of working", page: "467"},
+        {number: "4", title: "System of signalling and interlocking", page: "467"},
+        {number: "5", title: "Telecommunication", page: "467"},
+        {number: "6", title: "System of train working", page: "468"},
+        {number: "7", title: "Blocking of lines", page: "470"},
+        {number: "8", title: "Shunting", page: "470"},
+        {number: "9", title: "Abnormal conditions", page: "470"},
+        {number: "10", title: "Visibility Test Object", page: "471"},
+        {number: "11", title: "Essential equipment at the station", page: "471"},
+        {number: "12", title: "Fog signalmen nominated to be called in case of fog", page: "471"},
+      ]
+    },
+    {
+      id: 15,
+      title: "APPENDIX - XV",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "Operating Forms",
+      pageRange: "473 to 475",
+      content: [
+        {number: "1", title: "Operating Forms", page: "473"},
+      ]
+    },
+    {
+      id: 16,
+      title: "APPENDIX - XVI",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "EMUs/MEMUs",
+      pageRange: "476 to 482",
+      content: [
+        {number: "1", title: "Bell Signals", page: "476"},
+        {number: "2", title: "Maximum number of persons permitted in the cab", page: "478"},
+        {number: "3", title: "Guards applying the brake", page: "478"},
+        {number: "4", title: "Changing destination indicators:", page: "478"},
+        {number: "5", title: "Testing of brake power", page: "478"},
+        {number: "6", title: "Stabling - following precautions must be taken before stabling", page: "479"},
+        {number: "7", title: "Power going off the line - application of hand brakes", page: "480"},
+        {
+          number: "8",
+          title: "Protection of EMU/MEMUs stopped between block stations/Automatic signaling territory",
+          page: "480"
+        },
+        {number: "9", title: "Fire", page: "480"},
+        {number: "10", title: "Leading cab of EMU/MEMU becoming defective", page: "480"},
+        {number: "11", title: "Annexure–I", page: "481"},
+        {number: "12", title: "Annexure - II", page: "482"},
+      ]
+    },
+    {
+      id: 17,
+      title: "APPENDIX - XVII",
+      icon: <FileSpreadsheet className="w-6 h-6" />,
+      color: "from-teal-500 to-teal-600",
+      description: "SIDINGS",
+      pageRange: "483 to 492",
+      content: [
+        {number: "1", title: "Working of trains into and out of Sidings", page: "483"},
+        {number: "2", title: "ONE PILOT ONLY SYSTEM", page: "484"},
+        {number: "3", title: "MULTIPLE PILOTS SYSTEM", page: "486"},
+        {number: "4", title: "Working of trains into Sidings having operating in-charge", page: "489"},
+        {number: "5", title: "Working of Pilots where the Siding line extends to another Siding or diverges to various Sidings", page: "490"},
+      ]
+    },
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-cyan-400/20 to-blue-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-teal-400/10 to-emerald-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
+        <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+          Comprehensive collection of appendices providing detailed supplementary instructions,
+          special procedures, and category-specific rules that complement the main GSR chapters.
+        </p>
       </div>
 
-      <div className="relative z-10 py-12 px-4">
-        <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
-          <div className="text-center mb-16">
-            <div className="inline-block p-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full mb-6 backdrop-blur-sm">
-              <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-full">
-                <BookOpen className="w-8 h-8 text-white" />
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid gap-6 md:gap-8">
+          {appendices.map((appendix) => (
+            <div
+              key={appendix.id}
+              className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
+            >
+              {/* Appendix Header */}
+              <div className={`bg-gradient-to-r ${appendix.color} text-white p-6`}>
+                <div className="flex items-center space-x-4">
+                  <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
+                    {appendix.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="text-xl sm:text-2xl font-bold">
+                      Appendix {appendix.id}
+                    </h2>
+                    <p className="text-white/90 text-sm sm:text-base mt-1">
+                      {appendix.title}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
-              GSR APPENDIX
-            </h1>
-            <h2 className="lg:text-4xl text-2xl font-bold text-cyan-300 mb-4">Supplementary Instructions & Special Procedures</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
-            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive collection of appendices providing detailed supplementary instructions, 
-              special procedures, and category-specific rules that complement the main GSR chapters.
-            </p>
-          </div>
 
-          {/* Content */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid gap-6 md:gap-8">
-              {appendices.map((appendix) => (
-                <div
-                  key={appendix.id}
-                  className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
-                >
-                  {/* Appendix Header */}
-                  <div className={`bg-gradient-to-r ${appendix.color} text-white p-6`}>
-                    <div className="flex items-center space-x-4">
-                      <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
-                        {appendix.icon}
-                      </div>
-                      <div className="flex-1">
-                        <h2 className="text-xl sm:text-2xl font-bold">
-                          Appendix {appendix.id}
-                        </h2>
-                        <p className="text-white/90 text-sm sm:text-base mt-1">
-                          {appendix.title}
-                        </p>
-                      </div>
+              {/* Appendix Content */}
+              <div className="p-6">
+                <div className="mb-4">
+                  <p className="text-gray-200 text-base leading-relaxed">
+                    {appendix.description}
+                  </p>
+                </div>
+
+                {/* Sub Categories for Appendix IX */}
+                {appendix.content && (
+                  <div className="mt-6">
+                    <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
+                      <span className="w-3 h-3 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full mr-3 animate-pulse"></span>
+                      Staff Categories:
+                    </h4>
+                    <div className="grid gap-3">
+                      {appendix.content.map((category, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 border border-white/10"
+                        >
+                          <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-500 to-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
+                            {index + 1}
+                          </div>
+                          <div className="flex-1">
+                            <p className="text-gray-200 font-medium">
+                              {category.title}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
+                )}
 
-                  {/* Appendix Content */}
-                  <div className="p-6">
-                    <div className="mb-4">
-                      <p className="text-gray-200 text-base leading-relaxed">
-                        {appendix.description}
+                {/* Special Note for Deleted Appendix */}
+                {appendix.id === 6 && (
+                  <div className="mt-4 p-4 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-xl">
+                    <div className="flex items-center space-x-2">
+                      <AlertTriangle className="w-5 h-5 text-red-400" />
+                      <p className="text-red-200 font-medium">
+                        This appendix has been deleted from current regulations
                       </p>
                     </div>
-
-                    {/* Sub Categories for Appendix IX */}
-                    {appendix.content && (
-                      <div className="mt-6">
-                        <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
-                          <span className="w-3 h-3 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full mr-3 animate-pulse"></span>
-                          Staff Categories:
-                        </h4>
-                        <div className="grid gap-3">
-                          {appendix.content.map((category, index) => (
-                            <div
-                              key={index}
-                              className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 border border-white/10"
-                            >
-                              <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-500 to-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                                {index + 1}
-                              </div>
-                              <div className="flex-1">
-                                <p className="text-gray-200 font-medium">
-                                  {category.title}
-                                </p>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Special Note for Deleted Appendix */}
-                    {appendix.id === 6 && (
-                      <div className="mt-4 p-4 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-xl">
-                        <div className="flex items-center space-x-2">
-                          <AlertTriangle className="w-5 h-5 text-red-400" />
-                          <p className="text-red-200 font-medium">
-                            This appendix has been deleted from current regulations
-                          </p>
-                        </div>
-                      </div>
-                    )}
                   </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Footer */}
-            <div className="mt-12 text-center">
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
-                <div className="flex items-center justify-center space-x-3 mb-4">
-                  <CheckCircle className="w-8 h-8 text-emerald-400" />
-                  <h3 className="text-2xl font-bold text-white">
-                    Complete GSR Appendix Reference
-                  </h3>
-                </div>
-                <p className="text-gray-300 max-w-2xl mx-auto">
-                  This comprehensive collection of appendices provides detailed supplementary instructions, 
-                  special procedures, and category-specific rules that complement the main GSR chapters 
-                  for comprehensive railway operations management.
-                </p>
+                )}
               </div>
             </div>
+          ))}
+        </div>
+
+        {/* Footer */}
+        <div className="mt-12 text-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <CheckCircle className="w-8 h-8 text-emerald-400" />
+              <h3 className="text-2xl font-bold text-white">
+                Complete GSR Appendix Reference
+              </h3>
+            </div>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              This comprehensive collection of appendices provides detailed supplementary instructions,
+              special procedures, and category-specific rules that complement the main GSR chapters
+              for comprehensive railway operations management.
+            </p>
           </div>
         </div>
       </div>

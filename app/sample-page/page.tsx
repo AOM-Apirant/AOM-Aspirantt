@@ -1,11 +1,11 @@
 import React from 'react'
-import RTIAct2005Section1 from '@/components/rti-act-2005/rti-act-2005-index-sections/RTIAct2005Section1'
+import GSRChapterPage6 from '@/components/g&sr/g&sr-chapter-pages/GSRChapterPage6'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <RTIAct2005Section1/>
+          <GSRChapterPage6/>
     </div>
   )
 }
