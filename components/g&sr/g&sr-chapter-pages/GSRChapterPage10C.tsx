@@ -1,0 +1,117 @@
+"use client"
+
+import React from "react"
+
+const GSRChapterPage10C = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-900 relative overflow-hidden text-blue-100">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-32 -right-24 w-80 h-80 bg-gradient-to-br from-cyan-400/20 via-indigo-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-28 -left-20 w-72 h-72 bg-gradient-to-tr from-purple-500/25 via-blue-500/25 to-slate-800/25 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[28rem] h-[28rem] bg-gradient-to-r from-sky-400/10 via-blue-500/10 to-indigo-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute inset-0 bg-grid-white/10 opacity-15 mix-blend-overlay"></div>
+      </div>
+
+      <div className="relative z-10 py-8 px-4 lg:px-10">
+        <div className="max-w-4xl mx-auto space-y-10">
+          <header className="text-center space-y-4">
+            <div className="inline-flex items-center justify-center">
+              <div className="relative">
+                <div className="w-20 h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-blue-500/60 via-indigo-500/60 to-purple-500/60 rounded-full blur-xl"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/50 to-indigo-800/50 backdrop-blur">
+                    <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
+                      <span className="text-xl lg:text-2xl font-semibold text-white/85 tracking-wide">
+                        2.09
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              Taking alcoholic drink, sedative, narcotic, stimulant drug or preparation.–
+            </h1>
+          </header>
+
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative p-6 lg:p-10">
+              <div className="absolute -top-16 -left-16 w-40 h-40 bg-gradient-to-br from-blue-400/25 to-purple-500/25 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-20 -right-20 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
+
+              <div className="relative z-10 space-y-6">
+                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    2.09. Taking alcoholic drink, sedative, narcotic, stimulant drug or preparation.–
+                  </p>
+                </div>
+
+                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (1) While on duty, no railway servant shall, whether he is directly connected
+                    with the working of trains or not, be in a state of intoxication or in a state in
+                    which, by reason of his having taken or used any alcoholic drink, sedative,
+                    narcotic or stimulant drug or preparation, his capacity to perform his duties is
+                    impaired.
+                  </p>
+                </div>
+
+                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (2) No railway servant, directly connected with the working of trains, shall take
+                    or use any alcoholic drink, sedative, narcotic or stimulant drug or preparation
+                    within eight hours before the commencement of his duty or take or use any such
+                    drink, drug or preparation when on duty.
+                  </p>
+                </div>
+
+                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    S.R.2.09. When any railway servant is intoxicated or suspected to be in a state
+                    of intoxication, the official in-charge shall make arrangements for his relief
+                    immediately and have him examined by a doctor as soon as possible. If a railway
+                    doctor is not available a Civil Doctor shall be summoned. If possible, the
+                    written evidence of two independent witnesses shall also be obtained.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes pulse-slow {
+          0%,
+          100% {
+            opacity: 0.6;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 0.9;
+            transform: scale(1.05);
+          }
+        }
+        .animate-pulse {
+          animation: pulse-slow 7s ease-in-out infinite;
+        }
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(16px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out both;
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default GSRChapterPage10C

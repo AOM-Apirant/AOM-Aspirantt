@@ -1,0 +1,155 @@
+"use client"
+
+import React from "react"
+
+const GSRChapterPage14B = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-32 -right-32 w-80 h-80 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-32 -left-32 w-72 h-72 bg-gradient-to-tr from-purple-500/20 to-blue-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[28rem] h-[28rem] bg-gradient-to-r from-sky-400/10 to-blue-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute inset-0 bg-grid-white/10 opacity-20 mix-blend-overlay"></div>
+      </div>
+
+      <div className="relative z-10 py-6 px-2 lg:px-8">
+        <div className="max-w-5xl mx-auto space-y-12">
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="relative">
+                <div className="lg:w-24 lg:h-24 w-16 h-16 bg-gradient-to-br from-blue-500/70 via-indigo-500/70 to-purple-500/70 rounded-full blur-xl"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
+                    <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
+                      <span className="lg:text-2xl text-xl font-bold tracking-wide text-white/85">
+                        3.06
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              Description of Warner signals and their indications.––
+            </h1>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative">
+              <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
+
+              <div className="relative p-5 lg:p-10 space-y-6">
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (1) A semaphore Warner signal has a fish-tailed arm.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (2) A Warner signal is intended to warn a Loco Pilot -
+                    (a) of the condition of the block section ahead, or
+                    (b) that he is approaching a Stop signal.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (3) A Warner signal may be placed either-
+                    (a) on a post by itself with a fixed green light 1.5 to 2 metres above it by night, or
+                    (b) on the same post below the first Stop signal or the last Stopsignal.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (4)When placed in accordance with clause (b) of sub-rule (3), the variable light of
+                    the Stop signal shall take the place of the fixed green light of the Warner signal
+                    and the mechanical arrangement shall be such that the Warner signal cannot be
+                    taken ‘off’ while the Stop signal above it is ‘on’.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (5) The aspects and indications of a semaphore Warner signal are shown below:–
+                    (a) Semaphore Warner signal in Two-AspectSignalling Territory ––
+                    on a post by itself
+                    (b) Semaphore Warner signal in Two-AspectSignaling Territory —
+                    below a Stop signal
+                    (c) Semaphore Warner signal in Two-AspectSignaling Territory —
+                    below a Stop signal
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (6) The aspects and indications of a colour light Warner signal are shown below:
+                    (a) Colour light Warner signal in Two-AspectSignalling Territory —
+                    on a post by itself
+                    (b) Colour Light Warner signal in Two-AspectSignalling Territory—
+                    below a Stop signal
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (7) A Warner signal with a fixed green light above it by night, on a post by itself,
+                    shall be located at an adequate distance in rear of the Stop signal, the aspect of
+                    which it pre-warns:
+                    Provided that when such a Warner signal applies to a gate Stop signal, itshall not
+                    display the ‘Proceed’ aspect unless there is adequate distance between the gate
+                    Stop signal and the first Stop signal of the station ahead. The adequate distance in
+                    such a case shall never be less than 1200 metres.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (8) Where special circumstances justify the use of an unworked Warner, it shall be
+                    secured in the ‘on’ position and not be coupled or duplicated for directing
+                    purposes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes pulse-slow {
+          0%,
+          100% {
+            opacity: 0.6;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 0.9;
+            transform: scale(1.05);
+          }
+        }
+        .animate-pulse {
+          animation: pulse-slow 6s ease-in-out infinite;
+        }
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out forwards;
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default GSRChapterPage14B
