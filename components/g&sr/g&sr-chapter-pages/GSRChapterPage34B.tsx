@@ -1,9 +1,8 @@
 "use client"
 
-import Image from "next/image"
 import React from "react"
 
-const GSRChapterPage28 = () => {
+const GSRChapterPage34B = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -23,7 +22,7 @@ const GSRChapterPage28 = () => {
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
                       <span className="lg:text-2xl text-xl font-bold tracking-wide text-white/85">
-                        3.13
+                        3.16
                       </span>
                     </div>
                   </div>
@@ -32,7 +31,7 @@ const GSRChapterPage28 = () => {
             </div>
 
             <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
-              3.13. Calling-on signals.––
+              3.16. Repeating signals.—
             </h1>
           </div>
 
@@ -44,89 +43,77 @@ const GSRChapterPage28 = () => {
               <div className="relative p-5 lg:p-10 space-y-6">
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide whitespace-pre-line">
-(1) A Calling-on signal is a subsidiary signal which has no independent
-aspect in the ‘on’ position and shall be-
-(a) a short square ended semaphore arm, or
-(b) a miniature colour light provided with a ‘C‘ marker.
+                    (1) A signal placed in rear of a fixed signal for the purpose of repeating to
+the Loco Pilot of an approaching train the aspects of the fixed signal
+in advance is called a Repeating signal.
                   </p>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide whitespace-pre-line">
-(2) A Calling-on signal, where provided, shall be fixed below a Stop
-signal governing the approach of a train. Under special instructions, a
-Calling-on signal may be provided below any other Stop signal except
-the last Stop signal. (Item no. 6 of AS-11 dt. 22.08.2023)
+                    (2) A Repeating signal shall be provided with an ‘R’ marker and shall be
+of –
+(a) banner type, or
+(b) a square ended semaphore arm, or
+(c) a colour light signal.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (3) The aspects and indications of a banner type Repeating signal are
+shown below:-
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    4) The aspects and indications of a semaphore arm type Repeating
+Signals are shown below:-
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                    (5) The aspects and indications of a colour light type Repeating signal
+are shown below:-
                   </p>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide whitespace-pre-line">
-(3) A Calling-on signal, when taken ‘off‘, calls on the Loco Pilot of a train
-to draw ahead with caution, after the train has been brought to a stop
-even though the Stop signal above it is at ‘on‘ and indicates to the
-Loco Pilot that he should be prepared to stop short of any
-obstruction.
+                    S.R.3.16.1. When a Stop signal located in two-aspect signaling territory cannot be seen from
+a proper distance, repeating signal shall be provided at an adequate distance in rear of it.
+                  </p>
+                </div>
+
+                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide whitespace-pre-line">
+                    S.R.3.16.2. A Repeating signal shall not be treated as a Stop signal. It can be passed in the
+‘on’ position with caution preparing to stop at the Stop signal ahead.
                   </p>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-(4) A Calling-on signal shall show no light in the ‘on’ position.
+                    S.R.3.16.3. A banner type repeating signal shall not be lit at night.
                   </p>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-(5) The aspects and indications of a semaphore Calling-on signal are shown below:-
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide whitespace-pre-line">
+                    S.R.3.16.4. If a Loco Pilot notices the repeating signal in any way defective, he shall advise,
+in writing, the Station Master of the next stopping station.
                   </p>
-                  <div className="mt-6 grid gap-6 lg:grid-cols-2">
-                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
-                      <Image
-                        src="/gsr-images/GSRPAGE28.png"
-                        alt="Miniature semaphore arm type calling-on signal in two-aspect territory"
-                        width={1006}
-                        height={662}
-                        className="h-auto w-full rounded-lg"
-                        priority
-                      />
-                    </div>
-                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
-                      <Image
-                        src="/gsr-images/GSRPAGE29A.png"
-                        alt="Miniature semaphore arm type calling-on signal in multiple-aspect territory"
-                        width={942}
-                        height={626}
-                        className="h-auto w-full rounded-lg"
-                      />
-                    </div>
-                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-(6) The aspects and indications of a colour light type Calling-on signal are shown below:-
+                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide whitespace-pre-line">
+                    S.R.3.16.5. Starter indicator shall be provided to repeat the aspect of the starter as an aid to
+the Guard to enable him to know the aspect of the starter. This indicator may be provided at
+a convenient place. The starter indicator shall exhibit no light when starter is at ‘on’ and
+yellow light when it is ‘off’.
                   </p>
-                  <div className="mt-6 grid gap-6 lg:grid-cols-2">
-                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
-                      <Image
-                        src="/gsr-images/GSRPAGE29B.png"
-                        alt="Colour light calling-on signal in two-aspect signalling territory"
-                        width={933}
-                        height={650}
-                        className="h-auto w-full rounded-lg"
-                      />
-                    </div>
-                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
-                      <Image
-                        src="/gsr-images/GSRPAGE30.png"
-                        alt="Colour light calling-on signal in multiple-aspect signalling territory"
-                        width={977}
-                        height={658}
-                        className="h-auto w-full rounded-lg"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -161,4 +148,4 @@ obstruction.
   )
 }
 
-export default GSRChapterPage28
+export default GSRChapterPage34B

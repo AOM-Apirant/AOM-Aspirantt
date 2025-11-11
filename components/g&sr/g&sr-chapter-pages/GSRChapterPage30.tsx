@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 const GSRChapterPage30 = () => {
@@ -98,18 +99,69 @@ light in the ‘on’ position.
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
 (8) The aspects and indications of a disc type Shunt signal are shown below:-
                   </p>
+                  <div className="mt-6 grid gap-6 lg:grid-cols-2">
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
+                      <Image
+                        src="/gsr-images/GSRPAGE31A.png"
+                        alt="Disc type shunt signal in two-aspect signalling territory"
+                        width={887}
+                        height={647}
+                        className="h-auto w-full rounded-lg"
+                      />
+                    </div>
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
+                      <Image
+                        src="/gsr-images/GSRPAGE31B.png"
+                        alt="Disc type shunt signal in multiple-aspect signalling territory"
+                        width={918}
+                        height={603}
+                        className="h-auto w-full rounded-lg"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
 (9) The aspects and indications of a position light type shunt signal are shown below:-
                   </p>
+                  <div className="mt-6">
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
+                      <Image
+                        src="/gsr-images/GSRPAGE32A.png"
+                        alt="Position light type shunt signal in two-aspect or multiple-aspect territory"
+                        width={893}
+                        height={650}
+                        className="h-auto w-full rounded-lg"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
 (10)The aspects and indications of a semaphore arm type shunt signal are shown below:-
                   </p>
+                  <div className="mt-6 grid gap-6 lg:grid-cols-2">
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
+                      <Image
+                        src="/gsr-images/GSRPAGE32B.png"
+                        alt="Miniature semaphore arm type shunt signal in two-aspect territory"
+                        width={937}
+                        height={563}
+                        className="h-auto w-full rounded-lg"
+                      />
+                    </div>
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 p-3 shadow-lg">
+                      <Image
+                        src="/gsr-images/GSRPAGE33.png"
+                        alt="Miniature semaphore arm type shunt signal in multiple-aspect territory"
+                        width={871}
+                        height={618}
+                        className="h-auto w-full rounded-lg"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-4">

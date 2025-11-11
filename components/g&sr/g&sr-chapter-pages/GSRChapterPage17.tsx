@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 const GSRChapterPage17 = () => {
@@ -51,6 +52,30 @@ const GSRChapterPage17 = () => {
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
                     (2) The aspects and indications of a semaphore Distant signal working in the lower quadrant are shown below:-
                   </p>
+                  
+                  <div className="mt-8 flex flex-col items-center">
+                    <div className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-amber-300/30 hover:shadow-amber-500/20">
+                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%)] opacity-80" />
+                      <div className="relative">
+                        <Image
+                          src="/gsr-images/GSRPAGE18.png"
+                          alt="Semaphore distant signal in two-aspect territory"
+                          width={820}
+                          height={700}
+                          className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(251,191,36,0.35)]"
+                          priority={false}
+                        />
+                      </div>
+                      <div className="relative mt-4 text-center">
+                        <h4 className="text-lg font-semibold text-amber-100">
+                          Semaphore Distant Signal – Lower Quadrant
+                        </h4>
+                        <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                          Illustration of caution and proceed aspects for a lower-quadrant semaphore distant signal used in modified lower quadrant signalling territories.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide">
                     Note: This signal shall be provided only in Modified Lower Quadrant signaling.
                   </p>
@@ -60,6 +85,30 @@ const GSRChapterPage17 = () => {
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
                     (3) The aspects and indications of a semaphore Distant signal working in the upper quadrant are shown below:-
                   </p>
+                  
+                  <div className="mt-8 flex flex-col items-center">
+                    <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-amber-300/30 hover:shadow-amber-500/20">
+                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%)] opacity-80" />
+                      <div className="relative">
+                        <Image
+                          src="/gsr-images/GSRPAGE19.png"
+                          alt="Semaphore distant signal in multiple-aspect territory"
+                          width={960}
+                          height={720}
+                          className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(251,191,36,0.35)]"
+                          priority={false}
+                        />
+                      </div>
+                      <div className="relative mt-4 text-center">
+                        <h4 className="text-lg font-semibold text-amber-100">
+                          Semaphore Distant Signal – Upper Quadrant
+                        </h4>
+                        <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                          Depicts caution, attention, and proceed indications of an upper-quadrant semaphore distant signal for multiple-aspect signalling territories.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide">
                     Note: The distance between the two yellow lights shall be 1.5 metres,when this signal displays ‘Attention’ aspect at night.
                   </p>
@@ -69,6 +118,30 @@ const GSRChapterPage17 = () => {
                   <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
                     (4) The aspects and indications of a colour light Distant signal are shown below:-
                   </p>
+                  
+                  <div className="mt-8 flex flex-col items-center">
+                    <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-yellow-300/30 hover:shadow-yellow-500/20">
+                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(253,224,71,0.18),_transparent_60%)] opacity-80" />
+                      <div className="relative">
+                        <Image
+                          src="/gsr-images/GSRPAGE20.png"
+                          alt="Colour light distant signal aspects"
+                          width={960}
+                          height={720}
+                          className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(253,224,71,0.35)]"
+                          priority={false}
+                        />
+                      </div>
+                      <div className="relative mt-4 text-center">
+                        <h4 className="text-lg font-semibold text-yellow-100">
+                          Colour Light Distant Signal – Multiple Aspect Territory
+                        </h4>
+                        <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                          Visualises caution, attention, and proceed aspects for a colour light distant signal, including the corresponding indications for main and loop lines.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide">
                     Note: The change in aspect or indications of a distant signal is applicable for single distant signal territory and not for double distant territory.
                   </p>

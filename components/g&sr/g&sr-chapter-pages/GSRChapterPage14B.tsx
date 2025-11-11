@@ -1,6 +1,43 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
+
+const warnerImages = [
+  {
+    src: "/gsr-images/GSRPAGE15A.png",
+    title: "Semaphore Warner signal on a standalone post",
+    caption:
+      "Visual reference showing the Warner arm in both ‘On’ and ‘Off’ positions on an independent post.",
+  },
+  {
+    src: "/gsr-images/GSRPAGE15B.png",
+    title: "Semaphore Warner signal below a Stop signal (‘On’)",
+    caption:
+      "Illustrates the caution aspect when the Warner arm remains ‘On’ beneath a protecting stop signal.",
+  },
+  {
+    src: "/gsr-images/GSRPAGE16A.png",
+    title: "Semaphore Warner signal below a Stop signal (‘Off’)",
+    caption:
+      "Depicts the proceed aspect granted when the Warner arm is taken ‘Off’ below the associated stop signal.",
+  },
+]
+
+const colorWarnerImages = [
+  {
+    src: "/gsr-images/GSRPAGE16B.png",
+    title: "Colour light Warner signal on a standalone post",
+    caption:
+      "Highlights caution and proceed aspects of a colour light Warner when mounted independently in two-aspect territory.",
+  },
+  {
+    src: "/gsr-images/GSRPAGE17.png",
+    title: "Colour light Warner signal below a stop signal",
+    caption:
+      "Shows stop, caution, and proceed indications when the colour light Warner is paired beneath the governing stop signal.",
+  },
+]
 
 const GSRChapterPage14B = () => {
   return (
@@ -13,7 +50,7 @@ const GSRChapterPage14B = () => {
       </div>
 
       <div className="relative z-10 py-6 px-2 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center">
             <div className="inline-flex items-center justify-center mb-6">
               <div className="relative">
@@ -82,6 +119,36 @@ const GSRChapterPage14B = () => {
                     (c) Semaphore Warner signal in Two-AspectSignaling Territory —
                     below a Stop signal
                   </p>
+                  <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {warnerImages.map((image) => (
+                      <div
+                        key={image.src}
+                        className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-cyan-300/30 hover:shadow-cyan-500/20"
+                      >
+                        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.15),_transparent_55%)] opacity-80" />
+                        <div className="relative flex h-full flex-col">
+                          <div className="relative mx-auto flex w-full max-w-[18rem] items-center justify-center rounded-xl bg-slate-950/40 p-4 backdrop-blur">
+                            <Image
+                              src={image.src}
+                              alt={image.title}
+                              width={720}
+                              height={540}
+                              className="h-auto w-full rounded-md object-contain drop-shadow-[0_12px_30px_rgba(15,118,230,0.35)]"
+                              priority={false}
+                            />
+                          </div>
+                          <div className="mt-5 text-center">
+                            <h4 className="text-lg font-semibold text-cyan-100">
+                              {image.title}
+                            </h4>
+                            <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                              {image.caption}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
@@ -92,6 +159,36 @@ const GSRChapterPage14B = () => {
                     (b) Colour Light Warner signal in Two-AspectSignalling Territory—
                     below a Stop signal
                   </p>
+                  <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                    {colorWarnerImages.map((image) => (
+                      <div
+                        key={image.src}
+                        className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-emerald-300/30 hover:shadow-emerald-500/20"
+                      >
+                        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.15),_transparent_55%)] opacity-80" />
+                        <div className="relative flex h-full flex-col">
+                          <div className="relative mx-auto flex w-full max-w-[20rem] items-center justify-center rounded-xl bg-slate-950/40 p-4 backdrop-blur">
+                            <Image
+                              src={image.src}
+                              alt={image.title}
+                              width={720}
+                              height={540}
+                              className="h-auto w-full rounded-md object-contain drop-shadow-[0_12px_30px_rgba(16,185,129,0.35)]"
+                              priority={false}
+                            />
+                          </div>
+                          <div className="mt-5 text-center">
+                            <h4 className="text-lg font-semibold text-emerald-100">
+                              {image.title}
+                            </h4>
+                            <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                              {image.caption}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
