@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 const GSRChapterPage34B = () => {
@@ -64,6 +65,16 @@ of –
                     (3) The aspects and indications of a banner type Repeating signal are
 shown below:-
                   </p>
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/gsr-images/GSRPAGE34.png"
+                      alt="Banner type repeating signal aspects and indications"
+                      width={731}
+                      height={658}
+                      className="rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                      priority
+                    />
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
@@ -71,6 +82,15 @@ shown below:-
                     4) The aspects and indications of a semaphore arm type Repeating
 Signals are shown below:-
                   </p>
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/gsr-images/GSRPAGE35A.png"
+                      alt="Semaphore arm repeating signal aspects and indications"
+                      width={826}
+                      height={556}
+                      className="rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                    />
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
@@ -78,6 +98,15 @@ Signals are shown below:-
                     (5) The aspects and indications of a colour light type Repeating signal
 are shown below:-
                   </p>
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/gsr-images/GSRPAGE35B.png"
+                      alt="Colour light repeating signal aspects and indications"
+                      width={722}
+                      height={556}
+                      className="rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                    />
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
