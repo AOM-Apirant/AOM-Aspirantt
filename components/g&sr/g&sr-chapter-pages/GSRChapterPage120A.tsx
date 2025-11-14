@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRChapterPage91B = () => {
+const GSRChapterPage120A = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -20,21 +20,16 @@ const GSRChapterPage91B = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
-                      <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white/80" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                      </svg>
+                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.34</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              4.02
+            <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              4.34. Duties of Guard when taking over charge of a train.––
             </h1>
-            <p className="mt-4 text-sm lg:text-xl text-blue-100/80 tracking-[0.35em] uppercase">
-              ADHERENCE TO ADVERTISED TIME.—
-            </p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
@@ -47,15 +42,37 @@ const GSRChapterPage91B = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
                       <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.02</span>
+                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.34</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
                   </div>
 
-                  <div className="pt-14 lg:pt-12 space-y-8 text-blue-100/90 leading-relaxed tracking-wide">
+                  <div className="pt-14 lg:pt-12 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      No passenger train or mixed train shall be dispatched from a station before the advertised time.
+                      The Guard when taking over charge of a train shall satisfy himself, before the train is dispatched –<br />
+                      (a) that the train is properly coupled,<br />
+                      (b) that the train is provided with the prescribed brake power,<br />
+                      (c) that the train carries tail board or tail lamp and side lamps and that such lamps are lighted and kept burning brightly, when required,<br />
+                      (d) that the appliance, if any, for communication between the Guard and the Loco Pilot, is in proper working order, and<br />
+                      (e) generally that, as far as he can ascertain, the train is in a state of efficiency for travelling.
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.34.1. The Guard shall not give the signal to start at the train starting station or at a station at which vehicles have been attached or detached, until he/she has satisfied him/herself that prescribed air pressure as shown in SR 4.32.3., is available in the rear brake-van. If prescribed pressures could not be maintained, the train shall not be started until the fault is rectified and if the fault could not be rectified, the defective engine or vehicle shall be detached. (Item no. 24 of AS-12 dt. 28.12.2023).
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.34.2. The Guards shall ensure that the marshaling on trains is in accordance with the instructions given in Appendix – VIII (Marshalling) of SCR G&SR. (Item no. 25 of AS-12 dt. 28.12.2023).
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.34.3. Guards of all goods trains (including material trains) before starting shall examine the side and end doors of all stock that open outwards and ensure that all such doors are properly secured or locked in the closed position so that they cannot swing out. In case of wagons whose doors cannot be secured and locked in the closed position, they shall be secured in the open position and hooks put on so that they will not swing out.
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.34.4. When taking over charge of a train and before signing the BPC, the Guard of a train shall ensure that the TXR has signed in the BPC form that:<br />
+                      (i) The doors of all carriages and wagons are in proper working order and can be closed and fastened.<br />
+                      (ii) Vestibule connections are properly secured and the doors, when necessary, are locked and bolted.
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      SR 4.34.5. Guard shall also carryout duties assigned to him/her vide SRs 4.32.2, 4.32.3, 4.32.11 and ensure complying of SRs 4.32.5, 4.32.6, 4.32.8, 4.32.9 &4.32.10.
                     </p>
                   </div>
                 </div>
@@ -67,7 +84,8 @@ const GSRChapterPage91B = () => {
 
       <style jsx>{`
         @keyframes pulse-slow {
-          0%, 100% {
+          0%,
+          100% {
             opacity: 0.6;
             transform: scale(1);
           }
@@ -97,4 +115,4 @@ const GSRChapterPage91B = () => {
   )
 }
 
-export default GSRChapterPage91B
+export default GSRChapterPage120A

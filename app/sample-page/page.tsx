@@ -1,11 +1,11 @@
 import React from 'react'
-import GSRChapterPage45B from '@/components/g&sr/g&sr-chapter-pages/GSRChapterPage45B'
+import GSRChapterPage91B from '@/components/g&sr/g&sr-chapter-pages/GSRChapterPage91B'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <GSRChapterPage45B/>
+          <GSRChapterPage91B/>
     </div>
   )
 }

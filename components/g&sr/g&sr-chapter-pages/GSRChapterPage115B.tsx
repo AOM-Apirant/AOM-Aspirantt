@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRChapterPage91B = () => {
+const GSRChapterPage115B = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -20,21 +20,16 @@ const GSRChapterPage91B = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
-                      <svg className="lg:w-8 lg:h-8 w-6 h-6 text-white/80" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                      </svg>
+                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.31</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              4.02
+            <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              4.31. Examination of trains before starting.––
             </h1>
-            <p className="mt-4 text-sm lg:text-xl text-blue-100/80 tracking-[0.35em] uppercase">
-              ADHERENCE TO ADVERTISED TIME.—
-            </p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
@@ -47,15 +42,27 @@ const GSRChapterPage91B = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
                       <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.02</span>
+                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.31</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
                   </div>
 
-                  <div className="pt-14 lg:pt-12 space-y-8 text-blue-100/90 leading-relaxed tracking-wide">
+                  <div className="pt-14 lg:pt-12 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      No passenger train or mixed train shall be dispatched from a station before the advertised time.
+                      When a train is examined by a Train Examiner at a station, the Station Master shall not give permission to start the train until he has received a report from such examiner to the effect that the train is fit to proceed and has the prescribed brake power.
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.31.1. Brake Power Certificate (BPC) issued by Train Examiner shall constitute &apos;Fit to Proceed&apos; report&apos; mentioned in GR 4.31 above. (Item no. 2 of AS-12 dt. 28.12.2023)
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.31.2. When a vehicle has been detached from a train due to defect or damage, the TXR concerned shall at once be advised. Such vehicle shall not be accepted again for use until the TXR issues &apos;fit memo&apos; in a prescribed form.
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      SR. 4.31.3. When a train is stabled on account of inadequate brake power or where it is reported that the train brake system has been tampered with during stabling, C & W staff shall be deputed to examine the stabled train and issue a fresh &quot;Brake Power Certificate&apos;. (Item no. 3 of AS-12 dt. 28.12.2023).
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.31.4. For coaching trains, at originating station, the TXR staff shall close the doors of Guard&apos;s compartment (if it is not leased) and luggage portions (if it is not leased or not loaded with parcels) of front/middle SLR and lock with Universal lock. TXR shall make an endorsement on BPC to this effect. (Item no. 6 of AS-12 dt. 28.12.2023)
                     </p>
                   </div>
                 </div>
@@ -67,7 +74,8 @@ const GSRChapterPage91B = () => {
 
       <style jsx>{`
         @keyframes pulse-slow {
-          0%, 100% {
+          0%,
+          100% {
             opacity: 0.6;
             transform: scale(1);
           }
@@ -97,4 +105,4 @@ const GSRChapterPage91B = () => {
   )
 }
 
-export default GSRChapterPage91B
+export default GSRChapterPage115B
