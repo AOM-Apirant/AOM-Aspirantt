@@ -336,34 +336,19 @@ const GSRChapterPage151B = () => {
                             </div>
                             <div className="mt-7 space-y-5">
                               <div className="flex items-start gap-3">
-                                <span className="flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500/80 to-blue-400/80 text-white shadow-lg w-9 h-9 font-bold text-lg">
-                                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 17v-6m0-4h.01" />
-                                    <circle cx="12" cy="12" r="10" />
-                                  </svg>
-                                </span>
+                                
                                 <p className="leading-relaxed">
                                   <span className="font-semibold text-base">b)</span> After exchanging the above messages, the Station Masters must advise all gatemen under their control (with proper PN exchange) that right line working of trains is introduced with TSL in force on the nominated line. For right line trains, after gates are closed and locked against road traffic, the signals of interlocked gates should be taken off by reversing the knob.
                                 </p>
                               </div>
                               <div className="flex items-start gap-3">
-                                <span className="flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-500/80 to-violet-400/80 text-white shadow-lg w-9 h-9 font-bold text-lg">
-                                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                    <circle cx="12" cy="12" r="10" />
-                                  </svg>
-                                </span>
+                                
                                 <p className="leading-relaxed">
                                   <span className="font-semibold text-base">c)</span> All points, including any crossover points previously set for wrong line trains, shall now be set in favour of right line trains.
                                 </p>
                               </div>
                               <div className="flex items-start gap-3">
-                                <span className="flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500/80 to-blue-800/80 text-white shadow-lg w-9 h-9 font-bold text-lg">
-                                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01" />
-                                    <circle cx="12" cy="12" r="10" />
-                                  </svg>
-                                </span>
+                                
                                 <p className="leading-relaxed">
                                   <span className="font-semibold text-base">d)</span> The block instrument for the unobstructed line—on which wrong line working has been cancelled and right line working is planned—shall be brought back into use (previously kept in TOL position). For UFSBI systems, the LCB key should be placed in the IN position.
                                 </p>
@@ -372,576 +357,1335 @@ const GSRChapterPage151B = () => {
                           </div>
                         </div>
                       </div>
-                      {/* 12. Rules for Running Right Line Trains */}
-                      <div className="mt-10 space-y-8">
-                        <div className="flex items-center gap-3">
-                          <span className="bg-gradient-to-br from-blue-600 to-blue-300 rounded-full p-2 shadow-lg">
-                            {/* Signal Icon */}
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <circle cx="12" cy="12" r="10" />
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 3" />
-                            </svg>
-                          </span>
-                          <h2 className="text-xl lg:text-2xl font-bold text-blue-100 tracking-wide">
-                            12. Rules for Running Right Line Trains
-                          </h2>
-                        </div>
-                        <ul className="space-y-6 ml-1">
-                          <li className="flex items-start gap-4">
-                            <span className="mt-1 flex-shrink-0 text-blue-300">
-                              {/* Train Icon */}
-                              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                <rect x="4" y="4" width="16" height="8" rx="2" />
-                                <path d="M8 12v2h8v-2" />
-                                <circle cx="8.5" cy="16.5" r="1.5" />
-                                <circle cx="15.5" cy="16.5" r="1.5" />
-                              </svg>
-                            </span>
-                            <span>
-                              Right line trains shall run only on signals with line clear obtained using block instruments.
-                              Where IBS (Intermediate Block Signals) is provided, after the first right line train clears the IBS, subsequent trains may be despatched,
-                              <span className="block">
-                                provided the rear station informs the advance station about each specific movement and confirms the advance station is ready to receive. Private numbers must be exchanged for every such movement.
-                              </span>
-                              All non-interlocked level crossing gates must be closed against road traffic, properly exchanging private numbers (PN).
-                              <span className="block font-semibold text-blue-100/80 mt-1">
-                                <span className="italic">Note:</span> If wrong line working is to resume after all right line trains, repeat the instructions starting from Rule 9 above.
-                              </span>
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      {/* 13. Written Authority Requirements */}
-                      <div className="mt-10 space-y-3">
-                        <div className="flex items-center gap-3">
-                          <span className="bg-gradient-to-br from-indigo-500 to-cyan-400 rounded-full p-2 shadow-lg">
-                            {/* Document Icon */}
-                            <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-                              <rect x="4" y="4" width="16" height="16" rx="2"/>
-                              <path d="M8 8h8M8 12h8M8 16h2"/>
-                            </svg>
-                          </span>
-                          <h2 className="text-xl lg:text-2xl font-bold text-blue-100 tracking-wide">
-                            13. Written Authority (Form T/D 602) Must Be Issued for All Trains
-                          </h2>
-                        </div>
-                        <ul className="space-y-6 ml-1">
-                          <li className="flex items-start gap-3">
-                            <span className="flex-shrink-0 font-bold text-base text-blue-300">a)</span>
-                            <span>
-                              A “line clear ticket” is required on the Absolute Block system for all wrong line trains during temporary single line working on double lines.
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <span className="flex-shrink-0 font-bold text-base text-blue-300">b)</span>
-                            <span>
-                              <div>
-                                <span className="font-semibold">For Right Line Trains:</span> Instruct the Loco Pilot/Motorman to follow Rule 3.75 to pass IB (Intermediate Block) Signal at ON, and Rule 3.73 to pass Gate Signal at ON when interlocked to level crossing gates in the midsection.
-                              </div>
-                              <div>
-                                <span className="font-semibold">For Wrong Line Trains:</span> Instruct the Loco Pilot/Motorman to only pass gates upon receiving a proceed hand signal from a uniformed railway servant. Authority is also given to pass Departure Stop signals at ON for wrong line trains.
-                              </div>
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <span className="flex-shrink-0 font-bold text-base text-blue-300">c)</span>
-                            <span>
-                              <div className="ml-2">
-                                <span className="font-semibold text-blue-200">The Authority T/D 602 shall also include:</span>
-                                <ul className="list-disc list-inside mt-2 ml-2 space-y-1 text-blue-100/90">
-                                  <li><span className="inline-flex items-center mr-1"><svg className="w-4 h-4 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /></svg></span>The line on which the train or light engine is to run</li>
-                                  <li><span className="inline-flex items-center mr-1"><svg className="w-4 h-4 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /></svg></span>The kilometres between which an obstruction exists on the adjacent line</li>
-                                  <li><span className="inline-flex items-center mr-1"><svg className="w-4 h-4 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /></svg></span>Speed restrictions which may have been imposed</li>
-                                  <li><span className="inline-flex items-center mr-1"><svg className="w-4 h-4 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /></svg></span>Authorisation to pilot out the train towards the wrong line after ensuring all points are correctly set and locked</li>
-                                  <li><span className="inline-flex items-center mr-1"><svg className="w-4 h-4 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" /></svg></span>Location of the neutral section, if any</li>
-                                </ul>
-                              </div>
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      {/* 14. Flasher Light and Instructions for First Train */}
-                      <div className="mt-10 space-y-3">
-                        <div className="flex items-center gap-3">
-                          <span className="bg-gradient-to-br from-purple-500 to-fuchsia-400 rounded-full p-2 shadow-lg">
-                            {/* Alert Icon */}
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <circle cx="12" cy="12" r="10" />
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01" />
-                            </svg>
-                          </span>
-                          <h2 className="text-xl lg:text-2xl font-bold text-blue-100 tracking-wide">
-                            14. First Train Running in Wrong Line — Additional Cautions
-                          </h2>
-                        </div>
-                        <div className="flex items-start gap-4 mt-2">
-                          <span className="pt-0.5 text-fuchsia-300">
-                            {/* Person Icon */}
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <circle cx="12" cy="10" r="4" />
-                              <path d="M6 20v-2a4 4 0 014-4h0a4 4 0 014 4v2" />
-                            </svg>
-                          </span>
-                          <span>
-                            An endorsement should be made on the T/D 602 form issued to the Loco Pilot/Motorman of the first train introducing temporary single line working in the wrong line, instructing him to stop and inform all Gatemen and Gangmen along the way.
-                            <br />
-                            <span className="block">
-                              The operating line must be specified. The Loco Pilot should switch <span className="font-semibold">ON</span> the engine&apos;s flasher light while running on the wrong line under proper authority. 
-                            </span>
-                            <span className="block">
-                              <span className="font-semibold text-red-200">If a train running on the wrong line is found without the flasher light ON</span>, station staff, Gatemen, and Gangmen must stop the train immediately.
-                            </span>
-                          </span>
-                        </div>
-                      </div>
-                      {/* 15. Speed Restrictions */}
-                      <div className="mt-10 space-y-3">
-                        <div className="flex items-center gap-3">
-                          <span className="bg-gradient-to-br from-cyan-600 to-indigo-300 rounded-full p-2 shadow-lg">
-                            {/* Speedometer Icon */}
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <circle cx="12" cy="12" r="10" />
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
-                            </svg>
-                          </span>
-                          <h2 className="text-xl lg:text-2xl font-bold text-blue-100 tracking-wide">
-                            15. Speed Regulation
-                          </h2>
-                        </div>
-                        <ul className="space-y-4 ml-1">
-                          <li className="flex items-start gap-3">
-                            <span className="font-bold text-base text-indigo-300">(a)</span>
-                            <span>
-                              The speed of the <span className="font-semibold">first train running in the wrong line</span> must not exceed <span className="text-cyan-200">25 kmph</span> (subject to other restrictions). Subsequent wrong line trains dispatched on line clear may run at sectional speed (as permitted).
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <span className="font-bold text-base text-indigo-300">(b)</span>
-                            <span>
-                              The speed of the <span className="font-semibold">first train running in the right line</span> shall also not exceed <span className="text-cyan-200">25 kmph</span> (subject to other restrictions). Subsequent right line trains dispatched on line clear may be permitted at sectional speed, subject to current restrictions in force.
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      {/* 16. Approaching Next Block Station */}
-                      <div className="mt-10 space-y-3">
-                        <div className="flex items-center gap-3">
-                          <span className="bg-gradient-to-br from-blue-700 to-blue-500 rounded-full p-2 shadow-lg">
-                            {/* Block Icon */}
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <rect x="4" y="4" width="16" height="16" rx="2"/>
-                            </svg>
-                          </span>
-                          <h2 className="text-xl lg:text-2xl font-bold text-blue-100 tracking-wide">
-                            16. Instructions while Approaching the Next Block Station
-                          </h2>
-                        </div>
-                        <ul className="space-y-4 ml-1">
-                          <li className="flex items-start gap-3">
-                            <span className="font-bold text-base text-blue-400">(a)</span>
-                            <span>
-                              For <span className="font-semibold">wrong line trains</span>: When nearing the next block station, the Loco Pilot/Motorman must stop the train before the Last Stop Signal for that wrong line and sound one long whistle.
-                              The Station Master, having ensured correct setting, clamping, and padlocking of all points, must arrange issuance of a written authority T/510 by a competent uniformed railway servant, who will then pilot the train further, obeying any hand signals as relayed from the station platform. Any intervening signals to be passed at ON must be written on the authority.
-                            </span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <span className="font-bold text-base text-blue-400">(b)</span>
-                            <span>
-                              For <span className="font-semibold">right line trains</span>: The Loco Pilot/Motorman shall be guided by the aspect of the Home Signal of the receiving station. If the Home or Calling-On Signal is not working, the Station Master, upon ensuring all requirements for OFF position are satisfied, shall issue authority on <span className="font-semibold">Form No. T/369 (3b)</span> and depute a uniformed railway servant to pilot the train, displaying the Proceed Hand Signal (PHS) for reception.
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      {/* 17. Resumption of Normal Working */}
-                      <div className="mt-10 space-y-3">
-                        <div className="flex items-center gap-3">
-                          <span className="bg-gradient-to-br from-green-700 to-lime-500 rounded-full p-2 shadow-lg">
-                            {/* Restart/Resume Icon */}
-                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 3.31-2.69 6-6 6a6 6 0 01-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
-                            </svg>
-                          </span>
-                          <h2 className="text-xl lg:text-2xl font-bold text-green-100 tracking-wide">
-                            17. Resumption of Normal Working
-                          </h2>
-                        </div>
-                        <ul className="space-y-4 ml-1">
-                          <li className="flex items-start gap-3">
-                            <span className="flex h-8 w-8 items-center justify-center rounded-full border border-green-400/40 bg-green-500/10 text-lg font-semibold tracking-wide text-green-200">
-                              (a)
-                            </span>
-                            <span>
-                              After receiving a <span className="font-semibold">written certificate</span> from a responsible engineering official confirming that the obstruction on the affected line has been removed and the line is now clear for safe passage of trains, the Station Master must:<br />
-                              <ul className="list-none space-y-2 mt-2 ml-3">
-                                <li className="flex items-start gap-2">
-                                  <span className="text-green-300 mt-0.5">
-                                    {/* Message Icon */}
-                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                                    </svg>
-                                  </span>
-                                  <span>
-                                    Notify the other station concerned by sending a suitable message.
-                                  </span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                  <span className="text-green-300 mt-0.5">
-                                    {/* Gatekeeper Icon */}
-                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                      <circle cx="12" cy="8" r="4"/>
-                                      <path d="M21 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
-                                    </svg>
-                                  </span>
-                                  <span>
-                                    Inform all <span className="font-semibold">gatemen</span> under his control about the resumption through exchange of <span className="font-semibold">private numbers</span>.
-                                  </span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                  <span className="text-green-300 mt-0.5">
-                                    {/* Controller/Consultation Icon */}
-                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                      <circle cx="12" cy="7" r="4"/>
-                                      <path d="M5.5 21c1-4 11-4 12 0"/>
-                                    </svg>
-                                  </span>
-                                  <span>
-                                    In consultation with the <span className="font-semibold">Section Controller</span>, decide after which train normal working should be restored.
-                                  </span>
-                                </li>
-                              </ul>
-                            </span>
-                          </li>
-                        </ul>
-                        <div className="mt-6 space-y-6">
-                          <div className="flex justify-center">
-                            <Image
-                              src="/gsr-images/GSRPAGE155.png"
-                              alt="Message format for resumption of normal working"
-                              width={800}
-                              height={600}
-                              className="w-full max-w-4xl rounded-xl border border-white/10 shadow-lg shadow-green-900/40"
-                            />
-                          </div>
-                          <div className="flex justify-center">
-                            <Image
-                              src="/gsr-images/GSRPAGE155A.png"
-                              alt="Acknowledgement message format for resumption of normal working"
-                              width={800}
-                              height={600}
-                              className="w-full max-w-5xl rounded-xl border border-white/10 shadow-lg shadow-green-900/40"
-                            />
-                          </div>
-                          <div className="space-y-5 lg:space-y-7 mt-4">
-                            {/* (b) Train Signal Register Entry */}
-                            <div className="relative overflow-hidden rounded-2xl border border-green-400/20 bg-gradient-to-br from-green-900/60 via-slate-900/60 to-slate-800/60 shadow-lg shadow-green-900/10 px-6 py-5 lg:px-10 lg:py-8">
-                              <div className="flex items-center gap-4 mb-2">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-green-400/40 bg-green-500/10 text-lg font-semibold tracking-wide text-green-200">
-                                  <span className="font-bold">b)</span>
-                                </span>
-                                <div className="h-[1px] flex-1 bg-gradient-to-r from-green-400/40 via-blue-400/10 to-transparent"></div>
-                              </div>
-                              <div className="flex items-start gap-3">
-                                <span className="mt-1 text-green-300">
-                                  {/* Register Icon */}
-                                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                    <rect x="4" y="4" width="16" height="16" rx="2" />
-                                    <path d="M8 2v4M16 2v4M2 10h20" />
-                                  </svg>
-                                </span>
-                                <span className="text-blue-100/90 text-base lg:text-lg">
-                                  An entry must be made in the <span className="font-semibold">Train Signal Register</span> at all concerned stations, indicating:
-                                  <ul className="list-none pl-1 mt-2 space-y-1">
-                                    <li className="flex items-start gap-2">
-                                      <span className="inline-block mt-1 text-blue-300">
-                                        {/* Pause Icon */}
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                          <rect x="6" y="5" width="4" height="14" rx="1"/>
-                                          <rect x="14" y="5" width="4" height="14" rx="1"/>
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        The <span className="font-semibold">time</span> when <span className="font-semibold">double line working was suspended</span>.
-                                      </span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                      <span className="inline-block mt-1 text-blue-300">
-                                        {/* Arrow Repeat Icon */}
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                          <path d="M17 1l4 4-4 4"/>
-                                          <path d="M21 5H9a7 7 0 1 0 0 14"/>
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        The <span className="font-semibold">time</span> when <span className="font-semibold">single line working was introduced</span>.
-                                      </span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                      <span className="inline-block mt-1 text-blue-300">
-                                        {/* Checkmark Clock Icon */}
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                          <circle cx="12" cy="12" r="10"/>
-                                          <path d="M12 6v6l4 2"/>
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        The <span className="font-semibold">time</span> when <span className="font-semibold">normal working was resumed</span>.
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </span>
-                              </div>
-                            </div>
-                            {/* (c) Loco Pilot Instructions */}
-                            <div className="relative overflow-hidden rounded-2xl border border-green-400/20 bg-gradient-to-br from-green-900/60 via-slate-900/60 to-slate-800/60 shadow-lg shadow-green-900/10 px-6 py-5 lg:px-10 lg:py-8">
-                              <div className="flex items-center gap-4 mb-2">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-green-400/40 bg-green-500/10 text-lg font-semibold tracking-wide text-green-200">
-                                  <span className="font-bold">c)</span>
-                                </span>
-                                <div className="h-[1px] flex-1 bg-gradient-to-r from-green-400/40 via-blue-400/10 to-transparent"></div>
-                              </div>
-                              <div className="flex items-start gap-3">
-                                <span className="mt-1 text-green-300">
-                                  {/* Train/Loco Icon */}
-                                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                    <rect x="2" y="10" width="20" height="8" rx="2" />
-                                    <ellipse cx="7" cy="18" rx="2" ry="2"/>
-                                    <ellipse cx="17" cy="18" rx="2" ry="2"/>
-                                    <path d="M6 10V6a6 6 0 0 1 12 0v4"/>
-                                  </svg>
-                                </span>
-                                <span className="text-blue-100/90 text-base lg:text-lg">
-                                  The <span className="font-semibold">Loco Pilot</span> of the first train entering the section (after removal of the obstruction and resumption of normal working) shall:
-                                  <ul className="list-none pl-1 mt-2 space-y-1">
-                                    <li className="flex items-start gap-2">
-                                      <span className="inline-block mt-1 text-blue-300">
-                                        {/* Speed Limit Icon */}
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                          <circle cx="12" cy="12" r="10"/>
-                                          <text x="12" y="16" textAnchor="middle" fontSize="8" fill="currentColor">25</text>
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        Not exceed <span className="font-semibold">25 kmph</span> (subject to other applicable speed restrictions).
-                                      </span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                      <span className="inline-block mt-1 text-blue-300">
-                                        {/* Announcement Icon */}
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                          <path d="M19 13v-2a7 7 0 1 0-14 0v2"/>
-                                          <path d="M3 16v2a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-2"/>
-                                          <path d="M8 19a3 3 0 0 1-3-3"/>
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        Inform all <span className="font-semibold">Gatemen</span> and <span className="font-semibold">Gangmen</span> along the route about the <span className="font-semibold">resumption of normal working</span>.
-                                      </span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                      <span className="inline-block mt-1 text-blue-300">
-                                        {/* Document/Order Icon */}
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                          <rect x="4" y="4" width="16" height="16" rx="2" />
-                                          <line x1="8" y1="8" x2="16" y2="8"/>
-                                          <line x1="8" y1="12" x2="16" y2="12"/>
-                                          <line x1="8" y1="16" x2="12" y2="16"/>
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        Receive a <span className="font-semibold">caution order</span> for this train, issued by the <span className="font-semibold">Station Master</span>.
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-green-400/30 hover:bg-white/10 mt-10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-400/10 via-blue-500/5 to-indigo-600/10 opacity-0 hover:opacity-80 transition-opacity duration-500"></div>
+                      {/* Point 12 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                         <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                           <div className="flex items-center gap-4">
-                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-green-400/40 bg-green-500/10 text-base font-semibold tracking-wide text-green-100 text-center lg:text-lg">
-                              18
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              12
                             </span>
-                            <div className="h-[1px] flex-1 bg-gradient-to-r from-green-400/40 via-blue-400/30 to-transparent"></div>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
                           </div>
                           <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              <span className="font-semibold text-green-200">Record Keeping and Scrutiny:</span> All records related to <span className="font-semibold">temporary single line working</span> must be carefully preserved at the station.
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-3">
+                              Rules for Running Right Line Trains
                             </p>
-                            <div className="flex items-start gap-3">
-                              <span className="mt-1 text-green-300">
-                                {/* Document review icon */}
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                  <rect x="4" y="4" width="16" height="16" rx="2"/>
-                                  <path d="M9 9h6M9 13h3"/>
-                                </svg>
-                              </span>
-                              <span>
-                                The <span className="font-semibold">Transportation Inspector</span> of the section must thoroughly <span className="font-semibold">check all records</span> and ensure accuracy.
-                              </span>
-                            </div>
-                            <div className="flex items-start gap-3">
-                              <span className="mt-1 text-green-300">
-                                {/* Report submission icon */}
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
-                                  <polyline points="7 8 12 13 17 8"/>
-                                  <line x1="12" y1="13" x2="12" y2="3"/>
-                                </svg>
-                              </span>
-                              <span>
-                                A <span className="font-semibold">detailed report</span> must be submitted to the <span className="font-semibold">Sr. Divisional Operations Manager</span> or <span className="font-semibold">Divisional Operations Manager (In-Charge)</span> <span className="text-cyan-200 font-semibold">within seven days</span> of the resumption of normal operations.
-                              </span>
+                            <ul className="space-y-2 list-disc list-inside pl-3">
+                              <li>
+                                Right line trains must be dispatched by signals only after duly obtaining line clear through the block instruments.
+                              </li>
+                              <li>
+                                Where Intermediate Block Signaling (IBS) is provided, once the first right line train has cleared the IBS, subsequent right line trains may be dispatched, provided that the station in rear has informed the station in advance about permitting a particular train up to the IBS and has confirmed that the advance station is ready to receive it.
+                              </li>
+                              <li>
+                                For every such movement, private numbers (PN) must be exchanged.
+                              </li>
+                              <li>
+                                Before dispatching right line trains, ensure that all non-interlocked level crossing gates are closed and locked against road traffic, with appropriate exchange of private numbers for gate closure.
+                              </li>
+                            </ul>
+                            <div className="mt-3 bg-white/5 border border-cyan-400/10 rounded-lg px-4 py-3 text-cyan-100/90">
+                              <span className="font-semibold text-cyan-200">Note:</span>{" "}
+                              After completion of all right line train operations, if it is proposed to reintroduce wrong line working, the procedure outlined from Rule 9 onwards must be followed afresh.
                             </div>
                           </div>
                         </div>
                       </div>
 
-                    </div>
-                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-green-900/20 transition-all duration-500 hover:border-green-400/30 hover:bg-white/10 mt-10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-green-400/10 opacity-0 hover:opacity-80 transition-opacity duration-500"></div>
+                      {/* Point 13 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                         <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                           <div className="flex items-center gap-4">
                             <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
-                              <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                                <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
-                              </svg>
+                              13
                             </span>
                             <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
                           </div>
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p className="font-semibold text-lg text-cyan-200">
-                              6.02.2. Temporary Single Line Working Regulations (Double Line Section, Total Interruption of Communications)
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-3">
+                              Written Authority (Form T/D 602)
                             </p>
-                            <div className="rounded-lg border border-cyan-700/30 bg-cyan-400/5 p-4 space-y-4">
-                              <div className="flex items-center gap-3">
-                                <span className="text-cyan-300 mt-1">
-                                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></svg>
-                                </span>
-                                <span>
-                                  In addition to the standard rules for train operation during total communication interruption on single lines, staff must also observe the following key regulations:
-                                </span>
+                            <p>
+                              A written authority (Form T/D 602) must be issued to the Loco Pilot/Motorman and Train Manager for all trains, whether running on the right line or wrong line, containing the following details:
+                            </p>
+                            <ul className="space-y-2 list-disc list-inside pl-3">
+                              <li>
+                                <span className="font-semibold text-base">a)</span>{" "}
+                                A &quot;Line Clear Ticket&quot; must be issued on the absolute block system during temporary single line working on double line sections for all wrong line trains.
+                              </li>
+                              <li>
+                                <span className="font-semibold text-base">b)</span>{" "}
+                                Instructions for the Loco Pilot/Motorman of right line trains:
+                                <ul className="ml-5 mt-1 list-[circle] pl-4">
+                                  <li>
+                                    Follow Rule 3.75 to pass Intermediate Block (IB) Signal when at &apos;ON&apos;.
+                                  </li>
+                                  <li>
+                                    Follow Rule 3.73 to pass Gate Signals interlocked to Level Crossing gates in the midsection when at &apos;ON&apos;.
+                                  </li>
+                                </ul>
+                                Instructions for the Loco Pilot/Motorman of wrong line trains:
+                                <ul className="ml-5 mt-1 list-[circle] pl-4">
+                                  <li>
+                                    Pass level crossing gates only upon receiving a proceed hand signal from a railway servant in uniform.
+                                  </li>
+                                  <li>
+                                    Authorized to pass Departure Stop Signals at &apos;ON&apos; (danger) for wrong line trains.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <span className="font-semibold text-base">c)</span>{" "}
+                                The Authority T/D 602 shall also specify:
+                                <ul className="ml-5 mt-1 list-[circle] pl-4">
+                                  <li>
+                                    (i) The line on which the train or light engine is to run.
+                                  </li>
+                                  <li>
+                                    (ii) The kilometers between which the obstruction exists on the adjacent line.
+                                  </li>
+                                  <li>
+                                    (iii) Any speed restrictions imposed.
+                                  </li>
+                                  <li>
+                                    (iv) Authorisation to pilot out the train starting towards the wrong line after all relevant points have been properly set and locked.
+                                  </li>
+                                  <li>
+                                    (v) Location of the neutral section, if any.
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 14 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              14
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              An endorsement shall also be made on the form T/D 602 given to the Loco Pilot/Motorman of the first train introducing temporary single line working in the wrong line to stop and inform all Gatemen and Gangmen on the way about the introduction of temporary single line working. The line, on which the trains shall run, also be specified. The Loco Pilot should switch &quot;ON&quot; the flasher light of the train engine while running on the wrong line on proper authority to proceed. In case, the train engine running on the wrong line without switching on the flasher light is noticed by the station staff, Gatemen and Gangmen they shall stop the train immediately.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 15 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              15
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              <span className="font-semibold text-base">(a)</span>{" "}
+                              The speed of every first train running in the wrong line shall not exceed 25 kmph subject to other speed restrictions. The subsequent trains in the wrong line, which would be dispatched on line clear, may be permitted to run on sectional speed subject to other speed restrictions.
+                            </p>
+                            <p>
+                              <span className="font-semibold text-base">(b)</span>{" "}
+                              The speed of every first train running in the right line shall not exceed 25 kmph subject to other speed restrictions. The subsequent trains in the right line, which would be dispatched on line clear, may be permitted to run on sectional speed subject to other speed restrictions in force.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 16 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              16
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              <span className="font-semibold text-base">(a)</span>{" "}
+                              When approaching the next block station the Loco Pilot/Motorman of the train running in the wrong line shall bring his train to a stand before the Last Stop Signal pertaining to the wrong line on which he is running and sound one long whistle. The Station Master after satisfying himself that all points have been correctly set, clamped and padlocked, shall arrange to issue a written authority T/510 through a competent railway servant in uniform; who shall then pilot the train from this signal and shall obey hand signals, if any, relayed from the station platform. The intervening signals authorised to be passed at ON, if any, shall be written on the Authority issued.
+                            </p>
+                            <p>
+                              <span className="font-semibold text-base">(b)</span>{" "}
+                              When approaching the next block station the Loco Pilot/Motorman of all the trains running in the right line shall be guided by the aspect of the Home Signal of the receiving station. In case the Home signal/Calling-On is not in working condition then the Station Master after ensuring that all the conditions for taking OFF such a Reception Stop Signal has been fulfilled; shall issue authority on Form No. T/369 (3b) and depute a competent railway servant in proper uniform who shall then pilot the train by duly showing PHS for receiving the train.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 17 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              17
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-3">
+                              Resumption of normal working.
+                            </p>
+                            <p>
+                              <span className="font-semibold text-base">(a)</span>{" "}
+                              On receipt of written certificate from a responsible engineering official that the obstruction on affected line is removed and the obstructed line is free for passage of trains, the Station Master will issue a message to the other station and inform all the gateman under his control, under exchange of private numbers and decide, in consultation with Section Controller the train after the passage of which the normal working has to be introduced.
+                            </p>
+                            <p>
+                              <span className="font-semibold text-base">(b)</span>{" "}
+                              An entry must be made in the Train Signal Register of all concerned stations, indicating the time at which double line working was suspended, single line working was introduced, and the time at which normal working was resumed.
+                            </p>
+                            <p>
+                              <span className="font-semibold text-base">(c)</span>{" "}
+                              The Loco Pilot of the first train entering the section where the obstruction has been removed and normal working is resumed shall not exceed 25 kmph, subject to other speed restrictions. The Loco Pilot must inform all Gatemen and Gangmen en route about the resumption of normal working. The Station Master shall issue a caution order accordingly.
+                            </p>
+                            <div className="mt-6 space-y-6">
+                              <div className="flex justify-center">
+                                <Image
+                                  src="/gsr-images/GSRPAGE155.png"
+                                  alt="Message format for resumption of normal working - Station Master X to Station Master Y"
+                                  width={800}
+                                  height={600}
+                                  className="w-full max-w-4xl rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                                />
                               </div>
-                              <ol className="list-decimal ml-6 space-y-4">
-                                <li>
-                                  <div className="flex gap-3 items-start">
-                                    <span className="text-cyan-400 mt-1">
-                                      {/* Shield-check icon */}
-                                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-                                    </span>
-                                    <span>
-                                      <span className="font-semibold text-white">Safety Certification Requirement:</span> Temporary Single Line (TSL) working shall be initiated only after a responsible <span className="font-semibold">Engineering Department official</span> (minimum rank: Inspector) certifies that the alternate (unobstructed) line is <span className="font-semibold">free and safe</span> for train passage. The certificate shall be handed to the Station Master at the starting station of the affected section. The right line for dispatch will be the unobstructed line, per this certificate. The Station Master must then follow established communication opening procedures.
-                                    </span>
-                                  </div>
-                                </li>
-                                <li>
-                                  <div className="flex gap-3 items-start">
-                                    <span className="text-cyan-400 mt-1">
-                                      {/* Clipboard-list icon */}
-                                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 2v2m6-2v2M9 8h6M9 12h3"/></svg>
-                                    </span>
-                                    <span>
-                                      <span className="font-semibold text-white">Loco Pilot Authority:</span> Loco Pilots (including those operating light engines) must be provided with <span className="font-semibold text-cyan-200">T/B602 Authority</span> (for opening communication during total interruption on a single line section), which should clearly mention:&nbsp;
-                                      <ul className="list-none mt-2 space-y-2">
-                                        <li className="flex gap-2 items-center">
-                                          <span className="text-cyan-400"><svg className="w-4 h-4" stroke="currentColor" fill="none" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><text x="12" y="16" fontSize="10" fill="currentColor" textAnchor="middle">a</text></svg></span>
-                                          <span>The line on which the train will run</span>
-                                        </li>
-                                        <li className="flex gap-2 items-center">
-                                          <span className="text-cyan-400"><svg className="w-4 h-4" stroke="currentColor" fill="none" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><text x="12" y="16" fontSize="10" fill="currentColor" textAnchor="middle">b</text></svg></span>
-                                          <span>The kilometrage where the obstruction exists</span>
-                                        </li>
-                                        <li className="flex gap-2 items-center">
-                                          <span className="text-cyan-400"><svg className="w-4 h-4" stroke="currentColor" fill="none" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><text x="12" y="16" fontSize="10" fill="currentColor" textAnchor="middle">c</text></svg></span>
-                                          <span>Details of any speed restriction imposed by Way and Works staff</span>
-                                        </li>
-                                        <li className="flex gap-2 items-center">
-                                          <span className="text-cyan-400"><svg className="w-4 h-4" stroke="currentColor" fill="none" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><text x="12" y="16" fontSize="10" fill="currentColor" textAnchor="middle">d</text></svg></span>
-                                          <span>Assurance that any trap points on the applicable line are <span className="font-semibold">spiked, clamped,</span> and <span className="font-semibold">padlocked</span></span>
-                                        </li>
-                                      </ul>
-                                    </span>
-                                  </div>
-                                </li>
-                                <li>
-                                  <div className="flex gap-3 items-start">
-                                    <span className="text-cyan-400 mt-1">
-                                      {/* Road sign (cross) icon */}
-                                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><path d="M4 20l16-16M20 20L4 4"/></svg>
-                                    </span>
-                                    <span>
-                                      <span className="font-semibold text-white">Cross-over arrangements:</span> All cross-over points in the <span className="font-semibold">facing direction</span> (through which the train will proceed when TSL is active) <span className="font-semibold">must be clamped and padlocked</span>.
-                                    </span>
-                                  </div>
-                                </li>
-                                <li>
-                                  <div className="flex gap-3 items-start">
-                                    <span className="text-cyan-400 mt-1">
-                                      {/* Train/right arrow icon */}
-                                      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><path d="M5 12h14M15 6l6 6-6 6"/></svg>
-                                    </span>
-                                    <span>
-                                      <span className="font-semibold text-white">Trains proceeding on the right line:</span>
-                                      <ul className="list-none mt-2 space-y-2">
-                                        <li className="flex gap-2 items-center">
-                                          <span className="text-cyan-400"><svg className="w-4 h-4" stroke="currentColor" fill="none" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><text x="12" y="16" fontSize="10" fill="currentColor" textAnchor="middle">a</text></svg></span>
-                                          <span>
-                                            The <span className="font-semibold">Last Stop Signal (LSS)</span> at the station behind the affected section may be passed in the &apos;On&apos; (stop) position, based on the T/B 602 Authority.
-                                          </span>
-                                        </li>
-                                        <li className="flex gap-2 items-center">
-                                          <span className="text-cyan-400"><svg className="w-4 h-4" stroke="currentColor" fill="none" strokeWidth={2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><text x="12" y="16" fontSize="10" fill="currentColor" textAnchor="middle">b</text></svg></span>
-                                          <span>
-                                            The <span className="font-semibold">approach Stop signals</span> (if present) at the station ahead of the affected section may be taken &apos;Off&apos; (allowing movement).
-                                          </span>
-                                        </li>
-                                      </ul>
-                                    </span>
-                                  </div>
-                                  <div className="mt-5">
-                                    <div className="flex gap-3 items-start mb-2">
-                                      <span className="text-cyan-400 mt-1">
-                                        {/* Wrong line icon */}
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-                                          <path d="M17 17L7 7" />
-                                          <path d="M7 17L17 7" />
-                                        </svg>
-                                      </span>
-                                      <span>
-                                        <span className="font-semibold text-white">
-                                          Trains proceeding on the <span className="text-cyan-300">wrong line</span>:
-                                        </span>
-                                      </span>
-                                    </div>
-                                    <ul className="list-none ml-6 space-y-4">
-                                      <li className="relative rounded-xl overflow-hidden border border-white/10 bg-slate-900/50 p-4 flex gap-3 items-start">
-                                        <span className="flex items-center justify-center h-8 w-8 rounded-full border border-blue-400/40 bg-blue-500/10 text-blue-200 text-lg font-bold">
-                                          1
-                                        </span>
-                                        <span className="text-blue-100/90">
-                                          The train must be <span className="font-semibold">piloted out of the station</span> on the basis of a
-                                          <span className="font-semibold"> written authority</span> issued by the Station Master.
-                                          Beforehand, ensure that <span className="font-semibold">all facing points</span> are correctly set and locked, and
-                                          <span className="font-semibold">all trailing points</span> that will be traversed are properly set.
-                                        </span>
+                              <div className="flex justify-center">
+                                <Image
+                                  src="/gsr-images/GSRPAGE155A.png"
+                                  alt="Message format for resumption of normal working - Station Master Y to Station Master X"
+                                  width={800}
+                                  height={600}
+                                  className="w-full max-w-4xl rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              18
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-3">
+                              Review and retention of records.
+                            </p>
+                            <p>
+                              All the records in connection with the temporary single line working shall be retained at the station and the Transportation Inspector of the section must scrutinize them and submit his report to the Sr. Divisional Operations Manager / Divisional Operations Manager (in-charge) within seven days of the resumption of normal working.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              S.R. 6.02.2
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-3">
+                              6.02.2. Rules and regulations for temporary single line working on double line section during total interruption of communications.
+                            </p>
+                            <p>
+                              The following rules must, in addition to the prescribed rules and regulations for working of trains during total interruption of communications on single line, be observed by the staff:
+                            </p>
+                            <ol className="list-decimal pl-6 space-y-2">
+                              <li>
+                                Whenever an accident to a train or track or other obstruction precludes the use of one line on a double line section during total interruption of communications, TSL working shall be introduced only after a responsible official of the Engineering department, not less than an Inspector in rank, has certified that the other line on which TSL working is to be introduced is free and safe for passage of trains. Such an Engineering official shall give the certificate only to the Station Master of the station at the end of the affected section for which the unobstructed line shall be the right line for despatching train. On receipt of this certificate, the Station Master will follow the rules prescribed for opening of communications.
+                              </li>
+                              <li>
+                                Loco Pilots of trains, including light engines, shall be given T/B602 (Authority for opening communication during total interruption of communication on Single Line Section) on which shall be stated clearly:
+                                <ol className="list-decimal pl-6 mt-1 space-y-1">
+                                  <li>the line on which the train is to run;</li>
+                                  <li>kilometreage where the obstruction exists;</li>
+                                  <li>any restriction of speed which may have been imposed by Way and Works staff,</li>
+                                  <li>an assurance to the effect that any trap points on the line in question have been spiked or clamped and pad locked.</li>
+                                </ol>
+                              </li>
+                              <li>
+                                All the cross-over points in the facing direction over which the train shall proceed, while TSL working is in force, shall be clamped and padlocked.
+                              </li>
+                              <li>
+                                In the case of train proceeding on the right line:
+                                <ol className="list-decimal pl-6 mt-1 space-y-1">
+                                  <li>
+                                    The LSS of the station in rear of the affected section may be passed in the ‘on’ position on the basis of T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section).
+                                  </li>
+                                  <li>
+                                    The approach Stop signals, if any of the station in advance of the affected section, may be taken ‘off’.
+                                  </li>
+                                </ol>
+                              </li>
+                              <li>
+                                In the case of a train proceeding, on the wrong line:
+                                <ol className="list-decimal pl-6 mt-1 space-y-1">
+                                  <li>
+                                    The train shall be piloted out of the station on a written authority issued by the Station Master after all the facing points have been correctly set and locked and trailing points correctly set over which the train will pass.
+                                    <ol className="list-decimal pl-6 mt-1 space-y-1">
+                                      <li>
+                                        The endorsement shall also be made in the T/B 602 given to the Loco Pilot of the first train to stop and inform all Gatemen, Gangmen, patrolmen, OHE staff, Telecom staff and any other staff on the way about the introduction of temporary single line working and specifying the road on which the trains will run. This information shall be conveyed through the Loco Pilot of a subsequent train also if necessary.
                                       </li>
-                                      <li className="relative rounded-xl overflow-hidden border border-white/10 bg-slate-900/50 p-4 flex gap-3 items-start">
-                                        <span className="flex items-center justify-center h-8 w-8 rounded-full border border-indigo-400/40 bg-indigo-500/10 text-indigo-200 text-lg font-bold">
-                                          2
-                                        </span>
-                                        <span className="text-blue-100/90">
-                                          The relevant <span className="font-semibold">endorsement</span> must be made in the <span className="font-semibold">T/B 602 authority</span> issued to the Loco Pilot of the first train.
-                                          The Loco Pilot should be instructed to <span className="font-semibold">communicate to all Gatemen, Gangmen, Patrolmen, OHE staff, Telecom staff,</span> and <span className="font-semibold">other relevant staff</span> en route
-                                          about the implementation of temporary single line working <span className="font-semibold">and</span> to <span className="font-semibold">specify the track</span> being used. If necessary, this message may also be relayed through the Loco Pilot of a subsequent train.
-                                        </span>
-                                      </li>
-                                    </ul>
+                                    </ol>
+                                  </li>
+                                  <li>
+                                    On reaching the next station, the Loco Pilot shall bring his train to a stop opposite the FSS pertaining to the right line or at the LSS pertaining to the wrong line (on which his train is running), whichever he comes across first.
+                                  </li>
+                                  <li>
+                                    The Station Master of the station in advance shall depute a railway servant in uniform at the foot of the signal (whichever the train would encounter first) who shall stop the train on stop hand signal and thereafter ‘pilot in’ into the station on a written authority issued by the Station Master.
+                                  </li>
+                                </ol>
+                              </li>
+                              <li className="list-none">
+                                <div className="mt-6 space-y-6">
+                                  <div className="flex justify-center">
+                                    <Image
+                                      src="/gsr-images/GSRPAGE156A.png"
+                                      alt="PILOT-OUT memo - Authority for Loco Pilot to start train from line to wrong line"
+                                      width={800}
+                                      height={600}
+                                      className="w-full max-w-4xl rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                                    />
                                   </div>
-                                </li>
-                              </ol>
+                                  <div className="flex justify-center">
+                                    <Image
+                                      src="/gsr-images/GSRPAGE156B.png"
+                                      alt="PILOT-IN memo - Authority for Loco Pilot to bring train onto specific line"
+                                      width={800}
+                                      height={600}
+                                      className="w-full max-w-4xl rounded-xl border border-white/10 shadow-lg shadow-blue-900/40"
+                                    />
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                It will be the responsibility of the person in charge of the first engine or self propelled vehicle or other vehicle, sent under T/B 602 to inform all the Gatemen, Gangmen, Patrolmen, OHE staff, Telecom staff and any other staff enroute about the introduction of TSL working as also the line on which it is proposed to run the train.
+                              </li>
+                              <li>
+                                <span className="font-semibold">Resumption of normal working.</span>
+                                <ol className="list-decimal pl-6 mt-1 space-y-1">
+                                  <li>
+                                    If after the introduction of TSL working, communications are restored between the two affected stations, the trains will continue to run under special rules until action is taken in accordance with the instructions contained in these rules for the cancellation of the procedure. Thereafter, trains will be run in accordance with the instructions for the movement of traffic during TSL working on double line.
+                                  </li>
+                                  <li>
+                                    If however before communications are restored the other line is released for the passage of traffic, trains shall be worked in accordance with the instructions for running of trains on double line section during total interruption of communications.
+                                  </li>
+                                </ol>
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* S.R. 6.02.3 Header */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-sm font-semibold tracking-wide text-indigo-100 text-center lg:text-base">
+                              S.R. 6.02.3
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-2">
+                              Rules and regulations for working of trains during total interruption of communications on double line sections.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 1 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              1
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              In the event of total interruption of communications occurring between two block stations on a double line section, i. e., when Line Clear cannot be obtained by any one of the following means stated in the order of preference viz.,
+                            </p>
+                            <div className="space-y-2 ml-4">
+                              <p>1. Block Instruments, Track Circuits or Axle Counters,</p>
+                              <p>2. Telephone attached to the Block Instrument,</p>
+                              <p>3. Station to Station fixed telephones wherever available,</p>
+                              <p>4. Fixed telephone such as Railway auto phones and BSNL telephones,</p>
+                              <p>5. Control telephone and</p>
+                              <p>6. VHF set.</p>
+                            </div>
+                            <p>
+                              The following procedure shall be adopted for train passing.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 2 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              2
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Before any train is allowed to enter a block section in advance, it shall be brought to a stop and the Loco Pilot and the Guard of the train shall be advised of the circumstances by the Station Master on duty.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 3 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              3
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="mb-3">
+                              The Station Master shall give T/C 602 (Authority for working of trains during total interruption of communication on double line section) to the Loco Pilot of each train which includes:
+                            </p>
+                            <div className="space-y-2 ml-4">
+                              <p>1. An authority to proceed without line clear,</p>
+                              <p>2. A caution order restricting the speed to 25 KMPH over the straight and 10 KMPH when approaching or passing any portion of the line where the view ahead is not clear due to curve, obstruction, rain, fog or any other cause,</p>
+                              <p>3. An authority to pass LSS in the `on` position.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 4 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              4
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              In the event of a Loco Pilot approaching or passing any portion of the line where the view ahead is not clear, a railway employee with hand signals must be sent in advance to guide the further movement of train. A sharp look out ahead should be kept and the engine whistle freely used.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 5 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              5
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              No train shall be allowed to enter the block section until there is a clear interval of 30 minutes between the train about to leave and the train which has immediately preceded.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 6 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              6
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Fixed signals with the exception of the LSS may be taken `off` for the reception and departure of trains. The FSS shall, however, be taken &apos;off&apos; only after the train has been brought to a stand outside it.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 7 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              7
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              A tunnel should be entered only after it has been ascertained that it is clear. If there is any doubt on this point, the train should be piloted by a railway employee equipped with hand signals and detonators.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 8 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              8
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              The Guard shall keep a sharp look out in the rear and be prepared to exhibit a Stop hand signal to prevent the approach of a train from the rear and to protect it if necessary.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 9 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              9
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              When a train is stopped in the block section, the Guard shall immediately exhibit a stop hand signal towards the rear and check up that the tail board or the tail lamp is correctly exhibited. If the stoppage is on account of accident, failure, obstruction or other exceptional cause and the train cannot proceed, the Loco Pilot shall sound the prescribed code of whistle to apprise the Guard of the fact, whereupon the Guard shall protect the train by placing one detonator at 250 metres from the train on the way out and 2 detonators, 10 metres apart, at 500 metres from the train, irrespective of the gauge. When a train is detained outside signals and if the detention exceeds or is likely to exceed 10 minutes, it shall also be protected accordingly. In the absence of the Guard, the duty of protecting the train shall devolve on the Loco Pilot.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 10 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              10
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              No train shall be backed. In exceptional circumstances when it may be unavoidable to back a train, the train shall be backed only after providing protection by placing one detonator at 250 metres and two detonators, 10 metres apart, at 500 metres in rear of the point upto which the train is to be backed.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 11 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              11
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Before entering a tunnel, the head lights, side and tail lights and other lights (where provided) shall also be lit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 12 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              12
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              When approaching the station ahead, the Loco Pilot must bring his train to a stop outside the FSS and sound continuous whistle (or any other code prescribed by special instruction). If no one from the station turns up within 10 minutes, the train shall be protected as per para 9 above and the Loco Pilot may send his Assistant Loco Pilot immediately thereafter, to the station or the cabin to inform the Station Master or Cabinman of the fact that the train is waiting at the signal for its admission into the station. In the absence of the Assistant Loco Pilot, the Guard, after protecting the train, shall give this information.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 13 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              13
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              The Loco Pilots of all trains shall make over the T/C 602 (Authority for working of trains during total interruption of communication on double line section) to the Station Master of the station at the other end of the affected section. These shall be kept by the Station Master in his safe custody for inspection by the Traffic Inspector of the section, who shall prepare a report on the working of trains and shall forward the same along with his report to the DRM within 7 days of resumption of normal working.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 14 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              14
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              A record of all trains passed over the block section on T/C 602 (Authority for working of trains during total interruption of communication on double line section) during the course of total interruption of communications, shall be maintained in the TSR at both the stations concerned.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 15 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              15
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Trains must continue to work on this system until one of the means of communications, mentioned in para 1 above, is restored by the competent authority.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 16 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              16
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              As soon as any one of the means of communications has been restored, the Station Master must send a message to the Station Master at the other end of the section on the prescribed form T/I 602 (Message on restoration by any one of the communication).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 17 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              17
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Thereafter intimation about this shall be given to SCOR also, on controlled sections, if communications with the SCOR has also got restored and normal working resumed. If, however, communications with the SCOR has not got restored along with restoration of communication between two stations, the SCOR shall be advised of the position immediately on restoration of communication with him.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      {/* S.R. 6.02.4 Header */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-sm font-semibold tracking-wide text-indigo-100 text-center lg:text-base">
+                              S.R. 6.02.4
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-2">
+                              Rules and regulations for working of trains during total interruption of communications on single line section
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 1 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              1
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              In the event of total interruption of communications occurring between two block stations on a single line section i. e., when Line Clear cannot be obtained by any one of the following means stated in order of preference viz.,
+                            </p>
+                            <div className="space-y-2 ml-4">
+                              <p>1. Block instruments, Track circuits or Axle counters,</p>
+                              <p>2. Telephone attached to the Block Instrument,</p>
+                              <p>3. Station to Station fixed telephones wherever available,</p>
+                              <p>4. Fixed telephone such as Railway auto phones and BSNL telephones,</p>
+                              <p>5. Control telephone and</p>
+                              <p>6. VHF set.</p>
+                            </div>
+                            <p>
+                              The instructions laid down in succeeding paragraphs shall be followed for working trains between block stations.
+                            </p>
+                            <div className="mt-4 p-4 rounded-xl bg-yellow-500/10 border border-yellow-500/30">
+                              <p className="font-semibold text-yellow-200 mb-2">Note:-</p>
+                              <p>
+                                These instructions shall also be followed whenever during total interruption of communications, an accident to a train or track or other obstructions precludes the use of one of the lines on a double line section or whenever total interruption of communications occurs during TSL working on a double line section.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 2 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              2
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="mb-3">
+                              The Station Master who has a train to despatch through the affected block section shall open communication by establishing contact with the Station Master of the block station at the other end of the affected block section by sending an engine or self- propelled vehicle or any other vehicle enumerated below, in the order of preference laid down.
+                            </p>
+                            <div className="space-y-2 ml-4">
+                              <p>1. Light engine.</p>
+                              <p>2. Train engine, after it is detached from the train by the Loco Pilot on instructions from the Station Master on duty.</p>
+                              <p>3. Motor trolley/Tower wagon duly accompanied by a Guard or by a Station Master other than the Station Master on duty.</p>
+                              <p>4. Trolley/Cycle trolley /Moped trolley duly accompanied by a Guard or by a Station Master other than the Station Master on duty.</p>
+                              <p>5. Diesel Car/Rail Motor Car/EMU Rake etc., after ensuring that all passengers have detrained.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 3 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              3
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Before the Light engine/Train engine/Motor trolley/Tower wagon/Trolley/Cycle trolley/Moped trolley/Diesel car/Rail motor car/EMU rake is sent into the affected block section to open communications, the Loco Pilot/Motorman/Guard/Station Master being sent to do so shall be advised by the Station Master on duty of the circumstances in which and the purpose for which he is being sent. The Station Master on duty shall also satisfy himself that the Loco Pilot/ Motorman/Guard /Station Master being sent to open communications, thoroughly understands the rules for working of trains during total interruption of communications on the single line. If the Loco Pilot/Motorman/Guard/Station Master, who is being sent to open communications, is not conversant with the rules for working of trains during total interruption of communications on single line, the Station Master on duty shall explain these rules to such staff. The Station Master on duty shall also obtain the signature of the Loco Pilot/Motorman/Guard/Station Master on T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) in token of such staff having fully understood the circumstances in which and the purpose for which he is being sent and the rules for working of trains during total interruption of communications on single line.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 4 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              4
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <div>
+                              <p className="font-semibold text-base mb-2">4.1.</p>
+                              <p className="mb-3">
+                                Before despatching the Light engine/Train engine/Motor Trolley/Tower wagon/Trolley/Cycle trolley /Moped trolley/Diesel Car/Rail Motor Car/EMU rake, the Station Master on duty shall hand over T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) to the Loco Pilot/Motorman /Guard/Station Master who is being sent to open communications, which includes:-
+                              </p>
+                              <div className="space-y-2 ml-4">
+                                <p>1. Authority to proceed without Line Clear.</p>
+                                <p>2. Authority to pass signals in &apos;on&apos; position i.e., the authority to pass the departure signal/signals in the `on` position.</p>
+                                <p>3. A caution order, specifying the speed up to which the engine or self propelled vehicle or other vehicle referred to in para 2 may run through the affected block section.</p>
+                                <p>4. A line clear enquiry message addressed to the Station Master of the block station at the other end of the affected block section asking for Line Clear for the train waiting to be despatched to his station.</p>
+                                <p>5. A conditional line clear (CLC) message to the Station Master of the block station at the other end of the affected block section permitting him:</p>
+                                <div className="space-y-1 ml-4">
+                                  <p>1. to return the Light engine/train engine, either light or attached to a train waiting to be despatched from his station or attached with another engine; or</p>
+                                  <p>2. to return Tower wagon/Diesel car/Rail motor car/EMU rake running by itself; or</p>
+                                  <p>3. to return motor trolley/trolley/cycle trolley /moped trolley either running by itself or loaded in a train waiting to be despatched from his station.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-base mb-2">4.2.</p>
+                              <p>
+                                Line clear enquiry message: T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section).--- for only one train, if to be despatched; or T/E 602 (Line clear enquiry message asking Line Clear for despatch trains during total failure of communication on single line section) --- for more than one train, if to be despatched, along with T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) shall be sent through the Loco pilot/Motorman/Guard/Station Master going to open communications.
+                              </p>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-base mb-2">4.3.</p>
+                              <p>
+                                The Loco Pilot/Motorman/Guard/Station Master going to open communications shall, on receipt of &apos;Authority for opening communication during total interruption of communication on single line section&apos; (T/B.602) and sign on its original and carbon copy in token of his having understood its contents.
+                              </p>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-base mb-2">4.4.</p>
+                              <p>
+                                In case a light engine or an engine and brake-van is to be dispatched to proceed to the next block station and then continue its journey onward after arrival at the next block station and is not meant for opening communication, the Loco Pilot of engine or the engine and the brake-van shall be given T/B602 (Authority for opening communication during total interruption of communication on Single Line Section).and the items &apos;line clear enquiry message&apos; and &apos;conditional line clear message&apos; shall be struck out in the form T/B602 (Authority for opening communication during total interruption of communication on Single Line Section). Should it be necessary to despatch another light engine or another engine and brake- van in the same direction, an interval of at least 30 minutes shall be allowed to lapse before it is despatched.
+                              </p>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-base mb-2">4.5.</p>
+                              <p>
+                                The LSS shall not be taken &apos;off&apos; while permitting an engine or self-propelled vehicle or other vehicle to proceed to the next station on T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section).
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 5 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              5
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              After an engine or self propelled vehicle or other vehicle is despatched to the next station to open communications with LC enquiry message and CLC messages for the return journey of the engine or self propelled vehicle or other vehicle, no other train or engine or self propelled vehicle or other vehicle shall be allowed to leave the station and proceed in the same direction until the engine or self propelled vehicle or other vehicle sent to open communications returns. This does not, however, prevent an engineering official going into the section on his push trolley for his work on a section on which push trolleys do not run on line clear.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 6 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              6
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <div>
+                              <p className="font-semibold text-base mb-2">6.1.</p>
+                              <p>
+                                The engine or self propelled vehicle or other vehicle proceeding on T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) shall switch on the flasher light and dim the head light and shall proceed at a speed not exceeding 15 KMPH by day when the view is clear and 10 KMPH during night or when the view is obstructed, making free use of the engine whistle or horn of the self propelled vehicle, where provided. In thick, foggy or tempestuous weather or in dust storm etc, when visibility is impaired, the engine or self propelled vehicle or other vehicle proceeding on T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) shall proceed at walking pace only making repeated use of the engine whistle or horn of self propelled vehicle, preceded at an adequate distance by two men on foot, one displaying a red light and the other carrying fog signal ready for immediate use. Normally one of these men will be provided by the Station Master from his group &apos;D&apos; staff and the other from the crew of the engine or the person whose motor trolley/trolley/cycle trolley/moped trolley is being used. In case of single manned self-propelled vehicle, both these men shall be provided by the Station Master. The Station Master on duty shall explain to both of them their duties, in the presence of the Loco Pilot/Motorman/Guard/Station Master in charge of the self-propelled vehicle or other vehicle being sent to the next station and satisfy himself that they understand the same.
+                              </p>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-base mb-2">6.2.</p>
+                              <p>
+                                Both by day and night, a tunnel must not be entered until the Loco Pilot/Motorman/Guard/Station Master has ascertained that it is clear. Should there be any doubt on this point the engine or other vehicle etc, should be piloted by a railway servant equipped with hand signal and detonators. Before entering the tunnel the head lights, side and tail lights and other lights (where provided) shall also be lit.
+                              </p>
+                            </div>
+                            <div>
+                              <p className="font-semibold text-base mb-2">6.3.</p>
+                              <p>
+                                No obstruction of the line beyond the outermost facing points shall be allowed until the return of the engine/tower wagon/diesel car/rail motor car/EMU rake/motor trolley/trolley/cycle trolley/moped trolley.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 7 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              7
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              In the event of an engine/self propelled vehicle/other vehicle proceeding on T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) meeting in the mid-section, an engine/self propelled vehicle/other vehicle sent from the other end, the Loco Pilot/Motorman/Guard/Station Master as the case may be, shall taking into consideration the importance of the train for which they are proceeding to get Line Clear, the distance from the nearest station, gradients to be encountered, the presence of catch sidings, etc., decide to which of the two stations, the engines/self propelled vehicle/vehicles should proceed. Before proceeding, the engines or self propelled vehicles shall, if possible, be coupled up. If the engines/self-propelled vehicle cannot be coupled up, they should run at a safe speed and adequate distance apart. In the case of motor trolley/trolley/cycle trolley/moped trolley, meeting an engine and brake-van/diesel car/rail motor car/EMU rake, the motor trolley/trolley/cycle trolley/moped trolley shall, if possible, be loaded in the brakevan/ diesel car/rail motor car/EMU rake.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 8 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              8
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              On sighting the station to which the engine/self propelled vehicle/other vehicle running by itself or with another similar unit coupled together or separately, to which it is/they are proceeding, the leading engine/self propelled vehicle/other vehicle shall stop outside i.e., in rear of the FSS of the station. The engine or selfpropelled vehicle or other vehicle following the leading engine/self propelled vehicle / other vehicle, shall stop at a safe distance behind the leading engine/selfpropelled vehicle/other vehicle. The Station Master shall be advised of the stoppage outside the FSS either by using the engine whistle/horn of the selfpropelled vehicle, if provided, or by sending a man if necessary. They shall not enter the station till permitted by the Station Master to do so either by taking &apos;off&apos; the relevant signals or otherwise.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 9 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              9
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              When the engine or engines/self propelled vehicle or self propelled vehicles/other vehicle or vehicles have been admitted into the station, the T/B 602 (Authority for opening communication during total interruption of communication on Single Line Section) shall be delivered to the Station Master on duty, who shall keep these documents in his safe custody. On the authority of the CLC message for the return journey, the Station Master on duty shall make out conditional line clear ticket (T/G 602 or T/H 602) and hand it over to the Loco Pilot/Motorman/Guard/Station Master to return to the block station from where he came with his engine (either light or attached to a train or another engine or a self propelled vehicle if one is waiting to proceed in that direction)/ self propelled vehicle/other vehicle.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 10 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              10
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              In case of the engine or self-propelled vehicle or other vehicle returning to the station from which he was sent without reaching the next station, the T/B602 (Authority for opening communication during total interruption of communication on Single Line Section) shall be taken back by the Station Master on duty of the station from which this was issued and cancelled. The cancelled forms shall be pasted for record purpose.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 11 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              11
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              The Station Master on duty before despatching the engine either light or attached to a train/self-propelled vehicle/other vehicle, on the return journey shall hand over to the Loco Pilot/motorman/Guard /Station Master, CLC message (reply) for the line clear enquiry message giving Line Clear for the train waiting at the other station, thereby authorising the Station Master at that station to start the train waiting there on complete arrival of the engine, either light or attached to a train/self-propelled vehicle/other vehicle at his end.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 12 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              12
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              The CLC message (reply) shall be prepared on T/F 602 (Conditional Line Clear Message).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 13 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              13
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              On the return journey, the engine either light or attached to a train/Diesel car/Rail motor car/EMU rake/train loaded with Motor trolley/trolley/Cycle trolley/Moped trolley may run at booked speed observing speed limits in the Working Time Table and other relevant rules. The Motor trolley/trolley/Cycle trolley/Moped trolley returning by itself may run at their normal speed observing the rules governing their running on Line Clear.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 14 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              14
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              On reaching the station, the engine either light or attached to a train/self-propelled vehicle/other vehicle shall again stop outside (i.e. in rear of) the FSS of the station and thereafter be guided by the instructions from the Station Master who may arrange to receive in by taking &apos;off&apos; the relevant signals or otherwise.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 15 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              15
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              On arrival at the station, T/F 602 shall be handed over to the Station Master who shall prepare T/G 602 or T/H 602 (Conditional Line Clear Ticket) for the waiting train.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 16 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              16
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              If there be an even flow of trains in both directions, T/E 602 for each succeeding train may be sent through the Guard of the preceding train.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 17 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              17
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              The arrival and departure time of all trains, engines, trolleys etc., which are passed under the above rules, must be carefully recorded in the TSR.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 18 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              18
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="mb-3">
+                              If the Station Master at one end of the interrupted section has more than one train to despatch in the same direction before another train is normally expected from the opposite direction, he shall, in such cases, send the available engine of a train to obtain Line Clear not only for that train but also for the following trains which may be waiting or expected at his station. In T/E 602, it shall be stated that these latter trains will be despatched after the first train at intervals of 30 minutes. After the Loco Pilot returns with the Line Clear for the required number of trains to the station at which he had left the train, the Station Master shall despatch the first train on T/G 602 or T/H 602 and shall also endorse on T/G 602 or T/H 602 that a particular train (giving its number and description in full) shall follow at a specified interval. The Loco Pilots of the second and subsequent following trains shall be given a Caution Order restricting the speed to 25 KMPH over the straight when the view ahead is clear and to 10 KMPH when approaching or passing any portion of the line where the view ahead is not clear due to curve, obstruction, rain, fog or any other cause.
+                            </p>
+                            <p>
+                              When dispatching a second and subsequent trains, the particulars of the last preceding train along with its time of departure will be endorsed on the T/G 602 or T/H 602 as also the particulars of the train which would follow. The T/G 602 or T/H 602 for the last train of the series should be endorsed with the particulars of the preceding train together with its time of departure.
+                            </p>
+                            <p>
+                              While adopting this procedure, the Guard and the Loco Pilot should be instructed to keep a sharp look out and be prepared to stop short of any obstruction.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 19 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              19
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              When a train is stopped in the block section the Guard shall immediately exhibit a Stop hand signal towards the rear and check up that the tail board or tail lamp is correctly exhibited. If the stoppage is on account of accident, failure or obstruction or other exceptional cause and the train cannot proceed, the Loco Pilot shall sound the prescribed code of whistle to apprise the Guard of the fact, whereupon the Guard shall protect the train by placing one detonator at 250 metres from the train on the way out and 2 detonators, 10 metres apart, at 500 metres from the train, irrespective of the gauge. When a train is detained outside signals and if the detention exceeds or is likely to exceed 10 minutes it shall also be protected accordingly. In the absence of the Guard, the duty of protecting the train shall devolve on the Loco Pilot.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 20 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              20
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              When trains follow one another, no train shall be backed. In exceptional circumstances when it may be unavoidable to back a train, the train shall be backed only after providing protection by placing one detonator at 250 metres and two detonators, 10 metres apart, at 500 metres from the point up to which the train is to be backed.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 21 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              21
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Trains must continue to work on this system until any one of the means of communications mentioned in para 1 is restored by the competent authority.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 22 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              22
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              As soon as any one of the means of communications has been restored, the Station Master must send a message to the Station Master at the other end of the section on the prescribed form T/I 602.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 23 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              23
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              Thereafter intimation about this shall be given to SCOR also on controlled sections, if communication with SCOR has also got restored and normal working resumed. If, however, communication with SCOR has not got restored along with restoration of communication between two stations, the SCOR shall be advised of the position immediately on restoration of communication with him.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Point 24 */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-base font-semibold tracking-wide text-indigo-100 text-center lg:text-lg">
+                              24
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p>
+                              On the section where total interruption of communications occurs, the Traffic Inspector of the section must scrutinise the train passing records of the station and submit his report to the DRM within 7 days of the resumption of communications.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* S.R. 6.02.5 Header */}
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-indigo-400/30 hover:bg-white/10 mt-8">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-blue-500/5 to-cyan-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-32 h-10 w-32 items-center justify-center rounded-full border border-indigo-400/40 bg-indigo-500/10 text-sm font-semibold tracking-wide text-indigo-100 text-center lg:text-base">
+                              S.R. 6.02.5
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-indigo-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-2">
+                              Special Rules for Running Trains Against Established Direction on Double Line Section (other than TSL)
+                            </p>
+                            <p>
+                              On a double line section, if for any reason other than the introduction of temporary single line working it becomes necessary to run a train against the established direction of traffic, the following procedure must be observed:
+                            </p>
+                            <ol className="list-decimal ml-6 space-y-2">
+                              <li>
+                                The line concerned shall be blocked as per GR 1.02(8), indicating the station to which the train is to proceed, after obtaining acknowledgement from the Station Master at the other end.
+                              </li>
+                              <li>
+                                The Station Master intending to despatch the train shall then issue a block ticket (<span className="font-semibold">T/J 602</span>) indicating:
+                                <ul className="list-disc ml-6 mt-2 space-y-1">
+                                  <li>Speed at which the train is to run</li>
+                                  <li>The precautions to be observed</li>
+                                  <li>To ascertain the condition of the train/obstruction over the adjacent line</li>
+                                  <li>To look out for possible obstruction and take action accordingly</li>
+                                  <li>Report (in writing) at the next station</li>
+                                </ul>
+                              </li>
+                            </ol>
+                            <p>
+                              The Station Master at the other end of the block section, after acknowledging the message vide GR 1.02(8), shall not permit any obstruction outside the outermost points on the line at the end of the station nearest to the expected train.
+                            </p>
+                            <p>
+                              The Loco Pilot, after reaching the next block station, will also certify (in writing) whether the line over which the train has passed on &apos;block ticket&apos; is safe for introduction of single line working.
+                            </p>
+                            <p>
+                              The Station Master, on receipt of such certificate from the Loco Pilot, shall take steps to introduce TSL working under the procedure detailed in SR. 6.02.1.
+                            </p>
+                            <div className="mt-4 p-4 rounded-xl bg-yellow-600/10 border border-yellow-600/30">
+                              <p className="font-semibold text-yellow-200 mb-2">Note:</p>
+                              <p>
+                                Movement of train shall be restricted to one train only, and the train shall not, in any case, be a passenger carrying train.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10 mt-8">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="flex items-center gap-4">
+                            <span className="flex lg:h-12 lg:w-40 h-10 w-40 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-sm font-semibold tracking-wide text-cyan-100 text-center lg:text-base">
+                              S.R. 6.02.6
+                            </span>
+                            <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                          </div>
+                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                            <p className="font-semibold text-lg lg:text-xl text-white/90 mb-2">
+                              Despatch of Relief Engine / Relief Train into an Occupied/Obstructed Block Section to Assist the Crippled or Disabled Engine / Train
+                            </p>
+                            <ol className="list-decimal ml-6 space-y-2">
+                              <li>
+                                When a block section between two block stations is occupied/obstructed due to accident or disabled train, and a relief engine/train must be despatched, it may be done by issuing the <span className="font-semibold">“Authority for Relief engine/train to enter into an occupied block section” (T/A.602)</span>, which contains:
+                                <ul className="list-disc ml-7 mt-2 space-y-2">
+                                  <li>
+                                    <span className="font-semibold">Authority to proceed without Line Clear:</span> Authorizes the relief engine/train to proceed cautiously without Line Clear up to the point of obstruction at KM (on up/down line) and clear back to the station from which it started, or to the station at the other end of the affected block section.
+                                  </li>
+                                  <li>
+                                    <span className="font-semibold">Authority to pass signals in ‘on’ position:</span> Authorizes passing the signal(s) in ‘on’ position at a speed not exceeding 15 KMPH, observing hand signals at the foot of the signal posts if they protect the points.
+                                  </li>
+                                  <li>
+                                    <span className="font-semibold">Caution Order:</span> To observe a speed of 15 KMPH during day when the view is clear, or 10 KMPH during night or when visibility is poor, or to proceed at walking speed preceded by two men on foot with red light and fog signals on Single Line/one man on Double Line, especially in foggy/tempestuous weather or when the electric light of the loco is not working.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                If control is working, all operations must be carried out in consultation with the Section Controller.
+                              </li>
+                              <li>
+                                The Station Master on duty at the other end of the affected section must be advised of the relief engine/train entering the section and the station into which they will clear, under exchange of Private Numbers.
+                              </li>
+                              <li>
+                                When a relief engine is sent, clear instructions regarding the nature of the obstruction (as far as known), the station to which the crippled train/engine could be moved, and the location of the engine and brake van of the crippled/disabled train should be given to the Loco Pilot in the caution order.
+                              </li>
+                              <li>
+                                The Loco Pilot must keep a sharp lookout at all times, be prepared to stop short of any obstruction, and use the engine whistle frequently.
+                              </li>
+                              <li>
+                                The Loco Pilot shall bring the train/engine to a stop short of the obstruction and thereafter obey the hand signals at the site.
+                              </li>
+                              <li>
+                                While returning to the station (from which started or the next station ahead), the Loco Pilot must act according to the aspect of signals (on Single Line/right line on Double Line), stop at LSS on wrong line, and sound the whistle continuously. Thereafter, the train shall be piloted by station staff.
+                              </li>
+                              <li>
+                                On arrival at the station, the authority (T/A.602) must be handed over to the Station Master on duty, who will retain it in the station records.
+                              </li>
+                              <li>
+                                A record of timings for the relief engine/train entering and clearing the obstructed section shall be made in the TSR in red ink. In case of an accident, a ‘track fit’ certificate shall be obtained before resuming normal working. Before resuming normal working, Station Masters at both ends must ensure that the block section is clear under exchange of Private Numbers, and make entries in the TSR and station diary in red ink.
+                              </li>
+                              <li>
+                                When it is required to push the train, follow guidelines given in SR 4.12.
+                              </li>
+                            </ol>
+                            <div className="mt-4 p-4 rounded-xl bg-yellow-600/10 border border-yellow-600/30">
+                              <p className="font-semibold text-yellow-200 mb-2">Note:</p>
+                              <p>
+                                Whenever it is necessary to despatch any self-propelled vehicle such as Track Tamping Machine, Tower Car, etc., into such a block section, they may be despatched on T/A.602.
+                              </p>
                             </div>
                           </div>
                         </div>
