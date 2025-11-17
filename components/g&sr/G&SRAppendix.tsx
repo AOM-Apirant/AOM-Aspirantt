@@ -230,6 +230,7 @@ const GSRAppendix = () => {
         {number: "5", title: "Common features in the operation of Siemens’ and Podanur workshop panels", page: "452"},
         {number: "6", title: "‘Dos’ for Station Masters", page: "454"},
         {number: "7", title: "‘Don’ts for Station Masters", page: "455"},
+        {number: "8", title: "‘Don’ts’ for S & T Staff", page: "456"},
       ]
     },
     {
