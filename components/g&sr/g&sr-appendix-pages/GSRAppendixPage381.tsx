@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 
 const GSRAppendixPage381 = () => {
   return (
@@ -120,6 +121,18 @@ const GSRAppendixPage381 = () => {
                                 The certificate of competency issued by training centre after completion of stipulated period
                                 of initial/ refresher training course will be valid for a period of 5 years from the date of issue.
                               </p>
+                            </div>
+                            <div className="mt-6 flex justify-center">
+                              <div className="relative w-full max-w-4xl rounded-lg overflow-hidden border border-white/20 shadow-xl">
+                                <Image
+                                  src="/gsr-images/GSRPAGE382.png"
+                                  alt="Certificate of Competency"
+                                  width={1200}
+                                  height={800}
+                                  className="w-full h-auto object-contain"
+                                  priority
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
