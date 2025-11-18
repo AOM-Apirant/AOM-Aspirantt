@@ -200,24 +200,38 @@ const GSRAppendixPage356C = () => {
 
                       {/* 1.3 Records */}
                       <div className="space-y-4">
-                        <p className="font-semibold text-base lg:text-lg text-white/90">
+                        <p className="font-semibold text-base lg:text-lg text-white/90 text-center">
                           1.3. Records to be kept at gate lodge:
                         </p>
-                        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                           <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                             <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
                               <p>
                                 In addition to the above equipment, following records shall also be kept at the gate lodge.
                               </p>
-                              <p>(1) Gate working instructions in Hindi/English.</p>
-                              <p>(2) Gate working instructions in local vernacular language</p>
-                              <p>(3) List of tools and books</p>
-                              <p>(4) Duty roster</p>
-                              <p>(5) Certificate for working as Gateman</p>
-                              <p>(6) Bio-data particulars of Gatemen, including date of passing vision test, initial/refresher course, safety camp, etc.</p>
-                              <p>(7) Public complaint book</p>
-                              <p>(8) Inspection book</p>
+                              <ol className="space-y-2 mt-3">
+                                {[
+                                  "Gate working instructions in Hindi/English.",
+                                  "Gate working instructions in local vernacular language",
+                                  "List of tools and books",
+                                  "Duty roster",
+                                  "Certificate for working as Gateman",
+                                  "Bio-data particulars of Gatemen, including date of passing vision test, initial/refresher course, safety camp, etc.",
+                                  "Public complaint book",
+                                  "Inspection book"
+                                ].map((item, idx) => (
+                                  <li
+                                    key={idx}
+                                    className="flex items-start gap-3"
+                                  >
+                                    <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-cyan-700/80 border border-cyan-400/40 text-cyan-100 text-base font-semibold shadow-inner shadow-cyan-400/30">
+                                      {idx + 1}
+                                    </span>
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
+                              </ol>
                             </div>
                           </div>
                         </div>
@@ -225,16 +239,30 @@ const GSRAppendixPage356C = () => {
 
                       {/* 1.4 Mode of operation */}
                       <div className="space-y-4">
-                        <p className="font-semibold text-base lg:text-lg text-white/90">
+                        <p className="font-semibold text-base lg:text-lg text-white/90 text-center">
                           1.4. Mode of operation:
                         </p>
-                        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                          <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="relative flex flex-col gap-5 rounded-xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                             <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                              <p>(1) Detailed mode of operation for opening and closing the gate shall be provided in the respective SWR and gate working instructions incorporating local operational requirements.</p>
-                              <p>(2) At non-interlocked gates, the Gateman, before opening the gate for road traffic, shall fix a banner flag by day and red light by night on the staff at the prescribed location of 5 metres distance on either side of the gate on the single line sections and direction wise on double line sections. The banner flag / red light can be removed only after closing the gate against road traffic for passage of trains.</p>
-                              <p>(3) When level crossing gate is required to be opened for passage of road traffic, the Gateman must first open the gate farthest away from approaching road traffic and then open the gate on the side nearest the approaching road traffic.</p>
+                              <ol className="space-y-4 mt-1">
+                                {[
+                                  "Detailed mode of operation for opening and closing the gate shall be provided in the respective SWR and gate working instructions incorporating local operational requirements.",
+                                  "At non-interlocked gates, the Gateman, before opening the gate for road traffic, shall fix a banner flag by day and red light by night on the staff at the prescribed location of 5 metres distance on either side of the gate on the single line sections and direction wise on double line sections. The banner flag / red light can be removed only after closing the gate against road traffic for passage of trains.",
+                                  "When level crossing gate is required to be opened for passage of road traffic, the Gateman must first open the gate farthest away from approaching road traffic and then open the gate on the side nearest the approaching road traffic."
+                                ].map((item, idx) => (
+                                  <li
+                                    key={idx}
+                                    className="flex items-start gap-4 group"
+                                  >
+                                    <span className="text-lg font-bold text-white" aria-label={`Item ${idx + 1}`}>
+                                      {String.fromCodePoint(9311 + idx + 1)}
+                                    </span>
+                                    <span className="pt-1">{item}</span>
+                                  </li>
+                                ))}
+                              </ol>
                             </div>
                           </div>
                         </div>
@@ -250,68 +278,203 @@ const GSRAppendixPage356C = () => {
                             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                             <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                               <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                                <p className="font-semibold text-white/90">(1) Alertness:</p>
-                                <p>The Gateman shall be alert and be prepared to take immediate action, should danger be apprehended. Keys of the gate shall be in his personal custody.</p>
-                                <p className="font-semibold text-white/90 mt-4">(2) Position during passage of trains:</p>
-                                <p>During passage of trains, Gateman will stand in the manner indicted below:</p>
-                                <p>(i) Gateman will stand attentively in front of the gate lodge facing the approaching train.</p>
-                                <p>(ii) In day time, he shall hold red and green flags furled up on separate sticks in right and left hands respectively.</p>
-                                <p>(iii) In night time, he shall hold lighted hand signal lamp with white light facing the track.</p>
-                                <p>(iv) He shall keep the whistle slung around his neck from a cord.</p>
-                                <p className="font-semibold text-white/90 mt-4">(3) Routine duties of Gateman:</p>
-                                <p>(i) At non-interlocked LC gates and during emergencies or obstruction on track at other types of gates, Gateman shall ensure that red banner flag is placed across the track whenever the gate is kept in open condition for passage of road vehicles.</p>
-                                <p>(ii) He shall ensure that gate lamps and lamps of all gate signals are lighted and kept burning continuously from sunset to sunrise.</p>
-                                <p>(iii) Gateman shall perform his duties strictly according to the duty roster and shall not leave the gate unless reliever arrives and takes charge of it. However, if it is necessary to leave the gate in an emergency, he must close and lock the gates against road traffic, before leaving the gate.</p>
-                                <p>(iv) Except where otherwise prescribed under special instructions, he shall observe all passing trains and be prepared to take such action as may be necessary to ensure safety of trains.</p>
-                                <p>(v) He shall watch all passing trains and keep sharp look out for any unusual like hot axle, hanging chains, hanging battery, any vehicle/wagon/train/battery box on fire, shifted load, falling material like brake blocks, brake beams, safety bracket, vacuum cylinder or any other situation endangering safe running of trains.</p>
-                                <p>(vi) He shall also be prepared to repeat any signal which Guard may give to Loco Pilot on walkie-talkie or in any other way.</p>
-                                <p>(vii) If lifting barriers/leaf gates get damaged or becomes out of order, he shall use the spare chain with disc and padlocks for securing the gate against road traffic.</p>
-                                <p>(viii) If sliding boom arrangement is available, Gateman has to use them for closing the Gate against road traffic. If the interlocking arrangement is available for sliding booms, after closing the gate with sliding booms signals can be taken off. Before resorting to the use of sliding booms for closing the gate, Gateman shall make an entry in the Gate Timing Register and exchange PN with station master. After resuming working of normal booms again entry to be made and PN to be exchanged with SM to this effect.</p>
-                                <p>(ix) He shall report to the nearest Station Master, Gangman or PWI, any defect in his gate or apparatus pertaining to it, as soon as possible.</p>
-                                <p>(x) In the event of gate signal becoming defective, he shall maintain the signal in The &apos;on&apos; position even by disconnecting the signal wire if necessary.</p>
-                                <p>(xi) At the gate, whose signal has become defective, he shall close and lock the lifting barriers / leaf gates on sighting a train and hand signal or pilot the train past the defective signal. In such case he should inform the Loco Pilot to report the defect at the next station.</p>
-                                <p>(xii) He shall wear badge and prescribed uniform while on duty at level crossing gate.</p>
-                                <p>(xiii) He shall ensure that he is having competency certificate in his possession while on duty.</p>
-                                <p>(xiv) He shall work the gate as per Gate Working Instructions and remain well conversant with these instructions.</p>
-                                <p>(xv) He shall ensure that equipment supplied at the gate is in good order and ready for immediate use.</p>
-                                <p>(xvi) He shall see that the channel for the flange of the wheel is kept clear.</p>
-                                <p>(xvii) He shall keep the road surface well watered and rammed in case of non-metal roads.</p>
-                                <p>(xviii)He must be vigilant to see that inconvenience to road users due to closure of gates should be to the minimum possible extent.</p>
-                                <p>(xix) Gateman on electrified section shall watch that road vehicles/animals passing from gate are within the height gauge provided on either side of the level crossing gate.</p>
-                                <p>(xx) He shall prevent trespassing by persons or cattle to the maximum extent.</p>
-                                <p className="font-semibold text-white/90 mt-4">(4) Action in case of unusual occurrence on train:</p>
-                                <p>In case Gateman observes anything unusual with a passing train, he shall take following action:</p>
-                                <p>(i) He shall take prompt action to warn the Loco Pilot/Guard of the passing train by showing red flag by day / red light by night.</p>
-                                <p>(ii) He shall simultaneously try to draw the attention of the Loco Pilot/Guard by whistling continuously, shouting, gesticulating or by any other means.</p>
-                                <p>(iii) If Loco Pilot / Guard fail to take notice, he shall immediately inform the Station Master/Switchman, if connected on telephone, to take appropriate action.</p>
-                                <p>(iv) In case of train parting, he shall not show Stop hand signal but shall show prescribed signal for train parting (refer para 1.8);</p>
-                                <p>(v) In case the train does not stop, he shall immediately inform the Station Master/ Switchman, if connected on telephone, to take appropriate action.</p>
-                                <p className="font-semibold text-white/90 mt-4">(5) Action in an emergency at the LC gate:</p>
-                                <p>(i) In case of an obstruction at the LC gate, Gateman shall maintain the gate signals, if any, in the &apos;on&apos; position.</p>
-                                <p>(ii) Thereafter, if he is unable to remove the obstruction, he shall immediately advise the Station Master on duty, if connected by telephone, regarding the defects/obstructions at the gate.</p>
-                                <p>(iii) If there is no response from the Station Master after two or three attempts, he shall first protect the gate and then inform on phone.</p>
-                                <p>The Gateman shall protect the line as under:-</p>
-                                <p className="font-semibold text-white/90 mt-2">(a) On double line section:</p>
-                                <p>(i) If both lines are obstructed the Gateman shall plant a red banner flag by day/ red light by night 5 metres away on posts duly provided for the purpose. He shall first protect the line on which a train is expected to arrive first.</p>
-                                <p>(ii) Then he will similarly plant the other red banner flag by day / red light by night on the other line 5 metres away from the site of obstruction.</p>
-                                <p>(iii) Gateman shall then proceed to protect the gate along with detonators, and red flag by day/red hand signal lamp by night.</p>
-                                <p>(iv) Gateman shall proceed exhibiting red flag by day / red hand signal lamp by night on the line on which a train is expected to arrive first, to a point 600 metres on BG and 400 metres on MG and place one detonator on the line, thereafter he shall proceed to a distance of 1200 metres on BG and 800 metres on MG from the level crossing gate and place 3 detonators on the track 10 metres apart. Having thus protected the line, he shall return to the level crossing gate picking up the intermediate detonator on his way back.</p>
-                                <p>(v) Thereafter, he shall proceed on the other line, showing red hand signal, similarly place detonators as described in para (iv) above and return to the site of obstruction, picking up the intermediate detonator on his way back.</p>
-                                <p>(vi) Having returned to the gate, he must then take steps to remove the obstruction and warn the Loco Pilot of the approaching train.</p>
-                                <p>(vii) In case the Gateman observes or hears a train approaching when he is still on his way to protect and before he reaches the stipulated distance to place detonators, he shall place detonators on the line at a distance as far away as he can go.</p>
-                                <p>(viii) Thereafter, he shall warn the Loco Pilot and stop the approaching train by waving his red flag by day / red hand signal lamp by night repeatedly.</p>
-                                <p className="font-semibold text-white/90 mt-2">(b) On single line section:</p>
-                                <p>(i) Gateman shall plant a red banner flag by day/ red light by night 5 metres away on posts duly provided for the purpose. He shall first protect the direction from which a train is expected to arrive first.</p>
-                                <p>(ii) Then he will similarly plant the other red banner flag by day/red light by night towards the other direction 5 metres away from the site of obstruction.</p>
-                                <p>(iii) Gateman shall then proceed to protect the gate along with detonators, and red flag by day/red hand signal lamp by night.</p>
-                                <p>(iv) Gateman shall proceed exhibiting red flag by day/red hand signal lamp by night towards the direction from which a train is expected to arrive first, to a point 600 metres on BG and 400 metres on MG and place one detonator on the line. Thereafter he shall proceed to a distance of 1200 metres on BG and 800 metres on MG/NG from the level crossing gate and place 3 detonators on the track 10 metres apart. Having thus protected the line, he shall return to the level crossing gate picking up the intermediate detonator on his way back.</p>
-                                <p>(v) Thereafter, he shall proceed towards the other direction, showing red hand signal, similarly place detonators as described in para (iv) above and return to the site of obstruction, picking up the intermediate detonator on his way back.</p>
-                                <p>(vi) Having returned to the gate, he must then take steps to remove the obstruction and warn the Loco Pilot of the approaching train.</p>
-                                <p>(vii) In case the Gateman observes or hears a train approaching when he is still on his way to protect and before he reaches the stipulated distance to place detonators, he shall place detonators on the line at a distance as far away as he can go.</p>
-                                <p>(viii) Thereafter, he shall warn the Loco Pilot and stop the approaching train by waving his red flag by day / red hand signal lamp by night repeatedly.</p>
-                                <p className="font-semibold text-white/90 mt-2">(c) Other action to be taken by Gateman:</p>
-                                <p>(i) At night Gateman shall light two hand signal lamps and take action to exhibit red light and protect the lines as described in sub paras (a) and (b) above.</p>
-                                <p>(ii) If the gate is broken by a road vehicle which is fouling the track or if lifting barriers / leaf gates or any other part of the gate foul the track or if there is any other obstruction at the gate, the Gateman shall take immediate action by noting down the particulars of the road vehicle, vehicle number, name of the driver, owner and relay these details to the nearest Station Master/Switchman or PWI regarding the particulars and obstructions at the level crossing gate, through messenger or other means available.</p>
+                                <ol className="space-y-4">
+                                  {/* (1) Alertness */}
+                                  <li className="flex items-start gap-3">
+                                    <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-cyan-700/80 border border-cyan-400/40 text-cyan-100 text-base font-semibold shadow-inner shadow-cyan-400/30">
+                                      1
+                                    </span>
+                                    <div className="flex-1 space-y-2">
+                                      <p className="font-semibold text-white/90">Alertness:</p>
+                                      <p>The Gateman shall be alert and be prepared to take immediate action, should danger be apprehended. Keys of the gate shall be in his personal custody.</p>
+                                    </div>
+                                  </li>
+
+                                  {/* (2) Position during passage of trains */}
+                                  <li className="flex items-start gap-3">
+                                    <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-cyan-700/80 border border-cyan-400/40 text-cyan-100 text-base font-semibold shadow-inner shadow-cyan-400/30">
+                                      2
+                                    </span>
+                                    <div className="flex-1 space-y-2">
+                                      <p className="font-semibold text-white/90">Position during passage of trains:</p>
+                                      <p>During passage of trains, Gateman will stand in the manner indicted below:</p>
+                                      <ol className="space-y-2 mt-2 ml-4">
+                                        {[
+                                          "Gateman will stand attentively in front of the gate lodge facing the approaching train.",
+                                          "In day time, he shall hold red and green flags furled up on separate sticks in right and left hands respectively.",
+                                          "In night time, he shall hold lighted hand signal lamp with white light facing the track.",
+                                          "He shall keep the whistle slung around his neck from a cord."
+                                        ].map((item, idx) => (
+                                          <li key={idx} className="flex items-start gap-3">
+                                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                              {idx + 1}
+                                            </span>
+                                            <span>{item}</span>
+                                          </li>
+                                        ))}
+                                      </ol>
+                                    </div>
+                                  </li>
+
+                                  {/* (3) Routine duties of Gateman */}
+                                  <li className="flex items-start gap-3">
+                                    <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-cyan-700/80 border border-cyan-400/40 text-cyan-100 text-base font-semibold shadow-inner shadow-cyan-400/30">
+                                      3
+                                    </span>
+                                    <div className="flex-1 space-y-2">
+                                      <p className="font-semibold text-white/90">Routine duties of Gateman:</p>
+                                      <ol className="space-y-2 mt-2 ml-4">
+                                        {[
+                                          "At non-interlocked LC gates and during emergencies or obstruction on track at other types of gates, Gateman shall ensure that red banner flag is placed across the track whenever the gate is kept in open condition for passage of road vehicles.",
+                                          "He shall ensure that gate lamps and lamps of all gate signals are lighted and kept burning continuously from sunset to sunrise.",
+                                          "Gateman shall perform his duties strictly according to the duty roster and shall not leave the gate unless reliever arrives and takes charge of it. However, if it is necessary to leave the gate in an emergency, he must close and lock the gates against road traffic, before leaving the gate.",
+                                          "Except where otherwise prescribed under special instructions, he shall observe all passing trains and be prepared to take such action as may be necessary to ensure safety of trains.",
+                                          "He shall watch all passing trains and keep sharp look out for any unusual like hot axle, hanging chains, hanging battery, any vehicle/wagon/train/battery box on fire, shifted load, falling material like brake blocks, brake beams, safety bracket, vacuum cylinder or any other situation endangering safe running of trains.",
+                                          "He shall also be prepared to repeat any signal which Guard may give to Loco Pilot on walkie-talkie or in any other way.",
+                                          "If lifting barriers/leaf gates get damaged or becomes out of order, he shall use the spare chain with disc and padlocks for securing the gate against road traffic.",
+                                          "If sliding boom arrangement is available, Gateman has to use them for closing the Gate against road traffic. If the interlocking arrangement is available for sliding booms, after closing the gate with sliding booms signals can be taken off. Before resorting to the use of sliding booms for closing the gate, Gateman shall make an entry in the Gate Timing Register and exchange PN with station master. After resuming working of normal booms again entry to be made and PN to be exchanged with SM to this effect.",
+                                          "He shall report to the nearest Station Master, Gangman or PWI, any defect in his gate or apparatus pertaining to it, as soon as possible.",
+                                          "In the event of gate signal becoming defective, he shall maintain the signal in The 'on' position even by disconnecting the signal wire if necessary.",
+                                          "At the gate, whose signal has become defective, he shall close and lock the lifting barriers / leaf gates on sighting a train and hand signal or pilot the train past the defective signal. In such case he should inform the Loco Pilot to report the defect at the next station.",
+                                          "He shall wear badge and prescribed uniform while on duty at level crossing gate.",
+                                          "He shall ensure that he is having competency certificate in his possession while on duty.",
+                                          "He shall work the gate as per Gate Working Instructions and remain well conversant with these instructions.",
+                                          "He shall ensure that equipment supplied at the gate is in good order and ready for immediate use.",
+                                          "He shall see that the channel for the flange of the wheel is kept clear.",
+                                          "He shall keep the road surface well watered and rammed in case of non-metal roads.",
+                                          "He must be vigilant to see that inconvenience to road users due to closure of gates should be to the minimum possible extent.",
+                                          "Gateman on electrified section shall watch that road vehicles/animals passing from gate are within the height gauge provided on either side of the level crossing gate.",
+                                          "He shall prevent trespassing by persons or cattle to the maximum extent."
+                                        ].map((item, idx) => (
+                                          <li key={idx} className="flex items-start gap-3">
+                                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                              {idx + 1}
+                                            </span>
+                                            <span>{item}</span>
+                                          </li>
+                                        ))}
+                                      </ol>
+                                    </div>
+                                  </li>
+
+                                  {/* (4) Action in case of unusual occurrence on train */}
+                                  <li className="flex items-start gap-3">
+                                    <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-cyan-700/80 border border-cyan-400/40 text-cyan-100 text-base font-semibold shadow-inner shadow-cyan-400/30">
+                                      4
+                                    </span>
+                                    <div className="flex-1 space-y-2">
+                                      <p className="font-semibold text-white/90">Action in case of unusual occurrence on train:</p>
+                                      <p>In case Gateman observes anything unusual with a passing train, he shall take following action:</p>
+                                      <ol className="space-y-2 mt-2 ml-4">
+                                        {[
+                                          "He shall take prompt action to warn the Loco Pilot/Guard of the passing train by showing red flag by day / red light by night.",
+                                          "He shall simultaneously try to draw the attention of the Loco Pilot/Guard by whistling continuously, shouting, gesticulating or by any other means.",
+                                          "If Loco Pilot / Guard fail to take notice, he shall immediately inform the Station Master/Switchman, if connected on telephone, to take appropriate action.",
+                                          "In case of train parting, he shall not show Stop hand signal but shall show prescribed signal for train parting (refer para 1.8);",
+                                          "In case the train does not stop, he shall immediately inform the Station Master/ Switchman, if connected on telephone, to take appropriate action."
+                                        ].map((item, idx) => (
+                                          <li key={idx} className="flex items-start gap-3">
+                                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                              {idx + 1}
+                                            </span>
+                                            <span>{item}</span>
+                                          </li>
+                                        ))}
+                                      </ol>
+                                    </div>
+                                  </li>
+
+                                  {/* (5) Action in an emergency at the LC gate */}
+                                  <li className="flex items-start gap-3">
+                                    <span className="flex-shrink-0 flex items-center justify-center h-7 w-7 rounded-full bg-cyan-700/80 border border-cyan-400/40 text-cyan-100 text-base font-semibold shadow-inner shadow-cyan-400/30">
+                                      5
+                                    </span>
+                                    <div className="flex-1 space-y-2">
+                                      <p className="font-semibold text-white/90">Action in an emergency at the LC gate:</p>
+                                      <ol className="space-y-2 mt-2 ml-4">
+                                        {[
+                                          "In case of an obstruction at the LC gate, Gateman shall maintain the gate signals, if any, in the 'on' position.",
+                                          "Thereafter, if he is unable to remove the obstruction, he shall immediately advise the Station Master on duty, if connected by telephone, regarding the defects/obstructions at the gate.",
+                                          "If there is no response from the Station Master after two or three attempts, he shall first protect the gate and then inform on phone."
+                                        ].map((item, idx) => (
+                                          <li key={idx} className="flex items-start gap-3">
+                                            <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                              {idx + 1}
+                                            </span>
+                                            <span>{item}</span>
+                                          </li>
+                                        ))}
+                                      </ol>
+                                      <p className="mt-2">The Gateman shall protect the line as under:-</p>
+                                      
+                                      {/* (a) On double line section */}
+                                      <div className="ml-4 mt-2 space-y-2">
+                                        <p className="font-semibold text-white/90">(a) On double line section:</p>
+                                        <ol className="space-y-2 mt-2 ml-4">
+                                          {[
+                                            "If both lines are obstructed the Gateman shall plant a red banner flag by day/ red light by night 5 metres away on posts duly provided for the purpose. He shall first protect the line on which a train is expected to arrive first.",
+                                            "Then he will similarly plant the other red banner flag by day / red light by night on the other line 5 metres away from the site of obstruction.",
+                                            "Gateman shall then proceed to protect the gate along with detonators, and red flag by day/red hand signal lamp by night.",
+                                            "Gateman shall proceed exhibiting red flag by day / red hand signal lamp by night on the line on which a train is expected to arrive first, to a point 600 metres on BG and 400 metres on MG and place one detonator on the line, thereafter he shall proceed to a distance of 1200 metres on BG and 800 metres on MG from the level crossing gate and place 3 detonators on the track 10 metres apart. Having thus protected the line, he shall return to the level crossing gate picking up the intermediate detonator on his way back.",
+                                            "Thereafter, he shall proceed on the other line, showing red hand signal, similarly place detonators as described in para (iv) above and return to the site of obstruction, picking up the intermediate detonator on his way back.",
+                                            "Having returned to the gate, he must then take steps to remove the obstruction and warn the Loco Pilot of the approaching train.",
+                                            "In case the Gateman observes or hears a train approaching when he is still on his way to protect and before he reaches the stipulated distance to place detonators, he shall place detonators on the line at a distance as far away as he can go.",
+                                            "Thereafter, he shall warn the Loco Pilot and stop the approaching train by waving his red flag by day / red hand signal lamp by night repeatedly."
+                                          ].map((item, idx) => (
+                                            <li key={idx} className="flex items-start gap-3">
+                                              <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                                {idx + 1}
+                                              </span>
+                                              <span>{item}</span>
+                                            </li>
+                                          ))}
+                                        </ol>
+                                      </div>
+
+                                      {/* (b) On single line section */}
+                                      <div className="ml-4 mt-2 space-y-2">
+                                        <p className="font-semibold text-white/90">(b) On single line section:</p>
+                                        <ol className="space-y-2 mt-2 ml-4">
+                                          {[
+                                            "Gateman shall plant a red banner flag by day/ red light by night 5 metres away on posts duly provided for the purpose. He shall first protect the direction from which a train is expected to arrive first.",
+                                            "Then he will similarly plant the other red banner flag by day/red light by night towards the other direction 5 metres away from the site of obstruction.",
+                                            "Gateman shall then proceed to protect the gate along with detonators, and red flag by day/red hand signal lamp by night.",
+                                            "Gateman shall proceed exhibiting red flag by day/red hand signal lamp by night towards the direction from which a train is expected to arrive first, to a point 600 metres on BG and 400 metres on MG and place one detonator on the line. Thereafter he shall proceed to a distance of 1200 metres on BG and 800 metres on MG/NG from the level crossing gate and place 3 detonators on the track 10 metres apart. Having thus protected the line, he shall return to the level crossing gate picking up the intermediate detonator on his way back.",
+                                            "Thereafter, he shall proceed towards the other direction, showing red hand signal, similarly place detonators as described in para (iv) above and return to the site of obstruction, picking up the intermediate detonator on his way back.",
+                                            "Having returned to the gate, he must then take steps to remove the obstruction and warn the Loco Pilot of the approaching train.",
+                                            "In case the Gateman observes or hears a train approaching when he is still on his way to protect and before he reaches the stipulated distance to place detonators, he shall place detonators on the line at a distance as far away as he can go.",
+                                            "Thereafter, he shall warn the Loco Pilot and stop the approaching train by waving his red flag by day / red hand signal lamp by night repeatedly."
+                                          ].map((item, idx) => (
+                                            <li key={idx} className="flex items-start gap-3">
+                                              <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                                {idx + 1}
+                                              </span>
+                                              <span>{item}</span>
+                                            </li>
+                                          ))}
+                                        </ol>
+                                      </div>
+
+                                      {/* (c) Other action to be taken by Gateman */}
+                                      <div className="ml-4 mt-2 space-y-2">
+                                        <p className="font-semibold text-white/90">(c) Other action to be taken by Gateman:</p>
+                                        <ol className="space-y-2 mt-2 ml-4">
+                                          {[
+                                            "At night Gateman shall light two hand signal lamps and take action to exhibit red light and protect the lines as described in sub paras (a) and (b) above.",
+                                            "If the gate is broken by a road vehicle which is fouling the track or if lifting barriers / leaf gates or any other part of the gate foul the track or if there is any other obstruction at the gate, the Gateman shall take immediate action by noting down the particulars of the road vehicle, vehicle number, name of the driver, owner and relay these details to the nearest Station Master/Switchman or PWI regarding the particulars and obstructions at the level crossing gate, through messenger or other means available."
+                                          ].map((item, idx) => (
+                                            <li key={idx} className="flex items-start gap-3">
+                                              <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                                {idx + 1}
+                                              </span>
+                                              <span>{item}</span>
+                                            </li>
+                                          ))}
+                                        </ol>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ol>
                               </div>
                             </div>
                           </div>
@@ -330,15 +493,29 @@ const GSRAppendixPage356C = () => {
                               <p>
                                 The normal position of all non-interlocked gates shall be closed to road traffic. On exceptional circumstances, &apos;B&apos; & &apos;C&apos; class level crossing gates where road traffic is heavy may be kept open for road traffic with the prior approval of PCE/CE (CO-ordination) and PCOM provided the following conditions are satisfied:
                               </p>
-                              <p>(i) The level crossing should not be on a suburban section.</p>
-                              <p>(ii) The level crossing should be equipped with co-acting lifting barriers.</p>
-                              <p>(iii) The section concerned should not have automatic block signalling.</p>
-                              <p>(iv) The level crossing should be provided with a telephonic connection with the Station Master and should have a system of obtaining private number from gateman in token of having closed the gate.</p>
-                              <p>(v) The railway track at the level crossing should be straight on either side to afford a clear view of an approaching train.</p>
-                              <p>(vi) As long as the gate is kept open for road traffic a red flag by day time and a red light during night should be displayed towards the approaching train on either side of the level crossings.</p>
-                              <p>(vii) The level crossing shall be provided with Whistle Board on either side at an adequate distance to enjoin the Loco Pilot of approaching train to give audible warning of the approach of train to the road users.</p>
-                              <p>(viii) Adequate number of Gatemen are provided. All such proposals should be personally decided by the DRM and with details submitted for approval of PCE/CE (Co-ordination) and PCOM.</p>
-                              <p>
+                              <ol className="space-y-2 mt-3">
+                                {[
+                                  "The level crossing should not be on a suburban section.",
+                                  "The level crossing should be equipped with co-acting lifting barriers.",
+                                  "The section concerned should not have automatic block signalling.",
+                                  "The level crossing should be provided with a telephonic connection with the Station Master and should have a system of obtaining private number from gateman in token of having closed the gate.",
+                                  "The railway track at the level crossing should be straight on either side to afford a clear view of an approaching train.",
+                                  "As long as the gate is kept open for road traffic a red flag by day time and a red light during night should be displayed towards the approaching train on either side of the level crossings.",
+                                  "The level crossing shall be provided with Whistle Board on either side at an adequate distance to enjoin the Loco Pilot of approaching train to give audible warning of the approach of train to the road users.",
+                                  "Adequate number of Gatemen are provided. All such proposals should be personally decided by the DRM and with details submitted for approval of PCE/CE (Co-ordination) and PCOM."
+                                ].map((item, idx) => {
+                                  const romanNumerals = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii', 'xiii', 'xiv', 'xv', 'xvi', 'xvii', 'xviii', 'xix', 'xx'];
+                                  return (
+                                    <li key={idx} className="flex items-start gap-3">
+                                      <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-cyan-700/60 border border-cyan-400/30 text-cyan-100 text-sm font-semibold shadow-inner shadow-cyan-400/20">
+                                        {romanNumerals[idx]}
+                                      </span>
+                                      <span>{item}</span>
+                                    </li>
+                                  );
+                                })}
+                              </ol>
+                              <p className="mt-3">
                                 Review of such level crossings should be taken every two years and attempts should be made to provide necessary facilities and upgrade them to &apos;A&apos; class at the earliest.
                               </p>
                             </div>

@@ -59,58 +59,48 @@ const GSRAppendixPage354E = () => {
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
                       Record of Caution Order message registers:
                     </p>
                     <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                         <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              <span className="font-semibold text-white/90">1.</span> At all stations including Notice Stations, where Caution Orders are issued, the
-                              messages received for imposing the speed restrictions must be properly pasted in the
-                              Caution Order message book with serial number. When the message is received
-                              canceling the caution/speed restriction in force, the cancellation message should be
-                              pasted juxtapose to the imposition in the Caution Order message book and must bear
-                              reference to the serial number of the message under which the caution/speed
-                              restriction was imposed. With reference to the serial numbers in the Caution Order
-                              message book, the Station Master shall keep an up-dated record of all the speed
-                              restrictions imposed with the date and time of their enforcement and cancellation,
-                              authority, nature etc., in the Caution Order register and bring forward the Caution Orders in force every Monday at 00.00 hours in geographical order in relation to the
-                              direction of movement.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">2.</span> All entries in the Caution Order register shall be made by the Station Master on duty in
-                              his own hand writing. No codes shall be used while making entries in the Caution Order
-                              registers which should always be kept with the Station Master on duty. The Station
-                              Master shall record in the station diary the serial numbers of all the Caution Orders in
-                              force at the time of signing off duty. These entries shall also be checked and
-                              countersigned by the incoming Station Master while signing on duty.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">3.</span> Serial numbers shall be used for both imposition and cancellation of speed restrictions
-                              in the Caution Order message register throughout the year commencing from the 1st
-                              January to 31st December.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">4.</span> The Caution Orders which are still in force on 31st December shall be brought forward
-                              into the new register being opened from 0000 hours of 1st January. The closing
-                              summary of the Caution Orders in force in the old register (31st Dec) shall become
-                              opening summary of the new register (1st Jan). Accordingly, the Caution Orders that
-                              are brought forward shall begin with serial No.1 (together with the reference of old
-                              serial number) and the subsequent restrictions, in force from 1st January, shall be
-                              given the next serial numbers for posting.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">5.</span> Caution Order records should be kept at other places like Control Offices, Crew
-                              booking lobbies/cells etc. For this purpose a register shall be maintained separately for
-                              each section and the speed restrictions in force be posted in geographical sequence
-                              according to kilometreage. Loco Pilots and Guards of outgoing trains shall carefully
-                              read and thoroughly acquaint themselves with the speed restrictions in force in the
-                              section from the registers and Caution Order indication boards maintained in the Crew
-                              booking lobby/cell.
-                            </p>
+                          <div className="space-y-4 lg:space-y-5">
+                            {[
+                              {
+                                num: 1,
+                                text: "At all stations including Notice Stations, where Caution Orders are issued, the messages received for imposing the speed restrictions must be properly pasted in the Caution Order message book with serial number. When the message is received canceling the caution/speed restriction in force, the cancellation message should be pasted juxtapose to the imposition in the Caution Order message book and must bear reference to the serial number of the message under which the caution/speed restriction was imposed. With reference to the serial numbers in the Caution Order message book, the Station Master shall keep an up-dated record of all the speed restrictions imposed with the date and time of their enforcement and cancellation, authority, nature etc., in the Caution Order register and bring forward the Caution Orders in force every Monday at 00.00 hours in geographical order in relation to the direction of movement."
+                              },
+                              {
+                                num: 2,
+                                text: "All entries in the Caution Order register shall be made by the Station Master on duty in his own hand writing. No codes shall be used while making entries in the Caution Order registers which should always be kept with the Station Master on duty. The Station Master shall record in the station diary the serial numbers of all the Caution Orders in force at the time of signing off duty. These entries shall also be checked and countersigned by the incoming Station Master while signing on duty."
+                              },
+                              {
+                                num: 3,
+                                text: "Serial numbers shall be used for both imposition and cancellation of speed restrictions in the Caution Order message register throughout the year commencing from the 1st January to 31st December."
+                              },
+                              {
+                                num: 4,
+                                text: "The Caution Orders which are still in force on 31st December shall be brought forward into the new register being opened from 0000 hours of 1st January. The closing summary of the Caution Orders in force in the old register (31st Dec) shall become opening summary of the new register (1st Jan). Accordingly, the Caution Orders that are brought forward shall begin with serial No.1 (together with the reference of old serial number) and the subsequent restrictions, in force from 1st January, shall be given the next serial numbers for posting."
+                              },
+                              {
+                                num: 5,
+                                text: "Caution Order records should be kept at other places like Control Offices, Crew booking lobbies/cells etc. For this purpose a register shall be maintained separately for each section and the speed restrictions in force be posted in geographical sequence according to kilometreage. Loco Pilots and Guards of outgoing trains shall carefully read and thoroughly acquaint themselves with the speed restrictions in force in the section from the registers and Caution Order indication boards maintained in the Crew booking lobby/cell."
+                              }
+                            ].map((item, index) => (
+                              <div key={index} className="flex flex-col gap-4">
+                                <div className="flex items-center gap-4">
+                                  <span className="flex lg:h-12 lg:w-12 h-9 w-9 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                                    {item.num}
+                                  </span>
+                                  <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                                </div>
+                                <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                                  <p>{item.text}</p>
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       </div>

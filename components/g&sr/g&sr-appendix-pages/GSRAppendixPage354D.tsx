@@ -59,33 +59,40 @@ const GSRAppendixPage354D = () => {
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
                       Action by the SM after cancellation of the speed restriction:
                     </p>
                     <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                         <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              <span className="font-semibold text-white/90">1.</span> When the cause of such speed restriction or special precaution has been removed, the
-                              Official of Engineering / S&T / Mechanical / Electrical / Security / Traffic shall advise
-                              this fact to the Station Master of the nearest block station, and other officials
-                              concerned who were notified of the imposition of restriction duly recording the initials.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">2.</span> The Station Master on receiving the advice regarding the removal of the restriction
-                              shall advise this fact to the Station Master at the other end of the block section
-                              concerned, Station Master of &apos;Notice Station&apos; and other railway servants who were
-                              advised about it earlier, under exchange of Private Number. After issue of the advice
-                              regarding cancellation of the Caution Order, the Station Masters may discontinue the
-                              issuing of the Caution Order.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">3.</span> The speed restrictions or special precautions which are cancelled shall be scored out
-                              and signed by the Station Masters before delivering the Caution Order to the Loco Pilot
-                              and the Guard of the trains.
-                            </p>
+                          <div className="space-y-4 lg:space-y-5">
+                            {[
+                              {
+                                num: 1,
+                                text: "When the cause of such speed restriction or special precaution has been removed, the Official of Engineering / S&T / Mechanical / Electrical / Security / Traffic shall advise this fact to the Station Master of the nearest block station, and other officials concerned who were notified of the imposition of restriction duly recording the initials."
+                              },
+                              {
+                                num: 2,
+                                text: "The Station Master on receiving the advice regarding the removal of the restriction shall advise this fact to the Station Master at the other end of the block section concerned, Station Master of 'Notice Station' and other railway servants who were advised about it earlier, under exchange of Private Number. After issue of the advice regarding cancellation of the Caution Order, the Station Masters may discontinue the issuing of the Caution Order."
+                              },
+                              {
+                                num: 3,
+                                text: "The speed restrictions or special precautions which are cancelled shall be scored out and signed by the Station Masters before delivering the Caution Order to the Loco Pilot and the Guard of the trains."
+                              }
+                            ].map((item, index) => (
+                              <div key={index} className="flex flex-col gap-4">
+                                <div className="flex items-center gap-4">
+                                  <span className="flex lg:h-12 lg:w-12 h-9 w-9 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                                    {item.num}
+                                  </span>
+                                  <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                                </div>
+                                <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                                  <p>{item.text}</p>
+                                </div>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       </div>

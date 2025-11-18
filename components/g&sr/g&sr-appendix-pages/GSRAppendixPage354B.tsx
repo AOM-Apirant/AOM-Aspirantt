@@ -59,28 +59,29 @@ const GSRAppendixPage354B = () => {
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
                       Attaching of assisting/banking engine:
                     </p>
                     <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              <span className="font-semibold text-white/90">1.</span> In case a train is worked with an assisting engine / banking engine separately manned,
-                              the Loco Pilot and Assistant Loco Pilot of such engines shall also be issued with the
-                              Caution Order.
-                            </p>
-                            <p>
-                              <span className="font-semibold text-white/90">2.</span> In case of an assisting or a banking engine being attached at a station enroute, the
-                              Station Master shall consult the SCOR or the &apos;Notice Station&apos; in rear on Double Line or
-                              the &apos;Notice Station&apos; on either sides on Single Line and issue Caution Order up to the
-                              &apos;Notice Station&apos; in advance to the Loco Pilot and Assistant Loco Pilot.
-                            </p>
+                      {[
+                        { num: 1, text: "In case a train is worked with an assisting engine / banking engine separately manned, the Loco Pilot and Assistant Loco Pilot of such engines shall also be issued with the Caution Order." },
+                        { num: 2, text: "In case of an assisting or a banking engine being attached at a station enroute, the Station Master shall consult the SCOR or the 'Notice Station' in rear on Double Line or the 'Notice Station' on either sides on Single Line and issue Caution Order up to the 'Notice Station' in advance to the Loco Pilot and Assistant Loco Pilot." }
+                      ].map((item, index) => (
+                        <div key={index} className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                          <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-3 py-6 lg:px-8 lg:py-8">
+                            <div className="flex items-center gap-4">
+                              <span className="flex lg:h-12 lg:w-12 h-9 w-9 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                                {item.num}
+                              </span>
+                              <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                            </div>
+                            <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                              <p>{item.text}</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
                 </div>

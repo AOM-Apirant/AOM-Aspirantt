@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRAppendixPage356A = () => {
+const GSRAppendixPage471B = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -30,15 +30,8 @@ const GSRAppendixPage356A = () => {
             </div>
 
             <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              APPENDIX – II
+              11. Essential equipment at the station:
             </h1>
-            <div className="mt-4 inline-flex items-center justify-center gap-3">
-              <span className="h-[1px] w-16 bg-gradient-to-r from-transparent via-blue-400/50 to-white/70"></span>
-              <span className="text-lg lg:text-2xl font-semibold text-indigo-200 tracking-[0.35em]">
-                LEVEL CROSSING GATES
-              </span>
-              <span className="h-[1px] w-16 bg-gradient-to-l from-transparent via-blue-400/50 to-white/70"></span>
-            </div>
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
@@ -46,42 +39,12 @@ const GSRAppendixPage356A = () => {
               <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative p-3 lg:p-10 space-y-6">
-                {/* Census of traffic at Level Crossings Section */}
+              <div className="relative p-3 lg:p-10">
                 <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
-                    <div className="relative flex items-center justify-center">
-                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shadow-xl shadow-cyan-900/40 flex items-center justify-center">
-                        <span className="lg:text-xl text-base font-bold text-white/90">I</span>
-                      </div>
-                      <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
-                    </div>
-                  </div>
-
-                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
-                      Census of traffic at Level Crossings:
+                  <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                    <p className="text-sm lg:text-base">
+                      The list of the essential equipment should be given in Appendix – &apos;E&apos;
                     </p>
-                    <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              Once in every three years, periodical census of traffic at all level crossings, i.e., both
-                              unmanned and manned shall be taken. This shall be carried out for 7 days and total Train
-                              Vehicle Units (TVUs) per day (train units x road vehicle units) are worked out. Train, road
-                              vehicle, bullock carts and tongas are being considered as one unit; and cycle rickshaw/auto
-                              rickshaw being considered as half a unit. The census shall be carried out by a multidisciplinary
-                              inspectorial team consisting of inspectors of CE, S&T and Traffic Departments.
-                              The mechanism shall be set up by the Divisional Railway Manager to ensure that the
-                              representatives are present for the census by framing advance time table/ schedule for
-                              conducting census of level crossings.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -122,4 +85,4 @@ const GSRAppendixPage356A = () => {
   )
 }
 
-export default GSRAppendixPage356A
+export default GSRAppendixPage471B

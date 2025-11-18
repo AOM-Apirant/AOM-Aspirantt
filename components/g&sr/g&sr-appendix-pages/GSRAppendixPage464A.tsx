@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRAppendixPage354A = () => {
+const GSRAppendixPage464A = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -30,15 +30,8 @@ const GSRAppendixPage354A = () => {
             </div>
 
             <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              APPENDIX – I
+              2. OPENING OF RELAY ROOM:
             </h1>
-            <div className="mt-4 inline-flex items-center justify-center gap-3">
-              <span className="h-[1px] w-16 bg-gradient-to-r from-transparent via-blue-400/50 to-white/70"></span>
-              <span className="text-lg lg:text-2xl font-semibold text-indigo-200 tracking-[0.35em]">
-                CAUTION ORDERS
-              </span>
-              <span className="h-[1px] w-16 bg-gradient-to-l from-transparent via-blue-400/50 to-white/70"></span>
-            </div>
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
@@ -47,37 +40,30 @@ const GSRAppendixPage354A = () => {
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative p-3 lg:p-10 space-y-6">
-                {/* Change of train crew en route Section */}
-                <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
-                    <div className="relative flex items-center justify-center">
-                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shadow-xl shadow-cyan-900/40 flex items-center justify-center">
-                        <span className="lg:text-xl text-base font-bold text-white/90">8</span>
-                      </div>
-                      <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
-                    </div>
-                  </div>
-
-                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
-                      Change of train crew en route:
-                    </p>
-                    <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              In case of change of train crew en route, the Loco Pilot/Guard taking over charge must take
-                              over all Caution Orders relating to his train and acquaint himself of the conditions on the line
-                              giving due acknowledgement in the log book / rough journal of the Loco Pilot/Guard who is
-                              being relieved.
-                            </p>
-                          </div>
+                <div className="space-y-4 lg:space-y-5">
+                  {[
+                    { num: "2.1", text: "The opening of Relay Room shall be arranged by authorised S&T staff only. The Relay Room shall be kept open for a bare minimum time not exceeding The Signal Maintainer of the station, JE/SSE (Signals) of the section and any staff authorised by Sr.DSTE through a signed letter of the authorisation shall constitute the authorised staff." },
+                    { num: "2.2", text: "The Signal Maintainer of the station, JE/SSE (Signals) of the section and any staff authorised is permitted to obtain the SM's key by showing their identity card issued by Railways for maintenance/failure attendance." },
+                    { num: "2.3", text: "When the relay room is required to be opened for construction /projects/PSUs, such as RVNL/RITES/IRCON and RE works, the concerned Signal Supervisor of the executing agency shall first obtain an authorisation from Sr.DSTE, duly submitting the full details of drawings/ layout plan and plan of activity. On authorisation of Sr.DSTE, they shall produce the letter of authorisation to the Station Master and handover a copy that shall be pasted in the Relay Room key register." },
+                    { num: "2.4", text: ". the sealed glass fronted box to authorised S&T staff. The S&T staff shall open the glass fronted box and extract the EKT key. When the EKT is taken out, the counter shall change to next higher number; 'Green' light shall become off and 'Red' light shall glow. The S&T staff shall enter the previous and progressed number in the Relay Room Key register along with other particulars." },
+                    { num: "2.5", text: ". shall be made in the Relay Room Key Register before opening and after closing of relay room." },
+                    { num: "2.6", text: "Work that takes more than two hours shall have the prior permission from Sr.DSTE. If any work that exceeds two hours unanticipated, concerned S&T official shall make a report on the circumstances that warranted to keep the relay room open beyond the stipulated time to Sr.DSTE, a copy of which shall be pasted in the Relay Room key register." }
+                  ].map((item, index) => (
+                    <div key={index} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                      <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                        <div className="flex items-center gap-4">
+                          <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                            {item.num}
+                          </span>
+                          <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                        </div>
+                        <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                          <p>{item.text}</p>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -117,4 +103,4 @@ const GSRAppendixPage354A = () => {
   )
 }
 
-export default GSRAppendixPage354A
+export default GSRAppendixPage464A

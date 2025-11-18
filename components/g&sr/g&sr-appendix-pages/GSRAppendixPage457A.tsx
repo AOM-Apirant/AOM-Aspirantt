@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRAppendixPage351 = () => {
+const GSRAppendixPage457A = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -30,12 +30,12 @@ const GSRAppendixPage351 = () => {
             </div>
 
             <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              APPENDIX – I
+              APPENDIX – XII
             </h1>
             <div className="mt-4 inline-flex items-center justify-center gap-3">
               <span className="h-[1px] w-16 bg-gradient-to-r from-transparent via-blue-400/50 to-white/70"></span>
               <span className="text-lg lg:text-2xl font-semibold text-indigo-200 tracking-[0.35em]">
-                CAUTION ORDERS
+                SHUNTING
               </span>
               <span className="h-[1px] w-16 bg-gradient-to-l from-transparent via-blue-400/50 to-white/70"></span>
             </div>
@@ -47,70 +47,69 @@ const GSRAppendixPage351 = () => {
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative p-3 lg:p-10 space-y-6">
-                {/* Method Section */}
+                {/* Introduction Section */}
                 <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
-                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shadow-xl shadow-cyan-900/40 flex items-center justify-center">
-                        <span className="lg:text-xl text-base font-bold text-white/90">2</span>
+                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
+                        <span className="lg:text-xl text-base font-bold text-white/90">SI</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
-                      Method of notifying imposition of speed restriction or special precautions:
-                    </p>
+                    <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                      <p>
+                        Shunting instructions are the instructions issued by the Station Master to the Loco Pilot and
+                        Guard regarding the particulars of shunting to be done at the station. In case of train
+                        shunting, written instructions will be given in form No.T/806.
+                      </p>
+                      <p>
+                        Where shunting operations are supervised by Guard/Station Master, Loco Pilot shall be
+                        given T/806 (Shunting Instructions Form) duly filled in. At major stations where separate staff
+                        viz., Outdoor Station Master/Yard Master/Shunting Jamedar/Shunting Master are provided
+                        for supervising the shunting, form No.T/806 need not be given. Such stations shall be notified
+                        by the respective Sr. DOMs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Rules Section */}
+                <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
+                    <div className="relative flex items-center justify-center">
+                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shadow-xl shadow-cyan-900/40 flex items-center justify-center">
+                        <span className="lg:text-xl text-base font-bold text-white/90">R</span>
+                      </div>
+                      <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
+                    </div>
+                  </div>
+
+                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <div className="space-y-4 lg:space-y-5">
                       {[
-                        { 
-                          num: 1, 
-                          text: "When an official of Engineering / S&T / Electrical / Mechanical / Security / Traffic Department finds it necessary to impose any speed restriction or any special precaution on a portion of a line, including OHE, due to repairs or work or for any other reason, he shall advise in writing to any one of the Station Masters of block stations on either side of the block section, the exact kilometer and the station at which or the stations between which the restriction or special precaution is to be observed, the reason for imposition and its likely duration etc. He shall also advise other railway servants concerned who are required to be notified in this regard and shall not commence such operation until acknowledgement is received from the Station Master."
-                        },
-                        { 
-                          num: 2, 
-                          text: "The Station Master receiving the advice shall not acknowledge it until he has advised the Station Master of the block station at the other end controlling entry into the affected block section and obtained his acknowledgement under exchange of private numbers."
-                        },
-                        { 
-                          num: 3, 
-                          text: "The Station Masters of the block stations controlling entry into the affected block section, on receiving the advice regarding any of the circumstances listed in para (1), shall not permit any train or any vehicle running under block protection to enter the affected block section either from his station or from the other end, unless-",
-                          subItems: [
-                            "(i) The SCOR and the Station Master of the „Notice Station‟ or stations (as specified in the WTT) are advised of such conditions under exchange of private numbers.",
-                            "(ii) The Loco Pilot and the Guard of the train are warned of the speed restrictions ahead and its location by issue of a Caution Order."
-                          ]
-                        },
-                        { 
-                          num: 4, 
-                          text: "Run through trains shall be stopped out of course for issue of Caution Order till such time the „Notice Station/stations‟ as specified in the WTT have been advised to issue Caution Orders under exchange of private numbers."
-                        },
-                        { 
-                          num: 5, 
-                          text: "Such Caution Order messages shall also be communicated to the official in-charge at the divisional headquarters responsible for preparing Caution Orders."
-                        },
-                        { 
-                          num: 6, 
-                          text: "The official in-charge who is responsible for the preparation of Caution Orders shall ensure the despatch of cyclostyled / computer print outs from the divisional headquarters to the respective „Notice Stations‟ by nominated trains. In case on-line facility is available, the Caution Order messages shall be fed in the system and need not be sent by nominated trains."
-                        }
+                        { num: 1, text: "Shunting operations shall be controlled by fixed signals or hand signals or by verbal directions." },
+                        { num: 2, text: "Outer signal, Home signal and Last Stop Signal should not be taken 'off' for shunting" },
+                        { num: 3, text: "If Advanced Starter is provided, free Starter can be taken 'off' for shunting purpose." },
+                        { num: 4, text: "When a fixed shunt signal on a post by itself or below a Stop signal or Shunting Permitted Indicator (SPI) becomes defective, T/369 (3b) shall be issued and Proceed Hand Signal should be shown from the foot of such defective signal after ensuring the locking of points." },
+                        { num: 5, text: "In case the shunt movements are governed by Shunt signal or Starter signal, which detects the facing points, the Shunt/Starter signal shall be taken 'off' and in all other cases, the facing points shall be clamped/cotter bolted and padlocked." },
+                        { num: 6, text: "When shunting is required to be carried out for attaching or detaching coaches/slip coaches on mail/express and passenger trains, the shunting engine with or without coaches/ slip coaches shall first come to a halt 20 metres away from the train and thereafter perform the shunting carefully. These precautions need to be taken when train engine is being attached to the train." },
+                        { num: 7, text: "On single line sections, no shunting (even within station section) shall be done in that direction, once Line Clear is granted except where shunting in the face of an approaching train is permitted in SWR (i.e. once Line Clear is granted to a down train, no shunt movement shall take place in up direction)." },
+                        { num: "7.1", text: "On double line section, shunting within the station section can be carried out when line clear is granted for a train, provided the necessary signals are kept at on." }
                       ].map((item, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div key={index} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                          <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-3 py-6 lg:px-8 lg:py-8">
+                          <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                             <div className="flex items-center gap-4">
-                              <span className="flex lg:h-12 lg:w-12 h-8 w-8 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
                                 {item.num}
                               </span>
                               <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
                             </div>
                             <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
                               <p>{item.text}</p>
-                              {item.subItems && (
-                                <div className="ml-4 lg:ml-6 space-y-3 mt-4">
-                                  {item.subItems.map((subItem, subIndex) => (
-                                    <p key={subIndex} className="text-blue-100/80">{subItem}</p>
-                                  ))}
-                                </div>
-                              )}
                             </div>
                           </div>
                         </div>
@@ -156,4 +155,4 @@ const GSRAppendixPage351 = () => {
   )
 }
 
-export default GSRAppendixPage351
+export default GSRAppendixPage457A

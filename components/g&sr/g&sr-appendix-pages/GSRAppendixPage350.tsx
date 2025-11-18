@@ -49,16 +49,9 @@ const GSRAppendixPage350 = () => {
               <div className="relative p-3 lg:p-10 space-y-6">
                 {/* CAUTION ORDER Definition */}
                 <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
-                    <div className="relative flex items-center justify-center">
-                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-xl text-base font-bold text-white/90">CO</span>
-                      </div>
-                      <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
-                    </div>
-                  </div>
+                  
 
-                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
+                  <div className="pt-4 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="font-semibold text-lg lg:text-2xl text-white/90">
                       CAUTION ORDER:
                     </p>
@@ -86,8 +79,8 @@ const GSRAppendixPage350 = () => {
                     </div>
                   </div>
 
-                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                  <div className="pt-10 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
                       Circumstances for issue of Caution Order:
                     </p>
                     <p className="text-base lg:text-lg text-blue-100/90">
@@ -127,11 +120,11 @@ const GSRAppendixPage350 = () => {
                         { num: 30, text: "For allowing a train into a block section where patrolling is in force, in case the Patrolman has not turned up within the prescribed time (para 10.4.3 in Appendix IV of G&SR)." },
                         { num: 31, text: "Any other condition or circumstance which may require the issue of a Caution Order." }
                       ].map((item, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div key={index} className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                          <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                          <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-3 py-6 lg:px-8 lg:py-8">
                             <div className="flex items-center gap-4">
-                              <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              <span className="flex lg:h-12 lg:w-12 h-8 w-8 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
                                 {item.num}
                               </span>
                               <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>

@@ -59,7 +59,7 @@ const GSRAppendixPage352C = () => {
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
                       Description and preparation of Caution Order:
                     </p>
                     <div className="space-y-4 lg:space-y-5">
@@ -89,11 +89,11 @@ const GSRAppendixPage352C = () => {
                           text: "In case of any error or overwriting, it shall be cancelled and a fresh one prepared and issued."
                         }
                       ].map((item, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div key={index} className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                           <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                             <div className="flex items-center gap-4">
-                              <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              <span className="flex lg:h-12 lg:w-12 h-9 w-9 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
                                 {item.num}
                               </span>
                               <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>

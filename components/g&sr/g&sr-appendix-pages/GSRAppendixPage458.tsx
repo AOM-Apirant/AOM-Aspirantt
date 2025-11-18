@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRAppendixPage354C = () => {
+const GSRAppendixPage458 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -29,16 +29,9 @@ const GSRAppendixPage354C = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              APPENDIX – I
+            <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              TO SHUNT INTO REAR BLOCK SECTION:
             </h1>
-            <div className="mt-4 inline-flex items-center justify-center gap-3">
-              <span className="h-[1px] w-16 bg-gradient-to-r from-transparent via-blue-400/50 to-white/70"></span>
-              <span className="text-lg lg:text-2xl font-semibold text-indigo-200 tracking-[0.35em]">
-                CAUTION ORDERS
-              </span>
-              <span className="h-[1px] w-16 bg-gradient-to-l from-transparent via-blue-400/50 to-white/70"></span>
-            </div>
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
@@ -47,7 +40,7 @@ const GSRAppendixPage354C = () => {
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative p-3 lg:p-10 space-y-6">
-                {/* In case of Local/Suburban trains Section */}
+                {/* Section 10: Double line */}
                 <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
@@ -59,29 +52,59 @@ const GSRAppendixPage354C = () => {
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
-                      In case of Local/Suburban trains:
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                      Double line:
                     </p>
-                    <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              In case of trains running on Suburban Sections, Caution Order shall be issued to the Loco
-                              Pilots/Motormen, Assistant Loco Pilots and Guards by the Station Master only of such
-                              stations as are indicated and specified in the WTT, except in case of emergency
-                              necessitating sudden imposition of speed restrictions.
-                            </p>
-                            <p>
-                              In respect of these trains, the Caution Orders shall cover the entire section on which the train
-                              is to run and shall be issued only once to the crew as per the link chart supplied unless some
-                              Speed Restriction(s) is/are required to be imposed or some further speed restriction(s) is/are
-                              required to be cancelled.
-                            </p>
-                          </div>
-                        </div>
+                    <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                      <p>
+                        Whenever shunting into the block section in rear is to be done (outside Home signal
+                        in TAS and outside outer most facing points/BSLB in MAS), the line should be
+                        blocked back and T/806 with PN should be given to the Loco Pilot to do the shunting
+                        in the rear block section.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Section 11: Single Line */}
+                <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
+                    <div className="relative flex items-center justify-center">
+                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 shadow-xl shadow-purple-900/40 flex items-center justify-center">
+                        <span className="lg:text-xl text-base font-bold text-white/90">11</span>
                       </div>
+                      <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
+                    </div>
+                  </div>
+
+                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                      Single Line:
+                    </p>
+                    <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                      <p>
+                        To shunt beyond the FSS on single line sections, the movement should be treated
+                        like a train movement. Take Line Clear and take &apos;off&apos; all departure signals. A memo
+                        should be given to the Loco Pilot to push back into the station after shunting is
+                        completed. Reception signals can be taken &apos;off&apos;.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* NOTE */}
+                <div className="relative overflow-hidden rounded-2xl border border-yellow-400/30 bg-yellow-500/10 shadow-lg shadow-yellow-900/20 transition-all duration-500 hover:border-yellow-400/50 hover:bg-yellow-500/15">
+                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-yellow-400/5 to-orange-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                  <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                    <div className="flex items-center gap-4">
+                      <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-yellow-400/40 bg-yellow-500/20 text-base font-semibold tracking-wide text-yellow-100 text-center lg:text-lg">
+                        N
+                      </span>
+                      <div className="h-[1px] flex-1 bg-gradient-to-r from-yellow-400/40 via-yellow-300/30 to-transparent"></div>
+                    </div>
+                    <div className="space-y-3 text-base leading-relaxed text-yellow-100/90 lg:text-lg">
+                      <p className="font-semibold text-yellow-200/90 mb-2">NOTE:</p>
+                      <p>As per the definition of &apos;Block Back&apos;, a message is to be transmitted to the next block station on either side on single line whenever block section is required to be obstructed. If block section is required to be obstructed up to FSS, message need not be given to next block station (as per BWMS and BWMT). As such &apos;Block Back&apos; is not applicable to single line.</p>
                     </div>
                   </div>
                 </div>
@@ -123,4 +146,4 @@ const GSRAppendixPage354C = () => {
   )
 }
 
-export default GSRAppendixPage354C
+export default GSRAppendixPage458

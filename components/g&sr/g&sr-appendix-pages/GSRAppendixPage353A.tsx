@@ -59,7 +59,7 @@ const GSRAppendixPage353A = () => {
                   </div>
 
                   <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90">
+                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
                       Procedure for issue of Caution Order by the Station Master of Notice Station:
                     </p>
                     <div className="space-y-4 lg:space-y-5">
@@ -81,11 +81,11 @@ const GSRAppendixPage353A = () => {
                           text: "Caution Orders shall be issued to the Loco Pilots, Co-Loco Pilots/Assistant Loco Pilots and Guards of all trains at 'Notice Stations' that are nominated and notified in the Working Time Table for each section by the Station Master either personally or through a competent railway servant deputed by him and the signatures of Loco Pilot and Guard obtained on the record foil or separate registers provided for this purpose in token of their having received."
                         }
                       ].map((item, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                        <div key={index} className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                           <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
                           <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                             <div className="flex items-center gap-4">
-                              <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                              <span className="flex lg:h-12 lg:w-12 h-9 w-9 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
                                 {item.num}
                               </span>
                               <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>

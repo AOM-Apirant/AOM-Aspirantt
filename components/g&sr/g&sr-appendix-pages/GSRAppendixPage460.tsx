@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRAppendixPage356A = () => {
+const GSRAppendixPage460 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -30,12 +30,12 @@ const GSRAppendixPage356A = () => {
             </div>
 
             <h1 className="text-2xl lg:text-6xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              APPENDIX – II
+              GROUP (A)
             </h1>
             <div className="mt-4 inline-flex items-center justify-center gap-3">
               <span className="h-[1px] w-16 bg-gradient-to-r from-transparent via-blue-400/50 to-white/70"></span>
-              <span className="text-lg lg:text-2xl font-semibold text-indigo-200 tracking-[0.35em]">
-                LEVEL CROSSING GATES
+              <span className="text-lg lg:text-2xl font-semibold text-indigo-200 tracking-[0.35em] text-center px-2">
+                Situations not requiring the consent of on duty Station Master –
               </span>
               <span className="h-[1px] w-16 bg-gradient-to-l from-transparent via-blue-400/50 to-white/70"></span>
             </div>
@@ -47,42 +47,33 @@ const GSRAppendixPage356A = () => {
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative p-3 lg:p-10 space-y-6">
-                {/* Census of traffic at Level Crossings Section */}
-                <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-3 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
-                    <div className="relative flex items-center justify-center">
-                      <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 shadow-xl shadow-cyan-900/40 flex items-center justify-center">
-                        <span className="lg:text-xl text-base font-bold text-white/90">I</span>
-                      </div>
-                      <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
-                    </div>
-                  </div>
-
-                  <div className="pt-14 lg:pt-10 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
-                    <p className="font-semibold text-lg lg:text-2xl text-white/90 text-center">
-                      Census of traffic at Level Crossings:
-                    </p>
-                    <div className="space-y-4 lg:space-y-5">
-                      <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
-                        <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
-                          <div className="space-y-4 text-base leading-relaxed text-blue-100/90 lg:text-lg">
-                            <p>
-                              Once in every three years, periodical census of traffic at all level crossings, i.e., both
-                              unmanned and manned shall be taken. This shall be carried out for 7 days and total Train
-                              Vehicle Units (TVUs) per day (train units x road vehicle units) are worked out. Train, road
-                              vehicle, bullock carts and tongas are being considered as one unit; and cycle rickshaw/auto
-                              rickshaw being considered as half a unit. The census shall be carried out by a multidisciplinary
-                              inspectorial team consisting of inspectors of CE, S&T and Traffic Departments.
-                              The mechanism shall be set up by the Divisional Railway Manager to ensure that the
-                              representatives are present for the census by framing advance time table/ schedule for
-                              conducting census of level crossings.
-                            </p>
-                          </div>
+                <div className="space-y-4 lg:space-y-5">
+                  {[
+                    { num: 1, text: "Tightening of terminals without causing any short circuits." },
+                    { num: 2, text: "Replacement of fuses." },
+                    { num: 3, text: "Replacement of bulbs." },
+                    { num: 4, text: "Cleaning of colour light lenses and roundels outside and focusing of signals and route indicators." },
+                    { num: 5, text: "Cleaning and opening of top covers and lever locks, circuit controllers, detectors, points and signal mechanism." },
+                    { num: 6, text: "Lubrication of pins of cranks and compensators, lock bar clips, down rods of signals, signal diversion wheels, signal & point mechanism detectors and external cleaning and lubrication of points." },
+                    { num: 7, text: "Renewal and re-fixing of pulleys." },
+                    { num: 8, text: "Casual renewal and re-fixing of roller standards, top roller, bottom roller etc., one at a time." },
+                    { num: 9, text: "Cleaning of roundels and lenses of point indicators and signal lamps etc." }
+                  ].map((item, index) => (
+                    <div key={index} className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 hover:opacity-100"></div>
+                      <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
+                        <div className="flex items-center gap-4">
+                          <span className="flex lg:h-12 lg:w-12 h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-base font-semibold tracking-wide text-cyan-100 text-center lg:text-lg">
+                            {item.num}
+                          </span>
+                          <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/40 via-blue-400/30 to-transparent"></div>
+                        </div>
+                        <div className="space-y-3 text-base leading-relaxed text-blue-100/90 lg:text-lg">
+                          <p>{item.text}</p>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -122,4 +113,4 @@ const GSRAppendixPage356A = () => {
   )
 }
 
-export default GSRAppendixPage356A
+export default GSRAppendixPage460
