@@ -20,7 +20,7 @@ const GSRChapterPage126B = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
-                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.45</span>
+                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.44</span>
                     </div>
                   </div>
                 </div>
@@ -28,7 +28,7 @@ const GSRChapterPage126B = () => {
             </div>
 
             <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              4.45. Attracting attention of Loco Pilot.––
+              4.44. Train held up at first Stop signal.––
             </h1>
           </div>
 
@@ -42,7 +42,7 @@ const GSRChapterPage126B = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
                       <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.45</span>
+                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.44</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
@@ -50,19 +50,10 @@ const GSRChapterPage126B = () => {
 
                   <div className="pt-14 lg:pt-12 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (1) If any Guard sees reason to apprehend danger or considers it necessary for any reason to stop the train, he shall use his best endeavors to attract the attention of the Loco Pilot.
+                      (1) When a train has, without an apparent cause, been kept standing at the first Stop signal for five minutes, the Loco Pilot shall sound the prescribed code of whistle to warn the Guard, and the Brakesman shall proceed to the cabin or station to warn the Station Master. If there is no Brakesman, the Loco Pilot shall depute the Assistant Loco Pilot to proceed to the Cabin or station to warn the Station Master. The Brakesman or Assistant Loco Pilot proceeding to the cabin or station shall show a Stop hand signal towards the station. The Guard shall, as soon as the train is stopped at the first Stop signal, checkup that the tail board or tail lamp is correctly exhibited and shall maintain a vigilant attitude in rear of the train. After fifteen minutes or such less time as may be prescribed by special instructions, the Guard shall, irrespective of whether the cause is apparent or not, proceed to protect the rear of the train in accordance with instructions laid down in Rule 6.03. If in the meantime the signal is taken ‗off‘, or the Loco Pilot receives the necessary authority to pass the signal in the ‗on‘ position, he shall sound the prescribed code of whistle to recall the Guard and exchange hand signal with him before starting the train.
                     </p>
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (2) In the absence of other means of communications with the engine, a Guard desiring to attract the Loco Pilot&apos;s attention shall apply his hand brake sharply and as suddenly release it, and wherever possible, he shall reverse the side lamps to show red towards the engine.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (3) When the attention of the Loco Pilot has been attracted, the necessary hand signals shall be shown.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (4) If the train is fitted with continuous brake, the Guard may, in case of emergency, apply such brake gradually to stop the train.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (SR 4.45 is deleted vide S. No. 2 of AS 08 to G&SR 2020 dated 03.03.2023).
+                      (2) In the case of a train not accompanied by a Guard, these duties shall devolve on the Loco Pilot.
                     </p>
                   </div>
                 </div>

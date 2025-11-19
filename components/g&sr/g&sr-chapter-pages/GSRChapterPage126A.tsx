@@ -20,7 +20,7 @@ const GSRChapterPage126A = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
-                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.44</span>
+                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.43</span>
                     </div>
                   </div>
                 </div>
@@ -28,7 +28,7 @@ const GSRChapterPage126A = () => {
             </div>
 
             <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              4.44. Train held up at first Stop signal.––
+              4.43. Guard to keep a good look-out.––
             </h1>
           </div>
 
@@ -42,7 +42,7 @@ const GSRChapterPage126A = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
                       <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.44</span>
+                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.43</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
@@ -50,10 +50,13 @@ const GSRChapterPage126A = () => {
 
                   <div className="pt-14 lg:pt-12 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (1) When a train has, without an apparent cause, been kept standing at the first Stop signal for five minutes, the Loco Pilot shall sound the prescribed code of whistle to warn the Guard, and the Brakesman shall proceed to the cabin or station to warn the Station Master. If there is no Brakesman, the Loco Pilot shall depute the Assistant Loco Pilot to proceed to the Cabin or station to warn the Station Master. The Brakesman or Assistant Loco Pilot proceeding to the cabin or station shall show a Stop hand signal towards the station. The Guard shall, as soon as the train is stopped at the first Stop signal, checkup that the tail board or tail lamp is correctly exhibited and shall maintain a vigilant attitude in rear of the train. After fifteen minutes or such less time as may be prescribed by special instructions, the Guard shall, irrespective of whether the cause is apparent or not, proceed to protect the rear of the train in accordance with instructions laid down in Rule 6.03. If in the meantime the signal is taken ‗off‘, or the Loco Pilot receives the necessary authority to pass the signal in the ‗on‘ position, he shall sound the prescribed code of whistle to recall the Guard and exchange hand signal with him before starting the train.
+                      During the journey including halts at stations, every Guard shall keep a good look-out and satisfy himself from time to time that the tail board and brake-van lamps are in position and that all brake-van lamps, where required, are burning brightly, that the train is complete in every respect and is proceeding in a safe and proper manner.
                     </p>
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (2) In the case of a train not accompanied by a Guard, these duties shall devolve on the Loco Pilot.
+                      Note –– The term ―brake-van lamp‖ includes ―tail lamp‖.
+                    </p>
+                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
+                      S.R. 4.43. When passing a manned level crossing, the Guard shall look back to see if any signal is given by the Gateman to indicate that anything is wrong with the train.
                     </p>
                   </div>
                 </div>

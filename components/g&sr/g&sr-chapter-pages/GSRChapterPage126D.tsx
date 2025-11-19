@@ -20,7 +20,7 @@ const GSRChapterPage126D = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
-                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.47</span>
+                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.46</span>
                     </div>
                   </div>
                 </div>
@@ -28,7 +28,7 @@ const GSRChapterPage126D = () => {
             </div>
 
             <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              4.47. Application of Guard&apos;s hand brake.––
+              4.46. Assistance from Guard&apos;s hand brake.––
             </h1>
           </div>
 
@@ -42,7 +42,7 @@ const GSRChapterPage126D = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
                       <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.47</span>
+                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.46</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
@@ -50,13 +50,7 @@ const GSRChapterPage126D = () => {
 
                   <div className="pt-14 lg:pt-12 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (1) When the Loco Pilot sounds the prescribed code of whistle or the brake whistle, the Guards shall immediately apply their hand brakes.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (2) When a train is travelling down a steep incline, the Guards shall, if necessary to steady the train, assist the Loco Pilot with their hand brakes.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20 font-semibold">
-                      S.R. 4.47. Hand brakes, when necessary, shall be carefully applied to prevent the wheels skidding.
+                      When the Loco Pilot requires the assistance of Guard&apos;s hand brake, he shall sound the prescribed code of whistle, if necessary repeatedly, or, if a brake whistle is provided, sound such whistle, and shall also use other means of communication, if provided, between the Loco Pilot and the Guard.
                     </p>
                   </div>
                 </div>

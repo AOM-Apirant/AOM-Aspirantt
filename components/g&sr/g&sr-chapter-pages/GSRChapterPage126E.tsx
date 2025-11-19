@@ -20,7 +20,7 @@ const GSRChapterPage126E = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full border border-white/10 bg-gradient-to-br from-blue-700/60 to-indigo-800/60 backdrop-blur">
                     <div className="w-full h-full rounded-full border border-white/20 flex items-center justify-center">
-                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.48</span>
+                      <span className="lg:text-2xl text-lg font-bold text-white/80">4.47</span>
                     </div>
                   </div>
                 </div>
@@ -28,7 +28,7 @@ const GSRChapterPage126E = () => {
             </div>
 
             <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              4.48. Permission of Guard to detach engine from train.––
+              4.47. Application of Guard&apos;s hand brake.––
             </h1>
           </div>
 
@@ -42,7 +42,7 @@ const GSRChapterPage126E = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
                       <div className="lg:w-20 lg:h-20 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 shadow-xl shadow-indigo-900/40 flex items-center justify-center">
-                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.48</span>
+                        <span className="lg:text-2xl text-lg font-bold text-white/90">4.47</span>
                       </div>
                       <div className="absolute -inset-2 rounded-full border border-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"></div>
                     </div>
@@ -50,25 +50,13 @@ const GSRChapterPage126E = () => {
 
                   <div className="pt-14 lg:pt-12 space-y-6 text-blue-100/90 leading-relaxed tracking-wide">
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      When a train has been brought to a stand outside station limits or anywhere on a grade, the Loco Pilot shall not detach his engine from the train without the permission of the Guard who, before giving such permission, shall satisfy himself that the van-brakes have been put on securely and take such other measures as may be necessary or prescribed by special instructions: Provided that detaching of engines from trains in such cases may be prohibited altogether under special instructions wherever considered necessary in the interest of safety.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20 font-semibold">
-                      S.R.4.48.1. The engine of a train carrying passengers shall not be detached outside station limits except in an emergency. If it is required to be detached in an emergency the following precautions shall be taken.––
+                      (1) When the Loco Pilot sounds the prescribed code of whistle or the brake whistle, the Guards shall immediately apply their hand brakes.
                     </p>
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (1) Hand brakes of all brake-vans and goods and coaching vehicles on train shall be securely applied.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (2) The Skids/wedges shall be securely jammed under the farthermost wheels of the rake in the direction of the falling gradient
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20">
-                      (3) Vacuum shall be created to the maximum extent possible by blowing up with the large ejector and an attempt shall be made to lightly pull or push the load with the engine in the direction of the falling gradient. Only after it has been ensured that the load is securely restrained against movement, the vacuum will be dropped and the engine detached. The interval from the time the engine is detached and to the time it is again attached to the train shall not exceed 45 minutes.
+                      (2) When a train is travelling down a steep incline, the Guards shall, if necessary to steady the train, assist the Loco Pilot with their hand brakes.
                     </p>
                     <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20 font-semibold">
-                      S.R.4.48.2. If it is required to detach the engine of a goods train outside the station limits on a gradient not steeper than 1 in 600, the Guard shall apply the hand brake of the brake-van and also the hand brake of at least 18 vehicles on the train. If the gradient is steeper than 1 in 600 the Guard shall apply the hand brake of the brake-van and also the hand brakes of all vehicles on the train.
-                    </p>
-                    <p className="rounded-2xl border border-white/10 bg-white/5 px-5 py-6 text-base lg:text-lg shadow-lg shadow-blue-900/20 font-semibold">
-                      S.R.4.48.3. Loco Pilot should apply the train brake (A9) to ensure that brakes are holding effectively on the wheels of the coaches/wagons before allowing detaching the locomotive in any case.
+                      S.R. 4.47. Hand brakes, when necessary, shall be carefully applied to prevent the wheels skidding.
                     </p>
                   </div>
                 </div>
