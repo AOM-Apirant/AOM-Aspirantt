@@ -38,9 +38,10 @@ function createResponse(
 }
 
 export async function GET(request: NextRequest) {
+  const sessionId = request.cookies.get("visitor_session_id");
+  const shouldIncrement = !sessionId;
+  
   try {
-    const sessionId = request.cookies.get("visitor_session_id");
-    const shouldIncrement = !sessionId;
     let isDbAvailable = true;
 
     try {
@@ -79,10 +80,17 @@ export async function GET(request: NextRequest) {
     return createResponse(visitor, shouldIncrement, request);
   } catch (error) {
     console.error("Error tracking visitor:", error);
-    return NextResponse.json(
-      { success: false, error: "Failed to track visitor" },
-      { status: 500 }
-    );
+    
+    // Return fallback response instead of error to prevent frontend crashes
+    if (shouldIncrement) {
+      fallbackVisitorState.totalVisitors += 1;
+      fallbackVisitorState.lastUpdated = new Date();
+    }
+    
+    return createResponse(fallbackVisitorState, shouldIncrement, request, {
+      source: "fallback",
+      warning: "Error occurred; using fallback counter.",
+    });
   }
 }
 

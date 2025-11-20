@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-const GSRChapterPage139A = () => {
+const GSRChapterPage139 = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-900 relative overflow-hidden text-white">
       <div className="absolute inset-0 overflow-hidden">
@@ -96,4 +96,4 @@ const GSRChapterPage139A = () => {
   )
 }
 
-export default GSRChapterPage139A
+export default GSRChapterPage139

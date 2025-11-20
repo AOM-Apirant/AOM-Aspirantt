@@ -18,13 +18,31 @@ const Footer = () => {
       try {
         const response = await fetch('/api/visitors/count', {
           credentials: 'include', // Important for cookies
+          headers: {
+            'Content-Type': 'application/json',
+          },
         });
+
+        // Check if response is ok
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        // Check if response has content
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          throw new Error('Response is not JSON');
+        }
+
         const data = await response.json();
-        if (data.success) {
+        if (data.success && data.data) {
           setVisitorData(data.data);
         }
       } catch (error) {
         console.error('Error fetching visitor count:', error);
+        // Set loading to false even on error so UI doesn't stay in loading state
+        setIsLoading(false);
+        // Optionally set a fallback value or keep visitorData as null
       } finally {
         setIsLoading(false);
       }

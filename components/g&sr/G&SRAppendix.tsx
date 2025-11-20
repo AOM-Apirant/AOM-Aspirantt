@@ -1,15 +1,92 @@
 "use client"
-import React from 'react'
-import { FileText, AlertTriangle, CheckCircle, Heart } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { FileText, AlertTriangle, Heart, ChevronDown, ChevronUp, BookOpen, ExternalLink, BookOpenCheck, CheckCircle } from 'lucide-react'
 import { AlertCircle, Gavel } from 'lucide-react'
 import { FileSpreadsheet } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+
+const heroTitle = "GSR APPENDICES"
+const heroSubtitle = "Complete Appendix Index for General and Subsidiary Rules"
 
 const GSRAppendix = () => {
+  const [expandedAppendices, setExpandedAppendices] = useState<number[]>([])
+  const [isMobile, setIsMobile] = useState(false)
+  const [openingPDF, setOpeningPDF] = useState<string | null>(null)
+  const [openingContent, setOpeningContent] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    checkDevice()
+    window.addEventListener('resize', checkDevice)
+
+    return () => window.removeEventListener('resize', checkDevice)
+  }, [])
+
+  const toggleAppendix = (appendixId: number) => {
+    setExpandedAppendices(prev => {
+      if (prev.includes(appendixId)) {
+        return prev.filter(id => id !== appendixId)
+      }
+      return [appendixId]
+    })
+  }
+
+  const openPDF = (pageNumber: string) => {
+    // Handle special cases for page numbers that have different file names
+    let pdfFileName = ''
+    
+    // Convert page number to PDF filename format
+    // Handle cases like "350", "356A", "464D", etc.
+    const formattedPage = pageNumber.toUpperCase()
+    pdfFileName = `GSRAppendixPage${formattedPage}.pdf`
+    
+    const pdfPath = `/g&sr-pdf-pages/g&sr-appendix-pdf-pages/${pdfFileName}`
+
+    setOpeningPDF(pageNumber)
+
+    setTimeout(() => {
+      try {
+        if (isMobile) {
+          window.location.href = pdfPath
+        } else {
+          const newWindow = window.open(pdfPath, '_blank')
+          if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+            // Popup blocked, fallback to same window
+            window.location.href = pdfPath
+          }
+          setOpeningPDF(null)
+        }
+      } catch (error) {
+        console.error('Error opening PDF:', error)
+        setOpeningPDF(null)
+      }
+    }, 100)
+  }
+
+  const openContent = (pageNumber: string) => {
+    setOpeningContent(pageNumber)
+
+    setTimeout(() => {
+      try {
+        const formattedPage = pageNumber.toUpperCase()
+        router.push(`/g&sr/content/${formattedPage}`)
+        setOpeningContent(null)
+      } catch (error) {
+        console.error('Error opening content:', error)
+        setOpeningContent(null)
+      }
+    }, 100)
+  }
+
   const appendices = [
     {
       id: 1,
       title: "APPENDIX - I",
-      icon: <AlertTriangle className="w-6 h-6" />,
+      icon: <AlertTriangle className="w-7 h-7 text-white" />,
       color: "from-red-500 to-red-600",
       description: "CAUTION ORDERS",
       pageRange: "350 to 355",
@@ -32,7 +109,7 @@ const GSRAppendix = () => {
     {
       id: 2,
       title: "APPENDIX - II",
-      icon: <Heart className="w-6 h-6" />,
+      icon: <Heart className="w-7 h-7 text-white" />,
       color: "from-green-500 to-green-600",
       description: "LEVEL CROSSING GATES",
       pageRange: "356 to 382",
@@ -53,7 +130,7 @@ const GSRAppendix = () => {
     {
       id: 3,
       title: "APPENDIX - III",
-      icon: <FileText className="w-6 h-6" />,
+      icon: <FileText className="w-7 h-7 text-white" />,
       color: "from-blue-500 to-blue-600",
       description: "NON-INTERLOCKED WORKING",
       pageRange: "383 to 386",
@@ -69,7 +146,7 @@ const GSRAppendix = () => {
     {
       id: 4,
       title: "APPENDIX - IV",
-      icon: <AlertCircle className="w-6 h-6" />,
+      icon: <AlertCircle className="w-7 h-7 text-white" />,
       color: "from-orange-500 to-orange-600",
       description: "SPECIAL INSTRUCTIONS REGARDING LINE PATROLLING",
       pageRange: "387 to 397",
@@ -93,7 +170,7 @@ const GSRAppendix = () => {
     {
       id: 5,
       title: "APPENDIX - V",
-      icon: <Gavel className="w-6 h-6" />,
+      icon: <Gavel className="w-7 h-7 text-white" />,
       color: "from-purple-500 to-purple-600",
       description: "SPECIAL INSTRUCTIONS REGARDING NEW WORKS",
       pageRange: "398 to 408",
@@ -122,7 +199,7 @@ const GSRAppendix = () => {
     {
       id: 6,
       title: "APPENDIX - VI",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "BRAKE POWER ON TRAINS",
       pageRange: "409 to 417",
@@ -141,7 +218,7 @@ const GSRAppendix = () => {
     {
       id: 7,
       title: "APPENDIX - VII",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "SPECIAL INSTRUCTIONS FOR THE USE OF DETONATING (FOG) SIGNALS AT STATIONS TO INDICATE TO THE LOCO PILOTS OF APPROACHING TRAINS THE LOCATION OF A SIGNAL",
       pageRange: "418 to 422",
@@ -156,7 +233,7 @@ const GSRAppendix = () => {
     {
       id: 8,
       title: "APPENDIX - VIII",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "MARSHALLING",
       pageRange: "423 to 432",
@@ -189,7 +266,7 @@ const GSRAppendix = () => {
     {
       id: 9,
       title: "APPENDIX - IX",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "Rules Applicable to Different Categories",
       pageRange: "433 to 441",
@@ -207,7 +284,7 @@ const GSRAppendix = () => {
     {
       id: 10,
       title: "APPENDIX - X",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "AUTOMATIC DANGER LEVEL INDICATORS",
       pageRange: "442 to 444",
@@ -218,7 +295,7 @@ const GSRAppendix = () => {
     {
       id: 11,
       title: "APPENDIX - XI",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "INTERLOCKING",
       pageRange: "445 to 456",
@@ -236,7 +313,7 @@ const GSRAppendix = () => {
     {
       id: 12,
       title: "APPENDIX - XII",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "SHUNTING",
       pageRange: "457 to 458",
@@ -249,7 +326,7 @@ const GSRAppendix = () => {
     {
       id: 13,
       title: "APPENDIX - XIII",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "S&T maintenance works – Testing of points, signals and other equipment – Disconnection Notice",
       pageRange: "459 to 464D",
@@ -269,7 +346,7 @@ const GSRAppendix = () => {
     {
       id: 14,
       title: "APPENDIX - XIV",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "STATION WORKING RULES",
       pageRange: "465 to 472",
@@ -291,7 +368,7 @@ const GSRAppendix = () => {
     {
       id: 15,
       title: "APPENDIX - XV",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "Operating Forms",
       pageRange: "473 to 475",
@@ -302,7 +379,7 @@ const GSRAppendix = () => {
     {
       id: 16,
       title: "APPENDIX - XVI",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "EMUs/MEMUs",
       pageRange: "476 to 482",
@@ -328,7 +405,7 @@ const GSRAppendix = () => {
     {
       id: 17,
       title: "APPENDIX - XVII",
-      icon: <FileSpreadsheet className="w-6 h-6" />,
+      icon: <FileSpreadsheet className="w-7 h-7 text-white" />,
       color: "from-teal-500 to-teal-600",
       description: "SIDINGS",
       pageRange: "483 to 492",
@@ -344,113 +421,173 @@ const GSRAppendix = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
-        <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-          Comprehensive collection of appendices providing detailed supplementary instructions,
-          special procedures, and category-specific rules that complement the main GSR chapters.
-        </p>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid gap-6 md:gap-8">
-          {appendices.map((appendix) => (
-            <div
-              key={appendix.id}
-              className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
-            >
-              {/* Appendix Header */}
-              <div className={`bg-gradient-to-r ${appendix.color} text-white p-6`}>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
-                    {appendix.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h2 className="text-xl sm:text-2xl font-bold">
-                      Appendix {appendix.id}
-                    </h2>
-                    <p className="text-white/90 text-sm sm:text-base mt-1">
-                      {appendix.title}
-                    </p>
-                  </div>
-                </div>
+      <div className="relative z-10 py-6 lg:px-4 px-2">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="inline-block p-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full mb-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-full">
+                <BookOpen className="w-8 h-8 text-white" />
               </div>
+            </div>
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+              {heroTitle}
+            </h1>
+            <h2 className="lg:text-4xl text-xl font-bold text-teal-300 mb-4">Comprehensive Reference Guide for Railway Operations</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-6 rounded-full"></div>
+            <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              {heroSubtitle} - Essential reference materials covering supplementary instructions, special procedures, and detailed protocols for comprehensive railway operations.
+            </p>
+          </div>
 
-              {/* Appendix Content */}
-              <div className="p-6">
-                <div className="mb-4">
-                  <p className="text-gray-200 text-base leading-relaxed">
-                    {appendix.description}
-                  </p>
-                </div>
+          <div className="max-w-7xl mx-auto px-2 lg:px-4 py-6">
+            <div className="grid gap-6 md:gap-8">
+              {appendices.map((appendix) => (
+                <div
+                  key={appendix.id}
+                  className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
+                >
+                  <div
+                    className={`bg-gradient-to-r ${appendix.color} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-300`}
+                    onClick={() => toggleAppendix(appendix.id)}
+                  >
+                    <div className="flex flex-col items-center text-center">
+                      <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm mb-4">
+                        {appendix.icon}
+                      </div>
+                      <div className="mb-4">
+                        <h2 className="text-xl sm:text-2xl font-bold">
+                          {appendix.title}
+                        </h2>
+                        <p className="text-white/90 text-base lg:text-lg font-medium mt-1">
+                          {appendix.description}
+                        </p>
+                      </div>
+                      <div className="w-24 h-0.5 bg-white/30 rounded-full mb-4"></div>
+                      <p className="text-white/70 text-sm font-medium mb-4">
+                        Pages: {appendix.pageRange}
+                      </p>
+                      <div className="bg-white/20 py-2 px-4 rounded-md backdrop-blur-sm">
+                        {expandedAppendices.includes(appendix.id) ? (
+                          <ChevronUp className="w-6 h-6 text-white" />
+                        ) : (
+                          <ChevronDown className="w-6 h-6 text-white" />
+                        )}
+                      </div>
+                    </div>
+                  </div>
 
-                {/* Sub Categories for Appendix IX */}
-                {appendix.content && (
-                  <div className="mt-6">
-                    <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
-                      <span className="w-3 h-3 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full mr-3 animate-pulse"></span>
-                      Staff Categories:
-                    </h4>
-                    <div className="grid gap-3">
-                      {appendix.content.map((category, index) => (
-                        <div
-                          key={index}
-                          className="flex items-start space-x-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 border border-white/10"
-                        >
-                          <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-teal-500 to-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                            {index + 1}
+                  {expandedAppendices.includes(appendix.id) && (
+                    <div className="py-4 lg:px-4 px-2">
+                      <div className="grid gap-3">
+                        {appendix.content && appendix.content.map((item, index) => (
+                          <div
+                            key={index}
+                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                          >
+                            <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
+                              {index + 1}
+                            </div>
+                            <div className="flex-1">
+                              <p className="text-gray-200 font-medium">
+                                {item.title}
+                              </p>
+                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-2">
+                                <button
+                                  onClick={() => openPDF(item.page)}
+                                  disabled={openingPDF === item.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingPDF === item.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingPDF === item.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <FileText className="w-4 h-4" />
+                                  )}
+                                  <span>{openingPDF === item.page ? 'Opening...' : 'View Document'}</span>
+                                  {!isMobile && openingPDF !== item.page && <ExternalLink className="w-3 h-3" />}
+                                </button>
+
+                                <button
+                                  onClick={() => openContent(item.page)}
+                                  disabled={openingContent === item.page}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                    openingContent === item.page
+                                      ? 'bg-gray-500 cursor-not-allowed'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                  }`}
+                                >
+                                  {openingContent === item.page ? (
+                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                  ) : (
+                                    <BookOpenCheck className="w-4 h-4" />
+                                  )}
+                                  <span>{openingContent === item.page ? 'Opening...' : 'View Content'}</span>
+                                </button>
+
+                                <span className="text-gray-400 text-sm lg:ml-2">
+                                  Page: {item.page}
+                                </span>
+                              </div>
+                            </div>
                           </div>
-                          <div className="flex-1">
-                            <p className="text-gray-200 font-medium">
-                              {category.title}
+                        ))}
+                      </div>
+
+                      {/* Special Note for Deleted Appendix */}
+                      {appendix.id === 6 && (
+                        <div className="mt-4 p-4 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-xl">
+                          <div className="flex items-center space-x-2">
+                            <AlertTriangle className="w-5 h-5 text-red-400" />
+                            <p className="text-red-200 font-medium">
+                              This appendix has been deleted from current regulations
                             </p>
                           </div>
                         </div>
-                      ))}
+                      )}
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
+              ))}
+            </div>
 
-                {/* Special Note for Deleted Appendix */}
-                {appendix.id === 6 && (
-                  <div className="mt-4 p-4 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-xl">
-                    <div className="flex items-center space-x-2">
-                      <AlertTriangle className="w-5 h-5 text-red-400" />
-                      <p className="text-red-200 font-medium">
-                        This appendix has been deleted from current regulations
-                      </p>
-                    </div>
-                  </div>
-                )}
+            {/* Footer */}
+            <div className="mt-12 text-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
+                <div className="flex items-center justify-center space-x-3 mb-4">
+                  <CheckCircle className="w-8 h-8 text-green-400" />
+                  <h3 className="text-2xl font-bold text-white">
+                    Complete Appendix Reference
+                  </h3>
+                </div>
+                <p className="text-gray-300 max-w-2xl mx-auto">
+                  This comprehensive appendix guide covers all 17 appendices of the General and Subsidiary Rules, providing essential reference materials 
+                  for supplementary instructions, special procedures, and detailed protocols for comprehensive railway operations.
+                </p>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Footer */}
-        <div className="mt-12 text-center">
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <CheckCircle className="w-8 h-8 text-emerald-400" />
-              <h3 className="text-2xl font-bold text-white">
-                Complete GSR Appendix Reference
-              </h3>
-            </div>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              This comprehensive collection of appendices provides detailed supplementary instructions,
-              special procedures, and category-specific rules that complement the main GSR chapters
-              for comprehensive railway operations management.
-            </p>
           </div>
         </div>
       </div>
 
       <style jsx>{`
         @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         .animate-fade-in {
           animation: fade-in 1s ease-out;

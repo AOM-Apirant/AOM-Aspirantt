@@ -1,57 +1,23 @@
-"use client"
+// G&SR Rule Titles Mapping
+// Maps page IDs to rule titles
 
-import React, { useState, useEffect } from "react"
-import { BookOpen, Layers, Users, RadioTower, TrainFront, Building2, AlertTriangle, GitBranch, Blocks, Workflow, ArrowRightLeft, Shield, Ticket, LifeBuoy, CircuitBoard, Hammer, Fence, Zap, Puzzle, ChevronDown, ChevronUp, FileText, BookOpenCheck, ExternalLink } from "lucide-react"
-import { useRouter } from 'next/navigation'
-import { getPageIdFromRule } from '@/lib/g&sr-chapter-mapping'
+import { ruleToPageMapping } from './g&sr-chapter-mapping'
 
-interface Chapter {
-  id: number
-  title: string
-  description: string
-  pages: string
-  rules: string[]
-  icon: React.ReactNode
-  gradient: string
-}
+// Re-export for convenience
+export { ruleToPageMapping }
 
-const stripPageNumber = (line: string) => {
-  return line.replace(/\s*(?:\.{2,}|…+)?\s*\b\d+(?:\s*[-–]\s*\d+)?$/u, "")
-}
-
-const formatRuleLine = (line: string) => {
-  const cleaned = stripPageNumber(line).trim()
-  const match = cleaned.match(/^((?:\d+\.)+\d+)\s*(.*)$/)
-
-  if (!match) {
-    return cleaned
-  }
-
-  const [, ruleNumber, rest] = match
-  const content = rest.trim()
-
-  return content.length > 0 ? `Rule ${ruleNumber}\n${content}` : `Rule ${ruleNumber}`
-}
-
-const chapterData: Chapter[] = [
+// Raw chapter data with rules (same as in G&SRChapters.tsx)
+const chapterRulesData = [
   {
     id: 1,
-    title: "Chapter - I",
-    description: "PRELIMINARY",
-    pages: "1 - 7",
     rules: [
       "1.01 Short title and commencement",
       "1.02 Definitions",
       "1.03 Classification of stations",
     ],
-    icon: <Layers className="w-7 h-7 text-white" />,
-    gradient: "from-sky-500 to-indigo-500",
   },
   {
     id: 2,
-    title: "Chapter - II",
-    description: "RULES APPLYING TO RAILWAY SERVANTS GENERALLY",
-    pages: "8 - 12",
     rules: [
       "2.01 Supply of copies of rules",
       "2.02 Upkeep of the copy of rules",
@@ -65,14 +31,9 @@ const chapterData: Chapter[] = [
       "2.10 Conduct of railway servants",
       "2.11 Duty for securing safety",
     ],
-    icon: <Users className="w-7 h-7 text-white" />,
-    gradient: "from-emerald-500 to-teal-500",
   },
   {
     id: 3,
-    title: "Chapter - III",
-    description: "SIGNALS",
-    pages: "13 - 90",
     rules: [
       "A. General Provisions",
       "3.01 General use of signals",
@@ -107,7 +68,7 @@ const chapterData: Chapter[] = [
       "3.28 Minimum equipment of fixed signals at stations provided with modified lower quadrant signaling",
       "3.29 Minimum equipment of fixed signals at other stations provided with two-aspect signaling",
       "3.30 Additional fixed signals at stations generally",
-      "3.31 Signals at class ‘D’ stations",
+      "3.31 Signals at class 'D' stations",
       "3.32 Provision of an Advanced Starter, Shunting Limit Board or Block Section Limit Board",
       "3.33 Exceptions to Rules 3.27, 3.28, 3.29 and 3.32",
       "3.34 Fixed signals at level crossings",
@@ -117,14 +78,14 @@ const chapterData: Chapter[] = [
       "3.37 Normal aspects of signals",
       "3.38 Points affecting movement of trains",
       "3.39 Locking of facing points",
-      "3.40 Conditions for taking ‘off’ Home signal",
-      "3.41 Conditions for taking ‘off’ Outer signal",
-      "3.42 Conditions for taking ‘off’ last Stop signal or Intermediate Block Stop signal",
-      "3.43 Conditions for taking ‘off’ Warner signal",
-      "3.44 Conditions for taking ‘off’ gate Stop signal",
-      "3.45 Conditions for taking ‘off’ Calling-on signal",
+      "3.40 Conditions for taking 'off' Home signal",
+      "3.41 Conditions for taking 'off' Outer signal",
+      "3.42 Conditions for taking 'off' last Stop signal or Intermediate Block Stop signal",
+      "3.43 Conditions for taking 'off' Warner signal",
+      "3.44 Conditions for taking 'off' gate Stop signal",
+      "3.45 Conditions for taking 'off' Calling-on signal",
       "3.46 Use of fixed signals for shunting",
-      "3.47 Taking ‘off’ signals for more than one train at a time",
+      "3.47 Taking 'off' signals for more than one train at a time",
       "3.48 Stoppage of trains out of course at stations provided with two-aspect signaling",
       "3.49 Care and lighting of signal lamps",
       "3.50 Traps, slip sidings and catch sidings",
@@ -152,30 +113,25 @@ const chapterData: Chapter[] = [
       "3.68 Duties of Station Master generally when a signal is defective",
       "3.69 Duties of Station Master when an approach Stop signal is defective",
       "3.70 Duties of Station Master when a departure Stop signal is defective",
-      "3.71 Warner or Distant signals defective in the ‘off’ position",
+      "3.71 Warner or Distant signals defective in the 'off' position",
       "3.72 Warner not to be used when a Stop signal is defective",
-      "3.73 Passing of a gate Stop signal at ‘on’",
+      "3.73 Passing of a gate Stop signal at 'on'",
       "3.74 Absence of a fixed signal or a signal without a light",
-      "3.75 Passing of Intermediate Block Stop signal at ‘on’",
+      "3.75 Passing of Intermediate Block Stop signal at 'on'",
       "3.76 Intimation to officials when defects remedied",
       "3.77 Defective or damaged points etc.",
       "3.78 Duties of engine crew in respect of signals",
       "3.79 Duties of Loco Pilot in respect of Calling-on signal",
-      "3.80 Duties of Loco Pilot when an approach Stop signal is ‘on’ or defective",
-      "3.81 Duties of Loco Pilot when a departure Stop signal is ‘on’ or defective",
+      "3.80 Duties of Loco Pilot when an approach Stop signal is 'on' or defective",
+      "3.81 Duties of Loco Pilot when a departure Stop signal is 'on' or defective",
       "3.82 Permission before entering on or crossing a running line",
       "3.83 Assistance of the engine crew regarding signals",
       "3.84 Duties of Loco Pilots as to signals when two or more engines are attached to train",
       "3.85 Reporting of defects in signals",
     ],
-    icon: <RadioTower className="w-7 h-7 text-white" />,
-    gradient: "from-blue-500 to-indigo-500",
   },
   {
     id: 4,
-    title: "Chapter - IV",
-    description: "WORKING OF TRAINS GENERALLY",
-    pages: "91 - 139",
     rules: [
       "A. Timing and Running of Trains",
       "4.01 Standard time",
@@ -198,7 +154,7 @@ const chapterData: Chapter[] = [
       "4.16 Tail board or tail lamp",
       "4.17 Responsibility of Station Master regarding tail board or tail lamp of passing trains",
       "4.18 Means of communication",
-      "4.19 Guard’s and Loco Pilot’s equipment",
+      "4.19 Guard's and Loco Pilot's equipment",
       "4.20 Manning of engine in motion",
       "4.21 Driving an electric train",
       "4.22 Riding on engine or tender",
@@ -228,8 +184,8 @@ const chapterData: Chapter[] = [
       "4.43 Guard to keep a good look-out",
       "4.44 Train held up at first Stop signal",
       "4.45 Attracting attention of Loco Pilot",
-      "4.46 Assistance from Guard’s hand brake",
-      "4.47 Application of Guard’s hand brake",
+      "4.46 Assistance from Guard's hand brake",
+      "4.47 Application of Guard's hand brake",
       "4.48 Permission of Guard to detach engine from train",
       "4.49 Starting and stopping of train",
       "4.50 Sounding of engine whistle",
@@ -253,14 +209,9 @@ const chapterData: Chapter[] = [
       "I. Private Engines and Vehicles",
       "4.66 Private engines and vehicles",
     ],
-    icon: <TrainFront className="w-7 h-7 text-white" />,
-    gradient: "from-amber-500 to-rose-500",
   },
   {
     id: 5,
-    title: "Chapter - V",
-    description: "CONTROL AND WORKING OF STATIONS",
-    pages: "140 - 150",
     rules: [
       "5.01 Responsibility of the Station Master for working",
       "5.02 Supply of copies of rules and distribution or exhibition of other documents",
@@ -286,14 +237,9 @@ const chapterData: Chapter[] = [
       "5.22 Leaving vehicles in sidings outside station limits",
       "5.23 Securing of vehicles at station",
     ],
-    icon: <Building2 className="w-7 h-7 text-white" />,
-    gradient: "from-violet-500 to-purple-500",
   },
   {
     id: 6,
-    title: "Chapter - VI",
-    description: "ACCIDENTS AND UNUSUAL OCCURRENCES",
-    pages: "151 - 181",
     rules: [
       "6.01 Accident or obstruction",
       "6.02 Working in case of accident or failure of communications",
@@ -307,69 +253,54 @@ const chapterData: Chapter[] = [
       "6.10 Fire",
       "6.11 Vehicles escaping from station",
     ],
-    icon: <AlertTriangle className="w-7 h-7 text-white" />,
-    gradient: "from-red-500 to-orange-500",
   },
   {
     id: 7,
-    title: "Chapter - VII",
-    description: "SYSTEM OF WORKING",
-    pages: "182",
     rules: [
       "7.01 Systems of working",
       "7.02 Applicability of General Rules referring to the working of signals and trains",
     ],
-    icon: <GitBranch className="w-7 h-7 text-white" />,
-    gradient: "from-cyan-500 to-teal-500",
   },
   {
     id: 8,
-    title: "Chapter - VIII",
-    description: "THE ABSOLUTE BLOCK SYSTEM",
-    pages: "183 - 195",
     rules: [
       "A. Essentials",
       "8.01 Essential of the Absolute Block System",
       "B. Conditions for granting Line Clear",
-      "8.02 Conditions for granting Line Clear at a class ‘A’ station",
-      "8.03 Conditions for granting Line Clear at a class ‘B’ station",
-      "8.04 Conditions for granting Line Clear at a class ‘C’ station",
+      "8.02 Conditions for granting Line Clear at a class 'A' station",
+      "8.03 Conditions for granting Line Clear at a class 'B' station",
+      "8.04 Conditions for granting Line Clear at a class 'C' station",
       "C. Obstruction – Double Line",
       "8.05 Obstruction on double line at a block station when a train is approaching",
       "8.06 Obstruction on double line in the block section",
       "D. Obstruction – Single Line",
-      "D. 1. Class ‘A’ Station",
-      "8.07 Obstruction on single line at a class ‘A’ station when a train is approaching",
-      "8.08 Obstructing the block section at a class ‘A’ station on a single line",
-      "D. 2. Class ‘B’ Station",
-      "8.09 Obstruction in the face of an approaching train at a class ‘B’ station on single line",
-      "8.10 Obstruction within station section at a class ‘B’ station on single line",
-      "8.11 Obstruction outside station section at a class ‘B’ single line station equipped with two-aspect signals",
-      "8.12 Obstruction outside station section at a class ‘B’ single line station equipped with manually operated multiple-aspect signals",
-      "8.13 Obstruction outside the first Stop signal at a class ‘B’ station on single line",
+      "D. 1. Class 'A' Station",
+      "8.07 Obstruction on single line at a class 'A' station when a train is approaching",
+      "8.08 Obstructing the block section at a class 'A' station on a single line",
+      "D. 2. Class 'B' Station",
+      "8.09 Obstruction in the face of an approaching train at a class 'B' station on single line",
+      "8.10 Obstruction within station section at a class 'B' station on single line",
+      "8.11 Obstruction outside station section at a class 'B' single line station equipped with two-aspect signals",
+      "8.12 Obstruction outside station section at a class 'B' single line station equipped with manually operated multiple-aspect signals",
+      "8.13 Obstruction outside the first Stop signal at a class 'B' station on single line",
       "E. General Provision",
       "8.14 Block back or Block forward",
       "8.15 Authority for shunting or obstruction in block section",
       "8.16 Illustrative diagrams",
     ],
-    icon: <Blocks className="w-7 h-7 text-white" />,
-    gradient: "from-slate-500 to-slate-700",
   },
   {
     id: 9,
-    title: "Chapter - IX",
-    description: "THE AUTOMATIC BLOCK SYSTEM",
-    pages: "196 - 224",
     rules: [
       "A. Rules applicable to Double Line",
       "9.01 Essentials of the Automatic Block System on double line",
-      "9.02 Duties of Loco Pilot and Guard when an Automatic Stop signal on double line is to be passed at ‘on’",
+      "9.02 Duties of Loco Pilot and Guard when an Automatic Stop signal on double line is to be passed at 'on'",
       "B. Rules applicable to Single Line",
       "9.03 Essentials of the Automatic Block System on single line",
       "9.04 Minimum equipment of fixed signals in Automatic Block territory on single line",
       "9.05 Additional fixed signals in Automatic Block territory on single line",
-      "9.06 Conditions for taking ‘off’ manual Stop signals in Automatic Block territory on single line",
-      "9.07 Duties of Loco Pilot and Guard when an Automatic Stop signal on single line is to be passed at ‘on’",
+      "9.06 Conditions for taking 'off' manual Stop signals in Automatic Block territory on single line",
+      "9.07 Duties of Loco Pilot and Guard when an Automatic Stop signal on single line is to be passed at 'on'",
       "9.08 Person in charge of working trains on Automatic Block System on single line",
       "C. Rules applicable to both Double and Single Lines",
       "9.09 Working of trains on Centralised Traffic Control territory",
@@ -377,18 +308,13 @@ const chapterData: Chapter[] = [
       "9.11 Loco Pilot to report failures",
       "9.12 Procedure during failure of Automatic Signalling",
       "9.13 Movement of trains against the direction of traffic on the Automatic Block System",
-      "9.14 Procedure when Semi-Automatic Stop signal is ‘on’",
-      "9.15 Passing a gate Stop signal at ‘on’ in Automatic signalling territory",
+      "9.14 Procedure when Semi-Automatic Stop signal is 'on'",
+      "9.15 Passing a gate Stop signal at 'on' in Automatic signalling territory",
       "9.16 Illustrative diagrams",
     ],
-    icon: <Workflow className="w-7 h-7 text-white" />,
-    gradient: "from-fuchsia-500 to-purple-600",
   },
   {
     id: 10,
-    title: "Chapter - X",
-    description: "THE FOLLOWING TRAINS SYSTEM",
-    pages: "225 - 228",
     rules: [
       "10.01 Essential of the Following Trains System",
       "10.02 Report of the Commissioner of Railway Safety",
@@ -400,30 +326,20 @@ const chapterData: Chapter[] = [
       "10.08 Cessation of working on the Following Trains System",
       "10.09 Protection of trains on the Following Trains System",
     ],
-    icon: <ArrowRightLeft className="w-7 h-7 text-white" />,
-    gradient: "from-indigo-500 to-blue-600",
   },
   {
     id: 11,
-    title: "Chapter - XI",
-    description: "THE PILOT GUARD SYSTEM",
-    pages: "229 - 233",
     rules: [
       "11.01 Essentials of the Pilot Guard System",
       "11.02 Conditions to be observed for following trains on the Pilot Guard System",
-      "11.03 Pilot Guard’s dress or badge",
+      "11.03 Pilot Guard's dress or badge",
       "11.04 Pilot Guard to accompany train or give authority to proceed",
-      "11.05 Pilot Guard’s Tickets",
+      "11.05 Pilot Guard's Tickets",
       "11.06 Protection of trains on the Pilot Guard System",
     ],
-    icon: <Shield className="w-7 h-7 text-white" />,
-    gradient: "from-amber-600 to-yellow-500",
   },
   {
     id: 12,
-    title: "Chapter - XII",
-    description: "THE TRAIN-STAFF AND TICKET SYSTEM",
-    pages: "234 - 237",
     rules: [
       "12.01 Essentials of the Train-staff and Ticket System",
       "12.02 System where applicable",
@@ -443,14 +359,9 @@ const chapterData: Chapter[] = [
       "12.16 Obstruction outside the Home signal",
       "12.17 Protection of trains on the Train-staff and Ticket System",
     ],
-    icon: <Ticket className="w-7 h-7 text-white" />,
-    gradient: "from-rose-500 to-red-500",
   },
   {
     id: 13,
-    title: "Chapter - XIII",
-    description: "WORKING OF TRAINS IN EMERGENCIES",
-    pages: "238 - 252",
     rules: [
       "A. Working of Single Line in case of obstruction",
       "13.01 General",
@@ -461,8 +372,8 @@ const chapterData: Chapter[] = [
       "13.06 Single Line working introduced at a double line station provided with Mechanical signaling with facing points interlocked without track circuiting",
       "13.07 Single Line working introduced at a double line station on an electrically signaled line where track circuits are provided throughout the station section",
       "13.08 Single Line working introduced at a double line station on an electrically signaled line where track circuits are not provided throughout the station section",
-      "13.09 Single Line working introduced between a double line station and a class ‘A’ single line station",
-      "13.10 Single Line working introduced between class ‘A’ stations on single line",
+      "13.09 Single Line working introduced between a double line station and a class 'A' single line station",
+      "13.10 Single Line working introduced between class 'A' stations on single line",
       "B. Regulations for Double Line Working during failure or closure",
       "13.11 Use of Temporary Single Line Working order form",
       "13.12 Instructions to Pass if cannot stop at next stop signal board",
@@ -472,14 +383,9 @@ const chapterData: Chapter[] = [
       "13.16 Advice of authority to approach an obstruction",
       "13.17 Sending advice of repairs effected",
     ],
-    icon: <LifeBuoy className="w-7 h-7 text-white" />,
-    gradient: "from-emerald-600 to-sky-500",
   },
   {
     id: 14,
-    title: "Chapter - XIV",
-    description: "BLOCK WORKING",
-    pages: "241 - 253",
     rules: [
       "A. General Provisions",
       "14.01 Means of granting or obtaining Line Clear",
@@ -513,14 +419,9 @@ const chapterData: Chapter[] = [
       "E. Use and Operation of Block Working",
       "14.26 Use and operation of block working equipment",
     ],
-    icon: <CircuitBoard className="w-7 h-7 text-white" />,
-    gradient: "from-slate-800 to-teal-600",
   },
   {
     id: 15,
-    title: "Chapter - XV",
-    description: "PERMANENT WAY AND WORKS",
-    pages: "254 - 297",
     rules: [
       "A. Railway Servants employed on the Permanent Way and Works",
       "15.01 Condition of Permanent Way and Works",
@@ -553,14 +454,9 @@ const chapterData: Chapter[] = [
       "15.27 Protection of lorry on the line",
       "15.28 Lorries and trolleys out of use",
     ],
-    icon: <Hammer className="w-7 h-7 text-white" />,
-    gradient: "from-amber-700 to-lime-500",
   },
   {
     id: 16,
-    title: "Chapter - XVI",
-    description: "LEVEL CROSSINGS",
-    pages: "298 - 300",
     rules: [
       "16.01 Knowledge of signals",
       "16.02 Supply and care of equipment",
@@ -574,14 +470,9 @@ const chapterData: Chapter[] = [
       "16.10 Transfer of charge of gate",
       "16.11 Height gauges",
     ],
-    icon: <Fence className="w-7 h-7 text-white" />,
-    gradient: "from-orange-500 to-amber-600",
   },
   {
     id: 17,
-    title: "Chapter - XVII",
-    description: "WORKING OF TRAINS ON ELECTRIFIED SECTIONS",
-    pages: "301 - 348",
     rules: [
       "17.01 Applicability of General Rules",
       "17.02 Special definitions applicable to this chapter",
@@ -593,271 +484,46 @@ const chapterData: Chapter[] = [
       "17.08 Tower wagon",
       "17.09 Additional rules for electrified sections",
     ],
-    icon: <Zap className="w-7 h-7 text-white" />,
-    gradient: "from-yellow-400 to-sky-500",
   },
   {
     id: 18,
-    title: "Chapter - XVIII",
-    description: "MISCELLANEOUS",
-    pages: "349",
-    rules: ["18.01 Repeal and Saving"],
-    icon: <Puzzle className="w-7 h-7 text-white" />,
-    gradient: "from-slate-600 to-indigo-500",
+    rules: [
+      "18.01 Repeal and Saving",
+    ],
   },
 ]
 
-const chapters: Chapter[] = chapterData.map(chapter => ({
-  ...chapter,
-  rules: chapter.rules
-    .map(rule => formatRuleLine(rule))
-    .filter(rule => rule.length > 0),
-}))
-
-const heroTitle = "TABLE OF CONTENTS"
-const heroSubtitle = "Rule No. Subject Page No."
-
-const GSRChapters = () => {
-  const [expandedChapters, setExpandedChapters] = useState<number[]>([])
-  const [isMobile, setIsMobile] = useState(false)
-  const [openingPDF, setOpeningPDF] = useState<string | null>(null)
-  const [openingContent, setOpeningContent] = useState<string | null>(null)
-  const router = useRouter()
-
-  useEffect(() => {
-    const checkDevice = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-    
-    checkDevice()
-    window.addEventListener('resize', checkDevice)
-    
-    return () => window.removeEventListener('resize', checkDevice)
-  }, [])
-
-  const toggleChapter = (chapterId: number) => {
-    setExpandedChapters(prev => {
-      if (prev.includes(chapterId)) {
-        return prev.filter(id => id !== chapterId)
-      }
-      return [chapterId]
-    })
-  }
-
-  // Extract rule number from rule text
-  // Handles both formats: "1.01 Short title" and "Rule 1.01\nShort title"
-  const extractRuleNumber = (rule: string): string => {
-    // Try to match "Rule X.XX" format first (formatted)
-    let match = rule.match(/^Rule\s+((?:\d+\.)+\d+)/)
-    if (match) {
-      return match[1]
-    }
-    
-    // Try to match "X.XX" format (original)
-    match = rule.match(/^((?:\d+\.)+\d+)/)
-    if (match) {
-      return match[1]
-    }
-    
-    // Try to match in the middle of the string
-    match = rule.match(/((?:\d+\.)+\d+)/)
-    return match ? match[1] : ''
-  }
-
-  // Convert rule number to chapter page identifier using mapping
-  const ruleToPageId = (ruleNumber: string): string => {
-    // First try to get from mapping
-    const mappedPageId = getPageIdFromRule(ruleNumber)
-    if (mappedPageId) {
-      return mappedPageId
-    }
-    
-    // Fallback: try to extract page ID from rule number
-    const parts = ruleNumber.split('.')
-    if (parts.length >= 2) {
-      const rulePart = parts[1]
-      return rulePart
-    }
-    
-    // Last resort: return rule number without dots
-    return ruleNumber.replace(/\./g, '')
-  }
-
-  const openPDF = (ruleNumber: string, chapterId: number) => {
-    const pageId = ruleToPageId(ruleNumber)
-    const pdfFileName = `GSRChapterPage${pageId}.pdf`
-    const pdfPath = `/g&sr-pdf-pages/g&sr-chapter-pdf-pages/${pdfFileName}`
-    
-    setOpeningPDF(`${chapterId}-${ruleNumber}`)
-    setTimeout(() => {
-      if (isMobile) {
-        window.location.href = pdfPath
-      } else {
-        window.open(pdfPath, '_blank')
-        setOpeningPDF(null)
-      }
-    }, 100)
-  }
-
-  const openContent = (ruleNumber: string, chapterId: number) => {
-    const pageId = ruleToPageId(ruleNumber)
-    setOpeningContent(`${chapterId}-${ruleNumber}`)
-    
-    setTimeout(() => {
-      router.push(`/g&sr/content/${pageId}`)
-      setOpeningContent(null)
-    }, 100)
-  }
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 relative overflow-hidden">
-      <div className="absolute inset-0 overflow:hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-sky-400/10 to-indigo-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
-      </div>
-
-      <div className="relative z-10 py-6 lg:px-4 px-2">
-        <div className="max-w-6xl mx-auto space-y-10">
-          <div className="text-center space-y-6">
-            <div className="inline-block p-2 bg-gradient-to-r from-sky-500/20 to-indigo-500/20 rounded-full backdrop-blur-sm">
-              <div className="bg-gradient-to-r from-sky-500 to-indigo-600 p-3 rounded-full">
-                <BookOpen className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent animate-fade-in">
-              {heroTitle}
-            </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-sky-500 to-indigo-600 mx-auto rounded-full"></div>
-            <p className="lg:text-xl text-base text-gray-200 animate-fade-in" style={{ animationDelay: "0.15s", animationFillMode: "both" }}>
-              {heroSubtitle}
-            </p>
-          </div>
-
-          <div className="grid gap-6">
-            {chapters.map(chapter => (
-              <div
-                key={chapter.id}
-                className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20"
-              >
-                <div
-                  className={`bg-gradient-to-r ${chapter.gradient} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-300`}
-                  onClick={() => toggleChapter(chapter.id)}
-                >
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">{chapter.icon}</div>
-                    <h2 className="text-xl sm:text-2xl font-bold whitespace-pre-line leading-snug">
-                      {chapter.title}
-                    </h2>
-                    <p className="text-white/85 text-sm sm:text-base whitespace-pre-line font-semibold tracking-wide">
-                      {chapter.description}
-                    </p>
-                    <p className="text-white/70 text-sm font-semibold">Pages: {chapter.pages}</p>
-                    <div className="bg-white/20 py-2 px-4 rounded-md backdrop-blur-sm">
-                      {expandedChapters.includes(chapter.id) ? (
-                        <ChevronUp className="w-5 h-5 text-white" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5 text-white" />
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {expandedChapters.includes(chapter.id) && (
-                  <div className="py-6 lg:px-6 px-3">
-                    <div className="grid gap-3">
-                      {chapter.rules.map((rule, index) => {
-                        const ruleNumber = extractRuleNumber(rule)
-                        const ruleKey = `${chapter.id}-${ruleNumber}-${index}`
-                        const isOpeningPDF = openingPDF === `${chapter.id}-${ruleNumber}`
-                        const isOpeningContent = openingContent === `${chapter.id}-${ruleNumber}`
-                        
-                        // Skip buttons for section headers (rules that don't have numbers)
-                        // Check if rule starts with "Rule" or contains a rule number pattern
-                        const hasRuleNumber = ruleNumber.length > 0 && /^\d+\.\d+/.test(ruleNumber)
-                        
-                        return (
-                          <div
-                            key={ruleKey}
-                            className="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 px-4 py-3 hover:bg-white/10 transition-all duration-300"
-                          >
-                            <p className="text-gray-200 whitespace-pre-line text-base lg:text-lg leading-relaxed mb-3">{rule}</p>
-                            
-                            {hasRuleNumber && (
-                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-3 pt-3 border-t border-white/10">
-                                {/* View Document Button */}
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openPDF(ruleNumber, chapter.id)
-                                  }}
-                                  disabled={isOpeningPDF}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
-                                    isOpeningPDF
-                                      ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:scale-105'
-                                  }`}
-                                >
-                                  {isOpeningPDF ? (
-                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : (
-                                    <FileText className="w-4 h-4" />
-                                  )}
-                                  <span>{isOpeningPDF ? 'Opening...' : 'View Document'}</span>
-                                  {!isMobile && !isOpeningPDF && <ExternalLink className="w-3 h-3" />}
-                                </button>
-                                
-                                {/* View Content Button */}
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openContent(ruleNumber, chapter.id)
-                                  }}
-                                  disabled={isOpeningContent}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
-                                    isOpeningContent
-                                      ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
-                                  }`}
-                                >
-                                  {isOpeningContent ? (
-                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : (
-                                    <BookOpenCheck className="w-4 h-4" />
-                                  )}
-                                  <span>{isOpeningContent ? 'Opening...' : 'View Content'}</span>
-                                </button>
-                              </div>
-                            )}
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s ease-out;
-        }
-      `}</style>
-    </div>
-  )
+// Extract rule number from rule text
+const extractRuleNumber = (rule: string): string => {
+  const match = rule.match(/^((?:\d+\.)+\d+)/)
+  return match ? match[1] : ''
 }
 
-export default GSRChapters
+// Extract rule title (text after rule number)
+const extractRuleTitle = (rule: string): string => {
+  const match = rule.match(/^(?:\d+\.)+\d+\s+(.+)$/)
+  return match ? match[1] : rule
+}
+
+// Create mapping from page ID to rule title
+export const pageIdToRuleTitle: { [key: string]: string } = {}
+
+// Build the mapping
+chapterRulesData.forEach((chapter) => {
+  chapter.rules.forEach((rule) => {
+    const ruleNumber = extractRuleNumber(rule)
+    if (ruleNumber) {
+      const pageId = ruleToPageMapping[ruleNumber]
+      if (pageId) {
+        const ruleTitle = extractRuleTitle(rule)
+        pageIdToRuleTitle[pageId] = ruleTitle || ruleNumber
+      }
+    }
+  })
+})
+
+// Helper function to get rule title from page ID
+export const getRuleTitleFromPageId = (pageId: string): string => {
+  return pageIdToRuleTitle[pageId] || `Chapter Page ${pageId}`
+}
+

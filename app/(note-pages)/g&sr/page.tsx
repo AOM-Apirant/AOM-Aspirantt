@@ -2,6 +2,7 @@
 
 import React from 'react'
 import GSRChapters from '@/components/g&sr/G&SRChapters'
+import GSRAppendix from '@/components/g&sr/G&SRAppendix'
 
 interface SectionCardProps {
   title: string
@@ -228,6 +229,7 @@ SOUTH CENTRAL RAILWAY`,
             />
           </div>
           <GSRChapters />
+          <GSRAppendix />
         </div>
       </div>
 
