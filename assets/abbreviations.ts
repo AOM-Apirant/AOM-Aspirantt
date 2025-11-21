@@ -423,6 +423,18 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     {
+      "acronym": "CAD",
+      "fullForm": "Computer Aided Design",
+      "explanation": "Use of computer systems to assist in drawing and design.",
+      reference: "--"
+    },
+    {
+      acronym: "CAL",
+      fullForm: "Clear Available Length",
+      explanation: "The usable platform length available for receiving trains safely.",
+      reference: "--"
+    },
+    {
       acronym: "CAMTECH",
       fullForm: "Centre for Advanced Maintenance Technology.",
       explanation: "Will be added later",
@@ -474,12 +486,24 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "CCL",
+      fullForm: "Child Care Leave",
+      explanation: "Leave admissible for eligible employees for child care needs.",
+      reference: "--"
+    },
     { acronym: "CCM", fullForm: "Chief Commercial Manager",
       explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "CCO", fullForm: "Chief Claims Officer",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "CCRS",
+      fullForm: "Chief Commissioner of Railway Safety",
+      explanation: "The head of the Railway Safety Organization responsible for oversight of railway safety nationwide.",
       reference: "--"
     },
     { acronym: "CDTS", fullForm: "Control Discharge Toilet System",
@@ -541,7 +565,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "CLW", fullForm: "Chittaranjan Locomotive Works",
-      explanation: "Will be added later",
+      explanation: "Manufacturing unit producing electric locomotives",
       reference: "--"
     },
     { acronym: "CME", fullForm: "Chief Mechanical Engineer",
@@ -564,8 +588,14 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "CMRL",
+      fullForm: "Chennai Metro Rail Limited",
+      explanation: "The metro rail authority responsible for Chennai metro operations.",
+      reference: "--"
+    },
     { acronym: "CMS", fullForm: "Crew Management System",
-      explanation: "Will be added later",
+      explanation: "A computerized system for scheduling, monitoring and managing running crew",
       reference: "--"
     },
     { acronym: "CMS", fullForm: "Chief Medical Superintendent",
@@ -593,7 +623,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "COFMOW", fullForm: "Central Organization For Modernization Of Workshop",
-      explanation: "Will be added later",
+      explanation: "An organisation responsible for modernization of railway workshops",
       reference: "--"
     },
     { acronym: "COS", fullForm: "Controller of Stores",
@@ -601,11 +631,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "COIS", fullForm: "Coaching Operations Information System",
-      explanation: "Will be added later",
+      explanation: "An IT-based system used for monitoring and planning coaching train operations",
       reference: "--"
     },
     { acronym: "COM", fullForm: "Chief Operations Manager",
-      explanation: "Will be added later",
+      explanation: "Zonal-level head responsible for operational management (often PCOM in re-designated posts)",
       reference: "--"
     },
     { acronym: "COMS", fullForm: "Complaint Management System",
@@ -653,12 +683,18 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "CPT",
+      fullForm: "Computerized Printed Ticket",
+      explanation: "Printed ticket generated through PRS/UTS systems.",
+      reference: "--"
+    },
     { acronym: "CPTM", fullForm: "Chief Passenger Transportation Manager",
-      explanation: "Will be added later",
+      explanation: "An officer responsible for overall planning and management of passenger traffic operations",
       reference: "--"
     },
     { acronym: "CRB", fullForm: "Chairman of Railway Board",
-      explanation: "Will be added later",
+      explanation: "The top authority and head of the Railway Board",
       reference: "--"
     },
     { acronym: "CRIS", fullForm: "Centre for Railway Information System",
@@ -670,7 +706,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "CRS", fullForm: "Commissioner of Railway Safety",
-      explanation: "Will be added later",
+      explanation: "An authority responsible for inspecting and approving railway safety infrastructure and operations",
       reference: "--"
     },
     { acronym: "CRSE", fullForm: "Chief Rolling Stock Engineer",
@@ -725,8 +761,8 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "CTPM", fullForm: "Chief Transport Planning Manager",
-      explanation: "Will be added later",
+    { acronym: "CTPM", fullForm: "Chief Traffic Planning Manager",
+      explanation: "The officer responsible for planning and optimizing traffic movements",
       reference: "--"
     },
     { acronym: "CTR", fullForm: "Combined Train Report",
@@ -737,11 +773,17 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "CVO", fullForm: "Chief Vigilance Officer",
+    { acronym: "CUG", fullForm: "Closed User Group",
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "CUG", fullForm: "Closed User Group",
+    {
+      "acronym": "CVM",
+      "fullForm": "Coupon Validating Machine",
+      "explanation": "Machine used for validating ticket coupons.",
+      reference: "--"
+    },
+    { acronym: "CVO", fullForm: "Chief Vigilance Officer",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -763,6 +805,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
   ],
   D: [
+    {
+      acronym: "DA",
+      fullForm: "Dearness Allowance",
+      explanation: "Allowance to offset inflation for government employees.",
+      reference: "--"
+    },
     { acronym: "DAC", fullForm: "Digital Axle Counter",
       explanation: "Will be added later",
       reference: "--"
@@ -773,6 +821,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "DAR", fullForm: "Discipline & Appeal Rules",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "DCF",
+      fullForm: "Discounted Cash Flow",
+      explanation: "Financial method to value a project by discounting future cash flows.",
       reference: "--"
     },
     { acronym: "DCM", fullForm: "Divisional Commercial Manager",
@@ -812,7 +866,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DEMU", fullForm: "Diesel Electrical Multiple Unit",
-      explanation: "Will be added later",
+      explanation: "Self-propelled passenger unit powered by diesel-electric transmission",
       reference: "--"
     },
     { acronym: "DEN", fullForm: "Divisional Engineer",
@@ -866,7 +920,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DMT", fullForm: "Departmental Material Trains",
-      explanation: "Will be added later",
+      explanation: "A maintenance train used to carry materials for track repair and maintenance works",
       reference: "--"
     },
     { acronym: "DMU", fullForm: "Diesel Multiple Unit",
@@ -874,7 +928,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DOM", fullForm: "Divisional Operating Manager",
-      explanation: "Will be added later",
+      explanation: "The officer responsible for planning and supervision of train operations in a railway division",
       reference: "--"
     },
     { acronym: "DPC", fullForm: "Diesel Power Controller",
@@ -906,7 +960,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DRM", fullForm: "Divisional Railway Manager",
-      explanation: "Will be added later",
+      explanation: "The administrative head of a railway division overseeing all functions including operations, safety, and finance",
       reference: "--"
     },
     { acronym: "DRS", fullForm: "Deficiency Rolling Stock",
@@ -935,12 +989,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "DSO", fullForm: "Divisional Safety Officer",
-      explanation: "Will be added later",
+      explanation: "he officer supervising safety measures, practices, and compliance within the division",
       reference: "--"
     },
     { acronym: "DSTE",
       fullForm: "Divisional Signal & Telecommunication Engineer",
-      explanation: "Will be added later",
+      explanation: "The divisional head of signalling and telecommunication systems responsible for their maintenance and reliability",
       reference: "--"
     },
     { acronym: "DTI", fullForm: "Divisional Traffic Inspector",
@@ -949,6 +1003,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "DTTC", fullForm: "Divisional Transportation Training Center",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "DV",
+      fullForm: "Distributor Valve",
+      explanation: "A key component in the train brake system that regulates and distributes brake pressure.",
       reference: "--"
     },
     { acronym: "DTWL", fullForm: "Disabled Train Warning Light ",
@@ -974,7 +1034,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "EBR", fullForm: "Extra Budgetary Resources",
-      explanation: "Will be added later",
+      explanation: "Funds raised through borrowings instead of gross budgetary support",
       reference: "--"
     },
     { acronym: "ECA", fullForm: "Employees Compensation Act",
@@ -994,7 +1054,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "EFT", fullForm: "Excess Fare Ticket",
-      explanation: "Will be added later",
+      explanation: "Ticket issued by TTE for passengers with irregular or insufficient tickets",
       reference: "--"
     },
     { acronym: "EFT", fullForm: "Emergency Field Telephone",
@@ -1009,8 +1069,20 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "EIW",
+      fullForm: "Essential Indirect Workers",
+      explanation: "Support staff indirectly contributing to production/service delivery.",
+      reference: "--"
+    },
     { acronym: "EKT", fullForm: "Electronic Key Transmitter",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "EMC",
+      fullForm: "Electric Multiple Coach",
+      explanation: "A self-propelled electric train set used primarily for suburban passenger services.",
       reference: "--"
     },
     { acronym: "EMD", fullForm: "Employee Master Data",
@@ -1022,7 +1094,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "EMU", fullForm: "Electric Multiple Unit",
-      explanation: "Will be added later",
+      explanation: "A self-propelled passenger train unit powered by electricity, commonly used for suburban services",
       reference: "--"
     },
     { acronym: "EOG", fullForm: "End On Generator",
@@ -1062,6 +1134,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      "acronym": "ETKM",
+      "fullForm": "Equated Track Kilometers",
+      "explanation": "Railway term to measure traffic density per track.",
+      reference: "--"
+    },
     { acronym: "ETRR", fullForm: "Electronic Transmission of Railway Receipt",
       explanation: "Will be added later",
       reference: "--"
@@ -1090,7 +1168,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "FM", fullForm: "Fouling Mark",
-      explanation: "Will be added later",
+      explanation: "A mark indicating the safe point beyond which a vehicle must not stand to avoid fouling another track",
       reference: "--"
     },
     { acronym: "FMVFT", fullForm: "Frequency Modulated Voice Frequency Telegraph",
@@ -1106,7 +1184,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "FOIS", fullForm: "Freight Operations & Information System",
-      explanation: "Will be added later",
+      explanation: "A computerized system used for monitoring and managing freight train movements and logistics",
       reference: "--"
     },
     { acronym: "FRED", fullForm: "Flashing Rear End Device",
@@ -1115,6 +1193,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "FSD", fullForm: "Fag Safe Device",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "FSP",
+      fullForm: "Fog Signal Post",
+      explanation: "A post used to place detonators or fog signals to provide audible warnings in low visibility conditions.",
       reference: "--"
     },
     { acronym: "FSS", fullForm: "First Stop Signal",
@@ -1176,7 +1260,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "GM", fullForm: "General Manager",
-      explanation: "Will be added later",
+      explanation: "Administrative head of a Zonal Railway",
       reference: "--"
     },
     { acronym: "GNSS", fullForm: "Global Navigation Satellite System",
@@ -1192,11 +1276,13 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "GPS", fullForm: "Global Positioning System",
-      explanation: "Will be added later",
+      explanation: "A satellite-based navigation system providing location and time information globally",
       reference: "--"
     },
-    { acronym: "GR", fullForm: "General Rules",
-      explanation: "Will be added later",
+    {
+      acronym: "G&SR",
+      fullForm: "General & Subsidiary Rules",
+      explanation: "The core rule book governing train operation and safety across Indian Railways.",
       reference: "--"
     },
     { acronym: "GRP", fullForm: "Government Railway Police",
@@ -1220,7 +1306,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "GSM", fullForm: "Global System for Mobile Communication",
-      explanation: "Will be added later",
+      explanation: "A wireless communication system used for mobile phone services",
       reference: "--"
     },
     { acronym: "GST", fullForm: "Goods and Services Tax",
@@ -1232,7 +1318,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "GTKM", fullForm: "Gross Tonne Kilo Meter",
-      explanation: "Will be added later",
+      explanation: "Total train weight (including vehicles) multiplied by distance (km) run",
       reference: "--"
     },
     { acronym: "GWB", fullForm: "Goods Warning Board",
@@ -1257,20 +1343,28 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "HRMS", fullForm: "Human Resource Management System",
-      explanation: "Will be added later",
-      reference: "--"
-    },
-    { acronym: "HOER", fullForm: "Hours Of Employment and Period of Rest",
-      explanation: "Will be added later",
+    {
+      acronym: "HOER",
+      fullForm: "Hours of Employment Regulations",
+      explanation: "Rules regulating duty hours and rest periods for railway running and safety staff.",
       reference: "--"
     },
     { acronym: "HOG", fullForm: "Head On Generation",
-      explanation: "Will be added later",
+      explanation: "Power supply system where the locomotive supplies electrical power to the entire train, eliminating the need for generator cars",
       reference: "--"
     },
     { acronym: "HOR", fullForm: "High Official Requisition",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "HRA",
+      fullForm: "House Rent Allowance",
+      explanation: "Allowance to meet rental housing expenses.",
+      reference: "--"
+    },
+    { acronym: "HRMS", fullForm: "Human Resource Management System",
+      explanation: "Digital HR platform for employee records and services",
       reference: "--"
     },
     { acronym: "HSN", fullForm: "Harmonised System of Nomenclature",
@@ -1293,15 +1387,15 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
   ],
   I: [
     { acronym: "IBH", fullForm: "Intermediate Block Hut",
-      explanation: "Will be added later",
+      explanation: "A block station without staff, used for dividing block sections to increase line capacity",
       reference: "--"
     },
     { acronym: "IBP", fullForm: "Intermediate Block Post",
-      explanation: "Will be added later",
+      explanation: "A staffed block post provided in a long block section to enhance capacity and reduce delays",
       reference: "--"
     },
     { acronym: "IBS", fullForm: "Intermediate Block Signalling",
-      explanation: "Will be added later",
+      explanation: "Provision of an intermediate signal in a long block section to increase line capacity",
       reference: "--"
     },
     { acronym: "IBSS", fullForm: "Intermediate Block Stop Signal",
@@ -1313,7 +1407,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "ICF", fullForm: "IIntegrated Coach Factory",
-      explanation: "Will be added later",
+      explanation: "Chennai-based factory manufacturing passenger coaches for Indian Railways",
       reference: "--"
     },
     { acronym: "ICMS", fullForm: "Integrated Coaching Management Systems",  
@@ -1349,7 +1443,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "IOH", fullForm: "Intermediate Over Hauling",
-      explanation: "Will be added later",
+      explanation: "Maintenance carried out on rolling stock between scheduled periodic overhauls",
       reference: "--"
     },
     { acronym: "IOL", fullForm: "Intra Ocular Lens",  
@@ -1365,7 +1459,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "IPAS", fullForm: "Integrated Payroll and Accounting System",
-      explanation: "Will be added later",
+      explanation: "Digital system for payroll and accounting functions in Railways",
       reference: "--"
     },
     { acronym: "IPMD", fullForm: "Infrastructure Projects Monitoring Device",
@@ -1439,15 +1533,15 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "IRIMEE", fullForm: "Indian Railways Institute of Mechanical and Electrical Engineering",  
-      explanation: "Will be added later",
+      explanation: "Railway mechanical and electrical specialization institute",
       reference: "--"
     },
     { acronym: "IRISET", fullForm: "Indian Railways Institute of Signal Engineering and Telecommunications",
-      explanation: "Will be added later",
+      explanation: "Trains staff in railway signaling and telecom",
       reference: "--"
     },
     { acronym: "IRITM", fullForm: "Indian Railways Institute of Transport Management",  
-      explanation: "Will be added later",
+      explanation: "Railway operations training institute",
       reference: "--"
     },
     { acronym: "IRLDA", fullForm: "Indian Railways Land Development Authority",
@@ -1558,7 +1652,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "JPO", fullForm: "Joint Procedure Order",
-      explanation: "Will be added later",
+      explanation: "A jointly issued order defining coordinated working procedures between two or more departments",
       reference: "--"
     },
     { acronym: "JRRPF", fullForm: "Jagjivan Ram Railway Protection Force Academy",
@@ -1566,20 +1660,22 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "JTBS", fullForm: "Jansadharan Ticket Booking Sewak",
-      explanation: "Will be added later",
+      explanation: "Outlets authorized to issue unreserved journey tickets to the public",
       reference: "--"
     },
   ],
-  K: [{ acronym: "KRCL", 
+  K: [
+    { acronym: "KMS",
+      fullForm: "Key Management Systme",
+      explanation: "Ensures secure exchange of Movement Authorities between Stationary Kavach and Onboard Kavach system.",
+      reference: "--"
+    },
+    { acronym: "KRCL", 
     fullForm: "Konkan Railway Corporation Limited",
     explanation: "To construct and operate railway lines, construct Road Over Bridges and rail line projects.",
     reference: "--"
   },
-  { acronym: "KMS",
-    fullForm: "Key Management Systme",
-    explanation: "Ensures secure exchange of Movement Authorities between Stationary Kavach and Onboard Kavach system.",
-    reference: "--"
-  }],
+  ],
   L: [
     { acronym: "LAP", fullForm: "Leave on Average Pay",
       explanation: "Will be added later",
@@ -1606,7 +1702,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "LHB", fullForm: "Linke Holfmann Busch",
-      explanation: "Will be added later",
+      explanation: "High-speed modern passenger coaches designed for improved safety, ride quality, and reduced derailment risk",
       reference: "--"
     },
     { acronym: "LI", fullForm: "Loco Inspector",
@@ -1636,6 +1732,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "LSS", fullForm: "Last Stop Signal",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "LTB",
+      fullForm: "Load Test Bench",
+      explanation: "Used for testing performance of locomotives/traction motors under controlled load conditions.",
       reference: "--"
     },
     { acronym: "LTC", fullForm: "Last Train Certificate",
@@ -1707,21 +1809,29 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "LWR", fullForm: "Long Welded Rails",
-      explanation: "Will be added later",
+      explanation: "A rail that is continuously welded for long lengths to reduce joints and improve ride quality",
       reference: "--"
     },
   ],
   M: [
-    { acronym: "MACP", fullForm: "Modified Assured Career Progression",
-      explanation: "Will be added later",
+    {
+      acronym: "MACPS",
+      fullForm: "Modified Assured Career Progression Scheme",
+      explanation: "Financial upgradation scheme when promotions are delayed.",
       reference: "--"
     },
     { acronym: "MACL", fullForm: "Multiple Aspect Color Light",
-      explanation: "Will be added later",
+      explanation: "A colour light signalling system providing multiple aspects for improved signaling flexibility",
       reference: "--"
     },
     { acronym: "MASA", fullForm: "Multiple Aspect Signalling Arrangement",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "MAUQ",
+      fullForm: "Multiple Aspect Upper Quadrant",
+      explanation: "A type of semaphore signalling where the arm moves upward to indicate clear aspects.",
       reference: "--"
     },
     { acronym: "MCDO", fullForm: "Monthly Confidential Demi Official",
@@ -1741,7 +1851,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "MEMU", fullForm: "Mainline Electrical Multiple Unit",
-      explanation: "Will be added later",
+      explanation: "An EMU designed for semi-urban and intercity passenger services on electrified routes",
       reference: "--"
     },
     { acronym: "MGR", fullForm: "Many Go Round",
@@ -1781,11 +1891,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "MRT", fullForm: "Minimum Running Time",
-      explanation: "Will be added later",
+      explanation: "A train equipped with doctors, staff, and medical supplies for accident relief work",
       reference: "--"
     },
     { acronym: "MRTS", fullForm: "Mass Rapid Transport System",
-      explanation: "Will be added later",
+      explanation: "A high-capacity public transport system typically used in urban metropolitan cities",
       reference: "--"
     },
     { acronym: "MRV", fullForm: "Medical Relief Van",
@@ -1875,6 +1985,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "NPV",
+      fullForm: "Net Present Value",
+      explanation: "Present value of future cash inflows minus the initial investment.",
+      reference: "--"
+    },
     { acronym: "NRP", fullForm: "National Rail Plan",
       explanation: "Will be added later",
       reference: "--"
@@ -1884,11 +2000,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "NTES", fullForm: "National Train Enquiry System",
-      explanation: "Will be added later",
+      explanation: "The official platform for real-time train running information and passenger updates",
       reference: "--"
     },
     { acronym: "NTKM", fullForm: "Net Tonne Kilo Meter",
-      explanation: "Will be added later",
+      explanation: "Freight load (tonnes) multiplied by distance (km) actually carried",
       reference: "--"
     },
   ],
@@ -1911,7 +2027,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "ODC", fullForm: "Over Dimensional Consignment",
-      explanation: "Will be added later",
+      explanation: "A load that exceeds standard dimensions and requires special handling and movement planning",
       reference: "--"
     },
     { acronym: "ODR", fullForm: "Oldest Date of Registration",
@@ -1923,7 +2039,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "OHE", fullForm: "Over Head Equipment",
-      explanation: "Will be added later",
+      explanation: "Electrical equipment installed above railway tracks to supply power to electric locomotives",
       reference: "--"
     },
     { acronym: "OLIC", fullForm: "Official Language Implementation Committee",
@@ -2013,7 +2129,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "PCOM", fullForm: "Principal Chief Operations Manager",
-      explanation: "Will be added later",
+      explanation: "The head of operations at zonal level responsible for overall train movement planning and control",
       reference: "--"
     },
     { acronym: "PCPO", fullForm: "Principal Chief Personnel Officer",
@@ -2025,7 +2141,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "PCSO", fullForm: "Principal Chief Safety Officer",
-      explanation: "Will be added later",
+      explanation: "The zonal head responsible for safety monitoring and compliance",
       reference: "--"
     },
     { acronym: "PCV", fullForm: "Passenger Carrying Vehicle",
@@ -2131,11 +2247,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "PNM", fullForm: "Permanent Negotiating Machinery",
-      explanation: "Will be added later",
+      explanation: "System for structured dialogue between staff unions and administration",
       reference: "--"
     },
     { acronym: "PNR", fullForm: "Passenger Name record",
-      explanation: "Will be added later",
+      explanation: "Travel booking reference used in passenger reservation systems",
       reference: "--"
     },
     { acronym: "POET", fullForm: "Passenger Operated Enquiry Terminal",
@@ -2147,7 +2263,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "POL", fullForm: "Petroleum Oil Lubricants",
-      explanation: "Will be added later",
+      explanation: "Major scheduled maintenance of rolling stock at specified intervals",
       reference: "--"
     },
     { acronym: "POMKA", fullForm: "Portable Medical Kit for Accidents",
@@ -2167,7 +2283,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "PQRS", fullForm: "Plasser Quick Relaying System",
-      explanation: "Will be added later",
+      explanation: "Mechanized railway track relaying system",
       reference: "--"
     },
     { acronym: "PRCP", fullForm: "Post Retirement Complimentary Passes",
@@ -2183,7 +2299,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "PRS", fullForm: "Passenger Reservation System",
-      explanation: "Will be added later",
+      explanation: "System used for railway seat/berth booking",
       reference: "--"
     },
     { acronym: "PSC", fullForm: "Pre Stressed Concrete Sleepers",
@@ -2234,8 +2350,14 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      "acronym": "PWD",
+      "fullForm": "Public Works Department",
+      "explanation": "Government body responsible for infrastructure works.",
+      reference: "--"
+    },
     { acronym: "PWI", fullForm: "Permanent Way Inspector",
-      explanation: "Will be added later",
+      explanation: "The supervisor responsible for maintenance and safety of railway track and structures",
       reference: "--"
     },
     { acronym: "PWP", fullForm: "Preliminary Works Program",
@@ -2252,6 +2374,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "RAR",
+      fullForm: "Railway Accounting Rules",
+      explanation: "Rules that govern accounting procedures on Indian Railways.",
+      reference: "--"
+    },
     { acronym: "RAS", fullForm: "Rake Allocation System",
       explanation: "Will be added later",
       reference: "--"
@@ -2262,6 +2390,18 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "RBPC", fullForm: "Round Trip Brake Power Certificate",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "RCF",
+      fullForm: "Rail Coach Factory",
+      explanation: "Kapurthala-based factory producing modern passenger coaches.",
+      reference: "--"
+    },
+    {
+      "acronym": "RDSO",
+      "fullForm": "Research Designs & Standards Organisation",
+      "explanation": "The R&D wing of Indian Railways responsible for developing and standardizing designs and systems.",
       reference: "--"
     },
     { acronym: "RM", fullForm: "Railway Motor Van",
@@ -2277,7 +2417,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "RAC", fullForm: "Reservation Against Cancellation",
-      explanation: "Will be added later",
+      explanation: "Railway ticket status ensuring travel but conditional berth",
       reference: "--"
     },
     { acronym: "RARV", fullForm: "Road Accident Restoration Vehicles",
@@ -2306,10 +2446,6 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "RDM", fullForm: "Rescue Drive Mode",
-      explanation: "Will be added later",
-      reference: "--"
-    },
-    { acronym: "RDSO", fullForm: "Research Designs and Standards Organisation",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -2375,12 +2511,14 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "ROB", fullForm: "Rail Over Bridge",
-      explanation: "Will be added later",
+    {
+      "acronym": "ROB",
+      "fullForm": "Road Over Bridge",
+      "explanation": "A bridge allowing a road to pass over railway tracks, removing level crossing conflicts.",
       reference: "--"
     },
     { acronym: "ROH", fullForm: "Routine Over Hauling",
-      explanation: "Will be added later",
+      explanation: "Scheduled maintenance of rolling stock done periodically to ensure reliability",
       reference: "--"
     },
     { acronym: "RORO", fullForm: "Roll On Roll Off",
@@ -2392,7 +2530,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "RPF", fullForm: "Railway Protection Force",
-      explanation: "Will be added later",
+      explanation: "Security organization protecting railway passengers and property",
       reference: "--"
     },
     { acronym: "RRB", fullForm: "Railway Recruitment Board",
@@ -2408,11 +2546,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "RRI", fullForm: "Route Relay Interlocking",
-      explanation: "Will be added later",
+      explanation: "A relay-based interlocking system enabling safe control of signals and points",
       reference: "--"
     },
     { acronym: "RRSK", fullForm: "Rashtriya Rail Sanraksha Kosh",
-      explanation: "Will be added later",
+      explanation: "Dedicated fund for safety-related works on Indian Railways",
       reference: "--"
     },
     { acronym: "RRT", fullForm: "Railway Rates Tribunal",
@@ -2464,7 +2602,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "RUB", fullForm: "Rail Under Bridge",
-      explanation: "Will be added later",
+      explanation: "A bridge allowing railway tracks to pass underneath a road",
       reference: "--"
     },
     { acronym: "RVNL", 
@@ -2511,6 +2649,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "It is part of EoT.It is capable of determine status of Brake pipe pressure",
       reference: "--"
     },
+    {
+      acronym: "SCADA",
+      fullForm: "Supervisory Control And Data Acquisition",
+      explanation: "Real-time electrical traction power monitoring and remote control system for OHE supply.",
+      reference: "--"
+    },
     { acronym: "SCO", fullForm: "Sectional Caution Order",
       explanation: "Will be added later",
       reference: "--"
@@ -2525,6 +2669,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "SDIR", fullForm: "Stop Dead If Required",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      "acronym": "SEJ",
+      "fullForm": "Switch Expansion Joint",
+      "explanation": "A track joint that allows rails to expand and contract during temperature variation.",
       reference: "--"
     },
     { acronym: "SFOORTI", fullForm: "Smart Freight Operation Optimisation and Real Time Information",
@@ -2560,7 +2710,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "SLB", fullForm: "Shunting Limit Board",
-      explanation: "Will be added later",
+      explanation: "A board indicating the maximum limit up to which shunting movements are allowed",
       reference: "--"
     },
     { acronym: "SLI", fullForm: "Senior Loco Inspector",
@@ -2619,8 +2769,14 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Kavach",
       reference: "--"
     },
+    {
+      acronym: "SP",
+      fullForm: "Sub Sectioning Post",
+      explanation: "Electrical switching post used to isolate or connect OHE sections for traction continuity.",
+      reference: "--"
+    },
     { acronym: "SPAD", fullForm: "Signal Passing At Danger",
-      explanation: "Will be added later",
+      explanation: "A serious operational violation where a train passes a stop signal at danger",
       reference: "--"
     },
     {
@@ -2702,11 +2858,15 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "SSI", fullForm: "Solid State Interlocking",
-      explanation: "Will be added later",
+      explanation: "A modern microprocessor-based interlocking system used for safe control of points and signals",
       reference: "--"
     },
     { acronym: "SSP", fullForm: "Sub Sectioning & Paralleling Post",
-      explanation: "Will be added later",
+      explanation: "Combined switching location in OHE network enabling sectional isolation and control",
+      reference: "--"
+    },
+    { acronym: "STBA", fullForm: "Station Ticket Booking Agent",
+      explanation: "Authorized local agent engaged for ticket booking at stations",
       reference: "--"
     },
     { acronym: "STM", fullForm: "Senior Transportation Manager",
@@ -2725,16 +2885,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "STBA", fullForm: "Station Ticket Booking Agent",
-      explanation: "Will be added later",
-      reference: "--"
-    },
     { acronym: "SVK", fullForm: "Stationary Vital Kavach",
       explanation: "Kavach",
       reference: "--"
     },
-    { acronym: "SWR", fullForm: "Station Working Rule",
-      explanation: "Will be added later",
+    { acronym: "SWR", fullForm: "Station Working Rules",
+      explanation: "A station-specific document describing procedures for safe and efficient train working",
       reference: "--"
     },
     { acronym: "SWRD", fullForm: "Station Working Rule Diagram",
@@ -2747,6 +2903,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
   ],
   T: [
+    { acronym: "TAAG", fullForm: "Trains At A Glance",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "TACL", fullForm: "Two Aspect Colour Light",
       explanation: "Will be added later",
       reference: "--"
@@ -2797,12 +2957,24 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    {
+      acronym: "TD",
+      fullForm: "Train Declaration",
+      explanation: "Electronic or manual declaration signaling readiness of a train for operation.",
+      reference: "--"
+    },
     { acronym: "TDC", fullForm: "Tentative Date of Cancellation",
       explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "TDMS", fullForm: "Track Distribution Management System",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      "acronym": "TFC",
+      "fullForm": "Total Failure of Communication",
+      "explanation": "A condition where communication between stations completely fails, requiring special handling.",
       reference: "--"
     },
     { acronym: "TEFD", fullForm: "Traditional Empty Flow Direction",
@@ -2823,6 +2995,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "TG", fullForm: "Termination for Goods Train",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      "acronym": "TI",
+      "fullForm": "Traffic Inspector",
+      "explanation": "A supervisory officer responsible for monitoring operating staff and train operations.",
       reference: "--"
     },
     { acronym: "TIC", fullForm: "Total Interruption of Communication",
@@ -2878,7 +3056,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "TPWS", fullForm: "Train Protection & Warning System",
-      explanation: "Will be added later",
+      explanation: "A system that prevents collisions by enforcing braking when trains exceed speed limits or approach danger signals",
       reference: "--"
     },
     { acronym: "TRD", fullForm: "Traction Distribution",
@@ -2894,15 +3072,17 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "TSR", fullForm: "Train Signal Register",
-      explanation: "Will be added later",
+      explanation: "A register used to record all train movement signal indications and timings",
       reference: "--"
     },
     { acronym: "TSRMS", fullForm: "Temporary Speed Restriction Management System",
       explanation: "Kavach",
       reference: "--"
     },
-    { acronym: "LTC", fullForm: "Leave Travel Concession",
-      explanation: "Will be added later",
+    {
+      acronym: "TSS",
+      fullForm: "Traction Sub Station",
+      explanation: "Electric power supply station feeding overhead traction system to power trains.",
       reference: "--"
     },
     { acronym: "TSTS", fullForm: "Train Staff Ticket System",
@@ -2911,6 +3091,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "TTC", fullForm: "Time Table Controller",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      "acronym": "TTE",
+      "fullForm": "Travelling Ticket Examiner",
+      "explanation": "Railway staff responsible for on-board ticket verification.",
       reference: "--"
     },
     { acronym: "TTM", fullForm: "Track Tamping Machine",
@@ -2960,7 +3146,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "UFSBI", fullForm: "Universal Fail Safe Block Interface",
-      explanation: "Will be added later",
+      explanation: "An electronic block interface that ensures fail-safe operation between block instruments and signaling equipment",
       reference: "--"
     },
     { acronym: "UHF", fullForm: "Ultra High Frequency",
@@ -2992,7 +3178,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "UTS", fullForm: "Unreserved Ticketing System",
-      explanation: "Will be added later",
+      explanation: "System/platform for issuing unreserved tickets (counter, ATVM, and mobile)",
       reference: "--"
     },
   ],
@@ -3031,12 +3217,36 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
   ],
   W: [
+    {
+      acronym: "WAG",
+      fullForm: "Wide Gauge AC Goods (Electric Locomotive Class)",
+      explanation: "Designation for goods-hauling electric locomotives (e.g., WAG-7, WAG-9).",
+      reference: "--"
+    },
+    {
+      acronym: "WAP",
+      fullForm: "Wide Gauge AC Passenger (Electric Locomotive Class)",
+      explanation: "Designation for passenger electric locomotives (e.g., WAP-4, WAP-7).",
+      reference: "--"
+    },
     { acronym: "WCA", fullForm: "Workmen Compensation Act",
       explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "WCM", fullForm: "Wheel Condition Monitor",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "WDG",
+      fullForm: "Wide Gauge Diesel Goods (Locomotive Class)",
+      explanation: "Diesel locomotives primarily designed for hauling freight trains.",
+      reference: "--"
+    },
+    {
+      acronym: "WDP",
+      fullForm: "Wide Gauge Diesel Passenger (Locomotive Class)",
+      explanation: "Diesel locomotives mainly used for passenger services.",
       reference: "--"
     },
     { acronym: "WFCZ", fullForm: "Vestibule First Class Chair Car",
@@ -3109,16 +3319,21 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "YTSK", fullForm: "Yatri Ticket Suvidha Kendra",
-      explanation: "Will be added later",
+      explanation: "Licensed ticket counters operated by private parties for public convenience",
       reference: "--"
     },
   ],
   Z: [
-    { acronym: "ZULU", fullForm: "Zulu Time (UTC)",
+    { acronym: "ZRTI", fullForm: "Zonal Railway Training Institute",
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "ZRTI", fullForm: "Zonal Railway Training Institute",
+    {
+      "acronym": "ZRUCC",
+      "fullForm": "Zonal Railway Users Consultative Committee",
+      "explanation": "Represents public interests to railway zonal authorities."
+    },
+    { acronym: "ZULU", fullForm: "Zulu Time (UTC)",
       explanation: "Will be added later",
       reference: "--"
     },
