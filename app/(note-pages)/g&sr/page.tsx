@@ -182,7 +182,7 @@ SOUTH CENTRAL RAILWAY`,
                 </svg>
               </div>
             </div>
-            <h1 className="lg:text-5xl text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in whitespace-pre-line leading-tight">
+            <h1 className="lg:text-4xl text-xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent mb-6 animate-fade-in whitespace-pre-line leading-tight">
               {coverText}
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-sky-500 to-indigo-600 mx-auto rounded-full"></div>

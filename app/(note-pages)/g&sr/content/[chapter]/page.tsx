@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { chapterPageComponents } from '@/lib/g&sr-chapter-components'
 import { appendixPageComponents } from '@/lib/g&sr-appendix-components'
@@ -11,26 +11,59 @@ const ContentPage = () => {
   const chapterPageId = params.chapter as string
   const [isLoading, setIsLoading] = useState(true)
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const [isNavigating, setIsNavigating] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     setIsLoading(false)
+    setIsNavigating(false)
+    
+    // Check if mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
   }, [chapterPageId])
 
   useEffect(() => {
+    // Debounce scroll handler for better performance
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300)
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current)
+      }
+      scrollTimeoutRef.current = setTimeout(() => {
+        setShowScrollTop(window.scrollY > 300)
+      }, 100)
     }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current)
+      }
+    }
   }, [])
 
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
-  }
+  }, [])
+
+  const handleNavigation = useCallback((pageId: string | null) => {
+    if (!pageId || isNavigating) return
+    
+    setIsNavigating(true)
+    // Small delay to prevent rapid clicks
+    setTimeout(() => {
+      router.push(`/g&sr/content/${pageId}`)
+    }, 100)
+  }, [router, isNavigating])
 
   // Check if it's a chapter or appendix page
   const ContentComponent = chapterPageComponents[chapterPageId] || appendixPageComponents[chapterPageId]
@@ -65,9 +98,21 @@ const ContentPage = () => {
       const numA = numMatchA ? parseInt(numMatchA[1]) : 0
       const numB = numMatchB ? parseInt(numMatchB[1]) : 0
       
-      if (numA !== numB) return numA - numA - numB
+      // First compare by numeric part (page number)
+      if (numA !== numB) return numA - numB
+      
       // If same number, sort by suffix (A, B, C, etc.)
-      return a.localeCompare(b)
+      // Extract suffix (letter part) for comparison
+      const suffixA = a.replace(/^\d+/, '') || ''
+      const suffixB = b.replace(/^\d+/, '') || ''
+      
+      // Empty suffix comes before letter suffixes
+      if (suffixA === '' && suffixB !== '') return -1
+      if (suffixA !== '' && suffixB === '') return 1
+      if (suffixA === '' && suffixB === '') return 0
+      
+      // Compare letter suffixes alphabetically
+      return suffixA.localeCompare(suffixB)
     })
   }, [])
 
@@ -113,30 +158,36 @@ const ContentPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Header Navigation - Sticky Top */}
-      <div className="bg-white/10 backdrop-blur-lg border-b border-white/20 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-2 lg:px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
+      <div className={`bg-white/10 ${isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'} border-b border-white/20 sticky top-0 z-50`}>
+        <div className="max-w-7xl mx-auto px-2 lg:px-4 py-3 lg:py-4">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center">
               <button
-                onClick={() => router.push('/g&sr')}
-                className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 mr-2"
+                onClick={() => {
+                  if (!isNavigating) {
+                    setIsNavigating(true)
+                    router.push('/g&sr')
+                  }
+                }}
+                disabled={isNavigating}
+                className="flex items-center space-x-1 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs lg:text-base lg:px-4 px-2 py-1.5 lg:py-2 rounded-sm active:scale-95 transition-transform duration-200 disabled:opacity-50"
               >
-                <span>Back to Index</span>
+                <span>Back</span>
               </button>
             </div>
 
-            <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-2 mr-2 rounded-sm backdrop-blur-sm border border-blue-400/30">
-              <p className="text-white text-xs lg:text-base text-center whitespace-nowrap">
-                Topic : {getTopicName(chapterPageId)}
+            <div className="bg-gradient-to-r from-green-500 to-emerald-600 lg:px-4 px-2 py-1.5 lg:py-2 rounded-sm border border-blue-400/30 flex-1 min-w-0">
+              <p className="text-white text-xs lg:text-sm text-center truncate">
+                {getTopicName(chapterPageId)}
               </p>
             </div>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center">
               <button
                 onClick={openPDF}
-                className="flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-600 text-white text-xs lg:text-base lg:px-4 px-2 py-2 rounded-sm hover:from-red-600 hover:to-pink-700 transition-all duration-300"
+                className="flex items-center space-x-1 bg-gradient-to-r from-red-500 to-pink-600 text-white text-xs lg:text-base lg:px-4 px-2 py-1.5 lg:py-2 rounded-sm active:scale-95 transition-transform duration-200"
               >
-                <span>Document</span>
+                <span>PDF</span>
               </button>
             </div>
           </div>
@@ -145,55 +196,54 @@ const ContentPage = () => {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto lg:px-4 px-2 py-4">
+        {isNavigating && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+            <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        )}
         <ContentComponent />
 
         {/* Navigation Buttons - Bottom */}
-        <div className="mt-6 mb-6 p-3 bg-white/10 backdrop-blur-lg rounded-lg border border-white/20">
-          <div className="flex items-center justify-between space-x-4">
+        <div className={`mt-6 mb-6 p-2 lg:p-3 bg-white/10 ${isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'} rounded-lg border border-white/20`}>
+          <div className="flex items-center justify-between gap-2 lg:gap-4">
             {/* Previous Button */}
             <button
-              onClick={() => {
-                if (prevPage) {
-                  router.push(`/g&sr/content/${prevPage}`)
-                }
-              }}
-              disabled={!prevPage}
-              className={`flex flex-col items-center space-y-1 px-4 py-3 rounded-sm text-white transition-all duration-300 ${
-                prevPage
-                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:scale-105'
+              onClick={() => handleNavigation(prevPage)}
+              disabled={!prevPage || isNavigating}
+              className={`flex flex-col items-center justify-center space-y-1 px-2 lg:px-4 py-2 lg:py-3 rounded-sm text-white transition-all duration-200 flex-1 min-w-0 ${
+                prevPage && !isNavigating
+                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 active:scale-95'
                   : 'bg-gray-500 cursor-not-allowed opacity-50'
               }`}
             >
-              <span className="text-xs lg:text-sm flex items-center justify-center gap-1">
+              <span className="text-xs lg:text-sm font-medium">
                 Previous
               </span>
-              <hr className="border-white/30 w-full my-1" />
-              <span className="text-xs lg:text-sm text-center max-w-[200px] truncate" title={prevPage ? getPageTitle(prevPage) : ''}>
-                {prevPage ? getPageTitle(prevPage) : 'Previous'}
-              </span>
+              {prevPage && (
+                <span className="text-xs text-center truncate w-full px-1" title={getPageTitle(prevPage)}>
+                  {getPageTitle(prevPage)}
+                </span>
+              )}
             </button>
 
             {/* Next Button */}
             <button
-              onClick={() => {
-                if (nextPage) {
-                  router.push(`/g&sr/content/${nextPage}`)
-                }
-              }}
-              disabled={!nextPage}
-              className={`flex flex-col items-center space-y-1 px-4 py-3 rounded-sm text-white transition-all duration-300 ${
-                nextPage
-                  ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:scale-105'
+              onClick={() => handleNavigation(nextPage)}
+              disabled={!nextPage || isNavigating}
+              className={`flex flex-col items-center justify-center space-y-1 px-2 lg:px-4 py-2 lg:py-3 rounded-sm text-white transition-all duration-200 flex-1 min-w-0 ${
+                nextPage && !isNavigating
+                  ? 'bg-gradient-to-r from-green-500 to-emerald-600 active:scale-95'
                   : 'bg-gray-500 cursor-not-allowed opacity-50'
               }`}
             >
-              <span className="text-xs lg:text-sm flex items-center justify-center gap-1">
+              <span className="text-xs lg:text-sm font-medium">
                 Next
               </span>
-              <hr className="border-white/30 w-full my-1" />
-              <span className="text-xs lg:text-sm text-center max-w-[200px] truncate" title={nextPage ? getPageTitle(nextPage) : ''}>
-                {nextPage ? getPageTitle(nextPage) : 'Next'}
-              </span>
+              {nextPage && (
+                <span className="text-xs text-center truncate w-full px-1" title={getPageTitle(nextPage)}>
+                  {getPageTitle(nextPage)}
+                </span>
+              )}
             </button>
           </div>
         </div>
@@ -203,7 +253,7 @@ const ContentPage = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 left-4 bg-gradient-to-tr from-blue-600 via-blue-400 to-blue-700 text-white p-1 rounded-full shadow-2xl border-2 border-white hover:scale-110 hover:from-blue-700 hover:to-blue-500 transition-all duration-300 z-50 flex items-center justify-center animate-pulse"
+          className={`fixed bottom-4 left-4 bg-gradient-to-tr from-blue-600 via-blue-400 to-blue-700 text-white p-2 lg:p-3 rounded-full shadow-2xl border-2 border-white active:scale-95 transition-transform duration-200 z-40 flex items-center justify-center ${isMobile ? '' : 'hover:scale-110'}`}
           aria-label="Scroll to top"
         >
           <svg
