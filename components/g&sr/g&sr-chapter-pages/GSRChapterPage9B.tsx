@@ -12,8 +12,8 @@ const GSRChapterPage9B = () => {
         <div className="absolute inset-0 bg-grid-white/10 opacity-15 mix-blend-overlay"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4 lg:px-10">
-        <div className="max-w-4xl mx-auto space-y-10">
+      <div className="relative z-10 py-8 px-2 lg:px-10">
+        <div className="max-w-7xl mx-auto space-y-10">
           <header className="text-center space-y-4">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -30,31 +30,91 @@ const GSRChapterPage9B = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              2.05. Prevention of trespass, damage or loss.––
+            <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              2.05. Prevention of trespass, damage or loss
             </h1>
           </header>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
-            <div className="relative p-6 lg:p-10 space-y-6">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative p-2 lg:p-10 space-y-6">
               <div className="absolute -top-16 -left-16 w-40 h-40 bg-gradient-to-br from-blue-400/25 to-purple-500/25 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-20 -right-20 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative z-10 space-y-6">
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (1) Every railway servant is responsible for the security and protection of
-                    the property of the Railway Administration under his charge.
-                  </p>
+                {/* Item (1) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">1</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      Every railway servant is responsible for the security and protection of
+                      the property of the Railway Administration under his charge.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="grid gap-4 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    <p>(2) Every railway servant shall endeavour to prevent-</p>
-                    <p>(a) trespass on railway premises,</p>
-                    <p>(b) theft, damage or loss of railway property,</p>
-                    <p>(c) injury to himself and others and</p>
-                    <p>(d) fire in railway premises.</p>
+                {/* Item (2) Section */}
+                <div className="space-y-4">
+                  <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">2</span>
+                      </div>
+                      <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                        Every railway servant shall endeavour to prevent-
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pl-0 lg:pl-14 space-y-3">
+                    {/* Item (a) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">a</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          trespass on railway premises,
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item (b) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">b</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          theft, damage or loss of railway property,
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item (c) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">c</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          injury to himself and others and
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item (d) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">d</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          fire in railway premises.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

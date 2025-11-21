@@ -14,7 +14,7 @@ const GSRChapterPage17 = () => {
       </div>
 
       <div className="relative z-10 py-6 px-2 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-6">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -31,155 +31,273 @@ const GSRChapterPage17 = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
+            <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
               Description of Distant signals and their indications—
             </h1>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
             <div className="relative">
               <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative p-5 lg:p-10 space-y-6">
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (1) A semaphore Distant signal has a fish-tailed arm.
-                  </p>
+              <div className="relative p-2 lg:p-10 space-y-6">
+                {/* Item (1) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">1</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      A semaphore Distant signal has a fish-tailed arm.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (2) The aspects and indications of a semaphore Distant signal working in the lower quadrant are shown below:-
-                  </p>
-                  
-                  <div className="mt-8 flex flex-col items-center">
-                    <div className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-amber-300/30 hover:shadow-amber-500/20">
-                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%)] opacity-80" />
-                      <div className="relative">
-                        <Image
-                          src="/gsr-images/GSRPAGE18.png"
-                          alt="Semaphore distant signal in two-aspect territory"
-                          width={820}
-                          height={700}
-                          className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(251,191,36,0.35)]"
-                          priority={false}
-                        />
+                {/* Item (2) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">2</span>
                       </div>
-                      <div className="relative mt-4 text-center">
-                        <h4 className="text-lg font-semibold text-amber-100">
-                          Semaphore Distant Signal – Lower Quadrant
-                        </h4>
-                        <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
-                          Illustration of caution and proceed aspects for a lower-quadrant semaphore distant signal used in modified lower quadrant signalling territories.
-                        </p>
+                      <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                        The aspects and indications of a semaphore Distant signal working in the lower quadrant are shown below:-
+                      </p>
+                    </div>
+                    
+                    <div className="mt-8 flex flex-col items-center">
+                      <div className="relative w-full max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-amber-300/30 hover:shadow-amber-500/20">
+                        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%)] opacity-80" />
+                        <div className="relative">
+                          <Image
+                            src="/gsr-images/GSRPAGE18.png"
+                            alt="Semaphore distant signal in two-aspect territory"
+                            width={820}
+                            height={700}
+                            className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(251,191,36,0.35)]"
+                            priority={false}
+                          />
+                        </div>
+                        <div className="relative mt-4 text-center">
+                          <h4 className="text-lg font-semibold text-amber-100">
+                            Semaphore Distant Signal – Lower Quadrant
+                          </h4>
+                          <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                            Illustration of caution and proceed aspects for a lower-quadrant semaphore distant signal used in modified lower quadrant signalling territories.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide italic">
+                        Note: This signal shall be provided only in Modified Lower Quadrant signaling.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Item (3) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">3</span>
+                      </div>
+                      <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                        The aspects and indications of a semaphore Distant signal working in the upper quadrant are shown below:-
+                      </p>
+                    </div>
+                    
+                    <div className="mt-8 flex flex-col items-center">
+                      <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-amber-300/30 hover:shadow-amber-500/20">
+                        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%)] opacity-80" />
+                        <div className="relative">
+                          <Image
+                            src="/gsr-images/GSRPAGE19.png"
+                            alt="Semaphore distant signal in multiple-aspect territory"
+                            width={960}
+                            height={720}
+                            className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(251,191,36,0.35)]"
+                            priority={false}
+                          />
+                        </div>
+                        <div className="relative mt-4 text-center">
+                          <h4 className="text-lg font-semibold text-amber-100">
+                            Semaphore Distant Signal – Upper Quadrant
+                          </h4>
+                          <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                            Depicts caution, attention, and proceed indications of an upper-quadrant semaphore distant signal for multiple-aspect signalling territories.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide italic">
+                        Note: The distance between the two yellow lights shall be 1.5 metres, when this signal displays &apos;Attention&apos; aspect at night.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Item (4) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">4</span>
+                      </div>
+                      <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                        The aspects and indications of a colour light Distant signal are shown below:-
+                      </p>
+                    </div>
+                    
+                    <div className="mt-8 flex flex-col items-center">
+                      <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-yellow-300/30 hover:shadow-yellow-500/20">
+                        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(253,224,71,0.18),_transparent_60%)] opacity-80" />
+                        <div className="relative">
+                          <Image
+                            src="/gsr-images/GSRPAGE20.png"
+                            alt="Colour light distant signal aspects"
+                            width={960}
+                            height={720}
+                            className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(253,224,71,0.35)]"
+                            priority={false}
+                          />
+                        </div>
+                        <div className="relative mt-4 text-center">
+                          <h4 className="text-lg font-semibold text-yellow-100">
+                            Colour Light Distant Signal – Multiple Aspect Territory
+                          </h4>
+                          <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
+                            Visualises caution, attention, and proceed aspects for a colour light distant signal, including the corresponding indications for main and loop lines.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide italic">
+                        Note: The change in aspect or indications of a distant signal is applicable for single distant signal territory and not for double distant territory.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Item (5) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">5</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      A Distant signal shall be located at an adequate distance in rear of the Stop signal, the aspect of which it pre-warns.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item (6) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">6</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      Where necessary more than one Distant signal may be provided. In such a case, the outermost signal, to be located at an adequate distance from the first Stop signal, shall be called the Distant signal and the other called the Inner Distant signal, with the Distant signal capable of displaying &apos;Attention&apos; or &apos;Proceed&apos; aspect only.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item (7) Section */}
+                <div className="space-y-4">
+                  <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">7</span>
+                      </div>
+                      <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                        <p>Under approved special instructions, a colour light Distant signal may be combined with the last Stop signal of a station in rear or with an Intermediate Block signal or with a Stop signal protecting a level crossing. When a colour Distant signal is combined, (i) with the last Stop signal of a station in rear or (ii) with an Intermediate Block signal or (iii) with a Stop signal protecting a level crossing, arrangement shall be such that the signal shall not display a less restrictive aspect than the &apos;stop&apos; aspect till Line Clear has been obtained from the station ahead in case of (i) &amp; (ii) above and until the level crossing gates have been closed and locked for the passage of trains as in case of (iii) above.</p>
                       </div>
                     </div>
                   </div>
-                  <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide">
-                    Note: This signal shall be provided only in Modified Lower Quadrant signaling.
-                  </p>
-                </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (3) The aspects and indications of a semaphore Distant signal working in the upper quadrant are shown below:-
-                  </p>
-                  
-                  <div className="mt-8 flex flex-col items-center">
-                    <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-amber-300/30 hover:shadow-amber-500/20">
-                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.18),_transparent_60%)] opacity-80" />
-                      <div className="relative">
-                        <Image
-                          src="/gsr-images/GSRPAGE19.png"
-                          alt="Semaphore distant signal in multiple-aspect territory"
-                          width={960}
-                          height={720}
-                          className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(251,191,36,0.35)]"
-                          priority={false}
-                        />
-                      </div>
-                      <div className="relative mt-4 text-center">
-                        <h4 className="text-lg font-semibold text-amber-100">
-                          Semaphore Distant Signal – Upper Quadrant
-                        </h4>
-                        <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
-                          Depicts caution, attention, and proceed indications of an upper-quadrant semaphore distant signal for multiple-aspect signalling territories.
+                  {/* Provided that section */}
+                  <div className="pl-0 lg:pl-14 space-y-3">
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-yellow-500/80 to-amber-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-xs lg:text-sm font-bold text-white">P</span>
+                        </div>
+                        <p className="flex-1 text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide pt-1 italic">
+                          Provided that, a colour light Distant signal may be permitted to be combined with the last Stop signal of a station in rear or with an Intermediate Block signal or with a Stop signal protecting a level crossing with arrangements as above, by the Sanctioning Authority (in case of item (a) below – Principal Chief Signal and Telecom Engineer of the concerned Zonal Railway, and in case of item (b), (c) and (d) below- General Manager of the concerned Railway) for the purpose of –
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide">
-                    Note: The distance between the two yellow lights shall be 1.5 metres,when this signal displays ‘Attention’ aspect at night.
-                  </p>
-                </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (4) The aspects and indications of a colour light Distant signal are shown below:-
-                  </p>
-                  
-                  <div className="mt-8 flex flex-col items-center">
-                    <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-yellow-300/30 hover:shadow-yellow-500/20">
-                      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(253,224,71,0.18),_transparent_60%)] opacity-80" />
-                      <div className="relative">
-                        <Image
-                          src="/gsr-images/GSRPAGE20.png"
-                          alt="Colour light distant signal aspects"
-                          width={960}
-                          height={720}
-                          className="h-auto w-full rounded-lg object-contain drop-shadow-[0_12px_30px_rgba(253,224,71,0.35)]"
-                          priority={false}
-                        />
+                    {/* Items (a), (b), (c), (d) */}
+                    <div className="pl-0 lg:pl-14 space-y-3">
+                      {/* Item (a) */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">a</span>
+                          </div>
+                          <p className="flex-1 text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide pt-1">
+                            Interlocking of level crossings outside station limits;
+                          </p>
+                        </div>
                       </div>
-                      <div className="relative mt-4 text-center">
-                        <h4 className="text-lg font-semibold text-yellow-100">
-                          Colour Light Distant Signal – Multiple Aspect Territory
-                        </h4>
-                        <p className="mt-2 text-sm leading-relaxed text-blue-100/80">
-                          Visualises caution, attention, and proceed aspects for a colour light distant signal, including the corresponding indications for main and loop lines.
-                        </p>
+
+                      {/* Item (b) */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">b</span>
+                          </div>
+                          <p className="flex-1 text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide pt-1">
+                            Double Distant signaling along with corresponding changes at adjacent stations without yard remodelling;
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Item (c) */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">c</span>
+                          </div>
+                          <p className="flex-1 text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide pt-1">
+                            Intermediate Block signaling except in section with Slip siding and Catch siding, along with corresponding changes at adjacent stations without yard remodelling; and
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Item (d) */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">d</span>
+                          </div>
+                          <p className="flex-1 text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide pt-1">
+                            Automatic Block signaling except in section with Slip siding and Catch siding, along with corresponding changes at adjacent stations without yard remodelling.&quot; (Item no. 3 AS-02 Dt : 21.02.2025)
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <p className="mt-3 text-sm lg:text-base text-blue-100/70 tracking-wide">
-                    Note: The change in aspect or indications of a distant signal is applicable for single distant signal territory and not for double distant territory.
-                  </p>
-                </div>
-
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (5) A Distant signal shall be located at an adequate distance in rear of the Stop signal, the aspect of which it pre-warns.
-                  </p>
-                </div>
-
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (6) Where necessary more than one Distant signal may be provided. In such a case, the outermost signal, to be located at an adequate distance from the first Stop signal, shall be called the Distant signal and the other called the Inner Distant signal, with the Distant signal capable of displaying ‘Attention’ or ‘Proceed’ aspect only.
-                  </p>
-                </div>
-
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-4">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (7) Under approved special instructions, a colour light Distant signal may be combined with the last Stop signal of a station in rear or with an Intermediate Block signal or with a Stop signal protecting a level crossing. When a colour Distant signal is combined, (i) with the last Stop signal of a station in rear or (ii) with an Intermediate Block signal or (iii) with a Stop signal protecting a level crossing, arrangement shall be such that the signal shall not display a less restrictive aspect than the ‘stop’ aspect till Line Clear has been obtained from the station ahead in case of (i) &amp; (ii) above and until the level crossing gates have been closed and locked for the passage of trains as in case of (iii) above.
-                  </p>
-                  <p className="text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide">
-                    “Provided that, a colour light Distant signal may be permitted to be combined with the last Stop signal of a station in rear or with an Intermediate Block signal or with a Stop signal protecting a level crossing with arrangements as above, by the Sanctioning Authority (in case of item (a) below – Principal Chief Signal and Telecom Engineer of the concerned Zonal Railway, and in case of item (b), (c) and (d) below- General Manager of the concerned Railway) for the purpose of –
-                  </p>
-                  <div className="space-y-2 text-sm lg:text-base leading-relaxed text-blue-100/70 tracking-wide pl-3 border-l border-white/10">
-                    <p>(a) Interlocking of level crossings outside station limits;</p>
-                    <p>(b) Double Distant signaling along with corresponding changes at adjacent stations without yard remodelling;</p>
-                    <p>(c) Intermediate Block signaling except in section with Slip siding and Catch siding, along with corresponding changes at adjacent stations without yard remodelling; and</p>
-                    <p>(d) Automatic Block signaling except in section with Slip siding and Catch siding, along with corresponding changes at adjacent stations without yard remodelling.” (Item no. 3 AS-02 Dt : 21.02.2025)</p>
                   </div>
                 </div>
               </div>
 
-              <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-6">
-                <h3 className="text-lg lg:text-2xl font-bold text-indigo-200 flex items-center gap-2">
-                  <span className="inline-block align-middle">🔎</span>
-                  S.R. 3.07.1 – Signal Aspects and Their Indications (Single Distant Territory)
-                </h3>
+              {/* S.R.3.07.1 Section */}
+              <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-cyan-500/80 to-blue-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                    <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                  </div>
+                  <h3 className="text-lg lg:text-2xl font-bold bg-gradient-to-r from-cyan-200 to-blue-200 bg-clip-text text-transparent flex items-center gap-2">
+                    <span className="inline-block align-middle">🔎</span>
+                    3.07.1 – Signal Aspects and Their Indications (Single Distant Territory)
+                  </h3>
+                </div>
                 <div className="w-full overflow-x-auto text-blue-100/90">
                   <table className="min-w-full text-left border-separate border-spacing-y-2">
                     <thead>
@@ -248,11 +366,17 @@ const GSRChapterPage17 = () => {
                 </p>
               </div>
 
-              <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-4 mt-6">
-                <h3 className="text-lg lg:text-2xl font-bold text-indigo-200 flex items-center gap-2">
-                  <span className="inline-block align-middle">🚦</span>
-                  S.R. 3.07.2 – Distant &amp; Inner Distant Signals (Multiple Aspect Signalling Sections)
-                </h3>
+              {/* S.R.3.07.2 Section */}
+              <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-4 mt-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-emerald-500/80 to-teal-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                    <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                  </div>
+                  <h3 className="text-lg lg:text-2xl font-bold bg-gradient-to-r from-emerald-200 to-teal-200 bg-clip-text text-transparent flex items-center gap-2">
+                    <span className="inline-block align-middle">🚦</span>
+                    3.07.2 – Distant &amp; Inner Distant Signals (Multiple Aspect Signalling Sections)
+                  </h3>
+                </div>
                 <ul className="list-none pl-0 space-y-2 text-blue-100/90 text-base lg:text-lg">
                   <li className="flex gap-2 items-start"><span className="mt-1 text-yellow-300">🟡</span> In some multiple aspect signalling sections, two distant signals are provided: the outermost is known as the <b>DISTANT</b> signal, and the next is called the <b>INNER DISTANT</b> signal.</li>
                   <li className="flex gap-2 items-start"><span className="mt-1 text-blue-200">📏</span> The Distant signal is generally placed at a distance of 2 km from the relevant Stop Signal.</li>
@@ -261,11 +385,17 @@ const GSRChapterPage17 = () => {
               </div>
             </div>
 
-            <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-6 mt-8">
-              <h3 className="text-lg lg:text-2xl font-bold text-indigo-200 flex items-center gap-2">
-                <span className="inline-block align-middle">🔎</span>
-                Indications of Aspects – Distant &amp; Inner Distant Signals
-              </h3>
+            {/* S.R.3.07.3 Section */}
+            <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80 space-y-6 mt-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                  <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                </div>
+                <h3 className="text-lg lg:text-2xl font-bold bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent flex items-center gap-2">
+                  <span className="inline-block align-middle">🔎</span>
+                  3.07.3 – Indications of Aspects – Distant &amp; Inner Distant Signals
+                </h3>
+              </div>
               <div className="overflow-auto">
                 <table className="min-w-full border border-white/10 rounded-lg text-sm lg:text-base text-blue-100/90">
                   <thead>
@@ -314,7 +444,7 @@ const GSRChapterPage17 = () => {
                     <tr className="hover:bg-blue-900/40 transition-colors">
                       <td className="px-2 py-1 text-center font-medium">4</td>
                       <td className="px-2 py-1 text-yellow-300 text-center">🟡🟡<br/><span className="text-xs text-blue-100/70">Double Yellow</span></td>
-                      <td className="px-2 py-1 text-yellow-300 text-center">🟡🟡<br/><span className="text-xs text-blue-100/70">Double Yellow</span></td>
+                      <td className="px-2 py-1 text-yellow-300 text-center">🟡🟡<br/><span className="inline-block align-middle text-xs text-blue-100/70">Double Yellow</span></td>
                       <td className="px-2 py-1 text-yellow-300 text-center">🟡<span className="text-blue-200 text-xs ml-1">[with route indicator]</span></td>
                       <td className="px-2 py-1 text-center">-</td>
                       <td className="px-2 py-1 text-red-400 text-center">🔴<br/><span className="text-xs text-blue-100/70">Red</span></td>
@@ -347,9 +477,14 @@ const GSRChapterPage17 = () => {
           <div className="mt-8">
             <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-blue-950/80 to-indigo-900/70 shadow-lg p-6 lg:p-10 space-y-8">
 
-              <h2 className="text-2xl lg:text-3xl font-bold text-center bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent mb-4">
-                SR.3.07.3 — Aspects and Indications of Distant Signals in Approach to Gate Stop Signal and IB Signal
-              </h2>
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                  <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                </div>
+                <h2 className="text-2xl lg:text-3xl font-bold text-center bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+                  3.07.3 — Aspects and Indications of Distant Signals in Approach to Gate Stop Signal and IB Signal
+                </h2>
+              </div>
 
               <div className="overflow-x-auto">
                 <table className="min-w-full bg-white/5 rounded-lg border border-white/10 text-center text-blue-100">
@@ -382,79 +517,112 @@ const GSRChapterPage17 = () => {
                 </table>
               </div>
 
-              <h3 className="text-xl lg:text-2xl font-semibold mt-8 mb-2">
-                SR.3.07.4 — Indications for Combined Signal Arrangements
-              </h3>
+              <div className="flex items-center gap-3 mt-8 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                  <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                </div>
+                <h3 className="text-xl lg:text-2xl font-semibold bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+                  3.07.4 — Indications for Combined Signal Arrangements
+                </h3>
+              </div>
               
               <div className="space-y-6 text-base lg:text-lg">
                 {/* Gate-cum Distant Signal */}
-                <div>
-                  <div className="font-semibold text-indigo-300">1. Gate-cum Distant Signal:</div>
-                  <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
-                    <li>
-                      <span className="font-semibold text-red-400">Red:</span> LC gate open to road traffic.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-yellow-300">Yellow:</span> LC gate closed and train required to stop at Home signal.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-yellow-200">Double Yellow:</span> LC gate closed and train required to stop at Main Line Starter / Loop Line Starter or to pass through via Loop Line.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-green-400">Green:</span> LC gate closed and train to pass/run through via Main Line.
-                    </li>
-                  </ul>
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">1</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-indigo-300 mb-2">Gate-cum Distant Signal:</div>
+                      <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
+                        <li>
+                          <span className="font-semibold text-red-400">Red:</span> LC gate open to road traffic.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-yellow-300">Yellow:</span> LC gate closed and train required to stop at Home signal.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-yellow-200">Double Yellow:</span> LC gate closed and train required to stop at Main Line Starter / Loop Line Starter or to pass through via Loop Line.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-green-400">Green:</span> LC gate closed and train to pass/run through via Main Line.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 
                 {/* IBS-cum Distant Signal */}
-                <div>
-                  <div className="font-semibold text-indigo-300">2. Intermediate Block Stop Signal (IBS)-cum-Distant Signal:</div>
-                  <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
-                    <li>
-                      <span className="font-semibold text-red-400">Red:</span> Block section ahead is not clear.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-yellow-300">Yellow:</span> Train required to stop at Home signal of station ahead.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-yellow-200">Double Yellow:</span> Train required to stop at Main or Loop Line Starter or to pass through Loop Line.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-green-400">Green:</span> Block section ahead is clear, train to pass/run through the station via Main Line.
-                    </li>
-                  </ul>
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">2</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-indigo-300 mb-2">Intermediate Block Stop Signal (IBS)-cum-Distant Signal:</div>
+                      <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
+                        <li>
+                          <span className="font-semibold text-red-400">Red:</span> Block section ahead is not clear.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-yellow-300">Yellow:</span> Train required to stop at Home signal of station ahead.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-yellow-200">Double Yellow:</span> Train required to stop at Main or Loop Line Starter or to pass through Loop Line.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-green-400">Green:</span> Block section ahead is clear, train to pass/run through the station via Main Line.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Last Stop Signal–cum–Distant (LC Gate) */}
-                <div>
-                  <div className="font-semibold text-indigo-300">3. Last Stop Signal–cum–Distant Signal of LC Gate:</div>
-                  <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
-                    <li>
-                      <span className="font-semibold text-red-400">Red:</span> Line clear not obtained from the station in advance.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-yellow-300">Yellow:</span> Line clear obtained and LC gate is open to road traffic.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-green-400">Green:</span> Line clear obtained and LC gate is closed to road traffic.
-                    </li>
-                  </ul>
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">3</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-indigo-300 mb-2">Last Stop Signal–cum–Distant Signal of LC Gate:</div>
+                      <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
+                        <li>
+                          <span className="font-semibold text-red-400">Red:</span> Line clear not obtained from the station in advance.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-yellow-300">Yellow:</span> Line clear obtained and LC gate is open to road traffic.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-green-400">Green:</span> Line clear obtained and LC gate is closed to road traffic.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Last Stop Signal–cum–Distant (IB Signal) */}
-                <div>
-                  <div className="font-semibold text-indigo-300">4. Last Stop Signal–cum–Distant Signal of Intermediate Block (IB) Signal:</div>
-                  <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
-                    <li>
-                      <span className="font-semibold text-red-400">Red:</span> Block section is not clear for an adequate distance beyond Intermediate Block Signal.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-yellow-300">Yellow:</span> Block section is clear for an adequate distance and train is required to stop at IB Signal.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-green-400">Green:</span> Train required to pass through Intermediate Block Signal (IB).
-                    </li>
-                  </ul>
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">4</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-indigo-300 mb-2">Last Stop Signal–cum–Distant Signal of Intermediate Block (IB) Signal:</div>
+                      <ul className="list-disc ml-6 mt-1 space-y-1 text-blue-100/90">
+                        <li>
+                          <span className="font-semibold text-red-400">Red:</span> Block section is not clear for an adequate distance beyond Intermediate Block Signal.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-yellow-300">Yellow:</span> Block section is clear for an adequate distance and train is required to stop at IB Signal.
+                        </li>
+                        <li>
+                          <span className="font-semibold text-green-400">Green:</span> Train required to pass through Intermediate Block Signal (IB).
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -13,7 +13,7 @@ const GSRChapterPage13A = () => {
       </div>
 
       <div className="relative z-10 py-6 px-2 lg:px-8">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto"> 
           <div className="text-center mb-14">
             <div className="inline-flex items-center justify-center mb-6">
               <div className="relative">
@@ -42,12 +42,12 @@ const GSRChapterPage13A = () => {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
             <div className="relative">
               <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative p-4 lg:p-10 space-y-8">
+              <div className="relative p-2 lg:p-10 space-y-8">
                 <div className="group relative flex flex-col gap-6 rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-4 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex justify-center">
                     <div className="relative flex items-center justify-center">
@@ -63,7 +63,7 @@ const GSRChapterPage13A = () => {
                       A. General Provisions
                     </p>
 
-                    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-lg shadow-blue-900/20 transition-all duration-500 hover:border-cyan-400/30 hover:bg-white/10">
                       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/5 to-indigo-600/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                       <div className="relative flex flex-col gap-5 rounded-2xl bg-slate-900/50 px-5 py-6 lg:px-8 lg:py-8">
                         <div className="flex items-center gap-4">

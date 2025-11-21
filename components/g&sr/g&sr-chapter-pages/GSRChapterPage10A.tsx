@@ -12,8 +12,8 @@ const GSRChapterPage10A = () => {
         <div className="absolute inset-0 bg-grid-white/10 opacity-15 mix-blend-overlay"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4 lg:px-10">
-        <div className="max-w-4xl mx-auto space-y-10">
+      <div className="relative z-10 py-8 px-2 lg:px-10">
+        <div className="max-w-7xl mx-auto space-y-10">
           <header className="text-center space-y-4">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -30,17 +30,17 @@ const GSRChapterPage10A = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              2.07. Attendance for duty.––
+            <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              2.07. Attendance for duty
             </h1>
           </header>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
-            <div className="relative p-6 lg:p-10">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative p-2 lg:p-10">
               <div className="absolute -top-16 -left-16 w-40 h-40 bg-gradient-to-br from-blue-400/25 to-purple-500/25 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-20 -right-20 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative z-10 group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+              <div className="relative z-10 group overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
                 <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
                   Every railway servant shall be in attendance for duty at such times and places
                   and for such periods as may be fixed in this behalf by the Railway

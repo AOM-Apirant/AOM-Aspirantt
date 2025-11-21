@@ -12,8 +12,8 @@ const GSRChapterPage8B = () => {
         <div className="absolute inset-0 bg-grid-white/10 opacity-15 mix-blend-overlay"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4 lg:px-10">
-        <div className="max-w-4xl mx-auto space-y-10">
+      <div className="relative z-10 py-8 px-2 lg:px-10">
+        <div className="max-w-7xl mx-auto space-y-10">
           <header className="text-center space-y-6">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -31,8 +31,8 @@ const GSRChapterPage8B = () => {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-                2.02. Upkeep of the copy of rules.––
+              <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+                2.02. Upkeep of the copy of rules
               </h1>
               <p className="text-base lg:text-lg text-indigo-100/90 font-medium animate-fade-in delay-200">
                 Each railway servant, who has been supplied with a copy of these rules, as
@@ -41,20 +41,59 @@ const GSRChapterPage8B = () => {
             </div>
           </header>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
-            <div className="relative p-4 lg:p-10 space-y-8">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative p-2 lg:p-10 space-y-8">
               <div className="absolute -top-16 -left-16 w-48 h-48 bg-gradient-to-br from-blue-400/25 to-purple-500/25 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-20 -right-20 w-56 h-56 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative z-10 space-y-6">
-                <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="grid gap-5 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    <p>(a) keep it posted with all corrections.</p>
-                    <p>(b) produce the same on demand by any of his superiors.</p>
-                    <p>(c) obtain a new copy from his superior in case his copy is lost or defaced</p>
-                    <p>and</p>
-                    <p>(d) ensure that the staff working under him are supplied with all</p>
-                    <p>corrections and that they also comply with the provisions of this rule.</p>
+              <div className="relative z-10 space-y-4">
+                {/* Item (a) */}
+                <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">a</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      keep it posted with all corrections.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item (b) */}
+                <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">b</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      produce the same on demand by any of his superiors.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item (c) */}
+                <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">c</span>
+                    </div>
+                    <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      <p>obtain a new copy from his superior in case his copy is lost or defaced</p>
+                      <p className="mt-2 text-indigo-200/80 italic">and</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Item (d) */}
+                <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">d</span>
+                    </div>
+                    <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      <p>ensure that the staff working under him are supplied with all</p>
+                      <p>corrections and that they also comply with the provisions of this rule.</p>
+                    </div>
                   </div>
                 </div>
               </div>

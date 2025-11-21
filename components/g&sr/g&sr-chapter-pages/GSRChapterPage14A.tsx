@@ -13,7 +13,7 @@ const GSRChapterPage14A = () => {
       </div>
 
       <div className="relative z-10 py-6 px-2 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-12">  
           <div className="text-center">
             <div className="inline-flex items-center justify-center mb-6">
               <div className="relative">
@@ -30,71 +30,147 @@ const GSRChapterPage14A = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+            <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
               B. Description of Fixed Signals
             </h1>
             <p className="mt-4 text-lg lg:text-2xl font-semibold text-indigo-200 tracking-wide">
-              Use of fixed signals.––
+              Use of fixed signals
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
             <div className="relative">
               <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative p-5 lg:p-10 space-y-6">
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (1) Except under approved special instructions, all railways shall be equipped
-                    with fixed signals as prescribed in these rules.
-                  </p>
+              <div className="relative p-2 lg:p-10 space-y-6">
+                {/* Item (1) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">1</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      Except under approved special instructions, all railways shall be equipped
+                      with fixed signals as prescribed in these rules.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (2) The aspects of a semaphore signal shall be displayed by the position of the
-                    arm by day and by a light or lights by night.
-                  </p>
+                {/* Item (2) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">2</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      The aspects of a semaphore signal shall be displayed by the position of the
+                      arm by day and by a light or lights by night.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    Note: In the illustrations given in this Chapter, which are not drawn to scale. The
-                    day aspect of the semaphore signals is shown by the position of the arm and the
-                    night aspect is shown by the light or lights to the right of the signal concerned.
-                  </p>
+                {/* Note Section */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-yellow-400/30 hover:shadow-lg hover:shadow-yellow-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-yellow-500/80 to-amber-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-xs lg:text-sm font-bold text-white">N</span>
+                    </div>
+                    <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      <span className="font-semibold text-yellow-200">Note:</span>{" "}
+                      <span>In the illustrations given in this Chapter, which are not drawn to scale. The
+                      day aspect of the semaphore signals is shown by the position of the arm and the
+                      night aspect is shown by the light or lights to the right of the signal concerned.</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (3) The aspects of a colour light and position light signal both by day and by
-                    night shall be the same and shall be displayed by fixed light or lights.
-                  </p>
+                {/* Item (3) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">3</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      The aspects of a colour light and position light signal both by day and by
+                      night shall be the same and shall be displayed by fixed light or lights.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (4) The arm of a semaphore signal shall work in -
-                    (a) the lower quadrant in two-aspect signalling and
-                    (b) the upper quadrant in manually operated multiple-aspect signalling.
-                  </p>
+                {/* Item (4) Section */}
+                <div className="space-y-4">
+                  <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">4</span>
+                      </div>
+                      <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                        The arm of a semaphore signal shall work in -
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pl-0 lg:pl-14 space-y-3">
+                    {/* Item (a) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">a</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          the lower quadrant in two-aspect signalling and
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item (b) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">b</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          the upper quadrant in manually operated multiple-aspect signalling.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (5) The ‘off’ position of a semaphore signal shall be displayed by day by the inclined
-                    position of the arm from 45° to 60° below the horizontal in case of two-aspect
-                    lower quadrant signals, and 45° or 90° above the horizontal in case of multiple-aspect
-                    upper quadrant signals.
-                  </p>
+                {/* Item (5) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">5</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      The &apos;off&apos; position of a semaphore signal shall be displayed by day by the inclined
+                      position of the arm from 45° to 60° below the horizontal in case of two-aspect
+                      lower quadrant signals, and 45° or 90° above the horizontal in case of multiple-aspect
+                      upper quadrant signals.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    S.R.3.05. The approved special instructions required by G.R. 3.05 (1) shall be
-                    incorporated in the SWR.
-                  </p>
+                {/* S.R.3.05 Section */}
+                <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-cyan-500/80 to-blue-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                      </div>
+                      <h3 className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-cyan-200 to-blue-200 bg-clip-text text-transparent">
+                        3.05.
+                      </h3>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        The approved special instructions required by G.R. 3.05 (1) shall be
+                        incorporated in the SWR.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

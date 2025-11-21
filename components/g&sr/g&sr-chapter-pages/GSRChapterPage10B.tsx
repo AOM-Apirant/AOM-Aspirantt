@@ -12,8 +12,8 @@ const GSRChapterPage10B = () => {
         <div className="absolute inset-0 bg-grid-white/10 opacity-15 mix-blend-overlay"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4 lg:px-10">
-        <div className="max-w-4xl mx-auto space-y-10">
+      <div className="relative z-10 py-8 px-2 lg:px-10">
+        <div className="max-w-7xl mx-auto space-y-10">
           <header className="text-center space-y-4">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -30,47 +30,66 @@ const GSRChapterPage10B = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-              Absence from duty.––
+            <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+              Absence from duty
             </h1>
           </header>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
-            <div className="relative p-6 lg:p-10">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative p-2 lg:p-10">
               <div className="absolute -top-16 -left-16 w-40 h-40 bg-gradient-to-br from-blue-400/25 to-purple-500/25 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-20 -right-20 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative z-10 space-y-6">
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    2.08. Absence from duty.––
-                  </p>
+                {/* Item (1) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">1</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      No railway servant shall, without the permission of his superior, absent
+                      himself from duty or alter his appointed hours of attendance or exchange duty
+                      with any other railway servant or leave his charge of duty unless properly
+                      relieved.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (1) No railway servant shall, without the permission of his superior, absent
-                    himself from duty or alter his appointed hours of attendance or exchange duty
-                    with any other railway servant or leave his charge of duty unless properly
-                    relieved.
-                  </p>
+                {/* Item (2) */}
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                      <span className="text-sm lg:text-base font-bold text-white">2</span>
+                    </div>
+                    <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                      If any railway servant while on duty desires to absent himself from duty on
+                      the ground of illness, he shall immediately report the matter to his superior and
+                      shall not leave his duty until a competent railway servant has been placed in
+                      charge thereof.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (2) If any railway servant while on duty desires to absent himself from duty on
-                    the ground of illness, he shall immediately report the matter to his superior and
-                    shall not leave his duty until a competent railway servant has been placed in
-                    charge thereof.
-                  </p>
-                </div>
-
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    S.R.2.08.A railway servant, who is unable to attend the duty by reason of
-                    sickness, shall produce without delay a sick certificate from a competent medical
-                    authority.
-                  </p>
+                {/* S.R.2.08. Section */}
+                <div className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-cyan-500/80 to-blue-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                      </div>
+                      <h3 className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-cyan-200 to-blue-200 bg-clip-text text-transparent">
+                        2.08.
+                      </h3>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        A railway servant, who is unable to attend the duty by reason of
+                        sickness, shall produce without delay a sick certificate from a competent medical
+                        authority.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { FileText, AlertTriangle, Heart, ChevronDown, ChevronUp, BookOpen, ExternalLink, BookOpenCheck, CheckCircle } from 'lucide-react'
 import { AlertCircle, Gavel } from 'lucide-react'
 import { FileSpreadsheet } from 'lucide-react'
@@ -21,21 +21,31 @@ const GSRAppendix = () => {
     }
 
     checkDevice()
-    window.addEventListener('resize', checkDevice)
+    
+    let timeoutId: NodeJS.Timeout
+    const handleResize = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(checkDevice, 150)
+    }
+    
+    window.addEventListener('resize', handleResize, { passive: true })
 
-    return () => window.removeEventListener('resize', checkDevice)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearTimeout(timeoutId)
+    }
   }, [])
 
-  const toggleAppendix = (appendixId: number) => {
+  const toggleAppendix = useCallback((appendixId: number) => {
     setExpandedAppendices(prev => {
       if (prev.includes(appendixId)) {
         return prev.filter(id => id !== appendixId)
       }
       return [appendixId]
     })
-  }
+  }, [])
 
-  const openPDF = (pageNumber: string) => {
+  const openPDF = useCallback((pageNumber: string) => {
     // Handle special cases for page numbers that have different file names
     let pdfFileName = ''
     
@@ -65,9 +75,9 @@ const GSRAppendix = () => {
         setOpeningPDF(null)
       }
     }, 100)
-  }
+  }, [isMobile])
 
-  const openContent = (pageNumber: string) => {
+  const openContent = useCallback((pageNumber: string) => {
     setOpeningContent(pageNumber)
 
     setTimeout(() => {
@@ -80,7 +90,7 @@ const GSRAppendix = () => {
         setOpeningContent(null)
       }
     }, 100)
-  }
+  }, [router])
 
   const appendices = [
     {
@@ -422,9 +432,8 @@ const GSRAppendix = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -435,7 +444,7 @@ const GSRAppendix = () => {
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6 animate-fade-in">
+            <h1 className="lg:text-6xl text-2xl font-bold bg-gradient-to-r from-white via-emerald-100 to-teal-100 bg-clip-text text-transparent mb-6">
               {heroTitle}
             </h1>
             <h2 className="lg:text-4xl text-xl font-bold text-teal-300 mb-4">Comprehensive Reference Guide for Railway Operations</h2>
@@ -578,21 +587,6 @@ const GSRAppendix = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s ease-out;
-        }
-      `}</style>
     </div>
   )
 }

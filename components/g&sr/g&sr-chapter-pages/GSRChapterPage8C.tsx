@@ -12,8 +12,8 @@ const GSRChapterPage8C = () => {
         <div className="absolute inset-0 bg-grid-white/10 opacity-15 mix-blend-overlay"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4 lg:px-10">
-        <div className="max-w-5xl mx-auto space-y-10">
+      <div className="relative z-10 py-8 px-2 lg:px-10">
+        <div className="max-w-7xl mx-auto space-y-10">
           <header className="text-center space-y-6">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -31,8 +31,8 @@ const GSRChapterPage8C = () => {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
-                2.03. Knowledge of rules.––
+              <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-fade-in">
+                2.03. Knowledge of rules
               </h1>
               <p className="text-base lg:text-lg text-indigo-100/90 font-medium animate-fade-in delay-200">
                 Every railway servant shall--
@@ -40,62 +40,181 @@ const GSRChapterPage8C = () => {
             </div>
           </header>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
-            <div className="relative p-4 lg:p-10 space-y-8">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
+            <div className="relative p-2 lg:p-10 space-y-8">
               <div className="absolute -top-16 -left-16 w-48 h-48 bg-gradient-to-br from-blue-400/25 to-purple-500/25 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-20 -right-20 w-56 h-56 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
               <div className="relative z-10 space-y-8">
-                <section className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="grid gap-5 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    <p>(a) be conversant with the rules relating to his duties whether supplied or</p>
-                    <p>not with a copy or translation of the rules relating to his duties and the</p>
-                    <p>Railway Administration shall ensure that he does so,</p>
-                    <p>(b) pass the prescribed examinations, if any,</p>
-                    <p>(c) satisfy himself that the staff working under him have complied with</p>
-                    <p>clauses (a) and (b) and</p>
-                    <p>(d) if necessary, explain to the staff working under him, the rules so far as</p>
-                    <p>these apply to them.</p>
+                <section className="group relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="space-y-4">
+                    {/* Item (a) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">a</span>
+                        </div>
+                        <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          <p>be conversant with the rules relating to his duties whether supplied or</p>
+                          <p>not with a copy or translation of the rules relating to his duties and the</p>
+                          <p>Railway Administration shall ensure that he does so,</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Item (b) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">b</span>
+                        </div>
+                        <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          pass the prescribed examinations, if any,
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Item (c) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">c</span>
+                        </div>
+                        <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          <p>satisfy himself that the staff working under him have complied with</p>
+                          <p>clauses (a) and (b) and</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Item (d) */}
+                    <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-blue-400/30 hover:shadow-lg hover:shadow-blue-500/10">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-500/80 to-indigo-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                          <span className="text-sm lg:text-base font-bold text-white">d</span>
+                        </div>
+                        <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                          <p>if necessary, explain to the staff working under him, the rules so far as</p>
+                          <p>these apply to them.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </section>
 
-                <section className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <div className="grid gap-5 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    <p>
-                      S.R.2.03.1 Whenever staff of another railway work trains on this railway, the relevant copies
-                      of rule books of this railway shall be supplied to the concerned Railway/Railways for
-                      distribution to the staff working on this Railway. Such staff while working trains on this
-                      Railway shall be examined by Safety Counselors/Inspectors in the knowledge of rules,
-                      counseled and educated in the working practices of this railway.
-                    </p>
-                    <p>
-                      S.R.2.03.2. Whenever Loco Pilots/Assistant Loco Pilots/Station Masters/Guards/Pointsmen
-                      join this Zonal Railway, on transfer from other Zonal Railways, they shall attend refresher
-                      course and on successful completion of the same only, they shall be allowed to take charge
-                      of independent duties.
-                    </p>
-                    <p>
-                      S.R. 2.03.3.Assurance Register for Amendments to Rule Books:
-                    </p>
-                    <p>
-                      1. Assurance Register for Amendments to Rule Books shall be maintained to obtain
-                      staffs’ acknowledgement for having read and understood the amendments to (i)
-                      G&SR; (ii) Block Working Manual; (iii) Accident Manual and (iv) Working Time
-                      Table.
-                    </p>
-                    <p>
-                      2. Separate portions shall be maintained for each Rule Book in the Register.
-                    </p>
-                    <p>
-                      3. Whenever any Amendment is issued to any Rule Book mentioned above,
-                      acknowledgement of all staff working at the station shall be obtained.
-                    </p>
-                    <p>
-                      4. In case of semi-literate and ‘C’ & ‘D’ graded staff, Station Master-in-charge shall
-                      personally explain in vernacular language and obtain their acknowledgement in
-                      token of their having understood the rules. The Station Master-in-charge shall also
-                      certify that they have fully understood the contents in the Amendments.
-                    </p>
+                {/* S.R.2.03.1 Section */}
+                <section className="group relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-cyan-500/80 to-blue-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                      </div>
+                      <h3 className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-cyan-200 to-blue-200 bg-clip-text text-transparent">
+                        2.03.1
+                      </h3>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        Whenever staff of another railway work trains on this railway, the relevant copies
+                        of rule books of this railway shall be supplied to the concerned Railway/Railways for
+                        distribution to the staff working on this Railway. Such staff while working trains on this
+                        Railway shall be examined by Safety Counselors/Inspectors in the knowledge of rules,
+                        counseled and educated in the working practices of this railway.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                {/* S.R.2.03.2 Section */}
+                <section className="group relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-emerald-500/80 to-teal-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                      </div>
+                      <h3 className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-emerald-200 to-teal-200 bg-clip-text text-transparent">
+                        2.03.2
+                      </h3>
+                    </div>
+                    <div className="pl-0 lg:pl-14">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        Whenever Loco Pilots/Assistant Loco Pilots/Station Masters/Guards/Pointsmen
+                        join this Zonal Railway, on transfer from other Zonal Railways, they shall attend refresher
+                        course and on successful completion of the same only, they shall be allowed to take charge
+                        of independent duties.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                {/* S.R. 2.03.3 Section */}
+                <section className="group relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-6 lg:p-10 transition-all duration-500 hover:border-white/20 hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
+                  <div className="space-y-5">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                        <span className="text-sm lg:text-base font-bold text-white">S.R.</span>
+                      </div>
+                      <h3 className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+                        2.03.3. Assurance Register for Amendments to Rule Books
+                      </h3>
+                    </div>
+                    
+                    <div className="space-y-4 pl-0 lg:pl-14">
+                      {/* Item 1 */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">1</span>
+                          </div>
+                          <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                            Assurance Register for Amendments to Rule Books shall be maintained to obtain
+                            staffs&apos; acknowledgement for having read and understood the amendments to (i)
+                            G&SR; (ii) Block Working Manual; (iii) Accident Manual and (iv) Working Time
+                            Table.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Item 2 */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">2</span>
+                          </div>
+                          <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                            Separate portions shall be maintained for each Rule Book in the Register.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Item 3 */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">3</span>
+                          </div>
+                          <p className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                            Whenever any Amendment is issued to any Rule Book mentioned above,
+                            acknowledgement of all staff working at the station shall be obtained.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Item 4 */}
+                      <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-purple-400/30 hover:shadow-lg hover:shadow-purple-500/10">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-pink-600/80 border border-white/20 flex items-center justify-center shadow-lg">
+                            <span className="text-sm lg:text-base font-bold text-white">4</span>
+                          </div>
+                          <div className="flex-1 text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide pt-1">
+                            <p>In case of semi-literate and &apos;C&apos; & &apos;D&apos; graded staff, Station Master-in-charge shall</p>
+                            <p>personally explain in vernacular language and obtain their acknowledgement in</p>
+                            <p>token of their having understood the rules. The Station Master-in-charge shall also</p>
+                            <p>certify that they have fully understood the contents in the Amendments.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </section>
               </div>

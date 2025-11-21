@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import { BookOpen, Layers, Users, RadioTower, TrainFront, Building2, AlertTriangle, GitBranch, Blocks, Workflow, ArrowRightLeft, Shield, Ticket, LifeBuoy, CircuitBoard, Hammer, Fence, Zap, Puzzle, ChevronDown, ChevronUp, FileText, BookOpenCheck, ExternalLink } from "lucide-react"
 import { useRouter } from 'next/navigation'
 import { getPageIdFromRule } from '@/lib/g&sr-chapter-mapping'
@@ -630,19 +630,29 @@ const GSRChapters = () => {
     }
     
     checkDevice()
-    window.addEventListener('resize', checkDevice)
     
-    return () => window.removeEventListener('resize', checkDevice)
+    let timeoutId: NodeJS.Timeout
+    const handleResize = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(checkDevice, 150)
+    }
+    
+    window.addEventListener('resize', handleResize, { passive: true })
+    
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearTimeout(timeoutId)
+    }
   }, [])
 
-  const toggleChapter = (chapterId: number) => {
+  const toggleChapter = useCallback((chapterId: number) => {
     setExpandedChapters(prev => {
       if (prev.includes(chapterId)) {
         return prev.filter(id => id !== chapterId)
       }
       return [chapterId]
     })
-  }
+  }, [])
 
   // Extract rule number from rule text
   // Handles both formats: "1.01 Short title" and "Rule 1.01\nShort title"
@@ -683,7 +693,7 @@ const GSRChapters = () => {
     return ruleNumber.replace(/\./g, '')
   }
 
-  const openPDF = (ruleNumber: string, chapterId: number) => {
+  const openPDF = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
     const pdfFileName = `GSRChapterPage${pageId}.pdf`
     const pdfPath = `/g&sr-pdf-pages/g&sr-chapter-pdf-pages/${pdfFileName}`
@@ -697,9 +707,9 @@ const GSRChapters = () => {
         setOpeningPDF(null)
       }
     }, 100)
-  }
+  }, [isMobile, router])
 
-  const openContent = (ruleNumber: string, chapterId: number) => {
+  const openContent = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
     setOpeningContent(`${chapterId}-${ruleNumber}`)
     
@@ -707,14 +717,13 @@ const GSRChapters = () => {
       router.push(`/g&sr/content/${pageId}`)
       setOpeningContent(null)
     }, 100)
-  }
+  }, [router])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 relative overflow-hidden">
-      <div className="absolute inset-0 overflow:hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-sky-400/10 to-indigo-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/20 to-indigo-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -725,11 +734,11 @@ const GSRChapters = () => {
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent animate-fade-in">
+            <h1 className="lg:text-6xl text-3xl font-bold bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent">
               {heroTitle}
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-sky-500 to-indigo-600 mx-auto rounded-full"></div>
-            <p className="lg:text-xl text-base text-gray-200 animate-fade-in" style={{ animationDelay: "0.15s", animationFillMode: "both" }}>
+            <p className="lg:text-xl text-base text-gray-200">
               {heroSubtitle}
             </p>
           </div>
@@ -841,21 +850,6 @@ const GSRChapters = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in {
-          animation: fade-in 1s ease-out;
-        }
-      `}</style>
     </div>
   )
 }
