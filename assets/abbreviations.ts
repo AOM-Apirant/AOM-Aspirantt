@@ -18,7 +18,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { 
       acronym: "ACD", 
       fullForm: "Anti Collision Device",
-      explanation: "Will be added later",
+      explanation: "A GPS-based collision avoidance system implemented earlier before KAVACH.",
       reference: "--"
     },
     { 
@@ -35,6 +35,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "ACPCNF", fullForm: "Alarm Chain Pulled But Culprit Not Found" },
     { acronym: "ADCR", fullForm: "Analog to Digital Converter Relay" },
+    {
+      acronym: "ACRS",
+      fullForm: "Additional Commissioner of Railway Safety",
+      explanation: "A senior authority assisting the Commissioner of Railway Safety in ensuring railway safety supervision.",
+      reference: "--"
+    },
     { 
       acronym: "ADGM", 
       fullForm: "Additional Deputy General Manager",
@@ -43,6 +49,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "ADMO", fullForm: "Assistant Divisional Medical Officer" },
     { acronym: "ADRM", fullForm: "Additional Divisional Railway Manager" },
+    {
+      acronym: "ADRM",
+      fullForm: "Additional Divisional Railway Manager",
+      explanation: "The second highest administrative officer at divisional level who assists the DRM in managing operations.",
+      reference: "--"
+    },
     { 
       acronym: "AEN", 
       fullForm: "Assistant Engineer",
@@ -70,19 +82,25 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     { 
       acronym: "AGM", 
       fullForm: "Additional General Manager",
-      explanation: "Will be added later",
+      explanation: "An officer assisting the General Manager at zonal level in administrative and operational matters.",
       reference: "--"
     },
     { acronym: "AIMS", fullForm: "Accounting Information Management System",
-      explanation: "Will be added later",
+      explanation: "Platform for maintaining and accessing financial/accounting data.",
       reference: "--"
     },
     { acronym: "AIRF", fullForm: "All India Railwaymen’s Federation",
-      explanation: "Will be added later",
+      explanation: "A major trade union representing Indian Railway employees",
       reference: "--"
     },
     { acronym: "AITUC", fullForm: "All India Trade Union Congress",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "AM",
+      fullForm: "Accident Manual",
+      explanation: "A manual containing detailed procedures to be followed in case of railway accidents.",
       reference: "--"
     },
     { acronym: "AMA", fullForm: "Authorised Medical Attendant",
@@ -108,11 +126,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "ARME", fullForm: "Accident Relief Medical Equipment",
-      explanation: "Will be added later",
+      explanation: "Medical equipment provided for accident relief operations to treat injured passengers",
       reference: "--"
     },
     { acronym: "ARMV", fullForm: "Accident Relief Medical Van",
-      explanation: "Will be added later",
+      explanation: "A dedicated railway van equipped with medical staff and supplies used during accidents",
       reference: "--"
     },
     { acronym: "ARPAN", fullForm: "Advanced Railway Pension Access Network",
@@ -120,15 +138,21 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "ARS", fullForm: "All Right Signal",
-      explanation: "Will be added later",
+      explanation: "A hand/flag or lamp signal given by station staff indicating that everything is safe and clear",
       reference: "--"
     },
     { acronym: "ART", fullForm: "Accident Relief Train",
-      explanation: "Will be added later",
+      explanation: "A special train equipped for rescue and restoration work during railway accidents",
       reference: "--"
     },
     { acronym: "ASAR", fullForm: "As Soon As Ready",
       explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "ASD",
+      fullForm: "Auto Sectioning Device",
+      explanation: "Automatic switching device that maintains power continuity in OHE without human intervention.",
       reference: "--"
     },
     { acronym: "ASS", fullForm: "Automatic Stop Signal",
@@ -144,7 +168,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "ATVM", fullForm: "Automatic Ticket Vending Machine",
-      explanation: "Will be added later",
+      explanation: "Self-service kiosk for issuing unreserved tickets using smart cards or cash",
       reference: "--"
     },
     { acronym: "AWS", fullForm: "Auxillary Warning System",
@@ -311,7 +335,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "BPC", fullForm: "Brake Power Certificate",
-      explanation: "Will be added later",
+      explanation: "A certificate confirming the brake power adequacy of the train before departure",
       reference: "--"
     },
     { acronym: "BPT", fullForm: "Blank Paper Ticket",
@@ -340,7 +364,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--" 
     },
     { acronym: "BSLB", fullForm: "Block Section Limit Board",
-      explanation: "Will be added later",
+      explanation: "A board indicating the limit of the block section for operational reference",
       reference: "--"
     },
     { acronym: "BTPN", fullForm: "Bogie Tank Wagon for Petrol (Air Brake)",
@@ -387,7 +411,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "BWM", fullForm: "Block Working Manual",
-      explanation: "Will be added later",
+      explanation: "A manual governing the procedures of block working in Indian Railways",
       reference: "--"
     },
   ],

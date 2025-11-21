@@ -22,10 +22,11 @@ const GSRAppendix = () => {
 
     checkDevice()
     
+    // Optimized resize handler with longer debounce for mobile performance
     let timeoutId: NodeJS.Timeout
     const handleResize = () => {
       clearTimeout(timeoutId)
-      timeoutId = setTimeout(checkDevice, 150)
+      timeoutId = setTimeout(checkDevice, 300) // Increased debounce time
     }
     
     window.addEventListener('resize', handleResize, { passive: true })
@@ -429,11 +430,14 @@ const GSRAppendix = () => {
     },
   ]
 
+  // Reduce blur effects on mobile for better performance
+  const blurClass = isMobile ? 'blur-2xl' : 'blur-3xl'
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden will-change-transform">
+        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full ${blurClass}`}></div>
+        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 rounded-full ${blurClass}`}></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -456,10 +460,13 @@ const GSRAppendix = () => {
 
           <div className="max-w-7xl mx-auto px-2 lg:px-4 py-6">
             <div className="grid gap-6 md:gap-8">
-              {appendices.map((appendix) => (
+              {appendices.map((appendix) => {
+                // Reduce backdrop-blur on mobile
+                const cardBlurClass = isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'
+                return (
                 <div
                   key={appendix.id}
-                  className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15"
+                  className={`bg-white/10 ${cardBlurClass} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15`}
                 >
                   <div
                     className={`bg-gradient-to-r ${appendix.color} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-300`}
@@ -494,10 +501,12 @@ const GSRAppendix = () => {
                   {expandedAppendices.includes(appendix.id) && (
                     <div className="py-4 lg:px-4 px-2">
                       <div className="grid gap-3">
-                        {appendix.content && appendix.content.map((item, index) => (
+                        {appendix.content && appendix.content.map((item, index) => {
+                          const itemBlurClass = isMobile ? '' : 'backdrop-blur-sm'
+                          return (
                           <div
                             key={index}
-                            className="flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 backdrop-blur-sm rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10"
+                            className={`flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 ${itemBlurClass} rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10`}
                           >
                             <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                               {index + 1}
@@ -548,7 +557,7 @@ const GSRAppendix = () => {
                               </div>
                             </div>
                           </div>
-                        ))}
+                        )})}
                       </div>
 
                       {/* Special Note for Deleted Appendix */}
@@ -565,12 +574,12 @@ const GSRAppendix = () => {
                     </div>
                   )}
                 </div>
-              ))}
+              )})}
             </div>
 
             {/* Footer */}
             <div className="mt-12 text-center">
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
+              <div className={`bg-white/10 ${isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'} rounded-2xl shadow-2xl p-8 border border-white/20`}>
                 <div className="flex items-center justify-center space-x-3 mb-4">
                   <CheckCircle className="w-8 h-8 text-green-400" />
                   <h3 className="text-2xl font-bold text-white">

@@ -631,10 +631,11 @@ const GSRChapters = () => {
     
     checkDevice()
     
+    // Optimized resize handler with longer debounce for mobile performance
     let timeoutId: NodeJS.Timeout
     const handleResize = () => {
       clearTimeout(timeoutId)
-      timeoutId = setTimeout(checkDevice, 150)
+      timeoutId = setTimeout(checkDevice, 300) // Increased debounce time
     }
     
     window.addEventListener('resize', handleResize, { passive: true })
@@ -719,11 +720,14 @@ const GSRChapters = () => {
     }, 100)
   }, [router])
 
+  // Reduce blur effects on mobile for better performance
+  const blurClass = isMobile ? 'blur-2xl' : 'blur-3xl'
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/20 to-indigo-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden will-change-transform">
+        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/20 to-indigo-500/20 rounded-full ${blurClass}`}></div>
+        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full ${blurClass}`}></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -744,10 +748,13 @@ const GSRChapters = () => {
           </div>
 
           <div className="grid gap-6">
-            {chapters.map(chapter => (
+            {chapters.map(chapter => {
+              // Reduce backdrop-blur on mobile
+              const cardBlurClass = isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'
+              return (
               <div
                 key={chapter.id}
-                className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20"
+                className={`bg-white/10 ${cardBlurClass} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20`}
               >
                 <div
                   className={`bg-gradient-to-r ${chapter.gradient} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-300`}
@@ -785,10 +792,11 @@ const GSRChapters = () => {
                         // Check if rule starts with "Rule" or contains a rule number pattern
                         const hasRuleNumber = ruleNumber.length > 0 && /^\d+\.\d+/.test(ruleNumber)
                         
+                        const ruleBlurClass = isMobile ? '' : 'backdrop-blur-sm'
                         return (
                           <div
                             key={ruleKey}
-                            className="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 px-4 py-3 hover:bg-white/10 transition-all duration-300"
+                            className={`bg-white/5 ${ruleBlurClass} rounded-lg border border-white/10 px-4 py-3 hover:bg-white/10 transition-all duration-300`}
                           >
                             <p className="text-gray-200 whitespace-pre-line text-base lg:text-lg leading-relaxed mb-3">{rule}</p>
                             
@@ -845,7 +853,7 @@ const GSRChapters = () => {
                   </div>
                 )}
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

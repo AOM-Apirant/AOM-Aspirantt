@@ -13,7 +13,7 @@ const GSRChapterPage26A = () => {
       </div>
 
       <div className="relative z-10 py-6 px-2 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-6">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -30,39 +30,96 @@ const GSRChapterPage26A = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
-              3.09. Kinds of fixed Stop signals for approaching trains. ––
+            <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
+              3.09. Kinds of fixed Stop signals for approaching trains
             </h1>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+          <div className="bg-white/5  rounded-xl border border-white/10 overflow-hidden">
             <div className="relative">
-              <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
+              
+              
 
-              <div className="relative p-5 lg:p-10 space-y-6">
+              <div className="relative p-2 lg:p-10 space-y-8">
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (1) The Stop signals which control the movement of trains approaching a station are of three kinds, namely- Outer, Home and Routing signals.
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                      <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                      
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">1</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        The Stop signals which control the movement of trains approaching a station are of three kinds, namely- Outer, Home and Routing signals.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (2) The Outer signal, where provided, is the first Stop signal of a station and is located at an adequate distance outside the point up to which the line may be obstructed after Line Clear has been granted to or obtained by the station in rear.
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">2</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        The Outer signal, where provided, is the first Stop signal of a station and is located at an adequate distance outside the point up to which the line may be obstructed after Line Clear has been granted to or obtained by the station in rear.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (3) The Home signal is the first Stop signal of a station at which an Outer signal is not provided and the second Stop signal of a station at which an Outer signal is provided. It shall be located outside all connections on the line to which it refers.
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        The Home signal is the first Stop signal of a station at which an Outer signal is not provided and the second Stop signal of a station at which an Outer signal is provided. It shall be located outside all connections on the line to which it refers.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (4) The Routing signal is a signal used to indicate to a Loco Pilot which of two or more diverging routes is set for him, when the Home signal is, in consequence of its position, inconvenient for this purpose.
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">4</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        The Routing signal is a signal used to indicate to a Loco Pilot which of two or more diverging routes is set for him, when the Home signal is, in consequence of its position, inconvenient for this purpose.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

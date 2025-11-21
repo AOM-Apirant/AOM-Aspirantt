@@ -1,8 +1,26 @@
 "use client"
 
-import React from 'react'
-import GSRChapters from '@/components/g&sr/G&SRChapters'
-import GSRAppendix from '@/components/g&sr/G&SRAppendix'
+import React, { Suspense, useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+
+// Lazy load heavy components to improve initial load performance
+const GSRChapters = dynamic(() => import('@/components/g&sr/G&SRChapters'), {
+  loading: () => (
+    <div className="min-h-[400px] flex items-center justify-center">
+      <div className="w-12 h-12 border-4 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false
+})
+
+const GSRAppendix = dynamic(() => import('@/components/g&sr/G&SRAppendix'), {
+  loading: () => (
+    <div className="min-h-[400px] flex items-center justify-center">
+      <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+    </div>
+  ),
+  ssr: false
+})
 
 interface SectionCardProps {
   title: string
@@ -13,7 +31,7 @@ interface SectionCardProps {
   content: string[]
 }
 
-const SectionCard = ({
+const SectionCard = React.memo(({
   title,
   accentGradient,
   panelGradient,
@@ -21,8 +39,33 @@ const SectionCard = ({
   icon,
   content,
 }: SectionCardProps) => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    checkMobile()
+    
+    // Optimized resize handler
+    let timeoutId: NodeJS.Timeout
+    const handleResize = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(checkMobile, 200)
+    }
+    
+    window.addEventListener('resize', handleResize, { passive: true })
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearTimeout(timeoutId)
+    }
+  }, [])
+
+  // Reduce backdrop-blur on mobile for better performance
+  const blurClass = isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'
+
   return (
-    <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl py-6 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300">
+    <div className={`bg-white/10 ${blurClass} rounded-2xl shadow-2xl py-6 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300`}>
       <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col lg:flex-row gap-4 items-center justify-center text-center lg:text-left">
         <span className={`bg-gradient-to-r ${accentGradient} lg:p-4 p-2 rounded-full shadow-lg`}>
           {icon}
@@ -30,7 +73,7 @@ const SectionCard = ({
         <span className="whitespace-pre-line">{title}</span>
       </h2>
       <div
-        className={`bg-gradient-to-br ${panelGradient} backdrop-blur-lg rounded-xl p-6 shadow-lg border ${borderColor} hover:shadow-xl transition-all duration-300`}
+        className={`bg-gradient-to-br ${panelGradient} ${blurClass} rounded-xl p-6 shadow-lg border ${borderColor} hover:shadow-xl transition-all duration-300`}
       >
         {content.map((paragraph, index) => (
           <p
@@ -43,7 +86,9 @@ const SectionCard = ({
       </div>
     </div>
   )
-}
+})
+
+SectionCard.displayName = 'SectionCard'
 
 const GeneralSubsidiaryRules = () => {
   const coverText = `SOUTH CENTRAL RAILWAY
@@ -164,11 +209,85 @@ Dt. 05.11.2020. CHIEF TRAFFIC MANAGER
 SOUTH CENTRAL RAILWAY`,
   ]
 
+  const [isMobile, setIsMobile] = useState(false)
+  const [shouldLoadChapters, setShouldLoadChapters] = useState(false)
+  const [shouldLoadAppendix, setShouldLoadAppendix] = useState(false)
+  const chaptersRef = React.useRef<HTMLDivElement>(null)
+  const appendixRef = React.useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    // Check if mobile on mount
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    checkMobile()
+    
+    // Optimized resize handler with debouncing
+    let timeoutId: NodeJS.Timeout
+    const handleResize = () => {
+      clearTimeout(timeoutId)
+      timeoutId = setTimeout(checkMobile, 200)
+    }
+    
+    window.addEventListener('resize', handleResize, { passive: true })
+    
+    // Use Intersection Observer to load components when they're about to come into view
+    if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+      const observerOptions = {
+        root: null,
+        rootMargin: '200px', // Start loading 200px before component comes into view
+        threshold: 0.01
+      }
+
+      const chaptersObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          setShouldLoadChapters(true)
+          chaptersObserver.disconnect()
+        }
+      }, observerOptions)
+
+      const appendixObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          setShouldLoadAppendix(true)
+          appendixObserver.disconnect()
+        }
+      }, observerOptions)
+
+      // Start observing after a short delay to ensure refs are set
+      setTimeout(() => {
+        if (chaptersRef.current) {
+          chaptersObserver.observe(chaptersRef.current)
+        }
+        if (appendixRef.current) {
+          appendixObserver.observe(appendixRef.current)
+        }
+      }, 100)
+
+      return () => {
+        window.removeEventListener('resize', handleResize)
+        clearTimeout(timeoutId)
+        chaptersObserver.disconnect()
+        appendixObserver.disconnect()
+      }
+    } else {
+      // Fallback for browsers without IntersectionObserver - load immediately
+      setShouldLoadChapters(true)
+      setShouldLoadAppendix(true)
+      return () => {
+        window.removeEventListener('resize', handleResize)
+        clearTimeout(timeoutId)
+      }
+    }
+  }, [])
+
+  // Reduce blur effects on mobile for better performance
+  const blurClass = isMobile ? 'blur-2xl' : 'blur-3xl'
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden will-change-transform">
+        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-full ${blurClass}`}></div>
+        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-400/20 to-purple-400/20 rounded-full ${blurClass}`}></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -227,8 +346,39 @@ SOUTH CENTRAL RAILWAY`,
               content={forewordContent}
             />
           </div>
-          <GSRChapters />
-          <GSRAppendix />
+          
+          {/* Lazy load heavy components using Intersection Observer */}
+          <div ref={chaptersRef} className="min-h-[100px]">
+            {shouldLoadChapters ? (
+              <Suspense fallback={
+                <div className="min-h-[400px] flex items-center justify-center my-10">
+                  <div className="w-12 h-12 border-4 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
+                </div>
+              }>
+                <GSRChapters />
+              </Suspense>
+            ) : (
+              <div className="min-h-[400px] flex items-center justify-center my-10">
+                <div className="text-gray-400 text-sm">Loading chapters...</div>
+              </div>
+            )}
+          </div>
+          
+          <div ref={appendixRef} className="min-h-[100px]">
+            {shouldLoadAppendix ? (
+              <Suspense fallback={
+                <div className="min-h-[400px] flex items-center justify-center my-10">
+                  <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+                </div>
+              }>
+                <GSRAppendix />
+              </Suspense>
+            ) : (
+              <div className="min-h-[400px] flex items-center justify-center my-10">
+                <div className="text-gray-400 text-sm">Loading appendices...</div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

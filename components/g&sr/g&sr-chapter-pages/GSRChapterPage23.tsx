@@ -14,7 +14,7 @@ const GSRChapterPage23 = () => {
       </div>
 
       <div className="relative z-10 py-6 px-2 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-6">
             <div className="inline-flex items-center justify-center">
               <div className="relative">
@@ -31,29 +31,57 @@ const GSRChapterPage23 = () => {
               </div>
             </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
-              3.08. Description of Stop signals and their indications.––
+            <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
+              3.08 Description of Stop signals and their indications
             </h1>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 shadow-2xl overflow-hidden">
             <div className="relative">
               <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-blue-400/30 to-purple-500/30 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-full blur-3xl"></div>
 
-              <div className="relative p-5 lg:p-10 space-y-6">
+              <div className="relative p-2 lg:p-10 space-y-8">
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (1) A semaphore Stop signal has a square ended arm.
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">1</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
+                        A semaphore Stop signal has a square ended arm.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (2) The aspects and the indications of a semaphore Stop signal working in the lower quadrant are shown below:-
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">2</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide mb-0">
+                        The aspects and the indications of a semaphore Stop signal working in the lower quadrant are shown below:-
+                      </p>
+                    </div>
+                  </div>
                   <div className="mt-8 flex flex-col items-center">
-                    <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-rose-300/30 hover:shadow-rose-500/20">
+                    <div className="relative w-full max-w-3xl overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-rose-300/30 hover:shadow-rose-500/20">
                       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,63,94,0.18),_transparent_60%)] opacity-80" />
                       <div className="relative">
                         <Image
@@ -78,11 +106,25 @@ const GSRChapterPage23 = () => {
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (3) The aspects and indications of a semaphore Stop signal working in the upper quadrant are shown below:-
-                  </p>
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide mb-0">
+                        The aspects and indications of a semaphore Stop signal working in the upper quadrant are shown below:-
+                      </p>
+                    </div>
+                  </div>
                   <div className="mt-8 flex flex-col items-center">
-                    <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-rose-300/30 hover:shadow-rose-500/20">
+                    <div className="relative w-full max-w-3xl overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-rose-300/30 hover:shadow-rose-500/20">
                       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,63,94,0.18),_transparent_60%)] opacity-80" />
                       <div className="relative">
                         <Image
@@ -107,10 +149,24 @@ const GSRChapterPage23 = () => {
                 </div>
 
                 <div className="group rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/70 to-blue-950/70 p-5 lg:p-10 transition-all duration-500 hover:border-white/20 hover:bg-gradient-to-br hover:from-slate-900/80 hover:via-indigo-950/80 hover:to-blue-950/80">
-                  <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide">
-                    (4) The aspects and indications of a colour light Stop signal are shown below:-
-                  </p>
-                  <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                  <div className="flex items-start gap-4 lg:gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500/80 via-indigo-500/80 to-purple-500/80 rounded-full blur-md"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-8 h-8 lg:w-14 lg:h-14 rounded-full border-2 border-white/20 bg-gradient-to-br from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                            <span className="text-lg lg:text-2xl font-bold text-white">4</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex-1 pt-1">
+                      <p className="text-base lg:text-lg leading-relaxed text-blue-100/90 tracking-wide mb-0">
+                        The aspects and indications of a colour light Stop signal are shown below:-
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-8 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
                     {[
                       {
                         src: "/gsr-images/GSRPAGE24B.png",
@@ -133,7 +189,7 @@ const GSRChapterPage23 = () => {
                     ].map((image) => (
                       <div
                         key={image.src}
-                        className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-emerald-300/30 hover:shadow-emerald-500/20"
+                        className="relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/60 via-slate-950/70 to-blue-900/60 p-4 shadow-xl transition-all duration-300 hover:border-emerald-300/30 hover:shadow-emerald-500/20"
                       >
                         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.18),_transparent_60%)] opacity-80" />
                         <div className="relative flex h-full flex-col">

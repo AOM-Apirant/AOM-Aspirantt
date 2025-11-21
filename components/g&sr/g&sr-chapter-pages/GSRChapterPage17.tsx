@@ -31,8 +31,8 @@ const GSRChapterPage17 = () => {
               </div>
             </div>
 
-            <h1 className="text-2xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
-              Description of Distant signals and their indications—
+            <h1 className="text-xl lg:text-5xl font-bold tracking-wide bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent animate-[fade-in_1s_ease-out_forwards]">
+              Description of Distant signals and their indications
             </h1>
           </div>
 
@@ -43,7 +43,7 @@ const GSRChapterPage17 = () => {
 
               <div className="relative p-2 lg:p-10 space-y-6">
                 {/* Item (1) */}
-                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-4 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
+                <div className="group/item relative overflow-hidden rounded-lg border border-white/10 bg-gradient-to-br from-slate-800/50 via-slate-900/50 to-blue-900/50 p-2 lg:p-6 transition-all duration-300 hover:border-orange-400/30 hover:shadow-lg hover:shadow-orange-500/10">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-orange-500/80 to-red-600/80 border border-white/20 flex items-center justify-center shadow-lg">
                       <span className="text-sm lg:text-base font-bold text-white">1</span>
