@@ -39,12 +39,11 @@ const SectionCard = React.memo(({
   icon,
   content,
 }: SectionCardProps) => {
-  // Use CSS classes instead of conditional blur for better performance
-  // Mobile devices will use less blur automatically via CSS
-  const blurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
+  // Disable backdrop-blur on mobile for better performance
+  const blurClass = 'backdrop-blur-none md:backdrop-blur-sm lg:backdrop-blur-lg'
 
   return (
-    <div className={`bg-white/10 ${blurClass} rounded-2xl shadow-2xl py-6 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300`}>
+    <div className={`bg-white/10 ${blurClass} rounded-2xl shadow-2xl py-6 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-200`}>
       <h2 className="lg:text-3xl text-xl font-bold text-white mb-8 flex flex-col lg:flex-row gap-4 items-center justify-center text-center lg:text-left">
         <span className={`bg-gradient-to-r ${accentGradient} lg:p-4 p-2 rounded-full shadow-lg`}>
           {icon}
@@ -199,37 +198,44 @@ Dt. 05.11.2020. CHIEF TRAFFIC MANAGER
     // Use Intersection Observer to load components when they're about to come into view
     // Only initialize once to prevent multiple observers
     if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+      // Check if already loaded to prevent re-initialization
+      if (shouldLoadChapters && shouldLoadAppendix) {
+        return
+      }
+
       const observerOptions = {
         root: null,
-        rootMargin: '300px', // Increased margin for better mobile experience
+        rootMargin: '200px', // Reduced margin for mobile performance
         threshold: 0.01
       }
 
       // Create observers only once
-      if (!chaptersObserverRef.current) {
+      if (!chaptersObserverRef.current && !shouldLoadChapters) {
         chaptersObserverRef.current = new IntersectionObserver((entries) => {
-          if (entries[0]?.isIntersecting) {
+          if (entries[0]?.isIntersecting && !shouldLoadChapters) {
             setShouldLoadChapters(true)
             chaptersObserverRef.current?.disconnect()
+            chaptersObserverRef.current = null
           }
         }, observerOptions)
       }
 
-      if (!appendixObserverRef.current) {
+      if (!appendixObserverRef.current && !shouldLoadAppendix) {
         appendixObserverRef.current = new IntersectionObserver((entries) => {
-          if (entries[0]?.isIntersecting) {
+          if (entries[0]?.isIntersecting && !shouldLoadAppendix) {
             setShouldLoadAppendix(true)
             appendixObserverRef.current?.disconnect()
+            appendixObserverRef.current = null
           }
         }, observerOptions)
       }
 
       // Use requestAnimationFrame for better performance
       const rafId = requestAnimationFrame(() => {
-        if (chaptersRef.current && chaptersObserverRef.current) {
+        if (chaptersRef.current && chaptersObserverRef.current && !shouldLoadChapters) {
           chaptersObserverRef.current.observe(chaptersRef.current)
         }
-        if (appendixRef.current && appendixObserverRef.current) {
+        if (appendixRef.current && appendixObserverRef.current && !shouldLoadAppendix) {
           appendixObserverRef.current.observe(appendixRef.current)
         }
       })
@@ -238,26 +244,29 @@ Dt. 05.11.2020. CHIEF TRAFFIC MANAGER
         cancelAnimationFrame(rafId)
         chaptersObserverRef.current?.disconnect()
         appendixObserverRef.current?.disconnect()
+        chaptersObserverRef.current = null
+        appendixObserverRef.current = null
       }
     } else {
       // Fallback for browsers without IntersectionObserver - load with delay for mobile
       const timer = setTimeout(() => {
-        setShouldLoadChapters(true)
-        setShouldLoadAppendix(true)
-      }, 500) // Small delay to prevent blocking initial render
+        if (!shouldLoadChapters) setShouldLoadChapters(true)
+        if (!shouldLoadAppendix) setShouldLoadAppendix(true)
+      }, 1000) // Increased delay for mobile to prevent blocking
       
       return () => clearTimeout(timer)
     }
-  }, [])
+  }, [shouldLoadChapters, shouldLoadAppendix])
 
-  // Use CSS classes instead of conditional blur for better performance
-  const blurClass = 'blur-2xl md:blur-3xl'
+  // Disable blur on mobile for better performance - use simple opacity instead
+  const blurClass = 'blur-none md:blur-2xl lg:blur-3xl'
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden will-change-transform">
-        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-full ${blurClass}`}></div>
-        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-400/20 to-purple-400/20 rounded-full ${blurClass}`}></div>
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Reduced opacity on mobile, no blur for performance */}
+        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/10 md:from-blue-400/20 to-indigo-400/10 md:to-indigo-400/20 rounded-full ${blurClass}`}></div>
+        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-400/10 md:from-indigo-400/20 to-purple-400/10 md:to-purple-400/20 rounded-full ${blurClass}`}></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">

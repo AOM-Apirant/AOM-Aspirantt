@@ -2741,6 +2741,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "SMD", fullForm: "Standard Moving Dimensions",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "SMART", fullForm: "Specially Modified Asthetic Refreshing Travel",
       explanation: "Will be added later",
       reference: "--"

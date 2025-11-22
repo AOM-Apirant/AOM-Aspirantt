@@ -409,14 +409,15 @@ const GSRAppendix = () => {
     },
   ]
 
-  // Use CSS classes instead of conditional blur for better performance
-  const blurClass = 'blur-2xl md:blur-3xl'
+  // Disable blur on mobile for better performance
+  const blurClass = 'blur-none md:blur-2xl lg:blur-3xl'
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden will-change-transform">
-        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full ${blurClass}`}></div>
-        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 rounded-full ${blurClass}`}></div>
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Reduced opacity and no blur on mobile for performance */}
+        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-500/10 md:from-emerald-500/20 to-teal-500/10 md:to-teal-500/20 rounded-full ${blurClass}`}></div>
+        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-teal-500/10 md:from-teal-500/20 to-cyan-500/10 md:to-cyan-500/20 rounded-full ${blurClass}`}></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -440,15 +441,15 @@ const GSRAppendix = () => {
           <div className="max-w-7xl mx-auto px-2 lg:px-4 py-6">
             <div className="grid gap-6 md:gap-8">
               {appendices.map((appendix) => {
-                // Use CSS classes for better performance
-                const cardBlurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
+                // Disable backdrop-blur on mobile for better performance
+                const cardBlurClass = 'backdrop-blur-none md:backdrop-blur-sm lg:backdrop-blur-lg'
                 return (
                 <div
                   key={appendix.id}
-                  className={`bg-white/10 ${cardBlurClass} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20 hover:bg-white/15`}
+                  className={`bg-white/10 ${cardBlurClass} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-200 overflow-hidden border border-white/20 hover:bg-white/15`}
                 >
                   <div
-                    className={`bg-gradient-to-r ${appendix.color} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-300`}
+                    className={`bg-gradient-to-r ${appendix.color} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-200`}
                     onClick={() => toggleAppendix(appendix.id)}
                   >
                     <div className="flex flex-col items-center text-center">
@@ -481,11 +482,12 @@ const GSRAppendix = () => {
                     <div className="py-4 lg:px-4 px-2">
                       <div className="grid gap-3">
                         {appendix.content && appendix.content.map((item, index) => {
-                          const itemBlurClass = 'backdrop-blur-sm md:backdrop-blur-sm'
+                          // Disable backdrop-blur on mobile for better performance
+                          const itemBlurClass = 'backdrop-blur-none md:backdrop-blur-sm'
                           return (
                           <div
                             key={index}
-                            className={`flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 ${itemBlurClass} rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10`}
+                            className={`flex items-start space-x-4 py-4 lg:px-4 px-2 bg-white/5 ${itemBlurClass} rounded-lg hover:bg-white/10 transition-all duration-200 border border-white/10`}
                           >
                             <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
                               {index + 1}
@@ -498,10 +500,10 @@ const GSRAppendix = () => {
                                 <button
                                   onClick={() => openPDF(item.page)}
                                   disabled={openingPDF === item.page}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-200 ${
                                     openingPDF === item.page
                                       ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 hover:shadow-lg hover:scale-105'
+                                      : 'bg-gradient-to-r from-emerald-500 to-teal-600 active:from-emerald-600 active:to-teal-700 md:hover:from-emerald-600 md:hover:to-teal-700 md:hover:shadow-lg md:hover:scale-105'
                                   }`}
                                 >
                                   {openingPDF === item.page ? (
@@ -516,10 +518,10 @@ const GSRAppendix = () => {
                                 <button
                                   onClick={() => openContent(item.page)}
                                   disabled={openingContent === item.page}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
+                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-200 ${
                                     openingContent === item.page
                                       ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
+                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 active:from-green-600 active:to-emerald-700 md:hover:from-green-600 md:hover:to-emerald-700 md:hover:shadow-lg md:hover:scale-105'
                                   }`}
                                 >
                                   {openingContent === item.page ? (
@@ -558,7 +560,7 @@ const GSRAppendix = () => {
 
             {/* Footer */}
             <div className="mt-12 text-center">
-              <div className="bg-white/10 backdrop-blur-sm md:backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-none md:backdrop-blur-sm lg:backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
                 <div className="flex items-center justify-center space-x-3 mb-4">
                   <CheckCircle className="w-8 h-8 text-green-400" />
                   <h3 className="text-2xl font-bold text-white">

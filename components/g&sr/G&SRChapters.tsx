@@ -1,39 +1,8 @@
 "use client"
 
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useCallback } from "react"
 import { BookOpen, Layers, Users, RadioTower, TrainFront, Building2, AlertTriangle, GitBranch, Blocks, Workflow, ArrowRightLeft, Shield, Ticket, LifeBuoy, CircuitBoard, Hammer, Fence, Zap, Puzzle, ChevronDown, ChevronUp, FileText, BookOpenCheck, ExternalLink } from "lucide-react"
 import { useRouter } from 'next/navigation'
-import { getPageIdFromRule } from '@/lib/g&sr-chapter-mapping'
-
-// Custom hook to detect mobile without hydration issues
-const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState<boolean | null>(null)
-
-  useEffect(() => {
-    // Use matchMedia for better performance and to prevent hydration mismatch
-    const mediaQuery = window.matchMedia('(max-width: 768px)')
-    
-    // Set initial value from media query (more reliable than window.innerWidth)
-    setIsMobile(mediaQuery.matches)
-    
-    // Use matchMedia listener instead of resize event for better performance
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsMobile(e.matches)
-    }
-    
-    // Modern browsers support addEventListener
-    if (mediaQuery.addEventListener) {
-      mediaQuery.addEventListener('change', handleChange)
-      return () => mediaQuery.removeEventListener('change', handleChange)
-    } else {
-      // Fallback for older browsers
-      mediaQuery.addListener(handleChange)
-      return () => mediaQuery.removeListener(handleChange)
-    }
-  }, [])
-
-  return isMobile
-}
 
 interface Chapter {
   id: number
@@ -647,9 +616,138 @@ const chapters: Chapter[] = chapterData.map(chapter => ({
 const heroTitle = "TABLE OF CONTENTS"
 const heroSubtitle = "Rule No. Subject Page No."
 
+// Memoized chapter card component to prevent unnecessary re-renders
+const ChapterCard = React.memo(({ 
+  chapter, 
+  isExpanded, 
+  onToggle, 
+  openingPDF, 
+  openingContent, 
+  onOpenPDF, 
+  onOpenContent 
+}: {
+  chapter: Chapter
+  isExpanded: boolean
+  onToggle: () => void
+  openingPDF: string | null
+  openingContent: string | null
+  onOpenPDF: (ruleNumber: string, chapterId: number) => void
+  onOpenContent: (ruleNumber: string, chapterId: number) => void
+}) => {
+  const extractRuleNumber = (rule: string): string => {
+    let match = rule.match(/^Rule\s+((?:\d+\.)+\d+)/)
+    if (match) return match[1]
+    match = rule.match(/^((?:\d+\.)+\d+)/)
+    if (match) return match[1]
+    match = rule.match(/((?:\d+\.)+\d+)/)
+    return match ? match[1] : ''
+  }
+
+  const cardBlurClass = 'backdrop-blur-none md:backdrop-blur-sm lg:backdrop-blur-lg'
+  
+  return (
+    <div
+      className={`bg-white/10 ${cardBlurClass} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-200 overflow-hidden border border-white/20`}
+    >
+      <div
+        className={`bg-gradient-to-r ${chapter.gradient} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-200`}
+        onClick={onToggle}
+      >
+        <div className="flex flex-col items-center text-center space-y-4">
+          <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">{chapter.icon}</div>
+          <h2 className="text-xl sm:text-2xl font-bold whitespace-pre-line leading-snug">
+            {chapter.title}
+          </h2>
+          <p className="text-white/85 text-sm sm:text-base whitespace-pre-line font-semibold tracking-wide">
+            {chapter.description}
+          </p>
+          <p className="text-white/70 text-sm font-semibold">Pages: {chapter.pages}</p>
+          <div className="bg-white/20 py-2 px-4 rounded-md backdrop-blur-sm">
+            {isExpanded ? (
+              <ChevronUp className="w-5 h-5 text-white" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-white" />
+            )}
+          </div>
+        </div>
+      </div>
+
+      {isExpanded && (
+        <div className="py-6 lg:px-6 px-3">
+          <div className="grid gap-3">
+            {chapter.rules.map((rule, index) => {
+              const ruleNumber = extractRuleNumber(rule)
+              const ruleKey = `${chapter.id}-${ruleNumber}-${index}`
+              const isOpeningPDF = openingPDF === `${chapter.id}-${ruleNumber}`
+              const isOpeningContent = openingContent === `${chapter.id}-${ruleNumber}`
+              const hasRuleNumber = ruleNumber.length > 0 && /^\d+\.\d+/.test(ruleNumber)
+              const ruleBlurClass = 'backdrop-blur-none md:backdrop-blur-sm'
+              
+              return (
+                <div
+                  key={ruleKey}
+                  className={`bg-white/5 ${ruleBlurClass} rounded-lg border border-white/10 px-4 py-3 hover:bg-white/10 transition-all duration-200`}
+                >
+                  <p className="text-gray-200 whitespace-pre-line text-base lg:text-lg leading-relaxed mb-3">{rule}</p>
+                  
+                  {hasRuleNumber && (
+                    <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-3 pt-3 border-t border-white/10">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          onOpenPDF(ruleNumber, chapter.id)
+                        }}
+                        disabled={isOpeningPDF}
+                        className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-200 ${
+                          isOpeningPDF
+                            ? 'bg-gray-500 cursor-not-allowed'
+                            : 'bg-gradient-to-r from-blue-500 to-indigo-600 active:from-blue-600 active:to-indigo-700 md:hover:from-blue-600 md:hover:to-indigo-700 md:hover:shadow-lg md:hover:scale-105'
+                        }`}
+                      >
+                        {isOpeningPDF ? (
+                          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        ) : (
+                          <FileText className="w-4 h-4" />
+                        )}
+                        <span>{isOpeningPDF ? 'Opening...' : 'View Document'}</span>
+                        {!isOpeningPDF && <ExternalLink className="w-3 h-3 hidden md:block" />}
+                      </button>
+                      
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          onOpenContent(ruleNumber, chapter.id)
+                        }}
+                        disabled={isOpeningContent}
+                        className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-200 ${
+                          isOpeningContent
+                            ? 'bg-gray-500 cursor-not-allowed'
+                            : 'bg-gradient-to-r from-green-500 to-emerald-600 active:from-green-600 active:to-emerald-700 md:hover:from-green-600 md:hover:to-emerald-700 md:hover:shadow-lg md:hover:scale-105'
+                        }`}
+                      >
+                        {isOpeningContent ? (
+                          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        ) : (
+                          <BookOpenCheck className="w-4 h-4" />
+                        )}
+                        <span>{isOpeningContent ? 'Opening...' : 'View Content'}</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+})
+
+ChapterCard.displayName = 'ChapterCard'
+
 const GSRChapters = () => {
   const [expandedChapters, setExpandedChapters] = useState<number[]>([])
-  const isMobile = useIsMobile()
   const [openingPDF, setOpeningPDF] = useState<string | null>(null)
   const [openingContent, setOpeningContent] = useState<string | null>(null)
   const router = useRouter()
@@ -663,44 +761,16 @@ const GSRChapters = () => {
     })
   }, [])
 
-  // Extract rule number from rule text
-  // Handles both formats: "1.01 Short title" and "Rule 1.01\nShort title"
-  const extractRuleNumber = (rule: string): string => {
-    // Try to match "Rule X.XX" format first (formatted)
-    let match = rule.match(/^Rule\s+((?:\d+\.)+\d+)/)
-    if (match) {
-      return match[1]
-    }
-    
-    // Try to match "X.XX" format (original)
-    match = rule.match(/^((?:\d+\.)+\d+)/)
-    if (match) {
-      return match[1]
-    }
-    
-    // Try to match in the middle of the string
-    match = rule.match(/((?:\d+\.)+\d+)/)
-    return match ? match[1] : ''
-  }
-
-  // Convert rule number to chapter page identifier using mapping
-  const ruleToPageId = (ruleNumber: string): string => {
-    // First try to get from mapping
-    const mappedPageId = getPageIdFromRule(ruleNumber)
-    if (mappedPageId) {
-      return mappedPageId
-    }
-    
-    // Fallback: try to extract page ID from rule number
+  // Convert rule number to chapter page identifier
+  const ruleToPageId = useCallback((ruleNumber: string): string => {
+    // Try to extract page ID from rule number
     const parts = ruleNumber.split('.')
     if (parts.length >= 2) {
-      const rulePart = parts[1]
-      return rulePart
+      return parts[1]
     }
-    
     // Last resort: return rule number without dots
     return ruleNumber.replace(/\./g, '')
-  }
+  }, [])
 
   const openPDF = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
@@ -718,7 +788,7 @@ const GSRChapters = () => {
         setOpeningPDF(null)
       }
     }, 100)
-  }, [])
+  }, [ruleToPageId])
 
   const openContent = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
@@ -728,16 +798,17 @@ const GSRChapters = () => {
       router.push(`/g&sr/content/${pageId}`)
       setOpeningContent(null)
     }, 100)
-  }, [router])
+  }, [router, ruleToPageId])
 
-  // Use CSS classes instead of conditional blur for better performance
-  const blurClass = 'blur-2xl md:blur-3xl'
+  // Disable blur on mobile for better performance
+  const blurClass = 'blur-none md:blur-2xl lg:blur-3xl'
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden will-change-transform">
-        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/20 to-indigo-500/20 rounded-full ${blurClass}`}></div>
-        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-full ${blurClass}`}></div>
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Reduced opacity and no blur on mobile for performance */}
+        <div className={`absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-sky-500/10 md:from-sky-500/20 to-indigo-500/10 md:to-indigo-500/20 rounded-full ${blurClass}`}></div>
+        <div className={`absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-indigo-500/10 md:from-indigo-500/20 to-purple-500/10 md:to-purple-500/20 rounded-full ${blurClass}`}></div>
       </div>
 
       <div className="relative z-10 py-6 lg:px-4 px-2">
@@ -758,112 +829,18 @@ const GSRChapters = () => {
           </div>
 
           <div className="grid gap-6">
-            {chapters.map(chapter => {
-              // Use CSS classes for better performance
-              const cardBlurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
-              return (
-              <div
+            {chapters.map(chapter => (
+              <ChapterCard
                 key={chapter.id}
-                className={`bg-white/10 ${cardBlurClass} rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden border border-white/20`}
-              >
-                <div
-                  className={`bg-gradient-to-r ${chapter.gradient} text-white p-6 cursor-pointer hover:brightness-110 transition-all duration-300`}
-                  onClick={() => toggleChapter(chapter.id)}
-                >
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">{chapter.icon}</div>
-                    <h2 className="text-xl sm:text-2xl font-bold whitespace-pre-line leading-snug">
-                      {chapter.title}
-                    </h2>
-                    <p className="text-white/85 text-sm sm:text-base whitespace-pre-line font-semibold tracking-wide">
-                      {chapter.description}
-                    </p>
-                    <p className="text-white/70 text-sm font-semibold">Pages: {chapter.pages}</p>
-                    <div className="bg-white/20 py-2 px-4 rounded-md backdrop-blur-sm">
-                      {expandedChapters.includes(chapter.id) ? (
-                        <ChevronUp className="w-5 h-5 text-white" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5 text-white" />
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {expandedChapters.includes(chapter.id) && (
-                  <div className="py-6 lg:px-6 px-3">
-                    <div className="grid gap-3">
-                      {chapter.rules.map((rule, index) => {
-                        const ruleNumber = extractRuleNumber(rule)
-                        const ruleKey = `${chapter.id}-${ruleNumber}-${index}`
-                        const isOpeningPDF = openingPDF === `${chapter.id}-${ruleNumber}`
-                        const isOpeningContent = openingContent === `${chapter.id}-${ruleNumber}`
-                        
-                        // Skip buttons for section headers (rules that don't have numbers)
-                        // Check if rule starts with "Rule" or contains a rule number pattern
-                        const hasRuleNumber = ruleNumber.length > 0 && /^\d+\.\d+/.test(ruleNumber)
-                        
-                        const ruleBlurClass = 'backdrop-blur-sm md:backdrop-blur-sm'
-                        return (
-                          <div
-                            key={ruleKey}
-                            className={`bg-white/5 ${ruleBlurClass} rounded-lg border border-white/10 px-4 py-3 hover:bg-white/10 transition-all duration-300`}
-                          >
-                            <p className="text-gray-200 whitespace-pre-line text-base lg:text-lg leading-relaxed mb-3">{rule}</p>
-                            
-                            {hasRuleNumber && (
-                              <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-3 mt-3 pt-3 border-t border-white/10">
-                                {/* View Document Button */}
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openPDF(ruleNumber, chapter.id)
-                                  }}
-                                  disabled={isOpeningPDF}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
-                                    isOpeningPDF
-                                      ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:scale-105'
-                                  }`}
-                                >
-                                  {isOpeningPDF ? (
-                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : (
-                                    <FileText className="w-4 h-4" />
-                                  )}
-                                  <span>{isOpeningPDF ? 'Opening...' : 'View Document'}</span>
-                                  {!isMobile && !isOpeningPDF && <ExternalLink className="w-3 h-3 hidden md:block" />}
-                                </button>
-                                
-                                {/* View Content Button */}
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation()
-                                    openContent(ruleNumber, chapter.id)
-                                  }}
-                                  disabled={isOpeningContent}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 text-white text-sm font-medium rounded-md transition-all duration-300 ${
-                                    isOpeningContent
-                                      ? 'bg-gray-500 cursor-not-allowed'
-                                      : 'bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 hover:shadow-lg hover:scale-105'
-                                  }`}
-                                >
-                                  {isOpeningContent ? (
-                                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : (
-                                    <BookOpenCheck className="w-4 h-4" />
-                                  )}
-                                  <span>{isOpeningContent ? 'Opening...' : 'View Content'}</span>
-                                </button>
-                              </div>
-                            )}
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )}
-              </div>
-            )})}
+                chapter={chapter}
+                isExpanded={expandedChapters.includes(chapter.id)}
+                onToggle={() => toggleChapter(chapter.id)}
+                openingPDF={openingPDF}
+                openingContent={openingContent}
+                onOpenPDF={openPDF}
+                onOpenContent={openContent}
+              />
+            ))}
           </div>
         </div>
       </div>
