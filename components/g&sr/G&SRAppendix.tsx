@@ -1,46 +1,15 @@
 "use client"
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import { FileText, AlertTriangle, Heart, ChevronDown, ChevronUp, BookOpen, ExternalLink, BookOpenCheck, CheckCircle } from 'lucide-react'
 import { AlertCircle, Gavel } from 'lucide-react'
 import { FileSpreadsheet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-
-// Custom hook to detect mobile without hydration issues
-const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState<boolean | null>(null)
-
-  useEffect(() => {
-    // Use matchMedia for better performance and to prevent hydration mismatch
-    const mediaQuery = window.matchMedia('(max-width: 768px)')
-    
-    // Set initial value from media query (more reliable than window.innerWidth)
-    setIsMobile(mediaQuery.matches)
-    
-    // Use matchMedia listener instead of resize event for better performance
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsMobile(e.matches)
-    }
-    
-    // Modern browsers support addEventListener
-    if (mediaQuery.addEventListener) {
-      mediaQuery.addEventListener('change', handleChange)
-      return () => mediaQuery.removeEventListener('change', handleChange)
-    } else {
-      // Fallback for older browsers
-      mediaQuery.addListener(handleChange)
-      return () => mediaQuery.removeListener(handleChange)
-    }
-  }, [])
-
-  return isMobile
-}
 
 const heroTitle = "GSR APPENDICES"
 const heroSubtitle = "Complete Appendix Index for General and Subsidiary Rules"
 
 const GSRAppendix = () => {
   const [expandedAppendices, setExpandedAppendices] = useState<number[]>([])
-  const isMobile = useIsMobile()
   const [openingPDF, setOpeningPDF] = useState<string | null>(null)
   const [openingContent, setOpeningContent] = useState<string | null>(null)
   const router = useRouter()

@@ -41,21 +41,18 @@ export default function Home() {
                 
                 <div className="relative z-10">
                   <div className="inline-block p-3 bg-white/20 backdrop-blur-sm rounded-full mb-4">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="lg:w-12 w-8 lg:h-12 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   </div>
-                  <h1 className="text-5xl lg:text-6xl font-extrabold mb-3 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent drop-shadow-lg">
+                  <h1 className="text-3xl lg:text-4xl font-extrabold mb-3 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent drop-shadow-lg">
                     AOM Aspirant
                   </h1>
-                  <p className="text-blue-100 text-xl lg:text-2xl font-semibold mb-2">
+                  <p className="text-blue-100 text-base lg:text-xl font-semibold mb-2">
                     Your Complete Learning Platform
                   </p>
-                  <p className="text-blue-50 text-base lg:text-lg font-medium">
-                    Indian Railways | Comprehensive Study Materials | Expert Guidance
-                  </p>
                   <div className="mt-6 flex justify-center">
-                    <div className="w-32 h-1.5 bg-white/40 rounded-full"></div>
+                    <div className="lg:w-32 w-24 h-1.5 bg-white/40 rounded-full"></div>
                   </div>
                 </div>
               </div>

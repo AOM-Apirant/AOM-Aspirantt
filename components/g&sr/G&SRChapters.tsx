@@ -718,7 +718,7 @@ const GSRChapters = () => {
         setOpeningPDF(null)
       }
     }, 100)
-  }, [router])
+  }, [])
 
   const openContent = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)

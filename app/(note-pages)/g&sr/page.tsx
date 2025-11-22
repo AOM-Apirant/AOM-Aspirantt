@@ -22,36 +22,6 @@ const GSRAppendix = dynamic(() => import('@/components/g&sr/G&SRAppendix'), {
   ssr: false
 })
 
-// Custom hook to detect mobile without hydration issues
-const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState<boolean | null>(null)
-
-  useEffect(() => {
-    // Use matchMedia for better performance and to prevent hydration mismatch
-    const mediaQuery = window.matchMedia('(max-width: 768px)')
-    
-    // Set initial value from media query (more reliable than window.innerWidth)
-    setIsMobile(mediaQuery.matches)
-    
-    // Use matchMedia listener instead of resize event for better performance
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsMobile(e.matches)
-    }
-    
-    // Modern browsers support addEventListener
-    if (mediaQuery.addEventListener) {
-      mediaQuery.addEventListener('change', handleChange)
-      return () => mediaQuery.removeEventListener('change', handleChange)
-    } else {
-      // Fallback for older browsers
-      mediaQuery.addListener(handleChange)
-      return () => mediaQuery.removeListener(handleChange)
-    }
-  }, [])
-
-  return isMobile
-}
-
 interface SectionCardProps {
   title: string
   accentGradient: string
@@ -69,8 +39,6 @@ const SectionCard = React.memo(({
   icon,
   content,
 }: SectionCardProps) => {
-  const isMobile = useIsMobile()
-
   // Use CSS classes instead of conditional blur for better performance
   // Mobile devices will use less blur automatically via CSS
   const blurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
@@ -217,10 +185,9 @@ Rail Nilayam
 Secunderabad (A. J. RATHOD)
 Dt. 05.11.2020. CHIEF TRAFFIC MANAGER
 (General and Perspective Planning)
-SOUTH CENTRAL RAILWAY`,
+    SOUTH CENTRAL RAILWAY`,
   ]
 
-  const isMobile = useIsMobile()
   const [shouldLoadChapters, setShouldLoadChapters] = useState(false)
   const [shouldLoadAppendix, setShouldLoadAppendix] = useState(false)
   const chaptersRef = React.useRef<HTMLDivElement>(null)
