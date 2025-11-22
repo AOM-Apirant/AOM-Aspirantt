@@ -5,37 +5,45 @@ import { AlertCircle, Gavel } from 'lucide-react'
 import { FileSpreadsheet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
+// Custom hook to detect mobile without hydration issues
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null)
+
+  useEffect(() => {
+    // Use matchMedia for better performance and to prevent hydration mismatch
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    
+    // Set initial value from media query (more reliable than window.innerWidth)
+    setIsMobile(mediaQuery.matches)
+    
+    // Use matchMedia listener instead of resize event for better performance
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsMobile(e.matches)
+    }
+    
+    // Modern browsers support addEventListener
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', handleChange)
+      return () => mediaQuery.removeEventListener('change', handleChange)
+    } else {
+      // Fallback for older browsers
+      mediaQuery.addListener(handleChange)
+      return () => mediaQuery.removeListener(handleChange)
+    }
+  }, [])
+
+  return isMobile
+}
+
 const heroTitle = "GSR APPENDICES"
 const heroSubtitle = "Complete Appendix Index for General and Subsidiary Rules"
 
 const GSRAppendix = () => {
   const [expandedAppendices, setExpandedAppendices] = useState<number[]>([])
-  const [isMobile, setIsMobile] = useState(false)
+  const isMobile = useIsMobile()
   const [openingPDF, setOpeningPDF] = useState<string | null>(null)
   const [openingContent, setOpeningContent] = useState<string | null>(null)
   const router = useRouter()
-
-  useEffect(() => {
-    const checkDevice = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-
-    checkDevice()
-    
-    // Optimized resize handler with longer debounce for mobile performance
-    let timeoutId: NodeJS.Timeout
-    const handleResize = () => {
-      clearTimeout(timeoutId)
-      timeoutId = setTimeout(checkDevice, 300) // Increased debounce time
-    }
-    
-    window.addEventListener('resize', handleResize, { passive: true })
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-      clearTimeout(timeoutId)
-    }
-  }, [])
 
   const toggleAppendix = useCallback((appendixId: number) => {
     setExpandedAppendices(prev => {
@@ -61,7 +69,9 @@ const GSRAppendix = () => {
 
     setTimeout(() => {
       try {
-        if (isMobile) {
+        // Use matchMedia for more reliable mobile detection
+        const isMobileDevice = window.matchMedia('(max-width: 768px)').matches
+        if (isMobileDevice) {
           window.location.href = pdfPath
         } else {
           const newWindow = window.open(pdfPath, '_blank')
@@ -76,7 +86,7 @@ const GSRAppendix = () => {
         setOpeningPDF(null)
       }
     }, 100)
-  }, [isMobile])
+  }, [])
 
   const openContent = useCallback((pageNumber: string) => {
     setOpeningContent(pageNumber)
@@ -430,8 +440,8 @@ const GSRAppendix = () => {
     },
   ]
 
-  // Reduce blur effects on mobile for better performance
-  const blurClass = isMobile ? 'blur-2xl' : 'blur-3xl'
+  // Use CSS classes instead of conditional blur for better performance
+  const blurClass = 'blur-2xl md:blur-3xl'
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 relative overflow-hidden">
@@ -461,8 +471,8 @@ const GSRAppendix = () => {
           <div className="max-w-7xl mx-auto px-2 lg:px-4 py-6">
             <div className="grid gap-6 md:gap-8">
               {appendices.map((appendix) => {
-                // Reduce backdrop-blur on mobile
-                const cardBlurClass = isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'
+                // Use CSS classes for better performance
+                const cardBlurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
                 return (
                 <div
                   key={appendix.id}
@@ -502,7 +512,7 @@ const GSRAppendix = () => {
                     <div className="py-4 lg:px-4 px-2">
                       <div className="grid gap-3">
                         {appendix.content && appendix.content.map((item, index) => {
-                          const itemBlurClass = isMobile ? '' : 'backdrop-blur-sm'
+                          const itemBlurClass = 'backdrop-blur-sm md:backdrop-blur-sm'
                           return (
                           <div
                             key={index}
@@ -531,7 +541,7 @@ const GSRAppendix = () => {
                                     <FileText className="w-4 h-4" />
                                   )}
                                   <span>{openingPDF === item.page ? 'Opening...' : 'View Document'}</span>
-                                  {!isMobile && openingPDF !== item.page && <ExternalLink className="w-3 h-3" />}
+                                  {openingPDF !== item.page && <ExternalLink className="w-3 h-3 hidden md:block" />}
                                 </button>
 
                                 <button
@@ -579,7 +589,7 @@ const GSRAppendix = () => {
 
             {/* Footer */}
             <div className="mt-12 text-center">
-              <div className={`bg-white/10 ${isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'} rounded-2xl shadow-2xl p-8 border border-white/20`}>
+              <div className="bg-white/10 backdrop-blur-sm md:backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
                 <div className="flex items-center justify-center space-x-3 mb-4">
                   <CheckCircle className="w-8 h-8 text-green-400" />
                   <h3 className="text-2xl font-bold text-white">

@@ -266,6 +266,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "BIU", fullForm: "Brake Interface Unit",
+      explanation: "It is a part of Loco Kavach. It executes the brake commanded by Onboard Vital Computer automatically when Loco pilot is not controlling the speed in commensuration with permitted speed which is based on signalling information including permanent speed restrictions, gradient, braking characterstics of train.",
+      reference: "--"
+    },
     { acronym: "BOBR", fullForm: "Breach Of Block Rules",
       explanation: "Will be added later",
       reference: "--"
@@ -1095,6 +1099,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "EMU", fullForm: "Electric Multiple Unit",
       explanation: "A self-propelled passenger train unit powered by electricity, commonly used for suburban services",
+      reference: "--"
+    },
+    { acronym: "EOA", fullForm: "End Of Authority",
+      explanation: "It is the location up to which the train is permitted to proceed and where the target speed is zero.",
       reference: "--"
     },
     { acronym: "EOG", fullForm: "End On Generator",
@@ -1949,7 +1957,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "NDR", fullForm: "National Disaster Response Force",
+    { acronym: "NDRF", fullForm: "National Disaster Response Force",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -3073,6 +3081,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "TSR", fullForm: "Train Signal Register",
       explanation: "A register used to record all train movement signal indications and timings",
+      reference: "--"
+    },
+    { acronym: "TSR", fullForm: "Temporary Speed Restrictions",
+      explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "TSRMS", fullForm: "Temporary Speed Restriction Management System",

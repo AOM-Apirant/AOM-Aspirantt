@@ -22,6 +22,36 @@ const GSRAppendix = dynamic(() => import('@/components/g&sr/G&SRAppendix'), {
   ssr: false
 })
 
+// Custom hook to detect mobile without hydration issues
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null)
+
+  useEffect(() => {
+    // Use matchMedia for better performance and to prevent hydration mismatch
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    
+    // Set initial value from media query (more reliable than window.innerWidth)
+    setIsMobile(mediaQuery.matches)
+    
+    // Use matchMedia listener instead of resize event for better performance
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsMobile(e.matches)
+    }
+    
+    // Modern browsers support addEventListener
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', handleChange)
+      return () => mediaQuery.removeEventListener('change', handleChange)
+    } else {
+      // Fallback for older browsers
+      mediaQuery.addListener(handleChange)
+      return () => mediaQuery.removeListener(handleChange)
+    }
+  }, [])
+
+  return isMobile
+}
+
 interface SectionCardProps {
   title: string
   accentGradient: string
@@ -39,30 +69,11 @@ const SectionCard = React.memo(({
   icon,
   content,
 }: SectionCardProps) => {
-  const [isMobile, setIsMobile] = useState(false)
+  const isMobile = useIsMobile()
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-    checkMobile()
-    
-    // Optimized resize handler
-    let timeoutId: NodeJS.Timeout
-    const handleResize = () => {
-      clearTimeout(timeoutId)
-      timeoutId = setTimeout(checkMobile, 200)
-    }
-    
-    window.addEventListener('resize', handleResize, { passive: true })
-    return () => {
-      window.removeEventListener('resize', handleResize)
-      clearTimeout(timeoutId)
-    }
-  }, [])
-
-  // Reduce backdrop-blur on mobile for better performance
-  const blurClass = isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'
+  // Use CSS classes instead of conditional blur for better performance
+  // Mobile devices will use less blur automatically via CSS
+  const blurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
 
   return (
     <div className={`bg-white/10 ${blurClass} rounded-2xl shadow-2xl py-6 lg:px-4 px-2 border border-white/20 hover:bg-white/15 transition-all duration-300`}>
@@ -209,79 +220,71 @@ Dt. 05.11.2020. CHIEF TRAFFIC MANAGER
 SOUTH CENTRAL RAILWAY`,
   ]
 
-  const [isMobile, setIsMobile] = useState(false)
+  const isMobile = useIsMobile()
   const [shouldLoadChapters, setShouldLoadChapters] = useState(false)
   const [shouldLoadAppendix, setShouldLoadAppendix] = useState(false)
   const chaptersRef = React.useRef<HTMLDivElement>(null)
   const appendixRef = React.useRef<HTMLDivElement>(null)
+  const chaptersObserverRef = React.useRef<IntersectionObserver | null>(null)
+  const appendixObserverRef = React.useRef<IntersectionObserver | null>(null)
 
   useEffect(() => {
-    // Check if mobile on mount
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-    checkMobile()
-    
-    // Optimized resize handler with debouncing
-    let timeoutId: NodeJS.Timeout
-    const handleResize = () => {
-      clearTimeout(timeoutId)
-      timeoutId = setTimeout(checkMobile, 200)
-    }
-    
-    window.addEventListener('resize', handleResize, { passive: true })
-    
     // Use Intersection Observer to load components when they're about to come into view
+    // Only initialize once to prevent multiple observers
     if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
       const observerOptions = {
         root: null,
-        rootMargin: '200px', // Start loading 200px before component comes into view
+        rootMargin: '300px', // Increased margin for better mobile experience
         threshold: 0.01
       }
 
-      const chaptersObserver = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          setShouldLoadChapters(true)
-          chaptersObserver.disconnect()
-        }
-      }, observerOptions)
+      // Create observers only once
+      if (!chaptersObserverRef.current) {
+        chaptersObserverRef.current = new IntersectionObserver((entries) => {
+          if (entries[0]?.isIntersecting) {
+            setShouldLoadChapters(true)
+            chaptersObserverRef.current?.disconnect()
+          }
+        }, observerOptions)
+      }
 
-      const appendixObserver = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          setShouldLoadAppendix(true)
-          appendixObserver.disconnect()
-        }
-      }, observerOptions)
+      if (!appendixObserverRef.current) {
+        appendixObserverRef.current = new IntersectionObserver((entries) => {
+          if (entries[0]?.isIntersecting) {
+            setShouldLoadAppendix(true)
+            appendixObserverRef.current?.disconnect()
+          }
+        }, observerOptions)
+      }
 
-      // Start observing after a short delay to ensure refs are set
-      setTimeout(() => {
-        if (chaptersRef.current) {
-          chaptersObserver.observe(chaptersRef.current)
+      // Use requestAnimationFrame for better performance
+      const rafId = requestAnimationFrame(() => {
+        if (chaptersRef.current && chaptersObserverRef.current) {
+          chaptersObserverRef.current.observe(chaptersRef.current)
         }
-        if (appendixRef.current) {
-          appendixObserver.observe(appendixRef.current)
+        if (appendixRef.current && appendixObserverRef.current) {
+          appendixObserverRef.current.observe(appendixRef.current)
         }
-      }, 100)
+      })
 
       return () => {
-        window.removeEventListener('resize', handleResize)
-        clearTimeout(timeoutId)
-        chaptersObserver.disconnect()
-        appendixObserver.disconnect()
+        cancelAnimationFrame(rafId)
+        chaptersObserverRef.current?.disconnect()
+        appendixObserverRef.current?.disconnect()
       }
     } else {
-      // Fallback for browsers without IntersectionObserver - load immediately
-      setShouldLoadChapters(true)
-      setShouldLoadAppendix(true)
-      return () => {
-        window.removeEventListener('resize', handleResize)
-        clearTimeout(timeoutId)
-      }
+      // Fallback for browsers without IntersectionObserver - load with delay for mobile
+      const timer = setTimeout(() => {
+        setShouldLoadChapters(true)
+        setShouldLoadAppendix(true)
+      }, 500) // Small delay to prevent blocking initial render
+      
+      return () => clearTimeout(timer)
     }
   }, [])
 
-  // Reduce blur effects on mobile for better performance
-  const blurClass = isMobile ? 'blur-2xl' : 'blur-3xl'
+  // Use CSS classes instead of conditional blur for better performance
+  const blurClass = 'blur-2xl md:blur-3xl'
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
@@ -358,8 +361,8 @@ SOUTH CENTRAL RAILWAY`,
                 <GSRChapters />
               </Suspense>
             ) : (
-              <div className="min-h-[400px] flex items-center justify-center my-10">
-                <div className="text-gray-400 text-sm">Loading chapters...</div>
+              <div className="min-h-[200px] flex items-center justify-center my-10">
+                <div className="text-gray-400 text-sm">Scroll down to load chapters...</div>
               </div>
             )}
           </div>
@@ -374,8 +377,8 @@ SOUTH CENTRAL RAILWAY`,
                 <GSRAppendix />
               </Suspense>
             ) : (
-              <div className="min-h-[400px] flex items-center justify-center my-10">
-                <div className="text-gray-400 text-sm">Loading appendices...</div>
+              <div className="min-h-[200px] flex items-center justify-center my-10">
+                <div className="text-gray-400 text-sm">Scroll down to load appendices...</div>
               </div>
             )}
           </div>

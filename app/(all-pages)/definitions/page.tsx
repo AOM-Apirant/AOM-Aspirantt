@@ -141,45 +141,16 @@ const Definitions = () => {
 
         {/* No Results */}
         {filteredDefinitions.length === 0 && (
-          <div className="text-center py-16">
-            <div className="w-24 h-24 bg-gradient-to-r from-gray-500 to-gray-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="text-center py-4">
+            <div className="lg:w-24 lg:h-24 w-16 h-16 bg-gradient-to-r from-gray-500 to-gray-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="lgw-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.47-.881-6.08-2.33" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2">No definitions found</h3>
-            <p className="text-gray-400">Try adjusting your search terms</p>
+            <h3 className="lg:text-2xl text-lg font-bold text-white mb-2">No definitions found</h3>
+            <p className="text-gray-400 lg:text-base text-sm">Try adjusting your search terms</p>
           </div>
         )}
-
-        {/* Footer Notes */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Important Notes</h3>
-            
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-6">
-                <h4 className="text-lg font-semibold text-blue-200 mb-2">SR 1.02.5</h4>
-                <p className="text-gray-300 text-sm">
-                  The Principal Chief Operations Manager is the authorised officer and is empowered to issue, amend or alter Subsidiary Rules.
-                </p>
-              </div>
-              <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-xl p-6">
-                <h4 className="text-lg font-semibold text-green-200 mb-2">S.R.1.02.52</h4>
-                <p className="text-gray-300 text-sm">
-                  The station limits at a class - D station is that portion of the railway which lies within the ends of the platform.
-                </p>
-              </div>
-              <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-xl p-6 md:col-span-2">
-                <h4 className="text-lg font-semibold text-purple-200 mb-2">Item No.2 of AS-20 Dt: 21.02.2025</h4>
-                <p className="text-gray-300 text-sm">
-                  Indian Railway Automatic Train Protection System (IR-ATP) (Kavach) definition has been updated with latest specifications and requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <style jsx>{`

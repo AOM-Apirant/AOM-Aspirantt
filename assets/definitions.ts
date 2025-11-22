@@ -394,5 +394,247 @@ export const definitions = [
       term: "Two-aspect signalling",
       definition: "Two-aspect signalling means a signalling arrangement in which each signal displays at any one time either of the two aspects;",
       reference: "GR 1.02(60)"
-    }
+    },
+    {
+      number: 67,
+      term: "Classification",
+      definition: "'Classification' means the classification of commodities made under section 31 for the purpose of determining the rates to be charged for carriage of such commodities;",
+      reference: "Indian Railways Act 1989 Section 2(5)"
+    },
+    {
+      number: 68,
+      term: "Class rates",
+      definition: "'Class rates' means the rate fixed for a class of commodity in the classification;",
+      reference: "Indian Railways Act 1989 Section 2(5)"
+    },
+    {
+      number: 69,
+      term: "Commissioner",
+      definition: "'Commissioner' means the Chief Security Commissioner of Railway Safety or the Commissioner of Railway Safety appointed under section 5;",
+      reference: "Indian Railways Act 1989 Section 2(6)"
+    },
+    {
+      number: 70,
+      term: "Commodity",
+      definition: "'Commodity' means a specific items of goods;",
+      reference: "Indian Railways Act 1989 Section 2(7)"
+    },
+    {
+      number: 71,
+      term: "Consignee",
+      definition: "'Consignee' means the person named as consignee in a railway receipt;",
+      reference: "Indian Railways Act 1989 Section 2(8)"
+    },
+    {
+      number: 72,
+      term: "Consignment",
+      definition: "'Consignment' means goods entrusted to a railway administration for carriage;",
+      reference: "Indian Railways Act 1989 Section 2(9)"
+    },
+    {
+      number: 73,
+      term: "Consignor",
+      definition: "'Consignor' means the person, named in a railway receipt as consignor, by whom or on whose behalf goods covered by the railway receipt are entrusted to a railway administration for carriage.",
+      reference: "Indian Railways Act 1989 Section 2(10)"
+    },
+    {
+      number: 74,
+      term: "Demurrage",
+      definition: "'Demurrage' means the charge levied for the detention of any rolling stock after the expiry of free time, if any, allowed for such detention.",
+      reference: "Indian Railways Act 1989 Section 2(11)"
+    },
+    {
+      number: 75,
+      term: "Endorsee",
+      definition: "'Endorsee' means the person named as endorsee in a railway receipt;",
+      reference: "Indian Railways Act 1989 Section 2(12)"
+    },
+    {
+      number: 76,
+      term: "Endorsement",
+      definition: "'Endorsement' means the signing by the consignee or the endorsee after adding a direction on a railway receipt to pass the property in the goods mentioned in such receipt to a specific person;",
+      reference: "Indian Railways Act 1989 Section 2(13)"
+    },
+    {
+      number: 77,
+      term: "Fare",
+      definition: "'Fare' means the charge levied for the carriage of passengers;",
+      reference: "Indian Railways Act 1989 Section 2(14)"
+    },
+    {
+      number: 78,
+      term: "Ferry",
+      definition: "'Ferry' includes a bridge of boats, platoons or rafts, a swing bridge, a fly-bridge and a temporary bridge and the approaches to, and landing places of, a ferry;",
+      reference: "Indian Railways Act 1989 Section 2(15)"
+    },
+    {
+      number: 79,
+      term: "Forwarding note",
+      definition: "'Forwarding note' means the document executed under section 64;",
+      reference: "Indian Railways Act 1989 Section 2(16)"
+    },
+    {
+      number: 80,
+      term: "Freight",
+      definition: "'Freight' means the charge levied for the carriage of goods including transshipment charges, if any;",
+      reference: "Indian Railways Act 1989 Section 2(17)"
+    },
+    {
+      number: 81,
+      term: "General Manager",
+      definition: "'General Manager' means the General Manager of a Zonal Railway appointed under Section4;",
+      reference: "Indian Railways Act 1989 Section 2(18)"
+    },
+    {
+      number: 82,
+      term: "Goods",
+      definition: "'Goods' includes – (i) Containers, pallets or similar articles of transport used to consolidate goods; and (ii) Animals;",
+      reference: "Indian Railways Act 1989 Section 2(19)"
+    },
+    {
+      number: 83,
+      term: "Government railway",
+      definition: "'Government railway' means a railway owned by the Central Government;",
+      reference: "Indian Railways Act 1989 Section 2(20)"
+    },
+    {
+      number: 84,
+      term: "In transit",
+      definition: "'In transit' means the period between the commencement and the termination of transit of such goods, and unless otherwise previously determined- (a) transit commences as soon as the railway receipt is issued or the consignment is loaded, whichever is earlier; (b) transit terminates on the expiry of the free time allowed for unloading of consignment from any rolling stock and where such unloading has been completed within such free time, transit terminates on the expiry of the free time allowed, for the removal of the goods from the railway premises;",
+      reference: "Indian Railways Act 1989 Section 2(21)"
+    },
+    {
+      number: 85,
+      term: "Level crossing",
+      definition: "'Level crossing' means an inter-section of a road with lines of rails at the same level;",
+      reference: "Indian Railways Act 1989 Section 2(22)"
+    },
+    {
+      number: 86,
+      term: "Luggage",
+      definition: "'Luggage' means the goods of a passenger either carried by him in his charge or entrusted to a railway administration for carriage;",
+      reference: "Indian Railways Act 1989 Section 2(23)"
+    },
+    {
+      number: 87,
+      term: "Lump sum rate",
+      definition: "'Lump sum rate' means the rate mutually agreed upon between a railway administration and a consignor for the carriage of goods and for any service in relation to such carriage;",
+      reference: "Indian Railways Act 1989 Section 2(24)"
+    },
+    {
+      number: 88,
+      term: "Non-Government railway",
+      definition: "'Non-Government railway' means a railway other than a Government railway;",
+      reference: "Indian Railways Act 1989 Section 2(25)"
+    },
+    {
+      number: 89,
+      term: "Notification",
+      definition: "'Notification' means a notification published in the official Gazette;",
+      reference: "Indian Railways Act 1989 Section 2(26)"
+    },
+    {
+      number: 90,
+      term: "Officer Authorised",
+      definition: "'Officer Authorised' means an officer authorised by the Central Government under sub-section(2) of Section 179.",
+      reference: "Indian Railways Act 1989 Section 2(26A)"
+    },
+    {
+      number: 91,
+      term: "Parcel",
+      definition: "'Parcel' means goods entrusted to a railway administration for carriage by a passenger or a parcel train;",
+      reference: "Indian Railways Act 1989 Section 2(27)"
+    },
+    {
+      number: 92,
+      term: "Pass",
+      definition: "'Pass' means an authority given by the Central Government or a railway administration to a person allowing him to travel as a passenger, but does not include a ticket;",
+      reference: "Indian Railways Act 1989 Section 2(28)"
+    },
+    {
+      number: 93,
+      term: "Passenger",
+      definition: "'Passenger' means a person traveling with a valid pass or ticket;",
+      reference: "Indian Railways Act 1989 Section 2(29)"
+    },
+    {
+      number: 94,
+      term: "Prescribed",
+      definition: "'Prescribed' means prescribed by rules made under this Act;",
+      reference: "Indian Railways Act 1989 Section 2(30)"
+    },
+    {
+      number: 95,
+      term: "Railway",
+      definition: "'Railway' means a railway, or any portion of a railway, for the public carriage of passengers or goods, and includes – (a) all lands within the fences or other boundary marks indicating the limits of the land appurtenant to a railway; (b) all lines of rails, sidings, or yards, or branches used for the purposes of, or in connection with, a railway; (c) all electric traction equipments, power supply and distribution installation used for the purposes of, or in connection with, a railway; (d) all rolling stock, stations, offices, ware houses, wharves, workshops, manufactories, fixed plant and machinery, roads and streets, running rooms, rest houses, institutes, hospitals, water works and water supply installations, staff dwellings and any other works constructed for the purpose of, or in connection with railway; (e) all vehicles which are used any road for the purposes of traffic of a railway and owned, hired or worked by a railway; and (f) all ferries, ships, boats and rafts which are used on any canal, river, lake or other navigable inland waters for the purposes of the traffic of a railway and owned, hired, or worked by a railway administration, but does not include – (i) a tramway wholly within a municipal area; and (ii) lines of rails built in any exhibition ground, fair, park, or any other place solely for the purpose of recreation;",
+      reference: "Indian Railways Act 1989 Section 2(31)"
+    },
+    {
+      number: 96,
+      term: "Railway administration",
+      definition: "'Railway administration' in relation to—\n(a) a Government railway, means the General Manager of a Zonal Railway; and\n(b) a non-Government railway, means the person who is the owner or lessee of the railway or the person working the railway under an agreement;",
+      reference: "Indian Railways Act 1989 Section 2(32)"
+    },
+    {
+      number: 97,
+      term: "Railway receipt",
+      definition: "'Railway receipt' means the document executed under section 64;",
+      reference: "Indian Railways Act 1989 Section 2(33)"
+    },
+    {
+      number: 98,
+      term: "Railway Servant",
+      definition: "'Railway Servant' means any person employed by the Central Government or by a railway administration in connection with the service of a railway (including member of the Railway Protection Force appointed under clause © of sub-section (1) of section 2 of the Railway Protection Force Act, 1957 (23 of 1957)",
+      reference: "Indian Railways Act 1989 Section 2(34)"
+    },
+    {
+      number: 99,
+      term: "End of Authority",
+      definition: "'End of Authority' means the location up to which the train is permitted to proceed and where the target speed is zero.",
+      reference: "Indian Railways Act 1989 Section 2(35)"
+    },
+    {
+      number: 100,
+      term: "Movement Authority",
+      definition: "'Movement Authority' It is the distance up to which the train is permitted to travel safety",
+      reference: "Kavach"
+    },
+    {
+      number: 101,
+      term: "First Aid",
+      definition: "The immediate treatment given to the injured in an accident or sudden illness before the arrival of the doctor is called first aid.",
+      reference: "--"
+    },
+    {
+      number: 102,
+      term: "Golden Hour",
+      definition: "The first hour after an accident is called the Golden Hour. It is the most critical time for the victim's survival.",
+      reference: "--"
+    },
+    {
+      number: 102,
+      term: "Accident",
+      definition: "An accident is any occurrence during railway working that does or may affect the safety of the railway, its engines, rolling stock, permanent way and works, or fixed installations. It also includes events affecting the safety of passengers, railway staff, or others. Any occurrence causing or likely to cause delay to trains or loss to the railway is also considered an accident.",
+      reference: "Accident Manual 2012, Rule 102"
+    },
+    {
+      number: 103,
+      term: "Serious Accident",
+      definition: `Accident to a train carrying passengers which is attended-
+a)
+with loss of life, or
+b)
+with grievous hurt to a passenger or passengers in the train, or
+c)
+with damage to railway property, the value of which exceeding 2 crore, and
+d)
+any other accident, which in the opinion of the Chief Commissioner of Railway Safety or Commissioner of Railway safety requires holding of an inquiry by the Commissioner of Railway Safety, shall be deemed to be a serious accident.`,
+      reference: "Accident Manual 2012, Rule 103"
+    },
+    {
+      number: 104,
+      term: "Averted Collision",
+      definition: "An averted collision is a circumstance under which, but for the vigilance shown by any person or persons, a collision would have occurred either outside station limits or within station limits between two trains or between a train and an obstruction.",
+      reference: "Accident Manual 2012, Rule 105(10)"
+    },
   ];

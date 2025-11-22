@@ -5,6 +5,36 @@ import { BookOpen, Layers, Users, RadioTower, TrainFront, Building2, AlertTriang
 import { useRouter } from 'next/navigation'
 import { getPageIdFromRule } from '@/lib/g&sr-chapter-mapping'
 
+// Custom hook to detect mobile without hydration issues
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null)
+
+  useEffect(() => {
+    // Use matchMedia for better performance and to prevent hydration mismatch
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    
+    // Set initial value from media query (more reliable than window.innerWidth)
+    setIsMobile(mediaQuery.matches)
+    
+    // Use matchMedia listener instead of resize event for better performance
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsMobile(e.matches)
+    }
+    
+    // Modern browsers support addEventListener
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', handleChange)
+      return () => mediaQuery.removeEventListener('change', handleChange)
+    } else {
+      // Fallback for older browsers
+      mediaQuery.addListener(handleChange)
+      return () => mediaQuery.removeListener(handleChange)
+    }
+  }, [])
+
+  return isMobile
+}
+
 interface Chapter {
   id: number
   title: string
@@ -619,32 +649,10 @@ const heroSubtitle = "Rule No. Subject Page No."
 
 const GSRChapters = () => {
   const [expandedChapters, setExpandedChapters] = useState<number[]>([])
-  const [isMobile, setIsMobile] = useState(false)
+  const isMobile = useIsMobile()
   const [openingPDF, setOpeningPDF] = useState<string | null>(null)
   const [openingContent, setOpeningContent] = useState<string | null>(null)
   const router = useRouter()
-
-  useEffect(() => {
-    const checkDevice = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-    
-    checkDevice()
-    
-    // Optimized resize handler with longer debounce for mobile performance
-    let timeoutId: NodeJS.Timeout
-    const handleResize = () => {
-      clearTimeout(timeoutId)
-      timeoutId = setTimeout(checkDevice, 300) // Increased debounce time
-    }
-    
-    window.addEventListener('resize', handleResize, { passive: true })
-    
-    return () => {
-      window.removeEventListener('resize', handleResize)
-      clearTimeout(timeoutId)
-    }
-  }, [])
 
   const toggleChapter = useCallback((chapterId: number) => {
     setExpandedChapters(prev => {
@@ -701,14 +709,16 @@ const GSRChapters = () => {
     
     setOpeningPDF(`${chapterId}-${ruleNumber}`)
     setTimeout(() => {
-      if (isMobile) {
+      // Use matchMedia for more reliable mobile detection
+      const isMobileDevice = window.matchMedia('(max-width: 768px)').matches
+      if (isMobileDevice) {
         window.location.href = pdfPath
       } else {
         window.open(pdfPath, '_blank')
         setOpeningPDF(null)
       }
     }, 100)
-  }, [isMobile, router])
+  }, [router])
 
   const openContent = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
@@ -720,8 +730,8 @@ const GSRChapters = () => {
     }, 100)
   }, [router])
 
-  // Reduce blur effects on mobile for better performance
-  const blurClass = isMobile ? 'blur-2xl' : 'blur-3xl'
+  // Use CSS classes instead of conditional blur for better performance
+  const blurClass = 'blur-2xl md:blur-3xl'
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 relative overflow-hidden">
@@ -749,8 +759,8 @@ const GSRChapters = () => {
 
           <div className="grid gap-6">
             {chapters.map(chapter => {
-              // Reduce backdrop-blur on mobile
-              const cardBlurClass = isMobile ? 'backdrop-blur-sm' : 'backdrop-blur-lg'
+              // Use CSS classes for better performance
+              const cardBlurClass = 'backdrop-blur-sm md:backdrop-blur-lg'
               return (
               <div
                 key={chapter.id}
@@ -792,7 +802,7 @@ const GSRChapters = () => {
                         // Check if rule starts with "Rule" or contains a rule number pattern
                         const hasRuleNumber = ruleNumber.length > 0 && /^\d+\.\d+/.test(ruleNumber)
                         
-                        const ruleBlurClass = isMobile ? '' : 'backdrop-blur-sm'
+                        const ruleBlurClass = 'backdrop-blur-sm md:backdrop-blur-sm'
                         return (
                           <div
                             key={ruleKey}
@@ -821,7 +831,7 @@ const GSRChapters = () => {
                                     <FileText className="w-4 h-4" />
                                   )}
                                   <span>{isOpeningPDF ? 'Opening...' : 'View Document'}</span>
-                                  {!isMobile && !isOpeningPDF && <ExternalLink className="w-3 h-3" />}
+                                  {!isMobile && !isOpeningPDF && <ExternalLink className="w-3 h-3 hidden md:block" />}
                                 </button>
                                 
                                 {/* View Content Button */}
