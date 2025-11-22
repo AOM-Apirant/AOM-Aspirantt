@@ -3,6 +3,7 @@
 import React, { useState, useCallback } from "react"
 import { BookOpen, Layers, Users, RadioTower, TrainFront, Building2, AlertTriangle, GitBranch, Blocks, Workflow, ArrowRightLeft, Shield, Ticket, LifeBuoy, CircuitBoard, Hammer, Fence, Zap, Puzzle, ChevronDown, ChevronUp, FileText, BookOpenCheck, ExternalLink } from "lucide-react"
 import { useRouter } from 'next/navigation'
+import { getPageIdFromRule } from '@/lib/g&sr-chapter-mapping'
 
 interface Chapter {
   id: number
@@ -761,9 +762,15 @@ const GSRChapters = () => {
     })
   }, [])
 
-  // Convert rule number to chapter page identifier
+  // Convert rule number to chapter page identifier using mapping
   const ruleToPageId = useCallback((ruleNumber: string): string => {
-    // Try to extract page ID from rule number
+    // First try to get from mapping function
+    const mappedPageId = getPageIdFromRule(ruleNumber)
+    if (mappedPageId) {
+      return mappedPageId
+    }
+    
+    // Fallback: try to extract page ID from rule number
     const parts = ruleNumber.split('.')
     if (parts.length >= 2) {
       return parts[1]
@@ -774,17 +781,32 @@ const GSRChapters = () => {
 
   const openPDF = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
+    if (!pageId) {
+      console.error(`No page ID found for rule ${ruleNumber}`)
+      setOpeningPDF(null)
+      return
+    }
+    
     const pdfFileName = `GSRChapterPage${pageId}.pdf`
     const pdfPath = `/g&sr-pdf-pages/g&sr-chapter-pdf-pages/${pdfFileName}`
     
     setOpeningPDF(`${chapterId}-${ruleNumber}`)
     setTimeout(() => {
-      // Use matchMedia for more reliable mobile detection
-      const isMobileDevice = window.matchMedia('(max-width: 768px)').matches
-      if (isMobileDevice) {
-        window.location.href = pdfPath
-      } else {
-        window.open(pdfPath, '_blank')
+      try {
+        // Use matchMedia for more reliable mobile detection
+        const isMobileDevice = window.matchMedia('(max-width: 768px)').matches
+        if (isMobileDevice) {
+          window.location.href = pdfPath
+        } else {
+          const newWindow = window.open(pdfPath, '_blank')
+          if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+            // Popup blocked, fallback to same window
+            window.location.href = pdfPath
+          }
+          setOpeningPDF(null)
+        }
+      } catch (error) {
+        console.error('Error opening PDF:', error)
         setOpeningPDF(null)
       }
     }, 100)
@@ -792,11 +814,22 @@ const GSRChapters = () => {
 
   const openContent = useCallback((ruleNumber: string, chapterId: number) => {
     const pageId = ruleToPageId(ruleNumber)
+    if (!pageId) {
+      console.error(`No page ID found for rule ${ruleNumber}`)
+      setOpeningContent(null)
+      return
+    }
+    
     setOpeningContent(`${chapterId}-${ruleNumber}`)
     
     setTimeout(() => {
-      router.push(`/g&sr/content/${pageId}`)
-      setOpeningContent(null)
+      try {
+        router.push(`/g&sr/content/${pageId}`)
+        setOpeningContent(null)
+      } catch (error) {
+        console.error('Error opening content:', error)
+        setOpeningContent(null)
+      }
     }, 100)
   }, [router, ruleToPageId])
 
