@@ -56,6 +56,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { 
+      acronym: "ADT", 
+      fullForm: "Actual Departure Time",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { 
       acronym: "AEN", 
       fullForm: "Assistant Engineer",
       explanation: "Will be added later",
@@ -83,6 +89,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       acronym: "AGM", 
       fullForm: "Additional General Manager",
       explanation: "An officer assisting the General Manager at zonal level in administrative and operational matters.",
+      reference: "--"
+    },
+    { 
+      acronym: "AIEHC", 
+      fullForm: "All India Engine Hour Cost",
+      explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "AIMS", fullForm: "Accounting Information Management System",
@@ -366,6 +378,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       fullForm: "Burn Standard Company Limited", 
       explanation: "Will be added later", 
       reference: "--" 
+    },
+    { 
+      acronym: "BSDOT", 
+      fullForm: "Before Schedule Departure Of Time",
+      explanation: "Will be added later",
+      reference: "--"
     },
     { acronym: "BSLB", fullForm: "Block Section Limit Board",
       explanation: "A board indicating the limit of the block section for operational reference",
@@ -2457,6 +2475,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { 
+      acronym: "RDS", 
+      fullForm: "Rolling Deposit Scheme",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "RDW", fullForm: "Rail Dolly Works",
       explanation: "Will be added later",
       reference: "--"
@@ -2539,6 +2563,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
     { acronym: "RPF", fullForm: "Railway Protection Force",
       explanation: "Security organization protecting railway passengers and property",
+      reference: "--"
+    },
+    { 
+      acronym: "RR", 
+      fullForm: "Railway Reciept",
+      explanation: "Will be added later",
       reference: "--"
     },
     { acronym: "RRB", fullForm: "Railway Recruitment Board",
@@ -3116,6 +3146,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "TTM", fullForm: "Track Tamping Machine",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { 
+      acronym: "TTM", 
+      fullForm: "Train Time-Table Module",
       explanation: "Will be added later",
       reference: "--"
     },
