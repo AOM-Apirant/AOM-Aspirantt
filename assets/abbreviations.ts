@@ -214,6 +214,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "BCNAHS", fullForm: "Air braked Bogie Covered with High Speed wagon",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "BCU", fullForm: "Brake Control Unit",
       explanation: "Will be added later",
       reference: "--"
@@ -307,8 +311,16 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     {
+      acronym: "BOXNHA",
+      fullForm: "Air braked Bogie Open with centre or side discharge with High capacity wagon",
+    },
+    {
       acronym: "BOXNHS",
-      fullForm: "Bogie Open with Air Brake High Speed (CBC)",
+      fullForm: "Air braked Bogie Open with centre or side discharge with High Speed wagon",
+    },
+    {
+      acronym: "BOXNLW",
+      fullForm: "Air braked Bogie Open with centre or side discharge with Low tare weight wagon",
     },
     {
       acronym: "BOXNHSM1",
@@ -1794,10 +1806,11 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "LWFAC", fullForm: "AC First Class Coach (LHB)",
+    { acronym: "LWCZ", fullForm: "Non AC IInd Chair car",
       explanation: "Will be added later",
       reference: "--"
     },
+
     { acronym: "LWACCN", fullForm: "AC 3 Tier Sleeper Coach (LHB)",
       explanation: "Will be added later",
       reference: "--"
@@ -2723,6 +2736,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "SGSLRD", fullForm: "Self Generated",
+      explanation: "Second class, Luggage & Brake van with disabled compartment",
+      reference: "--"
+    },
     { acronym: "SI", fullForm: "Special Instructions",
       explanation: "Will be added later",
       reference: "--"
@@ -3259,6 +3276,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "VPU", fullForm: "High capacity Motor cum parcel van",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "VTO", fullForm: "Visibility Test Object",
       explanation: "Will be added later",
       reference: "--"
@@ -3269,6 +3290,12 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
   ],
   W: [
+    {
+      acronym: "WACCNH",
+      fullForm: "AC Sleeper 3 tier",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     {
       acronym: "WAG",
       fullForm: "Wide Gauge AC Goods (Electric Locomotive Class)",
@@ -3301,7 +3328,23 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Diesel locomotives mainly used for passenger services.",
       reference: "--"
     },
+    {
+      acronym: "WGACCZ",
+      fullForm: "AC Chair Car",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    {
+      acronym: "WGCB",
+      fullForm: "Pantry car",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "WFCZ", fullForm: "Vestibule First Class Chair Car",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "WGFACCW", fullForm: "First class cum AC 2 tier",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -3341,6 +3384,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "WILD", fullForm: "Wheel Impact Load Detection",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "WRRMDAC", fullForm: "Power car with disabled compartment",
       explanation: "Will be added later",
       reference: "--"
     },
