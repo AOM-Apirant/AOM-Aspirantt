@@ -86,6 +86,7 @@ export default function Navbar() {
     { name: 'Accounts', href: '/accounts', icon: '💰' },
     { name: 'Appendix', href: '/appendix', icon: '📄' },
     { name: 'Block Working Manual', href: '/bwm', icon: '📋' },
+    { name: 'Chief Controller', href: '/chief-controller', icon: '🎛️' },
     { name: 'Commercial', href: '/commercial', icon: '🏢' },
     { name: 'Disaster Management Act - 2005', href: '/disaster-act', icon: '🚨' },
     { name: 'Establishment Rules', href: '/establishment', icon: '🏛️' },
