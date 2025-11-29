@@ -5,6 +5,13 @@ import SpeedRestrictions from '@/components/chief-controller/SpeedRestrictions'
 import Timings from '@/components/chief-controller/Timings'
 import Distances from '@/components/chief-controller/Distances'
 import Authorities from '@/components/chief-controller/Authorities'
+import WhistleCodes from '@/components/chief-controller/WhistleCodes'
+import BellCodes from '@/components/chief-controller/BellCodes'
+import BellSignals from '@/components/chief-controller/BellSignals'
+import GSRChapters from '@/components/chief-controller/GSRChapters'
+import GeneralRules from '@/components/chief-controller/GeneralRules'
+import GSRAppendix from '@/components/chief-controller/GSRAppendix'
+import SWRAppendix from '@/components/chief-controller/SWRAppendix'
 
 const TopicContentPage = () => {
   const params = useParams()
@@ -38,19 +45,33 @@ const TopicContentPage = () => {
     'speed-restrictions': SpeedRestrictions,
     'timings': Timings,
     'distances': Distances,
-    'authorities': Authorities
+    'authorities': Authorities,
+    'whistle-codes': WhistleCodes,
+    'bell-codes': BellCodes,
+    'bell-signals': BellSignals,
+    'gsr-chapters': GSRChapters,
+    'general-rules': GeneralRules,
+    'gsr-appendix': GSRAppendix,
+    'swr-appendix': SWRAppendix
   }
 
   const topicNames: { [key: string]: string } = {
     'speed-restrictions': 'Speed Restrictions',
     'timings': 'Timings',
     'distances': 'Distances',
-    'authorities': 'Authorities'
+    'authorities': 'Authorities',
+    'whistle-codes': 'Whistle Codes',
+    'bell-codes': 'Bell Codes',
+    'bell-signals': 'Bell Signals',
+    'gsr-chapters': 'G&SR Chapters',
+    'general-rules': 'General Rules',
+    'gsr-appendix': 'G&SR Appendix',
+    'swr-appendix': 'SWR Appendix'
   }
 
   const TopicComponent = topicComponents[topicId]
 
-  const topics = ['speed-restrictions', 'timings', 'distances', 'authorities']
+  const topics = ['speed-restrictions', 'timings', 'distances', 'authorities', 'whistle-codes', 'bell-codes', 'bell-signals', 'gsr-chapters', 'general-rules', 'gsr-appendix', 'swr-appendix']
   const currentIndex = topics.indexOf(topicId)
   const prevTopic = currentIndex > 0 ? topics[currentIndex - 1] : null
   const nextTopic = currentIndex < topics.length - 1 ? topics[currentIndex + 1] : null

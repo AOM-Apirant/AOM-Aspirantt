@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
-import { Gauge, Clock, Ruler, FileText, ChevronDown, ChevronUp, BookOpenCheck, ExternalLink } from 'lucide-react'
+import { Gauge, Clock, Ruler, FileText, ChevronDown, ChevronUp, BookOpenCheck, ExternalLink, Volume2, Bell, BellRing, BookOpen, Layers, FolderOpen } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 const ChiefControllerIndex = () => {
@@ -34,6 +34,35 @@ const ChiefControllerIndex = () => {
   }
 
   const topics = [
+    
+    {
+      id: 'gsr-chapters',
+      title: 'G&SR Chapters',
+      icon: <BookOpen className="w-6 h-6" />,
+      color: 'from-violet-500 to-violet-600',
+      description: 'Complete guide to General and Subsidiary Rules chapters with all 18 chapters and their rules'
+    },
+    {
+      id: 'gsr-appendix',
+      title: 'G&SR Appendix',
+      icon: <Layers className="w-6 h-6" />,
+      color: 'from-fuchsia-500 to-fuchsia-600',
+      description: 'Complete guide to General and Subsidiary Rules appendices with all 17 appendices'
+    },
+    {
+      id: 'swr-appendix',
+      title: 'SWR Appendix',
+      icon: <FolderOpen className="w-6 h-6" />,
+      color: 'from-rose-500 to-rose-600',
+      description: 'Complete guide to Station Working Rules appendices with all 7 appendices (A-G)'
+    },
+    {
+      id: 'general-rules',
+      title: 'G&SR All Rules',
+      icon: <BookOpenCheck className="w-6 h-6" />,
+      color: 'from-indigo-500 to-indigo-600',
+      description: 'Complete guide to all General and Subsidiary Rules with detailed rules for all 18 chapters'
+    },
     {
       id: 'speed-restrictions',
       title: 'Speed Restrictions',
@@ -61,7 +90,28 @@ const ChiefControllerIndex = () => {
       icon: <FileText className="w-6 h-6" />,
       color: 'from-purple-500 to-purple-600',
       description: 'Complete list of authorities, forms, and permissions required for railway operations'
-    }
+    },
+    {
+      id: 'whistle-codes',
+      title: 'Whistle Codes',
+      icon: <Volume2 className="w-6 h-6" />,
+      color: 'from-orange-500 to-orange-600',
+      description: 'Complete guide to engine whistle codes and their indications for railway operations'
+    },
+    {
+      id: 'bell-codes',
+      title: 'Bell Codes',
+      icon: <Bell className="w-6 h-6" />,
+      color: 'from-teal-500 to-teal-600',
+      description: 'Complete guide to bell codes for train signalling and block working equipment'
+    },
+    {
+      id: 'bell-signals',
+      title: 'Bell Signals',
+      icon: <BellRing className="w-6 h-6" />,
+      color: 'from-cyan-500 to-cyan-600',
+      description: 'Complete guide to bell signals between Loco Pilot and Guard for EMU/DMU trains'
+    },
   ]
 
   return (
@@ -88,7 +138,7 @@ const ChiefControllerIndex = () => {
             <h2 className="lg:text-4xl text-xl font-bold text-purple-300 mb-4">IMPORTANT TOPICS INDEX</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6 rounded-full"></div>
             <p className="lg:text-xl text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive guide covering Speed Restrictions, Timings, Distances, and Authorities - 
+              Comprehensive guide covering Speed Restrictions, Timings, Distances, Authorities, Whistle Codes, Bell Codes, Bell Signals, G&SR Chapters, General Rules, G&SR Appendix, and SWR Appendix - 
               Essential reference material for AOM aspirants in Indian Railways.
             </p>
             <div className="mt-6 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-lg p-4 backdrop-blur-sm border border-blue-400/30">
@@ -179,7 +229,7 @@ const ChiefControllerIndex = () => {
                 </div>
                 <p className="text-gray-300 max-w-2xl mx-auto">
                   This comprehensive guide covers all essential topics for Chief Controller examination, 
-                  providing complete reference material for Speed Restrictions, Timings, Distances, and Authorities 
+                  providing complete reference material for Speed Restrictions, Timings, Distances, Authorities, Whistle Codes, Bell Codes, Bell Signals, G&SR Chapters, General Rules, G&SR Appendix, and SWR Appendix 
                   required for AOM aspirants in Indian Railways.
                 </p>
               </div>

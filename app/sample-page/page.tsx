@@ -1,11 +1,11 @@
 import React from 'react'
-import Authorities from '../../components/chief-controller/Authorities'
+import GeneralRules from '../../components/chief-controller/GeneralRules'
 
 const SamplePage = () => {
   return (
     <div>
         <h1>Sample Page</h1>  
-          <Authorities/>
+          <GeneralRules/>
     </div>
   )
 }
