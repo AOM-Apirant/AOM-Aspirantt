@@ -14,7 +14,7 @@ const Distances = () => {
     
     { question: 'In thick, foggy or tempestuous weather impairing visibility and his engine explodes two detonators within a distance of 10 metres apart, the Loco Pilot will control his train immediately and will follow the aspect of', answer: 'stop signal ahead', distance: '10M' },
     
-    { question: 'In case of Class \'D\' stations, \'ENGINE STOP\' board provided beyond the point/place on platform where train is required to be stopped at distance of', answer: '15M', distance: '15M' },
+    { question: 'In case of Class \'D\' stations, \'ENGINE STOP\' board shall be provided at a distance of 15M beyond the point/place on platform where train is required to be stopped.', answer: '15M', distance: '15M' },
     
     { question: 'While performing shunting on passenger carrying trains, the shunting engine or train engine, before coming on to the formation should be stopped before the formation at a distance of', answer: '20 M', distance: '20M' },
     
@@ -59,7 +59,7 @@ const Distances = () => {
     { question: 'Double distant is required where goods trains have a braking distance of more than', answer: '1000M', distance: '1000M' },
     { question: 'In rear of the stop signal Distant signal is provided at a distance of not less than', answer: '1000M', distance: '1000M' },
     
-    { question: 'In case of Class \'D\' stations, \'Warning Board\' is provided on approach end in rear of the \'D; class station from \'ENGINE STOP\' board at distance of', answer: '1200M', distance: '1200M' },
+    { question: 'To indicate the Loco pilot of approaching A Class \'D\' stations, a retro reflective type  \'Warning Board\' shall be provided on approach end in rear of the \'D class station from \'ENGINE STOP\' board at distance of 1200M.', answer: '1200M', distance: '1200M' },
     { question: 'On B.G, from the obstruction (work spot) Engineering Caution indicator is located at', answer: '1200M', distance: '1200M' },
     
     { question: 'When the train is required to stop and the restriction is likely to last only for a day or less, on BG, detonators shall be placed at a distance of', answer: '1200, 1210, 1220 metres', distance: '1200M' },

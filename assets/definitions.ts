@@ -637,4 +637,29 @@ any other accident, which in the opinion of the Chief Commissioner of Railway Sa
       definition: "An averted collision is a circumstance under which, but for the vigilance shown by any person or persons, a collision would have occurred either outside station limits or within station limits between two trains or between a train and an obstruction.",
       reference: "Accident Manual 2012, Rule 105(10)"
     },
+    {
+      number: 105,
+      term: "Long Haul Train",
+      definition: "A train formed by combination of two or more Standard Rakes.",
+      reference: "--"
+    },
+    {
+      number: 106,
+      term: "Standard Rake",
+      definition: "A block rake composition as notified by Railway Board. (BOXN-59, BCNHL-58, BTPN-50",
+      reference: "--"
+    },
+    {
+      number: 107,
+      term: "Signal",
+      definition: "A visible or audio indication controlling train movement.",
+      reference: "--"
+    },
+    {
+      number: 105,
+      term: "Special Class Station",
+      definition: "Any block station which can not be worked under class 'A', class 'B' or class 'C' condition is termed as Special Class Station.",
+      reference: "--"
+    },
+    
   ];

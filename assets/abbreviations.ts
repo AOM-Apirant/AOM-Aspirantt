@@ -2948,6 +2948,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Kavach",
       reference: "--"
     },
+    { acronym: "SWB", fullForm: "Signal Warning Board",
+      explanation: "Signal Warning Board is used when double distant signal is not provided and it is placed in 1400 metres distance in rear of Stop signal.",
+      reference: "--"
+    },
     { acronym: "SWR", fullForm: "Station Working Rules",
       explanation: "A station-specific document describing procedures for safe and efficient train working",
       reference: "--"
@@ -3384,6 +3388,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "WILD", fullForm: "Wheel Impact Load Detection",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "WMUCS", fullForm: "Wireless Multiple Unit Coupler System",
       explanation: "Will be added later",
       reference: "--"
     },

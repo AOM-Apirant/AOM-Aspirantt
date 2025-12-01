@@ -60,6 +60,7 @@ const Timings = () => {
     { question: 'The validity of material train BPC in case of UIC rakes subject to examination of the train by TXR once in fortnight is', answer: '30 days', timing: '30 days' },
     
     { question: 'Engineering branch will arrange with the Operating branch for the issue of a circular notice, which shall be valid for', answer: '3 months', timing: '3 months' },
+    { question: 'All Signals on a section shall be jointly inspected by the Signal, Transportation and Loco Inspectors (SI, TI & LI) at least once in 3 months.', answer: '3 months', timing: '3 months' },
     
     { question: 'The 2/4 wire telephone will be tested by SE/JE-Tele. once in', answer: '6 months', timing: '6 months' },
     { question: 'Contents of the EL Box shall be tested by the SE / JE-TL. once in', answer: '6 months', timing: '6 months' },
