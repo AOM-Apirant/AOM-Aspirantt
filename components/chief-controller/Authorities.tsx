@@ -13,11 +13,16 @@ const Authorities = () => {
     { question: 'S & T Disconnection and Reconnection Notice', answer: 'T.351', form: 'T.351' },
     
     { question: 'Advance authority to pass defective signal is', answer: 'T.369(1) + PHS at the Foot of the Signal', form: 'T.369' },
+
+    { question: 'The rear Station master shall give T.369(1) + PLCT to the Loco Pilot to pass the Stop signal stuck in "OFF" position.', answer: 'T.369(1) + PLCT', form: 'T.369' },
     
     { question: 'Authority to pass defective starter signal (if it is not LSS) is', answer: 'T.369(3b) + PHS', form: 'T.369' },
     { question: 'The authority required by Loco Pilot when passes starter at "ON" partly and stopped before Advanced Starter, apart from ATP', answer: 'T.369 (3b) + PHS + memo countersigned by Guard + Advanced starter off or PLCT', form: 'T.369' },
+
     { question: 'When LSS fails on single line automatic block system, Authority to proceed to Loco Pilot and restricted speed for first train are', answer: 'T/369(3b) + 10 kmph Caution Order', form: 'T.369' },
+
     { question: 'When LSS fails on D/L automatic block system, authority be given to LP of the train', answer: 'T/369(3b)', form: 'T.369' },
+    
     { question: 'LP shall pass a Semi - Automatic signal with extinguished \'A\' marker at \'ON\' on receipt of written authority', answer: 'T.369(3b)', form: 'T.369' },
     
     { question: 'Caution Order (Divisional/Sectional)', answer: 'T.409', form: 'T.409' },
@@ -110,7 +115,11 @@ const Authorities = () => {
     { question: 'When RRV is to be dispatched from a station provided with track circuit/panel, such movements in the block section would be dealt only on', answer: 'PLCT', form: 'Other' },
     { question: 'To pass Home signal of class \'C\' station on Double line section', answer: 'PLCT', form: 'Other' },
     { question: 'When Loco pilot enters block section without an ATP and report is sent to station in rear, the SM gives', answer: 'PLCT', form: 'Other' },
+
     { question: 'When Loco pilot enters block section without an ATP and report is sent to station in advance, the SM gives', answer: 'Caution Order', form: 'Other' },
+
+    { question: 'If Permissive signal is stuck in "OFF" postion, the rear Station master shall give Caution Order to the Loco Pilot to stop and observe the PHS at the foot of the signal stuck in "OFF" position', answer: 'Caution Order', form: 'Other' },
+
     { question: 'Authority to go beyond opposite FSS for shunting purpose on Single line', answer: 'ATP + Written Memo to Push back + Taking off signals', form: 'Other' },
     { question: 'Brake Power Certificate', answer: 'RS-6', form: 'Other' },
     { question: 'After stopping at Engineering Stop Indicator Loco pilot has to sign in', answer: 'ER-7', form: 'Other' },

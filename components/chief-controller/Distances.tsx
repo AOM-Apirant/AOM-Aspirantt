@@ -21,19 +21,39 @@ const Distances = () => {
     { question: 'From the obstruction (work spot), Engineering Stop indicator is located at', answer: '30M', distance: '30M' },
     
     { question: 'While receiving a train on an obstructed line, STOP hand signal shall be exhibited from the point of obstruction at a distance of not less than', answer: '45M', distance: '45M' },
+
+    { question: 'A safety radius/distance of 45M should be maintained during the explosion of detonators.', answer: '45M', distance: '45M' },
     
     { question: 'When a train is stopped in an automatic block signalling section on single line and train cannot proceed further, the Guard shall protect in rear duly placing detonators at', answer: '90, 180, &190M', distance: '90M' },
     
     { question: 'When automatic danger level indicator is flashing red light the Loco Pilot shall stop the train before the indicator at', answer: '100M', distance: '100M' },
     
-    { question: 'On Single line MAS the Signal Over Lap shall not be less than', answer: '120M', distance: '120M' },
+    { question: 'On Single line Multiple Aspect Signals(MAS), the Signal Over Lap(SOL) shall not be less than', answer: '120M', distance: '120M' },
+
+    { question: 'On a Double line section, Advance Starter shall be placed at a distance of 120M from Starter signal in Multiple Aspect Signals(MAS).', answer: '120M', distance: '120M' },
+
+    { question: 'On a Single line section, Advance Starter shall be placed at a distance of 120M from the Trailing points in Maultiple Aspect Signals(MAS).', answer: '120M', distance: '120M' },
+
+    { question: 'On a Single line Shunting Limit Board (SLB) is located from Outermost points at a distance of 120M in Multiple Aspect Signals (MAS)', answer: '120M', distance: '120M' },
+
     { question: 'On Double line the automatic signal shall not assume OFF position unless the line is clear not only up to the next Automatic signal but also for an adequate distance of not less than', answer: '120M', distance: '120M' },
     
     { question: 'After passing an automatic signal at ON, LP of the following train hauled by any locomotive shall ensure that a minimum distance to be maintained between his train and preceding train is', answer: '150 metres or two OHE masts', distance: '150M' },
     
-    { question: 'The distance from Home signal to B S L B shall not be less than', answer: '180M', distance: '180M' },
+    { question: 'On a Double line, the distance from Home signal to Block Section Limit Board (BSLB) or Outermost facing points shall not be less than 180M in Multiple Aspect Signals (MAS)', answer: '180M', distance: '180M' },
+
+    { question: 'On a Double line section, Advance Starter shall be placed at a distance of 180M from Starter signal in Two Aspect Signals(TAS).', answer: '180M', distance: '180M' },
+
+    { question: 'On a Single line section, Advance Starter shall be placed at a distance of 180M from the Trailing points in Two Aspect Signals(TAS).', answer: '180M', distance: '180M' },
+
+    { question: 'Home signal is shall be located on Single line section with Multiple Aspect Signals (MAS) at a distance of Not less than 180M from opposing Shunting Limit Board (SLB)/Advance Starter.', answer: '180M', distance: '180M' },
+
+    { question: 'On a Single line Shunting Limit Board (SLB) is located from Outermost points at a distance of 180M in Two Aspect Signals (TAS)', answer: '180M', distance: '180M' },
+
     { question: 'From either side of SM office, the VTP is located at a distance of', answer: '180M', distance: '180M' },
+
     { question: 'Gate-cum-distant signal will be located in rear of the gate at a distance of', answer: '180M', distance: '180M' },
+
     { question: 'On absolute block system, the adequate distance (BOL) beyond FSS on multiple aspect signalling for granting line clear is not less than', answer: '180 M', distance: '180M' },
     
     { question: 'LP shall ensure head light produces illumination to see ahead clearly for a distance of', answer: '250M', distance: '250M' },
@@ -42,12 +62,23 @@ const Distances = () => {
     
     { question: 'Warning boards shall be fixed on OHE masts in rear of neutral sections at a distance of', answer: '250, 500M', distance: '250M' },
     
-    { question: 'From outermost signal the FSP is located at a distance of', answer: '270M', distance: '270M' },
+    { question: 'Fog Signal Post (FSP) is located at a distance of 270M in rear of FSS in either direction to indicate the location for placing detonators by Fog Signalman.', answer: '270M', distance: '270M' },
     
-    { question: 'At a Class \'B\' station, Single line with MAS, the distance from Home signal to outermost facing points shall not be less than', answer: '300M', distance: '300M' },
+    { question: 'At a Class \'B\' station, Single line section with Multiple Aspect Signals (MAS), the distance from Home signal to outermost facing points shall not be less than 300M.', answer: '300M', distance: '300M' },
     
     { question: 'At a class \'C\' station line clear shall not be given unless- the whole of the last preceding train has passed complete at least __________beyond the Home signal and_________', answer: '400M, Continuing its journey', distance: '400M' },
+
     { question: 'At a \'A\' class station the distance to be kept free beyond Home signal, before granting line clear is', answer: '400M', distance: '400M' },
+
+    { question: 'Home signal shall be located on Double line section with Two Aspect Signals (TAS) at a distance of Not less than 400M from Outer signal.', answer: '400M', distance: '400M' },
+
+    { question: 'The adequate distance of IB Signal is 400M.', answer: '400M', distance: '400M' },
+
+    { question: 'The Outer signal is located on a Single line section at a distance of Not less than 400M from opposing Shunting Limit Board (SLB)/Advance Starter.', answer: '400M', distance: '400M' },
+
+    { question: 'The Outer signal is located on a Double line section at a distance of Not less than 400M from Home signal.', answer: '400M', distance: '400M' },
+
+    { question: 'The Outer signal is located on a Single line section at a distance of Not less than 580M from Outermost points.', answer: '580M', distance: '580M' },
     
     { question: 'Whistle Board in case of approach to manned level crossing gates is at a distance of', answer: '600M', distance: '600M' },
     { question: 'When the train is required to stop and the restriction is likely to last only for a day or less, on BG a Banner flag shall be exhibited at a distance of', answer: '600M', distance: '600M' },
@@ -66,7 +97,7 @@ const Distances = () => {
     
     { question: 'Caution board before automatic danger level indicator shall be provided at', answer: '1300M', distance: '1300M' },
     
-    { question: 'In rear of FSS, the Signal warning board is located at a distance of', answer: '1400M', distance: '1400M' },
+    { question: 'Signal Warning Board (SWB) is provided in rear of First Stop Signal (FSS) and Gate stop signal at a minimum distance of 1400M', answer: '1400M', distance: '1400M' },
     
     { question: 'After exploding the detonator, if no obstruction found further, the Loco Pilot, can pick up normal speed after proceeding cautiously up to a distance of', answer: '1500M', distance: '1500M' },
     

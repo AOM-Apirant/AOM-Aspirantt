@@ -29,7 +29,10 @@ const SpeedRestrictions = () => {
     { question: 'The Station Master who received the message about the rail fracture through LP, he shall arrange to issue caution order of', answer: '15 kmph', speed: '15 kmph' },
     { question: 'When a train is dispatched on T/J602, when view ahead is clear, the speed shall not exceed', answer: '15 kmph', speed: '15 kmph' },
     { question: 'When Loco Pilot passes an automatic signal at ON without any authority after waiting 1/2 minutes during day/night with great caution so as to stop short of any obstruction', answer: '15 kmph', speed: '15 kmph' },
+
     { question: 'In cases where the leading cab of an EMU/MEMU has become defective, brake equipment in the leading cab is inoperative; the maximum speed shall be', answer: '15 kmph', speed: '15 kmph' },
+
+    { question: 'The Loco Pilot on observing PHS shall be pass the defective signal at "ON" position at a speed not exceeding 15 kmph..', answer: '15 kmph', speed: '15 kmph' },
     
     { question: 'When IBS is at "ON" and the telephone is out of order, Loco Pilot after waiting for five minutes shall proceed when view is clear/not clear up to next stop signal at a speed of', answer: '15/8 kmph', speed: '15/8 kmph' },
     { question: 'When material train, TTM & Tower wagon are permitted in same block section to work, speed for the following is restricted to and the distance to be kept between them is', answer: '15/8 kmph, 150metres', speed: '15/8 kmph' },

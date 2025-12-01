@@ -15,7 +15,7 @@ const Timings = () => {
     { question: 'During day when Gate signal is at ON, the LP shall wait for', answer: '1 minute', timing: '1 minute' },
     { question: 'The signal shall be treated as defective, whenever colour light signal is flickering / bobbing and does not assume a steady aspect at least for', answer: '60 seconds', timing: '1 minute' },
     
-    { question: 'When the Loco Pilot notices a signal warning of an obstruction and no further details are noticed, shall stop during day/night for', answer: 'one/two minute', timing: '1-2 minutes' },
+    { question: 'When the Loco Pilot notices a signal warning of an obstruction other than detonators and no further details are noticed, shall stop the train immediately and wait during day/night for 1/2 minutes cautiously proceed up to next block station', answer: 'one/two minute', timing: '1/2 minutes' },
     
     { question: 'During night when Gate signal is at ON, the LP shall wait for', answer: '2 minutes', timing: '2 minutes' },
     
@@ -41,7 +41,11 @@ const Timings = () => {
     { question: 'The time interval between two trains during signal and communication failure on DL Automatic Block System shall be', answer: '25 minutes or normal running time whichever is more', timing: '25 minutes' },
     
     { question: 'When trains are dealt on T/C 602, the time interval between two trains shall be', answer: '30 minutes', timing: '30 minutes' },
+
+    { question: 'Line clear may be given on information from Fog Signalman or 30 minutes from departure of Fog Signalman.', answer: '30 minutes', timing: '30 minutes' },
+
     { question: 'A relief engine should be sent, if the engine or vehicles running away have not arrived even after a lapse of how many minutes more than the running time of the slowest speed goods train', answer: '30 minutes', timing: '30 minutes' },
+
     { question: 'Before the passage of VIP special patrolling is done at least', answer: '30 mins before', timing: '30 minutes' },
     
     { question: 'Depending upon trains in the section Disconnection should normally be allowed by SM for duration up to', answer: '60 minutes', timing: '60 minutes' },
@@ -69,6 +73,8 @@ const Timings = () => {
     { question: 'Record foils of the caution orders shall be preserved for a period of', answer: '6 months', timing: '6 months' },
     
     { question: 'Fire-Extinguishers: Replacement shall be done once in', answer: '12 months', timing: '12 months' },
+
+    { question: 'Testing of detonators shall be done once in 12 months.', answer: '12 months', timing: '12 months' },
     
     { question: 'Periodical census of traffic at all level crossings shall be carried out for every', answer: '3 years for 7 days', timing: '3 years' },
     
