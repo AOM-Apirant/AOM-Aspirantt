@@ -22,11 +22,17 @@ const SpeedRestrictions = () => {
     { question: 'Rail fracture of less than 30mm, the speed of first train shall be', answer: '10 kmph', speed: '10 kmph' },
     
     { question: 'Maximum speed of motor trolley over points and crossings is', answer: '15 kmph', speed: '15 kmph' },
+
     { question: 'The speed of a goods train while entering terminal yard is restricted to', answer: '15 kmph', speed: '15 kmph' },
-    { question: 'When leading compartment of an electric loco is defective and the train is driven from trailing compartment by loco pilot the speed shall not exceed', answer: '15 kmph', speed: '15 kmph' },
+
+    { question: 'When leading compartment of an electric or diesel engine with twin cab is defective and the train is driven from trailing compartment by Loco Pilot, the speed shall not exceed', answer: '15 kmph', speed: '15 kmph' },
+
     { question: 'The speed during shunting operations shall not exceed', answer: '15 kmph', speed: '15 kmph' },
+
     { question: 'Rail fracture of less than 30mm, the speed of second and subsequent trains shall be', answer: '15 kmph', speed: '15 kmph' },
+
     { question: 'The Station Master who received the message about the rail fracture through LP, he shall arrange to issue caution order of', answer: '15 kmph', speed: '15 kmph' },
+
     { question: 'When a train is dispatched on T/J602, when view ahead is clear, the speed shall not exceed', answer: '15 kmph', speed: '15 kmph' },
     { question: 'When Loco Pilot passes an automatic signal at ON without any authority after waiting 1/2 minutes during day/night with great caution so as to stop short of any obstruction', answer: '15 kmph', speed: '15 kmph' },
 
@@ -41,8 +47,13 @@ const SpeedRestrictions = () => {
     { question: 'Relief loco/train shall proceed with a restricted speed of', answer: '15/10 KMPH', speed: '15/10 kmph' },
     
     { question: 'When engine is pushing a train and Guard is travelling in brake van, which is leading, the speed shall not exceed', answer: '25 kmph', speed: '25 kmph' },
+
+    { question: 'No engine or self-propelled vehicle shall push any train outside station limits, except in accordance with special instructions and at a speed not exceeding 25 kmph.', answer: '25 kmph', speed: '25 kmph' },
+
     { question: 'During T S L working, the speed of first train shall be', answer: '25 kmph', speed: '25 kmph' },
+
     { question: 'The first train running in the wrong direction during TSL working on Automatic block system shall proceed with a restricted speed of', answer: '25 KMPH', speed: '25 kmph' },
+
     { question: 'The light engine which is coming on T/609 to pick up the second portion shall come with a restricted speed of', answer: '25 KMPH', speed: '25 kmph' },
     
     { question: 'During prolonged failure of signals but communications are available on D/L Automatic Block System, the speed of first train and second and subsequent trains respectively', answer: '25 kmph & Sectional speed', speed: '25 kmph' },
@@ -62,7 +73,8 @@ const SpeedRestrictions = () => {
     { question: 'If the night patrolman does not turn up even after 15 minutes beyond the schedule arrival time, SM shall stop all the trains and issue caution order restricting the speed to', answer: '40 kmph', speed: '40 kmph' },
     { question: 'When head light is defective after putting marker lights \'on\' train can go with a restricted speed of', answer: '40 kmph or severest speed of the section', speed: '40 kmph' },
     { question: 'In case of emergency the Assistant Loco Pilot can be authorized to drive the train at a restricted speed up to the nearest point where he can be relieved, not exceeding', answer: '40 kmph', speed: '40 kmph' },
-    { question: 'When leading compartment of an electric engine is defective and the train is driven from trailing compartment by Assistant LP, the speed shall not exceed', answer: '40 kmph', speed: '40 kmph' },
+
+    { question: 'When leading compartment of an electric or diesel engine with twin cab is defective and the train is driven from trailing compartment by Assistant Loco Pilot, the speed shall not exceed', answer: '40 kmph', speed: '40 kmph' },
     
     { question: 'Isolation is necessary where the trains are to run through a station at a speed exceeding', answer: '50 kmph', speed: '50 kmph' },
     { question: 'When major work such as relaying and re-girdering is in progress a speed restriction that shall be observed on the adjoining line of DL//MULTIPLE/ line section', answer: '50kmph', speed: '50 kmph' },

@@ -24,9 +24,20 @@ const Authorities = () => {
     { question: 'When LSS fails on D/L automatic block system, authority be given to LP of the train', answer: 'T/369(3b)', form: 'T.369' },
     
     { question: 'LP shall pass a Semi - Automatic signal with extinguished \'A\' marker at \'ON\' on receipt of written authority', answer: 'T.369(3b)', form: 'T.369' },
+
+    { question: 'If "A" & "AG" marker lit, Signal above shall be deemed to work as a Manual stop signal and Loco Pilot shall pass only on assumption of "OFF" position or on receipt of T.369(3b) + PHS', answer: 'T.369(3b) + PHS', form: 'T.369' },
+
+    { question: 'If "A" & "AG" marker extinguished, Points are not correctly secured or failed, irrespective of LC gate position, Signal above shall be deemed to work as a Manual stop signal and Loco Pilot shall pass only on assumption of "OFF" position or on receipt of T.369(3b) + PHS', answer: 'T.369(3b) + PHS', form: 'T.369' },
+
+
+    { question: 'When a Loco Pilot finds a Semi-Automatic Stop signal with illuminated "A" marker at "ON". Where there is a provision of "AG" marker, and "AG" marker is illuminated, loco pilot shall bring the train to stop in rear of it and shall pass such signal only on assumption of "OFF" position or on receipt of T.369(3b) + PHS', answer: 'T.369(3b) + PHS', form: 'T.369' },
+
+    { question: 'When a Loco Pilot finds a Semi-Automatic Stop signal with Extinguished "A" marker at "ON". Where there is no provision of "AG" marker, Loco pilot shall bring the train to stop in rear of it and shall pass such signal only on assumption of "OFF" position or on receipt of T.369(3b) + PHS', answer: 'T.369(3b) + PHS', form: 'T.369' },
     
     { question: 'Caution Order (Divisional/Sectional)', answer: 'T.409', form: 'T.409' },
     { question: 'Caution Order (Nil)', answer: 'T/A 409', form: 'T.409' },
+
+    { question: 'Remainder Caution Order', answer: 'T/B 409', form: 'T.409' },
     
     { question: 'Train Examination Advice Memo', answer: 'T.431', form: 'T.431' },
     

@@ -656,10 +656,16 @@ any other accident, which in the opinion of the Chief Commissioner of Railway Sa
       reference: "--"
     },
     {
-      number: 105,
+      number: 108,
       term: "Special Class Station",
       definition: "Any block station which can not be worked under class 'A', class 'B' or class 'C' condition is termed as Special Class Station.",
       reference: "--"
+    },
+    {
+      number: 109,
+      term: "Advertised Time",
+      definition: "Scheduled departure and arrival times mentioned in the Public Time Table(PTT). No passenger or mixed train shall be despatched from a station before the advertised time.",
+      reference: "GR 4.02"
     },
     
   ];

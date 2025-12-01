@@ -36,7 +36,10 @@ const Timings = () => {
     
     { question: 'In Following train, Pilot Guard, Train staff & ticket systems, a train shall follow another from a station unless there has elapsed, an interval of not less than_______, or such shorter interval as may be fixed by special instructions', answer: '15 minutes', timing: '15 minutes' },
     { question: 'The Guard shall protect in rear when a train is held up at First Stop Signal for more than', answer: '15 minutes', timing: '15 minutes' },
+
     { question: 'If for any reason, a train is brought to a stand, the hand brakes of Locomotive and formation brakes shall be applied for more than if stoppage is more than', answer: '15 minutes', timing: '15 minutes' },
+
+    { question: 'Guards of Suburban trains shall report for duty at least 15 minutes before the scheduled departure of the train.', answer: '15 minutes', timing: '15 minutes' },
     
     { question: 'The time interval between two trains during signal and communication failure on DL Automatic Block System shall be', answer: '25 minutes or normal running time whichever is more', timing: '25 minutes' },
     
@@ -47,6 +50,10 @@ const Timings = () => {
     { question: 'A relief engine should be sent, if the engine or vehicles running away have not arrived even after a lapse of how many minutes more than the running time of the slowest speed goods train', answer: '30 minutes', timing: '30 minutes' },
 
     { question: 'Before the passage of VIP special patrolling is done at least', answer: '30 mins before', timing: '30 minutes' },
+
+    { question: 'Passenger Guards must report for duty at least 30 minutes before the scheduled departure of the train.', answer: '30 mins before', timing: '30 minutes' },
+
+    { question: 'In the case of Goods trains originating from a terminal yard, the Guards shall appear on duty at least 45 minutes before the departure of the train is scheduled to leave.', answer: 'at least 45 mins before', timing: '45 minutes' },
     
     { question: 'Depending upon trains in the section Disconnection should normally be allowed by SM for duration up to', answer: '60 minutes', timing: '60 minutes' },
     
