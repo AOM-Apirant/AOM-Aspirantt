@@ -821,6 +821,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "C&W", fullForm: "Carriage & Wagons",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "CWC", fullForm: "Carriage & Wagon Controller",
       explanation: "Will be added later",
       reference: "--"
@@ -1127,7 +1131,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "EMU", fullForm: "Electric Multiple Unit",
+    { acronym: "EMU", fullForm: "Electrical Multiple Units",
       explanation: "A self-propelled passenger train unit powered by electricity, commonly used for suburban services",
       reference: "--"
     },
@@ -1247,7 +1251,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "FTR", fullForm: "Full Tariff Rate",
+    { acronym: "FTR", fullForm: "Full Tariff Rates",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -1659,6 +1663,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
+    { acronym: "IRTTCC", fullForm: "Inter Railway Time Table Co-ordination Committee",
+      explanation: "The Inter Railway Time Table Co-ordination Committee (IRTTCC) is the apex national body that finalises all Time Table related decisions across Indian Railways. It is the only forum where all Zonal Railways sit together under the Railway Board’s Directorate(Coaching) to harmonize train timings across zones.",
+      reference: "--"
+    },
     { acronym: "IRWCMS", fullForm: "Indian Railways Works Contract Management System",
       explanation: "Will be added later",
       reference: "--"
@@ -1894,6 +1902,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "MGR", fullForm: "Many Go Round",
+      explanation: "Will be added later",
+      reference: "--"
+    },
+    { acronym: "MIS", fullForm: "Management Information System",
       explanation: "Will be added later",
       reference: "--"
     },
@@ -2354,7 +2366,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       reference: "--"
     },
     { acronym: "PTO", fullForm: "Preferential Traffic Order",
-      explanation: "Will be added later",
+      explanation: "No undue preference should be given to any individual or commodity in allotment of wagons (Section 70 of the Indian Railways Act 1989).",
       reference: "--"
     },
     { acronym: "PTO", fullForm: "Previlege Ticket Order",
@@ -2967,7 +2979,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
   ],
   T: [
     { acronym: "TAAG", fullForm: "Trains At A Glance",
-      explanation: "Will be added later",
+      explanation: "Trains At A Glance (TAAG) is the All-India Public Time Table of Indian Railways. It is the most authoritative national publication for all long distance train timings, routes, days of run, classes, distance tables, and passenger information across Indian Railways.",
       reference: "--"
     },
     { acronym: "TACL", fullForm: "Two Aspect Colour Light",
@@ -3431,6 +3443,10 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
     },
   ],
   Z: [
+    { acronym: "ZBTT", fullForm: "Zero-Based Time Tabling",
+      explanation: "Will be added later",
+      reference: "--"
+    },
     { acronym: "ZRTI", fullForm: "Zonal Railway Training Institute",
       explanation: "Will be added later",
       reference: "--"

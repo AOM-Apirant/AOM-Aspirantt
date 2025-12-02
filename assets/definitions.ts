@@ -667,5 +667,41 @@ any other accident, which in the opinion of the Chief Commissioner of Railway Sa
       definition: "Scheduled departure and arrival times mentioned in the Public Time Table(PTT). No passenger or mixed train shall be despatched from a station before the advertised time.",
       reference: "GR 4.02"
     },
+    {
+      number: 110,
+      term: "Over Dimensional Consignment",
+      definition: "Over Dimensional Consignment (ODC) is any consignment which exceeds Standard Moving Dimensions (SMD) of Indian Railways. Even if infringement occurs in any part of the route, it becomes an ODC.",
+      reference: "--"
+    },
+    {
+      number: 111,
+      term: "Power Link",
+      definition: "An arrangement of a locomotive (Loco) for working a set of coaching trains (Mail/Express/Passenger trains) from one station to another station.",
+      reference: "--"
+    },
+    {
+      number: 112,
+      term: "Crew Link",
+      definition: "Links drawn up for Running Staff (Crew: LP/ALP & Guard). Crew Links are drawn up as per Hours of Employment Regulations (HOER).",
+      reference: "--"
+    },
+    {
+      number: 113,
+      term: "Power Plan",
+      definition: "A document that basically indicates the daily average number of locos required and planned for Freight Services, section wise, for each Division.",
+      reference: "--"
+    },
+    {
+      number: 114,
+      term: "Rake Link",
+      definition: "A Rake Link is a fixed operating plan that defines how each rake (set of coaches) is utilized over a period of time - ensuring maximum utilization of the rolling stock, adequate maintenance time, and punctual operation of passenger services.",
+      reference: "--"
+    },
+    {
+      number: 115,
+      term: "Loco Outage",
+      definition: "Loco Outage represents the average number of locomotives available for traffic use in a day (24 hours). It is a key performance indicator that reflects how effectively the available locomotives are being deployed for traffic operations. Loco Outage = Total Engine Hours for Traffic Use / 24",
+      reference: "--"
+    },
     
   ];
