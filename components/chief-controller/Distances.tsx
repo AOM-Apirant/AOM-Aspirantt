@@ -10,6 +10,8 @@ interface Distance {
 
 const Distances = () => {
   const distances: Distance[] = [
+    { question: '“Danger Zone” means the zone lying around any live equipment with in a radius of________', answer: '2M', distance: '2M' },
+
     { question: 'At non interlocked gates, the gateman, before opening the gate for road traffic shall fix a banner flag by day and red light by night at a distance of', answer: '5 Meters from Gate', distance: '5M' },
     
     { question: 'In thick, foggy or tempestuous weather impairing visibility and his engine explodes two detonators within a distance of 10 metres apart, the Loco Pilot will control his train immediately and will follow the aspect of', answer: 'stop signal ahead', distance: '10M' },
@@ -57,6 +59,8 @@ const Distances = () => {
     { question: 'On absolute block system, the adequate distance (BOL) beyond FSS on multiple aspect signalling for granting line clear is not less than', answer: '180 M', distance: '180M' },
     
     { question: 'LP shall ensure head light produces illumination to see ahead clearly for a distance of', answer: '250M', distance: '250M' },
+
+    { question: 'When material train, TTM and Tower wagon are permitted in the same block section to work, the distance to be kept between them shall be_____', answer: '250M', distance: '250M' },
     
     { question: 'During TIC on double line, when a train is stopped in the block section on account of accident, Guard shall protect the train by placing detonators at', answer: '250, 500, 510M', distance: '250M' },
     
@@ -107,6 +111,9 @@ const Distances = () => {
     
     { question: 'Under no circumstances a patrolman should be rostered to walk more than', answer: '20KM', distance: '20KM' },
     
+    { question: 'The provision of Catch siding is compulsory, where the falling gradient towards Station section is steeper than', answer: '1 in 80', distance: 'Gradients' },
+    { question: 'The provision of slip siding is compulsory, where the falling gradient towards block section is steeper than', answer: '1 in 100', distance: 'Gradients' },
+    { question: 'Dividing of Material train in the block section where the gradient is steeper than ________ is prohibited.', answer: '1 in 100', distance: 'Gradients' },
     { question: 'Rail dollies shall not be worked on sections having gradients steeper than', answer: '1 in 200', distance: 'Gradients' },
     { question: 'For shunting purpose, the gradient considered as steep gradient for non roller bearing wagons', answer: '1 in 260', distance: 'Gradients' },
     { question: 'The gradient that is considered as steep gradient for the purpose shunting of roller bearing wagons', answer: '1 in 400', distance: 'Gradients' },

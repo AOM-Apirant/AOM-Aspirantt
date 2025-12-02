@@ -98,10 +98,16 @@ const Authorities = () => {
     { question: 'Authority to despatch the trains during Temporary Single Line working on Automatic block system (first train on right line and all trains on wring line)', answer: 'T/A 912 +  T/D 602', form: 'T.912' },
     
     { question: 'When signals and communication fail on Double line Automatic Block System, the authority given to the Loco Pilot is', answer: 'T/B 912', form: 'T.912' },
+
+    { question: 'When all signals and communications fail on Double line Automatic Block System, the authority given to the Loco Pilot is ________ & to dispatch another train a clear interval of _________ min or running time between two stations whichever is more', answer: 'T/B 912 & 25 minutes', form: 'T.912' },
     
     { question: 'Relief engine/train to enter occupied block section in Automatic block system', answer: 'T/C 912', form: 'T.912' },
+
+    { question: 'To despatch Relief engine / train in to an occupied/ obstructed automatic block section is _______ authority given to LP to assist the disabled engine/train & speed is ________ when view is not clear', answer: 'T/C 912 & 10 kmph', form: 'T.912' },
     
     { question: 'During prolonged failure of signals but communications are available on D/L Automatic Block System, the authority given to Loco Pilot is', answer: 'T/ D 912', form: 'T.912' },
+
+    { question: 'When direction of traffic can not be established on a single line in Automatic block system, authority is______', answer: 'T/D 912 & First Train Speed 25/10 Kmph', form: 'T.912' },
     
     { question: 'During TSL working Automatic Block System, authorities for every first train proceeding on right line when signal and communications are working', answer: 'T/E 912', form: 'T.912' },
     
@@ -111,6 +117,8 @@ const Authorities = () => {
     { question: 'Line clear reply on Paper Line Clear Ticket', answer: 'T/B 1425', form: 'T.1425' },
     { question: 'On Double line section in Up direction when LSS is defective Authority to proceed is', answer: 'T/C.1425', form: 'T.1425' },
     { question: 'On Single line token less section, when LSS is defective Authority to proceed for DN train is', answer: 'T/D.1425', form: 'T.1425' },
+
+    { question: 'On Single line, Double line and Multi line sections, when block instrument is interrupted or suspended, every train shall be stopped, run through trains being stopped out of course and the Station Master shall issue to the Loco Pilot of train', answer: 'T/C 1425 OR T/D.1425', form: 'T.1425' },
     
     { question: 'Trolley/Lorry notice is given by P W I in form No.', answer: 'T. 1518', form: 'T.1518' },
     
@@ -130,6 +138,8 @@ const Authorities = () => {
     { question: 'When Loco pilot enters block section without an ATP and report is sent to station in advance, the SM gives', answer: 'Caution Order', form: 'Other' },
 
     { question: 'If Permissive signal is stuck in "OFF" postion, the rear Station master shall give Caution Order to the Loco Pilot to stop and observe the PHS at the foot of the signal stuck in "OFF" position', answer: 'Caution Order', form: 'Other' },
+
+    { question: 'When goods Train run without Guard has to be divided, the Loco Pilot shall bring first portion by preparing', answer: 'Written Memo', form: 'Other' },
 
     { question: 'Authority to go beyond opposite FSS for shunting purpose on Single line', answer: 'ATP + Written Memo to Push back + Taking off signals', form: 'Other' },
     { question: 'Brake Power Certificate', answer: 'RS-6', form: 'Other' },

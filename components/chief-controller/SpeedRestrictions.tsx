@@ -20,6 +20,10 @@ const SpeedRestrictions = () => {
     
     { question: 'When \'lurch\' is reported and subsequently a train is sent in the absence of engineering official, CO is given to the LP to stop dead if considered safe, proceed at a speed of', answer: '10 kmph', speed: '10 kmph' },
     { question: 'Rail fracture of less than 30mm, the speed of first train shall be', answer: '10 kmph', speed: '10 kmph' },
+
+    { question: 'Maximum speed during fog in Automatic Signalling system while passing Semi-Automatic signal at ON when A marker is illuminated', answer: '10 kmph', speed: '10 kmph' },
+
+    { question: 'Maximum spd of trains during dense fog in automatic block system is ______ kmph when aspect of signal ahead is caution.', answer: '10 kmph', speed: '10 kmph' },
     
     { question: 'Maximum speed of motor trolley over points and crossings is', answer: '15 kmph', speed: '15 kmph' },
 
@@ -39,6 +43,8 @@ const SpeedRestrictions = () => {
     { question: 'In cases where the leading cab of an EMU/MEMU has become defective, brake equipment in the leading cab is inoperative; the maximum speed shall be', answer: '15 kmph', speed: '15 kmph' },
 
     { question: 'The Loco Pilot on observing PHS shall be pass the defective signal at "ON" position at a speed not exceeding 15 kmph..', answer: '15 kmph', speed: '15 kmph' },
+
+    { question: 'Light engine/vehicle which is going for opening of communication shall proceed with a restricted speed of _______ kmph.', answer: '15 kmph', speed: '15 kmph' },
     
     { question: 'When IBS is at "ON" and the telephone is out of order, Loco Pilot after waiting for five minutes shall proceed when view is clear/not clear up to next stop signal at a speed of', answer: '15/8 kmph', speed: '15/8 kmph' },
     { question: 'When material train, TTM & Tower wagon are permitted in same block section to work, speed for the following is restricted to and the distance to be kept between them is', answer: '15/8 kmph, 150metres', speed: '15/8 kmph' },
@@ -65,9 +71,15 @@ const SpeedRestrictions = () => {
     { question: 'During dense fog maximum speed of a train on Automatic block system when signal showing two yellow lights shall be restricted to', answer: '30 kmph', speed: '30 kmph' },
     { question: 'Unless permitted under approved special instructions the maximum speed permitted on turn out/cross over is', answer: '30 kmph', speed: '30 kmph' },
     { question: 'The speed of trains over Non-Interlocked points, turnouts and crossover shall not exceed', answer: '30 kmph', speed: '30 kmph' },
+
     { question: 'Maximum speed of motor trolley during night is', answer: '30 kmph', speed: '30 kmph' },
+
     { question: 'The speed of the train while passing through Neutral section shall not be less than', answer: '30 kmph', speed: '30 kmph' },
+
     { question: 'During Non interlocking working, allowed to enter (taking off signals) cautiously at speed not exceeding', answer: '30 kmph', speed: '30 kmph' },
+
+    { question: 'LP and Guard notice Flat tyre on Run in Block Section should clear block section with a speed restriction of', answer: '30 kmph', speed: '30 kmph' },
+
     
     { question: '\'Patrol\' or \'Search-light\' special with one or more vehicles in front of the engine may be permitted to run at a maximum speed of', answer: '40 kmph', speed: '40 kmph' },
     { question: 'If the night patrolman does not turn up even after 15 minutes beyond the schedule arrival time, SM shall stop all the trains and issue caution order restricting the speed to', answer: '40 kmph', speed: '40 kmph' },
@@ -83,6 +95,8 @@ const SpeedRestrictions = () => {
     { question: 'During dense fog maximum speed of a train on Automatic block system when signal showing green light shall be restricted to', answer: '60kmph', speed: '60 kmph' },
     
     { question: 'When healthy section is temporarily isolated and re-energised, if train entered faulty section, the speed of the first train by day / night shall be', answer: '60/30 kmph', speed: '60/30 kmph' },
+
+    { question: 'Heavy wind is considered dangerous for running trains if wind velocity is________', answer: '65 kmph or more', speed: '65 kmph' },
     
     { question: 'During dense fog maximum speed of a train on Automatic block system when signal showing green light and fog safety device is provided shall be restricted to', answer: '75kmph', speed: '75 kmph' },
     { question: 'During dense fog and fog safety device is provided maximum speed of a train on Absolute block system shall be restricted to', answer: '75 kmph', speed: '75 kmph' },

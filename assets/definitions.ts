@@ -703,5 +703,11 @@ any other accident, which in the opinion of the Chief Commissioner of Railway Sa
       definition: "Loco Outage represents the average number of locomotives available for traffic use in a day (24 hours). It is a key performance indicator that reflects how effectively the available locomotives are being deployed for traffic operations. Loco Outage = Total Engine Hours for Traffic Use / 24",
       reference: "--"
     },
+    {
+      number: 116,
+      term: "Sectional Capacity",
+      definition: "The number of trains which can be run on a section in 24 hours is termed as Sectional Capacity.",
+      reference: "--"
+    },
     
   ];

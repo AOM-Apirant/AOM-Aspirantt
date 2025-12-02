@@ -1941,7 +1941,7 @@ export const abbreviations: Record<string, AbbreviationItem[]> = {
       explanation: "Will be added later",
       reference: "--"
     },
-    { acronym: "MRT", fullForm: "Minimum Running Time",
+    { acronym: "MRT", fullForm: "Medical Relief Train",
       explanation: "A train equipped with doctors, staff, and medical supplies for accident relief work",
       reference: "--"
     },

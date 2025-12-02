@@ -10,7 +10,9 @@ interface Timing {
 
 const Timings = () => {
   const timings: Timing[] = [
-    { question: 'In the Siemen\'s panel \'NCR\' indication along with audible warning appears after a button is kept pressed for a prolonged period of', answer: '10 sec or more', timing: '10 sec' },
+    { question: 'In the Siemen\'s panel \'NCR\' indication along with audible warning appears after a button is kept pressed for a prolonged period of', answer: '10 seconds or more', timing: '10 seconds' },
+
+    { question: 'When acknowledgement cannot be obtained for ‘Call attention’ bell beat, again Call attention shall be given by SM after_____', answer: '20 seconds', timing: '20 seconds' },
     
     { question: 'During day when Gate signal is at ON, the LP shall wait for', answer: '1 minute', timing: '1 minute' },
     { question: 'The signal shall be treated as defective, whenever colour light signal is flickering / bobbing and does not assume a steady aspect at least for', answer: '60 seconds', timing: '1 minute' },
@@ -40,8 +42,9 @@ const Timings = () => {
     { question: 'If for any reason, a train is brought to a stand, the hand brakes of Locomotive and formation brakes shall be applied for more than if stoppage is more than', answer: '15 minutes', timing: '15 minutes' },
 
     { question: 'Guards of Suburban trains shall report for duty at least 15 minutes before the scheduled departure of the train.', answer: '15 minutes', timing: '15 minutes' },
+    { question: 'The target time for turning out Medical Relief Train (MRT) for direct/indirect dispatch, is ________', answer: '15/20 minutes', timing: '15/20 minutes' },
     
-    { question: 'The time interval between two trains during signal and communication failure on DL Automatic Block System shall be', answer: '25 minutes or normal running time whichever is more', timing: '25 minutes' },
+    { question: 'The time interval between two trains during signal and communication failure on Double line Automatic Block System shall be______', answer: '25 minutes', timing: '25 minutes' },
     
     { question: 'When trains are dealt on T/C 602, the time interval between two trains shall be', answer: '30 minutes', timing: '30 minutes' },
 
@@ -53,11 +56,17 @@ const Timings = () => {
 
     { question: 'Passenger Guards must report for duty at least 30 minutes before the scheduled departure of the train.', answer: '30 mins before', timing: '30 minutes' },
 
+    { question: 'The target time for turning out Accident Relief Train (ART) during day/night is_______', answer: '30/45 minutes', timing: '30/45 minutes' },
+
     { question: 'In the case of Goods trains originating from a terminal yard, the Guards shall appear on duty at least 45 minutes before the departure of the train is scheduled to leave.', answer: 'at least 45 mins before', timing: '45 minutes' },
     
     { question: 'Depending upon trains in the section Disconnection should normally be allowed by SM for duration up to', answer: '60 minutes', timing: '60 minutes' },
     
     { question: 'VHF sets as a means of communication should be permitted only in the presence of supervisory staff for prolonged duration of', answer: '3 hours or more', timing: '3 hours' },
+
+    { question: 'When power supply fails in Non-electrified area, one generator can be used at a time for a maximum of________', answer: '4 hours', timing: '4 hours' },
+
+    { question: 'No Railway Servant directly concerned with the working of trains shall take or use any alcoholic drink, sedative, narcotic or stimulant drug or preparation within ________ hours before the commencement of his duty or take or use any such drink, drugh or preparation when on duty.', answer: '8 hours', timing: '8 hours' },
     
     { question: 'Temporary Instructions shall be issued for Disconnections / maintenance likely to last for more than', answer: 'one day', timing: '1 day' },
     
@@ -72,6 +81,10 @@ const Timings = () => {
     
     { question: 'Engineering branch will arrange with the Operating branch for the issue of a circular notice, which shall be valid for', answer: '3 months', timing: '3 months' },
     { question: 'All Signals on a section shall be jointly inspected by the Signal, Transportation and Loco Inspectors (SI, TI & LI) at least once in 3 months.', answer: '3 months', timing: '3 months' },
+
+    { question: 'Mock drills for Accident Relief Train (ART) and Medical Relief Train (MRT) shall be conducted once in________', answer: '3 months', timing: '3 months' },
+
+    { question: 'The knowledge of staff that are required to use detonators shall be tested once in_______', answer: '3 months', timing: '3 months' },
     
     { question: 'The 2/4 wire telephone will be tested by SE/JE-Tele. once in', answer: '6 months', timing: '6 months' },
     { question: 'Contents of the EL Box shall be tested by the SE / JE-TL. once in', answer: '6 months', timing: '6 months' },
@@ -82,8 +95,14 @@ const Timings = () => {
     { question: 'Fire-Extinguishers: Replacement shall be done once in', answer: '12 months', timing: '12 months' },
 
     { question: 'Testing of detonators shall be done once in 12 months.', answer: '12 months', timing: '12 months' },
+
+    { question: 'The claim for compensation shall be made within the following time from the date of accident', answer: '12 months', timing: '12 months' },
     
     { question: 'Periodical census of traffic at all level crossings shall be carried out for every', answer: '3 years for 7 days', timing: '3 years' },
+
+    { question: 'No person shall operate the electrical block instruments unless he holds a competency certificate issued by Principal/ZRTI which shall be valid for a period of______', answer: '3 years', timing: '3 years' },
+
+    { question: 'The competency certificate issued by DEE (TRD) to SM for operating the isolators (in emergency) is valid for', answer: '3 years', timing: '3 years' },
     
     { question: 'Certificate of competency issued to Gateman will be valid for a period of', answer: '5 years', timing: '5 years' },
     { question: 'SWR should be issued afresh once in', answer: '5 years', timing: '5 years' },
