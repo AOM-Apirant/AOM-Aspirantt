@@ -72,8 +72,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+91 9063320063',
-      link: 'tel:+919063320063',
+      details: '+91 8919077054',
+      link: 'tel:+918919077054',
       gradient: 'from-green-500 to-emerald-500'
     },
     {

@@ -2,13 +2,15 @@
 
 import LoginForm from '@/components/LoginForm';
 import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { Suspense, useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export default function LoginPage() {
+function LoginPageContent() {
   const { status } = useSession();
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get('callbackUrl') || '/quiz';
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,9 +19,9 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (status === 'authenticated') {
-      router.push('/quiz');
+      router.push(callbackUrl);
     }
-  }, [status, router]);
+  }, [status, router, callbackUrl]);
 
   if (status === 'loading') {
     return (
@@ -94,7 +96,13 @@ export default function LoginPage() {
             {/* Right Side - Login Form */}
             <div className="flex items-center justify-center">
               <div className="w-full">
-                <LoginForm />
+                <Suspense fallback={
+                  <div className="flex items-center justify-center py-12">
+                    <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
+                  </div>
+                }>
+                  <LoginForm />
+                </Suspense>
               </div>
             </div>
           </div>
@@ -103,5 +111,17 @@ export default function LoginPage() {
         
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
+      </div>
+    }>
+      <LoginPageContent />
+    </Suspense>
   );
 }

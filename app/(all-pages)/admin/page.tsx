@@ -7,10 +7,7 @@ import {
   Users,
   Mail,
   Clock,
-  XCircle,
   RefreshCw,
-  Eye,
-  Filter,
   Search,
 } from "lucide-react";
 
@@ -33,7 +30,7 @@ interface Contact {
   email: string;
   subject: string;
   message: string;
-  status: "unread" | "read" | "replied";
+  status: "unread" | "read";
   createdAt: string;
 }
 
@@ -45,8 +42,6 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<"users" | "contacts">("users");
   const [searchTerm, setSearchTerm] = useState("");
-  const [statusFilter, setStatusFilter] = useState<string>("all");
-  const [selectedContact, setSelectedContact] = useState<Contact | null>(null);
 
   useEffect(() => {
     if (status === "unauthenticated") {
@@ -80,28 +75,6 @@ export default function AdminDashboard() {
     }
   };
 
-  const updateContactStatus = async (
-    contactId: string,
-    newStatus: "unread" | "read" | "replied"
-  ) => {
-    try {
-      const response = await fetch("/api/admin/contacts", {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ contactId, status: newStatus }),
-      });
-
-      if (response.ok) {
-        setContacts(
-          contacts.map((c) =>
-            c._id === contactId ? { ...c, status: newStatus } : c
-          )
-        );
-      }
-    } catch (error) {
-      console.error("Error updating status:", error);
-    }
-  };
 
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -113,16 +86,13 @@ export default function AdminDashboard() {
       contact.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       contact.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
       contact.subject.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesStatus =
-      statusFilter === "all" || contact.status === statusFilter;
-    return matchesSearch && matchesStatus;
+    return matchesSearch;
   });
 
   const stats = {
     totalUsers: users.length,
     totalContacts: contacts.length,
     unreadContacts: contacts.filter((c) => c.status === "unread").length,
-    repliedContacts: contacts.filter((c) => c.status === "replied").length,
   };
 
   if (loading || status === "loading") {
@@ -221,8 +191,8 @@ export default function AdminDashboard() {
             </button>
           </div>
 
-          {/* Search and Filter */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-6">
+          {/* Search */}
+          <div className="mb-6">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
               <input
@@ -233,21 +203,6 @@ export default function AdminDashboard() {
                 className="w-full pl-10 pr-4 py-3 bg-slate-700 text-white rounded-lg border border-slate-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none"
               />
             </div>
-            {activeTab === "contacts" && (
-              <div className="relative">
-                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
-                <select
-                  value={statusFilter}
-                  onChange={(e) => setStatusFilter(e.target.value)}
-                  className="pl-6 pr-8 py-3 bg-slate-700 text-white rounded-lg border border-slate-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none"
-                >
-                  <option value="all">All Status</option>
-                  <option value="unread">Unread</option>
-                  <option value="read">Read</option>
-                  <option value="replied">Replied</option>
-                </select>
-              </div>
-            )}
           </div>
 
           {/* Content */}
@@ -339,9 +294,7 @@ export default function AdminDashboard() {
                           className={`px-3 py-1 rounded-full text-xs font-medium ${
                             contact.status === "unread"
                               ? "bg-orange-500 text-white"
-                              : contact.status === "read"
-                              ? "bg-blue-500 text-white"
-                              : "bg-green-500 text-white"
+                              : "bg-blue-500 text-white"
                           }`}
                         >
                           {contact.status.toUpperCase()}
@@ -355,13 +308,6 @@ export default function AdminDashboard() {
                         {new Date(contact.createdAt).toLocaleString()}
                       </p>
                     </div>
-                    <button
-                      onClick={() => setSelectedContact(contact)}
-                      className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors"
-                    >
-                      <Eye className="w-4 h-4" />
-                      View
-                    </button>
                   </div>
                   <div className="border-t border-slate-600 pt-4">
                     <p className="text-white font-medium mb-2">
@@ -370,33 +316,6 @@ export default function AdminDashboard() {
                     <p className="text-slate-300 line-clamp-2">
                       {contact.message}
                     </p>
-                  </div>
-                  <div className="flex gap-2 mt-4">
-                    <button
-                      onClick={() => updateContactStatus(contact._id, "read")}
-                      disabled={contact.status === "read"}
-                      className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-600 disabled:cursor-not-allowed text-white rounded-lg text-sm transition-colors"
-                    >
-                      Mark as Read
-                    </button>
-                    <button
-                      onClick={() =>
-                        updateContactStatus(contact._id, "replied")
-                      }
-                      disabled={contact.status === "replied"}
-                      className="px-4 py-2 bg-green-600 hover:bg-green-700 disabled:bg-slate-600 disabled:cursor-not-allowed text-white rounded-lg text-sm transition-colors"
-                    >
-                      Mark as Replied
-                    </button>
-                    <button
-                      onClick={() =>
-                        updateContactStatus(contact._id, "unread")
-                      }
-                      disabled={contact.status === "unread"}
-                      className="px-4 py-2 bg-orange-600 hover:bg-orange-700 disabled:bg-slate-600 disabled:cursor-not-allowed text-white rounded-lg text-sm transition-colors"
-                    >
-                      Mark as Unread
-                    </button>
                   </div>
                 </div>
               ))}
@@ -410,76 +329,7 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* Contact Detail Modal */}
-      {selectedContact && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-          <div className="bg-slate-800 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-            <div className="p-6 border-b border-slate-700 flex items-center justify-between">
-              <h2 className="text-2xl font-bold text-white">Message Details</h2>
-              <button
-                onClick={() => setSelectedContact(null)}
-                className="text-slate-400 hover:text-white transition-colors"
-              >
-                <XCircle className="w-8 h-8" />
-              </button>
-            </div>
-            <div className="p-6 space-y-4">
-              <div>
-                <label className="text-purple-300 text-sm font-medium">
-                  Name
-                </label>
-                <p className="text-white text-lg">{selectedContact.name}</p>
-              </div>
-              <div>
-                <label className="text-purple-300 text-sm font-medium">
-                  Email
-                </label>
-                <p className="text-white text-lg">{selectedContact.email}</p>
-              </div>
-              <div>
-                <label className="text-purple-300 text-sm font-medium">
-                  Subject
-                </label>
-                <p className="text-white text-lg">{selectedContact.subject}</p>
-              </div>
-              <div>
-                <label className="text-purple-300 text-sm font-medium">
-                  Message
-                </label>
-                <p className="text-white text-base leading-relaxed bg-slate-700/50 p-4 rounded-lg">
-                  {selectedContact.message}
-                </p>
-              </div>
-              <div>
-                <label className="text-purple-300 text-sm font-medium">
-                  Status
-                </label>
-                <p>
-                  <span
-                    className={`inline-block px-4 py-2 rounded-full text-sm font-medium ${
-                      selectedContact.status === "unread"
-                        ? "bg-orange-500 text-white"
-                        : selectedContact.status === "read"
-                        ? "bg-blue-500 text-white"
-                        : "bg-green-500 text-white"
-                    }`}
-                  >
-                    {selectedContact.status.toUpperCase()}
-                  </span>
-                </p>
-              </div>
-              <div>
-                <label className="text-purple-300 text-sm font-medium">
-                  Received On
-                </label>
-                <p className="text-white text-lg">
-                  {new Date(selectedContact.createdAt).toLocaleString()}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }

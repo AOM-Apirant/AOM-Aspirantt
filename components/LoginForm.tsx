@@ -2,9 +2,13 @@
 
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 
 export default function LoginForm() {
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get('callbackUrl') || '/quiz';
+  
   const [formData, setFormData] = useState({
     emailOrPhone: '',
     password: '',
@@ -67,8 +71,8 @@ export default function LoginForm() {
       if (result?.error) {
         setErrors({ general: 'Invalid email or password. Please try again.' });
       } else {
-        // Redirect to quiz page on success
-        window.location.href = '/quiz';
+        // Redirect to callback URL or default to quiz page
+        window.location.href = callbackUrl;
       }
     } catch (error) {
       console.error('Login error:', error);

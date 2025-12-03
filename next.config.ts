@@ -17,6 +17,27 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer, webpack }) => {
+    // Exclude Mongoose from Edge Runtime bundles
+    if (isServer) {
+      config.externals = config.externals || [];
+      config.externals.push({
+        mongoose: 'commonjs mongoose',
+      });
+    }
+    
+    // Optimize memory usage during build
+    config.optimization = {
+      ...config.optimization,
+      moduleIds: 'deterministic',
+    };
+    
+    return config;
+  },
+  // Reduce memory usage during build
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
+  },
   /* config options here */
 };
 
