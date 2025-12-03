@@ -11,9 +11,13 @@ export async function registerUser(
   phoneNumber?: string
 ) {
   // Use dynamic imports to avoid loading Mongoose in Edge Runtime
-  const { default: connectDB } = await import("./db");
-  const { default: User } = await import("@/models/User");
-  const bcrypt = await import("bcryptjs");
+  const dbModule = await import("./db");
+  const userModule = await import("@/models/User");
+  const bcryptModule = await import("bcryptjs");
+  
+  const connectDB = dbModule.default;
+  const User = userModule.default;
+  const bcrypt = bcryptModule.default || bcryptModule;
 
   await connectDB();
 
