@@ -3,9 +3,9 @@
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 
-export default function LoginForm() {
+function LoginFormContent() {
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get('callbackUrl') || '/quiz';
   
@@ -234,5 +234,27 @@ export default function LoginForm() {
         </p>
       </div>
     </div>
+  );
+}
+
+export default function LoginForm() {
+  return (
+    <Suspense fallback={
+      <div className="w-full max-w-md mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="lg:text-3xl text-2xl font-bold text-gray-800 mb-2">
+            Sign In
+          </h2>
+          <p className="text-gray-600 text-sm">
+            Enter your credentials to access your account
+          </p>
+        </div>
+        <div className="flex items-center justify-center py-12">
+          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
+        </div>
+      </div>
+    }>
+      <LoginFormContent />
+    </Suspense>
   );
 }
